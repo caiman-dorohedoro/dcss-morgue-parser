@@ -46,19 +46,6 @@ Last updated: 2026-04-07
 | `parser_model.md` | Current parser schema and Crawl-aligned model explanation | `/packages/parser/docs` |
 | `parser_changelog.md` | Schema and contract history for the parser package | `/packages/parser/docs` |
 
-## Local Korean Reference Copies
-
-These files exist as local reading aids for the current workspace. They are not the canonical source documents.
-
-| File | Mirrors |
-| --- | --- |
-| `meta--catalog--ko.md` | `meta--catalog.md` |
-| `origin--pipeline--ko.md` | `origin--pipeline.md` |
-| `origin--raw-morgue-collection--ko.md` | `origin--raw-morgue-collection.md` |
-| `workflow--qa--ko.md` | `workflow--qa.md` |
-| `strategy--fixture--ko.md` | `strategy--fixture.md` |
-| `notes--implementation--ko.md` | `notes--implementation.md` |
-
 ## Recommended Reading Order
 
 1. `README.md`
@@ -76,8 +63,7 @@ These files exist as local reading aids for the current workspace. They are not 
 - `packages/parser/docs/parser_model.md` and `packages/parser/docs/parser_changelog.md` are the canonical parser contract documents.
 - `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
 - `docs/notes--implementation.md` is not a raw historical dump of the original plan; it is an edited note that keeps only the engineering judgment that still matters.
-- The Korean `--ko` copies are local reference documents for easier reading and should follow the English canonical files if content ever diverges.
 
 ## Change Log
 
-- 2026-04-07: Converted the catalog to English, adopted prefix-first document naming for `docs/`, aligned project-level file names to category-first topics, and added local Korean reference copies for the project-level documents.
+- 2026-04-07: Converted the catalog to English, adopted prefix-first document naming for `docs/`, and aligned project-level file names to category-first topics.
