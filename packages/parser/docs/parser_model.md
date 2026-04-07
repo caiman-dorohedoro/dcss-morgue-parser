@@ -1,14 +1,12 @@
 # Morgue Parser Model
 
-This document explains what the parser extracts, why the output is structured
-the way it is, and which parts of the DCSS source tree informed the model.
+This document explains what the parser extracts, why the output is structured the way it is, and which parts of the DCSS source tree informed the model.
 
 The short version is:
 
 - the parser is intentionally more semantic than a pretty-string formatter
 - downstream tools need queryable fields, not only rendered text
-- equipment therefore keeps both a raw summary layer and a structured detail
-  layer
+- equipment therefore keeps both a raw summary layer and a structured detail layer
 
 ## Goals
 
@@ -46,8 +44,7 @@ Code:
 
 ## Crawl Source References
 
-The equipment model follows Crawl's item concepts rather than only the printed
-English strings in morgues.
+The equipment model follows Crawl's item concepts rather than only the printed English strings in morgues.
 
 Main references in the Crawl source tree:
 
@@ -55,8 +52,7 @@ Main references in the Crawl source tree:
   - object categories such as `OBJ_ARMOUR` and `OBJ_JEWELLERY`
   - subtype concept for specific items inside those categories
 - `item-name.cc`
-  - how normal items, ego items, and artefacts are rendered into player-facing
-    names
+  - how normal items, ego items, and artefacts are rendered into player-facing names
   - useful for distinguishing armour egos from jewellery subtypes
 - `item-prop.cc`
   - which armour egos are legal for which subtypes
@@ -65,14 +61,12 @@ Main references in the Crawl source tree:
   - fixed unrand property storage
 - `artefact.cc`
   - artefact property enumeration
-  - code paths that combine intrinsic item properties with artefact properties
-    for display and evaluation
+  - code paths that combine intrinsic item properties with artefact properties for display and evaluation
 - `player-equip.h`
   - `player_equip_set`
   - `player_equip_entry`
 - `equipment-slot.h`
-  - slot enums such as `SLOT_BODY_ARMOUR`, `SLOT_HELMET`, `SLOT_GLOVES`,
-    `SLOT_BOOTS`, `SLOT_CLOAK`, `SLOT_RING`, `SLOT_AMULET`
+  - slot enums such as `SLOT_BODY_ARMOUR`, `SLOT_HELMET`, `SLOT_GLOVES`, `SLOT_BOOTS`, `SLOT_CLOAK`, `SLOT_RING`, `SLOT_AMULET`
   - `SLOT_HAUNTED_AUX` for poltergeist-compatible haunted auxiliary equipment
 - `player-equip.cc`
   - compatible slot mapping, including `SLOT_HAUNTED_AUX`
@@ -104,11 +98,9 @@ Base stats are intentionally simple:
 
 Notes:
 
-- `version` keeps the raw morgue version token, for example
-  `0.35-a0-257-gf9e06672e4`
+- `version` keeps the raw morgue version token, for example `0.35-a0-257-gf9e06672e4`
 - `species` is normalized to canonical species names
-- `speciesVariant` preserves extra descriptor detail such as
-  `White Draconian`
+- `speciesVariant` preserves extra descriptor detail such as `White Draconian`
 
 Code:
 
@@ -119,8 +111,7 @@ Code:
 Skills live under two parallel objects:
 
 - `skills`: the trained or base values
-- `effectiveSkills`: the currently displayed values after passive or temporary
-  modifiers
+- `effectiveSkills`: the currently displayed values after passive or temporary modifiers
 
 Examples:
 
@@ -138,8 +129,7 @@ When a skill line includes a parenthesized value:
 - the first number is stored in `skills`
 - the parenthesized number is stored in `effectiveSkills`
 
-When no parenthesized value exists, `effectiveSkills` falls back to the same
-number as `skills`.
+When no parenthesized value exists, `effectiveSkills` falls back to the same number as `skills`.
 
 Code:
 
@@ -189,8 +179,7 @@ Each spell row stores:
 - `failurePercent`
 - `memorized`
 
-Built-in canonical spell names help restore truncated morgue spell names like
-`Lehudib's Crystal Sp` back to `Lehudib's Crystal Spear`.
+Built-in canonical spell names help restore truncated morgue spell names like `Lehudib's Crystal Sp` back to `Lehudib's Crystal Spear`.
 
 Code:
 
@@ -224,8 +213,7 @@ plus:
 - `cloakDetails`
 - `ringDetails`
 
-The summary values keep the morgue-facing item names. The detail objects try to
-mirror Crawl item semantics more closely.
+The summary values keep the morgue-facing item names. The detail objects try to mirror Crawl item semantics more closely.
 
 Each detail contains fields such as:
 

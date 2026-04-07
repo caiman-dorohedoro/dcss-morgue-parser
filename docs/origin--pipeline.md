@@ -1,16 +1,12 @@
 # Pipeline Origin
 
-This note captures the parts of the original pipeline design that are still
-useful for understanding why the parser exists and how it was validated.
+This note captures the parts of the original pipeline design that are still useful for understanding why the parser exists and how it was validated.
 
-It is adapted from the early `dcss-morgue-pipeline` design documents rather
-than copied verbatim. Old parser-specific requirements that no longer match the
-current schema were intentionally removed.
+It is adapted from the early `dcss-morgue-pipeline` design documents rather than copied verbatim. Old parser-specific requirements that no longer match the current schema were intentionally removed.
 
 ## Why the Parser Was Built Around Morgues
 
-The original goal was not just to scrape game metadata. It was to build a
-strict, reusable character snapshot parser that could answer questions about:
+The original goal was not just to scrape game metadata. It was to build a strict, reusable character snapshot parser that could answer questions about:
 
 - species and background
 - final stats and XL
@@ -19,9 +15,7 @@ strict, reusable character snapshot parser that could answer questions about:
 - mutations and active traits
 - memorized spells and spell-library rows
 
-Xlog/logfile data is enough to discover candidate games, but it is not enough
-to reconstruct the full final character state. Morgues are the authoritative
-source for that snapshot.
+Xlog/logfile data is enough to discover candidate games, but it is not enough to reconstruct the full final character state. Morgues are the authoritative source for that snapshot.
 
 That led to a deliberate split:
 
@@ -55,8 +49,7 @@ Keeping those concerns separate made the parser reusable from:
 
 ## Architecture Ideas That Still Matter
 
-Several parts of the original architecture still explain the current parser
-well.
+Several parts of the original architecture still explain the current parser well.
 
 ### Strict failure policy
 
@@ -70,45 +63,37 @@ That mindset still shapes the parser:
 
 ### Per-host politeness
 
-The collection side treated Crawl servers as volunteer-run infrastructure and
-kept fetch behavior conservative:
+The collection side treated Crawl servers as volunteer-run infrastructure and kept fetch behavior conservative:
 
 - per-host concurrency of `1`
 - minimum delay between requests to the same host
 - shared politeness for logfile discovery and morgue fetches
 
-Those details belong to the pipeline, not the parser package, but they are part
-of the reason the parser was developed against real public samples instead of
-toy input only.
+Those details belong to the pipeline, not the parser package, but they are part of the reason the parser was developed against real public samples instead of toy input only.
 
 ### Stratified sampling
 
-The original collection workflow sampled by `(server, version)` bucket rather
-than only "whatever is newest". That produced broader parser coverage across:
+The original collection workflow sampled by `(server, version)` bucket rather than only "whatever is newest". That produced broader parser coverage across:
 
 - different public servers
 - stable and trunk formatting differences
 - species and equipment edge cases
 
-That sampling mindset is still reflected in the QA workflow and fixture
-selection.
+That sampling mindset is still reflected in the QA workflow and fixture selection.
 
 ## What Was Intentionally Not Carried Forward
 
-The earliest design documents described parser requirements that no longer
-match the current parser model. Examples include:
+The earliest design documents described parser requirements that no longer match the current parser model. Examples include:
 
 - `helmet` / `gloves` as booleans
 - `wizardry`, `channel`, and `wildMagic` as required top-level outputs
 - `armourSkill` and `schoolSkills` as old field names
 
-Those requirements were useful during initial planning, but the parser evolved
-into a more semantic model with:
+Those requirements were useful during initial planning, but the parser evolved into a more semantic model with:
 
 - `skills` and `effectiveSkills`
 - structured `mutations`
 - slot summary fields plus detailed equipment objects
 - property bags split into intrinsic, ego, and artefact sources
 
-This note keeps the architectural lessons while leaving behind schema ideas
-that were replaced.
+This note keeps the architectural lessons while leaving behind schema ideas that were replaced.

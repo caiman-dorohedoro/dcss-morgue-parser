@@ -2,8 +2,7 @@
 
 Browser-safe DCSS morgue parser package intended to be publishable on npm.
 
-It parses morgue text into structured JSON in a browser-safe way. The parser
-does not fetch files, touch the filesystem, or depend on SQLite.
+It parses morgue text into structured JSON in a browser-safe way. The parser does not fetch files, touch the filesystem, or depend on SQLite.
 
 ## Status
 
@@ -37,8 +36,7 @@ if (result.ok) {
 }
 ```
 
-The parser ships with a built-in canonical spell vocabulary. Callers can also
-supplement it:
+The parser ships with a built-in canonical spell vocabulary. Callers can also supplement it:
 
 ```ts
 parseMorgueText(morgueText, {
@@ -94,19 +92,13 @@ Those concerns belong in a wrapper or pipeline around the parser.
 
 ## Development Notes
 
-This package was prepared from the parser work maintained in the broader
-`dcss-stats` repository and then moved into this dedicated monorepo.
+This package was prepared from the parser work maintained in the broader `dcss-stats` repository and then moved into this dedicated monorepo.
 
 Project notes worth preserving in this dedicated public monorepo:
 
-- a lot of the recent parser iteration was done in VS Code with the Codex
-  extension
-- GPT-5.4 was used heavily during parser design, regression cleanup, and schema
-  refinement
-- raw morgue acquisition and server-sampling ideas were informed by the
-  `dcss-stats` repository, especially `dcss-morgue-pipeline`, which was used as
-  the reference implementation for fetching morgues from Crawl servers and
-  validating parsed output against real samples
+- a lot of the recent parser iteration was done in VS Code with the Codex extension
+- GPT-5.4 was used heavily during parser design, regression cleanup, and schema refinement
+- raw morgue acquisition and server-sampling ideas were informed by the `dcss-stats` repository, especially `dcss-morgue-pipeline`, which was used as the reference implementation for fetching morgues from Crawl servers and validating parsed output against real samples
 
 ## Local Development
 

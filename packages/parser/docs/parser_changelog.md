@@ -20,22 +20,18 @@ instead of collapsing parsed output to a coarse bucket like `trunk`.
 
 ### Why
 
-For trunk games, the commit suffix matters. Two morgues from different
-`0.35-a0-*` revisions can come from meaningfully different upstream Crawl
-states.
+For trunk games, the commit suffix matters. Two morgues from different `0.35-a0-*` revisions can come from meaningfully different upstream Crawl states.
 
 ## 2. Background Extraction
 
 ### What changed
 
-The parser stores `background` in addition to `species`, and preserves
-`speciesVariant` when canonicalizing `species` would lose useful detail.
+The parser stores `background` in addition to `species`, and preserves `speciesVariant` when canonicalizing `species` would lose useful detail.
 
 Examples:
 
 - `Formicid Fighter` -> `species: "Formicid"`, `background: "Fighter"`
-- `Red Draconian Summoner` -> `species: "Draconian"`,
-  `speciesVariant: "Red Draconian"`, `background: "Summoner"`
+- `Red Draconian Summoner` -> `species: "Draconian"`, `speciesVariant: "Red Draconian"`, `background: "Summoner"`
 
 ### Why
 
@@ -49,8 +45,7 @@ The parser stores `xl` from the stat line.
 
 ### Why
 
-`XL` is one of the most common grouping and power-level fields in downstream
-tools, so it belongs in the same stable header block as `AC`, `EV`, and `SH`.
+`XL` is one of the most common grouping and power-level fields in downstream tools, so it belongs in the same stable header block as `AC`, `EV`, and `SH`.
 
 ## 3. Skills vs Effective Skills
 
@@ -74,9 +69,7 @@ becomes:
 
 ### Why
 
-The parenthesized number is often what the player actually saw after Ashenzari,
-Heroism, or other modifiers. Keeping both values avoids re-parsing skill table
-text downstream.
+The parenthesized number is often what the player actually saw after Ashenzari, Heroism, or other modifiers. Keeping both values avoids re-parsing skill table text downstream.
 
 ## 4. Structured Mutations
 
@@ -93,8 +86,7 @@ type MutationEntrySnapshot = {
 
 ### Why
 
-Mutation level matters for analysis, and the `A:` line is the most stable
-summary of active special traits at game end.
+Mutation level matters for analysis, and the `A:` line is the most stable summary of active special traits at game end.
 
 ## 5. Equipment Summary vs Details
 
@@ -107,8 +99,7 @@ The parser keeps both:
 
 ### Why
 
-The summary preserves the morgue-facing name. The detail object is what makes
-the parsed data reusable for analysis and tooling.
+The summary preserves the morgue-facing name. The detail object is what makes the parsed data reusable for analysis and tooling.
 
 ## 6. Armour Ego, Jewellery Subtype, and Artefact Separation
 
@@ -123,9 +114,7 @@ The parser now treats these as different concepts:
 
 ### Why
 
-Crawl internally models these differently. A `hat of intelligence` is not the
-same kind of thing as a `ring of intelligence`, and a randart hat is not just
-another ego item.
+Crawl internally models these differently. A `hat of intelligence` is not the same kind of thing as a `ring of intelligence`, and a randart hat is not just another ego item.
 
 References that informed this model:
 
@@ -148,9 +137,7 @@ instead of only flat string arrays.
 
 ### Why
 
-This keeps source attribution and lets downstream tools reason about combined
-values correctly. For example, a base-item `rN+` plus an artefact `rN+` should
-produce a final `rN = 2`, not a lossy string list.
+This keeps source attribution and lets downstream tools reason about combined values correctly. For example, a base-item `rN+` plus an artefact `rN+` should produce a final `rN = 2`, not a lossy string list.
 
 References:
 
@@ -162,8 +149,7 @@ References:
 
 ### What changed
 
-`helmets`, `gloves`, `footwear`, and `cloaks` became arrays, and item details
-gained `equipState` values such as:
+`helmets`, `gloves`, `footwear`, and `cloaks` became arrays, and item details gained `equipState` values such as:
 
 - `worn`
 - `haunted`
@@ -171,8 +157,7 @@ gained `equipState` values such as:
 
 ### Why
 
-Poltergeists can use multiple haunted auxiliary slots. A single `helmet` or
-`cloak` field was not expressive enough.
+Poltergeists can use multiple haunted auxiliary slots. A single `helmet` or `cloak` field was not expressive enough.
 
 References:
 
@@ -191,31 +176,24 @@ The parser stores:
 
 ### Why
 
-Shapeshifting state matters for character analysis, and in many morgues it is
-not recoverable from equipment slots alone.
+Shapeshifting state matters for character analysis, and in many morgues it is not recoverable from equipment slots alone.
 
 ## 10. Canonical Spell Name Restoration
 
 ### What changed
 
-The parser ships with built-in canonical spell names and uses them to restore
-truncated morgue spell names.
+The parser ships with built-in canonical spell names and uses them to restore truncated morgue spell names.
 
 ### Why
 
-Morgue spell tables often shorten names such as `Lehudib's Crystal Sp`. The
-canonical vocabulary lets the parser recover stable names without callers
-having to supply their own list.
+Morgue spell tables often shorten names such as `Lehudib's Crystal Sp`. The canonical vocabulary lets the parser recover stable names without callers having to supply their own list.
 
 ## 11. Golden Fixtures and Full Morgue Regression
 
 ### What changed
 
-The parser grew around full morgue regression fixtures, not only tiny extractor
-unit cases.
+The parser grew around full morgue regression fixtures, not only tiny extractor unit cases.
 
 ### Why
 
-Most real parser regressions come from interactions between sections, wrapping,
-equipment formatting, and edge-case species. Full morgues catch those problems
-earlier than isolated extractor snippets.
+Most real parser regressions come from interactions between sections, wrapping, equipment formatting, and edge-case species. Full morgues catch those problems earlier than isolated extractor snippets.

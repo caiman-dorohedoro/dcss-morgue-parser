@@ -44,8 +44,7 @@ A full morgue test exercises:
 - strict validation
 - field ordering and output shape
 
-These tests catch regressions that tiny snippets often miss, especially in
-species or item edge cases.
+These tests catch regressions that tiny snippets often miss, especially in species or item edge cases.
 
 Examples that have been especially valuable:
 
@@ -76,15 +75,13 @@ In practice, many good fixes end up with both:
 
 ## Expected JSON Philosophy
 
-Expected JSON should reflect current parser intent, not legacy output for its
-own sake.
+Expected JSON should reflect current parser intent, not legacy output for its own sake.
 
 That means:
 
 - regenerate expected JSON when the schema intentionally improves
 - do not keep stale output just because an older parser happened to emit it
-- keep changes small and explain them in the parser changelog when they affect
-  downstream consumers
+- keep changes small and explain them in the parser changelog when they affect downstream consumers
 
 ## Practical Rule
 
@@ -94,5 +91,4 @@ When in doubt:
 2. add or update expected JSON
 3. add the smallest targeted extractor regression you can
 
-That combination has been the most reliable way to improve parser quality
-without losing confidence in earlier behavior.
+That combination has been the most reliable way to improve parser quality without losing confidence in earlier behavior.

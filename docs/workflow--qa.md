@@ -1,10 +1,8 @@
 # QA Workflow
 
-This note documents the workflow that proved most useful for improving parser
-accuracy against real morgues.
+This note documents the workflow that proved most useful for improving parser accuracy against real morgues.
 
-The parser package itself does not contain collection code, but this workflow
-was used repeatedly with `dcss-morgue-pipeline`.
+The parser package itself does not contain collection code, but this workflow was used repeatedly with `dcss-morgue-pipeline`.
 
 ## 1. Collect a Stratified Sample
 
@@ -29,18 +27,13 @@ What this gives you:
 
 Operational details worth remembering:
 
-- the first discovery pass is tail-first, so a fresh bucket starts by reading
-  only the most recent logfile bytes rather than the entire remote logfile
+- the first discovery pass is tail-first, so a fresh bucket starts by reading only the most recent logfile bytes rather than the entire remote logfile
 - the tail size is controlled by `--initial-tail-bytes`
 - `--fresh` clears DB, morgues, and audit output but keeps logfile slice cache
-- `--fresh-logfiles` also clears cached logfile slices when you want a clean
-  discovery baseline
-- if a bootstrap bucket is underfilled, the pipeline can keep walking backward
-  through older logfile chunks via `--backfill-chunk-bytes`
+- `--fresh-logfiles` also clears cached logfile slices when you want a clean discovery baseline
+- if a bootstrap bucket is underfilled, the pipeline can keep walking backward through older logfile chunks via `--backfill-chunk-bytes`
 
-For repeated QA passes, `incremental` mode keeps the same discovery logic but
-starts from the saved logfile offsets and then samples only candidates newly
-discovered since `--since`.
+For repeated QA passes, `incremental` mode keeps the same discovery logic but starts from the saved logfile offsets and then samples only candidates newly discovered since `--since`.
 
 ## 2. Export Raw/Parsed Review Pairs
 
@@ -55,8 +48,7 @@ under a review directory such as:
 /tmp/dcss-parser-qa-20/review/<SERVER>/<BUCKET>/<ENDED_AT>__<PLAYER>/
 ```
 
-This is useful because parser bugs are easiest to catch when the raw morgue and
-the parsed JSON are side by side.
+This is useful because parser bugs are easiest to catch when the raw morgue and the parsed JSON are side by side.
 
 ## 3. Manual Comparison
 
@@ -67,8 +59,7 @@ When reviewing pairs, the most useful checklist has been:
 - do `artifactKind`, `ego`, and `subtypeEffect` make sense?
 - do `properties`, `intrinsicProperties`, and `artifactProperties` add up?
 - do `skills` and `effectiveSkills` match the skill table?
-- do `mutations` reflect the `A:` line without bleeding across section
-  boundaries?
+- do `mutations` reflect the `A:` line without bleeding across section boundaries?
 - do memorized spells and library spells match the morgue spell sections?
 - does `form` and `talisman` reflect the actual state shown in the morgue?
 
@@ -98,5 +89,4 @@ After a fix:
 - optionally re-run a fresh real-world QA sample
 - compare raw/parsed pairs again
 
-This last step is important because many parser bugs only become obvious in
-live samples, not in the fixture you originally fixed.
+This last step is important because many parser bugs only become obvious in live samples, not in the fixture you originally fixed.

@@ -1,7 +1,6 @@
 # dcss-morgue-parser
 
-Monorepo for a Dungeon Crawl Stone Soup morgue parser and the collection
-pipeline used to validate it against real public-server samples.
+Monorepo for a Dungeon Crawl Stone Soup morgue parser and the collection pipeline used to validate it against real public-server samples.
 
 This repository is organized so that:
 
@@ -91,8 +90,5 @@ npm run bootstrap -- --server CAO,CBR2,CNC --per-bucket 10 --min-xl 10 --data-di
 ## Notes worth preserving
 
 - most development was done in VS Code with the ChatGPT Codex extension. ChatGPT 5.4 with extra high thinking was the primary model used
-- the raw morgue acquisition and public-server sampling workflow was informed by
-  the `dcss-stats` repository
-- public-server fetches used per-host politeness defaults: host concurrency `1`,
-  queue interval cap `1`, and a minimum delay of `2000 ms` between requests;
-  logfile discovery and morgue fetches shared the same host-level limit
+- the raw morgue acquisition and public-server sampling workflow was informed by the `dcss-stats` repository
+- public-server fetches used per-host politeness defaults: host concurrency `1`, queue interval cap `1`, and a minimum delay of `2000 ms` between requests; logfile discovery and morgue fetches shared the same host-level limit

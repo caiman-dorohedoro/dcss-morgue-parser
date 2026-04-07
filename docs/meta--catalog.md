@@ -5,12 +5,9 @@ Last updated: 2026-04-07
 
 ## Purpose
 
-- Keep the project-level document inventory and the main reference paths in one
-  place.
-- Separate parser contract docs from project provenance, QA workflow, and
-  maintenance docs while preserving a clear reading order.
-- Make it easy to onboard into a fresh session or repository clone without
-  guessing where to start.
+- Keep the project-level document inventory and the main reference paths in one place.
+- Separate parser contract docs from project provenance, QA workflow, and maintenance docs while preserving a clear reading order.
+- Make it easy to onboard into a fresh session or repository clone without guessing where to start.
 
 ## Naming Convention
 
@@ -21,23 +18,18 @@ Last updated: 2026-04-07
   - use lowercase ASCII file names only
   - put the document kind first, not last
   - prefer a short BEM-like segment chain:
-    - 2 segments when the topic is already unique:
-      `<kind>--<topic>.md`
-    - 3 segments when extra scope avoids ambiguity:
-      `<kind>--<area>--<topic>.md`
+    - 2 segments when the topic is already unique: `<kind>--<topic>.md`
+    - 3 segments when extra scope avoids ambiguity: `<kind>--<area>--<topic>.md`
   - supported `kind` prefixes:
     - `meta`: document catalogs and index pages
     - `origin`: design background and provenance
     - `workflow`: recurring operations and review procedures
     - `strategy`: testing and fixture maintenance strategy
     - `notes`: implementation notes and engineering judgment
-  - local language reference copies may add a trailing locale segment, such as
-    `origin--pipeline--ko.md`
+  - local language reference copies may add a trailing locale segment, such as `origin--pipeline--ko.md`
 - Package docs under `packages/parser/docs/`:
-  - keep package-specific artifact names such as `parser_model.md` and
-    `parser_changelog.md`
-  - these documents describe parser contract artifacts rather than project-level
-    process categories
+  - keep package-specific artifact names such as `parser_model.md` and `parser_changelog.md`
+  - these documents describe parser contract artifacts rather than project-level process categories
 
 ## Canonical File Inventory
 
@@ -56,8 +48,7 @@ Last updated: 2026-04-07
 
 ## Local Korean Reference Copies
 
-These files exist as local reading aids for the current workspace. They are not
-the canonical source documents.
+These files exist as local reading aids for the current workspace. They are not the canonical source documents.
 
 | File | Mirrors |
 | --- | --- |
@@ -82,21 +73,11 @@ the canonical source documents.
 
 ## Status Notes
 
-- `packages/parser/docs/parser_model.md` and
-  `packages/parser/docs/parser_changelog.md` are the canonical parser contract
-  documents.
-- `docs/origin--pipeline.md` and
-  `docs/origin--raw-morgue-collection.md` describe provenance outside the
-  parser package itself.
-- `docs/notes--implementation.md` is not a raw historical dump of the original
-  plan; it is an edited note that keeps only the engineering judgment that
-  still matters.
-- The Korean `--ko` copies are local reference documents for easier reading and
-  should follow the English canonical files if content ever diverges.
+- `packages/parser/docs/parser_model.md` and `packages/parser/docs/parser_changelog.md` are the canonical parser contract documents.
+- `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
+- `docs/notes--implementation.md` is not a raw historical dump of the original plan; it is an edited note that keeps only the engineering judgment that still matters.
+- The Korean `--ko` copies are local reference documents for easier reading and should follow the English canonical files if content ever diverges.
 
 ## Change Log
 
-- 2026-04-07: Converted the catalog to English, adopted prefix-first document
-  naming for `docs/`, aligned project-level file names to category-first
-  topics, and added local Korean reference copies for the project-level
-  documents.
+- 2026-04-07: Converted the catalog to English, adopted prefix-first document naming for `docs/`, aligned project-level file names to category-first topics, and added local Korean reference copies for the project-level documents.
