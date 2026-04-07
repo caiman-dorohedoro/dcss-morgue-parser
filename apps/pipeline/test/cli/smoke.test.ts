@@ -25,6 +25,8 @@ Commands:
         'bootstrap',
         '--per-bucket',
         '3',
+        '--skip-first',
+        '2',
         '--min-xl',
         '10',
         '--server',
@@ -48,6 +50,7 @@ Commands:
 
     expect(runBootstrapCommand).toHaveBeenCalledWith({
       perBucket: 3,
+      skipFirst: 2,
       minXl: 10,
       serverIds: ['CAO', 'CBRG'],
       dataDir: '/tmp/dcss-data',
@@ -160,6 +163,13 @@ Dry run enabled: skipped morgue fetch and parse.`,
     await expect(runCli(['bootstrap', '--server', 'CUE'])).resolves.toEqual({
       exitCode: 1,
       stdout: 'Unknown server id(s): CUE',
+    })
+  })
+
+  it('rejects negative bootstrap skip-first values', async () => {
+    await expect(runCli(['bootstrap', '--skip-first', '-1'])).resolves.toEqual({
+      exitCode: 1,
+      stdout: 'Expected a non-negative integer for --skip-first',
     })
   })
 })

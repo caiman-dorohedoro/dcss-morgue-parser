@@ -10,6 +10,7 @@ export function selectBootstrapCandidates(
   options: {
     perBucket: number
     minXl?: number
+    skipFirst?: number
   },
 ): CandidateGame[] {
   const buckets = new Map<string, CandidateGame[]>()
@@ -27,5 +28,9 @@ export function selectBootstrapCandidates(
 
   return Array.from(buckets.entries())
     .sort(([left], [right]) => left.localeCompare(right))
-    .flatMap(([, bucket]) => bucket.sort(compareCandidates).slice(0, options.perBucket))
+    .flatMap(([, bucket]) =>
+      bucket
+        .sort(compareCandidates)
+        .slice(options.skipFirst ?? 0, (options.skipFirst ?? 0) + options.perBucket),
+    )
 }

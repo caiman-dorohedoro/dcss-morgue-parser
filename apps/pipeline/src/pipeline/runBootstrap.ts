@@ -21,6 +21,7 @@ export type PipelineOptions = {
   perBucket: number
   since?: string
   minXl?: number
+  skipFirst?: number
   serverIds?: readonly ServerId[]
   dryRun?: boolean
 }
@@ -85,6 +86,10 @@ function getBootstrapEligibleCounts(
   return counts
 }
 
+function getBootstrapTargetEligibleCount(options: Pick<PipelineOptions, 'perBucket' | 'skipFirst'>): number {
+  return options.perBucket + (options.skipFirst ?? 0)
+}
+
 async function runBootstrapBackfillPhase(ctx: PipelineContext) {
   if (!ctx.readBackfillSlice) {
     return
@@ -117,9 +122,10 @@ async function runBootstrapBackfillPhase(ctx: PipelineContext) {
 
   while (true) {
     const eligibleCounts = getBootstrapEligibleCounts(ctx.db, ctx.options.serverIds, ctx.options.minXl)
+    const targetEligibleCount = getBootstrapTargetEligibleCount(ctx.options)
     const underfilled = [...bucketStates.values()].filter(
       (bucket) =>
-        (eligibleCounts.get(`${bucket.serverId}:${bucket.version}`) ?? 0) < ctx.options.perBucket &&
+        (eligibleCounts.get(`${bucket.serverId}:${bucket.version}`) ?? 0) < targetEligibleCount &&
         bucket.cursorBeforeByteExclusive > 0,
     )
 
@@ -133,7 +139,7 @@ async function runBootstrapBackfillPhase(ctx: PipelineContext) {
       const bucketKey = `${bucket.serverId}:${bucket.version}`
       const before = bucket.cursorBeforeByteExclusive
       ctx.log?.(
-        `[backfill] ${bucket.serverId}/${bucket.version} eligible=${eligibleCounts.get(bucketKey) ?? 0} target=${ctx.options.perBucket}; reading older logfile chunk before byte ${before}`,
+        `[backfill] ${bucket.serverId}/${bucket.version} eligible=${eligibleCounts.get(bucketKey) ?? 0} target=${targetEligibleCount}; reading older logfile chunk before byte ${before}`,
       )
 
       const result = await backfillLogfile(ctx.db, {
@@ -333,6 +339,7 @@ export async function runBootstrap(ctx: PipelineContext): Promise<PipelineSummar
     {
       perBucket: ctx.options.perBucket,
       minXl: ctx.options.minXl,
+      skipFirst: ctx.options.skipFirst,
     },
   )
   ctx.log?.(`[bootstrap] selected ${selected.length} candidates`)

@@ -23,7 +23,7 @@ export type RuntimeCommandOptions = {
 }
 
 export type BootstrapCommandOptions = RuntimeCommandOptions &
-  Pick<PipelineOptions, 'perBucket' | 'minXl'> & {
+  Pick<PipelineOptions, 'perBucket' | 'minXl' | 'skipFirst'> & {
     backfillChunkBytes?: number
     dryRun: boolean
   }
@@ -90,6 +90,7 @@ export async function runBootstrapCommand(
       options: {
         perBucket: options.perBucket,
         minXl: options.minXl,
+        skipFirst: options.skipFirst,
         dryRun: options.dryRun,
         serverIds: options.serverIds,
       },

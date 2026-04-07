@@ -37,6 +37,7 @@ Commands:
 const BOOTSTRAP_USAGE = `Usage: dcss-morgue bootstrap [options]
 Options:
   --per-bucket <n>     Candidates per (server, version) bucket. Default: 10
+  --skip-first <n>     Skip the first n sorted candidates per (server, version) bucket. Default: 0
   --min-xl <n>         Only sample candidates with xlog XL >= n
   --server <ids>       Comma-separated server ids. Default: all active servers
   --data-dir <path>    Override runtime data directory
@@ -82,6 +83,20 @@ function parseIntegerOption(flag: string, value: string | undefined): number {
 
   if (!Number.isInteger(parsed) || parsed <= 0) {
     throw new Error(`Expected a positive integer for ${flag}`)
+  }
+
+  return parsed
+}
+
+function parseNonNegativeIntegerOption(flag: string, value: string | undefined): number {
+  if (!value) {
+    throw new Error(`Missing value for ${flag}`)
+  }
+
+  const parsed = Number.parseInt(value, 10)
+
+  if (!Number.isInteger(parsed) || parsed < 0) {
+    throw new Error(`Expected a non-negative integer for ${flag}`)
   }
 
   return parsed
@@ -253,6 +268,7 @@ function parseCommonOptionBag(args: string[]): {
 function parseBootstrapOptions(args: string[]): BootstrapCommandOptions {
   const common = parseCommonOptionBag(args)
   let perBucket = 10
+  let skipFirst = 0
   let minXl: number | undefined
   let backfillChunkBytes: number | undefined
 
@@ -261,6 +277,12 @@ function parseBootstrapOptions(args: string[]): BootstrapCommandOptions {
 
     if (current === '--per-bucket') {
       perBucket = parseIntegerOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--skip-first') {
+      skipFirst = parseNonNegativeIntegerOption(current, common.rest[index + 1])
       index += 1
       continue
     }
@@ -282,6 +304,7 @@ function parseBootstrapOptions(args: string[]): BootstrapCommandOptions {
 
   return {
     perBucket,
+    skipFirst,
     minXl,
     dataDir: common.parsed.dataDir,
     dryRun: common.parsed.dryRun,

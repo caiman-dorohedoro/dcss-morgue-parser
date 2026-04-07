@@ -99,4 +99,27 @@ describe('selectBootstrapCandidates', () => {
       'caogit-high',
     ])
   })
+
+  it('skips the first sorted candidates in each bucket before taking the sample', () => {
+    const selected = selectBootstrapCandidates(
+      [
+        seedCandidate('cao34-1', 'CAO', '0.34'),
+        seedCandidate('cao34-2', 'CAO', '0.34'),
+        seedCandidate('cao34-3', 'CAO', '0.34'),
+        seedCandidate('cao34-4', 'CAO', '0.34'),
+        seedCandidate('caogit-1', 'CAO', 'trunk'),
+        seedCandidate('caogit-2', 'CAO', 'trunk'),
+        seedCandidate('caogit-3', 'CAO', 'trunk'),
+        seedCandidate('caogit-4', 'CAO', 'trunk'),
+      ],
+      { perBucket: 2, skipFirst: 1 },
+    )
+
+    expect(selected.map((candidate) => candidate.candidateId)).toEqual([
+      'cao34-2',
+      'cao34-3',
+      'caogit-2',
+      'caogit-3',
+    ])
+  })
 })

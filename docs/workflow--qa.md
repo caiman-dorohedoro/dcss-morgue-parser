@@ -26,6 +26,10 @@ What this gives you:
 - roughly `server_count * bucket_count * per_bucket` successful parses
 - bias toward richer morgues when `--min-xl` is used
 
+If you want a deliberately different bootstrap sample from the same deterministic
+selection order, add `--skip-first <n>` so each `(server, version)` bucket skips
+its first `n` sorted candidates before taking `--per-bucket`.
+
 Operational details worth remembering:
 
 - the first discovery pass is tail-first, so a fresh bucket starts by reading only the most recent logfile bytes rather than the entire remote logfile
@@ -34,6 +38,7 @@ Operational details worth remembering:
 - `--fresh` clears DB, morgues, and audit output but keeps logfile slice cache
 - `--fresh-logfiles` also clears cached logfile slices when you want a clean discovery baseline
 - if a bootstrap bucket is underfilled, the pipeline can keep walking backward through older logfile chunks via `--backfill-chunk-bytes`
+- `--skip-first` is useful when a fresh clone would otherwise keep surfacing nearly the same morgues; it shifts the deterministic per-bucket window instead of relying on randomness
 - `--timeout-ms 30000` is a practical choice for this broader seven-server subset when the runner and servers are spread across different regions; depending on where the command is run, a different server could be the slow one
 
 The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. This workflow example uses the broader practical subset `CBRG`, `CDI`, `CXC`, `CAO`, `CBR2`, `CNC`, and `CPO`, while intentionally skipping `LLD`; `CUE` is not part of the current active manifest.
