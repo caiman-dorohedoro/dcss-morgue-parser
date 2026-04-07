@@ -1,0 +1,36 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-257-gf9e06672e4 (webtiles) character file.
+
+runemasterragnar the Covert (Octopode Shapeshifter) Turns: 8935, Time: 00:12:08
+
+HP:   -3/88 (106)   AC: 29    Str: 14    XL:     10   Next: 89%
+MP:   19/19         EV:  2    Int: 17    God:    Gozag
+Gold: 1045          SH:  5    Dex: 11    Spells: 9/9 levels left
+
+rFire   + . .  (50%)      - Branches
+rCold   + . .  (50%)    (no offhand)
+rNeg    . . .  (100%)   (helmet unavailable)
+rPois   +      (33%)    e - amulet of reflection
+rElec   +      (33%)    c - +4 ring of protection
+rCorr   +      (50%)    d - ring of magical power
+SInv    .               (no ring)
+Will    .....           (no ring)
+Stlth   +++++           (no ring)
+HPRegen 0.34/turn       (no ring)
+MPRegen 0.16/turn       (no ring)
+                        b - melded rimehorn talisman
+
+%: reflection
+@: tree-form, resistant, hasted, drained, very quick
+
+Inventory:
+
+Jewellery
+ c - a +4 ring of protection (worn)
+ d - a ring of magical power (worn)
+ e - an amulet of reflection (worn)
+Talismans
+ a - a quill talisman
+ b - a rimehorn talisman (worn)
+ g - a spore talisman
+
+Skills:

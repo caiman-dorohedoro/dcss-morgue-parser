@@ -272,4 +272,21 @@ Armour
       properties: bag({ numeric: { rC: -1, Will: 3 }, flags: { rElec: true } }),
     })
   })
+
+  it('prefers the current melded talisman state from the morgue summary over inventory worn markers', () => {
+    const parsed = extractEquipment(
+      loadFixture('focused', 'melded-talisman-summary-overrides-inventory.txt'),
+    )
+
+    expect(parsed.talisman).toBe('rimehorn talisman')
+    expect(parsed.talismanDetails).toMatchObject({
+      rawName: 'rimehorn talisman',
+      objectClass: 'talisman',
+      equipState: 'melded',
+      baseType: 'rimehorn talisman',
+      artifactKind: 'normal',
+    })
+    expect(parsed.amuletDetails?.equipState).toBe('worn')
+    expect(parsed.ringDetails?.map((item) => item.equipState)).toEqual(['worn', 'worn'])
+  })
 })

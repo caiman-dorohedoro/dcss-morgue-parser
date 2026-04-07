@@ -549,6 +549,18 @@ function extractEquipState(line: string): EquipmentEquipState {
   return /\(haunted\)/i.test(line) ? 'haunted' : 'worn'
 }
 
+function extractHeaderEquipState(line: string): EquipmentEquipState | null {
+  if (!/^[a-z0-9] - /i.test(line)) {
+    return null
+  }
+
+  if (/\bmelded\b/i.test(line)) {
+    return 'melded'
+  }
+
+  return /\bhaunted\b/i.test(line) ? 'haunted' : 'worn'
+}
+
 function isCursed(line: string): boolean {
   return /\bcursed\b/i.test(line)
 }
@@ -1132,14 +1144,75 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
   }
 }
 
-function buildEquipmentItems(slot: EquipmentSlot, lines: string[]): EquipmentItemSnapshot[] {
-  return lines
-    .map((line) => buildEquipmentItem(slot, line))
-    .filter((item): item is EquipmentItemSnapshot => Boolean(item))
+function cleanHeaderItemName(line: string): string {
+  return cleanItemName(line.replace(/^([a-z0-9] - )(?:(?:melded|haunted)\s+)/i, '$1'))
+}
+
+function extractHeaderEquipStates(text: string): Map<string, EquipmentEquipState> {
+  const header = splitSections(text).header
+  const lines = header.split('\n')
+  const statsStart = lines.findIndex((line) => /^(?:Health|HP):/.test(line))
+
+  if (statsStart === -1) {
+    return new Map()
+  }
+
+  const states = new Map<string, EquipmentEquipState>()
+
+  for (let index = statsStart + 3; index < lines.length; index += 1) {
+    const line = lines[index]
+    const trimmed = line.trim()
+
+    if (!trimmed) {
+      if (states.size > 0) {
+        break
+      }
+      continue
+    }
+
+    if (/^(?:%:|@:|A:|a:|0:|}:)/.test(trimmed)) {
+      break
+    }
+
+    const itemText = line.split(/\s{2,}/).at(-1)?.trim() ?? ''
+    const state = extractHeaderEquipState(itemText)
+
+    if (!state) {
+      continue
+    }
+
+    states.set(cleanHeaderItemName(itemText), state)
+  }
+
+  return states
+}
+
+function buildEquipmentItemWithHeaderState(
+  slot: EquipmentSlot,
+  line: string | undefined,
+  headerEquipStates: ReadonlyMap<string, EquipmentEquipState>,
+): EquipmentItemSnapshot | undefined {
+  const item = buildEquipmentItem(slot, line)
+
+  if (!item) {
+    return undefined
+  }
+
+  const headerState = headerEquipStates.get(item.rawName)
+
+  if (!headerState || headerState === 'worn') {
+    return item
+  }
+
+  return {
+    ...item,
+    equipState: headerState,
+  }
 }
 
 export function extractEquipment(text: string): EquipmentSnapshot {
   const section = splitSections(text).equipment
+  const headerEquipStates = extractHeaderEquipStates(text)
   const lines = parseEquipmentLines(section)
   const equippedLines = lines.filter((line) => isEquipped(line.text))
   const armourLines = equippedLines
@@ -1189,16 +1262,34 @@ export function extractEquipment(text: string): EquipmentSnapshot {
   const ringLines = jewelleryLines.filter((line) => hasAny(line, ringPatterns))
   const talismanLine = talismanLines[0]
 
-  const bodyArmourDetails = buildEquipmentItem('bodyArmour', bodyArmourLine)
-  const shieldDetails = buildEquipmentItem('shield', shieldLine)
-  const footwearDetails = buildEquipmentItems('footwear', footwearLines)
-  const helmetDetails = buildEquipmentItems('helmet', helmetLines)
-  const glovesDetails = buildEquipmentItems('gloves', glovesLines)
-  const cloakDetails = buildEquipmentItems('cloak', cloakLines)
-  const orbDetails = buildEquipmentItem('orb', orbLine)
-  const amuletDetails = buildEquipmentItem('amulet', amuletLine)
-  const ringDetails = buildEquipmentItems('ring', ringLines)
-  const talismanDetails = buildEquipmentItem('talisman', talismanLine)
+  const bodyArmourDetails = buildEquipmentItemWithHeaderState(
+    'bodyArmour',
+    bodyArmourLine,
+    headerEquipStates,
+  )
+  const shieldDetails = buildEquipmentItemWithHeaderState('shield', shieldLine, headerEquipStates)
+  const footwearDetails = footwearLines
+    .map((line) => buildEquipmentItemWithHeaderState('footwear', line, headerEquipStates))
+    .filter((item): item is EquipmentItemSnapshot => Boolean(item))
+  const helmetDetails = helmetLines
+    .map((line) => buildEquipmentItemWithHeaderState('helmet', line, headerEquipStates))
+    .filter((item): item is EquipmentItemSnapshot => Boolean(item))
+  const glovesDetails = glovesLines
+    .map((line) => buildEquipmentItemWithHeaderState('gloves', line, headerEquipStates))
+    .filter((item): item is EquipmentItemSnapshot => Boolean(item))
+  const cloakDetails = cloakLines
+    .map((line) => buildEquipmentItemWithHeaderState('cloak', line, headerEquipStates))
+    .filter((item): item is EquipmentItemSnapshot => Boolean(item))
+  const orbDetails = buildEquipmentItemWithHeaderState('orb', orbLine, headerEquipStates)
+  const amuletDetails = buildEquipmentItemWithHeaderState('amulet', amuletLine, headerEquipStates)
+  const ringDetails = ringLines
+    .map((line) => buildEquipmentItemWithHeaderState('ring', line, headerEquipStates))
+    .filter((item): item is EquipmentItemSnapshot => Boolean(item))
+  const talismanDetails = buildEquipmentItemWithHeaderState(
+    'talisman',
+    talismanLine,
+    headerEquipStates,
+  )
 
   return {
     bodyArmour: bodyArmourDetails?.rawName ?? 'none',
