@@ -10,12 +10,13 @@ Typical bootstrap command from the monorepo root:
 
 ```bash
 npm run bootstrap -- \
-  --server CAO,CBR2,CNC \
+  --server CBRG,CDI,CXC,CAO,CBR2,CNC,CPO \
   --per-bucket 10 \
   --min-xl 10 \
-  --data-dir ./data/qa-20 \
+  --data-dir ./data/bootstrap-stratified-xl10 \
   --fresh \
-  --verbose
+  --verbose \
+  --timeout-ms 30000
 ```
 
 What this gives you:
@@ -29,12 +30,13 @@ Operational details worth remembering:
 
 - the first discovery pass is tail-first, so a fresh bucket starts by reading only the most recent logfile bytes rather than the entire remote logfile
 - the tail size is controlled by `--initial-tail-bytes`
-- this workspace command runs inside `apps/pipeline`, so `--data-dir ./data/qa-20` resolves to `apps/pipeline/data/qa-20` from the repository root
+- this workspace command runs inside `apps/pipeline`, so `--data-dir ./data/bootstrap-stratified-xl10` resolves to `apps/pipeline/data/bootstrap-stratified-xl10` from the repository root
 - `--fresh` clears DB, morgues, and audit output but keeps logfile slice cache
 - `--fresh-logfiles` also clears cached logfile slices when you want a clean discovery baseline
 - if a bootstrap bucket is underfilled, the pipeline can keep walking backward through older logfile chunks via `--backfill-chunk-bytes`
+- `--timeout-ms 30000` is a practical choice for this broader seven-server subset when the runner and servers are spread across different regions; depending on where the command is run, a different server could be the slow one
 
-The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. Many QA examples use `CAO`, `CBR2`, and `CNC` as a smaller subset, but omitting `--server` targets the full active set.
+The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. This workflow example uses the broader practical subset `CBRG`, `CDI`, `CXC`, `CAO`, `CBR2`, `CNC`, and `CPO`, while intentionally skipping `LLD`; `CUE` is not part of the current active manifest.
 
 For repeated QA passes, `incremental` mode keeps the same discovery logic but starts from the saved logfile offsets and then samples only candidates newly discovered since `--since`.
 
@@ -48,7 +50,7 @@ After collection, export each successful parse as:
 under a review directory such as:
 
 ```text
-/tmp/dcss-parser-qa-20/review/<SERVER>/<BUCKET>/<ENDED_AT>__<PLAYER>/
+apps/pipeline/data/bootstrap-stratified-xl10/review/<SERVER>/<BUCKET>/<ENDED_AT>__<PLAYER>/
 ```
 
 This is useful because parser bugs are easiest to catch when the raw morgue and the parsed JSON are side by side.

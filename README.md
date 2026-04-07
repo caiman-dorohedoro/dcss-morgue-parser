@@ -73,10 +73,10 @@ npm run build
 Collect and parse a QA sample:
 
 ```bash
-npm run bootstrap -- --server CAO,CBR2,CNC --per-bucket 10 --min-xl 10 --data-dir ./data/qa-20 --fresh --verbose
+npm run bootstrap -- --server CBRG,CDI,CXC,CAO,CBR2,CNC,CPO --per-bucket 10 --min-xl 10 --data-dir ./data/bootstrap-stratified-xl10 --fresh --verbose --timeout-ms 30000
 ```
 
-This workspace command runs inside `apps/pipeline`, so `--data-dir ./data/qa-20` resolves to `apps/pipeline/data/qa-20` from the repository root. The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`; omit `--server` to target the full active set.
+This workspace command runs inside `apps/pipeline`, so `--data-dir ./data/bootstrap-stratified-xl10` resolves to `apps/pipeline/data/bootstrap-stratified-xl10` from the repository root. The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. This example uses a broader practical subset of `CBRG`, `CDI`, `CXC`, `CAO`, `CBR2`, `CNC`, and `CPO`, while intentionally skipping `LLD`; `CUE` is not part of the current active manifest. `--timeout-ms 30000` is an operational cushion for this geographically broader run, not a claim that `CXC` is intrinsically slower everywhere.
 
 ## Key Documents
 

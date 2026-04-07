@@ -79,7 +79,7 @@ The original collection workflow sampled by `(server, version)` bucket rather th
 - stable and trunk formatting differences
 - species and equipment edge cases
 
-In the current pipeline manifest, the active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`, even though many QA examples use a smaller subset for faster, more predictable review loops.
+In the current pipeline manifest, the active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. In practice, many QA examples use the broader operational subset `CBRG`, `CDI`, `CXC`, `CAO`, `CBR2`, `CNC`, and `CPO`, which keeps coverage broad while skipping `LLD`; `CUE` is not part of the current active manifest.
 
 That sampling mindset is still reflected in the QA workflow and fixture selection.
 

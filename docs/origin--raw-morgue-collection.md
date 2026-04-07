@@ -63,13 +63,17 @@ The pipeline used an explicit active server set derived from the broader `dcss-s
 - `LLD`
 - `CPO`
 
-During parser QA we often sampled from a smaller subset such as:
+During parser QA we often sampled from a broader practical subset such as:
 
+- `CBRG`
+- `CDI`
+- `CXC`
 - `CAO`
 - `CBR2`
 - `CNC`
+- `CPO`
 
-That smaller subset kept review loops short while still covering multiple hosts and both stable/trunk buckets. `CUE` and some other special cases were intentionally excluded when anonymous fetches were not reliable.
+That subset kept review loops broad across multiple hosts while intentionally skipping `LLD`; `CUE` and some other special cases were intentionally excluded when anonymous fetches were not reliable.
 
 ## Version Buckets
 
