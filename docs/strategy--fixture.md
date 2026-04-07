@@ -13,6 +13,11 @@ Under `fixtures/morgue/`, that maps to:
 - `full/` for complete raw morgues
 - `expected/` for expected structured JSON
 
+Expected JSON stays in one flat directory, but the file names encode the source fixture type:
+
+- `focused-*.json` for fixtures under `focused/`
+- `full-*.json` for fixtures under `full/`
+
 ## Extractor Tests
 
 Extractor tests are good for:

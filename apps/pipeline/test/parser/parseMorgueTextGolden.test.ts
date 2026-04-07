@@ -11,9 +11,19 @@ function loadMorgueFixture(directory: 'focused' | 'full', name: string) {
   )
 }
 
-function loadExpectedRecord(name: string): ParsedMorgueTextRecord {
+function expectedFixtureName(directory: 'focused' | 'full', morgueName: string) {
+  return `${directory}-${morgueName.replace(/\.txt$/i, '.json')}`
+}
+
+function loadExpectedRecord(directory: 'focused' | 'full', morgueName: string): ParsedMorgueTextRecord {
   return JSON.parse(
-    readFileSync(path.resolve(process.cwd(), `../../fixtures/morgue/expected/${name}`), 'utf8'),
+    readFileSync(
+      path.resolve(
+        process.cwd(),
+        `../../fixtures/morgue/expected/${expectedFixtureName(directory, morgueName)}`,
+      ),
+      'utf8',
+    ),
   ) as ParsedMorgueTextRecord
 }
 
@@ -22,37 +32,31 @@ const GOLDEN_CASES = [
     name: 'cao-0.34-webtiles-quit',
     directory: 'focused',
     morgue: 'cao-0.34-webtiles-quit.txt',
-    expected: 'cao-0.34-webtiles-quit.json',
   },
   {
     name: 'cao-trunk-webtiles-death',
     directory: 'focused',
     morgue: 'cao-trunk-webtiles-death.txt',
-    expected: 'cao-trunk-webtiles-death.json',
   },
   {
     name: 'spell-library-table-full',
     directory: 'focused',
     morgue: 'spell-library-table-full.txt',
-    expected: 'spell-library-table-full.json',
   },
   {
     name: 'colored-draconian',
     directory: 'focused',
     morgue: 'colored-draconian.txt',
-    expected: 'colored-draconian.json',
   },
   {
     name: 'skryme-jiyva-full',
     directory: 'focused',
     morgue: 'skryme-jiyva-full.txt',
-    expected: 'skryme-jiyva-full.json',
   },
   {
     name: 'knorpule3000-gozag-full',
     directory: 'focused',
     morgue: 'knorpule3000-gozag-full.txt',
-    expected: 'knorpule3000-gozag-full.json',
   },
 ] as const
 
@@ -63,7 +67,6 @@ const FULL_GOLDEN_CASES = readdirSync(path.resolve(process.cwd(), '../../fixture
     name: `full/${name}`,
     directory: 'full' as const,
     morgue: name,
-    expected: name.replace(/\.txt$/i, '.json'),
   }))
 
 describe('parseMorgueText golden fixtures', () => {
@@ -73,7 +76,7 @@ describe('parseMorgueText golden fixtures', () => {
 
       expect(result.ok).toBe(true)
       if (result.ok) {
-        expect(result.record).toEqual(loadExpectedRecord(testCase.expected))
+        expect(result.record).toEqual(loadExpectedRecord(testCase.directory, testCase.morgue))
       }
     })
   }
