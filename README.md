@@ -40,7 +40,7 @@ dcss-morgue-parser/
 - [`fixtures/morgue`](./fixtures/morgue/)
   - focused parser regressions
   - full morgue goldens
-  - expected JSON snapshots
+  - expected JSON snapshots prefixed with `focused-` or `full-`
 - [`docs`](./docs/meta--catalog.md)
   - project-level provenance, QA workflow, and maintenance strategy docs
 
