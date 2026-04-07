@@ -27,6 +27,21 @@ What this gives you:
 - roughly `server_count * bucket_count * per_bucket` successful parses
 - bias toward richer morgues when `--min-xl` is used
 
+Operational details worth remembering:
+
+- the first discovery pass is tail-first, so a fresh bucket starts by reading
+  only the most recent logfile bytes rather than the entire remote logfile
+- the tail size is controlled by `--initial-tail-bytes`
+- `--fresh` clears DB, morgues, and audit output but keeps logfile slice cache
+- `--fresh-logfiles` also clears cached logfile slices when you want a clean
+  discovery baseline
+- if a bootstrap bucket is underfilled, the pipeline can keep walking backward
+  through older logfile chunks via `--backfill-chunk-bytes`
+
+For repeated QA passes, `incremental` mode keeps the same discovery logic but
+starts from the saved logfile offsets and then samples only candidates newly
+discovered since `--since`.
+
 ## 2. Export Raw/Parsed Review Pairs
 
 After collection, export each successful parse as:

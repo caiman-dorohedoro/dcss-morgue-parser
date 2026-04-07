@@ -33,6 +33,48 @@ Xlog/logfile is useful for:
 
 Morgues are then fetched as the authoritative extraction source.
 
+## Logfile Slice Strategy
+
+The collector did not assume that full remote logfiles should be downloaded on
+every run.
+
+When a `(server, version)` bucket was first seen, discovery read only a tail
+slice of the logfile. The default was controlled by `--initial-tail-bytes`, and
+the implementation intentionally trimmed the leading partial record when the
+range started in the middle of a line.
+
+After that first discovery pass, the pipeline stored a byte offset for each
+`(server, version, logfile_url)` and only requested bytes after the saved
+offset. It also advanced the saved offset only after complete newline-terminated
+records were committed, so an appended partial line would not be treated as a
+real candidate yet.
+
+The pipeline also cached fetched logfile slices on disk by server, version, and
+starting byte offset. That cache made repeated discovery and later backfill work
+reproducible without forcing the collector to re-download the same logfile
+ranges every time.
+
+## Incremental Discovery and Backfill
+
+Incremental runs still performed discovery first. The practical difference was
+in candidate selection, not in whether discovery happened at all.
+
+On an incremental run, the collector re-read each logfile from the saved byte
+offset, inserted any newly discovered complete records, and then sampled only
+candidates whose `discovered_at` was within the requested `--since` window.
+That was the mechanism used to pick up recently appended logfile rows without
+reprocessing the entire logfile history.
+
+Bootstrap runs had a different fallback when a bucket did not yet have enough
+eligible candidates. In that case the pipeline could request older logfile
+chunks before the current cursor using `--backfill-chunk-bytes`. Backfill worked
+from older byte ranges toward the beginning of the file and reused the nearest
+older cached slice when available.
+
+This combination of tail-first discovery, offset-based incremental sync, and
+optional backfill was a major part of how the pipeline stayed polite while
+still building useful QA samples from public servers.
+
 ## Server Selection
 
 The pipeline used an explicit active server set derived from the broader
