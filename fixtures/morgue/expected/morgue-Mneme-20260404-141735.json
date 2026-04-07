@@ -1,0 +1,930 @@
+{
+  "playerName": "Mneme",
+  "version": "0.35-a0-256-g859e8e3ba0",
+  "species": "Poltergeist",
+  "speciesVariant": null,
+  "background": "Enchanter",
+  "xl": 22,
+  "ac": 10,
+  "ev": 2,
+  "sh": 0,
+  "strength": 12,
+  "intelligence": 32,
+  "dexterity": 22,
+  "bodyArmour": "none",
+  "shield": "none",
+  "helmets": [],
+  "gloves": [
+    "pair of gloves of the Hills"
+  ],
+  "footwear": [
+    "pair of boots of Sunlight",
+    "pair of boots of rampaging"
+  ],
+  "cloaks": [
+    "cloak of willpower",
+    "scarf of repulsion",
+    "scarf of Untold Secrets"
+  ],
+  "orb": "orb of guile",
+  "amulet": "amulet of the Cockroach",
+  "rings": [
+    "ring \"Lecas\"",
+    "ring \"Biffeacs\""
+  ],
+  "talisman": "none",
+  "form": null,
+  "glovesDetails": [
+    {
+      "rawName": "pair of gloves of the Hills",
+      "displayName": "pair of gloves of the Hills",
+      "objectClass": "armour",
+      "equipState": "haunted",
+      "isCursed": false,
+      "baseType": "gloves",
+      "enchant": 0,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "rElec rF+ Regen+ Dex-2",
+      "properties": {
+        "numeric": {
+          "rF": 1,
+          "Dex": -2,
+          "Regen": 1
+        },
+        "flags": {
+          "rElec": true
+        },
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "rF": 1,
+          "Dex": -2,
+          "Regen": 1
+        },
+        "flags": {
+          "rElec": true
+        },
+        "specials": []
+      }
+    }
+  ],
+  "footwearDetails": [
+    {
+      "rawName": "pair of boots of Sunlight",
+      "displayName": "pair of boots of Sunlight",
+      "objectClass": "armour",
+      "equipState": "haunted",
+      "isCursed": false,
+      "baseType": "boots",
+      "enchant": 2,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "rC+ Str+4",
+      "properties": {
+        "numeric": {
+          "rC": 1,
+          "Str": 4
+        },
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "rC": 1,
+          "Str": 4
+        },
+        "flags": {},
+        "specials": []
+      }
+    },
+    {
+      "rawName": "pair of boots of rampaging",
+      "displayName": "pair of boots of rampaging",
+      "objectClass": "armour",
+      "equipState": "haunted",
+      "isCursed": false,
+      "baseType": "boots",
+      "enchant": 2,
+      "artifactKind": "normal",
+      "ego": "rampaging",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "flags": {
+          "Rampage": true
+        },
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {
+          "Rampage": true
+        },
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    }
+  ],
+  "cloakDetails": [
+    {
+      "rawName": "cloak of willpower",
+      "displayName": "cloak of willpower",
+      "objectClass": "armour",
+      "equipState": "haunted",
+      "isCursed": false,
+      "baseType": "cloak",
+      "enchant": 2,
+      "artifactKind": "normal",
+      "ego": "willpower",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Will": 1
+        },
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {
+          "Will": 1
+        },
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    },
+    {
+      "rawName": "scarf of repulsion",
+      "displayName": "scarf of repulsion",
+      "objectClass": "armour",
+      "equipState": "haunted",
+      "isCursed": false,
+      "baseType": "scarf",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": "repulsion",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "flags": {
+          "Repulsion": true
+        },
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {
+          "Repulsion": true
+        },
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    },
+    {
+      "rawName": "scarf of Untold Secrets",
+      "displayName": "scarf of Untold Secrets",
+      "objectClass": "armour",
+      "equipState": "haunted",
+      "isCursed": false,
+      "baseType": "scarf",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "+Inv, rCorr Str+4",
+      "properties": {
+        "numeric": {
+          "Str": 4
+        },
+        "flags": {
+          "rCorr": true,
+          "Inv": true
+        },
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Str": 4
+        },
+        "flags": {
+          "rCorr": true,
+          "Inv": true
+        },
+        "specials": []
+      }
+    }
+  ],
+  "orbDetails": {
+    "rawName": "orb of guile",
+    "displayName": "orb of guile",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "orb",
+    "enchant": null,
+    "artifactKind": "normal",
+    "ego": "guile",
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "flags": {
+        "Guile": true
+      },
+      "specials": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "flags": {
+        "Guile": true
+      },
+      "specials": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    }
+  },
+  "amuletDetails": {
+    "rawName": "amulet of the Cockroach",
+    "displayName": "randart amulet",
+    "objectClass": "jewellery",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "amulet",
+    "enchant": null,
+    "artifactKind": "randart",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": "rF+ Regen+ Int+3",
+    "properties": {
+      "numeric": {
+        "rF": 1,
+        "Int": 3,
+        "Regen": 1
+      },
+      "flags": {},
+      "specials": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "artifactProperties": {
+      "numeric": {
+        "rF": 1,
+        "Int": 3,
+        "Regen": 1
+      },
+      "flags": {},
+      "specials": []
+    }
+  },
+  "ringDetails": [
+    {
+      "rawName": "ring \"Lecas\"",
+      "displayName": "randart ring",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Will++ MP+9",
+      "properties": {
+        "numeric": {
+          "Will": 2,
+          "MP": 9
+        },
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Will": 2,
+          "MP": 9
+        },
+        "flags": {},
+        "specials": []
+      }
+    },
+    {
+      "rawName": "ring \"Biffeacs\"",
+      "displayName": "randart ring",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "rElec Dex+6 SInv",
+      "properties": {
+        "numeric": {
+          "Dex": 6
+        },
+        "flags": {
+          "rElec": true,
+          "SInv": true
+        },
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Dex": 6
+        },
+        "flags": {
+          "rElec": true,
+          "SInv": true
+        },
+        "specials": []
+      }
+    }
+  ],
+  "skills": {
+    "fighting": 10,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 14,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 0,
+    "dodging": 18,
+    "shields": 0,
+    "stealth": 15,
+    "spellcasting": 16.2,
+    "conjurations": 0,
+    "hexes": 24,
+    "summonings": 11,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 6,
+    "fireMagic": 0,
+    "iceMagic": 9,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 9,
+    "evocations": 16,
+    "shapeshifting": 0
+  },
+  "effectiveSkills": {
+    "fighting": 10,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 14,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 0,
+    "dodging": 18,
+    "shields": 0,
+    "stealth": 15,
+    "spellcasting": 16.2,
+    "conjurations": 0,
+    "hexes": 24,
+    "summonings": 11,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 6,
+    "fireMagic": 0,
+    "iceMagic": 9,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 9,
+    "evocations": 16,
+    "shapeshifting": 0
+  },
+  "spells": [
+    {
+      "name": "Frozen Ramparts",
+      "failurePercent": 1,
+      "memorized": true
+    },
+    {
+      "name": "Discord",
+      "failurePercent": 1,
+      "memorized": true
+    },
+    {
+      "name": "Enfeeble",
+      "failurePercent": 1,
+      "memorized": true
+    },
+    {
+      "name": "Summon Mana Viper",
+      "failurePercent": 1,
+      "memorized": true
+    },
+    {
+      "name": "Confusing Touch",
+      "failurePercent": 0,
+      "memorized": true
+    },
+    {
+      "name": "Tukima's Dance",
+      "failurePercent": 0,
+      "memorized": true
+    },
+    {
+      "name": "Sphinx Sisters",
+      "failurePercent": 1,
+      "memorized": true
+    },
+    {
+      "name": "Yara's Violent Unravelling",
+      "failurePercent": 1,
+      "memorized": true
+    },
+    {
+      "name": "Ensorcelled Hibernation",
+      "failurePercent": 0,
+      "memorized": true
+    },
+    {
+      "name": "Slow",
+      "failurePercent": 0,
+      "memorized": false
+    },
+    {
+      "name": "Jinxbite",
+      "failurePercent": 0,
+      "memorized": false
+    },
+    {
+      "name": "Sigil of Binding",
+      "failurePercent": 0,
+      "memorized": false
+    },
+    {
+      "name": "Cause Fear",
+      "failurePercent": 0,
+      "memorized": false
+    },
+    {
+      "name": "Apportation",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Freeze",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Kinetic Grapnel",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Magic Dart",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Poisonous Vapours",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Sandblast",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Summon Small Mammal",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Call Imp",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Call Canine Familiar",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Gloom",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Inner Flame",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Dimensional Bullseye",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Martyr's Knell",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Olgreb's Toxic Radiance",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Summon Seismosaurus Egg",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Metabolic Englaciation",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Silence",
+      "failurePercent": 1,
+      "memorized": false
+    },
+    {
+      "name": "Momentum Strike",
+      "failurePercent": 2,
+      "memorized": false
+    },
+    {
+      "name": "Static Discharge",
+      "failurePercent": 2,
+      "memorized": false
+    },
+    {
+      "name": "Summon Cactus Giant",
+      "failurePercent": 2,
+      "memorized": false
+    },
+    {
+      "name": "Alistair's Intoxication",
+      "failurePercent": 3,
+      "memorized": false
+    },
+    {
+      "name": "Fugue of the Fallen",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Launch Clockwork Bee",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Maxwell's Portable Piledriver",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Passwall",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Vampiric Draining",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Volatile Blastmotes",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Fulminant Prism",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Leda's Liquefaction",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Petrify",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Sticky Flame",
+      "failurePercent": 4,
+      "memorized": false
+    },
+    {
+      "name": "Hoarfrost Cannonade",
+      "failurePercent": 7,
+      "memorized": false
+    },
+    {
+      "name": "Sculpt Simulacrum",
+      "failurePercent": 12,
+      "memorized": false
+    },
+    {
+      "name": "Detonation Catalyst",
+      "failurePercent": 13,
+      "memorized": false
+    },
+    {
+      "name": "Irradiate",
+      "failurePercent": 13,
+      "memorized": false
+    },
+    {
+      "name": "Airstrike",
+      "failurePercent": 16,
+      "memorized": false
+    },
+    {
+      "name": "Brom's Barrelling Boulder",
+      "failurePercent": 16,
+      "memorized": false
+    },
+    {
+      "name": "Flame Wave",
+      "failurePercent": 16,
+      "memorized": false
+    },
+    {
+      "name": "Forge Blazeheart Golem",
+      "failurePercent": 16,
+      "memorized": false
+    },
+    {
+      "name": "Iskenderun's Battlesphere",
+      "failurePercent": 16,
+      "memorized": false
+    },
+    {
+      "name": "Iskenderun's Mystic Blast",
+      "failurePercent": 16,
+      "memorized": false
+    },
+    {
+      "name": "Passage of Golubria",
+      "failurePercent": 16,
+      "memorized": false
+    },
+    {
+      "name": "Eringya's Noxious Bog",
+      "failurePercent": 22,
+      "memorized": false
+    },
+    {
+      "name": "Ozocubu's Refrigeration",
+      "failurePercent": 34,
+      "memorized": false
+    },
+    {
+      "name": "Arcjolt",
+      "failurePercent": 41,
+      "memorized": false
+    },
+    {
+      "name": "Curse of Agony",
+      "failurePercent": 41,
+      "memorized": false
+    },
+    {
+      "name": "Lee's Rapid Deconstruction",
+      "failurePercent": 41,
+      "memorized": false
+    },
+    {
+      "name": "Nazja's Percussive Tempering",
+      "failurePercent": 41,
+      "memorized": false
+    },
+    {
+      "name": "Haunt",
+      "failurePercent": 82,
+      "memorized": false
+    },
+    {
+      "name": "Malign Gateway",
+      "failurePercent": 82,
+      "memorized": false
+    },
+    {
+      "name": "Death Channel",
+      "failurePercent": 94,
+      "memorized": false
+    },
+    {
+      "name": "Forge Monarch Bomb",
+      "failurePercent": 94,
+      "memorized": false
+    },
+    {
+      "name": "Fortress Blast",
+      "failurePercent": 94,
+      "memorized": false
+    },
+    {
+      "name": "Gell's Gavotte",
+      "failurePercent": 94,
+      "memorized": false
+    },
+    {
+      "name": "Plasma Beam",
+      "failurePercent": 94,
+      "memorized": false
+    },
+    {
+      "name": "Starburst",
+      "failurePercent": 94,
+      "memorized": false
+    },
+    {
+      "name": "Magnavolt",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Manifold Assault",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Orb of Destruction",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Disjunction",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Fulsome Fusillade",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Ignition",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Fire Storm",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Shatter",
+      "failurePercent": 100,
+      "memorized": false
+    }
+  ],
+  "mutations": [
+    {
+      "name": "insubstantial",
+      "level": null
+    },
+    {
+      "name": "cold resistance",
+      "level": 1
+    },
+    {
+      "name": "negative energy resistance",
+      "level": 3
+    },
+    {
+      "name": "torment resistance",
+      "level": 2
+    },
+    {
+      "name": "float",
+      "level": null
+    },
+    {
+      "name": "formless",
+      "level": 2
+    },
+    {
+      "name": "trickster",
+      "level": null
+    },
+    {
+      "name": "accursed",
+      "level": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+set -euo pipefail
+
+ALLOWED_NAME=$(git config --local hooks.allowedUserName || true)
+ALLOWED_EMAIL=$(git config --local hooks.allowedUserEmail || true)
+
+if [ -z "$ALLOWED_NAME" ] || [ -z "$ALLOWED_EMAIL" ]; then
+  echo "Commit rejected: hooks.allowedUserName / hooks.allowedUserEmail are not set."
+  echo "Run:"
+  echo "  git config --local hooks.allowedUserName \"YOUR_NAME\""
+  echo "  git config --local hooks.allowedUserEmail \"YOUR_EMAIL\""
+  exit 1
+fi
+
+CURRENT_NAME=$(git config user.name || true)
+CURRENT_EMAIL=$(git config user.email || true)
+
+if [ "$CURRENT_NAME" != "$ALLOWED_NAME" ]; then
+  echo "Commit rejected: user.name must be '$ALLOWED_NAME' but is '$CURRENT_NAME'."
+  exit 1
+fi
+
+if [ "$CURRENT_EMAIL" != "$ALLOWED_EMAIL" ]; then
+  echo "Commit rejected: user.email must be '$ALLOWED_EMAIL' but is '$CURRENT_EMAIL'."
+  exit 1
+fi
+
+echo "user.name and user.email match the allowed values."
+exit 0

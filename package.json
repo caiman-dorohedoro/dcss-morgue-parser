@@ -1,0 +1,17 @@
+{
+  "name": "dcss-morgue-parser-workspace",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/parser",
+    "typecheck": "npm run typecheck -w packages/parser && npm run typecheck -w apps/pipeline",
+    "test": "npm run test -w apps/pipeline",
+    "bootstrap": "npm run bootstrap -w apps/pipeline --",
+    "incremental": "npm run incremental -w apps/pipeline --",
+    "audit": "npm run audit -w apps/pipeline --",
+    "pack:parser": "npm run pack:dry -w packages/parser"
+  }
+}

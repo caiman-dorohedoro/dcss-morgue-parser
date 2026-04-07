@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+coverage
+*.sqlite
+*.db
+*.log
+tmp
+review
+apps/pipeline/data

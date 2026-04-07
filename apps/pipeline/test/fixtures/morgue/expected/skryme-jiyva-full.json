@@ -1,0 +1,522 @@
+{
+  "playerName": "Skryme",
+  "version": "0.35-a0-256-g859e8e3ba0",
+  "species": "Minotaur",
+  "speciesVariant": null,
+  "background": "Fighter",
+  "xl": 17,
+  "ac": 10,
+  "ev": 12,
+  "sh": 15,
+  "strength": 33,
+  "intelligence": 9,
+  "dexterity": 10,
+  "bodyArmour": "troll leather armour",
+  "shield": "kite shield of reflection",
+  "helmets": [],
+  "gloves": [],
+  "footwear": [],
+  "cloaks": [
+    "cloak of poison resistance"
+  ],
+  "orb": "none",
+  "amulet": "amulet of Dazytsee",
+  "rings": [
+    "ring of protection",
+    "ring of strength"
+  ],
+  "talisman": "none",
+  "form": null,
+  "bodyArmourDetails": {
+    "rawName": "troll leather armour",
+    "displayName": "troll leather armour",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "troll leather armour",
+    "enchant": 0,
+    "artifactKind": "normal",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": "Pargi",
+    "properties": {
+      "numeric": {
+        "Regen": 1
+      },
+      "flags": {},
+      "specials": [
+        "Pargi"
+      ]
+    },
+    "intrinsicProperties": {
+      "numeric": {
+        "Regen": 1
+      },
+      "flags": {},
+      "specials": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    }
+  },
+  "shieldDetails": {
+    "rawName": "kite shield of reflection",
+    "displayName": "kite shield of reflection",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "kite shield",
+    "enchant": 2,
+    "artifactKind": "normal",
+    "ego": "reflection",
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "flags": {
+        "Reflect": true
+      },
+      "specials": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "flags": {
+        "Reflect": true
+      },
+      "specials": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    }
+  },
+  "cloakDetails": [
+    {
+      "rawName": "cloak of poison resistance",
+      "displayName": "cloak of poison resistance",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "cloak",
+      "enchant": 0,
+      "artifactKind": "normal",
+      "ego": "poison resistance",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "flags": {
+          "rPois": true
+        },
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {
+          "rPois": true
+        },
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    }
+  ],
+  "amuletDetails": {
+    "rawName": "amulet of Dazytsee",
+    "displayName": "randart amulet",
+    "objectClass": "jewellery",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "amulet",
+    "enchant": null,
+    "artifactKind": "randart",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": "Dissipate Fly Regen+",
+    "properties": {
+      "numeric": {
+        "Regen": 1
+      },
+      "flags": {
+        "Fly": true,
+        "Dissipate": true
+      },
+      "specials": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "artifactProperties": {
+      "numeric": {
+        "Regen": 1
+      },
+      "flags": {
+        "Fly": true,
+        "Dissipate": true
+      },
+      "specials": []
+    }
+  },
+  "ringDetails": [
+    {
+      "rawName": "ring of protection",
+      "displayName": "ring of protection",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": 4,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "protection",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "AC": 4
+        },
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {
+          "AC": 4
+        },
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    },
+    {
+      "rawName": "ring of strength",
+      "displayName": "ring of strength",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": 6,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "strength",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Str": 6
+        },
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {
+          "Str": 6
+        },
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    }
+  ],
+  "skills": {
+    "fighting": 17.6,
+    "macesFlails": 0,
+    "axes": 18,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 16.3,
+    "dodging": 6.5,
+    "shields": 17.7,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 14.7,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "effectiveSkills": {
+    "fighting": 17.6,
+    "macesFlails": 0,
+    "axes": 18,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 16.3,
+    "dodging": 6.5,
+    "shields": 17.7,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 14.7,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "spells": [
+    {
+      "name": "Shock",
+      "failurePercent": 47,
+      "memorized": false
+    },
+    {
+      "name": "Summon Small Mammal",
+      "failurePercent": 47,
+      "memorized": false
+    },
+    {
+      "name": "Grave Claw",
+      "failurePercent": 63,
+      "memorized": false
+    },
+    {
+      "name": "Searing Ray",
+      "failurePercent": 63,
+      "memorized": false
+    },
+    {
+      "name": "Static Discharge",
+      "failurePercent": 63,
+      "memorized": false
+    },
+    {
+      "name": "Confusing Touch",
+      "failurePercent": 85,
+      "memorized": false
+    },
+    {
+      "name": "Stone Arrow",
+      "failurePercent": 85,
+      "memorized": false
+    },
+    {
+      "name": "Summon Ice Beast",
+      "failurePercent": 85,
+      "memorized": false
+    },
+    {
+      "name": "Swiftness",
+      "failurePercent": 85,
+      "memorized": false
+    },
+    {
+      "name": "Volatile Blastmotes",
+      "failurePercent": 85,
+      "memorized": false
+    },
+    {
+      "name": "Airstrike",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Animate Dead",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Cigotuvi's Putrefaction",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Fulminant Prism",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Iskenderun's Mystic Blast",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Leda's Liquefaction",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Olgreb's Toxic Radiance",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Passage of Golubria",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Petrify",
+      "failurePercent": 99,
+      "memorized": false
+    },
+    {
+      "name": "Alistair's Walking Alembic",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Arcjolt",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Borgnjor's Vile Clutch",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Curse of Agony",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Freezing Cloud",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Metabolic Englaciation",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Ozocubu's Refrigeration",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Lehudib's Crystal Spear",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Polar Vortex",
+      "failurePercent": 100,
+      "memorized": false
+    }
+  ],
+  "mutations": [
+    {
+      "name": "horns",
+      "level": 3
+    },
+    {
+      "name": "retaliatory headbutt",
+      "level": null
+    },
+    {
+      "name": "claws",
+      "level": 3
+    },
+    {
+      "name": "talons",
+      "level": 2
+    },
+    {
+      "name": "clever",
+      "level": 1
+    },
+    {
+      "name": "regeneration",
+      "level": 1
+    },
+    {
+      "name": "eyeballs",
+      "level": 1
+    },
+    {
+      "name": "jelly sensing items",
+      "level": null
+    },
+    {
+      "name": "MP-powered wands",
+      "level": null
+    },
+    {
+      "name": "efficient magic",
+      "level": 1
+    },
+    {
+      "name": "slime shroud",
+      "level": null
+    },
+    {
+      "name": "feed off suffering",
+      "level": 1
+    }
+  ]
+}

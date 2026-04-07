@@ -1,0 +1,288 @@
+{
+  "playerName": "dolemite99",
+  "version": "0.35-a0-181-g84ebf06",
+  "species": "Minotaur",
+  "speciesVariant": null,
+  "background": "Berserker",
+  "xl": 9,
+  "ac": 14,
+  "ev": 6,
+  "sh": 0,
+  "strength": 25,
+  "intelligence": 4,
+  "dexterity": 11,
+  "bodyArmour": "plate armour",
+  "shield": "none",
+  "helmets": [],
+  "gloves": [],
+  "footwear": [
+    "pair of boots"
+  ],
+  "cloaks": [
+    "cloak"
+  ],
+  "orb": "none",
+  "amulet": "none",
+  "rings": [
+    "ring of slaying",
+    "ring of flight"
+  ],
+  "talisman": "none",
+  "form": null,
+  "bodyArmourDetails": {
+    "rawName": "plate armour",
+    "displayName": "plate armour",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "plate armour",
+    "enchant": 0,
+    "artifactKind": "normal",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "flags": {},
+      "specials": []
+    }
+  },
+  "footwearDetails": [
+    {
+      "rawName": "pair of boots",
+      "displayName": "pair of boots",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "boots",
+      "enchant": 0,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    }
+  ],
+  "cloakDetails": [
+    {
+      "rawName": "cloak",
+      "displayName": "cloak",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "cloak",
+      "enchant": 1,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    }
+  ],
+  "ringDetails": [
+    {
+      "rawName": "ring of slaying",
+      "displayName": "ring of slaying",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": 4,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "slaying",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Slay": 4
+        },
+        "flags": {},
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {
+          "Slay": 4
+        },
+        "flags": {},
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    },
+    {
+      "rawName": "ring of flight",
+      "displayName": "ring of flight",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "flight",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "flags": {
+          "Fly": true
+        },
+        "specials": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "flags": {
+          "Fly": true
+        },
+        "specials": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "flags": {},
+        "specials": []
+      }
+    }
+  ],
+  "skills": {
+    "fighting": 3.6,
+    "macesFlails": 0,
+    "axes": 13.1,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 8,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 2.4,
+    "dodging": 2.1,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "effectiveSkills": {
+    "fighting": 3.6,
+    "macesFlails": 0,
+    "axes": 13.1,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 8,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 2.4,
+    "dodging": 2.1,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "spells": [],
+  "mutations": [
+    {
+      "name": "horns",
+      "level": 2
+    },
+    {
+      "name": "retaliatory headbutt",
+      "level": null
+    }
+  ]
+}
