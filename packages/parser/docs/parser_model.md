@@ -180,6 +180,7 @@ Each spell row stores:
 - `memorized`
 
 Built-in canonical spell names help restore truncated morgue spell names like `Lehudib's Crystal Sp` back to `Lehudib's Crystal Spear`.
+When a modern spell-library row is marked `Failure = N/A` but still lists a level, the parser keeps that spell and records it as `failurePercent = 100` instead of dropping the row.
 
 Code:
 

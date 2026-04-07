@@ -898,6 +898,16 @@
       "name": "Chain Lightning",
       "failurePercent": 100,
       "memorized": false
+    },
+    {
+      "name": "Maxwell's Portable Piledriver",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Swiftness",
+      "failurePercent": 100,
+      "memorized": false
     }
   ],
   "mutations": [

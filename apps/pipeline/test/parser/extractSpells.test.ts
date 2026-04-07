@@ -78,6 +78,34 @@ describe('extractSpells', () => {
     })
   })
 
+  it('keeps unusable spell-library entries as 100 percent failures', () => {
+    const spells = extractSpells(loadFixture('spell-library-table-unusable-full.txt'))
+
+    expect(spells).toContainEqual({
+      name: 'Foxfire',
+      failurePercent: 0,
+      memorized: false,
+    })
+
+    expect(spells).toContainEqual({
+      name: 'Kinetic Grapnel',
+      failurePercent: 100,
+      memorized: false,
+    })
+
+    expect(spells).toContainEqual({
+      name: 'Soul Splinter',
+      failurePercent: 100,
+      memorized: false,
+    })
+
+    expect(spells).toContainEqual({
+      name: 'Forge Lightning Spire',
+      failurePercent: 100,
+      memorized: false,
+    })
+  })
+
   it('restores canonical names when the morgue table truncates long spell names', () => {
     const parsed = extractSpells(loadFixture('spell-library-table-realistic.txt'), {
       canonicalSpellNames: [

@@ -118,6 +118,14 @@ function parseModernSpellLine(
   }
 
   if (!/^\d+%$/.test(failureField) || !/^\d+$/.test(levelField)) {
+    if (failureField === 'N/A' && /^\d+$/.test(levelField)) {
+      return {
+        name,
+        failurePercent: 100,
+        memorized,
+      }
+    }
+
     const fallbackMatch = line.match(/(\d+)%\s+(\d+)\s*$/)
 
     if (!fallbackMatch) {

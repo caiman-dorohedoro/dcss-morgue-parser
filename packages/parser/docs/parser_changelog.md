@@ -197,3 +197,13 @@ The parser grew around full morgue regression fixtures, not only tiny extractor 
 ### Why
 
 Most real parser regressions come from interactions between sections, wrapping, equipment formatting, and edge-case species. Full morgues catch those problems earlier than isolated extractor snippets.
+
+## 12. Unusable Modern Spell-Library Rows
+
+### What changed
+
+Modern spell-library rows with `Failure = N/A` are now preserved as spells with `failurePercent = 100` when the morgue still provides a numeric spell level.
+
+### Why
+
+Recent morgues can list unusable library spells this way. Treating those rows as unparsable caused the parser to drop valid spell names from the library section.

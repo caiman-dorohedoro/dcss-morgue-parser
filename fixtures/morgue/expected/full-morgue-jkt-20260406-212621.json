@@ -947,6 +947,11 @@
       "name": "Fire Storm",
       "failurePercent": 100,
       "memorized": false
+    },
+    {
+      "name": "Awaken Armour",
+      "failurePercent": 100,
+      "memorized": false
     }
   ],
   "mutations": [

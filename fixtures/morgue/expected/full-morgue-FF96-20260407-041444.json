@@ -666,6 +666,31 @@
       "name": "Shatter",
       "failurePercent": 100,
       "memorized": false
+    },
+    {
+      "name": "Soul Splinter",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Launch Clockwork Bee",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Eringya's Surprising Crocodile",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Forge Blazeheart Golem",
+      "failurePercent": 100,
+      "memorized": false
+    },
+    {
+      "name": "Spellspark Servitor",
+      "failurePercent": 100,
+      "memorized": false
     }
   ],
   "mutations": [

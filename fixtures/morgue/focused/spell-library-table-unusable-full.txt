@@ -1,0 +1,8 @@
+You had 0 spell levels left.
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Foxfire                  Conj/Fire      100%       2x1d9     0%          1
+ Kinetic Grapnel          Frge           Unusable   1d4       N/A         1
+ Soul Splinter            Necr           Unusable   N/A       N/A         1
+ Forge Lightning Spire    Air/Frge       Unusable   3d4       N/A         4
