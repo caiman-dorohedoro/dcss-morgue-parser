@@ -88,18 +88,8 @@ npm run bootstrap -- --server CAO,CBR2,CNC --per-bucket 10 --min-xl 10 --data-di
 - [Fixture Strategy](./docs/fixture_strategy.md)
 - [Implementation Notes](./docs/implementation_notes.md)
 
-## Provenance
+## Notes worth preserving
 
-This repository grew out of parser and pipeline work originally done inside the
-broader `dcss-stats` repository.
-
-Notes worth preserving:
-
-- a lot of the parser and QA iteration was done in VS Code with the Codex
-  extension
-- GPT-5.4 was used heavily during parser design, schema refinement, and
-  regression cleanup
+- most development was done in VS Code with the ChatGPT Codex extension. ChatGPT 5.4 with extra high thinking was the primary model used
 - the raw morgue acquisition and public-server sampling workflow was informed by
-  the `dcss-stats` repository, especially the original `dcss-morgue-pipeline`
-  implementation used to fetch morgues and compare parsed output against real
-  samples
+  the `dcss-stats` repository
