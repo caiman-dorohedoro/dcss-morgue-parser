@@ -13,7 +13,7 @@ npm run bootstrap -- \
   --server CAO,CBR2,CNC \
   --per-bucket 10 \
   --min-xl 10 \
-  --data-dir /tmp/dcss-parser-qa-20 \
+  --data-dir ./data/qa-20 \
   --fresh \
   --verbose
 ```
@@ -29,9 +29,12 @@ Operational details worth remembering:
 
 - the first discovery pass is tail-first, so a fresh bucket starts by reading only the most recent logfile bytes rather than the entire remote logfile
 - the tail size is controlled by `--initial-tail-bytes`
+- this workspace command runs inside `apps/pipeline`, so `--data-dir ./data/qa-20` resolves to `apps/pipeline/data/qa-20` from the repository root
 - `--fresh` clears DB, morgues, and audit output but keeps logfile slice cache
 - `--fresh-logfiles` also clears cached logfile slices when you want a clean discovery baseline
 - if a bootstrap bucket is underfilled, the pipeline can keep walking backward through older logfile chunks via `--backfill-chunk-bytes`
+
+The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. Many QA examples use `CAO`, `CBR2`, and `CNC` as a smaller subset, but omitting `--server` targets the full active set.
 
 For repeated QA passes, `incremental` mode keeps the same discovery logic but starts from the saved logfile offsets and then samples only candidates newly discovered since `--since`.
 

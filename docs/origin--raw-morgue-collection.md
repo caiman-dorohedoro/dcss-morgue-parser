@@ -52,13 +52,24 @@ This combination of tail-first discovery, offset-based incremental sync, and opt
 
 ## Server Selection
 
-The pipeline used an explicit active server set derived from the broader `dcss-stats` repository. During parser QA we often sampled from a smaller subset such as:
+The pipeline used an explicit active server set derived from the broader `dcss-stats` repository. In the current manifest, that active set is:
+
+- `CBRG`
+- `CNC`
+- `CDI`
+- `CXC`
+- `CBR2`
+- `CAO`
+- `LLD`
+- `CPO`
+
+During parser QA we often sampled from a smaller subset such as:
 
 - `CAO`
 - `CBR2`
 - `CNC`
 
-`CUE` and some other special cases were intentionally excluded when anonymous fetches were not reliable.
+That smaller subset kept review loops short while still covering multiple hosts and both stable/trunk buckets. `CUE` and some other special cases were intentionally excluded when anonymous fetches were not reliable.
 
 ## Version Buckets
 

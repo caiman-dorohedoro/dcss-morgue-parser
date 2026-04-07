@@ -73,8 +73,10 @@ npm run build
 Collect and parse a QA sample:
 
 ```bash
-npm run bootstrap -- --server CAO,CBR2,CNC --per-bucket 10 --min-xl 10 --data-dir /tmp/dcss-parser-qa --fresh --verbose
+npm run bootstrap -- --server CAO,CBR2,CNC --per-bucket 10 --min-xl 10 --data-dir ./data/qa-20 --fresh --verbose
 ```
+
+This workspace command runs inside `apps/pipeline`, so `--data-dir ./data/qa-20` resolves to `apps/pipeline/data/qa-20` from the repository root. The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`; omit `--server` to target the full active set.
 
 ## Key Documents
 
