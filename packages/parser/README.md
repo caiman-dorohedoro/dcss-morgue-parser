@@ -73,11 +73,11 @@ More detail:
 - [Repository Documentation Catalog](../../docs/meta--catalog.md)
 - [Parser Model](./docs/parser_model.md)
 - [Parser Design Changelog](./docs/parser_changelog.md)
-- [Pipeline Origin](../../docs/pipeline_origin.md)
-- [Raw Morgue Collection](../../docs/raw_morgue_collection.md)
-- [QA Workflow](../../docs/qa_workflow.md)
-- [Fixture Strategy](../../docs/fixture_strategy.md)
-- [Implementation Notes](../../docs/implementation_notes.md)
+- [Pipeline Origin](../../docs/origin--pipeline.md)
+- [Raw Morgue Collection](../../docs/origin--raw-morgue-collection.md)
+- [QA Workflow](../../docs/workflow--qa.md)
+- [Fixture Strategy](../../docs/strategy--fixture.md)
+- [Implementation Notes](../../docs/notes--implementation.md)
 
 ## Scope
 

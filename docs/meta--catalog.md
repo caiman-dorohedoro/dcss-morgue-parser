@@ -1,61 +1,102 @@
-# 메타 카탈로그
+# Documentation Catalog
 
-작성일: 2026-04-07  
-최종 업데이트: 2026-04-07
+Created: 2026-04-07  
+Last updated: 2026-04-07
 
-## 목적
+## Purpose
 
-- 현재 monorepo `dcss-morgue-parser`의 문서와 핵심 참조 파일 위치를 한 문서에서 관리한다.
-- parser 패키지 문서와 pipeline/QA 문서를 분리하되, 읽는 순서는 한 곳에서 안내한다.
-- 새 세션이나 새 저장소에서 작업을 시작할 때 어디서부터 읽어야 할지 빠르게 알려준다.
+- Keep the project-level document inventory and the main reference paths in one
+  place.
+- Separate parser contract docs from project provenance, QA workflow, and
+  maintenance docs while preserving a clear reading order.
+- Make it easy to onboard into a fresh session or repository clone without
+  guessing where to start.
 
-## 네이밍 규칙
+## Naming Convention
 
-- 루트 문서:
-  - `README.md`: 저장소 개요와 workspace 사용법
-  - `AGENTS.md`: 작업 지침
-- `docs/` 아래 문서:
-  - 모두 소문자 파일명 사용
-  - `*_origin.md`: 설계 배경과 provenance
-  - `*_workflow.md`: 반복 운영/검수 절차
-  - `*_strategy.md`: 테스트/fixture 유지 전략
-  - `*_notes.md`: 구현 메모와 엔지니어링 판단
-- `packages/parser/docs/` 아래 문서:
-  - parser 라이브러리의 현재 contract와 변경 이력
+- Root documents:
+  - `README.md`: repository overview and workspace usage
+  - `AGENTS.md`: working instructions
+- Project-level documents under `docs/`:
+  - use lowercase ASCII file names only
+  - put the document kind first, not last
+  - prefer a short BEM-like segment chain:
+    - 2 segments when the topic is already unique:
+      `<kind>--<topic>.md`
+    - 3 segments when extra scope avoids ambiguity:
+      `<kind>--<area>--<topic>.md`
+  - supported `kind` prefixes:
+    - `meta`: document catalogs and index pages
+    - `origin`: design background and provenance
+    - `workflow`: recurring operations and review procedures
+    - `strategy`: testing and fixture maintenance strategy
+    - `notes`: implementation notes and engineering judgment
+  - local language reference copies may add a trailing locale segment, such as
+    `origin--pipeline--ko.md`
+- Package docs under `packages/parser/docs/`:
+  - keep package-specific artifact names such as `parser_model.md` and
+    `parser_changelog.md`
+  - these documents describe parser contract artifacts rather than project-level
+    process categories
 
-## 현재 파일 목록
+## Canonical File Inventory
 
-| 파일명 | 간략 설명 | 위치 |
+| File | Summary | Location |
 | --- | --- | --- |
-| `README.md` | monorepo 개요, workspace 구조, 대표 명령 | `/` |
-| `AGENTS.md` | 작업 지침과 문서 진입점 안내 | `/` |
-| `meta--catalog.md` | 문서 메타 인덱스와 읽기 순서 안내 | `/docs` |
-| `pipeline_origin.md` | xlog discovery + morgue parsing 분리, politeness, strict failure 같은 pipeline 설계 배경 | `/docs` |
-| `raw_morgue_collection.md` | public Crawl 서버에서 raw morgue를 수집하고 QA 샘플을 만든 provenance 문서 | `/docs` |
-| `qa_workflow.md` | bootstrap, `--min-xl`, review export, 수동 비교 중심의 실제 parser QA 절차 | `/docs` |
-| `fixture_strategy.md` | full morgue golden fixture와 extractor unit test를 함께 쓰는 이유와 운영 방식 | `/docs` |
-| `implementation_notes.md` | 초기 구현 계획에서 지금도 유효한 엔지니어링 메모를 추린 문서 | `/docs` |
-| `parser_model.md` | 현재 parser 스키마와 Crawl source 기반 모델 설명 | `/packages/parser/docs` |
-| `parser_changelog.md` | parser 모델이 어떻게 바뀌었는지와 그 이유를 기록한 변경 이력 | `/packages/parser/docs` |
+| `README.md` | Monorepo overview, workspace layout, and common commands | `/` |
+| `AGENTS.md` | Working instructions and documentation entry point | `/` |
+| `meta--catalog.md` | Canonical document catalog and reading order | `/docs` |
+| `origin--pipeline.md` | Pipeline design background, including discovery/parsing separation, strict failure, and sampling rationale | `/docs` |
+| `origin--raw-morgue-collection.md` | Provenance for collecting raw morgues from public Crawl servers for QA and schema iteration | `/docs` |
+| `workflow--qa.md` | Repeatable parser QA workflow built around stratified sampling and raw/parsed review pairs | `/docs` |
+| `strategy--fixture.md` | Test and fixture maintenance strategy across focused regressions and full golden morgues | `/docs` |
+| `notes--implementation.md` | Engineering notes distilled from the earlier implementation plan | `/docs` |
+| `parser_model.md` | Current parser schema and Crawl-aligned model explanation | `/packages/parser/docs` |
+| `parser_changelog.md` | Schema and contract history for the parser package | `/packages/parser/docs` |
 
-## 권장 읽기 순서
+## Local Korean Reference Copies
+
+These files exist as local reading aids for the current workspace. They are not
+the canonical source documents.
+
+| File | Mirrors |
+| --- | --- |
+| `meta--catalog--ko.md` | `meta--catalog.md` |
+| `origin--pipeline--ko.md` | `origin--pipeline.md` |
+| `origin--raw-morgue-collection--ko.md` | `origin--raw-morgue-collection.md` |
+| `workflow--qa--ko.md` | `workflow--qa.md` |
+| `strategy--fixture--ko.md` | `strategy--fixture.md` |
+| `notes--implementation--ko.md` | `notes--implementation.md` |
+
+## Recommended Reading Order
 
 1. `README.md`
 2. `packages/parser/README.md`
 3. `packages/parser/docs/parser_model.md`
 4. `packages/parser/docs/parser_changelog.md`
-5. `docs/pipeline_origin.md`
-6. `docs/raw_morgue_collection.md`
-7. `docs/qa_workflow.md`
-8. `docs/fixture_strategy.md`
-9. `docs/implementation_notes.md`
+5. `docs/origin--pipeline.md`
+6. `docs/origin--raw-morgue-collection.md`
+7. `docs/workflow--qa.md`
+8. `docs/strategy--fixture.md`
+9. `docs/notes--implementation.md`
 
-## 문서 상태 메모
+## Status Notes
 
-- `packages/parser/docs/parser_model.md`와 `packages/parser/docs/parser_changelog.md`는 parser contract를 설명하는 핵심 문서다.
-- `docs/pipeline_origin.md`와 `docs/raw_morgue_collection.md`는 parser 바깥 provenance를 설명하는 보조 문서다.
-- `docs/implementation_notes.md`는 historical implementation plan을 그대로 보존한 것이 아니라, 지금도 유효한 판단만 추린 편집본이다.
+- `packages/parser/docs/parser_model.md` and
+  `packages/parser/docs/parser_changelog.md` are the canonical parser contract
+  documents.
+- `docs/origin--pipeline.md` and
+  `docs/origin--raw-morgue-collection.md` describe provenance outside the
+  parser package itself.
+- `docs/notes--implementation.md` is not a raw historical dump of the original
+  plan; it is an edited note that keeps only the engineering judgment that
+  still matters.
+- The Korean `--ko` copies are local reference documents for easier reading and
+  should follow the English canonical files if content ever diverges.
 
-## 정리 이력
+## Change Log
 
-- 2026-04-07: parser-only 문서 세트를 monorepo 기준 카탈로그로 재구성했다.
+- 2026-04-07: Converted the catalog to English, adopted prefix-first document
+  naming for `docs/`, aligned project-level file names to category-first
+  topics, and added local Korean reference copies for the project-level
+  documents.

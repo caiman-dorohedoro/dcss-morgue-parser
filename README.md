@@ -82,14 +82,17 @@ npm run bootstrap -- --server CAO,CBR2,CNC --per-bucket 10 --min-xl 10 --data-di
 - [Documentation Catalog](./docs/meta--catalog.md)
 - [Parser Model](./packages/parser/docs/parser_model.md)
 - [Parser Design Changelog](./packages/parser/docs/parser_changelog.md)
-- [Pipeline Origin](./docs/pipeline_origin.md)
-- [Raw Morgue Collection](./docs/raw_morgue_collection.md)
-- [QA Workflow](./docs/qa_workflow.md)
-- [Fixture Strategy](./docs/fixture_strategy.md)
-- [Implementation Notes](./docs/implementation_notes.md)
+- [Pipeline Origin](./docs/origin--pipeline.md)
+- [Raw Morgue Collection](./docs/origin--raw-morgue-collection.md)
+- [QA Workflow](./docs/workflow--qa.md)
+- [Fixture Strategy](./docs/strategy--fixture.md)
+- [Implementation Notes](./docs/notes--implementation.md)
 
 ## Notes worth preserving
 
 - most development was done in VS Code with the ChatGPT Codex extension. ChatGPT 5.4 with extra high thinking was the primary model used
 - the raw morgue acquisition and public-server sampling workflow was informed by
   the `dcss-stats` repository
+- public-server fetches used per-host politeness defaults: host concurrency `1`,
+  queue interval cap `1`, and a minimum delay of `2000 ms` between requests;
+  logfile discovery and morgue fetches shared the same host-level limit
