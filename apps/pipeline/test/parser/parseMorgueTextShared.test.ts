@@ -5,7 +5,7 @@ import { extractSpells, parseMorgueText } from '../../../../packages/parser/src/
 
 function loadFixture(name: string) {
   return readFileSync(
-    path.resolve(process.cwd(), `../../fixtures/morgue/success/${name}`),
+    path.resolve(process.cwd(), `../../fixtures/morgue/focused/${name}`),
     'utf8',
   )
 }

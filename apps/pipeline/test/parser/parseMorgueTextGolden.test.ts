@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { parseMorgueText } from '../../../../packages/parser/src/index'
 import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/types'
 
-function loadMorgueFixture(directory: 'success' | 'full', name: string) {
+function loadMorgueFixture(directory: 'focused' | 'full', name: string) {
   return readFileSync(
     path.resolve(process.cwd(), `../../fixtures/morgue/${directory}/${name}`),
     'utf8',
@@ -20,37 +20,37 @@ function loadExpectedRecord(name: string): ParsedMorgueTextRecord {
 const GOLDEN_CASES = [
   {
     name: 'cao-0.34-webtiles-quit',
-    directory: 'success',
+    directory: 'focused',
     morgue: 'cao-0.34-webtiles-quit.txt',
     expected: 'cao-0.34-webtiles-quit.json',
   },
   {
     name: 'cao-trunk-webtiles-death',
-    directory: 'success',
+    directory: 'focused',
     morgue: 'cao-trunk-webtiles-death.txt',
     expected: 'cao-trunk-webtiles-death.json',
   },
   {
     name: 'spell-library-table-full',
-    directory: 'success',
+    directory: 'focused',
     morgue: 'spell-library-table-full.txt',
     expected: 'spell-library-table-full.json',
   },
   {
     name: 'colored-draconian',
-    directory: 'success',
+    directory: 'focused',
     morgue: 'colored-draconian.txt',
     expected: 'colored-draconian.json',
   },
   {
     name: 'skryme-jiyva-full',
-    directory: 'success',
+    directory: 'focused',
     morgue: 'skryme-jiyva-full.txt',
     expected: 'skryme-jiyva-full.json',
   },
   {
     name: 'knorpule3000-gozag-full',
-    directory: 'success',
+    directory: 'focused',
     morgue: 'knorpule3000-gozag-full.txt',
     expected: 'knorpule3000-gozag-full.json',
   },

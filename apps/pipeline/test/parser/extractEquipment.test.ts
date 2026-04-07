@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { extractEquipment } from '../../src/parser/extractEquipment'
 import type { EquipmentPropertyBag } from '../../src/types'
 
-function loadFixture(directory: 'success' | 'fail' | 'full', name: string) {
+function loadFixture(directory: 'focused' | 'full', name: string) {
   return readFileSync(
     path.resolve(process.cwd(), `../../fixtures/morgue/${directory}/${name}`),
     'utf8',
@@ -21,7 +21,7 @@ function bag(input: Partial<EquipmentPropertyBag> = {}): EquipmentPropertyBag {
 
 describe('extractEquipment', () => {
   it('keeps none for missing primary slots while parsing simple aux armour items', () => {
-    const parsed = extractEquipment(loadFixture('success', 'body-armour-none.txt'))
+    const parsed = extractEquipment(loadFixture('focused', 'body-armour-none.txt'))
 
     expect(parsed.bodyArmour).toBe('none')
     expect(parsed.shield).toBe('none')
@@ -159,7 +159,7 @@ describe('extractEquipment', () => {
   })
 
   it('continues parsing equipped items when descriptions are interleaved in inventory', () => {
-    const parsed = extractEquipment(loadFixture('success', 'equipped-accessories-with-descriptions.txt'))
+    const parsed = extractEquipment(loadFixture('focused', 'equipped-accessories-with-descriptions.txt'))
 
     expect(parsed.bodyArmour).toBe('pearl dragon scales "Petz"')
     expect(parsed.amulet).toBe('amulet of Vitality')
@@ -240,7 +240,7 @@ Armour
   })
 
   it('preserves melded equipment and the equipped talisman slot', () => {
-    const parsed = extractEquipment(loadFixture('success', 'melded-equipment-and-talisman.txt'))
+    const parsed = extractEquipment(loadFixture('focused', 'melded-equipment-and-talisman.txt'))
 
     expect(parsed.bodyArmour).toBe('acid dragon scales "Discomfort of Ashenzari"')
     expect(parsed.helmets).toEqual(['helmet of the Shattered Mistrust'])

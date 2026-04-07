@@ -7,6 +7,12 @@ The parser uses two complementary test styles:
 
 Both are necessary.
 
+Under `fixtures/morgue/`, that maps to:
+
+- `focused/` for targeted text regressions
+- `full/` for complete raw morgues
+- `expected/` for expected structured JSON
+
 ## Extractor Tests
 
 Extractor tests are good for:

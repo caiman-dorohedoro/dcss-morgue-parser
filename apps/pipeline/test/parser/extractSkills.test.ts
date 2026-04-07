@@ -5,7 +5,7 @@ import { extractSkills } from '../../src/parser/extractSkills'
 
 function loadFixture(name: string) {
   return readFileSync(
-    path.resolve(process.cwd(), `../../fixtures/morgue/success/${name}`),
+    path.resolve(process.cwd(), `../../fixtures/morgue/focused/${name}`),
     'utf8',
   )
 }

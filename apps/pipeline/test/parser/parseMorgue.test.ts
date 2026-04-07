@@ -3,7 +3,7 @@ import path from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { parseMorgue, type ParseMorgueMeta } from '../../src/parser/parseMorgue'
 
-function loadFixture(directory: 'success' | 'fail', name: string) {
+function loadFixture(directory: 'focused', name: string) {
   return readFileSync(
     path.resolve(process.cwd(), `../../fixtures/morgue/${directory}/${name}`),
     'utf8',
@@ -23,7 +23,7 @@ function fixtureMeta(): ParseMorgueMeta {
 
 describe('parseMorgue', () => {
   it('parses a 0.34 webtiles quit morgue', () => {
-    const result = parseMorgue(loadFixture('success', 'cao-0.34-webtiles-quit.txt'), fixtureMeta())
+    const result = parseMorgue(loadFixture('focused', 'cao-0.34-webtiles-quit.txt'), fixtureMeta())
 
     expect(result.ok).toBe(true)
     if (result.ok) {
@@ -50,7 +50,7 @@ describe('parseMorgue', () => {
   })
 
   it('parses a trunk webtiles death morgue', () => {
-    const result = parseMorgue(loadFixture('success', 'cao-trunk-webtiles-death.txt'), {
+    const result = parseMorgue(loadFixture('focused', 'cao-trunk-webtiles-death.txt'), {
       ...fixtureMeta(),
       sourceVersionLabel: '0.35-a0',
     })
@@ -77,7 +77,7 @@ describe('parseMorgue', () => {
   })
 
   it('parses the modern spell library table and keeps school skills', () => {
-    const result = parseMorgue(loadFixture('success', 'spell-library-table-full.txt'), fixtureMeta())
+    const result = parseMorgue(loadFixture('focused', 'spell-library-table-full.txt'), fixtureMeta())
 
     expect(result.ok).toBe(true)
     if (result.ok) {
@@ -102,7 +102,7 @@ describe('parseMorgue', () => {
   })
 
   it('normalizes a missing spell section to an empty list', () => {
-    const result = parseMorgue(loadFixture('success', 'no-spell-section.txt'), fixtureMeta())
+    const result = parseMorgue(loadFixture('focused', 'no-spell-section.txt'), fixtureMeta())
 
     expect(result.ok).toBe(true)
     if (result.ok) {
@@ -111,7 +111,7 @@ describe('parseMorgue', () => {
   })
 
   it('parses colored draconians as canonical Draconian', () => {
-    const result = parseMorgue(loadFixture('success', 'colored-draconian.txt'), {
+    const result = parseMorgue(loadFixture('focused', 'colored-draconian.txt'), {
       ...fixtureMeta(),
       sourceVersionLabel: '0.35-a0',
     })

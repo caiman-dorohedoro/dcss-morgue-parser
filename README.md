@@ -39,7 +39,7 @@ dcss-morgue-parser/
   - raw morgue fetching
   - stratified sampling and QA workflows
 - [`fixtures/morgue`](./fixtures/morgue/)
-  - shared parser fixtures
+  - focused parser regressions
   - full morgue goldens
   - expected JSON snapshots
 - [`docs`](./docs/meta--catalog.md)
