@@ -55,6 +55,28 @@ Why:
 Automatic comparison can still be useful later, but the first pass should be
 human review of the actual files.
 
+When raw and parsed output are still ambiguous, check the upstream Crawl source
+locally instead of guessing.
+
+This repository keeps an optional `crawl/` git submodule for that purpose. If
+it is not initialized yet, run:
+
+```bash
+git submodule update --init crawl
+```
+
+The most useful source areas during parser debugging have been:
+
+- `crawl/crawl-ref/source/`
+- `crawl/crawl-ref/source/dat/forms/`
+- `crawl/crawl-ref/source/mutation-data.h`
+
+Use that lookup sparingly and only to answer semantics questions such as:
+
+- whether a parenthesized `A:` entry means a suppressed trait
+- whether a trait is form-based or location-dependent
+- whether a current-form property comes from the transformation or an innate mutation
+
 ## 4. Compare High-Signal Sections First
 
 For each `raw.txt` / `parsed.json` pair, compare these areas in order:

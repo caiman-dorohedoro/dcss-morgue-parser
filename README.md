@@ -15,6 +15,7 @@ dcss-morgue-parser/
   README.md
   AGENTS.md
   docs/
+  crawl/
 
   packages/
     parser/
@@ -43,6 +44,10 @@ dcss-morgue-parser/
   - expected JSON snapshots prefixed with `focused-` or `full-`
 - [`docs`](./docs/meta--catalog.md)
   - project-level provenance, QA workflow, and maintenance strategy docs
+- `crawl/`
+  - optional git submodule pointing at the upstream Crawl source tree
+  - useful when parser debugging needs confirmation from the game source
+  - not required for normal parser builds, tests, or pipeline runs
 
 ## Quick Start
 
@@ -51,6 +56,15 @@ Install workspace dependencies:
 ```bash
 npm install
 ```
+
+If you want the local Crawl source available for source-level parser debugging,
+initialize the optional submodule:
+
+```bash
+git submodule update --init crawl
+```
+
+This is only needed when you want to inspect upstream Crawl behavior directly.
 
 Typecheck everything:
 
