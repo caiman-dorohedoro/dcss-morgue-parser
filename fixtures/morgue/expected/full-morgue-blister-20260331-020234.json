@@ -45,14 +45,15 @@
     "ego": "positive energy",
     "subtypeEffect": null,
     "propertiesText": "=g",
+    "functionalInscriptions": [
+      "=g"
+    ],
     "properties": {
       "numeric": {
         "rN": 1
       },
       "flags": {},
-      "specials": [
-        "=g"
-      ]
+      "specials": []
     },
     "intrinsicProperties": {
       "numeric": {},

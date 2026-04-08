@@ -175,6 +175,26 @@ describe('extractEquipment', () => {
     )
   })
 
+  it('separates functional inscriptions from equipped item properties', () => {
+    const parsed = extractEquipment(loadFixture('focused', 'functional-inscriptions-on-equipped-items.txt'))
+
+    expect(parsed.rings).toEqual(['ring of willpower', 'ring of poison resistance'])
+
+    expect(parsed.ringDetails?.[0]).toMatchObject({
+      rawName: 'ring of willpower',
+      propertiesText: '!R test',
+      functionalInscriptions: ['!R'],
+      properties: bag({ numeric: { Will: 1 }, specials: ['test'] }),
+    })
+
+    expect(parsed.ringDetails?.[1]).toMatchObject({
+      rawName: 'ring of poison resistance',
+      propertiesText: '!w =f !D My Stone',
+      functionalInscriptions: ['!w', '=f', '!D'],
+      properties: bag({ flags: { rPois: true }, specials: ['My', 'Stone'] }),
+    })
+  })
+
   it('keeps multiple haunted aux items for poltergeists instead of collapsing them', () => {
     const parsed = extractEquipment(loadFixture('full', 'morgue-Skeff-20260406-201301.txt'))
 

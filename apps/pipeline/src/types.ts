@@ -160,6 +160,7 @@ export type EquipmentItemSnapshot = {
   ego: string | null
   subtypeEffect: string | null
   propertiesText: string | null
+  functionalInscriptions?: string[]
   properties: EquipmentPropertyBag
   intrinsicProperties: EquipmentPropertyBag
   egoProperties: EquipmentPropertyBag

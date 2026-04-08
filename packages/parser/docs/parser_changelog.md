@@ -210,3 +210,20 @@ Modern spell-library rows with `Failure = N/A` are now preserved with:
 ### Why
 
 Recent morgues can list unusable library spells this way. Treating those rows as numeric `100%` failures was a workable stopgap, but a dedicated unusable state preserves the morgue meaning more faithfully and avoids overloading the numeric failure field.
+
+## 13. Functional Item Inscriptions
+
+### What changed
+
+Equipment detail objects now expose:
+
+- raw brace text through `propertiesText`
+- recognized functional Crawl inscription tokens through `functionalInscriptions`
+
+Recognized functional inscription tokens are excluded from `properties.specials`.
+
+### Why
+
+The same `{...}` syntax in morgues can contain both item properties and player-added inscription commands such as `!w`, `=f`, and `@r3`. Those command tokens are not equipment properties and should not be mixed into downstream property bags.
+
+Free-form custom note text is still not fully separated from unknown property tokens, so `specials` may continue to include strings that are really player notes.

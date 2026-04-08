@@ -229,6 +229,8 @@ Each detail contains fields such as:
 - `artifactKind`
 - `ego`
 - `subtypeEffect`
+- `propertiesText`
+- `functionalInscriptions`
 - `properties`
 - `intrinsicProperties`
 - `egoProperties`
@@ -259,6 +261,12 @@ Example:
 - intrinsic `rN+` from pearl dragon scales
 - extra `rN+` from randart properties
 - final `properties.numeric.rN = 2`
+
+Notes:
+
+- `propertiesText` preserves the raw `{...}` inscription text from the morgue line.
+- `functionalInscriptions` is emitted when the parser recognizes special Crawl inscription controls such as `!w`, `=f`, or `@r3`.
+- `specials` may still contain unknown artefact tags or free-form player inscription text. The parser does not yet reliably split arbitrary custom note text away from all unknown item-property tokens.
 
 Code:
 

@@ -1,0 +1,30 @@
+Dungeon Crawl Stone Soup version 0.35-a0-259-g7ca9a3eb5b character file.
+
+Tester the Example (Demonspawn Alchemist)                  Turns: 123, Time: 00:01:23
+
+Health: 13/13      AC:  0    Str: 10    XL:     1
+Magic:   3/3       EV: 10    Int: 12    God:
+Gold:    0         SH:  0    Dex: 10    Spells: 0/0 levels left
+
+rFire   . . .  (100%)   (no body armour)
+rCold   . . .  (100%)   (no shield)
+rNeg    . . .  (100%)   (no helmet)
+rPois   +      (100%)   (no cloak)
+rElec   .      (100%)   (no gloves)
+rCorr   .      (100%)   (no boots)
+SInv    .               (no amulet)
+Will    +....           d - ring of willpower {!R test}
+Stlth   +               e - ring of poison resistance {!w =f !D My Stone}
+HPRegen 0.10/turn
+MPRegen 0.10/turn
+
+%: no passive effects
+@: no status effects
+A: no striking features
+a: no special abilities
+
+Inventory:
+
+Jewellery
+ d - a ring of willpower (worn) {!R test}
+ e - a ring of poison resistance (worn) {!w =f !D My Stone}

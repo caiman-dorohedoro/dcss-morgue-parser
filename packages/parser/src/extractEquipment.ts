@@ -569,6 +569,13 @@ function extractPropertiesText(line: string): string | null {
   return line.match(/\{([^}]*)\}/)?.[1]?.trim() ?? null
 }
 
+function isFunctionalInscriptionToken(token: string): boolean {
+  return /^@.+$/.test(token)
+    || /^![A-Za-z*]+$/.test(token)
+    || /^=[gksfR]+$/.test(token)
+    || /^\+f+$/.test(token)
+}
+
 function extractProperties(propertiesText: string | null): string[] {
   if (!propertiesText) {
     return []
@@ -577,7 +584,22 @@ function extractProperties(propertiesText: string | null): string[] {
   return propertiesText
     .split(/\s*,\s*/)
     .flatMap((segment) => normalizeSpacing(segment).split(/\s+/))
+    .filter((token) => !isFunctionalInscriptionToken(token))
     .filter(Boolean)
+}
+
+function extractFunctionalInscriptions(propertiesText: string | null): string[] {
+  if (!propertiesText) {
+    return []
+  }
+
+  return normalizeSpecials(
+    propertiesText
+      .split(/\s*,\s*/)
+      .flatMap((segment) => normalizeSpacing(segment).split(/\s+/))
+      .filter((token) => isFunctionalInscriptionToken(token))
+    .filter(Boolean)
+  )
 }
 
 function emptyPropertyBag(): EquipmentPropertyBag {
@@ -1101,6 +1123,7 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
   const rawName = cleanItemName(line)
   const propertiesText = extractPropertiesText(line)
   const extractedProperties = extractProperties(propertiesText)
+  const functionalInscriptions = extractFunctionalInscriptions(propertiesText)
   const objectClass = getObjectClass(slot)
   const equipState = extractEquipState(line)
   const cursed = isCursed(line)
@@ -1137,6 +1160,7 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
     ego,
     subtypeEffect,
     propertiesText,
+    ...(functionalInscriptions.length > 0 ? { functionalInscriptions } : {}),
     properties,
     intrinsicProperties,
     egoProperties,
