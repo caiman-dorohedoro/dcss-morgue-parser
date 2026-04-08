@@ -22,6 +22,16 @@ instead of collapsing parsed output to a coarse bucket like `trunk`.
 
 For trunk games, the commit suffix matters. Two morgues from different `0.35-a0-*` revisions can come from meaningfully different upstream Crawl states.
 
+## 1.5. Final God Extraction
+
+### What changed
+
+The parser now stores `god` from the morgue header `God:` field.
+
+### Why
+
+Manual QA passes repeatedly compare the final god shown in the header, and that value was previously missing from parsed output even when the raw morgue was unambiguous.
+
 ## 2. Background Extraction
 
 ### What changed

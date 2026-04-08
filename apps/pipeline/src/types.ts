@@ -68,6 +68,7 @@ export type BaseStatsSnapshot = {
   species: string
   speciesVariant: string | null
   background: string | null
+  god: string | null
   xl: number
   ac: number
   ev: number

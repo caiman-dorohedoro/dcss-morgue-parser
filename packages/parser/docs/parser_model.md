@@ -88,6 +88,7 @@ Base stats are intentionally simple:
 - `species`
 - `speciesVariant`
 - `background`
+- `god`
 - `xl`
 - `ac`
 - `ev`
@@ -101,6 +102,7 @@ Notes:
 - `version` keeps the raw morgue version token, for example `0.35-a0-257-gf9e06672e4`
 - `species` is normalized to canonical species names
 - `speciesVariant` preserves extra descriptor detail such as `White Draconian`
+- `god` comes from the morgue header `God:` field and is `null` when the header is blank
 
 Code:
 

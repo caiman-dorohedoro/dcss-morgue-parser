@@ -109,6 +109,20 @@ function parseBackground(text: string, speciesNames: readonly string[]): string 
   return parseDescriptor(getCharacterDescriptor(text), speciesNames).background
 }
 
+function parseGod(text: string): string | null {
+  const line = text.match(/^.*\bGod:[ \t]*(.*)$/m)?.[1]
+
+  if (line === undefined) {
+    return null
+  }
+
+  const god = line
+    .replace(/\s+\[[^\]]*\]\s*$/, '')
+    .trim()
+
+  return god || null
+}
+
 function parsePrimaryStats(text: string) {
   const legacyMatch = text.match(/You have (\d+) Strength, (\d+) Intelligence and (\d+) Dexterity\./)
 
@@ -164,6 +178,7 @@ export function extractBaseStats(text: string, options?: ExtractBaseStatsOptions
     species: parseSpecies(text, speciesNames),
     speciesVariant: parseSpeciesVariant(text, speciesNames),
     background: parseBackground(text, speciesNames),
+    god: parseGod(text),
     ...parseDefensiveStats(text),
     ...parsePrimaryStats(text),
   }

@@ -29,6 +29,7 @@ describe('parseMorgue', () => {
     if (result.ok) {
       expect(result.record.version).toBe('0.34.0')
       expect(result.record.species).toBe('Barachi')
+      expect(result.record.god).toBeNull()
       expect(result.record.xl).toBe(1)
       expect(result.record.ac).toBe(3)
       expect(result.record.ev).toBe(11)
@@ -59,6 +60,7 @@ describe('parseMorgue', () => {
     if (result.ok) {
       expect(result.record.version).toBe('0.35-a0-181-g84ebf06')
       expect(result.record.species).toBe('Minotaur')
+      expect(result.record.god).toBe('Trog')
       expect(result.record.xl).toBe(9)
       expect(result.record.ac).toBe(14)
       expect(result.record.ev).toBe(6)
@@ -123,6 +125,7 @@ describe('parseMorgue', () => {
       expect(result.record.version).toBe('0.35-a0-257-gf9e06672e4')
       expect(result.record.species).toBe('Draconian')
       expect(result.record.speciesVariant).toBe('White Draconian')
+      expect(result.record.god).toBe('Ru')
       expect(result.record.ac).toBe(11)
       expect(result.record.ev).toBe(11)
       expect(result.record.sh).toBe(0)

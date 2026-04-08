@@ -25,6 +25,7 @@ describe('parseMorgueText shared parser', () => {
     if (result.ok) {
       expect(result.record.playerName).toBe('EnsignRicky')
       expect(result.record.species).toBe('Barachi')
+      expect(result.record.god).toBeNull()
       expect(result.record.xl).toBe(1)
       expect(result.record.ac).toBe(3)
       expect(result.record.ev).toBe(11)
@@ -106,6 +107,7 @@ describe('parseMorgueText shared parser', () => {
 
     expect(spellResult.ok).toBe(true)
     if (spellResult.ok) {
+      expect(spellResult.record.god).toBe('Ashenzari')
       expect(spellResult.record.spells).toContainEqual({
         name: "Dragon's Call",
         failurePercent: 4,
@@ -116,6 +118,7 @@ describe('parseMorgueText shared parser', () => {
 
     expect(mutationResult.ok).toBe(true)
     if (mutationResult.ok) {
+      expect(mutationResult.record.god).toBe('Dithmenos')
       expect(mutationResult.record.mutations).toContainEqual({
         name: 'nimble swimmer',
         level: 1,

@@ -4,6 +4,7 @@
   "species": "Minotaur",
   "speciesVariant": null,
   "background": "Fighter",
+  "god": "Jiyva",
   "xl": 17,
   "ac": 10,
   "ev": 12,
