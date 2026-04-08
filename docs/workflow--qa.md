@@ -60,6 +60,56 @@ npm run bootstrap -- \
   --verbose
 ```
 
+### Bootstrap / Incremental Parameters
+
+The pipeline CLI has enough flags now that it is worth keeping a compact
+reference here instead of forcing readers to inspect `src/cli.ts`.
+
+Common sampling and filter parameters:
+
+| Flag | Commands | Meaning |
+| --- | --- | --- |
+| `--per-bucket <n>` | `bootstrap`, `incremental` | Successful candidates to take per `(server, version)` bucket. Default: `10`. |
+| `--sample <mode>` | `bootstrap`, `incremental` | Sampling mode: `deterministic` or `random`. Default: `deterministic`. |
+| `--seed <value>` | `bootstrap`, `incremental` | Stable seed for `--sample random`, useful for reproducible QA reruns. |
+| `--min-xl <n>` | `bootstrap`, `incremental` | Only consider candidates whose xlog `xl` is at least `n`. |
+| `--species <names>` | `bootstrap`, `incremental` | Comma-separated xlog `race` filter with OR semantics. |
+| `--background <names>` | `bootstrap`, `incremental` | Comma-separated xlog `cls` filter with OR semantics. |
+| `--god <names>` | `bootstrap`, `incremental` | Comma-separated xlog `god` filter with OR semantics. Use `none` for no final god. |
+| `--server <ids>` | `bootstrap`, `incremental` | Comma-separated active server ids. Default: all active servers. |
+
+Run-shape and runtime parameters:
+
+| Flag | Commands | Meaning |
+| --- | --- | --- |
+| `--data-dir <path>` | `bootstrap`, `incremental`, `audit` | Override the runtime data directory. From the repo root, `./data/...` resolves under `apps/pipeline/data/...`. |
+| `--fresh` | `bootstrap`, `incremental` | Clear DB, morgues, and audit output before running, while keeping logfile cache. |
+| `--fresh-logfiles` | `bootstrap`, `incremental` | Also clear cached logfile slices. Implies `--fresh`. |
+| `--dry-run` | `bootstrap`, `incremental` | Discover and sample, but do not fetch or parse morgues. |
+| `--verbose` | `bootstrap`, `incremental` | Print discovery, backfill, fetch, and parse progress. |
+| `--min-delay-ms <n>` | `bootstrap`, `incremental` | Per-host politeness delay. Default: `2000`. |
+| `--timeout-ms <n>` | `bootstrap`, `incremental` | HTTP timeout in milliseconds. Default: `10000`. |
+| `--initial-tail-bytes <n>` | `bootstrap`, `incremental` | Recent logfile bytes to read when a bucket is first seen. Default: `1048576`. |
+
+Bootstrap-only parameters:
+
+| Flag | Meaning |
+| --- | --- |
+| `--skip-first <n>` | Skip the first `n` sorted candidates in each deterministic bucket before taking `--per-bucket`. Default: `0`. |
+| `--backfill-chunk-bytes <n>` | Older logfile bytes to fetch per backfill step when a bucket is underfilled. Default: `initial-tail-bytes`. |
+
+Incremental-only parameter:
+
+| Flag | Meaning |
+| --- | --- |
+| `--since <iso8601>` | Lower bound for `discovered_at`. Default: current time minus 6 hours. |
+
+Audit-only parameter:
+
+| Flag | Meaning |
+| --- | --- |
+| `--sample-size <n>` | Number of audit rows to write. Default: `20`. |
+
 Operational details worth remembering:
 
 - the first discovery pass is tail-first, so a fresh bucket starts by reading only the most recent logfile bytes rather than the entire remote logfile

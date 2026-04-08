@@ -78,6 +78,8 @@ npm run bootstrap -- --server CBRG,CDI,CXC,CAO,CBR2,CNC,CPO --per-bucket 10 --mi
 
 This workspace command runs inside `apps/pipeline`, so `--data-dir ./data/bootstrap-stratified-xl10` resolves to `apps/pipeline/data/bootstrap-stratified-xl10` from the repository root. The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. This example uses a broader practical subset of `CBRG`, `CDI`, `CXC`, `CAO`, `CBR2`, `CNC`, and `CPO`, while intentionally skipping `LLD`; `CUE` is not part of the current active manifest. `--timeout-ms 30000` is an operational cushion for this geographically broader run, not a claim that `CXC` is intrinsically slower everywhere.
 
+For the full QA sampling flag set, see [docs/workflow--qa.md](./docs/workflow--qa.md). That document now covers deterministic vs random sampling, `--seed`, `--skip-first`, and xlog metadata filters such as `--species`, `--background`, and `--god`, including the `--god none` case for games that ended without a god.
+
 ## Key Documents
 
 - [Documentation Catalog](./docs/meta--catalog.md)
