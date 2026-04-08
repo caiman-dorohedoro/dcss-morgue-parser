@@ -455,241 +455,289 @@
     {
       "name": "Manifold Assault",
       "failurePercent": 97,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Lesser Beckoning",
       "failurePercent": 1,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Teleport Other",
       "failurePercent": 1,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Momentum Strike",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Kinetic Grapnel",
       "failurePercent": 52,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Kiss of Death",
       "failurePercent": 52,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Magic Dart",
       "failurePercent": 52,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Poisonous Vapours",
       "failurePercent": 52,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Sandblast",
       "failurePercent": 52,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Slow",
       "failurePercent": 52,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Construct Spike Launcher",
       "failurePercent": 65,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Grave Claw",
       "failurePercent": 65,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Mercury Arrow",
       "failurePercent": 65,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Scorch",
       "failurePercent": 65,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Static Discharge",
       "failurePercent": 65,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Sublimation of Blood",
       "failurePercent": 65,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Confusing Touch",
       "failurePercent": 87,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Gloom",
       "failurePercent": 87,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Hailstorm",
       "failurePercent": 87,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Passwall",
       "failurePercent": 87,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Vampiric Draining",
       "failurePercent": 87,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Airstrike",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Dispel Undead",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Fulminant Prism",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Ignite Poison",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Olgreb's Toxic Radiance",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Petrify",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Rending Blade",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Arcjolt",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Lee's Rapid Deconstruction",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Metabolic Englaciation",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Silence",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Yara's Violent Unravelling",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Bombard",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Fortress Blast",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Permafrost Eruption",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Hellfire Mortar",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Orb of Destruction",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Splinterfrost Shell",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Discord",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Ignition",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Fire Storm",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Shatter",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Soul Splinter",
-      "failurePercent": 100,
+      "failurePercent": null,
+      "castable": false,
       "memorized": false
     },
     {
       "name": "Launch Clockwork Bee",
-      "failurePercent": 100,
+      "failurePercent": null,
+      "castable": false,
       "memorized": false
     },
     {
       "name": "Eringya's Surprising Crocodile",
-      "failurePercent": 100,
+      "failurePercent": null,
+      "castable": false,
       "memorized": false
     },
     {
       "name": "Forge Blazeheart Golem",
-      "failurePercent": 100,
+      "failurePercent": null,
+      "castable": false,
       "memorized": false
     },
     {
       "name": "Spellspark Servitor",
-      "failurePercent": 100,
+      "failurePercent": null,
+      "castable": false,
       "memorized": false
     }
   ],

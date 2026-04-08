@@ -168,7 +168,8 @@ export type SkillsSnapshot = {
 
 export type SpellSnapshot = {
   name: string
-  failurePercent: number
+  failurePercent: number | null
+  castable: boolean
   memorized: boolean
 }
 

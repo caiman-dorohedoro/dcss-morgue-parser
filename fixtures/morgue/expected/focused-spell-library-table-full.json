@@ -162,16 +162,19 @@
     {
       "name": "Flame Wave",
       "failurePercent": 3,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Fireball",
       "failurePercent": 12,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Blink",
       "failurePercent": 22,
+      "castable": true,
       "memorized": false
     }
   ],

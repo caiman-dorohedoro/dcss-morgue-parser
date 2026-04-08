@@ -51,6 +51,7 @@ describe('parseMorgueText shared parser', () => {
     expect(spells).toContainEqual({
       name: "Iskenderun's Mystic Blast",
       failurePercent: 17,
+      castable: true,
       memorized: false,
     })
   })
@@ -63,31 +64,37 @@ describe('parseMorgueText shared parser', () => {
       expect(result.record.spells).toContainEqual({
         name: "Lehudib's Crystal Spear",
         failurePercent: 7,
+        castable: true,
         memorized: true,
       })
       expect(result.record.spells).toContainEqual({
         name: "Nazja's Percussive Tempering",
         failurePercent: 1,
+        castable: true,
         memorized: true,
       })
       expect(result.record.spells).toContainEqual({
         name: "Lee's Rapid Deconstruction",
         failurePercent: 1,
+        castable: true,
         memorized: true,
       })
       expect(result.record.spells).toContainEqual({
         name: "Brom's Barrelling Boulder",
         failurePercent: 0,
+        castable: true,
         memorized: false,
       })
       expect(result.record.spells).toContainEqual({
         name: "Iskenderun's Battlesphere",
         failurePercent: 1,
+        castable: true,
         memorized: false,
       })
       expect(result.record.spells).toContainEqual({
         name: "Iskenderun's Mystic Blast",
         failurePercent: 1,
+        castable: true,
         memorized: false,
       })
     }
@@ -102,6 +109,7 @@ describe('parseMorgueText shared parser', () => {
       expect(spellResult.record.spells).toContainEqual({
         name: "Dragon's Call",
         failurePercent: 4,
+        castable: true,
         memorized: true,
       })
     }

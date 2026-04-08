@@ -441,81 +441,97 @@
     {
       "name": "Apportation",
       "failurePercent": 100,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Jinxbite",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Lesser Beckoning",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Mephitic Cloud",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Anguish",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Borgnjor's Vile Clutch",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Freezing Cloud",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Yara's Violent Unravelling",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Conjure Ball Lightning",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Enfeeble",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Hellfire Mortar",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Ozocubu's Refrigeration",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Sphinx Sisters",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Infestation",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Summon Horrible Things",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Polar Vortex",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     }
   ],

@@ -91,11 +91,13 @@ describe('parseMorgue', () => {
       expect(result.record.spells).toContainEqual({
         name: 'Flame Wave',
         failurePercent: 3,
+        castable: true,
         memorized: true,
       })
       expect(result.record.spells).toContainEqual({
         name: 'Fireball',
         failurePercent: 12,
+        castable: true,
         memorized: false,
       })
     }

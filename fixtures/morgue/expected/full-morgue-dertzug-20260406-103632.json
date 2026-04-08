@@ -467,446 +467,535 @@
     {
       "name": "Mephitic Cloud",
       "failurePercent": 11,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Sigil of Binding",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Inner Flame",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Cause Fear",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Dimensional Bullseye",
       "failurePercent": 2,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Metabolic Englaciation",
       "failurePercent": 6,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Yara's Violent Unravelling",
       "failurePercent": 2,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Silence",
       "failurePercent": 6,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Enfeeble",
       "failurePercent": 5,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Tukima's Dance",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Apportation",
       "failurePercent": 7,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Slow",
       "failurePercent": 1,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Jinxbite",
       "failurePercent": 1,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Confusing Touch",
       "failurePercent": 1,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Gloom",
       "failurePercent": 1,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Anguish",
       "failurePercent": 2,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Poisonous Vapours",
       "failurePercent": 3,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Mercury Arrow",
       "failurePercent": 4,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Foxfire",
       "failurePercent": 6,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Summon Mana Viper",
       "failurePercent": 6,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Freeze",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Kiss of Death",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Magic Dart",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Shock",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Soul Splinter",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Summon Small Mammal",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Scorch",
       "failurePercent": 7,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Olgreb's Toxic Radiance",
       "failurePercent": 9,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Call Imp",
       "failurePercent": 10,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Construct Spike Launcher",
       "failurePercent": 10,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Grave Claw",
       "failurePercent": 10,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Momentum Strike",
       "failurePercent": 10,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Searing Ray",
       "failurePercent": 10,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Static Discharge",
       "failurePercent": 10,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Ignite Poison",
       "failurePercent": 17,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Sticky Flame",
       "failurePercent": 17,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Call Canine Familiar",
       "failurePercent": 19,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Hailstorm",
       "failurePercent": 19,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Launch Clockwork Bee",
       "failurePercent": 19,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Passwall",
       "failurePercent": 19,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Stone Arrow",
       "failurePercent": 19,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Vampiric Draining",
       "failurePercent": 19,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Fulminant Prism",
       "failurePercent": 22,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Leda's Liquefaction",
       "failurePercent": 22,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Petrify",
       "failurePercent": 22,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Alistair's Intoxication",
       "failurePercent": 22,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Discord",
       "failurePercent": 34,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Flame Wave",
       "failurePercent": 43,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Forge Blazeheart Golem",
       "failurePercent": 43,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Airstrike",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Animate Dead",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Awaken Armour",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Cigotuvi's Putrefaction",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Dispel Undead",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Eringya's Surprising Crocodile",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Iskenderun's Battlesphere",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Martyr's Knell",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Passage of Golubria",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Summon Seismosaurus Egg",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Irradiate",
       "failurePercent": 47,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Eringya's Noxious Bog",
       "failurePercent": 71,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Fireball",
       "failurePercent": 75,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Arcjolt",
       "failurePercent": 82,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Freezing Cloud",
       "failurePercent": 82,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Hoarfrost Cannonade",
       "failurePercent": 82,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Nazja's Percussive Tempering",
       "failurePercent": 82,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Summon Forest",
       "failurePercent": 82,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Sculpt Simulacrum",
       "failurePercent": 96,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Forge Monarch Bomb",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Plasma Beam",
       "failurePercent": 99,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Bombard",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Death Channel",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Dispersal",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Forge Phalanx Beetle",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Fortress Blast",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Summon Cactus Giant",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Magnavolt",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Manifold Assault",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Ozocubu's Refrigeration",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Spellspark Servitor",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Splinterfrost Shell",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Borgnjor's Revivification",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Ignition",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Infestation",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Maxwell's Capacitive Coupling",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Summon Horrible Things",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Chain Lightning",
       "failurePercent": 100,
+      "castable": true,
       "memorized": false
     },
     {
       "name": "Maxwell's Portable Piledriver",
-      "failurePercent": 100,
+      "failurePercent": null,
+      "castable": false,
       "memorized": false
     },
     {
       "name": "Swiftness",
-      "failurePercent": 100,
+      "failurePercent": null,
+      "castable": false,
       "memorized": false
     }
   ],

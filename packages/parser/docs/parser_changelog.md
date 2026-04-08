@@ -202,8 +202,11 @@ Most real parser regressions come from interactions between sections, wrapping, 
 
 ### What changed
 
-Modern spell-library rows with `Failure = N/A` are now preserved as spells with `failurePercent = 100` when the morgue still provides a numeric spell level.
+Modern spell-library rows with `Failure = N/A` are now preserved with:
+
+- `failurePercent = null`
+- `castable = false`
 
 ### Why
 
-Recent morgues can list unusable library spells this way. Treating those rows as unparsable caused the parser to drop valid spell names from the library section.
+Recent morgues can list unusable library spells this way. Treating those rows as numeric `100%` failures was a workable stopgap, but a dedicated unusable state preserves the morgue meaning more faithfully and avoids overloading the numeric failure field.

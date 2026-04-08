@@ -177,10 +177,11 @@ Each spell row stores:
 
 - `name`
 - `failurePercent`
+- `castable`
 - `memorized`
 
 Built-in canonical spell names help restore truncated morgue spell names like `Lehudib's Crystal Sp` back to `Lehudib's Crystal Spear`.
-When a modern spell-library row is marked `Failure = N/A` but still lists a level, the parser keeps that spell and records it as `failurePercent = 100` instead of dropping the row.
+`failurePercent` is numeric for castable rows and `null` for modern spell-library rows that the morgue marks as unusable. `castable` makes that two-state distinction explicit without adding a string enum.
 
 Code:
 

@@ -24,6 +24,7 @@ describe('extractSpells', () => {
     expect(spells).toContainEqual({
       name: 'Fireball',
       failurePercent: 12,
+      castable: true,
       memorized: false,
     })
   })
@@ -34,18 +35,21 @@ describe('extractSpells', () => {
     expect(spells).toContainEqual({
       name: 'Flame Wave',
       failurePercent: 3,
+      castable: true,
       memorized: true,
     })
 
     expect(spells).toContainEqual({
       name: 'Fireball',
       failurePercent: 12,
+      castable: true,
       memorized: false,
     })
 
     expect(spells).toContainEqual({
       name: 'Blink',
       failurePercent: 22,
+      castable: true,
       memorized: false,
     })
   })
@@ -56,52 +60,60 @@ describe('extractSpells', () => {
     expect(spells).toContainEqual({
       name: 'Sandblast',
       failurePercent: 0,
+      castable: true,
       memorized: false,
     })
 
     expect(spells).toContainEqual({
       name: 'Fireball',
       failurePercent: 13,
+      castable: true,
       memorized: false,
     })
 
     expect(spells).toContainEqual({
       name: 'Freezing Cloud',
       failurePercent: 32,
+      castable: true,
       memorized: false,
     })
 
     expect(spells).toContainEqual({
       name: "Iskenderun's Mystic Blast",
       failurePercent: 17,
+      castable: true,
       memorized: false,
     })
   })
 
-  it('keeps unusable spell-library entries as 100 percent failures', () => {
+  it('keeps unusable spell-library entries with an explicit unusable state', () => {
     const spells = extractSpells(loadFixture('spell-library-table-unusable-full.txt'))
 
     expect(spells).toContainEqual({
       name: 'Foxfire',
       failurePercent: 0,
+      castable: true,
       memorized: false,
     })
 
     expect(spells).toContainEqual({
       name: 'Kinetic Grapnel',
-      failurePercent: 100,
+      failurePercent: null,
+      castable: false,
       memorized: false,
     })
 
     expect(spells).toContainEqual({
       name: 'Soul Splinter',
-      failurePercent: 100,
+      failurePercent: null,
+      castable: false,
       memorized: false,
     })
 
     expect(spells).toContainEqual({
       name: 'Forge Lightning Spire',
-      failurePercent: 100,
+      failurePercent: null,
+      castable: false,
       memorized: false,
     })
   })
@@ -119,6 +131,7 @@ describe('extractSpells', () => {
     expect(parsed).toContainEqual({
       name: "Iskenderun's Mystic Blast",
       failurePercent: 17,
+      castable: true,
       memorized: false,
     })
   })
@@ -129,6 +142,7 @@ describe('extractSpells', () => {
         {
           name: 'Blink',
           failurePercent: 10,
+          castable: true,
           memorized: false,
         },
       ],
@@ -139,6 +153,7 @@ describe('extractSpells', () => {
       {
         name: 'Blink',
         failurePercent: 10,
+        castable: true,
         memorized: false,
       },
     ])
@@ -150,6 +165,7 @@ describe('extractSpells', () => {
     expect(spells).toContainEqual({
       name: "Dragon's Call",
       failurePercent: 4,
+      castable: true,
       memorized: true,
     })
   })

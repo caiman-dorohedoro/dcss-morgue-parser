@@ -55,6 +55,7 @@ function parseLegacySpellLine(line: string): SpellSnapshot {
   return {
     name: match[2].trim(),
     failurePercent: Number(match[3]),
+    castable: true,
     memorized: match[1] === '*',
   }
 }
@@ -121,7 +122,8 @@ function parseModernSpellLine(
     if (failureField === 'N/A' && /^\d+$/.test(levelField)) {
       return {
         name,
-        failurePercent: 100,
+        failurePercent: null,
+        castable: false,
         memorized,
       }
     }
@@ -135,6 +137,7 @@ function parseModernSpellLine(
     return {
       name,
       failurePercent: Number(fallbackMatch[1]),
+      castable: true,
       memorized,
     }
   }
@@ -142,6 +145,7 @@ function parseModernSpellLine(
   return {
     name,
     failurePercent: Number(failureField.slice(0, -1)),
+    castable: true,
     memorized,
   }
 }
@@ -235,6 +239,7 @@ function dedupeSpells(spells: SpellSnapshot[]): SpellSnapshot[] {
       ...spell,
       memorized: existing.memorized || spell.memorized,
       failurePercent: existing.memorized && !spell.memorized ? existing.failurePercent : spell.failurePercent,
+      castable: existing.memorized && !spell.memorized ? existing.castable : spell.castable,
     })
   }
 

@@ -429,81 +429,97 @@
     {
       "name": "Ozocubu's Armour",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Flame Wave",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Momentum Strike",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Fugue of the Fallen",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Foxfire",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Borgnjor's Vile Clutch",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Forge Monarch Bomb",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Lee's Rapid Deconstruction",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Manifold Assault",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Inner Flame",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Shock",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Volatile Blastmotes",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Borgnjor's Revivification",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Plasma Beam",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Summon Hydra",
       "failurePercent": 1,
+      "castable": true,
       "memorized": true
     },
     {
       "name": "Scorch",
       "failurePercent": 0,
+      "castable": true,
       "memorized": true
     }
   ],
