@@ -88,6 +88,36 @@ That means:
 - do not keep stale output just because an older parser happened to emit it
 - keep changes small and explain them in the parser changelog when they affect downstream consumers
 
+## Fixture Metadata Inventory
+
+When you want a quick view of current coverage, regenerate the fixture metadata
+inventory from the tests:
+
+```bash
+npm run fixtures:meta
+```
+
+This writes `fixtures/morgue/test-referenced-metadata.json`.
+
+The inventory is built from the fixtures that current tests actually reference,
+not from whatever happens to be sitting in the pipeline database. That keeps the
+report aligned with parser coverage instead of mixing in incidental live-sample
+history.
+
+The generated JSON is intentionally compact. It stores summary statistics and
+zero-filled Crawl-source coverage counts, not a long per-fixture dump.
+
+The generated JSON is meant to answer practical questions such as:
+
+- how many focused and full fixtures are currently referenced by tests
+- how many fixtures parse fully versus extractor-only partial coverage
+- which feature buckets are already represented
+- which 0.34 and 0.35-trunk species, backgrounds, and gods from Crawl source
+  still have zero fixture coverage
+
+Use that report to decide what new live morgues are worth collecting next and
+to sanity-check whether a proposed regression fixture fills a real gap.
+
 ## Practical Rule
 
 When in doubt:

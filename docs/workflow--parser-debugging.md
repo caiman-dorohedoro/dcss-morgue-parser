@@ -21,6 +21,21 @@ The important part is not the exact command but the shape of the sample:
 
 For collection commands and flag meanings, use `docs/workflow--qa.md`.
 
+Before choosing the next debugging target, check
+`fixtures/morgue/test-referenced-metadata.json`.
+
+Use that summary as a coverage map for the current regression set:
+
+- if a relevant species, background, god, or other slice is still at `0`, add
+  or collect that kind of case first
+- if a slice is technically present but clearly thin, prefer adding more cases
+  for it before spending time on an already well-covered area
+- if all relevant slices are already represented, prefer the cases with the
+  lowest non-zero counts
+
+This keeps parser debugging pointed at the weakest current coverage instead of
+accidentally revisiting the same comfortable cases.
+
 ## 2. Export Review Pairs
 
 Do not debug from the database alone.
