@@ -42,6 +42,7 @@ Last updated: 2026-04-08
 | `origin--raw-morgue-collection.md` | Provenance for collecting raw morgues from public Crawl servers for QA and schema iteration | `/docs` |
 | `workflow--qa.md` | Repeatable parser QA workflow built around stratified sampling and raw/parsed review pairs | `/docs` |
 | `workflow--parser-debugging.md` | Manual debugging loop for reviewing exported raw/parsed pairs and classifying real parser issues | `/docs` |
+| `workflow--parser-debugging--ko.md` | Korean reference translation of the parser debugging workflow note | `/docs` |
 | `strategy--fixture.md` | Test and fixture maintenance strategy across focused regressions and full golden morgues | `/docs` |
 | `notes--implementation.md` | Engineering notes distilled from the earlier implementation plan | `/docs` |
 | `parser_model.md` | Current parser schema and Crawl-aligned model explanation | `/packages/parser/docs` |
@@ -65,9 +66,11 @@ Last updated: 2026-04-08
 - `packages/parser/docs/parser_model.md` and `packages/parser/docs/parser_changelog.md` are the canonical parser contract documents.
 - `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
 - `docs/workflow--parser-debugging.md` is the practical inspection loop to use after a sample has already been collected.
+- `docs/workflow--parser-debugging--ko.md` is a Korean reference copy of the parser debugging workflow.
 - `docs/notes--implementation.md` is not a raw historical dump of the original plan; it is an edited note that keeps only the engineering judgment that still matters.
 
 ## Change Log
 
 - 2026-04-07: Converted the catalog to English, adopted prefix-first document naming for `docs/`, and aligned project-level file names to category-first topics.
 - 2026-04-08: Added `workflow--parser-debugging.md` as the dedicated manual inspection and parser debugging note.
+- 2026-04-08: Added `workflow--parser-debugging--ko.md` as a Korean reference translation of the parser debugging workflow.
