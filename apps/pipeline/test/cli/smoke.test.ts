@@ -27,8 +27,16 @@ Commands:
         '3',
         '--skip-first',
         '2',
+        '--sample',
+        'deterministic',
         '--min-xl',
         '10',
+        '--species',
+        'Deep Elf,Octopode',
+        '--background',
+        'Hedge Wizard,Shapeshifter',
+        '--god',
+        'Sif Muna,none',
         '--server',
         'CAO,CBRG',
         '--data-dir',
@@ -52,6 +60,11 @@ Commands:
       perBucket: 3,
       skipFirst: 2,
       minXl: 10,
+      species: ['Deep Elf', 'Octopode'],
+      backgrounds: ['Hedge Wizard', 'Shapeshifter'],
+      gods: ['Sif Muna', 'none'],
+      sampleMode: 'deterministic',
+      sampleSeed: undefined,
       serverIds: ['CAO', 'CBRG'],
       dataDir: '/tmp/dcss-data',
       dryRun: false,
@@ -87,6 +100,11 @@ Parsed failures: 1`,
     expect(runIncrementalCommand).toHaveBeenCalledWith({
       perBucket: 10,
       minXl: undefined,
+      species: undefined,
+      backgrounds: undefined,
+      gods: undefined,
+      sampleMode: 'deterministic',
+      sampleSeed: undefined,
       since: '2026-04-05T00:00:00.000Z',
       dryRun: true,
       fresh: false,
@@ -121,6 +139,11 @@ Dry run enabled: skipped morgue fetch and parse.`,
     expect(runIncrementalCommand).toHaveBeenCalledWith({
       perBucket: 10,
       minXl: 12,
+      species: undefined,
+      backgrounds: undefined,
+      gods: undefined,
+      sampleMode: 'deterministic',
+      sampleSeed: undefined,
       since: '2026-04-05T00:00:00.000Z',
       dryRun: true,
       fresh: false,
@@ -170,6 +193,61 @@ Dry run enabled: skipped morgue fetch and parse.`,
     await expect(runCli(['bootstrap', '--skip-first', '-1'])).resolves.toEqual({
       exitCode: 1,
       stdout: 'Expected a non-negative integer for --skip-first',
+    })
+  })
+
+  it('parses random sampling and metadata filters for incremental runs', async () => {
+    const runIncrementalCommand = vi.fn().mockResolvedValue({
+      selectedCandidates: 2,
+      parsedSuccesses: 0,
+      parsedFailures: 0,
+    })
+
+    await runCli(
+      [
+        'incremental',
+        '--dry-run',
+        '--since',
+        '2026-04-05T00:00:00Z',
+        '--sample',
+        'random',
+        '--seed',
+        'seed-123',
+        '--species',
+        'Octopode',
+        '--background',
+        'Shapeshifter',
+        '--god',
+        'none',
+      ],
+      { runIncrementalCommand },
+    )
+
+    expect(runIncrementalCommand).toHaveBeenCalledWith({
+      perBucket: 10,
+      minXl: undefined,
+      species: ['Octopode'],
+      backgrounds: ['Shapeshifter'],
+      gods: ['none'],
+      sampleMode: 'random',
+      sampleSeed: 'seed-123',
+      since: '2026-04-05T00:00:00.000Z',
+      dryRun: true,
+      fresh: false,
+      freshLogfiles: false,
+      dataDir: undefined,
+      initialTailBytes: undefined,
+      minDelayMs: undefined,
+      timeoutMs: undefined,
+      serverIds: undefined,
+      verbose: false,
+    })
+  })
+
+  it('rejects skip-first together with random sampling', async () => {
+    await expect(runCli(['bootstrap', '--sample', 'random', '--skip-first', '1'])).resolves.toEqual({
+      exitCode: 1,
+      stdout: '--skip-first is only supported with deterministic sampling',
     })
   })
 })

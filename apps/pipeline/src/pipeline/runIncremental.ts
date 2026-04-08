@@ -1,7 +1,10 @@
+import { randomUUID } from 'node:crypto'
 import { candidateRepo, migrate } from '../db/repos'
 import { selectIncrementalCandidates } from '../sampling/selectIncrementalCandidates'
 import {
   executeSelectedCandidates,
+  filterCandidatesByServerIds,
+  getCandidateFilters,
   runDiscoveryPhase,
   type PipelineContext,
   type PipelineSummary,
@@ -12,16 +15,21 @@ export async function runIncremental(ctx: PipelineContext): Promise<PipelineSumm
   await runDiscoveryPhase(ctx)
 
   const since = ctx.options.since ?? new Date(0).toISOString()
+  const sampleMode = ctx.options.sampleMode ?? 'deterministic'
+  const sampleSeed = sampleMode === 'random' ? (ctx.options.sampleSeed ?? randomUUID()) : undefined
+
+  if (sampleMode === 'random') {
+    ctx.log?.(`[incremental] random sampling seed ${sampleSeed}`)
+  }
+
   const selected = selectIncrementalCandidates(
-    candidateRepo
-      .listIncrementalEligible(ctx.db, since)
-      .filter((candidate) =>
-        ctx.options.serverIds?.length ? ctx.options.serverIds.includes(candidate.serverId) : true,
-      ),
+    filterCandidatesByServerIds(candidateRepo.listIncrementalEligible(ctx.db, since), ctx.options.serverIds),
     {
       since,
       perBucket: ctx.options.perBucket,
-      minXl: ctx.options.minXl,
+      filters: getCandidateFilters(ctx.options),
+      sampleMode,
+      sampleSeed,
     },
   )
   ctx.log?.(`[incremental] selected ${selected.length} candidates since ${since}`)

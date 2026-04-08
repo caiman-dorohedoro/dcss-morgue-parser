@@ -83,6 +83,27 @@ In the current pipeline manifest, the active server ids are `CBRG`, `CNC`, `CDI`
 
 That sampling mindset is still reflected in the QA workflow and fixture selection.
 
+By default, the current bootstrap sampler is deterministic inside each bucket:
+
+- candidate ids are derived deterministically from xlog identity fields
+- filtered candidates are ordered deterministically
+- `--per-bucket` then takes the first window from that order
+
+That default is useful for reproducible QA, but it also means fresh clones can
+surface nearly the same morgues when they see the same logfile snapshot. The
+pipeline now also supports:
+
+- random per-bucket sampling with an optional seed for reproducibility
+- direct xlog metadata filters for species, background, and god
+
+Those filters come from xlog itself rather than morgue parsing:
+
+- `race` -> species
+- `cls` -> background
+- `god` -> final god
+
+This keeps candidate discovery cheap while making QA sampling more targeted.
+
 ## What Was Intentionally Not Carried Forward
 
 The earliest design documents described parser requirements that no longer match the current parser model. Examples include:

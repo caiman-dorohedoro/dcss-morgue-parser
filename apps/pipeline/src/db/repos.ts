@@ -8,6 +8,7 @@ import type {
   ServerId,
   TargetVersion,
 } from '../types'
+import { parseCandidateMetadataFromLine } from '../discovery/parseXlogLine'
 import { createInMemoryDb, openDb, type Database } from './openDb'
 import { migrate } from './migrate'
 
@@ -26,6 +27,9 @@ type CandidateRowDb = {
   source_version_label: string
   player_name: string
   xl: number | null
+  species: string | null
+  background: string | null
+  god: string | null
   end_message: string
   started_at: string
   ended_at: string
@@ -66,6 +70,15 @@ function mapOffsetRow(row: OffsetRowDb): LogfileOffsetRow {
 }
 
 function mapCandidateRow(row: CandidateRowDb): CandidateGame {
+  const metadata =
+    row.species !== null || row.background !== null || row.god !== null
+      ? {
+          species: row.species,
+          background: row.background,
+          god: row.god,
+        }
+      : parseCandidateMetadataFromLine(row.raw_xlog_line)
+
   return {
     candidateId: row.candidate_id,
     serverId: row.server_id as ServerId,
@@ -73,6 +86,9 @@ function mapCandidateRow(row: CandidateRowDb): CandidateGame {
     sourceVersionLabel: row.source_version_label,
     playerName: row.player_name,
     xl: row.xl,
+    species: metadata.species,
+    background: metadata.background,
+    god: metadata.god,
     endMessage: row.end_message,
     startedAt: row.started_at,
     endedAt: row.ended_at,
@@ -160,6 +176,9 @@ export const candidateRepo = {
             source_version_label,
             player_name,
             xl,
+            species,
+            background,
+            god,
             end_message,
             started_at,
             ended_at,
@@ -193,6 +212,9 @@ export const candidateRepo = {
             source_version_label,
             player_name,
             xl,
+            species,
+            background,
+            god,
             end_message,
             started_at,
             ended_at,
@@ -221,6 +243,9 @@ export const candidateRepo = {
             source_version_label,
             player_name,
             xl,
+            species,
+            background,
+            god,
             end_message,
             started_at,
             ended_at,
@@ -250,6 +275,9 @@ export const candidateRepo = {
             source_version_label,
             player_name,
             xl,
+            species,
+            background,
+            god,
             end_message,
             started_at,
             ended_at,
@@ -298,14 +326,17 @@ export const candidateRepo = {
         insert or ignore into candidate_games (
           candidate_id,
           server_id,
-            version,
-            source_version_label,
-            player_name,
-            xl,
-            end_message,
-            started_at,
-            ended_at,
-            logfile_url,
+          version,
+          source_version_label,
+          player_name,
+          xl,
+          species,
+          background,
+          god,
+          end_message,
+          started_at,
+          ended_at,
+          logfile_url,
           raw_xlog_line,
           discovered_at,
           sampled_bootstrap_at,
@@ -317,6 +348,9 @@ export const candidateRepo = {
           @sourceVersionLabel,
           @playerName,
           @xl,
+          @species,
+          @background,
+          @god,
           @endMessage,
           @startedAt,
           @endedAt,

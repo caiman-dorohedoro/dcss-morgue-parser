@@ -1,4 +1,4 @@
-import type { CandidateGame } from '../types'
+import type { CandidateFilterOptions, CandidateGame, SamplingMode } from '../types'
 import { selectBootstrapCandidates } from './selectBootstrapCandidates'
 
 export function selectIncrementalCandidates(
@@ -6,11 +6,18 @@ export function selectIncrementalCandidates(
   options: {
     since: string
     perBucket: number
-    minXl?: number
+    filters?: CandidateFilterOptions
+    sampleMode?: SamplingMode
+    sampleSeed?: string
   },
 ): CandidateGame[] {
   return selectBootstrapCandidates(
     candidates.filter((candidate) => candidate.discoveredAt >= options.since),
-    { perBucket: options.perBucket, minXl: options.minXl },
+    {
+      perBucket: options.perBucket,
+      filters: options.filters,
+      sampleMode: options.sampleMode,
+      sampleSeed: options.sampleSeed,
+    },
   )
 }

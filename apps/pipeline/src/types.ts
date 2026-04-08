@@ -41,6 +41,9 @@ export type CandidateGame = {
   sourceVersionLabel: string
   playerName: string
   xl: number | null
+  species: string | null
+  background: string | null
+  god: string | null
   endMessage: string
   startedAt: string
   endedAt: string
@@ -50,6 +53,15 @@ export type CandidateGame = {
   sampledBootstrapAt: string | null
   sampledIncrementalAt: string | null
 }
+
+export type CandidateFilterOptions = {
+  minXl?: number
+  species?: readonly string[]
+  backgrounds?: readonly string[]
+  gods?: readonly string[]
+}
+
+export type SamplingMode = 'deterministic' | 'random'
 
 export type BaseStatsSnapshot = {
   version: MorgueVersion

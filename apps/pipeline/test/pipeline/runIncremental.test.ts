@@ -52,6 +52,9 @@ function seedCandidate(
     sourceVersionLabel: version === 'trunk' ? 'git' : version,
     playerName: candidateId,
     xl: 12,
+    species: null,
+    background: null,
+    god: null,
     endMessage: 'ok',
     startedAt: '2026-04-05T00:00:00.000Z',
     endedAt: '2026-04-05T01:00:00.000Z',
@@ -135,5 +138,88 @@ describe('runIncremental', () => {
     expect(summary.parsedSuccesses).toBe(2)
     expect(summary.parsedFailures).toBe(0)
     expect(parseResultRepo.listAll(db)).toHaveLength(2)
+  })
+
+  it('passes metadata filters through incremental sampling', async () => {
+    const db = createInMemoryDb()
+    migrate(db)
+
+    candidateRepo.insertMany(db, [
+      {
+        ...seedCandidate('new-defe', 'CAO', '0.34', '2026-04-05T06:30:00.000Z'),
+        species: 'Deep Elf',
+        background: 'Fire Elementalist',
+        god: 'Vehumet',
+      },
+      {
+        ...seedCandidate('new-opsh', 'CBRG', 'trunk', '2026-04-05T06:45:00.000Z'),
+        species: 'Octopode',
+        background: 'Shapeshifter',
+        god: null,
+      },
+    ])
+
+    const summary = await runIncremental({
+      db,
+      options: {
+        perBucket: 1,
+        since: '2026-04-05T06:00:00.000Z',
+        species: ['Octopode'],
+        backgrounds: ['Shapeshifter'],
+        gods: ['none'],
+      },
+      now: () => '2026-04-05T08:00:00.000Z',
+      discoverCandidates: async () => undefined,
+      fetchMorgue: async (_db, input): Promise<MorgueFetchRow> => ({
+        candidateId: input.candidate.candidateId,
+        morgueUrl: `https://example.test/${input.candidate.candidateId}.txt`,
+        fetchStatus: 'success',
+        httpStatus: 200,
+        localPath: '/virtual/morgue.txt',
+        lastError: null,
+        fetchedAt: '2026-04-05T08:00:00.000Z',
+      }),
+      readMorgueText: async () => 'fixture',
+      parseMorgue: (_text, meta) => ({
+        ok: true as const,
+        record: {
+          candidateId: meta.candidateId,
+          serverId: meta.serverId,
+          playerName: meta.playerName,
+          sourceVersionLabel: meta.sourceVersionLabel,
+          endedAt: meta.endedAt,
+          morgueUrl: meta.morgueUrl,
+          version: '0.34' as const,
+          species: 'Djinni',
+          speciesVariant: null,
+          background: null,
+          xl: 7,
+          ac: 4,
+          ev: 11,
+          sh: 0,
+          strength: 8,
+          intelligence: 19,
+          dexterity: 14,
+          bodyArmour: 'robe',
+          shield: 'none',
+          helmets: [],
+          gloves: [],
+          footwear: [],
+          cloaks: [],
+          orb: 'none',
+          amulet: 'none',
+          rings: [],
+          talisman: 'none',
+          form: null,
+          skills: mockSkills(),
+          effectiveSkills: mockSkills(),
+          spells: [],
+          mutations: [],
+        },
+      }),
+    })
+
+    expect(summary.selectedCandidates).toBe(1)
+    expect(parseResultRepo.listAll(db).map((row) => row.candidateId)).toEqual(['new-opsh'])
   })
 })

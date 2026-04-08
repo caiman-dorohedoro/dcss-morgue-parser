@@ -8,6 +8,7 @@ function seedCandidate(
   version: CandidateGame['version'],
   discoveredAt: string,
   xl: CandidateGame['xl'] = 12,
+  overrides: Partial<Pick<CandidateGame, 'species' | 'background' | 'god'>> = {},
 ): CandidateGame {
   return {
     candidateId,
@@ -16,6 +17,9 @@ function seedCandidate(
     sourceVersionLabel: version === 'trunk' ? 'git' : version,
     playerName: candidateId,
     xl,
+    species: overrides.species ?? null,
+    background: overrides.background ?? null,
+    god: overrides.god ?? null,
     endMessage: 'ok',
     startedAt: '2026-04-05T00:00:00.000Z',
     endedAt: '2026-04-05T01:00:00.000Z',
@@ -55,10 +59,38 @@ describe('selectIncrementalCandidates', () => {
       {
         since: '2026-04-05T05:59:59.000Z',
         perBucket: 1,
-        minXl: 10,
+        filters: { minXl: 10 },
       },
     )
 
     expect(selected.map((candidate) => candidate.candidateId)).toEqual(['new-high', 'new-trunk'])
+  })
+
+  it('applies metadata filters during incremental selection', () => {
+    const selected = selectIncrementalCandidates(
+      [
+        seedCandidate('new-defe', 'CAO', '0.34', '2026-04-05T06:00:00.000Z', 12, {
+          species: 'Deep Elf',
+          background: 'Fire Elementalist',
+          god: 'Vehumet',
+        }),
+        seedCandidate('new-opsh', 'CAO', 'trunk', '2026-04-05T06:05:00.000Z', 12, {
+          species: 'Octopode',
+          background: 'Shapeshifter',
+          god: null,
+        }),
+      ],
+      {
+        since: '2026-04-05T05:59:59.000Z',
+        perBucket: 1,
+        filters: {
+          species: ['Octopode'],
+          backgrounds: ['Shapeshifter'],
+          gods: ['none'],
+        },
+      },
+    )
+
+    expect(selected.map((candidate) => candidate.candidateId)).toEqual(['new-opsh'])
   })
 })

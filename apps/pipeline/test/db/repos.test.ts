@@ -17,6 +17,9 @@ function seedCandidate(overrides: Partial<CandidateGame> = {}): CandidateGame {
     sourceVersionLabel: '0.34',
     playerName: 'alice',
     xl: 7,
+    species: 'Deep Elf',
+    background: 'Hedge Wizard',
+    god: 'Sif Muna',
     endMessage: 'slain by an orc',
     startedAt: '2026-04-05T00:00:00.000Z',
     endedAt: '2026-04-05T01:00:00.000Z',
@@ -110,6 +113,29 @@ describe('offsetRepo', () => {
       failureCode: 'wizardry_parse_failed',
       failureDetail: 'Could not determine wizardry from modifiers section',
       parsedAt: '2026-04-05T05:00:00.000Z',
+    })
+  })
+
+  it('derives xlog metadata from raw_xlog_line for legacy rows without stored columns', () => {
+    const db = createInMemoryDb()
+    migrate(db)
+
+    const legacyCandidate = seedCandidate({
+      candidateId: 'legacy-1',
+      species: null,
+      background: null,
+      god: null,
+      rawXlogLine:
+        'name=legacy:v=0.34:race=Octopode:cls=Shapeshifter:god=Gozag:start=20260305000102S:end=20260305010203S:tmsg=ok',
+    })
+
+    candidateRepo.insertMany(db, [legacyCandidate])
+
+    expect(candidateRepo.get(db, legacyCandidate.candidateId)).toEqual({
+      ...legacyCandidate,
+      species: 'Octopode',
+      background: 'Shapeshifter',
+      god: 'Gozag',
     })
   })
 })

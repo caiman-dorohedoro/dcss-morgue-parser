@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto'
 import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 import { ACTIVE_SERVER_IDS, getServerManifest } from '../config/manifest'
@@ -7,9 +8,19 @@ import { discoverCandidates as defaultDiscoverCandidates } from '../discovery/di
 import { backfillLogfile, type ReadBackfillSlice, type ReadLogfileSlice } from '../discovery/syncLogfile'
 import { fetchMorgue as defaultFetchMorgue } from '../fetch/fetchMorgue'
 import { parseMorgue as defaultParseMorgue } from '../parser/parseMorgue'
-import { selectBootstrapCandidates } from '../sampling/selectBootstrapCandidates'
-import { isExcludedModeCandidate } from '../discovery/parseXlogLine'
-import type { CandidateGame, ParseFailureRecord, ParseResultRow, ServerId, TargetVersion } from '../types'
+import {
+  matchesCandidateFilters,
+  selectBootstrapCandidates,
+} from '../sampling/selectBootstrapCandidates'
+import type {
+  CandidateFilterOptions,
+  CandidateGame,
+  ParseFailureRecord,
+  ParseResultRow,
+  SamplingMode,
+  ServerId,
+  TargetVersion,
+} from '../types'
 
 export type PipelineSummary = {
   selectedCandidates: number
@@ -21,7 +32,12 @@ export type PipelineOptions = {
   perBucket: number
   since?: string
   minXl?: number
+  species?: readonly string[]
+  backgrounds?: readonly string[]
+  gods?: readonly string[]
   skipFirst?: number
+  sampleMode?: SamplingMode
+  sampleSeed?: string
   serverIds?: readonly ServerId[]
   dryRun?: boolean
 }
@@ -47,7 +63,7 @@ function getNow(ctx: PipelineContext): string {
   return ctx.now?.() ?? new Date().toISOString()
 }
 
-function filterCandidatesByServerIds(
+export function filterCandidatesByServerIds(
   candidates: CandidateGame[],
   serverIds: readonly ServerId[] | undefined,
 ): CandidateGame[] {
@@ -63,19 +79,26 @@ function getBucketKey(candidate: Pick<CandidateGame, 'serverId' | 'version'>): s
   return `${candidate.serverId}:${candidate.version}`
 }
 
+export function getCandidateFilters(
+  options: Pick<PipelineOptions, 'minXl' | 'species' | 'backgrounds' | 'gods'>,
+): CandidateFilterOptions {
+  return {
+    minXl: options.minXl,
+    species: options.species,
+    backgrounds: options.backgrounds,
+    gods: options.gods,
+  }
+}
+
 function getBootstrapEligibleCounts(
   db: Database,
   serverIds: readonly ServerId[] | undefined,
-  minXl: number | undefined,
+  filters: CandidateFilterOptions,
 ): Map<string, number> {
   const counts = new Map<string, number>()
 
   for (const candidate of filterCandidatesByServerIds(candidateRepo.listBootstrapEligible(db), serverIds)) {
-    if (isExcludedModeCandidate(candidate)) {
-      continue
-    }
-
-    if (minXl !== undefined && (candidate.xl === null || candidate.xl < minXl)) {
+    if (!matchesCandidateFilters(candidate, filters)) {
       continue
     }
 
@@ -86,7 +109,13 @@ function getBootstrapEligibleCounts(
   return counts
 }
 
-function getBootstrapTargetEligibleCount(options: Pick<PipelineOptions, 'perBucket' | 'skipFirst'>): number {
+function getBootstrapTargetEligibleCount(
+  options: Pick<PipelineOptions, 'perBucket' | 'skipFirst' | 'sampleMode'>,
+): number {
+  if ((options.sampleMode ?? 'deterministic') === 'random') {
+    return options.perBucket
+  }
+
   return options.perBucket + (options.skipFirst ?? 0)
 }
 
@@ -121,7 +150,11 @@ async function runBootstrapBackfillPhase(ctx: PipelineContext) {
   }
 
   while (true) {
-    const eligibleCounts = getBootstrapEligibleCounts(ctx.db, ctx.options.serverIds, ctx.options.minXl)
+    const eligibleCounts = getBootstrapEligibleCounts(
+      ctx.db,
+      ctx.options.serverIds,
+      getCandidateFilters(ctx.options),
+    )
     const targetEligibleCount = getBootstrapTargetEligibleCount(ctx.options)
     const underfilled = [...bucketStates.values()].filter(
       (bucket) =>
@@ -334,12 +367,21 @@ export async function runBootstrap(ctx: PipelineContext): Promise<PipelineSummar
   await runDiscoveryPhase(ctx)
   await runBootstrapBackfillPhase(ctx)
 
+  const sampleMode = ctx.options.sampleMode ?? 'deterministic'
+  const sampleSeed = sampleMode === 'random' ? (ctx.options.sampleSeed ?? randomUUID()) : undefined
+
+  if (sampleMode === 'random') {
+    ctx.log?.(`[bootstrap] random sampling seed ${sampleSeed}`)
+  }
+
   const selected = selectBootstrapCandidates(
     filterCandidatesByServerIds(candidateRepo.listBootstrapEligible(ctx.db), ctx.options.serverIds),
     {
       perBucket: ctx.options.perBucket,
-      minXl: ctx.options.minXl,
+      filters: getCandidateFilters(ctx.options),
       skipFirst: ctx.options.skipFirst,
+      sampleMode,
+      sampleSeed,
     },
   )
   ctx.log?.(`[bootstrap] selected ${selected.length} candidates`)

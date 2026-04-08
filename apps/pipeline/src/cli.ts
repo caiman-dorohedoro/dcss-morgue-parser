@@ -1,5 +1,5 @@
 import { pathToFileURL } from 'node:url'
-import { ACTIVE_SERVER_IDS, type ServerId } from './types'
+import { ACTIVE_SERVER_IDS, type SamplingMode, type ServerId } from './types'
 import {
   runAuditCommand as defaultRunAuditCommand,
   runBootstrapCommand as defaultRunBootstrapCommand,
@@ -38,7 +38,12 @@ const BOOTSTRAP_USAGE = `Usage: dcss-morgue bootstrap [options]
 Options:
   --per-bucket <n>     Candidates per (server, version) bucket. Default: 10
   --skip-first <n>     Skip the first n sorted candidates per (server, version) bucket. Default: 0
+  --sample <mode>      Sampling mode: deterministic or random. Default: deterministic
+  --seed <value>       Seed for random sampling so the selection stays reproducible
   --min-xl <n>         Only sample candidates with xlog XL >= n
+  --species <names>    Comma-separated xlog race filter (OR semantics)
+  --background <names> Comma-separated xlog class filter (OR semantics)
+  --god <names>        Comma-separated xlog god filter (use none for no god)
   --server <ids>       Comma-separated server ids. Default: all active servers
   --data-dir <path>    Override runtime data directory
   --fresh              Clear DB, morgues, and audit before running, but keep logfile cache
@@ -53,7 +58,12 @@ Options:
 const INCREMENTAL_USAGE = `Usage: dcss-morgue incremental [options]
 Options:
   --per-bucket <n>     Candidates per (server, version) bucket. Default: 10
+  --sample <mode>      Sampling mode: deterministic or random. Default: deterministic
+  --seed <value>       Seed for random sampling so the selection stays reproducible
   --min-xl <n>         Only sample candidates with xlog XL >= n
+  --species <names>    Comma-separated xlog race filter (OR semantics)
+  --background <names> Comma-separated xlog class filter (OR semantics)
+  --god <names>        Comma-separated xlog god filter (use none for no god)
   --since <iso8601>    Lower bound for discovered_at. Default: now minus 6 hours
   --server <ids>       Comma-separated server ids. Default: all active servers
   --data-dir <path>    Override runtime data directory
@@ -108,6 +118,35 @@ function parseStringOption(flag: string, value: string | undefined): string {
   }
 
   return value
+}
+
+function parseCommaSeparatedOption(flag: string, value: string | undefined): string[] {
+  if (!value) {
+    throw new Error(`Missing value for ${flag}`)
+  }
+
+  const parsed = value
+    .split(',')
+    .map((item) => item.trim())
+    .filter((item) => item.length > 0)
+
+  if (parsed.length === 0) {
+    throw new Error(`Expected at least one value for ${flag}`)
+  }
+
+  return parsed
+}
+
+function parseSampleMode(flag: string, value: string | undefined): SamplingMode {
+  if (!value) {
+    throw new Error(`Missing value for ${flag}`)
+  }
+
+  if (value === 'deterministic' || value === 'random') {
+    return value
+  }
+
+  throw new Error(`Expected deterministic or random for ${flag}`)
 }
 
 function parseServerIds(value: string | undefined): ServerId[] {
@@ -270,6 +309,11 @@ function parseBootstrapOptions(args: string[]): BootstrapCommandOptions {
   let perBucket = 10
   let skipFirst = 0
   let minXl: number | undefined
+  let species: string[] | undefined
+  let backgrounds: string[] | undefined
+  let gods: string[] | undefined
+  let sampleMode: SamplingMode = 'deterministic'
+  let sampleSeed: string | undefined
   let backfillChunkBytes: number | undefined
 
   for (let index = 0; index < common.rest.length; index += 1) {
@@ -293,6 +337,36 @@ function parseBootstrapOptions(args: string[]): BootstrapCommandOptions {
       continue
     }
 
+    if (current === '--species') {
+      species = parseCommaSeparatedOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--background') {
+      backgrounds = parseCommaSeparatedOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--god') {
+      gods = parseCommaSeparatedOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--sample') {
+      sampleMode = parseSampleMode(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--seed') {
+      sampleSeed = parseStringOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
     if (current === '--backfill-chunk-bytes') {
       backfillChunkBytes = parseIntegerOption(current, common.rest[index + 1])
       index += 1
@@ -302,10 +376,19 @@ function parseBootstrapOptions(args: string[]): BootstrapCommandOptions {
     throw new Error(`Unknown bootstrap option: ${current}`)
   }
 
+  if (sampleMode === 'random' && skipFirst > 0) {
+    throw new Error('--skip-first is only supported with deterministic sampling')
+  }
+
   return {
     perBucket,
     skipFirst,
     minXl,
+    species,
+    backgrounds,
+    gods,
+    sampleMode,
+    sampleSeed,
     dataDir: common.parsed.dataDir,
     dryRun: common.parsed.dryRun,
     fresh: common.parsed.fresh,
@@ -323,6 +406,11 @@ function parseIncrementalOptions(args: string[]): IncrementalCommandOptions {
   const common = parseCommonOptionBag(args)
   let perBucket = 10
   let minXl: number | undefined
+  let species: string[] | undefined
+  let backgrounds: string[] | undefined
+  let gods: string[] | undefined
+  let sampleMode: SamplingMode = 'deterministic'
+  let sampleSeed: string | undefined
   let since = getDefaultSinceIso()
 
   for (let index = 0; index < common.rest.length; index += 1) {
@@ -340,6 +428,36 @@ function parseIncrementalOptions(args: string[]): IncrementalCommandOptions {
       continue
     }
 
+    if (current === '--species') {
+      species = parseCommaSeparatedOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--background') {
+      backgrounds = parseCommaSeparatedOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--god') {
+      gods = parseCommaSeparatedOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--sample') {
+      sampleMode = parseSampleMode(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
+    if (current === '--seed') {
+      sampleSeed = parseStringOption(current, common.rest[index + 1])
+      index += 1
+      continue
+    }
+
     if (current === '--since') {
       since = parseIsoTimestamp(current, common.rest[index + 1])
       index += 1
@@ -352,6 +470,11 @@ function parseIncrementalOptions(args: string[]): IncrementalCommandOptions {
   return {
     perBucket,
     minXl,
+    species,
+    backgrounds,
+    gods,
+    sampleMode,
+    sampleSeed,
     since,
     dataDir: common.parsed.dataDir,
     dryRun: common.parsed.dryRun,

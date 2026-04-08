@@ -55,6 +55,9 @@ function seedCandidate(
     sourceVersionLabel: version === 'trunk' ? 'git' : version,
     playerName: candidateId,
     xl: 12,
+    species: null,
+    background: null,
+    god: null,
     endMessage: 'ok',
     startedAt: '2026-04-05T00:00:00.000Z',
     endedAt: '2026-04-05T01:00:00.000Z',
@@ -431,5 +434,111 @@ describe('runBootstrap', () => {
     expect(readBackfillSlice).toHaveBeenCalledTimes(2)
     expect(readBackfillSlice.mock.calls.map(([input]) => input.beforeByteExclusive)).toEqual([100, 50])
     expect(parseResultRepo.listAll(db)).toHaveLength(2)
+  })
+
+  it('applies metadata filters when deciding whether bootstrap backfill is still needed', async () => {
+    const db = createInMemoryDb()
+    const readBackfillSlice = vi.fn(async ({ beforeByteExclusive }: { beforeByteExclusive: number }) => {
+      if (beforeByteExclusive !== 100) {
+        return null
+      }
+
+      return {
+        byteOffset: 0,
+        text: 'name=cao34-ok:race=Octopode:cls=Shapeshifter:start=20260305030405S:v=0.34:end=20260305040506S:tmsg=ok\n',
+      }
+    })
+
+    const summary = await runBootstrap({
+      db,
+      options: {
+        perBucket: 1,
+        species: ['Octopode'],
+        backgrounds: ['Shapeshifter'],
+        serverIds: ['CAO'],
+      },
+      discoverCandidates: async () => {
+        migrate(db)
+        candidateRepo.insertMany(db, [
+          {
+            ...seedCandidate('cao34-miss', 'CAO', '0.34'),
+            species: 'Deep Elf',
+            background: 'Hedge Wizard',
+          },
+        ])
+        offsetRepo.upsert(db, {
+          serverId: 'CAO',
+          version: '0.34',
+          logfileUrl: 'http://crawl.akrasiac.org/logfile34',
+          byteOffset: 100,
+        })
+      },
+      readBackfillSlice,
+      fetchMorgue: async (_db, input): Promise<MorgueFetchRow> => ({
+        candidateId: input.candidate.candidateId,
+        morgueUrl: `https://example.test/${input.candidate.candidateId}.txt`,
+        fetchStatus: 'success',
+        httpStatus: 200,
+        localPath: '/virtual/morgue.txt',
+        lastError: null,
+        fetchedAt: '2026-04-05T08:00:00.000Z',
+      }),
+      readMorgueText: async () => 'fixture',
+      parseMorgue: (_text, meta) => ({
+        ok: true as const,
+        record: {
+          candidateId: meta.candidateId,
+          serverId: meta.serverId,
+          playerName: meta.playerName,
+          sourceVersionLabel: meta.sourceVersionLabel,
+          endedAt: meta.endedAt,
+          morgueUrl: meta.morgueUrl,
+          version: '0.34' as const,
+          species: 'Djinni',
+          speciesVariant: null,
+          background: null,
+          xl: 7,
+          ac: 4,
+          ev: 11,
+          sh: 0,
+          strength: 8,
+          intelligence: 19,
+          dexterity: 14,
+          bodyArmour: 'robe',
+          shield: 'none',
+          helmets: [],
+          gloves: [],
+          footwear: [],
+          cloaks: [],
+          orb: 'none',
+          amulet: 'none',
+          rings: [],
+          talisman: 'none',
+          form: null,
+          skills: mockSkills(),
+          effectiveSkills: mockSkills(),
+          spells: [],
+          mutations: [],
+        },
+      }),
+    })
+
+    expect(summary).toEqual({
+      selectedCandidates: 1,
+      parsedSuccesses: 1,
+      parsedFailures: 0,
+    })
+    expect(readBackfillSlice).toHaveBeenCalledTimes(1)
+    const parsedCandidateIds = parseResultRepo.listAll(db).map((row) => row.candidateId)
+    expect(parsedCandidateIds).toHaveLength(1)
+    expect(parsedCandidateIds).not.toContain('cao34-miss')
+    expect(
+      candidateRepo.listAll(db).some(
+        (candidate) =>
+          candidate.playerName === 'cao34-ok' &&
+          candidate.species === 'Octopode' &&
+          candidate.background === 'Shapeshifter',
+      ),
+    ).toBe(true)
   })
 })

@@ -23,13 +23,19 @@ export type RuntimeCommandOptions = {
 }
 
 export type BootstrapCommandOptions = RuntimeCommandOptions &
-  Pick<PipelineOptions, 'perBucket' | 'minXl' | 'skipFirst'> & {
+  Pick<
+    PipelineOptions,
+    'perBucket' | 'minXl' | 'species' | 'backgrounds' | 'gods' | 'skipFirst' | 'sampleMode' | 'sampleSeed'
+  > & {
     backfillChunkBytes?: number
     dryRun: boolean
   }
 
 export type IncrementalCommandOptions = RuntimeCommandOptions &
-  Pick<PipelineOptions, 'perBucket' | 'minXl'> & {
+  Pick<
+    PipelineOptions,
+    'perBucket' | 'minXl' | 'species' | 'backgrounds' | 'gods' | 'sampleMode' | 'sampleSeed'
+  > & {
     since?: string
     dryRun: boolean
   }
@@ -90,7 +96,12 @@ export async function runBootstrapCommand(
       options: {
         perBucket: options.perBucket,
         minXl: options.minXl,
+        species: options.species,
+        backgrounds: options.backgrounds,
+        gods: options.gods,
         skipFirst: options.skipFirst,
+        sampleMode: options.sampleMode,
+        sampleSeed: options.sampleSeed,
         dryRun: options.dryRun,
         serverIds: options.serverIds,
       },
@@ -129,7 +140,12 @@ export async function runIncrementalCommand(
       options: {
         perBucket: options.perBucket,
         minXl: options.minXl,
+        species: options.species,
+        backgrounds: options.backgrounds,
+        gods: options.gods,
         since: options.since,
+        sampleMode: options.sampleMode,
+        sampleSeed: options.sampleSeed,
         dryRun: options.dryRun,
         serverIds: options.serverIds,
       },

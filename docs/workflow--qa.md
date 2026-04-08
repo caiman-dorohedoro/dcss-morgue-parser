@@ -30,6 +30,36 @@ If you want a deliberately different bootstrap sample from the same deterministi
 selection order, add `--skip-first <n>` so each `(server, version)` bucket skips
 its first `n` sorted candidates before taking `--per-bucket`.
 
+If you want the sampler to choose a different order across fresh clones instead
+of walking the same deterministic window, switch to `--sample random`. Add
+`--seed <value>` when you want that random order to stay reproducible across
+machines or reruns.
+
+The sampler can also filter directly on xlog metadata before any morgues are
+fetched:
+
+- `--species <names>` matches the xlog `race` field
+- `--background <names>` matches the xlog `cls` field
+- `--god <names>` matches the xlog `god` field
+- `--god none` matches games that ended without a god
+
+For example:
+
+```bash
+npm run bootstrap -- \
+  --server CBRG,CDI,CXC,CAO,CBR2,CNC,CPO \
+  --per-bucket 2 \
+  --sample random \
+  --seed qa-2026-04-08 \
+  --species Octopode,Deep\ Elf \
+  --background Shapeshifter,Hedge\ Wizard \
+  --god none,Sif\ Muna \
+  --min-xl 15 \
+  --data-dir ./data/bootstrap-random-filtered \
+  --fresh \
+  --verbose
+```
+
 Operational details worth remembering:
 
 - the first discovery pass is tail-first, so a fresh bucket starts by reading only the most recent logfile bytes rather than the entire remote logfile
@@ -39,6 +69,10 @@ Operational details worth remembering:
 - `--fresh-logfiles` also clears cached logfile slices when you want a clean discovery baseline
 - if a bootstrap bucket is underfilled, the pipeline can keep walking backward through older logfile chunks via `--backfill-chunk-bytes`
 - `--skip-first` is useful when a fresh clone would otherwise keep surfacing nearly the same morgues; it shifts the deterministic per-bucket window instead of relying on randomness
+- `--sample random` reduces cross-clone overlap, but it does not guarantee disjoint samples across machines; it only changes the per-bucket order before `--per-bucket` is applied
+- `--seed` makes random sampling reproducible; the same filtered candidate set and the same seed produce the same selection order
+- `--skip-first` only applies to deterministic sampling; it is rejected together with `--sample random`
+- `--species`, `--background`, and `--god` work from logfile/xlog metadata, so they narrow the candidate set before any morgue fetches happen
 - `--timeout-ms 30000` is a practical choice for this broader seven-server subset when the runner and servers are spread across different regions; depending on where the command is run, a different server could be the slow one
 
 The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. This workflow example uses the broader practical subset `CBRG`, `CDI`, `CXC`, `CAO`, `CBR2`, `CNC`, and `CPO`, while intentionally skipping `LLD`; `CUE` is not part of the current active manifest.

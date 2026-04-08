@@ -17,6 +17,9 @@ create table if not exists candidate_games (
   source_version_label text not null,
   player_name text not null,
   xl integer,
+  species text,
+  background text,
+  god text,
   end_message text not null,
   started_at text not null,
   ended_at text not null,
@@ -59,5 +62,17 @@ export function migrate(db: Database) {
 
   if (!candidateColumns.some((column) => column.name === 'xl')) {
     db.exec(`alter table candidate_games add column xl integer`)
+  }
+
+  if (!candidateColumns.some((column) => column.name === 'species')) {
+    db.exec(`alter table candidate_games add column species text`)
+  }
+
+  if (!candidateColumns.some((column) => column.name === 'background')) {
+    db.exec(`alter table candidate_games add column background text`)
+  }
+
+  if (!candidateColumns.some((column) => column.name === 'god')) {
+    db.exec(`alter table candidate_games add column god text`)
   }
 }

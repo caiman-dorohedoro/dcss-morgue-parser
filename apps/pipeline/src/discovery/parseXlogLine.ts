@@ -26,6 +26,24 @@ function parseXlogRecord(line: string): Record<string, string> {
   )
 }
 
+function parseOptionalTextField(record: Record<string, string>, key: string): string | null {
+  const value = record[key]?.trim()
+  return value ? value : null
+}
+
+export function parseCandidateMetadataFromLine(line: string): Pick<
+  CandidateGame,
+  'species' | 'background' | 'god'
+> {
+  const record = parseXlogRecord(line)
+
+  return {
+    species: parseOptionalTextField(record, 'race'),
+    background: parseOptionalTextField(record, 'cls'),
+    god: parseOptionalTextField(record, 'god'),
+  }
+}
+
 function isTruthyFlag(value: string | undefined): boolean {
   if (!value) {
     return false
@@ -152,6 +170,9 @@ export function parseXlogLine(line: string, ctx: ParseXlogContext): CandidateGam
   const startedAtRaw = getRequiredField(record, 'start')
   const endedAtRaw = getRequiredField(record, 'end')
   const endMessage = getRequiredField(record, 'tmsg')
+  const species = parseOptionalTextField(record, 'race')
+  const background = parseOptionalTextField(record, 'cls')
+  const god = parseOptionalTextField(record, 'god')
   const version = getBucketForSourceVersion(ctx.serverId, sourceVersionLabel)
   const startedAt = normalizeXlogTimestamp(startedAtRaw)
   const endedAt = normalizeXlogTimestamp(endedAtRaw)
@@ -165,6 +186,9 @@ export function parseXlogLine(line: string, ctx: ParseXlogContext): CandidateGam
     sourceVersionLabel,
     playerName,
     xl,
+    species,
+    background,
+    god,
     endMessage,
     startedAt,
     endedAt,

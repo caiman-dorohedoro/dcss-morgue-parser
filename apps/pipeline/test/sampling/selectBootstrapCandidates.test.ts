@@ -7,6 +7,7 @@ function seedCandidate(
   serverId: CandidateGame['serverId'],
   version: CandidateGame['version'],
   xl: CandidateGame['xl'] = 12,
+  overrides: Partial<Pick<CandidateGame, 'species' | 'background' | 'god'>> = {},
 ): CandidateGame {
   return {
     candidateId,
@@ -15,6 +16,9 @@ function seedCandidate(
     sourceVersionLabel: version === 'trunk' ? 'git' : version,
     playerName: candidateId,
     xl,
+    species: overrides.species ?? null,
+    background: overrides.background ?? null,
+    god: overrides.god ?? null,
     endMessage: 'ok',
     startedAt: '2026-04-05T00:00:00.000Z',
     endedAt: '2026-04-05T01:00:00.000Z',
@@ -91,7 +95,7 @@ describe('selectBootstrapCandidates', () => {
         seedCandidate('caogit-high', 'CAO', 'trunk', 15),
         seedCandidate('caogit-missing', 'CAO', 'trunk', null),
       ],
-      { perBucket: 2, minXl: 10 },
+      { perBucket: 2, filters: { minXl: 10 } },
     )
 
     expect(selected.map((candidate) => candidate.candidateId)).toEqual([
@@ -121,5 +125,85 @@ describe('selectBootstrapCandidates', () => {
       'caogit-2',
       'caogit-3',
     ])
+  })
+
+  it('filters by species, background, and god from xlog metadata', () => {
+    const selected = selectBootstrapCandidates(
+      [
+        seedCandidate('cao34-defe', 'CAO', '0.34', 12, {
+          species: 'Deep Elf',
+          background: 'Fire Elementalist',
+          god: 'Vehumet',
+        }),
+        seedCandidate('cao34-demk', 'CAO', '0.34', 12, {
+          species: 'Deep Elf',
+          background: 'Monk',
+          god: 'Vehumet',
+        }),
+        seedCandidate('caogit-opsh', 'CAO', 'trunk', 12, {
+          species: 'Octopode',
+          background: 'Shapeshifter',
+          god: null,
+        }),
+        seedCandidate('caogit-opfe', 'CAO', 'trunk', 12, {
+          species: 'Octopode',
+          background: 'Fire Elementalist',
+          god: 'Ashenzari',
+        }),
+      ],
+      {
+        perBucket: 2,
+        filters: {
+          species: ['octopode'],
+          backgrounds: ['Shapeshifter'],
+          gods: ['none'],
+        },
+      },
+    )
+
+    expect(selected.map((candidate) => candidate.candidateId)).toEqual(['caogit-opsh'])
+  })
+
+  it('uses the provided seed to produce stable random samples', () => {
+    const candidates = [
+      seedCandidate('cao34-1', 'CAO', '0.34'),
+      seedCandidate('cao34-2', 'CAO', '0.34'),
+      seedCandidate('cao34-3', 'CAO', '0.34'),
+      seedCandidate('cao34-4', 'CAO', '0.34'),
+    ]
+
+    const selectedA = selectBootstrapCandidates(candidates, {
+      perBucket: 2,
+      sampleMode: 'random',
+      sampleSeed: 'seed-a',
+    })
+    const selectedARepeat = selectBootstrapCandidates(candidates, {
+      perBucket: 2,
+      sampleMode: 'random',
+      sampleSeed: 'seed-a',
+    })
+    const selectedB = selectBootstrapCandidates(candidates, {
+      perBucket: 2,
+      sampleMode: 'random',
+      sampleSeed: 'seed-b',
+    })
+
+    expect(selectedA.map((candidate) => candidate.candidateId)).toEqual(
+      selectedARepeat.map((candidate) => candidate.candidateId),
+    )
+    expect(selectedA.map((candidate) => candidate.candidateId)).not.toEqual(
+      selectedB.map((candidate) => candidate.candidateId),
+    )
+  })
+
+  it('rejects skip-first when random sampling is requested', () => {
+    expect(() =>
+      selectBootstrapCandidates([seedCandidate('cao34-1', 'CAO', '0.34')], {
+        perBucket: 1,
+        sampleMode: 'random',
+        sampleSeed: 'seed-a',
+        skipFirst: 1,
+      }),
+    ).toThrow('--skip-first is only supported with deterministic sampling')
   })
 })

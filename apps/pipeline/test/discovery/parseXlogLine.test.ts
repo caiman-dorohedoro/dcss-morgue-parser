@@ -4,7 +4,7 @@ import { isExcludedModeLine, parseXlogLine } from '../../src/discovery/parseXlog
 describe('parseXlogLine', () => {
   it('parses xlog key/value pairs with :: escapes and zero-based months', () => {
     const row = parseXlogLine(
-      'name=alice:xl=12:start=20260305000102S:v=0.34:end=20260305010203S:tmsg=slain by an orc:: warrior',
+      'name=alice:xl=12:race=Deep Elf:cls=Hedge Wizard:god=Sif Muna:start=20260305000102S:v=0.34:end=20260305010203S:tmsg=slain by an orc:: warrior',
       {
         serverId: 'CAO',
         logfileUrl: 'http://crawl.akrasiac.org/logfile34',
@@ -15,6 +15,9 @@ describe('parseXlogLine', () => {
     expect(row.playerName).toBe('alice')
     expect(row.endMessage).toBe('slain by an orc: warrior')
     expect(row.xl).toBe(12)
+    expect(row.species).toBe('Deep Elf')
+    expect(row.background).toBe('Hedge Wizard')
+    expect(row.god).toBe('Sif Muna')
     expect(row.startedAt).toBe('2026-04-05T00:01:02.000Z')
     expect(row.endedAt).toBe('2026-04-05T01:02:03.000Z')
     expect(row.version).toBe('0.34')
@@ -44,6 +47,9 @@ describe('parseXlogLine', () => {
     )
 
     expect(row.xl).toBeNull()
+    expect(row.species).toBeNull()
+    expect(row.background).toBeNull()
+    expect(row.god).toBeNull()
   })
 
   it('detects excluded game modes and rejects those candidates', () => {
