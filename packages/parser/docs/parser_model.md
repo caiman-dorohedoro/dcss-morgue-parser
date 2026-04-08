@@ -146,6 +146,7 @@ Important detail:
 - this is not only "mutation-causing effects"
 - it is the terse trait list shown by Crawl on the `A:` line in that morgue
 - parenthesized entries are preserved as `suppressed: true`
+- bracketed entries are preserved as `transient: true`
 
 So `mutations` may include:
 
@@ -161,6 +162,7 @@ type MutationEntrySnapshot = {
   name: string
   level: number | null
   suppressed?: true
+  transient?: true
 }
 ```
 
@@ -170,6 +172,7 @@ Examples:
 - `devolution 1` -> `{ name: "devolution", level: 1 }`
 - `big wings` -> `{ name: "big wings", level: null }`
 - `(nimble swimmer 1)` -> `{ name: "nimble swimmer", level: 1, suppressed: true }`
+- `[poor constitution 2]` -> `{ name: "poor constitution", level: 2, transient: true }`
 
 Code:
 

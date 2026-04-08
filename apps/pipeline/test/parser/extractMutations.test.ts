@@ -64,4 +64,15 @@ describe('extractMutations', () => {
       ],
     })
   })
+
+  it('preserves transient state from bracketed mutation entries', () => {
+    expect(extractMutations(loadFixture('mutations-transient-brackets.txt'))).toEqual({
+      mutations: [
+        { name: 'nimble swimmer', level: 2, suppressed: true },
+        { name: 'mertail', level: null },
+        { name: 'subdued magic', level: 2, transient: true },
+        { name: 'booming voice', level: null, transient: true },
+      ],
+    })
+  })
 })

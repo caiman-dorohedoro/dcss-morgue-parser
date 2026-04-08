@@ -92,12 +92,15 @@ type MutationEntrySnapshot = {
   name: string
   level: number | null
   suppressed?: true
+  transient?: true
 }
 ```
 
 ### Why
 
 Mutation level matters for analysis, and the `A:` line is the most stable summary of the terse special-trait state Crawl shows at game end.
+
+Parenthesized entries remain `suppressed: true`, while bracketed entries are now preserved as `transient: true` to match Crawl's own mutation UI semantics.
 
 ## 5. Equipment Summary vs Details
 

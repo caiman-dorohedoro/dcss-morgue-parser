@@ -241,6 +241,7 @@ export type MutationEntrySnapshot = {
   name: string
   level: number | null
   suppressed?: true
+  transient?: true
 }
 
 export type MutationSnapshot = {
