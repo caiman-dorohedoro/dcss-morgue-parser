@@ -101,7 +101,7 @@ describe('parseMorgueText shared parser', () => {
     }
   })
 
-  it('normalizes uppercase spell hotkeys and legacy parenthesized mutations from full morgues', () => {
+  it('normalizes uppercase spell hotkeys and preserves suppressed parenthesized mutations from full morgues', () => {
     const spellResult = parseMorgueText(loadFullFixture('morgue-jkt-20260404-065348.txt'))
     const mutationResult = parseMorgueText(loadFullFixture('morgue-exant-20260406-220016.txt'))
 
@@ -122,6 +122,7 @@ describe('parseMorgueText shared parser', () => {
       expect(mutationResult.record.mutations).toContainEqual({
         name: 'nimble swimmer',
         level: 1,
+        suppressed: true,
       })
     }
   })

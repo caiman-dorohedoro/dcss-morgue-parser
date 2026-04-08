@@ -178,6 +178,7 @@ export type SpellSnapshot = {
 export type MutationEntrySnapshot = {
   name: string
   level: number | null
+  suppressed?: true
 }
 
 export type MutationSnapshot = {

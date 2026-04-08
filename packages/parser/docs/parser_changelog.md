@@ -91,12 +91,13 @@ The parenthesized number is often what the player actually saw after Ashenzari, 
 type MutationEntrySnapshot = {
   name: string
   level: number | null
+  suppressed?: true
 }
 ```
 
 ### Why
 
-Mutation level matters for analysis, and the `A:` line is the most stable summary of active special traits at game end.
+Mutation level matters for analysis, and the `A:` line is the most stable summary of the terse special-trait state Crawl shows at game end.
 
 ## 5. Equipment Summary vs Details
 

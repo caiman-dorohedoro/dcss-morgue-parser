@@ -144,13 +144,15 @@ Code:
 Important detail:
 
 - this is not only "mutation-causing effects"
-- it is the active trait list shown by Crawl in that morgue
+- it is the terse trait list shown by Crawl on the `A:` line in that morgue
+- parenthesized entries are preserved as `suppressed: true`
 
 So `mutations` may include:
 
 - species innate traits
 - form- or god-derived traits shown on the `A:` line
 - actual mutations such as `devolution 1`
+- suppressed traits that Crawl shows in parentheses
 
 Each entry is stored as:
 
@@ -158,6 +160,7 @@ Each entry is stored as:
 type MutationEntrySnapshot = {
   name: string
   level: number | null
+  suppressed?: true
 }
 ```
 
@@ -166,6 +169,7 @@ Examples:
 - `horns 3` -> `{ name: "horns", level: 3 }`
 - `devolution 1` -> `{ name: "devolution", level: 1 }`
 - `big wings` -> `{ name: "big wings", level: null }`
+- `(nimble swimmer 1)` -> `{ name: "nimble swimmer", level: 1, suppressed: true }`
 
 Code:
 

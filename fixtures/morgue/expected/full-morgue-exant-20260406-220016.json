@@ -795,7 +795,8 @@
     },
     {
       "name": "nimble swimmer",
-      "level": 1
+      "level": 1,
+      "suppressed": true
     },
     {
       "name": "tentacles",

@@ -1234,15 +1234,18 @@
     },
     {
       "name": "camouflage",
-      "level": 1
+      "level": 1,
+      "suppressed": true
     },
     {
       "name": "gelatinous body",
-      "level": 1
+      "level": 1,
+      "suppressed": true
     },
     {
       "name": "nimble swimmer",
-      "level": 1
+      "level": 1,
+      "suppressed": true
     },
     {
       "name": "tentacles",

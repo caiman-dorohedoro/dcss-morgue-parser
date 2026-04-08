@@ -27,19 +27,22 @@ function collectAbilityLine(header: string): string {
 }
 
 function parseMutationEntry(entry: string): MutationEntrySnapshot {
-  const normalizedEntry = entry.replace(/^\((.*)\)$/, '$1').trim()
+  const suppressedMatch = entry.match(/^\((.*)\)$/)
+  const normalizedEntry = (suppressedMatch?.[1] ?? entry).trim()
   const leveledMatch = normalizedEntry.match(/^(.*\S)\s+(\d+)$/)
 
   if (leveledMatch) {
     return {
       name: leveledMatch[1].trim(),
       level: Number.parseInt(leveledMatch[2], 10),
+      ...(suppressedMatch ? { suppressed: true as const } : {}),
     }
   }
 
   return {
     name: normalizedEntry,
     level: null,
+    ...(suppressedMatch ? { suppressed: true as const } : {}),
   }
 }
 
