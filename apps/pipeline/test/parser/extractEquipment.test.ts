@@ -259,6 +259,47 @@ Armour
     })
   })
 
+  it('classifies known orb-slot unrands without orb in the name as orb equipment', () => {
+    const parsed = extractEquipment(`
+Health: 197/238    AC: 17    Str:  8    XL:     27
+Magic:  39/63      EV: 15    Int: 38    God:    Vehumet [******]
+Gold:   5060       SH:  0    Dex:  9    Spells: 30/79 levels left
+
+rFire   + + +  (20%)    r - conjuration staff of Strategic Superiority {Int+4 Conj Necro Forge}
+rCold   + + +  (20%)    q - sphere of Battle
+rNeg    + + .  (20%)    C - +2 hat {SInv}
+rPois   +      (33%)    f - scarf {rC+ rF+}
+rElec   +      (33%)    Z - +0 pair of gloves of Fosebrol {MP+10 Int+2}
+rCorr   +      (50%)    c - +0 pair of boots of Forking Paths {rPois rCorr Int+4 Dex-3}
+SInv    +               e - amulet of magic regeneration
+Will    +++..           Q - ring of Vufum {rPois rF++ rC+ rN++ Str-2}
+Stlth   +               p - ring "Heshrocog" {rC+ Will+ rCorr Str-2}
+
+Inventory:
+
+Armour
+ c - the +0 pair of boots of Forking Paths (worn) {rPois rCorr Int+4 Dex-3}
+ f - a scarf of resistance (worn)
+ q - the sphere of Battle (worn)
+ C - a +2 hat of see invisible (worn)
+ Z - the +0 pair of gloves of Fosebrol (worn) {MP+10 Int+2}
+Jewellery
+ e - an amulet of magic regeneration (worn)
+ p - the ring "Heshrocog" (worn) {rC+ Will+ rCorr Str-2}
+ Q - the ring of Vufum (worn) {rPois rF++ rC+ rN++ Str-2}
+`)
+
+    expect(parsed.bodyArmour).toBe('none')
+    expect(parsed.orb).toBe('sphere of Battle')
+    expect(parsed.orbDetails).toMatchObject({
+      rawName: 'sphere of Battle',
+      objectClass: 'armour',
+      equipState: 'worn',
+      artifactKind: 'unrand',
+      baseType: 'orb',
+    })
+  })
+
   it('preserves melded equipment and the equipped talisman slot', () => {
     const parsed = extractEquipment(loadFixture('focused', 'melded-equipment-and-talisman.txt'))
 

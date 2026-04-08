@@ -237,3 +237,18 @@ Recognized functional inscription tokens are excluded from `properties.specials`
 The same `{...}` syntax in morgues can contain both item properties and player-added inscription commands such as `!w`, `=f`, and `@r3`. Those command tokens are not equipment properties and should not be mixed into downstream property bags.
 
 Free-form custom note text is still not fully separated from unknown property tokens, so `specials` may continue to include strings that are really player notes.
+
+## 13.5. Orb-Slot Unrand Classification
+
+### What changed
+
+Known orb-slot unrands whose names do not literally contain `orb` are now classified as `orb` equipment instead of falling through to `bodyArmour`.
+
+Example:
+
+- `sphere of Battle`
+
+### Why
+
+Manual review against live morgues found that header-slot placement and inventory state were clear, but the parser still emitted `bodyArmour = "sphere of Battle"` and `orb = "none"`.
+The orb-slot detector now considers the known orb-unrand list as well as plain `orb` name matches.

@@ -1263,7 +1263,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     ...SHIELD_LABELS.map((label) => new RegExp(`\\b${label}\\b`, 'i')),
     ...exactNamePatterns(UNRAND_SHIELD_ITEMS),
   ]
-  const orbPatterns = [/\borb\b/i]
+  const orbPatterns = [/\borb\b/i, ...exactNamePatterns(UNRAND_ORB_ITEMS)]
   const amuletPatterns = [/\bamulet\b/i, /\bnecklace\b/i, /\bpendant\b/i, /\bbrooch\b/i]
   const ringPatterns = [/\bring\b/i]
   const nonBodyPatterns = [
