@@ -4,6 +4,8 @@ This note documents the workflow that proved most useful for improving parser ac
 
 The parser package itself does not contain collection code, but this workflow was used repeatedly with `dcss-morgue-pipeline`.
 
+For the post-collection inspection loop, use `docs/workflow--parser-debugging.md`.
+
 ## 1. Collect a Stratified Sample
 
 Typical bootstrap command from the monorepo root:
@@ -145,6 +147,9 @@ apps/pipeline/data/bootstrap-stratified-xl10/review/<SERVER>/<BUCKET>/<ENDED_AT>
 This is useful because parser bugs are easiest to catch when the raw morgue and the parsed JSON are side by side.
 
 ## 3. Manual Comparison
+
+The detailed debugging loop now lives in `docs/workflow--parser-debugging.md`.
+Keep this document focused on sample collection and review setup.
 
 When reviewing pairs, the most useful checklist has been:
 
