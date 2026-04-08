@@ -136,10 +136,16 @@ parser changes.
 
 When a parser bug is confirmed:
 
-1. save the raw morgue as a fixture if it is small enough or already suitable
-2. add a focused regression if the bug is isolated to one extractor
-3. update the golden expected JSON when the output intentionally changes
-4. document the behavior change in parser docs when the schema meaning changed
+1. add the raw morgue to test fixtures
+2. add or update a regression test that uses that morgue
+3. prefer a focused regression when the bug is isolated to one extractor
+4. update the golden expected JSON when the output intentionally changes
+5. document the behavior change in parser docs when the schema meaning changed
+
+Do not stop at a manual re-check only.
+
+If the case required a code change, that morgue should become part of the test
+suite so the same bug cannot quietly return later.
 
 Useful fixture locations:
 
@@ -160,7 +166,15 @@ That is the fastest way to answer the only question that matters:
 
 - did the parsed output for this morgue actually improve?
 
-Then run the parser test suite and, when helpful, sample another live batch.
+Then run tests in two layers:
+
+1. the targeted regression you just added or changed
+2. the full parser test suite when the case required a code change
+
+That second step matters even for a narrow extractor fix. A small parsing change
+can easily affect other morgues or another section of the same parser.
+
+When helpful, sample another live batch after that.
 
 ## 8. Keep Notes About Why A Case Was Interesting
 
@@ -183,8 +197,9 @@ The most reliable debugging loop for this project is:
 2. export `raw.txt` and `parsed.json`
 3. read the pair directly
 4. classify the discrepancy
-5. only then change parser code
-6. re-run the same morgue and the relevant tests
+5. if code changed, add the morgue as a regression fixture and test case
+6. only then change parser code
+7. re-run the same morgue, the targeted regression, and the full parser tests
 
 That loop has been more reliable than starting from a broad automated diff,
 because Crawl morgues contain enough abbreviations, wrapped lines, and special
