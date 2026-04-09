@@ -173,7 +173,8 @@ describe('parseMorgueText shared parser', () => {
           opaqueTokens: [],
         },
       })
-      expect(gizmoResult.record.gizmoDetails?.gizmoEffect).toBeUndefined()
+      expect(gizmoResult.record.gizmoDetails?.gizmoEffects).toBeUndefined()
+      expect(gizmoResult.record.gizmoDetails?.namedEffects).toBeUndefined()
     }
 
     expect(noGizmoResult.ok).toBe(true)

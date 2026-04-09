@@ -260,7 +260,8 @@ Each detail contains fields such as:
 - `artifactKind`
 - `ego`
 - `subtypeEffect`
-- `gizmoEffect`
+- `gizmoEffects`
+- `namedEffects`
 - `ashenzariCurses`
 - `propertiesText`
 - `functionalInscriptions`
@@ -300,7 +301,8 @@ Notes:
 - `propertiesText` preserves the raw `{...}` inscription text from the morgue line.
 - `functionalInscriptions` is emitted when the parser recognizes special Crawl inscription controls such as `!w`, `=f`, or `@r3`.
 - common Crawl artprop abbreviations such as `Bane`, `-Cast`, `^Drain`, `*Rage`, `*Corrode`, `^Contam`, and `rMut` are normalized into `booleanProps`
-- gizmo-only effect tokens are emitted separately as `gizmoEffect`
+- gizmo-only effect tokens are emitted separately as `gizmoEffects` when the item itself is a gizmo
+- named non-generic item effects such as `Dragonpray`, `Riposte`, `Gadgeteer`, and `Wandboost` are emitted separately as `namedEffects` on non-gizmo items
 - Ashenzari curse shorthand tokens are emitted separately as `ashenzariCurses`
 - `opaqueTokens` are now the true residual bucket for unrand-specific strings, still-unknown tags, or free-form player inscription text
 

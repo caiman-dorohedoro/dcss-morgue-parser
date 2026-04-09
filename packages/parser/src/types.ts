@@ -20,6 +20,11 @@ export type ArtifactKind = 'normal' | 'randart' | 'unrand'
 export type EquipmentObjectClass = 'armour' | 'jewellery' | 'talisman' | 'gizmo'
 export type EquipmentEquipState = 'worn' | 'haunted' | 'melded' | 'installed'
 export type EquipmentGizmoEffect = 'SpellMotor' | 'Gadgeteer' | 'RevGuard' | 'AutoDazzle'
+export type EquipmentNamedEffect =
+  | EquipmentGizmoEffect
+  | 'Dragonpray'
+  | 'Riposte'
+  | 'Wandboost'
 export type EquipmentAshenzariCurse =
   | 'Melee'
   | 'Range'
@@ -119,7 +124,8 @@ export type EquipmentItemSnapshot = {
   artifactKind: ArtifactKind
   ego: string | null
   subtypeEffect: string | null
-  gizmoEffect?: EquipmentGizmoEffect
+  gizmoEffects?: EquipmentGizmoEffect[]
+  namedEffects?: EquipmentNamedEffect[]
   ashenzariCurses?: EquipmentAshenzariCurse[]
   propertiesText: string | null
   functionalInscriptions?: string[]

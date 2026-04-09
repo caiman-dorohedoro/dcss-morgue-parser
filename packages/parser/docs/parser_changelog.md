@@ -299,7 +299,8 @@ The old names were concise but too generic. The new names make the contract clea
 The parser now separates several previously mixed token families:
 
 - common Crawl artprop abbreviations such as `Bane`, `-Cast`, `^Drain`, `*Rage`, `*Corrode`, `^Contam`, and `rMut` are normalized into `booleanProps`
-- gizmo-only effect tags such as `RevGuard` are exposed as `gizmoEffect`
+- gizmo-only effect tags such as `RevGuard` are exposed as `gizmoEffects` when the parsed item is a gizmo
+- named non-generic item effects such as `Dragonpray`, `Riposte`, `Gadgeteer`, and `Wandboost` are exposed as `namedEffects` on non-gizmo items
 - Ashenzari curse shorthand such as `Elem`, `Sorc`, `Comp`, and `Self` are exposed as `ashenzariCurses`
 
 `opaqueTokens` now stays focused on the residual bucket:
@@ -314,6 +315,7 @@ Fresh Coglin and Ashenzari morgue review showed that `opaqueTokens` had become t
 
 - normalized Crawl artprops
 - gizmo system tags
+- named non-generic item effects
 - Ashenzari system tags
 - true leftovers
 

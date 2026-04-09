@@ -1,0 +1,32 @@
+Dungeon Crawl Stone Soup version 0.35-a0-241-g5b54ce7fc3 (webtiles) character file.
+
+circleofdust the Siegecrafter (GrEE)               Turns: 81625, Time: 03:04:41
+
+Health: 0/167      AC: 48    Str: 16    XL:     27
+Magic:  39/50      EV: 30    Int: 36    God:    Ashenzari [******]
+Gold:   6857       SH:  0    Dex: 22    Spells: 3/73 levels left
+
+rFire   + + .  (33%)    Y - +3 Elemental Staff {ele, rElec rF+ rC+ AC+3, Bglg, Self} (curse)
+rCold   + + +  (20%)    p - +2 kite shield "I Knew You'd Do That" {Fort, Sorc} (curse)
+rNeg    + . .  (50%)    x - the +2 mask of the Dragon {Dragonpray SInv} (worn)
+rPois   .      (100%)   u - +5 steam dragon scales of Apeoromancy {rElec rC+, Melee, Dev} (curse)
+rElec   +      (33%)    b - +0 cloak of the Pangnostic Sky {rPois rC+ Regen+ Dex+2, Sorc, Cun} (curse)
+rCorr   .      (100%)   L - the cursed +0 pair of gloves of the gadgeteer {Gadgeteer Wandboost ^Fragile, Fort, Cun} (worn)
+SInv    +               i - +0 pair of boots "Dismay of Ashenzari" {Melee, Range} (curse)
+Will    ++...           t - amulet of the Eternal Sun {rF+ RegenMP+ rCorr Dex+3, Self, Elem} (curse)
+Stlth   +               k - ring of the Bound Sun {Int+9, Range, Comp} (curse)
+HPRegen 1.27/turn       P - ring of the Astrological Sky {^Drain EV+5 Dex+5 Slay+4, Sorc, Cun} (curse)
+MPRegen 0.72/turn
+
+%: clarity
+@: confused
+A: sickness immunity
+a: no special abilities
+
+Inventory:
+
+Armour
+ x - the +2 mask of the Dragon (worn) {Dragonpray SInv}
+ L - the cursed +0 pair of gloves of the gadgeteer (worn) {Gadgeteer Wandboost ^Fragile, Fort, Cun}
+
+Skills:

@@ -416,7 +416,7 @@ Jewellery
     })
   })
 
-  it('keeps special gizmo effect tags in opaque tokens while parsing installed gizmo resistances', () => {
+  it('emits gizmo-only effect tags separately for installed gizmos', () => {
     const parsed = extractEquipment(loadFixture('focused', 'coglin-gizmo-revguard-nono3.txt'))
 
     expect(parsed.gizmo).toBe('dicompression equaliser')
@@ -424,7 +424,7 @@ Jewellery
       rawName: 'dicompression equaliser',
       objectClass: 'gizmo',
       equipState: 'installed',
-      gizmoEffect: 'RevGuard',
+      gizmoEffects: ['RevGuard'],
       properties: bag({
         numeric: { rF: 1, rC: 1 },
       }),
@@ -432,6 +432,7 @@ Jewellery
         numeric: { rF: 1, rC: 1 },
       }),
     })
+    expect(parsed.gizmoDetails?.namedEffects).toBeUndefined()
   })
 
   it('keeps no-gizmo Coglins empty without inventing jewellery or gizmo equipment', () => {
@@ -441,5 +442,33 @@ Jewellery
     expect(parsed.rings).toEqual([])
     expect(parsed.gizmo).toBe('none')
     expect(parsed.gizmoDetails).toBeUndefined()
+  })
+
+  it('emits named effects for non-gizmo items without misclassifying them as gizmo effects', () => {
+    const parsed = extractEquipment(loadFixture('focused', 'named-effects-on-non-gizmo-items.txt'))
+
+    expect(parsed.helmets).toEqual(['mask of the Dragon'])
+    expect(parsed.gloves).toEqual(['pair of gloves of the gadgeteer'])
+
+    expect(parsed.helmetDetails?.[0]).toMatchObject({
+      rawName: 'mask of the Dragon',
+      objectClass: 'armour',
+      equipState: 'worn',
+      namedEffects: ['Dragonpray'],
+      properties: bag({ booleanProps: { SInv: true } }),
+      artifactProperties: bag({ booleanProps: { SInv: true } }),
+    })
+    expect(parsed.helmetDetails?.[0]?.gizmoEffects).toBeUndefined()
+
+    expect(parsed.glovesDetails?.[0]).toMatchObject({
+      rawName: 'pair of gloves of the gadgeteer',
+      objectClass: 'armour',
+      equipState: 'worn',
+      namedEffects: ['Gadgeteer', 'Wandboost'],
+      ashenzariCurses: ['Fort', 'Cun'],
+      properties: bag({ opaqueTokens: ['^Fragile'] }),
+      artifactProperties: bag({ opaqueTokens: ['^Fragile'] }),
+    })
+    expect(parsed.glovesDetails?.[0]?.gizmoEffects).toBeUndefined()
   })
 })

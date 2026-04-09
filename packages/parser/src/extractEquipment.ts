@@ -5,6 +5,7 @@ import type {
   EquipmentBooleanPropertyKey,
   EquipmentGizmoEffect,
   EquipmentItemSnapshot,
+  EquipmentNamedEffect,
   EquipmentNumericPropertyKey,
   EquipmentObjectClass,
   EquipmentPropertyBag,
@@ -426,6 +427,15 @@ const GIZMO_EFFECT_ORDER = [
 
 const GIZMO_EFFECT_TOKENS = new Set<string>(GIZMO_EFFECT_ORDER)
 
+const NAMED_EFFECT_ORDER = [
+  ...GIZMO_EFFECT_ORDER,
+  'Dragonpray',
+  'Riposte',
+  'Wandboost',
+] as const satisfies readonly EquipmentNamedEffect[]
+
+const NAMED_EFFECT_TOKENS = new Set<string>(NAMED_EFFECT_ORDER)
+
 const ASHENZARI_CURSE_ORDER = [
   'Melee',
   'Range',
@@ -672,7 +682,8 @@ function emptyPropertyBag(): EquipmentPropertyBag {
 
 type ClassifiedPropertyTokens = {
   bag: EquipmentPropertyBag
-  gizmoEffect?: EquipmentGizmoEffect
+  gizmoEffects: EquipmentGizmoEffect[]
+  namedEffects: EquipmentNamedEffect[]
   ashenzariCurses: EquipmentAshenzariCurse[]
 }
 
@@ -777,18 +788,23 @@ function addPropertyTokenToBag(bag: EquipmentPropertyBag, token: string): void {
   bag.opaqueTokens.push(token)
 }
 
-function classifyPropertyTokens(tokens: readonly string[]): ClassifiedPropertyTokens {
+function classifyPropertyTokens(
+  slot: EquipmentSlot,
+  tokens: readonly string[],
+): ClassifiedPropertyTokens {
   const bag = emptyPropertyBag()
+  const gizmoEffects: EquipmentGizmoEffect[] = []
+  const namedEffects: EquipmentNamedEffect[] = []
   const ashenzariCurses: EquipmentAshenzariCurse[] = []
-  let gizmoEffect: EquipmentGizmoEffect | undefined
 
   for (const token of tokens) {
-    if (GIZMO_EFFECT_TOKENS.has(token)) {
-      if (!gizmoEffect) {
-        gizmoEffect = token as EquipmentGizmoEffect
-      } else if (gizmoEffect !== token) {
-        bag.opaqueTokens.push(token)
-      }
+    if (slot === 'gizmo' && GIZMO_EFFECT_TOKENS.has(token)) {
+      gizmoEffects.push(token as EquipmentGizmoEffect)
+      continue
+    }
+
+    if (slot !== 'gizmo' && NAMED_EFFECT_TOKENS.has(token)) {
+      namedEffects.push(token as EquipmentNamedEffect)
       continue
     }
 
@@ -802,13 +818,20 @@ function classifyPropertyTokens(tokens: readonly string[]): ClassifiedPropertyTo
 
   return {
     bag: normalizePropertyBag(bag),
-    ...(gizmoEffect ? { gizmoEffect } : {}),
+    gizmoEffects: normalizeUnique(gizmoEffects) as EquipmentGizmoEffect[],
+    namedEffects: normalizeUnique(namedEffects) as EquipmentNamedEffect[],
     ashenzariCurses: normalizeUnique(ashenzariCurses) as EquipmentAshenzariCurse[],
   }
 }
 
 function bagFromTokens(tokens: readonly string[]): EquipmentPropertyBag {
-  return classifyPropertyTokens(tokens).bag
+  const bag = emptyPropertyBag()
+
+  for (const token of tokens) {
+    addPropertyTokenToBag(bag, token)
+  }
+
+  return normalizePropertyBag(bag)
 }
 
 function mergePropertyBags(...bags: readonly EquipmentPropertyBag[]): EquipmentPropertyBag {
@@ -1229,7 +1252,7 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
   const rawName = cleanItemName(line)
   const propertiesText = extractPropertiesText(line)
   const extractedProperties = extractProperties(propertiesText)
-  const extractedPropertyInfo = classifyPropertyTokens(extractedProperties)
+  const extractedPropertyInfo = classifyPropertyTokens(slot, extractedProperties)
   const functionalInscriptions = extractFunctionalInscriptions(propertiesText)
   const objectClass = getObjectClass(slot)
   const equipState = extractEquipState(line)
@@ -1270,7 +1293,12 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
     artifactKind,
     ego,
     subtypeEffect,
-    ...(extractedPropertyInfo.gizmoEffect ? { gizmoEffect: extractedPropertyInfo.gizmoEffect } : {}),
+    ...(extractedPropertyInfo.gizmoEffects.length > 0
+      ? { gizmoEffects: extractedPropertyInfo.gizmoEffects }
+      : {}),
+    ...(extractedPropertyInfo.namedEffects.length > 0
+      ? { namedEffects: extractedPropertyInfo.namedEffects }
+      : {}),
     ...(extractedPropertyInfo.ashenzariCurses.length > 0
       ? { ashenzariCurses: extractedPropertyInfo.ashenzariCurses }
       : {}),
