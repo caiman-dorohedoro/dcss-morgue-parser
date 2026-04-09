@@ -7,6 +7,7 @@ import {
   useState,
   type ChangeEvent,
 } from 'react'
+import { Check, Copy } from 'lucide-react'
 import {
   parseMorgueText,
   type EquipmentItemSnapshot,
@@ -158,8 +159,8 @@ function handleFailureDetail(detail: string | null) {
 }
 
 function App() {
-  const [input, setInput] = useState(defaultMorgueText)
-  const [result, setResult] = useState(() => parseMorgueText(defaultMorgueText))
+  const [input, setInput] = useState('')
+  const [result, setResult] = useState(() => parseMorgueText(''))
   const deferredInput = useDeferredValue(input)
   const fileInputId = useId()
   const textAreaId = useId()
@@ -193,9 +194,6 @@ function App() {
         <div>
           <p className="eyebrow">Interactive parser playground</p>
           <h1>DCSS morgue viewer</h1>
-          <p className="hero-copy">
-            Paste a morgue on the left and skim a compact structured view on the right.
-          </p>
         </div>
         <div className="hero-stats">
           <span>{lineCount} lines</span>
@@ -299,6 +297,18 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
   const equipmentGroups = buildEquipmentGroups(record)
   const topSkills = getTopSkills(record.skills, record.effectiveSkills)
   const spells = splitSpells(record.spells)
+  const [copied, setCopied] = useState(false)
+  const rawJson = JSON.stringify(record, null, 2)
+
+  async function handleCopyRawJson() {
+    try {
+      await navigator.clipboard.writeText(rawJson)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1200)
+    } catch {
+      setCopied(false)
+    }
+  }
 
   return (
     <div className="parsed-view">
@@ -314,23 +324,36 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
       <section className="section-card">
         <div className="section-heading">
           <h3>Core stats</h3>
-          <p>Fast scan of defensive and attribute values.</p>
         </div>
-        <div className="metric-strip">
-          <Metric label="XL" value={record.xl} />
-          <Metric label="AC" value={record.ac} />
-          <Metric label="EV" value={record.ev} />
-          <Metric label="SH" value={record.sh} />
-          <Metric label="Str" value={record.strength} />
-          <Metric label="Int" value={record.intelligence} />
-          <Metric label="Dex" value={record.dexterity} />
+        <div className="stats-layout">
+          <div className="stat-group stat-group-progression">
+            <span className="stat-group-label">Progression</span>
+            <div className="stat-list">
+              <Metric label="XL" value={record.xl} />
+            </div>
+          </div>
+          <div className="stat-group stat-group-defense">
+            <span className="stat-group-label">Defense</span>
+            <div className="stat-list">
+              <Metric label="AC" value={record.ac} />
+              <Metric label="EV" value={record.ev} />
+              <Metric label="SH" value={record.sh} />
+            </div>
+          </div>
+          <div className="stat-group stat-group-attributes">
+            <span className="stat-group-label">Attributes</span>
+            <div className="stat-list">
+              <Metric label="Str" value={record.strength} />
+              <Metric label="Int" value={record.intelligence} />
+              <Metric label="Dex" value={record.dexterity} />
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="section-card">
         <div className="section-heading">
           <h3>Equipment</h3>
-          <p>Compact slot summary with parsed item details when available.</p>
         </div>
         <div className="equipment-groups">
           {equipmentGroups.map((group) => (
@@ -399,7 +422,6 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
         <article className="section-card">
           <div className="section-heading">
             <h3>Mutations</h3>
-            <p>Current parsed mutation entries.</p>
           </div>
           {record.mutations.length > 0 ? (
             <div className="mutation-list">
@@ -440,8 +462,23 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
       </section>
 
       <details className="json-drawer">
-        <summary>Raw JSON</summary>
-        <pre>{JSON.stringify(record, null, 2)}</pre>
+        <summary>
+          <span>Raw JSON</span>
+          <button
+            aria-label="Copy raw JSON"
+            className="icon-button"
+            onClick={(event) => {
+              event.preventDefault()
+              event.stopPropagation()
+              void handleCopyRawJson()
+            }}
+            title={copied ? 'Copied' : 'Copy raw JSON'}
+            type="button"
+          >
+            {copied ? <Check aria-hidden="true" size={15} strokeWidth={2.1} /> : <Copy aria-hidden="true" size={15} strokeWidth={2.1} />}
+          </button>
+        </summary>
+        <pre>{rawJson}</pre>
       </details>
     </div>
   )
@@ -458,7 +495,7 @@ function SummaryCard(props: { label: string; value: string; accent?: boolean }) 
 
 function Metric(props: { label: string; value: number }) {
   return (
-    <div className="metric">
+    <div className="metric-inline">
       <span>{props.label}</span>
       <strong>{props.value}</strong>
     </div>
