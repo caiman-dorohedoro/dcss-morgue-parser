@@ -1,4 +1,12 @@
-import { startTransition, useDeferredValue, useEffect, useId, useState, type ChangeEvent } from 'react'
+import {
+  startTransition,
+  useDeferredValue,
+  useEffect,
+  useId,
+  useRef,
+  useState,
+  type ChangeEvent,
+} from 'react'
 import {
   parseMorgueText,
   type EquipmentItemSnapshot,
@@ -154,6 +162,8 @@ function App() {
   const [result, setResult] = useState(() => parseMorgueText(defaultMorgueText))
   const deferredInput = useDeferredValue(input)
   const fileInputId = useId()
+  const textAreaId = useId()
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     startTransition(() => {
@@ -176,6 +186,9 @@ function App() {
 
   return (
     <div className="shell">
+      <a className="skip-link" href="#main-content">
+        Skip to Main Content
+      </a>
       <header className="hero">
         <div>
           <p className="eyebrow">Interactive parser playground</p>
@@ -187,31 +200,43 @@ function App() {
         <div className="hero-stats">
           <span>{lineCount} lines</span>
           <span>{input.length.toLocaleString()} chars</span>
-          <span>{result.ok ? 'Parse ok' : 'Needs attention'}</span>
+          <span>{result.ok ? 'Parse OK' : 'Needs Attention'}</span>
         </div>
       </header>
+      <p aria-live="polite" className="sr-only">
+        {input.trim().length === 0
+          ? 'No morgue text loaded.'
+          : result.ok
+            ? `Parse completed. ${lineCount} lines loaded.`
+            : `Parse failed: ${result.failure.reason}.`}
+      </p>
 
-      <main className="workspace">
+      <main className="workspace" id="main-content">
         <section className="panel input-panel">
           <div className="panel-header">
             <div>
-              <p className="panel-kicker">Input</p>
               <h2>Raw morgue</h2>
             </div>
             <div className="panel-actions">
               <button className="ghost-button" onClick={() => setInput(defaultMorgueText)} type="button">
-                Load sample
+                Load Sample
               </button>
               <button className="ghost-button" onClick={() => setInput('')} type="button">
                 Clear
               </button>
-              <label className="ghost-button file-button" htmlFor={fileInputId}>
+              <button
+                className="ghost-button"
+                onClick={() => fileInputRef.current?.click()}
+                type="button"
+              >
                 Upload
-              </label>
+              </button>
               <input
                 className="sr-only"
                 id={fileInputId}
+                name="morgueFile"
                 onChange={handleFileChange}
+                ref={fileInputRef}
                 type="file"
                 accept=".txt,.log,.morgue,text/plain"
               />
@@ -219,9 +244,12 @@ function App() {
           </div>
           <textarea
             aria-label="Morgue text"
+            autoComplete="off"
             className="morgue-input"
+            id={textAreaId}
+            name="morgueText"
             onChange={(event) => setInput(event.target.value)}
-            placeholder="Paste a morgue file here..."
+            placeholder="Paste a morgue file here…"
             spellCheck={false}
             value={input}
           />
@@ -230,7 +258,6 @@ function App() {
         <section className="panel output-panel">
           <div className="panel-header">
             <div>
-              <p className="panel-kicker">Output</p>
               <h2>Structured view</h2>
             </div>
           </div>

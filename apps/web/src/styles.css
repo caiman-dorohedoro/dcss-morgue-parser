@@ -20,7 +20,9 @@
   --accent-soft: rgba(207, 98, 52, 0.12);
   --accent-deep: #1d6a55;
   --shadow: 0 18px 40px rgba(58, 45, 28, 0.08);
-  --radius: 22px;
+  --outer-radius: 18px;
+  --inner-radius: 8px;
+  --micro-radius: 6px;
 }
 
 * {
@@ -31,6 +33,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 button,
@@ -55,6 +58,27 @@ button {
   border: 0;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 10;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--micro-radius);
+  background: rgba(255, 252, 245, 0.98);
+  color: #10211f;
+  text-decoration: none;
+  transition:
+    top 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.skip-link:focus-visible {
+  top: 16px;
+  box-shadow: 0 0 0 3px rgba(29, 106, 85, 0.18);
+}
+
 #root {
   min-height: 100vh;
 }
@@ -62,21 +86,20 @@ button {
 .shell {
   width: min(1500px, calc(100vw - 32px));
   margin: 0 auto;
-  padding: 28px 0 32px;
+  padding: 20px 0 24px;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 18px;
   align-items: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
-.eyebrow,
-.panel-kicker {
+.eyebrow {
   margin: 0 0 6px;
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -89,24 +112,26 @@ button {
 .empty-state h3,
 .failure-state h3 {
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  text-wrap: balance;
 }
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-size: clamp(2rem, 4.4vw, 3.15rem);
   line-height: 0.96;
 }
 
 .hero-copy {
   max-width: 60ch;
-  margin: 10px 0 0;
+  margin: 8px 0 0;
+  font-size: 0.94rem;
   color: var(--ink-soft);
 }
 
 .hero-stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   justify-content: flex-end;
 }
 
@@ -114,16 +139,17 @@ button {
 .status-pill,
 .tag {
   border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 7px 12px;
+  border-radius: var(--micro-radius);
+  padding: 6px 10px;
   background: rgba(255, 253, 248, 0.8);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .workspace {
   display: grid;
   grid-template-columns: minmax(320px, 0.92fr) minmax(420px, 1.08fr);
-  gap: 18px;
+  gap: 14px;
   align-items: start;
 }
 
@@ -132,25 +158,31 @@ button {
 .summary-card,
 .json-drawer {
   border: 1px solid var(--border);
-  border-radius: var(--radius);
   background: var(--panel);
   box-shadow: var(--shadow);
   backdrop-filter: blur(14px);
 }
 
 .panel {
-  min-height: 720px;
+  border-radius: var(--outer-radius);
+  min-height: 660px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
+.section-card,
+.summary-card,
+.json-drawer {
+  border-radius: var(--inner-radius);
+}
+
 .panel-header {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 12px;
   align-items: center;
-  padding: 18px 20px 14px;
+  padding: 14px 16px 10px;
   border-bottom: 1px solid var(--border);
 }
 
@@ -159,32 +191,44 @@ button {
 .empty-state h3,
 .failure-state h3 {
   margin: 0;
-  font-size: 1.35rem;
+  font-size: 1.22rem;
 }
 
 .panel-actions {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 8px;
+  gap: 6px;
 }
 
 .ghost-button {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.7);
   color: #10211f;
-  border-radius: 999px;
-  padding: 8px 14px;
+  border-radius: var(--micro-radius);
+  padding: 7px 11px;
+  font-size: 0.84rem;
   transition:
     transform 160ms ease,
     background-color 160ms ease,
-    border-color 160ms ease;
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(29, 106, 85, 0.08);
 }
 
 .ghost-button:hover {
   transform: translateY(-1px);
   border-color: rgba(16, 33, 31, 0.24);
   background: rgba(255, 255, 255, 0.92);
+}
+
+.ghost-button:focus-visible,
+.morgue-input:focus-visible,
+.json-drawer summary:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(29, 106, 85, 0.18);
+  border-color: rgba(29, 106, 85, 0.4);
 }
 
 .file-button {
@@ -197,7 +241,7 @@ button {
   flex: 1;
   border: 0;
   resize: none;
-  padding: 22px 20px 26px;
+  padding: 16px 16px 18px;
   background:
     linear-gradient(180deg, rgba(255, 252, 246, 0.96), rgba(252, 247, 239, 0.95)),
     repeating-linear-gradient(
@@ -209,7 +253,7 @@ button {
     );
   color: #10211f;
   font-family: "SFMono-Regular", "JetBrains Mono", "Consolas", monospace;
-  font-size: 0.94rem;
+  font-size: 0.875rem;
   line-height: 1.7;
 }
 
@@ -218,20 +262,20 @@ button {
 }
 
 .output-panel {
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
 .parsed-view,
 .failure-state,
 .empty-state {
-  padding: 16px 18px 0;
+  padding: 12px 14px 0;
 }
 
 .summary-grid,
 .two-up,
 .equipment-groups {
   display: grid;
-  gap: 12px;
+  gap: 10px;
 }
 
 .summary-grid {
@@ -239,21 +283,22 @@ button {
 }
 
 .summary-card {
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
 }
 
 .summary-card span {
   color: var(--ink-soft);
-  font-size: 0.82rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .summary-card strong {
-  font-size: 1.05rem;
+  font-size: 0.98rem;
+  overflow-wrap: anywhere;
 }
 
 .summary-card-accent {
@@ -263,16 +308,16 @@ button {
 }
 
 .section-card {
-  margin-top: 12px;
-  padding: 16px;
+  margin-top: 10px;
+  padding: 12px;
 }
 
 .section-heading {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   align-items: end;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .section-heading p,
@@ -283,17 +328,18 @@ button {
 .equipment-meta {
   margin: 0;
   color: var(--ink-soft);
+  font-size: 0.84rem;
 }
 
 .metric-strip {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 10px;
+  gap: 8px;
 }
 
 .metric {
-  padding: 12px;
-  border-radius: 18px;
+  padding: 10px;
+  border-radius: var(--micro-radius);
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(16, 33, 31, 0.08);
 }
@@ -301,12 +347,13 @@ button {
 .metric span {
   display: block;
   color: var(--ink-soft);
-  font-size: 0.78rem;
-  margin-bottom: 6px;
+  font-size: 0.72rem;
+  margin-bottom: 4px;
 }
 
 .metric strong {
-  font-size: 1.1rem;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .equipment-groups {
@@ -314,8 +361,8 @@ button {
 }
 
 .equipment-group {
-  padding: 14px;
-  border-radius: 18px;
+  padding: 12px;
+  border-radius: var(--micro-radius);
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(16, 33, 31, 0.08);
 }
@@ -323,8 +370,8 @@ button {
 .equipment-group header {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 10px;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .group-label {
@@ -337,7 +384,7 @@ button {
 .spell-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .equipment-item,
@@ -346,9 +393,9 @@ button {
 .spell-row {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
   align-items: start;
-  padding-top: 10px;
+  padding-top: 8px;
   border-top: 1px solid rgba(16, 33, 31, 0.08);
 }
 
@@ -363,20 +410,29 @@ button {
 .equipment-main {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
+  min-width: 0;
+}
+
+.equipment-main strong,
+.skill-row > span,
+.mutation-row > span,
+.spell-row > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .tag-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 5px;
   justify-content: flex-end;
 }
 
 .tag {
   background: var(--accent-soft);
   border-color: rgba(207, 98, 52, 0.18);
-  padding: 6px 10px;
+  padding: 5px 8px;
 }
 
 .two-up {
@@ -388,12 +444,13 @@ button {
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
+  font-variant-numeric: tabular-nums;
 }
 
 .status-pill {
   display: inline-flex;
   width: fit-content;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .status-pill-failure {
@@ -411,22 +468,23 @@ button {
 }
 
 .json-drawer {
-  margin: 12px 18px 0;
+  margin: 10px 14px 0;
   overflow: hidden;
 }
 
 .json-drawer summary {
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 12px 14px;
   font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .json-drawer pre {
   margin: 0;
-  padding: 0 16px 16px;
+  padding: 0 14px 14px;
   overflow: auto;
   font-family: "SFMono-Regular", "JetBrains Mono", "Consolas", monospace;
-  font-size: 0.84rem;
+  font-size: 0.8rem;
   line-height: 1.6;
 }
 
@@ -447,7 +505,7 @@ button {
 @media (max-width: 720px) {
   .shell {
     width: min(100vw - 18px, 100%);
-    padding-top: 16px;
+    padding-top: 14px;
   }
 
   .hero,
