@@ -58,6 +58,40 @@ const SKILL_LABELS: Record<keyof SkillLevelsSnapshot, string> = {
   shapeshifting: 'Shapeshifting',
 }
 
+const SKILL_NAME_LOOKUP = {
+  fighting: 'fighting',
+  'maces & flails': 'macesFlails',
+  axes: 'axes',
+  polearms: 'polearms',
+  staves: 'staves',
+  'unarmed combat': 'unarmedCombat',
+  throwing: 'throwing',
+  'short blades': 'shortBlades',
+  'long blades': 'longBlades',
+  'ranged weapons': 'rangedWeapons',
+  armour: 'armour',
+  dodging: 'dodging',
+  shields: 'shields',
+  stealth: 'stealth',
+  spellcasting: 'spellcasting',
+  conjurations: 'conjurations',
+  hexes: 'hexes',
+  summonings: 'summonings',
+  necromancy: 'necromancy',
+  forgecraft: 'forgecraft',
+  translocations: 'translocations',
+  transmutations: 'transmutations',
+  alchemy: 'alchemy',
+  'fire magic': 'fireMagic',
+  'ice magic': 'iceMagic',
+  'air magic': 'airMagic',
+  'earth magic': 'earthMagic',
+  'poison magic': 'poisonMagic',
+  invocations: 'invocations',
+  evocations: 'evocations',
+  shapeshifting: 'shapeshifting',
+} as const satisfies Record<string, keyof SkillLevelsSnapshot>
+
 function formatNullable(value: string | null | undefined) {
   if (!value || value === 'none') {
     return 'None'
@@ -138,8 +172,52 @@ function buildEquipmentGroups(record: ParsedMorgueTextRecord): EquipmentGroup[] 
   ]
 }
 
-function getTopSkills(skills: SkillLevelsSnapshot, effectiveSkills: SkillLevelsSnapshot) {
-  return (Object.keys(SKILL_LABELS) as (keyof SkillLevelsSnapshot)[])
+function getParsedSkillOrder(text: string): (keyof SkillLevelsSnapshot)[] {
+  const lines = text.split(/\r?\n/)
+  const startIndex = lines.findIndex((line) => line.trim() === 'Skills:')
+
+  if (startIndex === -1) {
+    return []
+  }
+
+  const ordered: (keyof SkillLevelsSnapshot)[] = []
+
+  for (let index = startIndex + 1; index < lines.length; index += 1) {
+    const trimmed = lines[index].trim()
+
+    if (!trimmed) {
+      break
+    }
+
+    const match = trimmed.match(
+      /^(?:[O+*-]\s+)?Level\s+[0-9]+(?:\.[0-9])?(?:\([0-9]+(?:\.[0-9])?\))?\s+(.+?)$/,
+    )
+
+    if (!match) {
+      break
+    }
+
+    const normalized = SKILL_NAME_LOOKUP[match[1].trim().toLowerCase() as keyof typeof SKILL_NAME_LOOKUP]
+
+    if (normalized && !ordered.includes(normalized)) {
+      ordered.push(normalized)
+    }
+  }
+
+  return ordered
+}
+
+function getTopSkills(
+  skills: SkillLevelsSnapshot,
+  effectiveSkills: SkillLevelsSnapshot,
+  sourceText: string,
+) {
+  const parsedOrder = getParsedSkillOrder(sourceText)
+  const fallbackOrder = (Object.keys(SKILL_LABELS) as (keyof SkillLevelsSnapshot)[]).filter(
+    (key) => !parsedOrder.includes(key),
+  )
+
+  return [...parsedOrder, ...fallbackOrder]
     .map((key) => ({
       key,
       label: SKILL_LABELS[key],
@@ -147,7 +225,6 @@ function getTopSkills(skills: SkillLevelsSnapshot, effectiveSkills: SkillLevelsS
       effective: effectiveSkills[key],
     }))
     .filter((entry) => entry.effective > 0 || entry.base > 0)
-    .sort((left, right) => right.effective - left.effective || right.base - left.base)
     .slice(0, 10)
 }
 
@@ -302,7 +379,7 @@ function App() {
           {input.trim().length === 0 ? (
             <EmptyState />
           ) : result.ok ? (
-            <ParsedView record={result.record} />
+            <ParsedView record={result.record} sourceText={input} />
           ) : (
             <FailureView detail={handleFailureDetail(result.failure.detail)} reason={result.failure.reason} />
           )}
@@ -331,10 +408,10 @@ function FailureView(props: { reason: string; detail: string }) {
   )
 }
 
-function ParsedView(props: { record: ParsedMorgueTextRecord }) {
-  const { record } = props
+function ParsedView(props: { record: ParsedMorgueTextRecord; sourceText: string }) {
+  const { record, sourceText } = props
   const equipmentGroups = buildEquipmentGroups(record)
-  const topSkills = getTopSkills(record.skills, record.effectiveSkills)
+  const topSkills = getTopSkills(record.skills, record.effectiveSkills, sourceText)
   const spells = splitSpells(record.spells)
   const [copied, setCopied] = useState(false)
   const rawJson = JSON.stringify(record, null, 2)
