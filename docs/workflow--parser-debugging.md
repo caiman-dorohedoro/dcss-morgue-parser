@@ -70,6 +70,17 @@ Why:
 Automatic comparison can still be useful later, but the first pass should be
 human review of the actual files.
 
+If you want a quick automated sanity check from an exported review pair, use:
+
+```bash
+npm run review:compare -w apps/pipeline -- <case-directory>
+```
+
+This helper is intentionally conservative:
+
+- it does not auto-flag compact role abbreviations such as `MiFi` or `DrSh`
+- it understands alias-prefixed inventory lines such as `A - ...: G - ...`
+
 When raw and parsed output are still ambiguous, check the upstream Crawl source
 locally instead of guessing.
 
