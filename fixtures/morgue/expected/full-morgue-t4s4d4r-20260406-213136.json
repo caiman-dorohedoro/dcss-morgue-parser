@@ -27,7 +27,9 @@
     "scarf of Supernal Gnosis"
   ],
   "orb": "none",
-  "amulet": "amulet of Tranquility",
+  "amulets": [
+    "amulet of Tranquility"
+  ],
   "rings": [
     "ring of Ashenzari's Affliction",
     "ring of the Tortoise"
@@ -288,53 +290,55 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet of Tranquility",
-    "displayName": "amulet of Tranquility",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": true,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "unrand",
-    "ego": null,
-    "subtypeEffect": null,
-    "ashenzariCurses": [
-      "Elem",
-      "Self"
-    ],
-    "propertiesText": "rN+ Will+++ Clar, Elem, Self",
-    "properties": {
-      "numeric": {
-        "rN": 1,
-        "Will": 3
+  "amuletDetails": [
+    {
+      "rawName": "amulet of Tranquility",
+      "displayName": "amulet of Tranquility",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": true,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "unrand",
+      "ego": null,
+      "subtypeEffect": null,
+      "ashenzariCurses": [
+        "Elem",
+        "Self"
+      ],
+      "propertiesText": "rN+ Will+++ Clar, Elem, Self",
+      "properties": {
+        "numeric": {
+          "rN": 1,
+          "Will": 3
+        },
+        "booleanProps": {
+          "Clar": true
+        },
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "Clar": true
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "rN": 1,
-        "Will": 3
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "Clar": true
-      },
-      "opaqueTokens": []
+      "artifactProperties": {
+        "numeric": {
+          "rN": 1,
+          "Will": 3
+        },
+        "booleanProps": {
+          "Clar": true
+        },
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring of Ashenzari's Affliction",

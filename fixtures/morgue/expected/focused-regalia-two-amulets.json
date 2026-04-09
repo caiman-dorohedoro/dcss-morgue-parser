@@ -1,0 +1,490 @@
+{
+  "playerName": "listentometal",
+  "version": "0.35-a0-256-g859e8e3ba0",
+  "species": "Demigod",
+  "speciesVariant": null,
+  "background": "Conjurer",
+  "god": null,
+  "xl": 20,
+  "ac": 31,
+  "ev": 16,
+  "sh": 8,
+  "strength": 19,
+  "intelligence": 50,
+  "dexterity": 19,
+  "bodyArmour": "justicar's regalia",
+  "shield": "none",
+  "helmets": [
+    "hat \"Wushru\""
+  ],
+  "gloves": [
+    "pair of gloves of Beoliyno"
+  ],
+  "footwear": [
+    "pair of boots of Greed"
+  ],
+  "cloaks": [
+    "scarf"
+  ],
+  "orb": "none",
+  "amulets": [
+    "amulet of regeneration",
+    "amulet of dissipation"
+  ],
+  "rings": [
+    "ring \"Sehodam\"",
+    "ring \"Wozxet\""
+  ],
+  "talisman": "none",
+  "form": null,
+  "bodyArmourDetails": {
+    "rawName": "justicar's regalia",
+    "displayName": "justicar's regalia",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": null,
+    "enchant": 5,
+    "artifactKind": "unrand",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": "Inspire Amulet+ Str+4",
+    "properties": {
+      "numeric": {
+        "Str": 4
+      },
+      "booleanProps": {},
+      "opaqueTokens": [
+        "Inspire",
+        "Amulet+"
+      ]
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {
+        "Str": 4
+      },
+      "booleanProps": {},
+      "opaqueTokens": [
+        "Inspire",
+        "Amulet+"
+      ]
+    }
+  },
+  "helmetDetails": [
+    {
+      "rawName": "hat \"Wushru\"",
+      "displayName": "hat \"Wushru\"",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "hat",
+      "enchant": 5,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Rampage rElec Int+4",
+      "properties": {
+        "numeric": {
+          "Int": 4
+        },
+        "booleanProps": {
+          "rElec": true,
+          "Rampage": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Int": 4
+        },
+        "booleanProps": {
+          "rElec": true,
+          "Rampage": true
+        },
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "glovesDetails": [
+    {
+      "rawName": "pair of gloves of Beoliyno",
+      "displayName": "pair of gloves of Beoliyno",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "gloves",
+      "enchant": 4,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Hurl, rElec Int-2 Stlth+",
+      "properties": {
+        "numeric": {
+          "Int": -2,
+          "Stlth": 1
+        },
+        "booleanProps": {
+          "rElec": true,
+          "Hurl": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Int": -2,
+          "Stlth": 1
+        },
+        "booleanProps": {
+          "rElec": true,
+          "Hurl": true
+        },
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "footwearDetails": [
+    {
+      "rawName": "pair of boots of Greed",
+      "displayName": "pair of boots of Greed",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "boots",
+      "enchant": 2,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "+Inv rPois Regen+ Earth",
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "rPois": true,
+          "Earth": true,
+          "Inv": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "rPois": true,
+          "Earth": true,
+          "Inv": true
+        },
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "cloakDetails": [
+    {
+      "rawName": "scarf",
+      "displayName": "scarf of resistance",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "scarf",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": "resistance",
+      "subtypeEffect": null,
+      "propertiesText": "rC+ rF+",
+      "properties": {
+        "numeric": {
+          "rF": 1,
+          "rC": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {
+          "rF": 1,
+          "rC": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "amuletDetails": [
+    {
+      "rawName": "amulet of regeneration",
+      "displayName": "amulet of regeneration",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "regeneration",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    },
+    {
+      "rawName": "amulet of dissipation",
+      "displayName": "amulet of dissipation",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "dissipation",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "booleanProps": {
+          "Dissipate": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {
+          "Dissipate": true
+        },
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "ringDetails": [
+    {
+      "rawName": "ring \"Sehodam\"",
+      "displayName": "randart ring",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Int+8",
+      "properties": {
+        "numeric": {
+          "Int": 8
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Int": 8
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    },
+    {
+      "rawName": "ring \"Wozxet\"",
+      "displayName": "randart ring",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "AC+4 Str+3",
+      "properties": {
+        "numeric": {
+          "Str": 3,
+          "AC": 4
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Str": 3,
+          "AC": 4
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "skills": {
+    "fighting": 12,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 0,
+    "dodging": 0,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "effectiveSkills": {
+    "fighting": 12,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 0,
+    "dodging": 0,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "spells": [],
+  "mutations": [
+    {
+      "name": "no striking features",
+      "level": null
+    }
+  ]
+}

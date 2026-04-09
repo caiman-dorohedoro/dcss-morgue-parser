@@ -1,0 +1,48 @@
+Dungeon Crawl Stone Soup version 0.35-a0-256-g859e8e3ba0 (webtiles) character file.
+
+360874 listentometal the Devastator (level 20, -12/152 HPs)
+             Began as a Demigod Conjurer on Apr 3, 2026.
+             Mangled by a vault guard
+             ... on level 3 of the Vaults on Apr 4, 2026.
+             The game lasted 02:57:27 (72567 turns).
+
+listentometal the Devastator (Demigod Conjurer)    Turns: 72567, Time: 02:57:28
+
+Health: -12/152    AC: 31    Str: 19    XL:     20   Next: 61%
+Magic:  2/43       EV: 16    Int: 50    God:
+Gold:   3728       SH:  8    Dex: 19    Spells: 9/46 levels left
+
+rFire   + + .  (33%)    f - fire staff of Hodateepp {rF+ Dex+7 Stlth+ Fire}
+rCold   + . .  (50%)    j - +2 buckler {rPois}
+rNeg    . . .  (100%)   E - +5 justicar's regalia {Inspire Amulet+ Str+4}
+rPois   +      (33%)    z - +5 hat "Wushru" {Rampage rElec Int+4}
+rElec   +      (33%)    y - scarf {rC+ rF+}
+rCorr   .      (100%)   a - +4 pair of gloves of Beoliyno {Hurl, rElec Int-2 Stlth+}
+SInv    .               q - +2 pair of boots of Greed {+Inv rPois Regen+ Earth}
+Will    ++...           n - amulet of dissipation
+Stlth   ++++            e - amulet of regeneration
+HPRegen 2.05/turn       R - ring "Wozxet" {AC+4 Str+3}
+MPRegen 0.28/turn       d - ring "Sehodam" {Int+8}
+
+%: rampage
+@: studying Axes
+A: no striking features
+a: no special abilities
+
+Inventory:
+
+Armour
+ E - the +5 justicar's regalia (worn) {Inspire Amulet+ Str+4}
+ z - the +5 hat "Wushru" (worn) {Rampage rElec Int+4}
+ y - a scarf (worn) {rC+ rF+}
+ a - the +4 pair of gloves of Beoliyno (worn) {Hurl, rElec Int-2 Stlth+}
+ q - the +2 pair of boots of Greed (worn) {+Inv rPois Regen+ Earth}
+
+Jewellery
+ d - the ring "Sehodam" (worn) {Int+8}
+ e - an amulet of regeneration (worn)
+ n - an amulet of dissipation (worn)
+ R - the ring "Wozxet" (worn) {AC+4 Str+3}
+
+Skills:
+ Level 12.0 Fighting

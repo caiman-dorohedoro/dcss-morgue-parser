@@ -61,7 +61,7 @@ function buildParsedEquippedNames(record: ParsedMorgueTextRecord): string[] {
       ...record.footwear,
       ...record.cloaks,
       record.orb,
-      record.amulet,
+      ...record.amulets,
       ...record.rings,
       record.gizmo,
       record.talisman,

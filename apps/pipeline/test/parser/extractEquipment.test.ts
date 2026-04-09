@@ -108,10 +108,10 @@ describe('extractEquipment', () => {
   it('keeps randart jewellery generic while preserving detailed properties', () => {
     const parsed = extractEquipment(loadFixture('full', 'morgue-midori369-20260406-191652.txt'))
 
-    expect(parsed.amulet).toBe('amulet of magic regeneration')
+    expect(parsed.amulets).toEqual(['amulet of magic regeneration'])
     expect(parsed.rings).toEqual(['ring of wizardry', 'ring of the Byakko'])
 
-    expect(parsed.amuletDetails).toMatchObject({
+    expect(parsed.amuletDetails?.[0]).toMatchObject({
       objectClass: 'jewellery',
       baseType: 'amulet',
       artifactKind: 'normal',
@@ -138,6 +138,18 @@ describe('extractEquipment', () => {
         booleanProps: { rElec: true, rPois: true, rCorr: true, SInv: true },
       }),
     })
+  })
+
+  it('preserves both worn amulets when body armour grants an extra amulet slot', () => {
+    const parsed = extractEquipment(loadFixture('focused', 'regalia-two-amulets.txt'))
+
+    expect(parsed.bodyArmour).toBe("justicar's regalia")
+    expect(parsed.amulets).toEqual(['amulet of regeneration', 'amulet of dissipation'])
+    expect(parsed.amuletDetails?.map((item) => item.rawName)).toEqual([
+      'amulet of regeneration',
+      'amulet of dissipation',
+    ])
+    expect(parsed.rings).toEqual(['ring "Sehodam"', 'ring "Wozxet"'])
   })
 
   it('keeps known unrand gloves by name while storing structured properties', () => {
@@ -168,7 +180,7 @@ describe('extractEquipment', () => {
     const parsed = extractEquipment(loadFixture('focused', 'equipped-accessories-with-descriptions.txt'))
 
     expect(parsed.bodyArmour).toBe('pearl dragon scales "Petz"')
-    expect(parsed.amulet).toBe('amulet of Vitality')
+    expect(parsed.amulets).toEqual(['amulet of Vitality'])
     expect(parsed.rings).toEqual(['ring of the Empty Page', 'ring "Veveor"'])
     expect(parsed.cloaks).toEqual(['cloak "Rafeal"'])
 
@@ -179,7 +191,7 @@ describe('extractEquipment', () => {
         booleanProps: { SInv: true, '^Drain': true },
       }),
     )
-    expect(parsed.amuletDetails?.artifactProperties).toEqual(
+    expect(parsed.amuletDetails?.[0]?.artifactProperties).toEqual(
       bag({ numeric: { Regen: 2, RegenMP: 2 } }),
     )
   })
@@ -187,8 +199,8 @@ describe('extractEquipment', () => {
   it('promotes common artefact tags like Bane into booleanProps', () => {
     const parsed = extractEquipment(loadFixture('full', 'morgue-FF96-20260407-041444.txt'))
 
-    expect(parsed.amulet).toBe('amulet of Fompol')
-    expect(parsed.amuletDetails).toMatchObject({
+    expect(parsed.amulets).toEqual(['amulet of Fompol'])
+    expect(parsed.amuletDetails?.[0]).toMatchObject({
       rawName: 'amulet of Fompol',
       properties: bag({
         numeric: { rF: 1 },
@@ -387,14 +399,14 @@ Jewellery
       baseType: 'rimehorn talisman',
       artifactKind: 'normal',
     })
-    expect(parsed.amuletDetails?.equipState).toBe('worn')
+    expect(parsed.amuletDetails?.[0]?.equipState).toBe('worn')
     expect(parsed.ringDetails?.map((item) => item.equipState)).toEqual(['worn', 'worn'])
   })
 
   it('parses installed Coglin gizmos as a distinct slot with structured properties', () => {
     const parsed = extractEquipment(loadFixture('focused', 'coglin-gizmo-installed-jingleheimer.txt'))
 
-    expect(parsed.amulet).toBe('none')
+    expect(parsed.amulets).toEqual([])
     expect(parsed.rings).toEqual([])
     expect(parsed.gizmo).toBe('cataphasic hydrosorter')
     expect(parsed.gizmoDetails).toMatchObject({
@@ -438,7 +450,7 @@ Jewellery
   it('keeps no-gizmo Coglins empty without inventing jewellery or gizmo equipment', () => {
     const parsed = extractEquipment(loadFixture('focused', 'coglin-no-gizmo-disgorge.txt'))
 
-    expect(parsed.amulet).toBe('none')
+    expect(parsed.amulets).toEqual([])
     expect(parsed.rings).toEqual([])
     expect(parsed.gizmo).toBe('none')
     expect(parsed.gizmoDetails).toBeUndefined()

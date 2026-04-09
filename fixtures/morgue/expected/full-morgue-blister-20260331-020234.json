@@ -21,7 +21,9 @@
   "footwear": [],
   "cloaks": [],
   "orb": "none",
-  "amulet": "amulet of Vitality",
+  "amulets": [
+    "amulet of Vitality"
+  ],
   "rings": [
     "ring \"Cyracic\"",
     "ring of Lady Luck",
@@ -115,45 +117,47 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet of Vitality",
-    "displayName": "amulet of Vitality",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "unrand",
-    "ego": null,
-    "subtypeEffect": null,
-    "propertiesText": "Regen++ RegenMP++",
-    "properties": {
-      "numeric": {
-        "Regen": 2,
-        "RegenMP": 2
+  "amuletDetails": [
+    {
+      "rawName": "amulet of Vitality",
+      "displayName": "amulet of Vitality",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "unrand",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Regen++ RegenMP++",
+      "properties": {
+        "numeric": {
+          "Regen": 2,
+          "RegenMP": 2
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "Regen": 2,
-        "RegenMP": 2
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Regen": 2,
+          "RegenMP": 2
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring \"Cyracic\"",

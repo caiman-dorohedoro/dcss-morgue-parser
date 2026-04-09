@@ -21,7 +21,9 @@
     "cloak of poison resistance"
   ],
   "orb": "none",
-  "amulet": "amulet of Dazytsee",
+  "amulets": [
+    "amulet of Dazytsee"
+  ],
   "rings": [
     "ring of protection",
     "ring of strength"
@@ -143,49 +145,51 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet of Dazytsee",
-    "displayName": "randart amulet",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "randart",
-    "ego": null,
-    "subtypeEffect": null,
-    "propertiesText": "Dissipate Fly Regen+",
-    "properties": {
-      "numeric": {
-        "Regen": 1
+  "amuletDetails": [
+    {
+      "rawName": "amulet of Dazytsee",
+      "displayName": "randart amulet",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Dissipate Fly Regen+",
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "Fly": true,
+          "Dissipate": true
+        },
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "Fly": true,
-        "Dissipate": true
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "Regen": 1
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "Fly": true,
-        "Dissipate": true
-      },
-      "opaqueTokens": []
+      "artifactProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "Fly": true,
+          "Dissipate": true
+        },
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring of protection",

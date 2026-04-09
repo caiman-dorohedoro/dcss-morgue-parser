@@ -143,7 +143,7 @@ export type EquipmentSnapshot = {
   footwear: string[]
   cloaks: string[]
   orb: string | undefined
-  amulet: string | undefined
+  amulets: string[]
   rings: string[]
   gizmo?: string
   talisman: string | undefined
@@ -154,7 +154,7 @@ export type EquipmentSnapshot = {
   footwearDetails?: EquipmentItemSnapshot[]
   cloakDetails?: EquipmentItemSnapshot[]
   orbDetails?: EquipmentItemSnapshot
-  amuletDetails?: EquipmentItemSnapshot
+  amuletDetails?: EquipmentItemSnapshot[]
   ringDetails?: EquipmentItemSnapshot[]
   gizmoDetails?: EquipmentItemSnapshot
   talismanDetails?: EquipmentItemSnapshot
@@ -229,7 +229,7 @@ export type ParsedMorgueTextRecord = BaseStatsSnapshot & {
   footwear: string[]
   cloaks: string[]
   orb: string
-  amulet: string
+  amulets: string[]
   rings: string[]
   gizmo?: string
   talisman: string
@@ -241,7 +241,7 @@ export type ParsedMorgueTextRecord = BaseStatsSnapshot & {
   footwearDetails?: EquipmentItemSnapshot[]
   cloakDetails?: EquipmentItemSnapshot[]
   orbDetails?: EquipmentItemSnapshot
-  amuletDetails?: EquipmentItemSnapshot
+  amuletDetails?: EquipmentItemSnapshot[]
   ringDetails?: EquipmentItemSnapshot[]
   gizmoDetails?: EquipmentItemSnapshot
   talismanDetails?: EquipmentItemSnapshot

@@ -320,3 +320,18 @@ Fresh Coglin and Ashenzari morgue review showed that `opaqueTokens` had become t
 - true leftovers
 
 Splitting those families makes the output more queryable without pretending that every inscription-like string is the same kind of data.
+
+## 13.9. Extra Amulets From Justicar's Regalia
+
+### What changed
+
+The parser now preserves multiple equipped amulets when Crawl exposes more than one amulet slot:
+
+- summary output now uses `amulets: string[]`
+- detail output now uses `amuletDetails: EquipmentItemSnapshot[]`
+
+### Why
+
+`justicar's regalia` is a real Crawl item that grants an extra amulet slot. Raw morgues can therefore show two equipped amulets in both the header summary and the inventory section.
+
+Keeping a singular amulet field silently dropped the second amulet or forced awkward compatibility shims. Treating amulets like other multi-item slots keeps the contract simpler and preserves the full equipped state directly.

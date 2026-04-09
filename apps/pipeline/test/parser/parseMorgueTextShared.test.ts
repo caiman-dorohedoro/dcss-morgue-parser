@@ -182,8 +182,22 @@ describe('parseMorgueText shared parser', () => {
       expect(noGizmoResult.record.species).toBe('Coglin')
       expect(noGizmoResult.record).not.toHaveProperty('gizmo')
       expect(noGizmoResult.record.gizmoDetails).toBeUndefined()
-      expect(noGizmoResult.record.amulet).toBe('none')
+      expect(noGizmoResult.record.amulets).toEqual([])
       expect(noGizmoResult.record.rings).toEqual([])
+    }
+  })
+
+  it("preserves extra amulets from justicar's regalia as a proper array slot", () => {
+    const result = parseMorgueText(loadFixture('regalia-two-amulets.txt'))
+
+    expect(result.ok).toBe(true)
+    if (result.ok) {
+      expect(result.record.bodyArmour).toBe("justicar's regalia")
+      expect(result.record.amulets).toEqual(['amulet of regeneration', 'amulet of dissipation'])
+      expect(result.record.amuletDetails?.map((item) => item.rawName)).toEqual([
+        'amulet of regeneration',
+        'amulet of dissipation',
+      ])
     }
   })
 })

@@ -26,7 +26,9 @@
     "cloak of air"
   ],
   "orb": "none",
-  "amulet": "amulet of Fompol",
+  "amulets": [
+    "amulet of Fompol"
+  ],
   "rings": [
     "ring of the Hare",
     "ring of Cyhit"
@@ -251,55 +253,57 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet of Fompol",
-    "displayName": "randart amulet",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "randart",
-    "ego": null,
-    "subtypeEffect": null,
-    "propertiesText": "Bane Rampage Acrobat Fly rPois rF+",
-    "properties": {
-      "numeric": {
-        "rF": 1
+  "amuletDetails": [
+    {
+      "rawName": "amulet of Fompol",
+      "displayName": "randart amulet",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Bane Rampage Acrobat Fly rPois rF+",
+      "properties": {
+        "numeric": {
+          "rF": 1
+        },
+        "booleanProps": {
+          "rPois": true,
+          "Fly": true,
+          "Acrobat": true,
+          "Rampage": true,
+          "Bane": true
+        },
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "rPois": true,
-        "Fly": true,
-        "Acrobat": true,
-        "Rampage": true,
-        "Bane": true
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "rF": 1
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "rPois": true,
-        "Fly": true,
-        "Acrobat": true,
-        "Rampage": true,
-        "Bane": true
-      },
-      "opaqueTokens": []
+      "artifactProperties": {
+        "numeric": {
+          "rF": 1
+        },
+        "booleanProps": {
+          "rPois": true,
+          "Fly": true,
+          "Acrobat": true,
+          "Rampage": true,
+          "Bane": true
+        },
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring of the Hare",

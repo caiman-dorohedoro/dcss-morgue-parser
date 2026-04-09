@@ -27,7 +27,9 @@
     "cloak of willpower"
   ],
   "orb": "none",
-  "amulet": "amulet of magic regeneration",
+  "amulets": [
+    "amulet of magic regeneration"
+  ],
   "rings": [
     "ring of wizardry",
     "ring of the Byakko"
@@ -283,43 +285,45 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet of magic regeneration",
-    "displayName": "amulet of magic regeneration",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "normal",
-    "ego": null,
-    "subtypeEffect": "magic regeneration",
-    "propertiesText": null,
-    "properties": {
-      "numeric": {
-        "RegenMP": 1
+  "amuletDetails": [
+    {
+      "rawName": "amulet of magic regeneration",
+      "displayName": "amulet of magic regeneration",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "magic regeneration",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "RegenMP": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {
-        "RegenMP": 1
+      "intrinsicProperties": {
+        "numeric": {
+          "RegenMP": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring of wizardry",

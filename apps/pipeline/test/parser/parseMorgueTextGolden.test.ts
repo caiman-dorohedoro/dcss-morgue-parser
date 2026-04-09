@@ -58,6 +58,11 @@ const GOLDEN_CASES = [
     directory: 'focused',
     morgue: 'knorpule3000-gozag-full.txt',
   },
+  {
+    name: 'regalia-two-amulets',
+    directory: 'focused',
+    morgue: 'regalia-two-amulets.txt',
+  },
 ] as const
 
 const FULL_GOLDEN_CASES = readdirSync(path.resolve(process.cwd(), '../../fixtures/morgue/full'))

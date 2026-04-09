@@ -255,7 +255,7 @@ function collectEquipmentDetails(equipment: EquipmentSnapshot | null): Equipment
     ...(equipment.footwearDetails ?? []),
     ...(equipment.cloakDetails ?? []),
     ...(equipment.orbDetails ? [equipment.orbDetails] : []),
-    ...(equipment.amuletDetails ? [equipment.amuletDetails] : []),
+    ...(equipment.amuletDetails ?? []),
     ...(equipment.ringDetails ?? []),
     ...(equipment.gizmoDetails ? [equipment.gizmoDetails] : []),
     ...(equipment.talismanDetails ? [equipment.talismanDetails] : []),

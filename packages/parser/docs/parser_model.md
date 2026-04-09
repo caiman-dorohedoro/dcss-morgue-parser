@@ -230,6 +230,7 @@ Examples:
 - `gloves`
 - `footwear`
 - `cloaks`
+- `amulets`
 - `rings`
 - `gizmo`
 
@@ -241,12 +242,15 @@ plus:
 - `glovesDetails`
 - `footwearDetails`
 - `cloakDetails`
+- `amuletDetails`
 - `ringDetails`
 - `gizmoDetails`
 
 The summary values keep the morgue-facing item names. The detail objects try to mirror Crawl item semantics more closely.
 
 Coglin gizmos are modeled as a dedicated slot instead of being folded into jewellery. Their inventory lines use `equipState = "installed"` rather than `worn`.
+
+Amulets now follow the same array-shaped contract as rings or auxiliary armour. Even when only one amulet is worn, the parser emits `amulets` and `amuletDetails` as arrays so extra-slot items such as justicar's regalia do not need a special compatibility path.
 
 Each detail contains fields such as:
 

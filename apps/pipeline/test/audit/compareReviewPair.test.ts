@@ -19,7 +19,7 @@ function buildRecord(
       | 'footwear'
       | 'cloaks'
       | 'orb'
-      | 'amulet'
+      | 'amulets'
       | 'rings'
       | 'gizmo'
       | 'talisman'
@@ -47,7 +47,7 @@ function buildRecord(
     footwear: input.footwear ?? [],
     cloaks: input.cloaks ?? [],
     orb: input.orb ?? 'none',
-    amulet: input.amulet ?? 'none',
+    amulets: input.amulets ?? [],
     rings: input.rings ?? [],
     ...(input.gizmo ? { gizmo: input.gizmo } : {}),
     talisman: input.talisman ?? 'none',
@@ -137,7 +137,7 @@ Jewellery: V - the amulet of Harheavo (worn) {Reflect Harm rPois SH+5}
       buildRecord({
         species: 'Minotaur',
         background: 'Fighter',
-        amulet: 'amulet of Harheavo',
+        amulets: ['amulet of Harheavo'],
       }),
     )
 
@@ -176,6 +176,33 @@ Gizmo
         species: 'Coglin',
         background: 'Fighter',
         gizmo: 'dicompression equaliser',
+      }),
+    )
+
+    expect(result.mismatches).toEqual([])
+  })
+
+  it('treats extra amulets as equipped inventory items during review', () => {
+    const rawText = `listentometal the Devastator (Demigod Conjurer)    Turns: 72567, Time: 02:57:28
+
+Inventory:
+
+Jewellery
+ e - an amulet of regeneration (worn)
+ n - an amulet of dissipation (worn)
+`
+
+    expect(extractInventoryEquippedNames(rawText)).toEqual([
+      'amulet of regeneration',
+      'amulet of dissipation',
+    ])
+
+    const result = compareReviewPair(
+      rawText,
+      buildRecord({
+        species: 'Demigod',
+        background: 'Conjurer',
+        amulets: ['amulet of regeneration', 'amulet of dissipation'],
       }),
     )
 

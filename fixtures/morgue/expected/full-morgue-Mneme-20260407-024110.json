@@ -25,7 +25,9 @@
     "scarf of resistance"
   ],
   "orb": "orb of pyromania",
-  "amulet": "amulet of regeneration",
+  "amulets": [
+    "amulet of regeneration"
+  ],
   "rings": [
     "ring of Qetetip",
     "ring of the Past"
@@ -231,43 +233,45 @@
       "opaqueTokens": []
     }
   },
-  "amuletDetails": {
-    "rawName": "amulet of regeneration",
-    "displayName": "amulet of regeneration",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "normal",
-    "ego": null,
-    "subtypeEffect": "regeneration",
-    "propertiesText": null,
-    "properties": {
-      "numeric": {
-        "Regen": 1
+  "amuletDetails": [
+    {
+      "rawName": "amulet of regeneration",
+      "displayName": "amulet of regeneration",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "regeneration",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {
-        "Regen": 1
+      "intrinsicProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring of Qetetip",

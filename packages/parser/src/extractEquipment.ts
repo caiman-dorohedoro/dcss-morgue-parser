@@ -1428,7 +1428,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
   const cloakLines = armourLines.filter((line) => hasAny(line, cloakPatterns))
   const orbLine = armourLines.find((line) => hasAny(line, orbPatterns))
   const bodyArmourLine = armourLines.find((line) => !hasAny(line, nonBodyPatterns))
-  const amuletLine = jewelleryLines.find((line) => hasAny(line, amuletPatterns))
+  const amuletLines = jewelleryLines.filter((line) => hasAny(line, amuletPatterns))
   const ringLines = jewelleryLines.filter((line) => hasAny(line, ringPatterns))
   const gizmoLine = gizmoLines[0]
   const talismanLine = talismanLines[0]
@@ -1452,7 +1452,9 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     .map((line) => buildEquipmentItemWithHeaderState('cloak', line, headerEquipStates))
     .filter((item): item is EquipmentItemSnapshot => Boolean(item))
   const orbDetails = buildEquipmentItemWithHeaderState('orb', orbLine, headerEquipStates)
-  const amuletDetails = buildEquipmentItemWithHeaderState('amulet', amuletLine, headerEquipStates)
+  const amuletDetailsList = amuletLines
+    .map((line) => buildEquipmentItemWithHeaderState('amulet', line, headerEquipStates))
+    .filter((item): item is EquipmentItemSnapshot => Boolean(item))
   const ringDetails = ringLines
     .map((line) => buildEquipmentItemWithHeaderState('ring', line, headerEquipStates))
     .filter((item): item is EquipmentItemSnapshot => Boolean(item))
@@ -1471,7 +1473,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     footwear: footwearDetails.map((item) => item.rawName),
     cloaks: cloakDetails.map((item) => item.rawName),
     orb: orbDetails?.rawName ?? 'none',
-    amulet: amuletDetails?.rawName ?? 'none',
+    amulets: amuletDetailsList.map((item) => item.rawName),
     rings: ringDetails.map((ring) => ring.rawName),
     gizmo: gizmoDetails?.rawName ?? 'none',
     talisman: talismanDetails?.rawName ?? 'none',
@@ -1482,7 +1484,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     footwearDetails: footwearDetails.length > 0 ? footwearDetails : undefined,
     cloakDetails: cloakDetails.length > 0 ? cloakDetails : undefined,
     orbDetails,
-    amuletDetails,
+    amuletDetails: amuletDetailsList.length > 0 ? amuletDetailsList : undefined,
     ringDetails: ringDetails.length > 0 ? ringDetails : undefined,
     gizmoDetails,
     talismanDetails,

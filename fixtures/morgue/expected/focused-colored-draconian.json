@@ -25,7 +25,9 @@
     "cloak of poison resistance"
   ],
   "orb": "none",
-  "amulet": "amulet of regeneration",
+  "amulets": [
+    "amulet of regeneration"
+  ],
   "rings": [
     "ring of Sogam",
     "ring of intelligence"
@@ -145,43 +147,45 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet of regeneration",
-    "displayName": "amulet of regeneration",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "normal",
-    "ego": null,
-    "subtypeEffect": "regeneration",
-    "propertiesText": null,
-    "properties": {
-      "numeric": {
-        "Regen": 1
+  "amuletDetails": [
+    {
+      "rawName": "amulet of regeneration",
+      "displayName": "amulet of regeneration",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "regeneration",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {
-        "Regen": 1
+      "intrinsicProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring of Sogam",

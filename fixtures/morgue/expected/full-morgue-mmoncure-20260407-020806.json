@@ -28,7 +28,9 @@
     "cloak of willpower"
   ],
   "orb": "none",
-  "amulet": "amulet of reflection",
+  "amulets": [
+    "amulet of reflection"
+  ],
   "rings": [
     "ring of Cuopomec",
     "ring \"Veipnoni\""
@@ -265,43 +267,45 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet of reflection",
-    "displayName": "amulet of reflection",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "normal",
-    "ego": null,
-    "subtypeEffect": "reflection",
-    "propertiesText": null,
-    "properties": {
-      "numeric": {},
-      "booleanProps": {
-        "Reflect": true
+  "amuletDetails": [
+    {
+      "rawName": "amulet of reflection",
+      "displayName": "amulet of reflection",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "reflection",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "booleanProps": {
+          "Reflect": true
+        },
+        "opaqueTokens": []
       },
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {
-        "Reflect": true
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {
+          "Reflect": true
+        },
+        "opaqueTokens": []
       },
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring of Cuopomec",

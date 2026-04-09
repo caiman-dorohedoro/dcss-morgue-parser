@@ -26,7 +26,9 @@
     "cloak"
   ],
   "orb": "none",
-  "amulet": "amulet \"Bogymeyng\"",
+  "amulets": [
+    "amulet \"Bogymeyng\""
+  ],
   "rings": [
     "ring \"Urounwuo\"",
     "ring of protection from cold"
@@ -245,53 +247,55 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet \"Bogymeyng\"",
-    "displayName": "randart amulet",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "randart",
-    "ego": null,
-    "subtypeEffect": null,
-    "propertiesText": "Wildshape Bane rElec rPois Regen+",
-    "properties": {
-      "numeric": {
-        "Regen": 1
+  "amuletDetails": [
+    {
+      "rawName": "amulet \"Bogymeyng\"",
+      "displayName": "randart amulet",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Wildshape Bane rElec rPois Regen+",
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "rPois": true,
+          "rElec": true,
+          "Wildshape": true,
+          "Bane": true
+        },
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "rPois": true,
-        "rElec": true,
-        "Wildshape": true,
-        "Bane": true
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "Regen": 1
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "rPois": true,
-        "rElec": true,
-        "Wildshape": true,
-        "Bane": true
-      },
-      "opaqueTokens": []
+      "artifactProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "rPois": true,
+          "rElec": true,
+          "Wildshape": true,
+          "Bane": true
+        },
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring \"Urounwuo\"",

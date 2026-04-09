@@ -28,7 +28,9 @@
     "scarf of Untold Secrets"
   ],
   "orb": "orb of guile",
-  "amulet": "amulet of the Cockroach",
+  "amulets": [
+    "amulet of the Cockroach"
+  ],
   "rings": [
     "ring \"Lecas\"",
     "ring \"Biffeacs\""
@@ -316,47 +318,49 @@
       "opaqueTokens": []
     }
   },
-  "amuletDetails": {
-    "rawName": "amulet of the Cockroach",
-    "displayName": "randart amulet",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "randart",
-    "ego": null,
-    "subtypeEffect": null,
-    "propertiesText": "rF+ Regen+ Int+3",
-    "properties": {
-      "numeric": {
-        "rF": 1,
-        "Int": 3,
-        "Regen": 1
+  "amuletDetails": [
+    {
+      "rawName": "amulet of the Cockroach",
+      "displayName": "randart amulet",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "rF+ Regen+ Int+3",
+      "properties": {
+        "numeric": {
+          "rF": 1,
+          "Int": 3,
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "rF": 1,
-        "Int": 3,
-        "Regen": 1
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {},
-      "opaqueTokens": []
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "rF": 1,
+          "Int": 3,
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring \"Lecas\"",

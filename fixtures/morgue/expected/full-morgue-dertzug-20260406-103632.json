@@ -26,7 +26,9 @@
     "scarf of resistance"
   ],
   "orb": "none",
-  "amulet": "amulet \"Capal\"",
+  "amulets": [
+    "amulet \"Capal\""
+  ],
   "rings": [
     "ring \"Vocoguhar\"",
     "ring of willpower"
@@ -269,51 +271,53 @@
       }
     }
   ],
-  "amuletDetails": {
-    "rawName": "amulet \"Capal\"",
-    "displayName": "randart amulet",
-    "objectClass": "jewellery",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "amulet",
-    "enchant": null,
-    "artifactKind": "randart",
-    "ego": null,
-    "subtypeEffect": null,
-    "propertiesText": "Reflect Will+ Dex+5 SH+5",
-    "properties": {
-      "numeric": {
-        "Will": 1,
-        "Dex": 5,
-        "SH": 5
+  "amuletDetails": [
+    {
+      "rawName": "amulet \"Capal\"",
+      "displayName": "randart amulet",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Reflect Will+ Dex+5 SH+5",
+      "properties": {
+        "numeric": {
+          "Will": 1,
+          "Dex": 5,
+          "SH": 5
+        },
+        "booleanProps": {
+          "Reflect": true
+        },
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "Reflect": true
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "Will": 1,
-        "Dex": 5,
-        "SH": 5
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
       },
-      "booleanProps": {
-        "Reflect": true
-      },
-      "opaqueTokens": []
+      "artifactProperties": {
+        "numeric": {
+          "Will": 1,
+          "Dex": 5,
+          "SH": 5
+        },
+        "booleanProps": {
+          "Reflect": true
+        },
+        "opaqueTokens": []
+      }
     }
-  },
+  ],
   "ringDetails": [
     {
       "rawName": "ring \"Vocoguhar\"",
