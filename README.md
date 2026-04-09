@@ -6,6 +6,7 @@ This repository is organized so that:
 
 - `packages/parser` can become the publishable npm package
 - `apps/pipeline` can keep collecting, sampling, and reviewing real morgues
+- `apps/web` can provide a lightweight local viewer for pasted morgues
 - `fixtures/` can stay shared between parser development and pipeline QA
 
 ## Repository Layout
@@ -22,6 +23,7 @@ dcss-morgue-parser/
 
   apps/
     pipeline/
+    web/
 
   fixtures/
     morgue/
@@ -38,6 +40,10 @@ dcss-morgue-parser/
   - xlog/logfile discovery
   - raw morgue fetching
   - stratified sampling and QA workflows
+- [`apps/web`](./apps/web/)
+  - local split-view parser UI
+  - pasted/uploaded morgue input on the left
+  - compact structured output on the right
 - [`fixtures/morgue`](./fixtures/morgue/)
   - focused parser regressions
   - full morgue goldens
@@ -82,6 +88,12 @@ Build the publishable parser package:
 
 ```bash
 npm run build
+```
+
+Run the local morgue viewer:
+
+```bash
+npm run web:dev
 ```
 
 Collect and parse a QA sample:

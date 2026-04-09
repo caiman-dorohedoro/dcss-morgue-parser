@@ -7,8 +7,10 @@
   ],
   "scripts": {
     "build": "npm run build -w packages/parser",
-    "typecheck": "npm run typecheck -w packages/parser && npm run typecheck -w apps/pipeline",
+    "typecheck": "npm run typecheck -w packages/parser && npm run typecheck -w apps/pipeline && npm run typecheck -w apps/web",
     "test": "npm run test -w apps/pipeline",
+    "web:dev": "npm run dev -w apps/web",
+    "web:build": "npm run build -w apps/web",
     "fixtures:meta": "npm run fixtures:meta -w apps/pipeline",
     "bootstrap": "npm run bootstrap -w apps/pipeline --",
     "incremental": "npm run incremental -w apps/pipeline --",
