@@ -7,7 +7,7 @@ import {
   useState,
   type ChangeEvent,
 } from 'react'
-import { Check, ChevronRight, Copy } from 'lucide-react'
+import { ArrowDown, ArrowUp, Check, ChevronRight, Copy } from 'lucide-react'
 import {
   parseMorgueText,
   type EquipmentItemSnapshot,
@@ -165,6 +165,7 @@ function App() {
   const fileInputId = useId()
   const textAreaId = useId()
   const fileInputRef = useRef<HTMLInputElement>(null)
+  const textAreaRef = useRef<HTMLTextAreaElement>(null)
 
   useEffect(() => {
     startTransition(() => {
@@ -181,6 +182,19 @@ function App() {
     const text = await file.text()
     setInput(text)
     event.target.value = ''
+  }
+
+  function scrollMorgue(direction: 'top' | 'bottom') {
+    const node = textAreaRef.current
+
+    if (!node) {
+      return
+    }
+
+    node.scrollTo({
+      top: direction === 'top' ? 0 : node.scrollHeight,
+      behavior: 'smooth',
+    })
   }
 
   const lineCount = input.length === 0 ? 0 : input.split(/\r?\n/).length
@@ -210,48 +224,69 @@ function App() {
       </p>
 
       <main className="workspace" id="main-content">
-        <section className="panel input-panel">
-          <div className="panel-header">
-            <div>
-              <h2>Raw morgue</h2>
+        <div className="input-panel-shell">
+          <section className="panel input-panel">
+            <div className="panel-header">
+              <div>
+                <h2>Raw morgue</h2>
+              </div>
+              <div className="panel-actions">
+                <button className="ghost-button" onClick={() => setInput(defaultMorgueText)} type="button">
+                  Load Sample
+                </button>
+                <button className="ghost-button" onClick={() => setInput('')} type="button">
+                  Clear
+                </button>
+                <button
+                  className="ghost-button"
+                  onClick={() => fileInputRef.current?.click()}
+                  type="button"
+                >
+                  Upload
+                </button>
+                <input
+                  className="sr-only"
+                  id={fileInputId}
+                  name="morgueFile"
+                  onChange={handleFileChange}
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".txt,.log,.morgue,text/plain"
+                />
+              </div>
             </div>
-            <div className="panel-actions">
-              <button className="ghost-button" onClick={() => setInput(defaultMorgueText)} type="button">
-                Load Sample
-              </button>
-              <button className="ghost-button" onClick={() => setInput('')} type="button">
-                Clear
-              </button>
-              <button
-                className="ghost-button"
-                onClick={() => fileInputRef.current?.click()}
-                type="button"
-              >
-                Upload
-              </button>
-              <input
-                className="sr-only"
-                id={fileInputId}
-                name="morgueFile"
-                onChange={handleFileChange}
-                ref={fileInputRef}
-                type="file"
-                accept=".txt,.log,.morgue,text/plain"
-              />
-            </div>
+            <textarea
+              aria-label="Morgue text"
+              autoComplete="off"
+              className="morgue-input"
+              id={textAreaId}
+              name="morgueText"
+              onChange={(event) => setInput(event.target.value)}
+              placeholder="Paste a morgue file here…"
+              ref={textAreaRef}
+              spellCheck={false}
+              value={input}
+            />
+          </section>
+          <div className="morgue-scroll-shortcuts" aria-label="Raw morgue scroll shortcuts">
+            <button
+              aria-label="Scroll raw morgue to top"
+              className="scroll-jump-button"
+              onClick={() => scrollMorgue('top')}
+              type="button"
+            >
+              <ArrowUp aria-hidden="true" size={15} strokeWidth={2.1} />
+            </button>
+            <button
+              aria-label="Scroll raw morgue to bottom"
+              className="scroll-jump-button"
+              onClick={() => scrollMorgue('bottom')}
+              type="button"
+            >
+              <ArrowDown aria-hidden="true" size={15} strokeWidth={2.1} />
+            </button>
           </div>
-          <textarea
-            aria-label="Morgue text"
-            autoComplete="off"
-            className="morgue-input"
-            id={textAreaId}
-            name="morgueText"
-            onChange={(event) => setInput(event.target.value)}
-            placeholder="Paste a morgue file here…"
-            spellCheck={false}
-            value={input}
-          />
-        </section>
+        </div>
 
         <section className="panel output-panel">
           <div className="panel-header">
