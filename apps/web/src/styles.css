@@ -499,6 +499,18 @@ button {
   overflow-wrap: anywhere;
 }
 
+.spell-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.spell-badges {
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
 .equipment-enchant {
   display: inline-flex;
   align-items: center;

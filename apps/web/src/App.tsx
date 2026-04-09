@@ -404,7 +404,7 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
               {group.details && group.details.length > 0 ? (
                 <div className="equipment-list">
                   {group.details.map((item) => (
-                    <div className="equipment-item" key={`${group.label}:${item.displayName}:${item.equipState}`}>
+                    <div className="equipment-item" key={`${group.label}:${item.rawName}:${item.equipState}`}>
                       <div className="equipment-main">
                         <div className="equipment-title-row">
                           <strong>{item.displayName}</strong>
@@ -420,7 +420,7 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
                       {summarizePropertyBag(item).length > 0 ? (
                         <div className="tag-row">
                           {summarizePropertyBag(item).map((token) => (
-                            <span className="tag" key={`${item.displayName}:${token}`}>
+                            <span className="tag" key={`${item.rawName}:${token}`}>
                               {token}
                             </span>
                           ))}
@@ -574,12 +574,9 @@ function SpellList(props: { spells: SpellSnapshot[] }) {
     <div className="spell-list">
       {props.spells.map((spell) => (
         <div className="spell-row" key={`${spell.name}:${spell.memorized}`}>
-          <span>{spell.name}</span>
-          <div className="tag-row">
-            <span className="tag">{spell.castable ? 'castable' : 'unusable'}</span>
-            <span className="tag">
-              {spell.failurePercent === null ? 'N/A' : `${spell.failurePercent}% fail`}
-            </span>
+          <span className="spell-name">{spell.name}</span>
+          <div className="tag-row spell-badges">
+            <span className="tag">{spell.failurePercent === null ? 'N/A' : `${spell.failurePercent}%`}</span>
           </div>
         </div>
       ))}
