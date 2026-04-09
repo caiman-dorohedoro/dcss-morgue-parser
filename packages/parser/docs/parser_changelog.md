@@ -335,3 +335,20 @@ The parser now preserves multiple equipped amulets when Crawl exposes more than 
 `justicar's regalia` is a real Crawl item that grants an extra amulet slot. Raw morgues can therefore show two equipped amulets in both the header summary and the inventory section.
 
 Keeping a singular amulet field silently dropped the second amulet or forced awkward compatibility shims. Treating amulets like other multi-item slots keeps the contract simpler and preserves the full equipped state directly.
+
+## 13.10. Randart Jewellery `displayName` Keeps the Item Name
+
+### What changed
+
+Randart jewellery no longer collapses `displayName` to generic placeholders such as `randart ring` or `randart amulet`.
+
+For randart rings and amulets:
+
+- `displayName` now matches `rawName`
+- summary arrays still continue to use the equipped item names directly
+
+### Why
+
+The generic placeholders hid the actual item identity in downstream UI consumers even though the parser had already preserved the true morgue name in `rawName`.
+
+Keeping `displayName` aligned with the real jewellery name makes randart accessories behave like other named randart items and removes the need for UI-specific workarounds.

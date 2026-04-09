@@ -105,7 +105,7 @@ describe('extractEquipment', () => {
     })
   })
 
-  it('keeps randart jewellery generic while preserving detailed properties', () => {
+  it('keeps randart jewellery names in displayName while preserving detailed properties', () => {
     const parsed = extractEquipment(loadFixture('full', 'morgue-midori369-20260406-191652.txt'))
 
     expect(parsed.amulets).toEqual(['amulet of magic regeneration'])
@@ -128,6 +128,7 @@ describe('extractEquipment', () => {
 
     expect(parsed.ringDetails?.[1]).toMatchObject({
       rawName: 'ring of the Byakko',
+      displayName: 'ring of the Byakko',
       artifactKind: 'randart',
       properties: bag({
         numeric: { Will: -1 },
@@ -202,6 +203,8 @@ describe('extractEquipment', () => {
     expect(parsed.amulets).toEqual(['amulet of Fompol'])
     expect(parsed.amuletDetails?.[0]).toMatchObject({
       rawName: 'amulet of Fompol',
+      displayName: 'amulet of Fompol',
+      artifactKind: 'randart',
       properties: bag({
         numeric: { rF: 1 },
         booleanProps: {

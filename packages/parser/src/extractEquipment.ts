@@ -1203,14 +1203,6 @@ function getDisplayName(
     return knownUnrand.name
   }
 
-  if (slot === 'amulet' && artifactKind === 'randart') {
-    return 'randart amulet'
-  }
-
-  if (slot === 'ring' && artifactKind === 'randart') {
-    return 'randart ring'
-  }
-
   if (slot === 'orb' && artifactKind === 'randart') {
     return 'randart orb'
   }
