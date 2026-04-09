@@ -45,36 +45,34 @@
     "artifactKind": "randart",
     "ego": null,
     "subtypeEffect": null,
+    "ashenzariCurses": [
+      "Elem",
+      "Melee"
+    ],
     "propertiesText": "rPois, Elem, Melee",
     "properties": {
       "numeric": {},
-      "flags": {
+      "booleanProps": {
         "rPois": true
       },
-      "specials": [
-        "Elem",
-        "Melee"
-      ]
+      "opaqueTokens": []
     },
     "intrinsicProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     },
     "egoProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     },
     "artifactProperties": {
       "numeric": {},
-      "flags": {
+      "booleanProps": {
         "rPois": true
       },
-      "specials": [
-        "Elem",
-        "Melee"
-      ]
+      "opaqueTokens": []
     }
   },
   "shieldDetails": {
@@ -88,36 +86,34 @@
     "artifactKind": "randart",
     "ego": null,
     "subtypeEffect": null,
+    "ashenzariCurses": [
+      "Sorc",
+      "Comp"
+    ],
     "propertiesText": "rCorr, Sorc, Comp",
     "properties": {
       "numeric": {},
-      "flags": {
+      "booleanProps": {
         "rCorr": true
       },
-      "specials": [
-        "Sorc",
-        "Comp"
-      ]
+      "opaqueTokens": []
     },
     "intrinsicProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     },
     "egoProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     },
     "artifactProperties": {
       "numeric": {},
-      "flags": {
+      "booleanProps": {
         "rCorr": true
       },
-      "specials": [
-        "Sorc",
-        "Comp"
-      ]
+      "opaqueTokens": []
     }
   },
   "helmetDetails": [
@@ -132,38 +128,36 @@
       "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
+      "ashenzariCurses": [
+        "Self",
+        "Elem"
+      ],
       "propertiesText": "Fly rElec, Self, Elem",
       "properties": {
         "numeric": {},
-        "flags": {
+        "booleanProps": {
           "rElec": true,
           "Fly": true
         },
-        "specials": [
-          "Self",
-          "Elem"
-        ]
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {},
-        "flags": {
+        "booleanProps": {
           "rElec": true,
           "Fly": true
         },
-        "specials": [
-          "Self",
-          "Elem"
-        ]
+        "opaqueTokens": []
       }
     }
   ],
@@ -186,18 +180,18 @@
           "rN": 2,
           "Dex": -4
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
@@ -205,8 +199,8 @@
           "rN": 2,
           "Dex": -4
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     }
   ],
@@ -222,32 +216,30 @@
       "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
+      "ashenzariCurses": [
+        "Elem",
+        "Fort"
+      ],
       "propertiesText": "Elem, Fort",
       "properties": {
         "numeric": {},
-        "flags": {},
-        "specials": [
-          "Elem",
-          "Fort"
-        ]
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": [
-          "Elem",
-          "Fort"
-        ]
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     }
   ],
@@ -263,38 +255,36 @@
       "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
+      "ashenzariCurses": [
+        "Sorc",
+        "Elem"
+      ],
       "propertiesText": "rC+ rF+, Sorc, Elem",
       "properties": {
         "numeric": {
           "rF": 1,
           "rC": 1
         },
-        "flags": {},
-        "specials": [
-          "Sorc",
-          "Elem"
-        ]
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
           "rF": 1,
           "rC": 1
         },
-        "flags": {},
-        "specials": [
-          "Sorc",
-          "Elem"
-        ]
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     }
   ],
@@ -309,40 +299,40 @@
     "artifactKind": "unrand",
     "ego": null,
     "subtypeEffect": null,
+    "ashenzariCurses": [
+      "Elem",
+      "Self"
+    ],
     "propertiesText": "rN+ Will+++ Clar, Elem, Self",
     "properties": {
       "numeric": {
         "rN": 1,
         "Will": 3
       },
-      "flags": {},
-      "specials": [
-        "Clar",
-        "Elem",
-        "Self"
-      ]
+      "booleanProps": {
+        "Clar": true
+      },
+      "opaqueTokens": []
     },
     "intrinsicProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     },
     "egoProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     },
     "artifactProperties": {
       "numeric": {
         "rN": 1,
         "Will": 3
       },
-      "flags": {},
-      "specials": [
-        "Clar",
-        "Elem",
-        "Self"
-      ]
+      "booleanProps": {
+        "Clar": true
+      },
+      "opaqueTokens": []
     }
   },
   "ringDetails": [
@@ -357,6 +347,10 @@
       "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
+      "ashenzariCurses": [
+        "Fort",
+        "Self"
+      ],
       "propertiesText": "rPois rC++ Will+ Wiz Dex-3, Fort, Self",
       "properties": {
         "numeric": {
@@ -364,24 +358,21 @@
           "Will": 1,
           "Dex": -3
         },
-        "flags": {
+        "booleanProps": {
           "rPois": true,
           "Wiz": true
         },
-        "specials": [
-          "Fort",
-          "Self"
-        ]
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
@@ -389,14 +380,11 @@
           "Will": 1,
           "Dex": -3
         },
-        "flags": {
+        "booleanProps": {
           "rPois": true,
           "Wiz": true
         },
-        "specials": [
-          "Fort",
-          "Self"
-        ]
+        "opaqueTokens": []
       }
     },
     {
@@ -410,36 +398,34 @@
       "artifactKind": "unrand",
       "ego": null,
       "subtypeEffect": null,
+      "ashenzariCurses": [
+        "Fort",
+        "Elem"
+      ],
       "propertiesText": "AC+8, Fort, Elem",
       "properties": {
         "numeric": {
           "AC": 8
         },
-        "flags": {},
-        "specials": [
-          "Fort",
-          "Elem"
-        ]
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
           "AC": 8
         },
-        "flags": {},
-        "specials": [
-          "Fort",
-          "Elem"
-        ]
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     }
   ],

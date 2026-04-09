@@ -48,28 +48,46 @@ The equipment model follows Crawl's item concepts rather than only the printed E
 
 Main references in the Crawl source tree:
 
-- `item-def.h`
+- `crawl/crawl-ref/source/item-def.h`
   - object categories such as `OBJ_ARMOUR` and `OBJ_JEWELLERY`
   - subtype concept for specific items inside those categories
-- `item-name.cc`
+- `crawl/crawl-ref/source/item-name.cc`
   - how normal items, ego items, and artefacts are rendered into player-facing names
   - useful for distinguishing armour egos from jewellery subtypes
-- `item-prop.cc`
+  - gizmo display names and `installed` phrasing
+- `crawl/crawl-ref/source/item-prop.cc`
   - which armour egos are legal for which subtypes
   - intrinsic properties on armour bases such as dragon scales
-- `artefact.h`
+- `crawl/crawl-ref/source/artefact.h`
   - fixed unrand property storage
-- `artefact.cc`
+- `crawl/crawl-ref/source/artefact.cc`
   - artefact property enumeration
   - code paths that combine intrinsic item properties with artefact properties for display and evaluation
-- `player-equip.h`
+  - gizmo property generation
+- `crawl/crawl-ref/source/player-equip.h`
   - `player_equip_set`
   - `player_equip_entry`
-- `equipment-slot.h`
+- `crawl/crawl-ref/source/equipment-slot.h`
   - slot enums such as `SLOT_BODY_ARMOUR`, `SLOT_HELMET`, `SLOT_GLOVES`, `SLOT_BOOTS`, `SLOT_CLOAK`, `SLOT_RING`, `SLOT_AMULET`
+  - `SLOT_GIZMO` for Coglin gizmos
   - `SLOT_HAUNTED_AUX` for poltergeist-compatible haunted auxiliary equipment
-- `player-equip.cc`
+- `crawl/crawl-ref/source/player-equip.cc`
   - compatible slot mapping, including `SLOT_HAUNTED_AUX`
+
+Specific Crawl source paths worth checking when equipment parsing changes:
+
+- `crawl/crawl-ref/source/artefact.cc`
+  - common artefact property abbreviations such as `Clar`, `RMsl`, `Bane`, `-Cast`, `^Drain`, `*Rage`, `*Corrode`, and `^Contam`
+- `crawl/crawl-ref/source/describe.cc`
+  - player-facing descriptions for common artefact properties and gizmo effects
+- `crawl/crawl-ref/source/item-prop-enum.h`
+  - `special_gizmo_type` enum for `SpellMotor`, `Gadgeteer`, `RevGuard`, and `AutoDazzle`
+- `crawl/crawl-ref/source/item-name.cc`
+  - gizmo effect display tokens used in morgue `{...}` property text
+- `crawl/crawl-ref/source/god-abil.cc`
+  - Ashenzari curse shorthand mapping such as `Elem`, `Sorc`, `Comp`, `Self`, `Fort`, `Cun`, `Bglg`, `Melee`, `Range`, and `Dev`
+- `crawl/crawl-ref/source/art-data.txt`
+  - unrand-only inscription strings such as `Infuse+∞`, `VampMP`, `*Englaciate`, and `Wandboost`
 
 These are the reason the parser treats these as separate concepts:
 
@@ -213,6 +231,7 @@ Examples:
 - `footwear`
 - `cloaks`
 - `rings`
+- `gizmo`
 
 plus:
 
@@ -223,8 +242,11 @@ plus:
 - `footwearDetails`
 - `cloakDetails`
 - `ringDetails`
+- `gizmoDetails`
 
 The summary values keep the morgue-facing item names. The detail objects try to mirror Crawl item semantics more closely.
+
+Coglin gizmos are modeled as a dedicated slot instead of being folded into jewellery. Their inventory lines use `equipState = "installed"` rather than `worn`.
 
 Each detail contains fields such as:
 
@@ -238,6 +260,8 @@ Each detail contains fields such as:
 - `artifactKind`
 - `ego`
 - `subtypeEffect`
+- `gizmoEffect`
+- `ashenzariCurses`
 - `propertiesText`
 - `functionalInscriptions`
 - `properties`
@@ -252,8 +276,8 @@ Equipment properties use a structured bag:
 ```ts
 type EquipmentPropertyBag = {
   numeric: Partial<Record<EquipmentNumericPropertyKey, number>>
-  flags: Partial<Record<EquipmentFlagPropertyKey, true>>
-  specials: string[]
+  booleanProps: Partial<Record<EquipmentBooleanPropertyKey, true>>
+  opaqueTokens: string[]
 }
 ```
 
@@ -275,7 +299,10 @@ Notes:
 
 - `propertiesText` preserves the raw `{...}` inscription text from the morgue line.
 - `functionalInscriptions` is emitted when the parser recognizes special Crawl inscription controls such as `!w`, `=f`, or `@r3`.
-- `specials` may still contain unknown artefact tags or free-form player inscription text. The parser does not yet reliably split arbitrary custom note text away from all unknown item-property tokens.
+- common Crawl artprop abbreviations such as `Bane`, `-Cast`, `^Drain`, `*Rage`, `*Corrode`, `^Contam`, and `rMut` are normalized into `booleanProps`
+- gizmo-only effect tokens are emitted separately as `gizmoEffect`
+- Ashenzari curse shorthand tokens are emitted separately as `ashenzariCurses`
+- `opaqueTokens` are now the true residual bucket for unrand-specific strings, still-unknown tags, or free-form player inscription text
 
 Code:
 

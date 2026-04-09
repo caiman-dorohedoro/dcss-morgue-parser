@@ -14,8 +14,8 @@ function loadFixture(directory: 'focused' | 'full', name: string) {
 function bag(input: Partial<EquipmentPropertyBag> = {}): EquipmentPropertyBag {
   return {
     numeric: input.numeric ?? {},
-    flags: input.flags ?? {},
-    specials: input.specials ?? [],
+    booleanProps: input.booleanProps ?? {},
+    opaqueTokens: input.opaqueTokens ?? [],
   }
 }
 
@@ -66,7 +66,7 @@ describe('extractEquipment', () => {
     expect(parsed.footwearDetails?.[0]).toMatchObject({
       baseType: 'boots',
       ego: 'flying',
-      properties: bag({ flags: { Fly: true } }),
+      properties: bag({ booleanProps: { Fly: true } }),
     })
 
     expect(parsed.helmetDetails?.[0]).toMatchObject({
@@ -123,7 +123,7 @@ describe('extractEquipment', () => {
     expect(parsed.ringDetails?.[0]).toMatchObject({
       baseType: 'ring',
       subtypeEffect: 'wizardry',
-      properties: bag({ flags: { Wiz: true } }),
+      properties: bag({ booleanProps: { Wiz: true } }),
     })
 
     expect(parsed.ringDetails?.[1]).toMatchObject({
@@ -131,11 +131,11 @@ describe('extractEquipment', () => {
       artifactKind: 'randart',
       properties: bag({
         numeric: { Will: -1 },
-        flags: { rElec: true, rPois: true, rCorr: true, SInv: true },
+        booleanProps: { rElec: true, rPois: true, rCorr: true, SInv: true },
       }),
       artifactProperties: bag({
         numeric: { Will: -1 },
-        flags: { rElec: true, rPois: true, rCorr: true, SInv: true },
+        booleanProps: { rElec: true, rPois: true, rCorr: true, SInv: true },
       }),
     })
   })
@@ -153,8 +153,14 @@ describe('extractEquipment', () => {
       baseType: 'gloves',
       enchant: 3,
       artifactKind: 'unrand',
-      properties: bag({ specials: ['Infuse+∞', 'VampMP', '-Cast'] }),
-      artifactProperties: bag({ specials: ['Infuse+∞', 'VampMP', '-Cast'] }),
+      properties: bag({
+        booleanProps: { '-Cast': true },
+        opaqueTokens: ['Infuse+∞', 'VampMP'],
+      }),
+      artifactProperties: bag({
+        booleanProps: { '-Cast': true },
+        opaqueTokens: ['Infuse+∞', 'VampMP'],
+      }),
     })
   })
 
@@ -168,11 +174,43 @@ describe('extractEquipment', () => {
 
     expect(parsed.bodyArmourDetails?.intrinsicProperties).toEqual(bag({ numeric: { rN: 1 } }))
     expect(parsed.bodyArmourDetails?.artifactProperties).toEqual(
-      bag({ numeric: { Regen: 1, Str: 2 }, flags: { SInv: true }, specials: ['^Drain'] }),
+      bag({
+        numeric: { Regen: 1, Str: 2 },
+        booleanProps: { SInv: true, '^Drain': true },
+      }),
     )
     expect(parsed.amuletDetails?.artifactProperties).toEqual(
       bag({ numeric: { Regen: 2, RegenMP: 2 } }),
     )
+  })
+
+  it('promotes common artefact tags like Bane into booleanProps', () => {
+    const parsed = extractEquipment(loadFixture('full', 'morgue-FF96-20260407-041444.txt'))
+
+    expect(parsed.amulet).toBe('amulet of Fompol')
+    expect(parsed.amuletDetails).toMatchObject({
+      rawName: 'amulet of Fompol',
+      properties: bag({
+        numeric: { rF: 1 },
+        booleanProps: {
+          Bane: true,
+          Rampage: true,
+          Acrobat: true,
+          Fly: true,
+          rPois: true,
+        },
+      }),
+      artifactProperties: bag({
+        numeric: { rF: 1 },
+        booleanProps: {
+          Bane: true,
+          Rampage: true,
+          Acrobat: true,
+          Fly: true,
+          rPois: true,
+        },
+      }),
+    })
   })
 
   it('separates functional inscriptions from equipped item properties', () => {
@@ -184,14 +222,14 @@ describe('extractEquipment', () => {
       rawName: 'ring of willpower',
       propertiesText: '!R test',
       functionalInscriptions: ['!R'],
-      properties: bag({ numeric: { Will: 1 }, specials: ['test'] }),
+      properties: bag({ numeric: { Will: 1 }, opaqueTokens: ['test'] }),
     })
 
     expect(parsed.ringDetails?.[1]).toMatchObject({
       rawName: 'ring of poison resistance',
       propertiesText: '!w =f !D My Stone',
       functionalInscriptions: ['!w', '=f', '!D'],
-      properties: bag({ flags: { rPois: true }, specials: ['My', 'Stone'] }),
+      properties: bag({ booleanProps: { rPois: true }, opaqueTokens: ['My', 'Stone'] }),
     })
   })
 
@@ -312,8 +350,9 @@ Jewellery
       isCursed: true,
       baseType: 'acid dragon scales',
       artifactKind: 'randart',
-      intrinsicProperties: bag({ flags: { rCorr: true } }),
-      artifactProperties: bag({ specials: ['Elem', 'Sorc'] }),
+      intrinsicProperties: bag({ booleanProps: { rCorr: true } }),
+      artifactProperties: bag(),
+      ashenzariCurses: ['Elem', 'Sorc'],
     })
 
     expect(parsed.helmetDetails?.[0]).toMatchObject({
@@ -321,7 +360,8 @@ Jewellery
       isCursed: true,
       baseType: 'helmet',
       artifactKind: 'randart',
-      artifactProperties: bag({ numeric: { Int: 3 }, specials: ['Comp', 'Sorc'] }),
+      artifactProperties: bag({ numeric: { Int: 3 } }),
+      ashenzariCurses: ['Comp', 'Sorc'],
     })
 
     expect(parsed.talismanDetails).toMatchObject({
@@ -330,7 +370,7 @@ Jewellery
       equipState: 'worn',
       baseType: 'hive talisman',
       artifactKind: 'randart',
-      properties: bag({ numeric: { rC: -1, Will: 3 }, flags: { rElec: true } }),
+      properties: bag({ numeric: { rC: -1, Will: 3 }, booleanProps: { rElec: true } }),
     })
   })
 
@@ -349,5 +389,57 @@ Jewellery
     })
     expect(parsed.amuletDetails?.equipState).toBe('worn')
     expect(parsed.ringDetails?.map((item) => item.equipState)).toEqual(['worn', 'worn'])
+  })
+
+  it('parses installed Coglin gizmos as a distinct slot with structured properties', () => {
+    const parsed = extractEquipment(loadFixture('focused', 'coglin-gizmo-installed-jingleheimer.txt'))
+
+    expect(parsed.amulet).toBe('none')
+    expect(parsed.rings).toEqual([])
+    expect(parsed.gizmo).toBe('cataphasic hydrosorter')
+    expect(parsed.gizmoDetails).toMatchObject({
+      rawName: 'cataphasic hydrosorter',
+      displayName: 'cataphasic hydrosorter',
+      objectClass: 'gizmo',
+      equipState: 'installed',
+      isCursed: false,
+      baseType: 'gizmo',
+      artifactKind: 'randart',
+      properties: bag({
+        numeric: { MP: 4 },
+        booleanProps: { rElec: true, Wiz: true, Clar: true, RMsl: true },
+      }),
+      artifactProperties: bag({
+        numeric: { MP: 4 },
+        booleanProps: { rElec: true, Wiz: true, Clar: true, RMsl: true },
+      }),
+    })
+  })
+
+  it('keeps special gizmo effect tags in opaque tokens while parsing installed gizmo resistances', () => {
+    const parsed = extractEquipment(loadFixture('focused', 'coglin-gizmo-revguard-nono3.txt'))
+
+    expect(parsed.gizmo).toBe('dicompression equaliser')
+    expect(parsed.gizmoDetails).toMatchObject({
+      rawName: 'dicompression equaliser',
+      objectClass: 'gizmo',
+      equipState: 'installed',
+      gizmoEffect: 'RevGuard',
+      properties: bag({
+        numeric: { rF: 1, rC: 1 },
+      }),
+      artifactProperties: bag({
+        numeric: { rF: 1, rC: 1 },
+      }),
+    })
+  })
+
+  it('keeps no-gizmo Coglins empty without inventing jewellery or gizmo equipment', () => {
+    const parsed = extractEquipment(loadFixture('focused', 'coglin-no-gizmo-disgorge.txt'))
+
+    expect(parsed.amulet).toBe('none')
+    expect(parsed.rings).toEqual([])
+    expect(parsed.gizmo).toBe('none')
+    expect(parsed.gizmoDetails).toBeUndefined()
   })
 })

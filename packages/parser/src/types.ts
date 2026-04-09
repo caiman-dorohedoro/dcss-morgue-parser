@@ -17,8 +17,20 @@ export type BaseStatsSnapshot = {
 }
 
 export type ArtifactKind = 'normal' | 'randart' | 'unrand'
-export type EquipmentObjectClass = 'armour' | 'jewellery' | 'talisman'
-export type EquipmentEquipState = 'worn' | 'haunted' | 'melded'
+export type EquipmentObjectClass = 'armour' | 'jewellery' | 'talisman' | 'gizmo'
+export type EquipmentEquipState = 'worn' | 'haunted' | 'melded' | 'installed'
+export type EquipmentGizmoEffect = 'SpellMotor' | 'Gadgeteer' | 'RevGuard' | 'AutoDazzle'
+export type EquipmentAshenzariCurse =
+  | 'Melee'
+  | 'Range'
+  | 'Elem'
+  | 'Sorc'
+  | 'Comp'
+  | 'Bglg'
+  | 'Self'
+  | 'Fort'
+  | 'Cun'
+  | 'Dev'
 
 export type EquipmentNumericPropertyKey =
   | 'rF'
@@ -38,13 +50,16 @@ export type EquipmentNumericPropertyKey =
   | 'RegenMP'
   | 'Stlth'
 
-export type EquipmentFlagPropertyKey =
+export type EquipmentBooleanPropertyKey =
   | 'rPois'
   | 'rElec'
   | 'rCorr'
+  | 'rMut'
   | 'SInv'
   | 'Fly'
   | 'Reflect'
+  | 'Clar'
+  | 'RMsl'
   | 'Faith'
   | 'Spirit'
   | 'Wiz'
@@ -80,11 +95,17 @@ export type EquipmentFlagPropertyKey =
   | 'Pyromania'
   | 'Ponderous'
   | 'Inv'
+  | '-Cast'
+  | 'Bane'
+  | '*Rage'
+  | '^Drain'
+  | '*Corrode'
+  | '^Contam'
 
 export type EquipmentPropertyBag = {
   numeric: Partial<Record<EquipmentNumericPropertyKey, number>>
-  flags: Partial<Record<EquipmentFlagPropertyKey, true>>
-  specials: string[]
+  booleanProps: Partial<Record<EquipmentBooleanPropertyKey, true>>
+  opaqueTokens: string[]
 }
 
 export type EquipmentItemSnapshot = {
@@ -98,6 +119,8 @@ export type EquipmentItemSnapshot = {
   artifactKind: ArtifactKind
   ego: string | null
   subtypeEffect: string | null
+  gizmoEffect?: EquipmentGizmoEffect
+  ashenzariCurses?: EquipmentAshenzariCurse[]
   propertiesText: string | null
   functionalInscriptions?: string[]
   properties: EquipmentPropertyBag
@@ -116,6 +139,7 @@ export type EquipmentSnapshot = {
   orb: string | undefined
   amulet: string | undefined
   rings: string[]
+  gizmo?: string
   talisman: string | undefined
   bodyArmourDetails?: EquipmentItemSnapshot
   shieldDetails?: EquipmentItemSnapshot
@@ -126,6 +150,7 @@ export type EquipmentSnapshot = {
   orbDetails?: EquipmentItemSnapshot
   amuletDetails?: EquipmentItemSnapshot
   ringDetails?: EquipmentItemSnapshot[]
+  gizmoDetails?: EquipmentItemSnapshot
   talismanDetails?: EquipmentItemSnapshot
 }
 
@@ -200,6 +225,7 @@ export type ParsedMorgueTextRecord = BaseStatsSnapshot & {
   orb: string
   amulet: string
   rings: string[]
+  gizmo?: string
   talisman: string
   form: string | null
   bodyArmourDetails?: EquipmentItemSnapshot
@@ -211,6 +237,7 @@ export type ParsedMorgueTextRecord = BaseStatsSnapshot & {
   orbDetails?: EquipmentItemSnapshot
   amuletDetails?: EquipmentItemSnapshot
   ringDetails?: EquipmentItemSnapshot[]
+  gizmoDetails?: EquipmentItemSnapshot
   talismanDetails?: EquipmentItemSnapshot
   skills: SkillLevelsSnapshot
   effectiveSkills: SkillLevelsSnapshot

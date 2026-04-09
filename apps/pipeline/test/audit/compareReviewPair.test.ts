@@ -21,6 +21,7 @@ function buildRecord(
       | 'orb'
       | 'amulet'
       | 'rings'
+      | 'gizmo'
       | 'talisman'
     >
   >,
@@ -48,6 +49,7 @@ function buildRecord(
     orb: input.orb ?? 'none',
     amulet: input.amulet ?? 'none',
     rings: input.rings ?? [],
+    ...(input.gizmo ? { gizmo: input.gizmo } : {}),
     talisman: input.talisman ?? 'none',
     form: null,
     skills: {
@@ -155,6 +157,29 @@ J - a granite talisman: K - the serpent talisman of the Land of Plenty (worn) {r
       'ring of Wuunnoje',
       'serpent talisman of the Land of Plenty',
     ])
+  })
+
+  it('treats installed gizmos as equipped inventory items during review', () => {
+    const rawText = `nono3 the Warrior (Coglin Fighter)     Turns: 24147, Time: 00:57:59
+
+Inventory:
+
+Gizmo
+ w - a dicompression equaliser (installed) {RevGuard, rF+ rC+}
+`
+
+    expect(extractInventoryEquippedNames(rawText)).toEqual(['dicompression equaliser'])
+
+    const result = compareReviewPair(
+      rawText,
+      buildRecord({
+        species: 'Coglin',
+        background: 'Fighter',
+        gizmo: 'dicompression equaliser',
+      }),
+    )
+
+    expect(result.mismatches).toEqual([])
   })
 
   it('flags true expanded-role mismatches', () => {

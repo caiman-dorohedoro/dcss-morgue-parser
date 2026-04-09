@@ -54,6 +54,8 @@ export function parseMorgueText(text: string, options: ParseMorgueTextOptions = 
       ...(record.orbDetails ? { orbDetails: record.orbDetails } : {}),
       ...(record.amuletDetails ? { amuletDetails: record.amuletDetails } : {}),
       ...(record.ringDetails ? { ringDetails: record.ringDetails } : {}),
+      ...(record.gizmo && record.gizmo !== 'none' ? { gizmo: record.gizmo } : {}),
+      ...(record.gizmoDetails ? { gizmoDetails: record.gizmoDetails } : {}),
       ...(record.talismanDetails ? { talismanDetails: record.talismanDetails } : {}),
       skills: record.skills,
       effectiveSkills: record.effectiveSkills,

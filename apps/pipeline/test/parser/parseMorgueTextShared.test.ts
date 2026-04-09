@@ -154,4 +154,35 @@ describe('parseMorgueText shared parser', () => {
       })
     }
   })
+
+  it('preserves installed Coglin gizmos only when the morgue actually has one', () => {
+    const gizmoResult = parseMorgueText(loadFixture('coglin-gizmo-installed-jingleheimer.txt'))
+    const noGizmoResult = parseMorgueText(loadFixture('coglin-no-gizmo-disgorge.txt'))
+
+    expect(gizmoResult.ok).toBe(true)
+    if (gizmoResult.ok) {
+      expect(gizmoResult.record.species).toBe('Coglin')
+      expect(gizmoResult.record.gizmo).toBe('cataphasic hydrosorter')
+      expect(gizmoResult.record.gizmoDetails).toMatchObject({
+        objectClass: 'gizmo',
+        equipState: 'installed',
+        artifactKind: 'randart',
+        properties: {
+          numeric: { MP: 4 },
+          booleanProps: { rElec: true, Wiz: true, Clar: true, RMsl: true },
+          opaqueTokens: [],
+        },
+      })
+      expect(gizmoResult.record.gizmoDetails?.gizmoEffect).toBeUndefined()
+    }
+
+    expect(noGizmoResult.ok).toBe(true)
+    if (noGizmoResult.ok) {
+      expect(noGizmoResult.record.species).toBe('Coglin')
+      expect(noGizmoResult.record).not.toHaveProperty('gizmo')
+      expect(noGizmoResult.record.gizmoDetails).toBeUndefined()
+      expect(noGizmoResult.record.amulet).toBe('none')
+      expect(noGizmoResult.record.rings).toEqual([])
+    }
+  })
 })

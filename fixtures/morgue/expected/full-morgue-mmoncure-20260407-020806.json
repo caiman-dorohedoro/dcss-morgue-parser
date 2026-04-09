@@ -50,27 +50,27 @@
       "propertiesText": null,
       "properties": {
         "numeric": {},
-        "flags": {
+        "booleanProps": {
           "Snipe": true
         },
-        "specials": []
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {
+        "booleanProps": {
           "Snipe": true
         },
-        "specials": []
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     },
     {
@@ -89,25 +89,25 @@
         "numeric": {
           "rC": 1
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
           "rC": 1
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     }
   ],
@@ -128,25 +128,25 @@
         "numeric": {
           "Regen": 1
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
           "Regen": 1
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     },
     {
@@ -166,30 +166,30 @@
           "rN": 1,
           "Regen": 1
         },
-        "flags": {
+        "booleanProps": {
           "rElec": true
         },
-        "specials": []
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
           "rN": 1,
           "Regen": 1
         },
-        "flags": {
+        "booleanProps": {
           "rElec": true
         },
-        "specials": []
+        "opaqueTokens": []
       }
     }
   ],
@@ -208,23 +208,23 @@
       "propertiesText": null,
       "properties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     },
     {
@@ -243,25 +243,25 @@
         "numeric": {
           "Will": 1
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {
           "Will": 1
         },
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       }
     }
   ],
@@ -279,27 +279,27 @@
     "propertiesText": null,
     "properties": {
       "numeric": {},
-      "flags": {
+      "booleanProps": {
         "Reflect": true
       },
-      "specials": []
+      "opaqueTokens": []
     },
     "intrinsicProperties": {
       "numeric": {},
-      "flags": {
+      "booleanProps": {
         "Reflect": true
       },
-      "specials": []
+      "opaqueTokens": []
     },
     "egoProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     },
     "artifactProperties": {
       "numeric": {},
-      "flags": {},
-      "specials": []
+      "booleanProps": {},
+      "opaqueTokens": []
     }
   },
   "ringDetails": [
@@ -320,30 +320,30 @@
           "rF": 1,
           "AC": 4
         },
-        "flags": {
+        "booleanProps": {
           "rCorr": true
         },
-        "specials": []
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
           "rF": 1,
           "AC": 4
         },
-        "flags": {
+        "booleanProps": {
           "rCorr": true
         },
-        "specials": []
+        "opaqueTokens": []
       }
     },
     {
@@ -365,20 +365,20 @@
           "Slay": 4,
           "Stlth": -1
         },
-        "flags": {
+        "booleanProps": {
           "rElec": true
         },
-        "specials": []
+        "opaqueTokens": []
       },
       "intrinsicProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "egoProperties": {
         "numeric": {},
-        "flags": {},
-        "specials": []
+        "booleanProps": {},
+        "opaqueTokens": []
       },
       "artifactProperties": {
         "numeric": {
@@ -387,10 +387,10 @@
           "Slay": 4,
           "Stlth": -1
         },
-        "flags": {
+        "booleanProps": {
           "rElec": true
         },
-        "specials": []
+        "opaqueTokens": []
       }
     }
   ],

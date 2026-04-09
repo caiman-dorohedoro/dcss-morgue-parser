@@ -234,13 +234,13 @@ Equipment detail objects now expose:
 - raw brace text through `propertiesText`
 - recognized functional Crawl inscription tokens through `functionalInscriptions`
 
-Recognized functional inscription tokens are excluded from `properties.specials`.
+Recognized functional inscription tokens are excluded from `properties.opaqueTokens`.
 
 ### Why
 
 The same `{...}` syntax in morgues can contain both item properties and player-added inscription commands such as `!w`, `=f`, and `@r3`. Those command tokens are not equipment properties and should not be mixed into downstream property bags.
 
-Free-form custom note text is still not fully separated from unknown property tokens, so `specials` may continue to include strings that are really player notes.
+Free-form custom note text is still not fully separated from unknown property tokens, so `opaqueTokens` may continue to include strings that are really player notes.
 
 ## 13.5. Orb-Slot Unrand Classification
 
@@ -256,3 +256,65 @@ Example:
 
 Manual review against live morgues found that header-slot placement and inventory state were clear, but the parser still emitted `bodyArmour = "sphere of Battle"` and `orb = "none"`.
 The orb-slot detector now considers the known orb-unrand list as well as plain `orb` name matches.
+
+## 13.6. Coglin Gizmo Slot Extraction
+
+### What changed
+
+The parser now recognizes Coglin gizmos as a dedicated equipment slot:
+
+- `gizmo`
+- `gizmoDetails`
+
+and it preserves the morgue inventory state as `equipState = "installed"`.
+
+Known gizmo property tokens such as `Clar` and `RMsl` are also normalized into structured boolean properties instead of falling through to free-form opaque tokens.
+
+### Why
+
+Manual review of fresh Coglin morgues showed that the raw morgue consistently exposes gizmos in a separate `Gizmo` inventory section and on the header `Will` row, while the parser dropped them entirely.
+
+Crawl source references such as `equipment-slot.h`, `item-name.cc`, and `artefact.cc` confirm that gizmos are a real slot with generated property bundles, not disguised amulets or rings.
+
+## 13.7. Property Bag Naming Clarification
+
+### What changed
+
+Equipment property bags now use:
+
+- `booleanProps` instead of `flags`
+- `opaqueTokens` instead of `specials`
+
+### Why
+
+The old names were concise but too generic. The new names make the contract clearer:
+
+- `booleanProps` are normalized non-numeric properties the parser understands semantically
+- `opaqueTokens` are preserved raw tokens whose meaning is still parser-defined, item-specific, or otherwise not fully normalized
+
+## 13.8. Common Artprops and System Tags Split Out of `opaqueTokens`
+
+### What changed
+
+The parser now separates several previously mixed token families:
+
+- common Crawl artprop abbreviations such as `Bane`, `-Cast`, `^Drain`, `*Rage`, `*Corrode`, `^Contam`, and `rMut` are normalized into `booleanProps`
+- gizmo-only effect tags such as `RevGuard` are exposed as `gizmoEffect`
+- Ashenzari curse shorthand such as `Elem`, `Sorc`, `Comp`, and `Self` are exposed as `ashenzariCurses`
+
+`opaqueTokens` now stays focused on the residual bucket:
+
+- unrand-only inscription strings such as `Infuse+∞` and `VampMP`
+- item-specific tokens the parser still does not model semantically
+- free-form note text that cannot yet be separated cleanly
+
+### Why
+
+Fresh Coglin and Ashenzari morgue review showed that `opaqueTokens` had become too broad. It was mixing at least four different things:
+
+- normalized Crawl artprops
+- gizmo system tags
+- Ashenzari system tags
+- true leftovers
+
+Splitting those families makes the output more queryable without pretending that every inscription-like string is the same kind of data.

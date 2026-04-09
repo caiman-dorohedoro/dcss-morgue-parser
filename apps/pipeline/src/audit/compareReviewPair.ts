@@ -1,7 +1,7 @@
 import { splitSections } from '../../../../packages/parser/src/splitSections'
 import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/types'
 
-const EQUIPPED_STATE_PATTERN = /\((worn|melded|haunted)\)/
+const EQUIPPED_STATE_PATTERN = /\((worn|melded|haunted|installed)\)/
 const ROLE_LINE_PATTERN = /^[^\n]*\(([^()]+)\)\s+Turns:/m
 
 export type ReviewPairComparison = {
@@ -63,8 +63,9 @@ function buildParsedEquippedNames(record: ParsedMorgueTextRecord): string[] {
       record.orb,
       record.amulet,
       ...record.rings,
+      record.gizmo,
       record.talisman,
-    ].filter((value) => value !== 'none'),
+    ].filter((value): value is string => Boolean(value) && value !== 'none'),
   )
 }
 

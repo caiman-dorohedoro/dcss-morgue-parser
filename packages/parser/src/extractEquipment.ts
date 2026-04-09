@@ -1,7 +1,9 @@
 import type {
   ArtifactKind,
+  EquipmentAshenzariCurse,
   EquipmentEquipState,
-  EquipmentFlagPropertyKey,
+  EquipmentBooleanPropertyKey,
+  EquipmentGizmoEffect,
   EquipmentItemSnapshot,
   EquipmentNumericPropertyKey,
   EquipmentObjectClass,
@@ -51,6 +53,7 @@ type EquipmentSlot =
   | 'orb'
   | 'amulet'
   | 'ring'
+  | 'gizmo'
   | 'talisman'
 
 type KnownUnrand = {
@@ -169,6 +172,7 @@ const KNOWN_UNRAND_BY_SLOT: Record<EquipmentSlot, readonly KnownUnrand[]> = {
   orb: UNRAND_ORB_ITEMS,
   amulet: UNRAND_AMULET_ITEMS,
   ring: UNRAND_RING_ITEMS,
+  gizmo: [],
   talisman: [],
 }
 
@@ -285,13 +289,16 @@ const NUMERIC_PROPERTY_ORDER = [
   'Stlth',
 ] as const satisfies readonly EquipmentNumericPropertyKey[]
 
-const FLAG_PROPERTY_ORDER = [
+const BOOLEAN_PROPERTY_ORDER = [
   'rPois',
   'rElec',
   'rCorr',
+  'rMut',
   'SInv',
   'Fly',
   'Reflect',
+  'Clar',
+  'RMsl',
   'Faith',
   'Spirit',
   'Wiz',
@@ -327,7 +334,13 @@ const FLAG_PROPERTY_ORDER = [
   'Pyromania',
   'Ponderous',
   'Inv',
-] as const satisfies readonly EquipmentFlagPropertyKey[]
+  '-Cast',
+  'Bane',
+  '*Rage',
+  '^Drain',
+  '*Corrode',
+  '^Contam',
+] as const satisfies readonly EquipmentBooleanPropertyKey[]
 
 const NUMERIC_SEQUENCE_KEYS_BY_PREFIX: Record<string, EquipmentNumericPropertyKey> = {
   rF: 'rF',
@@ -351,13 +364,16 @@ const NUMERIC_SIGNED_KEYS_BY_PREFIX: Record<string, EquipmentNumericPropertyKey>
   MP: 'MP',
 }
 
-const FLAG_PROPERTY_KEYS_BY_TOKEN: Record<string, EquipmentFlagPropertyKey> = {
+const BOOLEAN_PROPERTY_KEYS_BY_TOKEN: Record<string, EquipmentBooleanPropertyKey> = {
   rPois: 'rPois',
   rElec: 'rElec',
   rCorr: 'rCorr',
+  rMut: 'rMut',
   SInv: 'SInv',
   Fly: 'Fly',
   Reflect: 'Reflect',
+  Clar: 'Clar',
+  RMsl: 'RMsl',
   Faith: 'Faith',
   Spirit: 'Spirit',
   Wiz: 'Wiz',
@@ -393,7 +409,37 @@ const FLAG_PROPERTY_KEYS_BY_TOKEN: Record<string, EquipmentFlagPropertyKey> = {
   Pyromania: 'Pyromania',
   Ponderous: 'Ponderous',
   '+Inv': 'Inv',
+  '-Cast': '-Cast',
+  Bane: 'Bane',
+  '*Rage': '*Rage',
+  '^Drain': '^Drain',
+  '*Corrode': '*Corrode',
+  '^Contam': '^Contam',
 }
+
+const GIZMO_EFFECT_ORDER = [
+  'SpellMotor',
+  'Gadgeteer',
+  'RevGuard',
+  'AutoDazzle',
+] as const satisfies readonly EquipmentGizmoEffect[]
+
+const GIZMO_EFFECT_TOKENS = new Set<string>(GIZMO_EFFECT_ORDER)
+
+const ASHENZARI_CURSE_ORDER = [
+  'Melee',
+  'Range',
+  'Elem',
+  'Sorc',
+  'Comp',
+  'Bglg',
+  'Self',
+  'Fort',
+  'Cun',
+  'Dev',
+] as const satisfies readonly EquipmentAshenzariCurse[]
+
+const ASHENZARI_CURSE_TOKENS = new Set<string>(ASHENZARI_CURSE_ORDER)
 
 const SCALAR_JEWELLERY_PROPERTY_PREFIX_BY_EFFECT: Record<string, string> = {
   protection: 'AC',
@@ -452,12 +498,18 @@ const BASE_PATTERNS_BY_SLOT = {
   orb: [{ label: 'orb', baseType: 'orb' }],
   amulet: [{ label: 'amulet', baseType: 'amulet' }],
   ring: [{ label: 'ring', baseType: 'ring' }],
+  gizmo: [{ label: 'gizmo', baseType: 'gizmo' }],
   talisman: TALISMAN_PATTERNS,
 } as const
 
 function isEquipped(line: string): boolean {
   const lower = line.toLowerCase()
-  return lower.includes('(worn)') || lower.includes('(haunted)') || lower.includes('(melded)')
+  return (
+    lower.includes('(worn)')
+    || lower.includes('(haunted)')
+    || lower.includes('(melded)')
+    || lower.includes('(installed)')
+  )
 }
 
 function isCategoryHeading(line: string): boolean {
@@ -515,7 +567,7 @@ function cleanItemName(line: string): string {
   let value = normalizeSpacing(
     line
       .replace(/^[a-z0-9] - /i, '')
-      .replace(/\s+\((?:worn|haunted|melded)\).*$/i, '')
+      .replace(/\s+\((?:worn|haunted|melded|installed)\).*$/i, '')
       .replace(/\s+\{.*$/, ''),
   )
 
@@ -542,6 +594,10 @@ function extractEnchantment(line: string): number | null {
 }
 
 function extractEquipState(line: string): EquipmentEquipState {
+  if (/\(installed\)/i.test(line)) {
+    return 'installed'
+  }
+
   if (/\(melded\)/i.test(line)) {
     return 'melded'
   }
@@ -552,6 +608,10 @@ function extractEquipState(line: string): EquipmentEquipState {
 function extractHeaderEquipState(line: string): EquipmentEquipState | null {
   if (!/^[a-z0-9] - /i.test(line)) {
     return null
+  }
+
+  if (/\binstalled\b/i.test(line)) {
+    return 'installed'
   }
 
   if (/\bmelded\b/i.test(line)) {
@@ -593,7 +653,7 @@ function extractFunctionalInscriptions(propertiesText: string | null): string[] 
     return []
   }
 
-  return normalizeSpecials(
+  return normalizeUnique(
     propertiesText
       .split(/\s*,\s*/)
       .flatMap((segment) => normalizeSpacing(segment).split(/\s+/))
@@ -605,12 +665,18 @@ function extractFunctionalInscriptions(propertiesText: string | null): string[] 
 function emptyPropertyBag(): EquipmentPropertyBag {
   return {
     numeric: {},
-    flags: {},
-    specials: [],
+    booleanProps: {},
+    opaqueTokens: [],
   }
 }
 
-function normalizeSpecials(values: readonly string[]): string[] {
+type ClassifiedPropertyTokens = {
+  bag: EquipmentPropertyBag
+  gizmoEffect?: EquipmentGizmoEffect
+  ashenzariCurses: EquipmentAshenzariCurse[]
+}
+
+function normalizeUnique(values: readonly string[]): string[] {
   const seen = new Set<string>()
   const result: string[] = []
 
@@ -628,7 +694,7 @@ function normalizeSpecials(values: readonly string[]): string[] {
 
 function normalizePropertyBag(bag: EquipmentPropertyBag): EquipmentPropertyBag {
   const numeric: EquipmentPropertyBag['numeric'] = {}
-  const flags: EquipmentPropertyBag['flags'] = {}
+  const booleanProps: EquipmentPropertyBag['booleanProps'] = {}
 
   for (const key of NUMERIC_PROPERTY_ORDER) {
     const value = bag.numeric[key]
@@ -639,18 +705,18 @@ function normalizePropertyBag(bag: EquipmentPropertyBag): EquipmentPropertyBag {
     numeric[key] = value
   }
 
-  for (const key of FLAG_PROPERTY_ORDER) {
-    if (!bag.flags[key]) {
+  for (const key of BOOLEAN_PROPERTY_ORDER) {
+    if (!bag.booleanProps[key]) {
       continue
     }
 
-    flags[key] = true
+    booleanProps[key] = true
   }
 
   return {
     numeric,
-    flags,
-    specials: normalizeSpecials(bag.specials),
+    booleanProps,
+    opaqueTokens: normalizeUnique(bag.opaqueTokens),
   }
 }
 
@@ -668,9 +734,9 @@ function addNumericProperty(
 
 function addFlagProperty(
   bag: EquipmentPropertyBag,
-  key: EquipmentFlagPropertyKey,
+  key: EquipmentBooleanPropertyKey,
 ): void {
-  bag.flags[key] = true
+  bag.booleanProps[key] = true
 }
 
 function sequenceValue(value: string): number | null {
@@ -683,7 +749,7 @@ function sequenceValue(value: string): number | null {
 }
 
 function addPropertyTokenToBag(bag: EquipmentPropertyBag, token: string): void {
-  const exactFlagKey = FLAG_PROPERTY_KEYS_BY_TOKEN[token]
+  const exactFlagKey = BOOLEAN_PROPERTY_KEYS_BY_TOKEN[token]
   if (exactFlagKey) {
     addFlagProperty(bag, exactFlagKey)
     return
@@ -708,16 +774,41 @@ function addPropertyTokenToBag(bag: EquipmentPropertyBag, token: string): void {
     return
   }
 
-  bag.specials.push(token)
+  bag.opaqueTokens.push(token)
 }
 
-function bagFromTokens(tokens: readonly string[]): EquipmentPropertyBag {
+function classifyPropertyTokens(tokens: readonly string[]): ClassifiedPropertyTokens {
   const bag = emptyPropertyBag()
+  const ashenzariCurses: EquipmentAshenzariCurse[] = []
+  let gizmoEffect: EquipmentGizmoEffect | undefined
+
   for (const token of tokens) {
+    if (GIZMO_EFFECT_TOKENS.has(token)) {
+      if (!gizmoEffect) {
+        gizmoEffect = token as EquipmentGizmoEffect
+      } else if (gizmoEffect !== token) {
+        bag.opaqueTokens.push(token)
+      }
+      continue
+    }
+
+    if (ASHENZARI_CURSE_TOKENS.has(token)) {
+      ashenzariCurses.push(token as EquipmentAshenzariCurse)
+      continue
+    }
+
     addPropertyTokenToBag(bag, token)
   }
 
-  return normalizePropertyBag(bag)
+  return {
+    bag: normalizePropertyBag(bag),
+    ...(gizmoEffect ? { gizmoEffect } : {}),
+    ashenzariCurses: normalizeUnique(ashenzariCurses) as EquipmentAshenzariCurse[],
+  }
+}
+
+function bagFromTokens(tokens: readonly string[]): EquipmentPropertyBag {
+  return classifyPropertyTokens(tokens).bag
 }
 
 function mergePropertyBags(...bags: readonly EquipmentPropertyBag[]): EquipmentPropertyBag {
@@ -733,13 +824,13 @@ function mergePropertyBags(...bags: readonly EquipmentPropertyBag[]): EquipmentP
       addNumericProperty(merged, key, value)
     }
 
-    for (const key of FLAG_PROPERTY_ORDER) {
-      if (bag.flags[key]) {
+    for (const key of BOOLEAN_PROPERTY_ORDER) {
+      if (bag.booleanProps[key]) {
         addFlagProperty(merged, key)
       }
     }
 
-    merged.specials.push(...bag.specials)
+    merged.opaqueTokens.push(...bag.opaqueTokens)
   }
 
   return normalizePropertyBag(merged)
@@ -748,8 +839,8 @@ function mergePropertyBags(...bags: readonly EquipmentPropertyBag[]): EquipmentP
 function hasPropertyBagContent(bag: EquipmentPropertyBag): boolean {
   return (
     Object.keys(bag.numeric).length > 0
-    || Object.keys(bag.flags).length > 0
-    || bag.specials.length > 0
+    || Object.keys(bag.booleanProps).length > 0
+    || bag.opaqueTokens.length > 0
   )
 }
 
@@ -768,13 +859,13 @@ function overlayPropertyBag(
     merged.numeric[key] = value
   }
 
-  for (const key of FLAG_PROPERTY_ORDER) {
-    if (overlay.flags[key]) {
-      merged.flags[key] = true
+  for (const key of BOOLEAN_PROPERTY_ORDER) {
+    if (overlay.booleanProps[key]) {
+      merged.booleanProps[key] = true
     }
   }
 
-  merged.specials = normalizeSpecials([...merged.specials, ...overlay.specials])
+  merged.opaqueTokens = normalizeUnique([...merged.opaqueTokens, ...overlay.opaqueTokens])
   return normalizePropertyBag(merged)
 }
 
@@ -791,14 +882,14 @@ function subtractPropertyBags(
     }
   }
 
-  for (const key of FLAG_PROPERTY_ORDER) {
-    if (minuend.flags[key] && !subtrahend.flags[key]) {
-      difference.flags[key] = true
+  for (const key of BOOLEAN_PROPERTY_ORDER) {
+    if (minuend.booleanProps[key] && !subtrahend.booleanProps[key]) {
+      difference.booleanProps[key] = true
     }
   }
 
-  const baseSpecials = new Set(subtrahend.specials)
-  difference.specials = minuend.specials.filter((value) => !baseSpecials.has(value))
+  const baseSpecials = new Set(subtrahend.opaqueTokens)
+  difference.opaqueTokens = minuend.opaqueTokens.filter((value) => !baseSpecials.has(value))
 
   return normalizePropertyBag(difference)
 }
@@ -806,6 +897,10 @@ function subtractPropertyBags(
 function getObjectClass(slot: EquipmentSlot): EquipmentObjectClass {
   if (slot === 'amulet' || slot === 'ring') {
     return 'jewellery'
+  }
+
+  if (slot === 'gizmo') {
+    return 'gizmo'
   }
 
   if (slot === 'talisman') {
@@ -828,6 +923,10 @@ function findKnownUnrand(slot: EquipmentSlot, rawName: string): KnownUnrand | un
 function detectBaseType(slot: EquipmentSlot, rawName: string, knownUnrand?: KnownUnrand): string | null {
   if (knownUnrand?.baseType) {
     return knownUnrand.baseType
+  }
+
+  if (slot === 'gizmo') {
+    return 'gizmo'
   }
 
   if (slot === 'talisman') {
@@ -977,6 +1076,10 @@ function getArtifactKind(
     return 'unrand'
   }
 
+  if (slot === 'gizmo') {
+    return 'randart'
+  }
+
   if (objectClass === 'jewellery') {
     return isRandartJewellery(slot, rawName, line) ? 'randart' : 'normal'
   }
@@ -1039,6 +1142,10 @@ function inferIntrinsicProperties(
     return inferJewelleryIntrinsicProperties(subtypeEffect, enchant)
   }
 
+  if (objectClass === 'gizmo') {
+    return []
+  }
+
   if (!baseType) {
     return []
   }
@@ -1047,12 +1154,11 @@ function inferIntrinsicProperties(
 }
 
 function inferDisplayProperties(
-  extractedProperties: string[],
+  extractedPropertyBag: EquipmentPropertyBag,
   intrinsicProperties: EquipmentPropertyBag,
   egoProperties: EquipmentPropertyBag,
 ): EquipmentPropertyBag {
   const baseProperties = mergePropertyBags(intrinsicProperties, egoProperties)
-  const extractedPropertyBag = bagFromTokens(extractedProperties)
 
   if (!hasPropertyBagContent(extractedPropertyBag)) {
     return baseProperties
@@ -1123,6 +1229,7 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
   const rawName = cleanItemName(line)
   const propertiesText = extractPropertiesText(line)
   const extractedProperties = extractProperties(propertiesText)
+  const extractedPropertyInfo = classifyPropertyTokens(extractedProperties)
   const functionalInscriptions = extractFunctionalInscriptions(propertiesText)
   const objectClass = getObjectClass(slot)
   const equipState = extractEquipState(line)
@@ -1142,7 +1249,11 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
   const egoProperties = bagFromTokens(
     artifactKind === 'normal' && ego ? ARMOUR_EGO_PROPERTIES_BY_NAME[ego] ?? [] : [],
   )
-  const properties = inferDisplayProperties(extractedProperties, intrinsicProperties, egoProperties)
+  const properties = inferDisplayProperties(
+    extractedPropertyInfo.bag,
+    intrinsicProperties,
+    egoProperties,
+  )
   const artifactProperties =
     artifactKind === 'normal'
       ? emptyPropertyBag()
@@ -1159,6 +1270,10 @@ function buildEquipmentItem(slot: EquipmentSlot, line: string | undefined): Equi
     artifactKind,
     ego,
     subtypeEffect,
+    ...(extractedPropertyInfo.gizmoEffect ? { gizmoEffect: extractedPropertyInfo.gizmoEffect } : {}),
+    ...(extractedPropertyInfo.ashenzariCurses.length > 0
+      ? { ashenzariCurses: extractedPropertyInfo.ashenzariCurses }
+      : {}),
     propertiesText,
     ...(functionalInscriptions.length > 0 ? { functionalInscriptions } : {}),
     properties,
@@ -1248,6 +1363,9 @@ export function extractEquipment(text: string): EquipmentSnapshot {
   const talismanLines = equippedLines
     .filter((line) => line.category === 'Talismans')
     .map((line) => line.text)
+  const gizmoLines = equippedLines
+    .filter((line) => line.category === 'Gizmo')
+    .map((line) => line.text)
 
   const headPatterns = [
     /\bhat\b/i,
@@ -1284,6 +1402,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
   const bodyArmourLine = armourLines.find((line) => !hasAny(line, nonBodyPatterns))
   const amuletLine = jewelleryLines.find((line) => hasAny(line, amuletPatterns))
   const ringLines = jewelleryLines.filter((line) => hasAny(line, ringPatterns))
+  const gizmoLine = gizmoLines[0]
   const talismanLine = talismanLines[0]
 
   const bodyArmourDetails = buildEquipmentItemWithHeaderState(
@@ -1309,6 +1428,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
   const ringDetails = ringLines
     .map((line) => buildEquipmentItemWithHeaderState('ring', line, headerEquipStates))
     .filter((item): item is EquipmentItemSnapshot => Boolean(item))
+  const gizmoDetails = buildEquipmentItemWithHeaderState('gizmo', gizmoLine, headerEquipStates)
   const talismanDetails = buildEquipmentItemWithHeaderState(
     'talisman',
     talismanLine,
@@ -1325,6 +1445,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     orb: orbDetails?.rawName ?? 'none',
     amulet: amuletDetails?.rawName ?? 'none',
     rings: ringDetails.map((ring) => ring.rawName),
+    gizmo: gizmoDetails?.rawName ?? 'none',
     talisman: talismanDetails?.rawName ?? 'none',
     bodyArmourDetails,
     shieldDetails,
@@ -1335,6 +1456,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     orbDetails,
     amuletDetails,
     ringDetails: ringDetails.length > 0 ? ringDetails : undefined,
+    gizmoDetails,
     talismanDetails,
   }
 }
