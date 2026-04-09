@@ -16,13 +16,15 @@ import {
   type SkillLevelsSnapshot,
   type SpellSnapshot,
 } from '../../../packages/parser/src/index'
-import { defaultMorgueText } from './defaultMorgue'
 
 type EquipmentGroup = {
   label: string
   summary: string[]
   details?: EquipmentItemSnapshot[]
 }
+
+const MORGUE_INPUT_STORAGE_KEY = 'dcss-morgue-viewer.raw-morgue'
+const MORGUE_PERSISTENCE_STORAGE_KEY = 'dcss-morgue-viewer.persist-raw-morgue'
 
 const SKILL_LABELS: Record<keyof SkillLevelsSnapshot, string> = {
   fighting: 'Fighting',
@@ -239,11 +241,38 @@ function handleFailureDetail(detail: string | null) {
   return detail ?? 'The parser could not recognize the morgue layout.'
 }
 
+function readPersistPreference() {
+  if (typeof window === 'undefined') {
+    return true
+  }
+
+  try {
+    const storedValue = window.localStorage.getItem(MORGUE_PERSISTENCE_STORAGE_KEY)
+    return storedValue === null ? true : storedValue === 'true'
+  } catch {
+    return true
+  }
+}
+
+function readStoredInput() {
+  if (typeof window === 'undefined') {
+    return ''
+  }
+
+  try {
+    return window.localStorage.getItem(MORGUE_INPUT_STORAGE_KEY) ?? ''
+  } catch {
+    return ''
+  }
+}
+
 function App() {
-  const [input, setInput] = useState('')
+  const [persistInput, setPersistInput] = useState(() => readPersistPreference())
+  const [input, setInput] = useState(() => (readPersistPreference() ? readStoredInput() : ''))
   const [result, setResult] = useState(() => parseMorgueText(''))
   const deferredInput = useDeferredValue(input)
   const fileInputId = useId()
+  const persistInputId = useId()
   const textAreaId = useId()
   const fileInputRef = useRef<HTMLInputElement>(null)
   const textAreaRef = useRef<HTMLTextAreaElement>(null)
@@ -253,6 +282,30 @@ function App() {
       setResult(parseMorgueText(deferredInput))
     })
   }, [deferredInput])
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(MORGUE_PERSISTENCE_STORAGE_KEY, String(persistInput))
+
+      if (!persistInput) {
+        window.localStorage.removeItem(MORGUE_INPUT_STORAGE_KEY)
+      }
+    } catch {
+      // Ignore storage write failures so the local viewer stays usable.
+    }
+  }, [persistInput])
+
+  useEffect(() => {
+    if (!persistInput) {
+      return
+    }
+
+    try {
+      window.localStorage.setItem(MORGUE_INPUT_STORAGE_KEY, input)
+    } catch {
+      // Ignore storage write failures so the local viewer stays usable.
+    }
+  }, [input, persistInput])
 
   async function handleFileChange(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0]
@@ -312,9 +365,15 @@ function App() {
                 <h2>Raw morgue</h2>
               </div>
               <div className="panel-actions">
-                <button className="ghost-button" onClick={() => setInput(defaultMorgueText)} type="button">
-                  Load Sample
-                </button>
+                <label className="persist-toggle" htmlFor={persistInputId}>
+                  <input
+                    checked={persistInput}
+                    id={persistInputId}
+                    onChange={(event) => setPersistInput(event.target.checked)}
+                    type="checkbox"
+                  />
+                  <span>Save</span>
+                </label>
                 <button className="ghost-button" onClick={() => setInput('')} type="button">
                   Clear
                 </button>

@@ -205,6 +205,29 @@ button {
   gap: 6px;
 }
 
+.persist-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 2px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  line-height: 1.15;
+  user-select: none;
+}
+
+.persist-toggle input {
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  accent-color: var(--accent-deep);
+}
+
+.persist-toggle input:focus-visible {
+  outline: 2px solid rgba(29, 106, 85, 0.26);
+  outline-offset: 2px;
+}
+
 .ghost-button {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.7);
