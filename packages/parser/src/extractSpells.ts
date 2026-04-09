@@ -177,7 +177,7 @@ function collectModernSpellRows(lines: string[], startIndex: number, memorized: 
     }
 
     if (
-      /^(You knew the following spells:|Your spell library contain(?:ed|s) the following spells:?)/.test(
+      /^(You kn(?:ew|ow) the following spells:|Your spell library contain(?:ed|s) the following spells:?)/.test(
         trimmed,
       )
     ) {
@@ -210,7 +210,7 @@ function parseModernSpellSections(text: string): SpellSnapshot[] {
   for (let index = 0; index < lines.length; index += 1) {
     const trimmed = lines[index].trim()
 
-    if (trimmed === 'You knew the following spells:') {
+    if (/^You kn(?:ew|ow) the following spells:$/.test(trimmed)) {
       spells.push(...collectModernSpellRows(lines, index + 1, true))
       continue
     }

@@ -169,4 +169,31 @@ describe('extractSpells', () => {
       memorized: true,
     })
   })
+
+  it('extracts memorized spells when modern morgues use present-tense spell headings', () => {
+    const spells = extractSpells(`
+You know the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Foxfire               Conj/Fire      100%       2x1d9     0%          1
+b - Jinxbite              Hex            100%       2d4       0%          2
+c - Bombard               Conj/Erth      49%        9d8       1%          6
+
+Your spell library is empty.
+`)
+
+    expect(spells).toContainEqual({
+      name: 'Foxfire',
+      failurePercent: 0,
+      castable: true,
+      memorized: true,
+    })
+
+    expect(spells).toContainEqual({
+      name: 'Bombard',
+      failurePercent: 1,
+      castable: true,
+      memorized: true,
+    })
+  })
 })
