@@ -146,6 +146,18 @@ apps/pipeline/data/bootstrap-stratified-xl10/review/<SERVER>/<BUCKET>/<ENDED_AT>
 
 This is useful because parser bugs are easiest to catch when the raw morgue and the parsed JSON are side by side.
 
+If the parser schema changes after those review pairs or runtime SQLite snapshots
+have already been generated, refresh the stored outputs in place before manual
+comparison:
+
+```bash
+npm run backfill:parsed -w apps/pipeline
+```
+
+This rewrites every `parsed.json` under `apps/pipeline/data/**` from its sibling
+`raw.txt`, and also reparses every SQLite `parse_results.parsed_json` row whose
+fetched morgue is still available locally.
+
 ## 3. Manual Comparison
 
 The detailed debugging loop now lives in `docs/workflow--parser-debugging.md`.

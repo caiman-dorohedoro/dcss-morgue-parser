@@ -8,6 +8,7 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "fixtures:meta": "tsx scripts/generateFixtureMetadata.ts",
+    "backfill:parsed": "tsx scripts/backfillParsedData.ts",
     "review:compare": "tsx scripts/compareReviewPair.ts",
     "bootstrap": "tsx src/cli.ts bootstrap",
     "incremental": "tsx src/cli.ts incremental",
