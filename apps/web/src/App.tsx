@@ -165,7 +165,7 @@ function buildEquipmentGroups(record: ParsedMorgueTextRecord): EquipmentGroup[] 
       details: [...(record.amuletDetails ?? []), ...(record.ringDetails ?? [])],
     },
     {
-      label: 'Special',
+      label: 'Orb / Gizmo / Talisman',
       summary: [record.orb, record.gizmo, record.talisman].filter(Boolean) as string[],
       details: [record.orbDetails, record.gizmoDetails, record.talismanDetails].filter(
         (value): value is EquipmentItemSnapshot => Boolean(value),
