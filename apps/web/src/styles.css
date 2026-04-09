@@ -517,6 +517,22 @@ button {
   list-style: none;
 }
 
+.summary-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.summary-chevron {
+  flex: 0 0 auto;
+  transition: transform 160ms ease;
+}
+
+.json-drawer[open] .summary-chevron {
+  transform: rotate(90deg);
+}
+
 .json-drawer summary::-webkit-details-marker {
   display: none;
 }

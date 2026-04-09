@@ -7,7 +7,7 @@ import {
   useState,
   type ChangeEvent,
 } from 'react'
-import { Check, Copy } from 'lucide-react'
+import { Check, ChevronRight, Copy } from 'lucide-react'
 import {
   parseMorgueText,
   type EquipmentItemSnapshot,
@@ -313,7 +313,7 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
   return (
     <div className="parsed-view">
       <section className="summary-grid">
-        <SummaryCard label="Character" value={record.playerName ?? 'Unknown'} accent />
+        <SummaryCard label="Player" value={record.playerName ?? 'Unknown'} accent />
         <SummaryCard label="Lineage" value={[record.species, record.speciesVariant].filter(Boolean).join(' / ')} />
         <SummaryCard label="Background" value={formatNullable(record.background)} />
         <SummaryCard label="God" value={formatNullable(record.god)} />
@@ -463,7 +463,10 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
 
       <details className="json-drawer">
         <summary>
-          <span>Raw JSON</span>
+          <span className="summary-label">
+            <ChevronRight aria-hidden="true" className="summary-chevron" size={15} strokeWidth={2.1} />
+            <span>Raw JSON</span>
+          </span>
           <button
             aria-label="Copy raw JSON"
             className="icon-button"
