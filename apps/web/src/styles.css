@@ -483,12 +483,35 @@ button {
   min-width: 0;
 }
 
+.equipment-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
 .equipment-main strong,
 .skill-row > span,
 .mutation-row > span,
 .spell-row > span {
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+.equipment-enchant {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 6px;
+  border: 1px solid rgba(16, 33, 31, 0.12);
+  border-radius: 4px;
+  background: rgba(255, 252, 245, 0.96);
+  color: #10211f;
+  font-size: 0.84rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .tag-row {

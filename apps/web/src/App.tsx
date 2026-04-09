@@ -70,6 +70,10 @@ function formatSkillValue(value: number) {
   return value.toFixed(value % 1 === 0 ? 0 : 1)
 }
 
+function formatEnchantValue(value: number) {
+  return value >= 0 ? `+${value}` : String(value)
+}
+
 function summarizePropertyBag(item: EquipmentItemSnapshot) {
   const segments: string[] = []
 
@@ -402,10 +406,14 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
                   {group.details.map((item) => (
                     <div className="equipment-item" key={`${group.label}:${item.displayName}:${item.equipState}`}>
                       <div className="equipment-main">
-                        <strong>{item.displayName}</strong>
+                        <div className="equipment-title-row">
+                          <strong>{item.displayName}</strong>
+                          {item.enchant !== null ? (
+                            <span className="equipment-enchant">{formatEnchantValue(item.enchant)}</span>
+                          ) : null}
+                        </div>
                         <span className="equipment-meta">
                           {item.objectClass} · {item.equipState}
-                          {item.enchant !== null ? ` · +${item.enchant}` : ''}
                           {item.ego ? ` · ${item.ego}` : ''}
                         </span>
                       </div>
