@@ -326,13 +326,13 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
           <h3>Core stats</h3>
         </div>
         <div className="stats-layout">
-          <div className="stat-group stat-group-progression">
+          <div className="stat-group">
             <span className="stat-group-label">Progression</span>
             <div className="stat-list">
               <Metric label="XL" value={record.xl} />
             </div>
           </div>
-          <div className="stat-group stat-group-defense">
+          <div className="stat-group">
             <span className="stat-group-label">Defense</span>
             <div className="stat-list">
               <Metric label="AC" value={record.ac} />
@@ -340,7 +340,7 @@ function ParsedView(props: { record: ParsedMorgueTextRecord }) {
               <Metric label="SH" value={record.sh} />
             </div>
           </div>
-          <div className="stat-group stat-group-attributes">
+          <div className="stat-group">
             <span className="stat-group-label">Attributes</span>
             <div className="stat-list">
               <Metric label="Str" value={record.strength} />
