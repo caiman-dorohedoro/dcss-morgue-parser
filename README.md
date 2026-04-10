@@ -44,6 +44,7 @@ dcss-morgue-parser/
   - local split-view parser UI
   - pasted/uploaded morgue input on the left
   - compact structured output on the right
+  - live parse timing and input stats in the header
 - [`fixtures/morgue`](./fixtures/morgue/)
   - focused parser regressions
   - full morgue goldens

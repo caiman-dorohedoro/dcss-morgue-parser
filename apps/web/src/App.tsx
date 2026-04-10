@@ -19,10 +19,26 @@ import {
   storePersistPreference,
 } from './viewerHelpers'
 
+type ParseSnapshot = {
+  result: ReturnType<typeof parseMorgueText>
+  durationMs: number
+}
+
+function measureParse(text: string): ParseSnapshot {
+  const start = typeof performance !== 'undefined' ? performance.now() : Date.now()
+  const result = parseMorgueText(text)
+  const end = typeof performance !== 'undefined' ? performance.now() : Date.now()
+
+  return {
+    result,
+    durationMs: Math.max(0, Math.round(end - start)),
+  }
+}
+
 function App() {
   const [persistInput, setPersistInput] = useState(() => readPersistPreference())
   const [input, setInput] = useState(() => (readPersistPreference() ? readStoredInput() : ''))
-  const [result, setResult] = useState(() => parseMorgueText(''))
+  const [parseSnapshot, setParseSnapshot] = useState(() => measureParse(''))
   const deferredInput = useDeferredValue(input)
   const fileInputId = useId()
   const persistInputId = useId()
@@ -32,7 +48,7 @@ function App() {
 
   useEffect(() => {
     startTransition(() => {
-      setResult(parseMorgueText(deferredInput))
+      setParseSnapshot(measureParse(deferredInput))
     })
   }, [deferredInput])
 
@@ -85,6 +101,7 @@ function App() {
   }
 
   const lineCount = input.length === 0 ? 0 : input.split(/\r?\n/).length
+  const { result, durationMs } = parseSnapshot
 
   return (
     <div className="shell">
@@ -97,6 +114,7 @@ function App() {
           <h1>DCSS morgue viewer</h1>
         </div>
         <div className="hero-stats">
+          <span>{durationMs} ms</span>
           <span>{lineCount} lines</span>
           <span>{input.length.toLocaleString()} chars</span>
           <span>{result.ok ? 'Parse OK' : 'Needs Attention'}</span>
