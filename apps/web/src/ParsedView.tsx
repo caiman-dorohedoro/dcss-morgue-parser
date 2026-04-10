@@ -37,7 +37,7 @@ export function ParsedView(props: { record: ParsedMorgueTextRecord; sourceText: 
     <div className="parsed-view">
       <section className="summary-grid">
         <SummaryCard label="Player" value={record.playerName ?? 'Unknown'} accent />
-        <SummaryCard label="Lineage" value={[record.species, record.speciesVariant].filter(Boolean).join(' / ')} />
+        <SpeciesSummaryCard species={record.species} variant={record.speciesVariant} />
         <SummaryCard label="Background" value={formatNullable(record.background)} />
         <SummaryCard label="God" value={formatNullable(record.god)} />
         <SummaryCard label="Version" value={record.version} />
@@ -45,27 +45,18 @@ export function ParsedView(props: { record: ParsedMorgueTextRecord; sourceText: 
       </section>
 
       <section className="section-card">
-        <div className="section-heading">
+        <div className="section-heading section-heading-stats">
           <h3>Core stats</h3>
-        </div>
-        <div className="stats-layout">
-          <div className="stat-group">
-            <span className="stat-group-label">Progression</span>
-            <div className="stat-list">
+          <div className="stats-layout">
+            <div className="stat-group">
               <Metric label="XL" value={record.xl} />
             </div>
-          </div>
-          <div className="stat-group">
-            <span className="stat-group-label">Defense</span>
-            <div className="stat-list">
+            <div className="stat-group stat-group-divider">
               <Metric label="AC" value={record.ac} />
               <Metric label="EV" value={record.ev} />
               <Metric label="SH" value={record.sh} />
             </div>
-          </div>
-          <div className="stat-group">
-            <span className="stat-group-label">Attributes</span>
-            <div className="stat-list">
+            <div className="stat-group stat-group-divider">
               <Metric label="Str" value={record.strength} />
               <Metric label="Int" value={record.intelligence} />
               <Metric label="Dex" value={record.dexterity} />
@@ -91,10 +82,17 @@ export function ParsedView(props: { record: ParsedMorgueTextRecord; sourceText: 
                     <div className="equipment-item" key={`${group.label}:${item.rawName}:${item.equipState}`}>
                       <div className="equipment-main">
                         <div className="equipment-title-row">
+                          <span
+                            aria-hidden={item.enchant === null}
+                            className={
+                              item.enchant === null
+                                ? 'equipment-prefix equipment-prefix-empty'
+                                : 'equipment-prefix'
+                            }
+                          >
+                            {item.enchant === null ? '+' : formatEnchantValue(item.enchant)}
+                          </span>
                           <strong>{item.displayName}</strong>
-                          {item.enchant !== null ? (
-                            <span className="equipment-enchant">{formatEnchantValue(item.enchant)}</span>
-                          ) : null}
                         </div>
                         <span className="equipment-meta">
                           {item.objectClass} · {item.equipState}
@@ -219,6 +217,16 @@ function SummaryCard(props: { label: string; value: string; accent?: boolean }) 
     <article className={props.accent ? 'summary-card summary-card-accent' : 'summary-card'}>
       <span>{props.label}</span>
       <strong>{props.value || 'Unknown'}</strong>
+    </article>
+  )
+}
+
+function SpeciesSummaryCard(props: { species: string; variant: string | null }) {
+  return (
+    <article className="summary-card">
+      <span>Species / Variant</span>
+      <strong>{props.species}</strong>
+      {props.variant ? <small className="summary-card-detail">Variant: {props.variant}</small> : null}
     </article>
   )
 }

@@ -119,3 +119,12 @@ The safer pattern is:
 
 This keeps ownership boundaries clearer and reduces the chance that a future
 change in one area accidentally drags unrelated behavior along with it.
+
+## Keep The Viewer Scan-Friendly
+
+The local web viewer should stay easy to scan against the original morgue text,
+not merely "pretty" in isolation.
+
+- keep summary labels aligned with parser field names, such as showing `species` and optional `speciesVariant` without inventing extra terminology
+- keep equipment groups visually subordinate to actual item names, and align enchant values in a fixed-width prefix column so long names do not hide upgrades
+- keep core stats compact enough to live in the section header row, while still separating XL, defense values, and attributes with lightweight dividers
