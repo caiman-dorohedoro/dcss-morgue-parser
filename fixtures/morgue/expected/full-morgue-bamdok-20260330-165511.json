@@ -1,96 +1,58 @@
 {
-  "playerName": "FF96",
-  "version": "0.35-a0-258-g8c878a6c5f",
-  "species": "Formicid",
+  "playerName": "bamdok",
+  "version": "0.34.1-3-ga2c7840dd7",
+  "species": "Kobold",
   "speciesVariant": null,
-  "background": "Fighter",
-  "god": "Okawaru",
-  "xl": 24,
-  "ac": 37,
-  "ev": 21,
-  "sh": 18,
-  "strength": 30,
-  "intelligence": 11,
-  "dexterity": 13,
-  "bodyArmour": "pearl dragon scales of Benevolence",
-  "shield": "kite shield of reflection",
-  "helmets": [],
+  "background": "Gladiator",
+  "god": "Ashenzari",
+  "xl": 18,
+  "ac": 18,
+  "ev": 27,
+  "sh": 0,
+  "strength": 11,
+  "intelligence": 16,
+  "dexterity": 23,
+  "bodyArmour": "steam dragon scales of Ashenzari's Gnosis",
+  "shield": "none",
+  "helmets": [
+    "helmet \"Restrained With Me\""
+  ],
   "gloves": [
-    "pair of gloves",
-    "pair of gloves"
+    "pair of gloves of Ashenzari's Black Moon"
   ],
   "footwear": [
     "pair of boots"
   ],
   "cloaks": [
-    "cloak of air"
+    "cloak \"Eternal Together\""
   ],
   "orb": "none",
-  "amulets": [
-    "amulet of Fompol"
-  ],
+  "amulets": [],
   "rings": [
-    "ring of the Hare",
-    "ring of Cyhit"
+    "ring of the Fated Ordeal",
+    "ring \"Cursed Urgency\""
   ],
   "talisman": "none",
   "form": null,
   "bodyArmourDetails": {
-    "rawName": "pearl dragon scales of Benevolence",
-    "displayName": "pearl dragon scales",
+    "rawName": "steam dragon scales of Ashenzari's Gnosis",
+    "displayName": "steam dragon scales",
     "objectClass": "armour",
     "equipState": "worn",
-    "isCursed": false,
-    "baseType": "pearl dragon scales",
-    "enchant": 8,
+    "isCursed": true,
+    "baseType": "steam dragon scales",
+    "enchant": 0,
     "artifactKind": "randart",
     "ego": null,
     "subtypeEffect": null,
-    "propertiesText": "rN++",
-    "properties": {
-      "numeric": {
-        "rN": 2
-      },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "intrinsicProperties": {
-      "numeric": {
-        "rN": 1
-      },
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "egoProperties": {
-      "numeric": {},
-      "booleanProps": {},
-      "opaqueTokens": []
-    },
-    "artifactProperties": {
-      "numeric": {
-        "rN": 1
-      },
-      "booleanProps": {},
-      "opaqueTokens": []
-    }
-  },
-  "shieldDetails": {
-    "rawName": "kite shield of reflection",
-    "displayName": "kite shield of reflection",
-    "objectClass": "armour",
-    "equipState": "worn",
-    "isCursed": false,
-    "baseType": "kite shield",
-    "enchant": 1,
-    "artifactKind": "normal",
-    "ego": "reflection",
-    "subtypeEffect": null,
-    "propertiesText": null,
+    "ashenzariCurses": [
+      "Elem",
+      "Sorc"
+    ],
+    "propertiesText": "Elem, Sorc",
     "properties": {
       "numeric": {},
-      "booleanProps": {
-        "Reflect": true
-      },
+      "booleanProps": {},
       "opaqueTokens": []
     },
     "intrinsicProperties": {
@@ -100,9 +62,7 @@
     },
     "egoProperties": {
       "numeric": {},
-      "booleanProps": {
-        "Reflect": true
-      },
+      "booleanProps": {},
       "opaqueTokens": []
     },
     "artifactProperties": {
@@ -111,21 +71,27 @@
       "opaqueTokens": []
     }
   },
-  "glovesDetails": [
+  "helmetDetails": [
     {
-      "rawName": "pair of gloves",
-      "displayName": "pair of gloves",
+      "rawName": "helmet \"Restrained With Me\"",
+      "displayName": "helmet \"Restrained With Me\"",
       "objectClass": "armour",
       "equipState": "worn",
-      "isCursed": false,
-      "baseType": "gloves",
-      "enchant": 0,
-      "artifactKind": "normal",
+      "isCursed": true,
+      "baseType": "helmet",
+      "enchant": 2,
+      "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
-      "propertiesText": null,
+      "ashenzariCurses": [
+        "Self",
+        "Elem"
+      ],
+      "propertiesText": "Int+3, Self, Elem",
       "properties": {
-        "numeric": {},
+        "numeric": {
+          "Int": 3
+        },
         "booleanProps": {},
         "opaqueTokens": []
       },
@@ -140,23 +106,31 @@
         "opaqueTokens": []
       },
       "artifactProperties": {
-        "numeric": {},
+        "numeric": {
+          "Int": 3
+        },
         "booleanProps": {},
         "opaqueTokens": []
       }
-    },
+    }
+  ],
+  "glovesDetails": [
     {
-      "rawName": "pair of gloves",
-      "displayName": "pair of gloves",
+      "rawName": "pair of gloves of Ashenzari's Black Moon",
+      "displayName": "pair of gloves of Ashenzari's Black Moon",
       "objectClass": "armour",
       "equipState": "worn",
-      "isCursed": false,
+      "isCursed": true,
       "baseType": "gloves",
-      "enchant": 0,
-      "artifactKind": "normal",
+      "enchant": 1,
+      "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
-      "propertiesText": null,
+      "ashenzariCurses": [
+        "Bglg",
+        "Self"
+      ],
+      "propertiesText": "Bglg, Self",
       "properties": {
         "numeric": {},
         "booleanProps": {},
@@ -216,67 +190,24 @@
   ],
   "cloakDetails": [
     {
-      "rawName": "cloak of air",
-      "displayName": "cloak of air",
+      "rawName": "cloak \"Eternal Together\"",
+      "displayName": "cloak \"Eternal Together\"",
       "objectClass": "armour",
       "equipState": "worn",
-      "isCursed": false,
+      "isCursed": true,
       "baseType": "cloak",
       "enchant": 0,
-      "artifactKind": "normal",
-      "ego": "air",
-      "subtypeEffect": null,
-      "propertiesText": null,
-      "properties": {
-        "numeric": {},
-        "booleanProps": {
-          "Air": true
-        },
-        "opaqueTokens": []
-      },
-      "intrinsicProperties": {
-        "numeric": {},
-        "booleanProps": {},
-        "opaqueTokens": []
-      },
-      "egoProperties": {
-        "numeric": {},
-        "booleanProps": {
-          "Air": true
-        },
-        "opaqueTokens": []
-      },
-      "artifactProperties": {
-        "numeric": {},
-        "booleanProps": {},
-        "opaqueTokens": []
-      }
-    }
-  ],
-  "amuletDetails": [
-    {
-      "rawName": "amulet of Fompol",
-      "displayName": "amulet of Fompol",
-      "objectClass": "jewellery",
-      "equipState": "worn",
-      "isCursed": false,
-      "baseType": "amulet",
-      "enchant": null,
       "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
-      "propertiesText": "Bane Rampage Acrobat Fly rPois rF+",
+      "ashenzariCurses": [
+        "Dev",
+        "Comp"
+      ],
+      "propertiesText": "Dev, Comp",
       "properties": {
-        "numeric": {
-          "rF": 1
-        },
-        "booleanProps": {
-          "rPois": true,
-          "Fly": true,
-          "Acrobat": true,
-          "Rampage": true,
-          "Bane": true
-        },
+        "numeric": {},
+        "booleanProps": {},
         "opaqueTokens": []
       },
       "intrinsicProperties": {
@@ -290,78 +221,38 @@
         "opaqueTokens": []
       },
       "artifactProperties": {
-        "numeric": {
-          "rF": 1
-        },
-        "booleanProps": {
-          "rPois": true,
-          "Fly": true,
-          "Acrobat": true,
-          "Rampage": true,
-          "Bane": true
-        },
+        "numeric": {},
+        "booleanProps": {},
         "opaqueTokens": []
       }
     }
   ],
   "ringDetails": [
     {
-      "rawName": "ring of the Hare",
-      "displayName": "ring of the Hare",
+      "rawName": "ring of the Fated Ordeal",
+      "displayName": "ring of the Fated Ordeal",
       "objectClass": "jewellery",
       "equipState": "worn",
-      "isCursed": false,
-      "baseType": "ring",
-      "enchant": null,
-      "artifactKind": "unrand",
-      "ego": null,
-      "subtypeEffect": null,
-      "propertiesText": "EV+10",
-      "properties": {
-        "numeric": {
-          "EV": 10
-        },
-        "booleanProps": {},
-        "opaqueTokens": []
-      },
-      "intrinsicProperties": {
-        "numeric": {},
-        "booleanProps": {},
-        "opaqueTokens": []
-      },
-      "egoProperties": {
-        "numeric": {},
-        "booleanProps": {},
-        "opaqueTokens": []
-      },
-      "artifactProperties": {
-        "numeric": {
-          "EV": 10
-        },
-        "booleanProps": {},
-        "opaqueTokens": []
-      }
-    },
-    {
-      "rawName": "ring of Cyhit",
-      "displayName": "ring of Cyhit",
-      "objectClass": "jewellery",
-      "equipState": "worn",
-      "isCursed": false,
+      "isCursed": true,
       "baseType": "ring",
       "enchant": null,
       "artifactKind": "randart",
       "ego": null,
       "subtypeEffect": null,
-      "propertiesText": "rC+ rN+++ Slay+3 SInv",
+      "ashenzariCurses": [
+        "Melee",
+        "Bglg"
+      ],
+      "propertiesText": "^Drain rElec Int+2 Slay+4 SInv, Melee, Bglg",
       "properties": {
         "numeric": {
-          "rC": 1,
-          "rN": 3,
-          "Slay": 3
+          "Int": 2,
+          "Slay": 4
         },
         "booleanProps": {
-          "SInv": true
+          "rElec": true,
+          "SInv": true,
+          "^Drain": true
         },
         "opaqueTokens": []
       },
@@ -377,92 +268,212 @@
       },
       "artifactProperties": {
         "numeric": {
-          "rC": 1,
-          "rN": 3,
-          "Slay": 3
+          "Int": 2,
+          "Slay": 4
         },
         "booleanProps": {
-          "SInv": true
+          "rElec": true,
+          "SInv": true,
+          "^Drain": true
         },
+        "opaqueTokens": []
+      }
+    },
+    {
+      "rawName": "ring \"Cursed Urgency\"",
+      "displayName": "ring \"Cursed Urgency\"",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": true,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "ashenzariCurses": [
+        "Self",
+        "Cun"
+      ],
+      "propertiesText": "AC+4, Self, Cun",
+      "properties": {
+        "numeric": {
+          "AC": 4
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "AC": 4
+        },
+        "booleanProps": {},
         "opaqueTokens": []
       }
     }
   ],
   "skills": {
-    "fighting": 22,
+    "fighting": 7.9,
     "macesFlails": 0,
-    "axes": 24.5,
+    "axes": 0,
     "polearms": 0,
     "staves": 0,
     "unarmedCombat": 0,
-    "throwing": 0,
-    "shortBlades": 0,
+    "throwing": 6,
+    "shortBlades": 13.9,
     "longBlades": 0,
     "rangedWeapons": 0,
-    "armour": 16.9,
-    "dodging": 0,
-    "shields": 20.7,
-    "stealth": 0,
-    "spellcasting": 0,
+    "armour": 0,
+    "dodging": 13.3,
+    "shields": 0,
+    "stealth": 17,
+    "spellcasting": 13.3,
     "conjurations": 0,
-    "hexes": 0,
+    "hexes": 16.5,
     "summonings": 0,
     "necromancy": 0,
     "forgecraft": 0,
-    "translocations": 12.3,
+    "translocations": 2.9,
     "transmutations": 0,
-    "alchemy": 0,
-    "fireMagic": 0,
-    "iceMagic": 0,
-    "airMagic": 0,
-    "earthMagic": 0,
+    "alchemy": 4.2,
+    "fireMagic": 3.6,
+    "iceMagic": 3.6,
+    "airMagic": 3.6,
+    "earthMagic": 3.6,
     "poisonMagic": 0,
-    "invocations": 14.5,
-    "evocations": 0,
+    "invocations": 0,
+    "evocations": 6.4,
     "shapeshifting": 0
   },
   "effectiveSkills": {
-    "fighting": 27,
+    "fighting": 11.5,
     "macesFlails": 0,
-    "axes": 27,
+    "axes": 0,
     "polearms": 0,
     "staves": 0,
     "unarmedCombat": 0,
-    "throwing": 0,
-    "shortBlades": 0,
+    "throwing": 6,
+    "shortBlades": 15.6,
     "longBlades": 0,
     "rangedWeapons": 0,
-    "armour": 21.9,
-    "dodging": 0,
-    "shields": 25.7,
-    "stealth": 0,
-    "spellcasting": 0,
+    "armour": 0,
+    "dodging": 15.1,
+    "shields": 0,
+    "stealth": 18.7,
+    "spellcasting": 16.8,
     "conjurations": 0,
-    "hexes": 0,
+    "hexes": 20,
     "summonings": 0,
     "necromancy": 0,
     "forgecraft": 0,
-    "translocations": 12.3,
+    "translocations": 5.8,
     "transmutations": 0,
-    "alchemy": 0,
-    "fireMagic": 0,
-    "iceMagic": 0,
-    "airMagic": 0,
-    "earthMagic": 0,
+    "alchemy": 6,
+    "fireMagic": 6,
+    "iceMagic": 6,
+    "airMagic": 6,
+    "earthMagic": 6,
     "poisonMagic": 0,
-    "invocations": 14.5,
-    "evocations": 0,
+    "invocations": 0,
+    "evocations": 8.3,
     "shapeshifting": 0
   },
   "spells": [
     {
-      "name": "Manifold Assault",
-      "failurePercent": 97,
+      "name": "Enfeeble",
+      "failurePercent": 1,
       "castable": true,
       "memorized": true
     },
     {
-      "name": "Lesser Beckoning",
+      "name": "Cause Fear",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Apportation",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Tukima's Dance",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Swiftness",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Jinxbite",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Sigil of Binding",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Foxfire",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Freeze",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Poisonous Vapours",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Sandblast",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Frozen Ramparts",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Maxwell's Portable Piledriver",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Ozocubu's Armour",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Passwall",
       "failurePercent": 1,
       "castable": true,
       "memorized": false
@@ -474,206 +485,182 @@
       "memorized": false
     },
     {
-      "name": "Momentum Strike",
-      "failurePercent": 7,
+      "name": "Volatile Blastmotes",
+      "failurePercent": 1,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Kinetic Grapnel",
-      "failurePercent": 52,
+      "name": "Anguish",
+      "failurePercent": 1,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Kiss of Death",
-      "failurePercent": 52,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Magic Dart",
-      "failurePercent": 52,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Poisonous Vapours",
-      "failurePercent": 52,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Sandblast",
-      "failurePercent": 52,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Slow",
-      "failurePercent": 52,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Construct Spike Launcher",
-      "failurePercent": 65,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Grave Claw",
-      "failurePercent": 65,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Mercury Arrow",
-      "failurePercent": 65,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Scorch",
-      "failurePercent": 65,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Static Discharge",
-      "failurePercent": 65,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Sublimation of Blood",
-      "failurePercent": 65,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Confusing Touch",
-      "failurePercent": 87,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Gloom",
-      "failurePercent": 87,
+      "name": "Dimensional Bullseye",
+      "failurePercent": 1,
       "castable": true,
       "memorized": false
     },
     {
       "name": "Hailstorm",
-      "failurePercent": 87,
+      "failurePercent": 3,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Passwall",
-      "failurePercent": 87,
+      "name": "Stone Arrow",
+      "failurePercent": 3,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Vampiric Draining",
-      "failurePercent": 87,
+      "name": "Summon Ice Beast",
+      "failurePercent": 3,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Airstrike",
-      "failurePercent": 99,
+      "name": "Leda's Liquefaction",
+      "failurePercent": 3,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Dispel Undead",
-      "failurePercent": 99,
+      "name": "Vhi's Electric Charge",
+      "failurePercent": 3,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Fulminant Prism",
-      "failurePercent": 99,
+      "name": "Kinetic Grapnel",
+      "failurePercent": 4,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Ignite Poison",
-      "failurePercent": 99,
+      "name": "Kiss of Death",
+      "failurePercent": 4,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Olgreb's Toxic Radiance",
-      "failurePercent": 99,
+      "name": "Summon Small Mammal",
+      "failurePercent": 4,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Petrify",
-      "failurePercent": 99,
+      "name": "Sublimation of Blood",
+      "failurePercent": 6,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Rending Blade",
-      "failurePercent": 99,
+      "name": "Call Canine Familiar",
+      "failurePercent": 12,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Fugue of the Fallen",
+      "failurePercent": 12,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Launch Clockwork Bee",
+      "failurePercent": 12,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Brom's Barrelling Boulder",
+      "failurePercent": 12,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Flame Wave",
+      "failurePercent": 12,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Forge Lightning Spire",
+      "failurePercent": 12,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Summon Seismosaurus Egg",
+      "failurePercent": 12,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Iskenderun's Mystic Blast",
+      "failurePercent": 13,
       "castable": true,
       "memorized": false
     },
     {
       "name": "Arcjolt",
-      "failurePercent": 100,
+      "failurePercent": 34,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Lee's Rapid Deconstruction",
-      "failurePercent": 100,
+      "name": "Borgnjor's Vile Clutch",
+      "failurePercent": 34,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Metabolic Englaciation",
-      "failurePercent": 100,
+      "name": "Dispel Undead",
+      "failurePercent": 38,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Silence",
-      "failurePercent": 100,
+      "name": "Iskenderun's Battlesphere",
+      "failurePercent": 38,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Yara's Violent Unravelling",
-      "failurePercent": 100,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Bombard",
-      "failurePercent": 100,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Fortress Blast",
-      "failurePercent": 100,
+      "name": "Rending Blade",
+      "failurePercent": 38,
       "castable": true,
       "memorized": false
     },
     {
       "name": "Permafrost Eruption",
-      "failurePercent": 100,
+      "failurePercent": 50,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Hellfire Mortar",
-      "failurePercent": 100,
+      "name": "Eringya's Noxious Bog",
+      "failurePercent": 52,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Bombard",
+      "failurePercent": 88,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Starburst",
+      "failurePercent": 88,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Fortress Blast",
+      "failurePercent": 99,
       "castable": true,
       "memorized": false
     },
@@ -684,90 +671,36 @@
       "memorized": false
     },
     {
-      "name": "Splinterfrost Shell",
+      "name": "Summon Hydra",
       "failurePercent": 100,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Discord",
+      "name": "Lehudib's Crystal Spear",
       "failurePercent": 100,
       "castable": true,
       "memorized": false
     },
     {
-      "name": "Ignition",
+      "name": "Platinum Paragon",
       "failurePercent": 100,
       "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Fire Storm",
-      "failurePercent": 100,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Shatter",
-      "failurePercent": 100,
-      "castable": true,
-      "memorized": false
-    },
-    {
-      "name": "Soul Splinter",
-      "failurePercent": null,
-      "castable": false,
-      "memorized": false
-    },
-    {
-      "name": "Launch Clockwork Bee",
-      "failurePercent": null,
-      "castable": false,
-      "memorized": false
-    },
-    {
-      "name": "Eringya's Surprising Crocodile",
-      "failurePercent": null,
-      "castable": false,
-      "memorized": false
-    },
-    {
-      "name": "Forge Blazeheart Golem",
-      "failurePercent": null,
-      "castable": false,
-      "memorized": false
-    },
-    {
-      "name": "Spellspark Servitor",
-      "failurePercent": null,
-      "castable": false,
       "memorized": false
     }
   ],
   "mutations": [
     {
-      "name": "permanent stasis",
+      "name": "small",
       "level": null
     },
     {
-      "name": "dig shafts and tunnels",
+      "name": "no large weapons",
       "level": null
     },
     {
-      "name": "antennae",
+      "name": "nightstalker",
       "level": 3
-    },
-    {
-      "name": "four strong arms",
-      "level": null
-    },
-    {
-      "name": "poor constitution",
-      "level": 1
-    },
-    {
-      "name": "inhibited regeneration",
-      "level": null
     }
   ]
 }

@@ -1,0 +1,559 @@
+ Dungeon Crawl Stone Soup version 0.34.1-3-ga2c7840dd7 (webtiles) character file.
+
+Game seed: 12222329393427495794
+
+37613 Tinylith the Skirmisher (level 13, -7/123 (129) HPs)
+             Began as a Naga Alchemist on Apr 3, 2026.
+             Was the Champion of Ru.
+             Mangled by a nine-headed hydra (11 damage)
+             ... on level 5 of the Lair of Beasts.
+             The game lasted 00:45:13 (14398 turns).
+
+Tinylith the Skirmisher (Naga Alchemist)           Turns: 14398, Time: 00:45:14
+
+HP:   -7/123 (129)  AC:  9    Str: 12    XL:     13   Next: 97%
+MP:   7/22          EV:  8    Int: 25    God:    Ru [******]
+Gold: 740           SH:  0    Dex: 11    Spells: 1/24 levels left
+
+rFire   . . .  (100%)   a - +10 sling of Xasmaf {speed, rF+ Int+5}
+rCold   x . .  (150%)   k - +0 troll leather armour
+rNeg    . . .  (100%)   c - +1 helmet
+rPois   +      (33%)    h - +0 cloak {Stlth+}
+rElec   .      (100%)   (no gloves)
+rCorr   .      (100%)   (no barding)
+SInv    +               (no amulet)
+Will    +....           l - ring of wizardry
+Stlth   ++++      
+HPRegen 1.20/turn
+MPRegen 0.18/turn
+
+%: wizardry (x1)
+@: exhausted, studying Evocations, lightly drained, very slow
+A: AC +4, large, see invisible, deformed body, poison resistance, spit poison 1,
+missing a hand, hated by all, naga tail 2, temperature sensitive
+a: Spit Poison (1%), Renounce Religion (0%), Draw Out Power (0%), Power Leap
+(0%), Apocalypse (0%)
+
+
+You were on level 5 of the Lair of Beasts.
+You worshipped Ru.
+Ru was exalted by your worship.
+You visited 3 branches of the dungeon, and saw 14 of its levels.
+
+You collected 845 gold pieces.
+You spent 105 gold pieces at shops.
+
+Inventory:
+
+Hand Weapons
+ a - the +10 sling of Xasmaf (weapon) {speed, rF+ Int+5}
+   (You found it on level 2 of the Dungeon)   
+   
+   rF+:       It protects you from fire.
+   Int+5:     It affects your intelligence (+5).
+   
+   It cannot be enchanted further.
+ b - a +9 broad axe
+ p - a +2 vampiric spear
+Missiles
+ d - 9 poisoned darts
+ e - 11 boomerangs
+ f - 7 stones
+ g - 10 curare-tipped darts {!f}
+ m - 2 throwing nets
+ q - 5 silver javelins
+Armour
+ c - a +1 helmet (worn)
+ h - a +0 cloak of stealth (worn)
+ i - a +0 leather armour of fire resistance
+ k - a +0 troll leather armour (worn)
+Jewellery
+ j - a +4 ring of slaying
+ l - a ring of wizardry (worn)
+Talismans
+ n - the quill talisman of Gallantry {rElec rN+ Stlth+}
+   (You found it on level 1 of the Lair of Beasts)   
+   
+   [quill talisman]
+   rElec:     It insulates you from electricity.
+   rN+:       It protects you from negative energy.
+   Stlth+:    It makes you more stealthy.
+Wands
+ c - a wand of warping (9)
+ b - a wand of quicksilver (3)
+ p - a wand of polymorph (8)
+ f - a wand of mindburst (14)
+ a - a wand of flame (19)
+Scrolls
+ N - 3 scrolls of noise
+ s - 3 scrolls of summoning
+ k - 5 scrolls of blinking {unknown}
+ a - a scroll of enchant armour
+ n - 4 scrolls of teleportation {unknown}
+ p - a scroll of poison
+Potions
+ g - a potion of magic
+ L - 4 potions of lignification
+ b - 2 potions of brilliance
+ m - a potion of might
+ w - 5 potions of heal wounds
+ d - a potion of haste {unknown}
+ A - 2 potions of attraction
+ i - a potion of invisibility
+ c - 4 potions of curing
+ r - 2 potions of resistance
+ f - a potion of cancellation {unknown}
+ j - a potion of ambrosia {unknown}
+
+
+   Skills:
+ - Level 12.0 Fighting
+ + Level 8.5 Axes
+ - Level 14.0 Ranged Weapons
+ - Level 1.5 Dodging
+ - Level 6.0 Stealth
+ - Level 6.0 Spellcasting
+ - Level 3.0 Conjurations
+ - Level 6.0 Fire Magic
+ - Level 3.0 Air Magic
+ - Level 6.0 Alchemy
+
+
+You had one spell level left.
+You knew the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Ozocubu's Armour      Ice            7%         N/A       12%         3
+c - Mephitic Cloud        Conj/Alch/Air  27%        N/A       2%          3
+h - Scorch                Fire           74%        2d8       1%          2
+i - Ignite Poison         Fire/Alch      37%        N/A       3%          4
+m - Mercury Arrow         Conj/Alch      60%        2d9       1%          2
+r - Olgreb's Toxic Radia  Alch           37%        N/A       3%          4
+s - Sticky Flame          Fire/Alch      37%        2d8       3%          4
+z - Poisonous Vapours     Alch/Air       100%       1d4       1%          1
+
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Foxfire                  Conj/Fire      100%       2x1d9     1%          1
+ Kiss of Death            Conj/Necr      60%        2d10      1%          1
+ Magic Dart               Conj           88%        1d7       1%          1
+ Sandblast                Erth           14%        2d6       4%          1
+ Momentum Strike          Conj/Tloc      30%        3d8       3%          2
+ Inner Flame              Hex/Fire       22%        N/A       3%          3
+ Swiftness                Air            22%        N/A       3%          3
+ Volatile Blastmotes      Fire/Tloc      44%        2d13      3%          3
+ Construct Spike Launche  Frge           14%        2d3       6%          2
+ Frozen Ramparts          Ice            14%        1d3       12%         3
+ Gloom                    Hex/Necr       14%        N/A       12%         3
+ Passwall                 Erth           7%         N/A       12%         3
+ Fireball                 Conj/Fire      15%        3d8       16%         5
+ Irradiate                Conj/Alch      15%        3d16      16%         5
+ Brom's Barrelling Bould  Conj/Erth      15%        2d5       21%         4
+ Iskenderun's Battlesphe  Conj/Frge      15%        2d8       21%         4
+ Vhi's Electric Charge    Tloc/Air       30%        N/A       21%         4
+ Metabolic Englaciation   Hex/Ice        3%         N/A       67%         5
+ Conjure Ball Lightning   Conj/Air       11%        3x3d6     82%         6
+ Orb of Destruction       Conj           11%        9d6       100%        7
+ Soul Splinter            Necr           Unusable   N/A       N/A         1
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (8/15)             Temple (1/1) D:5            Lair (5/5) D:8         
+  Swamp (0/4) Lair:3        Snake (0/4) Lair:3        Slime (0/5) Lair:5      
+
+The Realm of Zot is guarded by orbs of winter.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Elyvilon
+Gozag
+Makhleb
+Nemelex Xobeh
+Okawaru
+Qazlal
+Ru
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+The Shining One
+
+Shops:
+D:1 [   D:5 *
+
+Annotations:
+D:2 dig
+
+
+Innate Abilities, Weirdness & Mutations
+
+Your serpentine skin is tough. (AC +4)
+You have supernaturally acute vision. (SInv)
+Armour fits poorly on your strangely shaped body.
+You are resistant to poisons. (rPois)
+You can spit poison.
+You are missing a hand.
+You are hated by all.
+Your snake-like lower body moves slowly, but can constrict enemies.
+You are sensitive to extremes of temperature. (rF-, rC-)
+
+Message History
+
+The eight-headed hydra is covered in liquid fire!
+The eight-headed hydra burns!
+The eight-headed hydra bites you but does no damage.
+The eight-headed hydra closely misses you.
+The eight-headed hydra barely misses you.
+The eight-headed hydra closely misses you.
+The eight-headed hydra bites you.
+You focus your inner power and illuminate the eight-headed hydra in
+retribution!
+The eight-headed hydra bites you but does no damage.
+The eight-headed hydra misses you. The eight-headed hydra bites you.
+You chop one of the eight-headed hydra's heads off!
+The seven-headed hydra grows two more! You slash the nine-headed hydra!
+The nine-headed hydra is heavily wounded.
+The nine-headed hydra burns!
+The nine-headed hydra is stunned by your conviction and fails to attack.
+The nine-headed hydra bites you!
+The nine-headed hydra bites you but does no damage.
+The nine-headed hydra bites you.
+You focus your inner power and blind the nine-headed hydra in retribution!
+The nine-headed hydra bites you!
+The nine-headed hydra barely misses you.
+The nine-headed hydra bites you!
+* * * LOW HITPOINT WARNING * * *
+The nine-headed hydra bites you!
+* * * LOW HITPOINT WARNING * * *
+The nine-headed hydra bites you.
+* * * LOW HITPOINT WARNING * * *
+The nine-headed hydra bites you but does no damage.
+Unknown command.
+You unwield your +9 broad axe.
+You feel clever.
+Your hand tingles!
+a - the +10 sling of Xasmaf (weapon) {speed, rF+ Int+5}
+The nine-headed hydra burns!
+The nine-headed hydra bites you but does no damage.
+The nine-headed hydra bites you!
+* * * LOW HITPOINT WARNING * * *
+The nine-headed hydra bites you!
+You die...
+Ru respects your ultimate sacrifice.
+
+#..##          #...#  .#
+#...#           ....##.#
+##..##           ....#.#
+ ##..###          Y.÷..##
+  ##...###         ÷...P#
+   #.....###     ###....##
+   ##......#######††..P..#
+    ##..÷.....P....##..###
+     ##P..@D...P..## ###
+      #######....##
+            ######
+
+
+You could see a nine-headed hydra (blind, burning, corona).
+
+Vanquished Creatures
+  A mountainshell (Lair:3)
+  A hydra (Lair:3)
+  A catoblepas (Lair:5)
+  8 death yaks
+  Urug (Lair:2)
+  A cyclops (D:8)
+  10 elephants
+  3 black mambas
+  2 torpor snails
+  10 cane toads
+  3 rime drakes
+  3 komodo dragons
+  A troll (D:5)
+  7 polar bears
+  A tyrant leech (Lair:3)
+  5 blink frogs (Lair:1)
+  18 dream sheep
+  Sigmund (D:3)
+  4 wyverns
+  A raven (Lair:1)
+  50 yaks
+  3 basilisks
+  3 humans (Lair:4)
+  A hog (Lair:4)
+  2 swamp worms (Lair:3)
+  8 water moccasins
+  A kobold geomancer (D:8)
+  A swamp drake (D:8)
+  2 sky beasts
+  3 black bears
+  3 ice beasts
+  2 ogres
+  6 wolves
+  3 centaurs
+  6 bullfrogs
+  3 gnoll sergeants
+  2 scorpions
+  2 rock fish (D:7)
+  3 wights (D:7)
+  2 bombardier beetles
+  3 jellies
+  5 orc priests
+  5 hounds
+  Jessica (D:3)
+  5 drudes
+  4 iguanas
+  2 sleepcaps
+  Ijyb (D:3)
+  Natasha (twice) (D:3)
+  4 orc wizards
+  9 hell rats (Lair:1)
+  28 gnolls
+  4 adders
+  12 river rats (Lair:1)
+  2 shadow imps
+  3 white imps (D:6)
+  6 ufetubi
+  3 dart slugs
+  3 ribbon worms
+  25 orcs
+  3 endoplasms
+  6 hobgoblins
+  7 jackals
+  10 quokkas
+  7 ball pythons
+  9 bats
+  6 frilled lizards
+  4 goblins
+  4 kobolds
+  20 rats
+391 creatures vanquished.
+
+Vanquished Creatures (others)
+  Kirke (Lair:4)
+  A hydra (Lair:2)
+  A wyvern (D:8)
+  2 yaks
+  A hound (D:5)
+  A butterfly (D:3)
+7 creatures vanquished.
+
+Grand Total: 398 creatures vanquished
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | Tinylith the Naga Alchemist began the quest for the Orb.
+     0 | D:1      | Reached XP level 1. HP: 15/15 MP: 3/3
+   291 | D:1      | Reached XP level 2. HP: 8/22 MP: 0/5
+   478 | D:1      | Found Jediaqoa's Antique Armour Shoppe.
+   615 | D:1      | Reached skill level 5 in Stealth
+   960 | D:2      | Reached XP level 3. HP: 27/28 MP: 3/6
+  1379 | D:2      | Reached skill level 1 in Air Magic
+  1433 | D:2      | Reached XP level 4. HP: 20/36 MP: 3/7
+  1507 | D:2      | Learned a level 2 spell: Mercury Arrow
+  1511 | D:2      | Learned a level 3 spell: Mephitic Cloud
+  1570 | D:2      | Identified the +3 hand axe of Miwij {reap, rCorr Str-3
+                  | Int+6}
+  1637 | D:2      | Identified the +10 sling of Xasmaf {speed, rF+ Int+5}
+  1746 | D:3      | Encountered Jessica
+  1751 | D:2      | HP: 1/36 [orc/+0 club (5)]
+  2065 | D:3      | Encountered Natasha
+  2072 | D:3      | Killed Natasha
+  2197 | D:3      | Encountered Ijyb
+  2210 | D:3      | Killed Ijyb
+  2211 | D:3      | Reached XP level 5. HP: 6/42 MP: 4/8
+  2399 | D:3      | Found an opulent altar of Gozag.
+  2400 | D:3      | Encountered Sigmund
+  2414 | D:3      | Killed Sigmund
+  2415 | D:3      | Reached XP level 6. HP: 37/49 MP: 8/10
+  2421 | D:3      | Learned a level 4 spell: Sticky Flame
+  2470 | D:3      | Encountered Natasha
+  2475 | D:3      | Killed Natasha
+  2558 | D:3      | Found a glowing golden altar of the Shining One.
+  2737 | D:3      | Found a sacrificial altar of Ru.
+  2750 | D:3      | Became a worshipper of Ru the Awakened
+  2791 | D:3      | Killed Jessica
+  2796 | D:3      | Found a white marble altar of Elyvilon.
+  2801 | D:3      | Reached skill level 5 in Alchemy
+  3332 | D:4      | Reached XP level 7. HP: 42/55 MP: 11/11
+  3607 | D:4      | Gained mutation: You are hated by all. [Ru sacrifice]
+  3607 | D:4      | Reached * piety under Ru
+  3607 | D:4      | Reached ** piety under Ru
+  3700 | D:4      | Reached skill level 1 in Fire Magic
+  3745 | D:5      | Entered Level 5 of the Dungeon
+  3754 | D:5      | Encountered a troll
+  3774 | D:5      | HP: 2/55 [ufetubus (3)]
+  3951 | D:5      | Killed a troll
+  3962 | D:5      | Reached XP level 8. HP: 58/62 MP: 8/12
+  4114 | D:5      | Found a staircase to the Ecumenical Temple.
+  4116 | D:5      | Found a statue of an orb of winter.
+  4118 | D:5      | Found a statue of an orb of winter.
+  4123 | Temple   | Entered the Ecumenical Temple
+  4272 | D:5      | Reached skill level 5 in Fire Magic
+  4466 | D:5      | Found Tipeopn's General Store.
+  4474 | D:5      | Bought a scroll of enchant weapon for 105 gold pieces
+  4613 | D:5      | Learned a level 3 spell: Ozocubu's Armour
+  5036 | D:5      | Found a stormy altar of Qazlal.
+  5152 | D:5      | Found a burning altar of Makhleb.
+  5403 | D:6      | Reached skill level 5 in Fighting
+  5477 | D:6      | Reached XP level 9. HP: 81/81 MP: 8/13
+  5622 | D:6      | Reached skill level 1 in Ranged Weapons
+  5677 | D:6      | Gained bane: Bane of Snow-blindness [Doom]
+  5837 | D:6      | Reached skill level 2 in Ranged Weapons
+  5845 | D:6      | Gained mutation: You are missing a hand. [Ru sacrifice]
+  5845 | D:6      | Reached *** piety under Ru
+  5845 | D:6      | Reached **** piety under Ru
+  5900 | D:6      | Reached skill level 3 in Ranged Weapons
+  6301 | D:7      | Reached skill level 4 in Ranged Weapons
+  6418 | D:7      | Reached skill level 5 in Ranged Weapons
+  6697 | D:7      | Reached skill level 6 in Ranged Weapons
+  6727 | D:7      | Found a bloodstained altar of Trog.
+  6727 | D:7      | Found an iron altar of Okawaru.
+  7076 | D:7      | Reached skill level 7 in Ranged Weapons
+  7076 | D:7      | Reached XP level 10. HP: 84/91 MP: 12/14
+  7112 | D:7      | Found a snail-covered altar of Cheibriados.
+  7313 | D:8      | Encountered a cyclops
+  7325 | D:8      | Killed a cyclops
+  7326 | D:8      | Reached skill level 8 in Ranged Weapons
+  7602 | D:8      | Reached skill level 9 in Ranged Weapons
+  7672 | D:8      | Found a staircase to the Lair.
+  8209 | Lair:1   | Entered Level 1 of the Lair of Beasts
+  8252 | Lair:1   | Gained mutation: You are sensitive to extremes of
+                  | temperature. (rF-, rC-) [Ru sacrifice]
+  8252 | Lair:1   | Reached ***** piety under Ru
+  8252 | Lair:1   | Reached ****** piety under Ru
+  8378 | Lair:1   | Reached skill level 10 in Ranged Weapons
+  8618 | Lair:1   | Reached XP level 11. HP: 88/97 MP: 13/15
+  8645 | Lair:1   | Lost bane: Bane of Snow-blindness
+  8645 | Lair:1   | Reached skill level 11 in Ranged Weapons
+  8868 | Lair:1   | Identified the quill talisman of Gallantry {rElec rN+
+                  | Stlth+}
+  9081 | Lair:1   | Reached skill level 12 in Ranged Weapons
+  9659 | Lair:2   | Reached skill level 13 in Ranged Weapons
+  9761 | Lair:2   | Encountered an eight-headed hydra
+  9772 | Lair:2   | Killed an eight-headed hydra
+ 10015 | Lair:2   | Encountered Urug
+ 10032 | Lair:2   | Killed Urug
+ 10141 | Lair:2   | Reached XP level 12. HP: 105/105 MP: 11/16
+ 10340 | Lair:2   | Reached skill level 14 in Ranged Weapons
+ 10973 | Lair:2   | Learned a level 2 spell: Scorch
+ 11123 | Lair:3   | Encountered a death yak
+ 11123 | Lair:3   | Encountered a death yak
+ 11123 | Lair:3   | Encountered a death yak
+ 11123 | Lair:3   | Encountered a death yak
+ 11123 | Lair:3   | Encountered a death yak
+ 11123 | Lair:3   | Encountered a death yak
+ 11167 | Lair:2   | Learned a level 4 spell: Olgreb's Toxic Radiance
+ 11259 | Lair:3   | Reached skill level 5 in Spellcasting
+ 11388 | Lair:3   | Learned a level 4 spell: Ignite Poison
+ 11499 | Lair:3   | Encountered a mountainshell
+ 11510 | Lair:3   | Killed a mountainshell
+ 11580 | Lair:3   | Killed a death yak
+ 11597 | Lair:3   | Killed a death yak
+ 11602 | Lair:3   | Killed a death yak
+ 11605 | Lair:3   | Killed a death yak
+ 11608 | Lair:3   | Killed a death yak
+ 11617 | Lair:3   | Killed a death yak
+ 11650 | Lair:3   | Reached skill level 10 in Fighting
+ 11752 | Lair:3   | Gained mutation: Your snake-like lower body moves slowly,
+                  | but can constrict enemies. [Naga growth]
+ 11752 | Lair:3   | Reached XP level 13. HP: 123/123 MP: 19/22
+ 12058 | Lair:3   | Found a staircase to the Snake Pit.
+ 12286 | Lair:3   | Found a staircase to the Swamp.
+ 13122 | Lair:4   | Reached skill level 1 in Axes
+ 13198 | Lair:4   | Encountered Kirke
+ 13228 | Lair:4   | Killed Kirke
+ 13748 | Lair:5   | Entered Level 5 of the Lair of Beasts
+ 13748 | Lair:5   | Found a staircase to the Slime Pits.
+ 14075 | Lair:5   | Reached skill level 5 in Axes
+ 14398 | Lair:5   | HP: 4/123 [nine-headed hydra (13)]
+ 14398 | Lair:5   | Mangled by a nine-headed hydra
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      dpeg_arrival_castle, layout_loops_ring, serial_shops,
+          nicolae_shopburst, minmay_rat_gold_closets
+D:2:      layout_rooms, kennysheep_generic_room_15, lightli_corner_chamber
+D:3:      layout_loops_ring, nicolae_tso_implements_of_victory,
+          nicolae_overflow_four_foyers_diagonal,
+          nicolae_elyvilon_peaceful_grove, nicolae_ru_sacrificial_ziggurat,
+          uniq_sigmund, uniq_natasha, uniq_ijyb, uniq_jessica
+D:4:      layout_gridville
+D:5:      layout_loops_corners, nicolae_qazlal_console_elemental,
+          mainiacjoe_overflow_two_lobes, minmay_temple_entry_antechambers,
+          serial_shops, nicolae_shop_tiny_statue_garden, feat_on_display,
+          minmay_manual_mess
+D:6:      layout_rooms, serial_demonic, serial_demonic_b, serial_demonic_e,
+          serial_demonic_f, serial_demonic_d, serial_demonic_f,
+          serial_demonic_c, kennysheep_generic_room_6
+D:7:      layout_loops_ring, gammafunk_temple_overflow_pools, marbit_many_paths,
+          enter_ossuary_1
+D:8:      layout_rooms, erik_lair_dragon
+Temple:   hellmonk_temple_rainy
+Lair:1:   lemuel_ratsnest, layout_chaotic_city, grunt_megastairs_5
+Lair:2:   layout_small_grid, cheibrodos_lair_lostbears, wander_river,
+          infiniplex_staircase_pool, uniq_urug
+Lair:3:   layout_chaotic_city, palyth_hydra_swamp_entry, dummy_snake_entry,
+          nicolae_lair_sylvan_descent
+Lair:4:   layout_gridlike, uniq_kirke
+Lair:5:   grunt_lair_end_beastmaster, layout_regular_city, slime_entry_1,
+          nicolae_lair_percent_stairs
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 13 |
+---------------+----------------------------------------+-----
+Stealth        |  4  5  6                               |  6.0
+Air Magic      |        1  3                            |  3.0
+Conjurations   |              3                         |  3.0
+Spellcasting   |              3                    6    |  6.0
+Alchemy        |                 5  6                   |  6.0
+Fire Magic     |                    4  6                |  6.0
+Fighting       |                       5  6       10 12 | 12.0
+Ranged Weapons |                          7 10 13 14    | 14.0
+Axes           |                                      8 |  8.5
+Dodging        |                                        |  1.5
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 || total
+---------------------------+-------+-------+-------+-------+-------++-------
+ Attack: Normal            |     6 |     2 |    17 |    20 |    45 ||    90
+  Melee: War axe           |     5 |       |       |       |       ||     5
+         Falchion          |     1 |       |       |       |       ||     1
+         Hand axe          |       |     3 |    25 |       |       ||    28
+         Broad axe         |       |       |       |    33 |    28 ||    61
+         Unarmed           |       |       |       |       |    23 ||    23
+         Constrict         |       |       |       |       |     7 ||     7
+   Fire: Sling             |       |    79 |   289 |   664 |   251 ||  1283
+  Throw: Dart              |     3 |       |       |       |     1 ||     4
+   Cast: Poisonous Vapours |    33 |    18 |    17 |     4 |     4 ||    76
+         Mephitic Cloud    |       |     1 |     5 |    16 |       ||    22
+         Mercury Arrow     |       |       |    12 |     1 |       ||    13
+         Sticky Flame      |       |       |    11 |    18 |    18 ||    47
+         Ozocubu's Armour  |       |       |     4 |    24 |    12 ||    40
+         Scorch            |       |       |       |     7 |     8 ||    15
+         Olgreb's Toxic Ra |       |       |       |       |    11 ||    11
+         Ignite Poison     |       |       |       |       |     8 ||     8
+ Invoke: Sacrifice Love    |       |       |     1 |       |       ||     1
+         Sacrifice a Hand  |       |       |     1 |       |       ||     1
+         Sacrifice Resista |       |       |       |     1 |       ||     1
+         Draw Out Power    |       |       |       |     2 |     1 ||     3
+Ability: Spit Poison       |    36 |    16 |    16 |    13 |     3 ||    84
+  Drink: Heal wounds       |       |       |     1 |       |       ||     1
+         Lignification     |       |       |     1 |       |       ||     1
+   Read: Identify          |       |       |       |    10 |       ||    10
+         Enchant weapon    |       |       |       |     1 |       ||     1
+   Stab: Paralysed         |       |       |       |     2 |     1 ||     3
+         Confused          |       |       |       |     1 |       ||     1
+ Armour: Robe              |    20 |    15 |       |       |       ||    35
+         Leather armour    |       |     9 |   130 |    24 |       ||   163
+         None              |       |       |    34 |       |     5 ||    39
+         Troll leather arm |       |       |       |   130 |   104 ||   234
+  Dodge: Dodged            |    11 |    13 |    80 |    77 |    40 ||   221
+  Block: Buckler           |       |       |     2 |       |       ||     2
+

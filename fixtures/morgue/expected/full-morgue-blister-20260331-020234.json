@@ -161,7 +161,7 @@
   "ringDetails": [
     {
       "rawName": "ring \"Cyracic\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Cyracic\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -206,7 +206,7 @@
     },
     {
       "rawName": "ring of Lady Luck",
-      "displayName": "randart ring",
+      "displayName": "ring of Lady Luck",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -290,7 +290,7 @@
     },
     {
       "rawName": "ring \"Midaonent\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Midaonent\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -333,7 +333,7 @@
     },
     {
       "rawName": "ring \"Zalagov\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Zalagov\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -376,7 +376,7 @@
     },
     {
       "rawName": "ring \"Cujovups\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Cujovups\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

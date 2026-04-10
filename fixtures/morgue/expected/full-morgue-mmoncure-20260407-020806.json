@@ -309,7 +309,7 @@
   "ringDetails": [
     {
       "rawName": "ring of Cuopomec",
-      "displayName": "randart ring",
+      "displayName": "ring of Cuopomec",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -352,7 +352,7 @@
     },
     {
       "rawName": "ring \"Veipnoni\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Veipnoni\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

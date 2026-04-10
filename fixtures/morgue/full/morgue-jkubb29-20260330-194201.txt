@@ -1,0 +1,834 @@
+ Dungeon Crawl Stone Soup version 0.34.1-3-ga2c7840dd7 (console) character file.
+
+Game seed: 17314410103950611961
+
+220968 jkubb29 the Brawler (level 18, -14/246 (277) HPs)
+             Began as a Troll Fighter on Mar 30, 2026.
+             Was an Elder of Wu Jian.
+             Demolished by a pharaoh ant (34 damage)
+             ... on level 4 of the Spider Nest.
+             The game lasted 02:00:57 (30874 turns).
+
+jkubb29 the Brawler (Troll Fighter)                Turns: 30874, Time: 02:00:57
+
+HP:   -14/246 (277) AC:  8    Str: 32    XL:     18   Next: 49%
+MP:   0/17          EV:  6    Int:  4    God:    Wu Jian [****..]
+Gold: 2848          SH:  0    Dex: 15    Spells: 17/17 levels left
+
+rFire   + . .  (50%)      - Claws
+rCold   + . .  (50%)    h - +2 kite shield {Reflect}
+rNeg    . . .  (100%)   l - +0 troll leather armour
+rPois   +      (33%)    v - +3 hat of Feasting {SInv}
+rElec   +      (33%)    t - scarf {rC+ rF+}
+rCorr   .      (100%)   f - amulet of Qazlal's Reproof {Reflect rElec Str+3 SH+5}
+SInv    +               e - +4 ring of slaying
+Will    +....           a - ring of poison resistance
+Stlth             
+HPRegen 2.21/turn
+MPRegen 0.15/turn
+
+%: reflection
+@: confused, berserking, held, studying Summonings, drained, very quick
+A: large, unfitting armour, claws 3, regeneration 1, shaggy fur 1, tough skin 1
+}: 1/15 runes: barnacled
+a: Renounce Religion (0%), Wall Jump (0%), Serpent's Lash (0%)
+
+
+You were on level 4 of the Spider Nest.
+You worshipped Wu Jian.
+Wu Jian was greatly pleased with you.
+You visited 5 branches of the dungeon, and saw 29 of its levels.
+You also visited: Sewer.
+
+You collected 4127 gold pieces.
+You spent 1279 gold pieces at shops.
+
+Inventory:
+
+Missiles
+ b - 5 throwing nets (quivered)
+Armour
+ h - a +2 kite shield of reflection (worn)
+ l - a +0 troll leather armour (worn)
+ r - a +1 cloak
+ t - a scarf of resistance (worn)
+ v - the +3 hat of Feasting (worn) {SInv}
+   (You took it off Wiglaf on level 3 of the Spider Nest)   
+   
+   SInv:      It lets you see invisible.
+   
+   It cannot be enchanted further.
+Jewellery
+ a - a ring of poison resistance (worn)
+ c - a ring of protection from cold
+ d - a +5 ring of evasion
+ e - a +4 ring of slaying (worn)
+ f - the amulet of Qazlal's Reproof (worn) {Reflect rElec Str+3 SH+5}
+   (You found it on level 3 of the Spider Nest)   
+   
+   [amulet of reflection]
+   
+   Reflect:   It reflects blocked missile attacks.
+   rElec:     It insulates you from electricity.
+   Str+3:     It affects your strength (+3).
+   SH+5:      It affects your SH (+5).
+ g - an amulet of reflection
+ i - a +6 ring of intelligence
+ j - an amulet of the acrobat
+ k - a ring of magical power
+ n - a +5 ring of evasion
+ o - a ring of resist corrosion
+ p - an amulet of faith
+ q - an amulet of chemistry
+ s - a +6 ring of intelligence
+Talismans
+ m - a medusa talisman
+ u - a maw talisman
+Wands
+ e - a wand of charming (4)
+ a - a wand of flame (70)
+ c - a wand of roots (16)
+ d - a wand of digging (9)
+ p - a wand of polymorph (5)
+Scrolls
+ g - 2 scrolls of fog
+ r - 4 scrolls of revelation
+ N - 5 scrolls of noise
+ f - 2 scrolls of fear
+ S - a scroll of silence
+ V - 6 scrolls of vulnerability
+ a - 3 scrolls of enchant armour
+ t - 10 scrolls of teleportation
+ I - a scroll of immolation
+ w - 4 scrolls of enchant weapon
+ p - 2 scrolls of poison
+ x - 2 scrolls of amnesia
+ T - a scroll of torment
+ b - a scroll of blinking
+Potions
+ m - 5 potions of might
+ r - 3 potions of resistance
+ M - 3 potions of mutation
+ h - 2 potions of haste
+ B - 2 potions of berserk rage
+ n - a potion of cancellation {unknown}
+ a - 3 potions of ambrosia
+ c - 15 potions of curing
+ A - 5 potions of attraction
+ b - 5 potions of brilliance
+ o - 2 potions of invisibility {unknown}
+ g - a potion of magic
+ q - 3 potions of moonshine
+ e - 3 potions of enlightenment
+ L - 4 potions of lignification
+Miscellaneous
+ g - a +0 phial of floods
+ h - a +0 phantom mirror (inert)
+Baubles
+ i - 3 flux baubles
+
+
+   Skills:
+ - Level 13.1 Fighting
+ - Level 9.9 Dodging
+ - Level 14.2 Shields
+ - Level 20.9 Unarmed Combat
+ * Level 12.7 Shapeshifting
+
+
+You had 17 spell levels left.
+You didn't know any spells.
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Apportation              Tloc           0%         N/A       65%         1
+ Foxfire                  Conj/Fire      0%         2x1d4     65%         1
+ Kinetic Grapnel          Frge           0%         1d4       65%         1
+ Magic Dart               Conj           0%         1d3       65%         1
+ Poisonous Vapours        Alch/Air       0%         1d1       65%         1
+ Sandblast                Erth           0%         2d4       65%         1
+ Shock                    Conj/Air       0%         1d3       65%         1
+ Soul Splinter            Necr           0%         N/A       65%         1
+ Blink                    Tloc           0%         N/A       80%         2
+ Mercury Arrow            Conj/Alch      0%         2d5       80%         2
+ Sublimation of Blood     Necr           0%         N/A       80%         2
+ Inner Flame              Hex/Fire       0%         N/A       95%         3
+ Mephitic Cloud           Conj/Alch/Air  0%         N/A       95%         3
+ Passwall                 Erth           0%         N/A       95%         3
+ Sigil of Binding         Hex            0%         N/A       95%         3
+ Stone Arrow              Conj/Erth      0%         3d7       95%         3
+ Swiftness                Air            0%         N/A       95%         3
+ Vampiric Draining        Necr           0%         2d6       95%         3
+ Volatile Blastmotes      Fire/Tloc      0%         2d10      95%         3
+ Airstrike                Air            0%         2d(0-16)  100%        4
+ Anguish                  Hex/Necr       0%         N/A       100%        4
+ Animate Dead             Necr           0%         N/A       100%        4
+ Brom's Barrelling Bould  Conj/Erth      0%         2d4       100%        4
+ Dimensional Bullseye     Hex/Tloc       0%         N/A       100%        4
+ Dispel Undead            Necr           0%         3d6       100%        4
+ Flame Wave               Conj/Fire      0%         2d4       100%        4
+ Forge Lightning Spire    Air/Frge       0%         3d4       100%        4
+ Iskenderun's Mystic Bla  Conj/Tloc      0%         2d3 (+2d1 100%        4
+ Petrify                  Alch/Erth      0%         N/A       100%        4
+ Summon Seismosaurus Egg  Summ/Erth      0%         N/A       100%        4
+ Vhi's Electric Charge    Tloc/Air       0%         N/A       100%        4
+ Alistair's Intoxication  Alch           0%         N/A       100%        5
+ Freezing Cloud           Conj/Ice/Air   0%         6-21      100%        5
+ Hoarfrost Cannonade      Ice/Frge       0%         3d6/3d12  100%        5
+ Nazja's Percussive Temp  Frge           0%         4d4       100%        5
+ Yara's Violent Unravell  Hex/Alch       0%         3d3       100%        5
+ Death Channel            Necr           0%         N/A       100%        6
+ Eringya's Noxious Bog    Alch           0%         4d6       100%        6
+ Gell's Gavotte           Tloc           0%         2d(11-16) 100%        6
+ Plasma Beam              Fire/Air       0%         2x1d10    100%        6
+ Starburst                Conj/Fire      0%         6d3       100%        6
+ Ozocubu's Refrigeration  Ice            0%         4d7       100%        7
+ Discord                  Hex            0%         N/A       100%        8
+ Infestation              Necr           0%         N/A       100%        8
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (14/15)            Temple (0/1) D:7            Lair (5/5) D:11        
+ Shoals (4/4) Lair:2       Spider (4/4) Lair:3        Slime (0/5) Lair:5      
+    Orc (2/2) D:12            Elf (0/3) Orc:2        Vaults (0/5) D:13        
+  Sewer (visited)         
+
+The Realm of Zot is guarded by orbs of fire.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Elyvilon
+Fedhas
+Gozag
+Hepliaklqana
+Kikubaaqudgha
+Makhleb
+Nemelex Xobeh
+Okawaru
+Qazlal
+Ru
+Sif Muna
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Yredelemnul
+Zin
+The Shining One
+Jiyva
+
+Shops:
+D:1 ?   D:7 (   D:10 ?*=   D:13 [:   Orc:1 :   Orc:2 ?*[:   Shoals:3 *
+Shoals:4 [:*
+
+Portals:
+Pandemonium: Orc:2
+
+Annotations:
+D:3 1 transporter
+D:14 !FIRE_GIANT
+Lair:4 !hydra
+Shoals:3 Roxanne
+
+
+Innate Abilities, Weirdness & Mutations
+
+You are too large for most types of armour.
+You have claws for hands.
+Your natural rate of healing is unusually fast.
+You are covered in fur. (AC +1)
+You have tough skin. (AC +1)
+
+Message History
+
+You block the ghost moth's attack. x2; The ghost moth barely misses you. The
+pharaoh ant misses you.
+The tarantella touches you but does no damage.
+You spin and attack the ghost moth repeatedly.
+You mangle the ghost moth!!
+The ghost moth is heavily wounded.
+You completely miss the ghost moth.
+The ghost moth is heavily wounded.
+You spin and attack the tarantella repeatedly.
+You claw the tarantella!
+The tarantella is moderately wounded.
+You mangle the tarantella!!
+The tarantella is almost dead.
+You are caught in a web! The tarantella barely misses you. The ghost moth hits
+you!
+The ghost moth hits you but does no damage.
+The ghost moth stings you. The tarantella touches you. You are afflicted by
+dizzying energies!
+You are confused.
+There is a web here.
+You are too confused!
+Unknown command.
+You feel better.
+The ghost moth stares at you.
+You feel your power leaking away.
+The ghost moth hits you. The ghost moth hits you! The ghost moth barely misses
+you. The pharaoh ant bites you!
+You feel drained. The tarantella touches you! You are afflicted by dizzying
+energies!
+You are confused.
+The tarantella touches you but does no damage.
+The pharaoh ant bites you!!!
+* * * LOW HITPOINT WARNING * * *
+You feel drained.
+* * * LOW HITPOINT WARNING * * *
+The ghost moth hits you but does no damage.
+The ghost moth barely misses you. The ghost moth stings you!
+* * * LOW HITPOINT WARNING * * *
+Okay, then.
+You are too confused!
+A red film seems to cover your vision as you go berserk!
+You feel yourself moving faster! You feel mighty! The tarantella barely misses
+you.
+The tarantella touches you but does no damage.
+The pharaoh ant bites you!!
+You die...
+
+      #§§§#####..##^.#
+    ###☼§☼§☼§§§......# #
+    #§§§...§§§☼......# #
+    #§§§.~§§§☼§^....%# #
+    #§§§.#§§§§☼#^....# #
+    #§§°.#☼§§§§#^...^# #
+   ##§§..#§☼§☼§#.....#
+   #^.§§≈#§§§☼☼#.....#*
+   #☼.☼○.#~...^#^....~*
+   #☼☼ss.#....~#....^.#
+  ##§○B@##~....#......#
+  #§○°ys#^.....#.....s#
+  #§○○○.#:.....#,,,,,^*
+  #☼§§○^#......#,,,,,^*
+ *#☼☼☼.^#...°.°#,^,,,≈*
+ *^....^.^...^..^s,,,≈*
+*#~....~^.....~^s^,,,^*
+*.~^..^#^.s..~#...,,,,**
+#....^.#.....≈#~..,,,,,*
+#.....~#,^..,≈*,,,,,,,~*
+*,,,,,^*^,,,,^*^,,,*****
+
+
+You could see a ghost moth (invisible), a pharaoh ant and 3 tarantellas.
+
+Vanquished Creatures
+  Wiglaf (Spider:3)
+  2 sphinx marauders
+  Polyphemus (Shoals:3)
+  Gastronok (Lair:3)
+  3 krakens
+  Donald (Shoals:3)
+  Ilsuiw (Shoals:2)
+  7 emperor scorpions
+  8 ghost moths
+  3 broodmothers
+  A spark wasp (Spider:1)
+  An ettin (D:14)
+  An entropy weaver (Spider:2)
+  A merfolk javelineer (Shoals:4)
+  6 merfolk impalers
+  A yaktaur captain (D:14)
+  A mountainshell (Lair:5)
+  3 vault guards (D:13)
+  A demonspawn (Orc:2)
+  3 radroaches
+  2 ogre magi (D:13)
+  2 merfolk avatars
+  6 catoblepae
+  2 satyrs
+  6 merfolk aquamancers
+  8 boulder beetles
+  2 centaur warriors (D:13)
+  6 two-headed ogres
+  24 death yaks
+  A jorogumo (Spider:4)
+  8 orc high priests (Orc:2)
+  2 alligator snapping turtles (Shoals:4)
+  14 demonic crawlers
+  Sonja (Lair:3)
+  A deep elf archer (D:14)
+  An eye of draining (D:14)
+  7 pharaoh ants
+  13 sea snakes
+  2 obsidian bats (Orc:2)
+  2 arcanists (D:13)
+  6 orb spiders
+  A sun moth (Spider:1)
+  4 water nymphs
+  5 orc knights (Orc:2)
+  7 steelbarb worms
+  5 harpies (Shoals:4)
+  2 deep elf pyromancers
+  18 wolf spiders
+  5 orc sorcerers
+  An oklob plant (Lair:3)
+  3 ugly things (D:14)
+  8 cyclopes
+  15 fauns
+  24 manticores
+  3 meliai (Spider:3)
+  6 elephants (Lair:5)
+  A kobold blastminer (Orc:2)
+  11 merfolk sirens
+  4 black mambas
+  A rust devil (Orc:2)
+  3 torpor snails
+  A smoke demon (Orc:2)
+  An orange demon (Orc:2)
+  2 gargoyles
+  12 cane toads
+  Maggie (D:10)
+  An unseen horror (D:12)
+  4 kobold demonologists
+  6 rime drakes
+  An efreet (D:14)
+  8 komodo dragons
+  A yaktaur (D:14)
+  A red devil (Orc:2)
+  25 merfolk
+  11 trolls
+  A ghost moth simulacrum (Spider:2)
+  A polar bear (Lair:5)
+  9 wind drakes
+  12 hornets
+  Grinder (D:4)
+  Prince Ribbit (D:5)
+  23 jumping spiders
+  38 tarantellas
+  A jumping spider (shapeshifter) (D:14)
+  19 blink frogs
+  8 snapping turtles
+  Sigmund (D:6)
+  19 culicivoras
+  A vampire (D:12)
+  A shadowghast (D:11)
+  2 ynoxinuls (Orc:2)
+  A centaur draugr (D:13)
+  7 water elementals
+  A wraith (D:13)
+  4 wyverns
+  Eustachio (D:4)
+  85 yaks
+  21 humans
+  5 basilisks
+  Grum (D:11)
+  2 wargs (Orc:2)
+  3 steam dragons
+  37 redbacks
+  8 vampire mosquitoes
+  Edmund (D:4)
+  A steelbarb worm simulacrum (Spider:3)
+  2 acid dragons (Lair:5)
+  11 water moccasins
+  Duvessa (D:5)
+  2 wolf spider simulacra (Spider:2)
+  A kobold geomancer (D:9)
+  28 orc warriors
+  2 black bears
+  An ice beast (D:6)
+  6 ogres
+  26 wolves
+  7 centaurs
+  3 phantoms
+  11 kobold brigands
+  11 bullfrogs
+  A gnoll sergeant (D:10)
+  7 scorpions
+  2 rock fish (D:6)
+  A marrowcuda (D:8)
+  A wight (D:8)
+  Dowan (D:5)
+  4 tarantella simulacra
+  2 jumping spider simulacra
+  2 culicivora simulacra
+  5 howler monkeys
+  A human zombie (D:5)
+  A bombardier beetle (D:4)
+  5 hounds
+  5 jellies
+  14 orc priests
+  3 drudes
+  6 iguanas
+  A sleepcap (D:4)
+  2 water moccasin zombies (D:5)
+  Ijyb (D:4)
+  17 orc wizards
+  3 bullfrog zombies (D:5)
+  A rock fish draugr (D:5)
+  8 gnolls
+  3 river rats (Sewer)
+  13 adders
+  4 shadow imps (D:5)
+  A hound zombie (D:5)
+  A white imp (D:6)
+  5 ufetubi
+  4 ribbon worms
+  A dart slug (D:1)
+  58 orcs
+  4 hobgoblins
+  9 jackals
+  6 quokkas
+  10 ball pythons
+  7 bats
+  10 endoplasms
+  12 frilled lizards
+  5 goblins
+  2 hobgoblin zombies (D:3)
+  43 kobolds
+  A kobold draugr (D:3)
+  A kobold zombie (D:3)
+  8 rats
+1095 creatures vanquished.
+
+Vanquished Creatures (collateral kills)
+  2 hydras
+  A centaur warrior (Shoals:2)
+  An orc sorcerer (Orc:2)
+  A manticore (D:10)
+  An ugly thing (D:14)
+  A tengu conjurer (D:8)
+  A jumping spider (Spider:3)
+  A bullfrog (D:8)
+9 creatures vanquished.
+
+Vanquished Creatures (others)
+  A steam dragon (D:8)
+1 creature vanquished.
+
+Grand Total: 1105 creatures vanquished
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | jkubb29 the Troll Fighter began the quest for the Orb.
+     0 | D:1      | Reached XP level 1. HP: 22/22 MP: 0/0
+    74 | D:1      | Found Leutur's Magic Scroll Boutique.
+    87 | D:1      | Reached XP level 2. HP: 27/29 MP: 1/1
+   177 | D:1      | Bought a scroll of teleportation for 33 gold pieces
+   513 | D:1      | Reached XP level 3. HP: 36/36 MP: 2/2
+   939 | D:2      | Found a faded altar of an unknown god.
+  1377 | D:3      | Reached skill level 3 in Unarmed Combat
+  1390 | D:3      | Reached XP level 4. HP: 15/44 MP: 3/3
+  1489 | D:3      | Found an ornate altar of the Wu Jian Council.
+  1517 | D:3      | Became a worshipper of the Wu Jian Council
+  1547 | D:3      | Found a shimmering blue altar of Sif Muna.
+  1622 | D:3      | Reached XP level 5. HP: 28/53 MP: 4/4
+  1657 | D:3      | Found a transporter.
+  1666 | D:3      | Found a glowing golden altar of the Shining One.
+  1854 | D:1      | Bought a scroll of identify for 22 gold pieces
+  1854 | D:1      | Bought a scroll of identify for 22 gold pieces
+  1911 | D:3      | Found a glowing silver altar of Zin.
+  1912 | D:3      | Encountered an angel
+  2013 | D:3      | Reached skill level 4 in Unarmed Combat
+  2161 | D:4      | Encountered Eustachio
+  2307 | D:4      | Found a hazy altar of Hepliaklqana.
+  2307 | D:4      | Found a hide-covered altar of Uskayaw.
+  2319 | D:4      | Encountered Grinder
+  2340 | D:4      | Killed Grinder
+  2341 | D:4      | Reached XP level 6. HP: 47/61 MP: 5/5
+  2378 | D:4      | Encountered Edmund
+  2404 | D:4      | Killed Eustachio
+  2405 | D:4      | Reached skill level 5 in Unarmed Combat
+  2405 | D:4      | Reached XP level 7. HP: 47/68 MP: 6/6
+  2409 | D:4      | Reached * piety under Wu Jian
+  2440 | D:4      | Killed Edmund
+  2472 | D:4      | Found a burning altar of Makhleb.
+  2496 | D:4      | Identified the +6 leather armour "Evenk" {Int+3 Dex+3}
+  2539 | D:4      | Encountered Ijyb
+  2545 | D:4      | Killed Ijyb
+  2616 | D:4      | Reached skill level 6 in Unarmed Combat
+  2902 | D:5      | Entered Level 5 of the Dungeon
+  2938 | D:5      | Reached XP level 8. HP: 78/78 MP: 7/7
+  2982 | D:5      | Found a shimmering altar of Xom.
+  3166 | D:5      | Reached ** piety under Wu Jian
+  3180 | D:5      | Encountered Dowan
+  3206 | D:5      | Encountered Duvessa
+  3210 | D:5      | Killed Dowan
+  3211 | D:5      | Reached skill level 5 in Shields
+  3308 | D:5      | Found a broken altar of Ashenzari.
+  3331 | D:5      | Encountered Prince Ribbit
+  3348 | D:5      | Killed Prince Ribbit
+  3349 | D:5      | Reached skill level 7 in Unarmed Combat
+  3413 | D:5      | Found Wysojin's Magic Scroll Shoppe.
+  3445 | D:5      | Killed Duvessa
+  3760 | D:5      | Reached skill level 5 in Fighting
+  3783 | D:5      | Found an ancient bone altar of Kikubaaqudgha.
+  3795 | D:5      | Reached XP level 9. HP: 88/88 MP: 8/8
+  3866 | D:6      | Reached skill level 5 in Dodging
+  3883 | D:6      | Found a shadowy altar of Dithmenos.
+  3922 | D:6      | Reached skill level 8 in Unarmed Combat
+  3939 | D:6      | Encountered Sigmund
+  3952 | D:6      | Killed Sigmund
+  3962 | D:6      | Found a glowing drain.
+  4037 | Sewer    | Entered a sewer
+  4149 | Sewer    | Reached skill level 9 in Unarmed Combat
+  4355 | Sewer    | Reached *** piety under Wu Jian
+  4788 | D:6      | Found a white marble altar of Elyvilon.
+  4896 | D:6      | Found a basalt altar of Yredelemnul.
+  4960 | D:6      | Found a snail-covered altar of Cheibriados.
+  5012 | D:6      | Found an opulent altar of Gozag.
+  5069 | D:6      | Found a sparkling altar of Nemelex Xobeh.
+  5146 | D:6      | Found a bloodstained altar of Trog.
+  5241 | D:7      | Reached XP level 10. HP: 98/98 MP: 9/9
+  5302 | D:7      | Found a statue of an orb of fire.
+  5319 | D:7      | Found a staircase to the Ecumenical Temple.
+  5320 | D:7      | Found a statue of an orb of fire.
+  5544 | D:7      | Found a sacrificial altar of Ru.
+  5735 | D:7      | Found Sedit's Antique Weapon Shop.
+  6057 | D:7      | Reached **** piety under Wu Jian
+  6190 | D:8      | Encountered a two-headed ogre
+  6260 | D:8      | Killed a two-headed ogre
+  6261 | D:8      | Reached skill level 10 in Unarmed Combat
+  6742 | D:8      | Encountered a deep elf pyromancer
+  6762 | D:8      | Killed a deep elf pyromancer
+  6763 | D:8      | Reached skill level 11 in Unarmed Combat
+  6764 | D:8      | Reached XP level 11. HP: 75/107 MP: 10/10
+  7026 | D:9      | Encountered a two-headed ogre
+  7037 | D:9      | Killed a two-headed ogre
+  7227 | D:9      | Reached ***** piety under Wu Jian
+  7536 | D:9      | Found a blossoming altar of Fedhas.
+  7552 | D:9      | Found a stormy altar of Qazlal.
+  7682 | D:10     | Entered Level 10 of the Dungeon
+  7682 | D:10     | Found Nulisol's Jewellery Shop.
+  7709 | D:10     | Encountered Maggie
+  7721 | D:10     | Encountered a two-headed ogre
+  7739 | D:10     | Killed Maggie
+  7741 | D:10     | Killed a two-headed ogre
+  7741 | D:10     | Reached skill level 12 in Unarmed Combat
+  7844 | D:10     | Found a radiant altar of Vehumet.
+  7883 | D:10     | Found Usaobror's Magic Scroll Shop.
+  7891 | D:10     | Bought a scroll of blinking for 142 gold pieces
+  7891 | D:10     | Bought a scroll of fear for 60 gold pieces
+  7891 | D:10     | Bought a scroll of teleportation for 45 gold pieces
+  7891 | D:10     | Bought a scroll of blinking for 142 gold pieces
+  7891 | D:10     | Bought a scroll of teleportation for 45 gold pieces
+  7891 | D:10     | Bought a scroll of identify for 30 gold pieces
+  7891 | D:10     | Bought a scroll of identify for 30 gold pieces
+  7936 | D:10     | Encountered a boulder beetle
+  7957 | D:10     | Killed a boulder beetle
+  8043 | D:10     | Found Ukoamnan's Assorted Antiques.
+  8177 | D:10     | Found an iron altar of Okawaru.
+  8554 | D:11     | Found a staircase to the Lair.
+  8676 | D:11     | Encountered Grum
+  8692 | D:11     | Killed Grum
+  8716 | D:11     | Reached XP level 12. HP: 119/119 MP: 11/11
+  9311 | D:12     | Encountered a two-headed ogre
+  9332 | D:12     | Killed a two-headed ogre
+  9438 | D:12     | Reached skill level 13 in Unarmed Combat
+ 10071 | D:12     | Found a staircase to the Orcish Mines.
+ 10183 | D:12     | Encountered a boulder beetle
+ 10194 | D:12     | Killed a boulder beetle
+ 10581 | D:13     | Encountered a centaur warrior
+ 10584 | D:13     | Found Xuuk's Self-Published Books.
+ 10589 | D:13     | Killed a centaur warrior
+ 10926 | D:13     | Reached skill level 14 in Unarmed Combat
+ 11008 | D:13     | Found Pesat's Armour Shoppe.
+ 11044 | D:13     | Encountered a centaur warrior
+ 11044 | D:13     | Encountered an ogre mage
+ 11056 | D:13     | Killed a centaur warrior
+ 11058 | D:13     | Paralysed by an ogre mage for 2.5 turns
+ 11061 | D:13     | Killed an ogre mage
+ 11088 | D:13     | Encountered an ogre mage
+ 11095 | D:13     | Reached XP level 13. HP: 130/130 MP: 12/12
+ 11361 | D:13     | Found a gate to the Vaults.
+ 11620 | D:14     | Reached ****** piety under Wu Jian
+ 11646 | D:14     | Reached skill level 10 in Shields
+ 11781 | Lair:1   | Entered Level 1 of the Lair of Beasts
+ 12094 | Lair:1   | Reached skill level 15 in Unarmed Combat
+ 13015 | Lair:2   | Found a staircase to the Shoals.
+ 13105 | Lair:2   | Identified a scroll of acquirement
+ 13628 | Lair:2   | Acquired 1157 gold pieces
+ 13890 | Lair:3   | Found a hole to the Spider Nest.
+ 14061 | Lair:3   | Reached XP level 14. HP: 121/141 MP: 13/13
+ 14224 | Lair:3   | Encountered Gastronok
+ 14236 | Lair:3   | Killed Gastronok
+ 14330 | Lair:3   | Found a phantasmal passage.
+ 14569 | Lair:3   | Encountered Sonja
+ 14585 | Lair:3   | Killed Sonja
+ 14785 | Lair:4   | Reached skill level 10 in Fighting
+ 14814 | Lair:4   | Reached skill level 16 in Unarmed Combat
+ 16067 | Lair:5   | Entered Level 5 of the Lair of Beasts
+ 16442 | Lair:5   | Reached skill level 17 in Unarmed Combat
+ 17155 | Lair:5   | Reached XP level 15. HP: 125/152 MP: 14/14
+ 17418 | Lair:5   | Found a viscous altar of Jiyva.
+ 17424 | Lair:5   | Found a staircase to the Slime Pits.
+ 17435 | Lair:5   | Identified the +5 quarterstaff "Awarall" {antimagic, rF+}
+ 18144 | Orc:1    | Entered Level 1 of the Orcish Mines
+ 18149 | Orc:1    | Found Faliqesi's Book Boutique.
+ 18268 | D:10     | Bought a scroll of blinking for 351 gold pieces
+ 18503 | Orc:1    | You fall into a shaft and drop 1 floor!
+ 18503 | Orc:2    | Entered Level 2 of the Orcish Mines
+ 19084 | Orc:2    | Found a staircase to the Elven Halls.
+ 19246 | Orc:2    | Found Goesoech's Magic Scroll Boutique.
+ 19279 | Orc:2    | Reached skill level 18 in Unarmed Combat
+ 19322 | Orc:2    | Found Buonatij's General Store.
+ 19437 | Orc:2    | Bought a scroll of teleportation for 49 gold pieces
+ 19437 | Orc:2    | Bought a scroll of blinking for 157 gold pieces
+ 19437 | Orc:2    | Bought a scroll of fear for 66 gold pieces
+ 19437 | Orc:2    | Bought a scroll of teleportation for 49 gold pieces
+ 19439 | Orc:2    | Bought a scroll of identify for 36 gold pieces
+ 19788 | Orc:2    | Found Jutigyll's Antique Armour Emporium.
+ 19788 | Orc:2    | Found Kerybaps's Book Shoppe.
+ 19801 | Orc:2    | Found a one-way gate leading to the halls of Pandemonium.
+ 19984 | D:14     | Identified the air staff "Fyutop" {rElec rC+ Conj Forge
+                  | Air}
+ 20259 | D:14     | Encountered a fire giant
+ 20269 | D:14     | HP: 1/111 [fire giant/bolt of fire (45)]
+ 20667 | Spider:1 | Entered Level 1 of the Spider Nest
+ 20930 | Shoals:1 | Entered Level 1 of the Shoals
+ 21213 | Shoals:1 | Reached skill level 19 in Unarmed Combat
+ 21405 | Shoals:1 | Reached XP level 16. HP: 148/151 MP: 15/15
+ 21728 | Shoals:2 | Encountered Ilsuiw
+ 21838 | Shoals:2 | Encountered a kraken
+ 21838 | Shoals:2 | HP: 7/159 [barbs]
+ 21842 | Shoals:2 | Killed Ilsuiw
+ 22242 | Shoals:2 | Encountered a sphinx marauder
+ 22262 | Shoals:2 | Killed a sphinx marauder
+ 22686 | Shoals:3 | Encountered Polyphemus
+ 22714 | Shoals:3 | Identified the granite talisman "Efuigurph" {-Tele MP+9
+                  | Str+3}
+ 22714 | Shoals:3 | Encountered Roxanne
+ 22857 | Shoals:3 | Encountered Donald
+ 22878 | Shoals:3 | Encountered a kraken
+ 23006 | Shoals:3 | Killed Donald
+ 23098 | Shoals:3 | Killed a kraken
+ 23116 | Shoals:3 | Found Poism's Magical Supplies.
+ 23139 | Shoals:3 | Encountered a kraken
+ 23276 | Shoals:3 | Killed a kraken
+ 23354 | Shoals:3 | Killed Polyphemus
+ 23374 | Shoals:3 | Reached skill level 20 in Unarmed Combat
+ 23734 | Shoals:4 | Entered Level 4 of the Shoals
+ 24142 | Shoals:4 | Found Qiydiume's Gadget Gallery.
+ 24228 | Shoals:4 | Found Imeozose's Book Boutique.
+ 24603 | Shoals:4 | Found Xineczec's Armour Emporium.
+ 24629 | Shoals:4 | Encountered a kraken
+ 24642 | Shoals:4 | Reached XP level 17. HP: 156/175 MP: 16/16
+ 24673 | Shoals:4 | Got a barnacled rune of Zot
+ 24848 | Shoals:4 | Identified the conjuration staff of the Jester {^Fragile
+                  | rElec Conj Ice Air}
+ 25484 | Lair:3   | Reached skill level 1 in Shapeshifting
+ 26333 | Spider:1 | Reached skill level 5 in Shapeshifting
+ 28141 | Spider:3 | Identified the +3 hat of Feasting {SInv}
+ 28141 | Spider:3 | Encountered Wiglaf
+ 28323 | Spider:3 | Identified the amulet of Qazlal's Reproof {Reflect rElec
+                  | Str+3 SH+5}
+ 28633 | Spider:3 | Reached skill level 10 in Shapeshifting
+ 28633 | Spider:3 | Reached XP level 18. HP: 185/185 MP: 17/17
+ 28848 | Spider:3 | Found a phantasmal passage.
+ 28887 | Spider:3 | Killed Wiglaf
+ 28965 | Spider:3 | Identified the +1 rapier "Xufupn" {venom, Int+2}
+ 30179 | Spider:4 | Entered Level 4 of the Spider Nest
+ 30874 | Spider:4 | Demolished by a pharaoh ant
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      ldierk_walled_garden, layout_rooms, serial_shops,
+          nicolae_shop_window_shopping, minmay_lizard_pond
+D:2:      layout_loops_ring, basic_ecumenical_altar, nrook_uturn
+D:3:      layout_rooms, nicolae_overflow_four_foyers_diagonal,
+          nicolae_tso_besieged_by_evil, nicolae_overflow_prove_your_dedication,
+          zin_angel, kennysheep_decorative_pillar, corexii_hall_statues_i
+D:4:      layout_loops_ring, makhleb_heckhound_becter,
+          gammafunk_temple_overflow_elements, uniq_grinder, uniq_ijyb,
+          uniq_eustachio, uniq_crazy_yiuf_cottage, uniq_edmund
+D:5:      layout_cave_pools, nicolae_ashenzari_panopticon,
+          lemuel_mausoleum_altar_kikubaaqudgha, xom_teletrap_fun, serial_shops,
+          nicolae_shop_rolled_up, uniq_duvessa, uniq_prince_ribbit1
+D:6:      layout_gridville, kennysheep_ying_yang,
+          nicolae_overflow_hidden_temple, nicolae_gozag_seed_capital,
+          trog_butcher_becter, nemelex_diamond_rough_becter,
+          nicolae_dithmenos_not_quite_primordial_nightfall,
+          gup_sewer_entry_glass, grunt_decor_one_mirror, uniq_sigmund
+D:7:      layout_basic, nicolae_ru_awakened_eye, minmay_temple_entry_large_hall,
+          serial_shops, nicolae_shop_flopsided
+D:8:      minmay_slanted_spiral_squares, layout_cave_pools
+D:9:      layout_roguey, grunt_temple_overflow_forces_of_nature
+D:10:     layout_long_grid, okawaru_humans,
+          nicolae_overflow_four_feature_corners, serial_shops,
+          nicolae_shop_tiny_real_fake_doors, shop, shop,
+          nicolae_concentric_dashed_squares_mild, uniq_maggie
+D:11:     layout_basic, lair_entry_dummy, uniq_grum
+D:12:     layout_basic, orc_0_dummy
+D:13:     layout_roguey, grunt_vaults_entry_tiered, serial_shops,
+          nicolae_shop_stone, nicolae_custom_books, kb_rosetta
+D:14:     minmay_octo_star, layout_rooms, minmay_mirror_moons_of_madness
+Lair:1:   layout_cave_pods, grunt_megastairs_5, nicolae_lair_sylvan_descent
+Lair:2:   layout_cave_shapes, mainiacjoe_shoals_entry_four_pools
+Lair:3:   layout_long_grid, spider_nest_entry_web_field,
+          index_necropolis_entry_life_lattice, uniq_sonja, uniq_gastronok
+Lair:4:   layout_layer_cave, nicolae_lair_rhizomatic_trees,
+          infiniplex_staircase_pool_2
+Lair:5:   evilmike_catoblepas_cave, layout_layer_cave, slime_entry_2,
+          guppyfry_lair_drakes
+Shoals:1: layout_shoals
+Shoals:2: layout_shoals, uniq_ilsuiw
+Shoals:3: layout_shoals, nicolae_shop_magical_conduits, uniq_donald,
+          uniq_polyphemus, uniq_roxanne
+Shoals:4: shoals_end_hangedman, layout_shoals, serial_shops,
+          nicolae_shop_real_fake_doors, parchment_shop, overgrown_tower,
+          nicolae_shop_gadgets, nicolae_shoals_drake_roost
+Spider:1: layout_cave_pods, einodemon_crawler_minivault,
+          hangedman_spider_tarantella_strand
+Spider:2: layout_spider_delve, nicolae_spider_claw_tunnel
+Spider:3: spiders_nest_scorpion_pit, index_necropolis_entry_repeat_visits,
+          nicolae_spider_bug_shape, uniq_wiglaf
+Spider:4: grunt_spider_rune_parallel
+Orc:1:    layout_caves, serial_shops, parchment_shop,
+          nicolae_orc_sculptors_studio
+Orc:2:    pf_orc_diabolical, layout_diamond_mine
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 |
+---------------+-------------------------------------------------------+-----
+Shields        |     3           4     5  6  7  8  9 10 11 12 14       | 14.2
+Unarmed Combat |        3     4  5  6  7  9 11 12 14 15 17 19 20       | 20.9
+Fighting       |           3        4  5     6  7  8  9 10 11 12 13    | 13.1
+Dodging        |           3        4     5  6  7  8  9                |  9.9
+Shapeshifting  |                                                 10 12 | 12.7
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 || total
+---------------------------+-------+-------+-------+-------+-------+-------++-------
+ Attack: Normal            |   131 |    86 |   285 |   486 |   855 |   718 ||  2561
+         Lunge             |       |     4 |    23 |    43 |    78 |    86 ||   234
+         Whirlwind         |       |       |     2 |    43 |   191 |   296 ||   532
+  Melee: Unarmed           |   131 |    90 |   312 |   585 |  1217 |  1274 ||  3609
+  Throw: Throwing net      |       |       |       |       |       |     1 ||     1
+ Invoke: Serpent's Lash    |       |       |       |     2 |     4 |    14 ||    20
+         Heavenly Storm    |       |       |       |       |       |     7 ||     7
+Ability: Wall Jump         |       |       |     1 |     2 |     5 |    14 ||    22
+  Evoke: Wand of mindburst |       |       |     2 |       |       |     1 ||     3
+         Wand of flame     |       |       |       |     9 |     1 |    11 ||    21
+         Wand of charming  |       |       |       |     2 |     7 |       ||     9
+         Wand of roots     |       |       |       |       |     2 |    22 ||    24
+         Phantom mirror    |       |       |       |       |     2 |     2 ||     4
+         Phial of floods   |       |       |       |       |     1 |       ||     1
+         Wand of quicksilv |       |       |       |       |       |     5 ||     5
+  Drink: Might             |       |     1 |       |       |       |     1 ||     2
+         Haste             |       |       |       |     1 |       |       ||     1
+         Heal wounds       |       |       |       |       |     3 |     5 ||     8
+         Curing            |       |       |       |       |       |     2 ||     2
+         Berserk rage      |       |       |       |       |       |     1 ||     1
+         Resistance        |       |       |       |       |       |     1 ||     1
+   Read: Identify          |       |     6 |     1 |     4 |     6 |     9 ||    26
+         Teleportation     |       |     1 |       |       |       |     1 ||     2
+         Summoning         |       |       |       |     2 |     1 |       ||     3
+         Blinking          |       |       |       |     1 |     3 |     2 ||     6
+         Acquirement       |       |       |       |       |     1 |       ||     1
+         Revelation        |       |       |       |       |     1 |     1 ||     2
+         Fog               |       |       |       |       |       |     4 ||     4
+         Fear              |       |       |       |       |       |     2 ||     2
+   Stab: Sleeping          |       |       |     9 |       |       |     1 ||    10
+         Distracted        |       |       |       |       |     1 |     2 ||     3
+ Armour: Robe              |    72 |    56 |   111 |   172 |       |       ||   411
+         Troll leather arm |       |       |       |    38 |   424 |   651 ||  1113
+  Dodge: Dodged            |    30 |    39 |    86 |   241 |   240 |   447 ||  1083
+  Block: Kite shield       |    45 |    52 |   113 |   240 |   661 |   921 ||  2032
+         Reflection        |       |       |       |     7 |    23 |    44 ||    74
+

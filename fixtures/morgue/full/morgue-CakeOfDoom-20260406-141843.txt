@@ -1,0 +1,564 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-257-gf9e06672e4 (webtiles) character file.
+
+Game seed: 3903317066254474470
+
+15885 CakeOfDoom the Zephyrmancer (level 12, -1/73 HPs)
+             Began as a Tengu Air Elementalist on Apr 6, 2026.
+             Was an Initiate of Ru.
+             Slain by a meliai
+             ... wielding a +0 broad axe
+              (6 damage)
+             ... in a Gauntlet.
+             The game lasted 00:55:43 (7930 turns).
+
+CakeOfDoom the Zephyrmancer (TeAE)                  Turns: 7930, Time: 00:55:43
+
+Health: -1/73      AC: 10    Str: 14    XL:     12   Next: 31%
+Magic:  0/25       EV: 17    Int: 17    God:    Ru [......]
+Gold:   811        SH:  7    Dex: 19    Spells: 20/28 levels left
+
+rFire   . . .  (100%)   i - +3 long sword "Esarghoura" {venom, rElec rN+ Str+3 Dex-3}
+rCold   . . .  (100%)   l - +2 buckler
+rNeg    + . .  (50%)    e - +1 leather armour of Pleasant Breezes {rPois Will+}
+rPois   +      (33%)    (no helmet)
+rElec   +      (33%)    n - +1 cloak
+rCorr   .      (100%)   (no gloves)
+SInv    .               j - amulet of guardian spirit
+Will    +....           f - +4 ring of protection
+Stlth   ++              d - +6 ring of dexterity
+HPRegen 0.32/turn
+MPRegen 0.19/turn
+
+%: no teleportation, acrobat, guardian spirit
+@: flying
+A: beak, talons 3, evasive flight, acrobatic
+a: Renounce Religion (0%)
+
+
+You were in a Gauntlet.
+You worshipped Ru.
+Ru was noncommittal.
+You visited 3 branches of the dungeon, and saw 13 of its levels.
+You also visited: Gauntlet.
+
+You collected 811 gold pieces.
+
+Inventory:
+
+Hand Weapons
+ b - a +2 long sword of flaming
+ i - the +3 long sword "Esarghoura" (weapon) {venom, rElec rN+ Str+3 Dex-3}
+   (You found it on level 7 of the Dungeon)   
+   
+   rElec:     It insulates you from electricity.
+   rN+:       It protects you from negative energy.
+   Str+3:     It affects your strength (+3).
+   Dex-3:     It affects your dexterity (-3).
+   
+   It cannot be enchanted further.
+Armour
+ a - a +0 robe
+ e - the +1 leather armour of Pleasant Breezes (worn) {rPois Will+}
+   (You found it on level 4 of the Dungeon)   
+   
+   rPois:     It protects you from poison.
+   Will+:     It increases your willpower.
+   
+   It cannot be enchanted further.
+ g - a +0 troll leather armour
+ l - a +2 buckler (worn)
+ m - a +0 kite shield
+ n - a +1 cloak (worn)
+Jewellery
+ c - a +6 ring of intelligence
+ d - a +6 ring of dexterity (worn)
+ f - a +4 ring of protection (worn)
+ h - a ring of resist corrosion
+ j - an amulet of guardian spirit (worn)
+ k - a ring of poison resistance
+Wands
+ a - a wand of flame (23)
+ p - a wand of polymorph (8)
+ b - a wand of quicksilver (14)
+ e - a wand of charming (14)
+ c - a wand of warping (6)
+Scrolls
+ w - 3 scrolls of enchant weapon
+ b - a scroll of blinking
+ t - 5 scrolls of teleportation
+ r - 3 scrolls of revelation
+ j - a scroll of noise {unknown}
+ e - 2 scrolls of fog {unknown}
+ k - a scroll of silence {unknown}
+ d - a scroll of amnesia {unknown}
+ l - 2 scrolls of fear {unknown}
+ m - a scroll of poison {unknown}
+Potions
+ g - a potion of magic
+ B - 3 potions of berserk rage
+ M - 2 potions of mutation
+ A - 2 potions of attraction
+ i - 2 potions of invisibility
+ c - 3 potions of curing
+ L - 2 potions of lignification
+ w - 2 potions of heal wounds
+ h - a potion of haste
+ f - a potion of enlightenment {unknown}
+ n - a potion of resistance {unknown}
+
+
+   Skills:
+ + Level 8.1 Fighting
+ + Level 10.9 Long Blades
+ + Level 3.9 Armour
+ + Level 5.0 Dodging
+ - Level 2.2 Stealth
+ + Level 2.2 Shields
+ + Level 8.8 Spellcasting
+ + Level 5.8 Conjurations
+ + Level 12.4 Air Magic
+
+
+You had 20 spell levels left.
+You knew the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Shock                 Conj/Air       100%       1d9       1%          1
+b - Swiftness             Air            49%        N/A       1%          3
+c - Airstrike             Air            24%        2d(4-20)  1%          4
+
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Static Discharge         Conj/Air       76%        3-7/arc   1%          2
+ Mephitic Cloud           Conj/Alch/Air  28%        N/A       4%          3
+ Momentum Strike          Conj/Tloc      34%        3d8       8%          2
+ Cigotuvi's Putrefaction  Necr/Air       28%        N/A       12%         4
+ Forge Lightning Spire    Air/Frge       28%        3d5       12%         4
+ Stone Arrow              Conj/Erth      34%        3d9       14%         3
+ Apportation              Tloc           14%        N/A       16%         1
+ Freeze                   Ice            28%        1d5       16%         1
+ Summon Small Mammal      Summ           28%        N/A       16%         1
+ Call Imp                 Summ           14%        N/A       24%         2
+ Jinxbite                 Hex            14%        2d2       24%         2
+ Lesser Beckoning         Tloc           14%        N/A       24%         2
+ Sublimation of Blood     Necr           7%         N/A       24%         2
+ Call Canine Familiar     Summ           7%         N/A       43%         3
+ Inner Flame              Hex/Fire       7%         N/A       43%         3
+ Launch Clockwork Bee     Frge           7%         N/A       43%         3
+ Maxwell's Portable Pile  Tloc           7%         (3-9)d3   43%         3
+ Sigil of Binding         Hex            7%         N/A       43%         3
+ Summon Ice Beast         Ice/Summ       7%         N/A       43%         3
+ Iskenderun's Mystic Bla  Conj/Tloc      17%        2d5 (+2d2 43%         4
+ Dimensional Bullseye     Hex/Tloc       3%         N/A       85%         4
+ Eringya's Surprising Cr  Summ           7%         N/A       85%         4
+ Passage of Golubria      Tloc           7%         N/A       85%         4
+ Sticky Flame             Fire/Alch      7%         2d4       85%         4
+ Summon Seismosaurus Egg  Summ/Erth      7%         N/A       85%         4
+ Bombard                  Conj/Erth      8%         9d2       100%        6
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (11/15)            Temple (1/1) D:7            Lair (1/5) D:8         
+Gauntlet (1/1)            
+   Orc: D:9-12      
+
+The Realm of Zot is guarded by orbs of entropy.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Elyvilon
+Fedhas
+Gozag
+Hepliaklqana
+Kikubaaqudgha
+Makhleb
+Nemelex Xobeh
+Okawaru
+Qazlal
+Ru
+Sif Muna
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Yredelemnul
+Zin
+The Shining One
+
+Annotations:
+Gauntlet 6 transporters
+
+
+Innate Abilities, Weirdness & Mutations
+
+You have a beak for a mouth.
+You have claws for feet.
+Your magical flight helps you evade attacks. (EV +4)
+You can magically evade attacks while moving or waiting.
+
+Message History
+
+Aim: a meliai, wielding a +0 war axe of sundering and wearing a +0 robe (empty
+space bonus: 6/8)
+The open air twists around violently and strikes the meliai!
+The meliai is severely wounded.
+The meliai invokes the aid of its god against you.
+Something smites you!
+Casting: Airstrike (dangerous; 1% risk of failure)
+Confirm with . or Enter, or press ? or * to list all spells.
+Aiming: Airstrike (dangerous; 1% risk of failure)
+Press: ? - help, Dir - move target
+Aim: a meliai, wielding a +0 war axe of sundering and wearing a +0 robe
+(severely wounded, empty space bonus: 7/8)
+The open air twists around violently and strikes the meliai!!
+You kill the meliai!
+Casting: Airstrike (dangerous; 1% risk of failure)
+Confirm with . or Enter, or press ? or * to list all spells.
+Aiming: Airstrike (dangerous; 1% risk of failure)
+Press: ? - help, Dir - move target
+Aim: a meliai, wielding a +0 broad axe and wearing a +0 robe (empty space
+bonus: 7/8)
+The open air twists around violently and strikes the meliai!!
+The meliai is almost dead.
+The meliai closely misses you.
+The meliai stings you but does no damage.
+The meliai invokes the aid of its god against you.
+Something smites you!
+You tear a large gash into the net.
+The meliai hits you with a +0 broad axe!
+The meliai stings you but does no damage.
+The meliai hits you with a +0 broad axe!
+The meliai stings you but does no damage.
+You struggle against the net.
+The meliai invokes the aid of its god against you.
+Something smites you! The meliai hits you but does no damage.
+The meliai stings you but does no damage.
+You shred the net and break free!
+The meliai hits you with a +0 broad axe!
+* * * LOW HITPOINT WARNING * * *
+The meliai stings you.
+* * * LOW HITPOINT WARNING * * *
+The meliai hits you with a +0 broad axe!
+You die...
+Ru respects your ultimate sacrifice.
+
+#ß#..#s##.##.###...#....
+###..###########...#####
+  #.....#.©.#....≈......
+###...ß.#...#...§ß§.....
+#ß#.....#.©.#....§......
+###..###########...#####
+  #..##.[!©[..##...#phhh
+###..#.#y)...#.#...#hh..
+#ß#..#.@#y..#§§#...#h.#.
+###..#...#.#^..#...#..PP
+  #..#...^#^...#...#....
+###..#..^#©#...#...#..P.
+#ß#..#.^#...#..#...#..#P
+###..#.#.....#.#.∩.#.PPP
+  #..##.......##...#....
+###..###########...#####
+#ß#.......©.............
+
+
+You could see a meliai.
+
+Vanquished Creatures
+  2 two-headed ogres
+  Sprozz (D:7)
+  2 cyclopes (D:11)
+  A meliai (Gauntlet)
+  A black mamba (Lair:1)
+  A gargoyle (D:11)
+  2 cane toads (Lair:1)
+  A kobold demonologist (D:11)
+  2 komodo dragons (Lair:1)
+  6 trolls
+  Grinder (D:3)
+  Prince Ribbit (D:5)
+  2 shadowghasts
+  A wraith (D:10)
+  13 yaks
+  A steam dragon (D:10)
+  An acid dragon (D:10)
+  9 water moccasins
+  4 kobold geomancers
+  7 orc warriors
+  3 ice beasts
+  2 sky beasts (D:8)
+  A meliai zombie (D:10)
+  4 ogres
+  6 wolves (Lair:1)
+  3 centaurs
+  2 phantoms (D:5)
+  3 kobold brigands
+  4 bullfrogs
+  6 scorpions
+  4 rock fish
+  7 wights
+  8 killer bees (D:9)
+  3 electric eels (D:8)
+  5 howler monkeys
+  A crimson imp (D:7)
+  3 bombardier beetles
+  3 hounds
+  3 jellies
+  6 orc priests
+  3 gnoll boudas
+  A sleepcap (D:7)
+  A clockroach (D:4)
+  4 iguanas
+  2 drudes (D:8)
+  12 orc wizards
+  A centaur zombie (D:10)
+  11 gnolls
+  A howler monkey zombie (D:10)
+  3 adders
+  3 shadow imps (D:5)
+  2 white imps (D:5)
+  A dart slug (D:5)
+  33 orcs
+  2 ribbon worms (D:3)
+  4 endoplasms
+  4 hobgoblins
+  2 jackals (D:1)
+  A quokka (D:2)
+  5 ball pythons
+  5 bats
+  A frilled lizard (D:2)
+  2 goblins (D:1)
+  5 kobolds
+  3 rats
+  A spectral hobgoblin (D:3)
+249 creatures vanquished.
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | CakeOfDoom the Tengu Air Elementalist began the quest for
+                  | the Orb.
+     0 | D:1      | Reached XP level 1. HP: 10/10 MP: 4/4
+   134 | D:1      | Reached XP level 2. HP: 15/15 MP: 3/6
+   721 | D:2      | You fall into a shaft and drop 2 floors!
+   900 | D:2      | Reached skill level 1 in Fighting
+   900 | D:2      | Reached XP level 3. HP: 15/20 MP: 7/7
+  1418 | D:3      | Encountered Grinder
+  1427 | D:3      | Learned a level 3 spell: Swiftness
+  1434 | D:3      | Found a faded altar of an unknown god.
+  1481 | D:3      | HP: 1/20 [Grinder (8)]
+  1695 | D:4      | Encountered a scorpion
+  1702 | D:4      | Killed a scorpion
+  1703 | D:4      | Reached skill level 5 in Air Magic
+  1703 | D:4      | Reached XP level 4. HP: 26/26 MP: 1/9
+  1734 | D:4      | Reached XP level 5. HP: 15/30 MP: 4/10
+  1739 | D:4      | Learned a level 4 spell: Airstrike
+  1749 | D:4      | Identified the +1 leather armour of Pleasant Breezes {rPois
+                  | Will+}
+  1860 | D:3      | Killed Grinder
+  1861 | D:3      | Reached XP level 6. HP: 36/36 MP: 1/12
+  1900 | D:3      | Found a sparkling altar of Nemelex Xobeh.
+  1900 | D:3      | Found a broken altar of Ashenzari.
+  2047 | D:4      | Reached skill level 6 in Air Magic
+  2160 | D:4      | Gained mutation: Your magical flight helps you evade
+                  | attacks. (EV +4) [Tengu growth]
+  2160 | D:4      | Reached XP level 7. HP: 40/40 MP: 3/14
+  2191 | D:4      | Found a sacrificial altar of Ru.
+  2218 | D:4      | Became a worshipper of Ru the Awakened
+  2448 | D:4      | Reached skill level 1 in Long Blades
+  2450 | D:4      | Reached skill level 7 in Air Magic
+  2563 | D:5      | Entered Level 5 of the Dungeon
+  2584 | D:5      | Encountered Prince Ribbit
+  2605 | D:5      | Killed Prince Ribbit
+  2606 | D:5      | Reached XP level 8. HP: 38/48 MP: 0/16
+  2725 | D:5      | Reached skill level 1 in Armour
+  2773 | D:5      | Reached skill level 5 in Spellcasting
+  2808 | D:5      | Reached skill level 8 in Air Magic
+  2924 | D:5      | Reached skill level 5 in Conjurations
+  3013 | D:5      | Reached XP level 9. HP: 48/52 MP: 8/18
+  3512 | D:6      | Encountered a troll
+  3527 | D:6      | Killed a troll
+  3528 | D:6      | Reached skill level 5 in Long Blades
+  3528 | D:6      | Reached skill level 9 in Air Magic
+  3639 | D:6      | Reached skill level 5 in Fighting
+  3946 | D:7      | Identified the +3 long sword "Esarghoura" {venom, rElec rN+
+                  | Str+3 Dex-3}
+  3954 | D:7      | Found a staircase to the Ecumenical Temple.
+  3954 | D:7      | Found a statue of an orb of entropy.
+  3957 | D:7      | Found a statue of an orb of entropy.
+  4003 | Temple   | Found a transporter.
+  4003 | Temple   | Found a transporter.
+  4003 | Temple   | Found a transporter.
+  4003 | Temple   | Found a transporter.
+  4003 | Temple   | Entered the Ecumenical Temple
+  4060 | D:7      | Found a radiant altar of Vehumet.
+  4286 | D:7      | Encountered a troll
+  4287 | D:7      | Encountered a two-headed ogre
+  4301 | D:7      | Killed a troll
+  4306 | D:7      | Reached XP level 10. HP: 40/59 MP: 9/20
+  4311 | D:7      | Reached skill level 10 in Air Magic
+  4312 | D:7      | Killed a two-headed ogre
+  4346 | D:7      | Identified the +2 plate armour of the Realm of Zot {rC++
+                  | rCorr}
+  4451 | D:7      | Encountered Sprozz
+  4462 | D:7      | Killed Sprozz
+  4464 | D:7      | Got Sprozz's Excursus on Mechanisms
+  4703 | D:7      | Found a burning altar of Makhleb.
+  4703 | D:7      | Found a shimmering altar of Xom.
+  4732 | D:8      | Found a transporter.
+  4764 | D:8      | Found a transporter.
+  5079 | D:8      | Found a staircase to the Lair.
+  5093 | D:8      | Reached XP level 11. HP: 38/66 MP: 6/22
+  5426 | D:8      | Found an ancient bone altar of Kikubaaqudgha.
+  5468 | D:8      | Found a stormy altar of Qazlal.
+  5645 | D:8      | Encountered a two-headed ogre
+  5653 | D:8      | Killed a two-headed ogre
+  5654 | D:8      | Reached skill level 11 in Air Magic
+  6685 | D:9      | Reached skill level 10 in Long Blades
+  6825 | D:10     | Entered Level 10 of the Dungeon
+  6907 | D:10     | Found a basalt altar of Yredelemnul.
+  7061 | D:10     | Reached skill level 1 in Shields
+  7461 | D:11     | Reached skill level 12 in Air Magic
+  7461 | D:11     | Reached XP level 12. HP: 63/73 MP: 3/25
+  7564 | Lair:1   | Entered Level 1 of the Lair of Beasts
+  7814 | Lair:1   | Reached skill level 5 in Dodging
+  7838 | Lair:1   | Found a gate leading to a gauntlet.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Found a transporter.
+  7848 | Gauntlet | Entered a Gauntlet
+  7930 | Gauntlet | Slain by a meliai
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      dpeg_arrival_fog, layout_basic
+D:2:      layout_loops_cross
+D:3:      layout_basic, gammafunk_temple_overflow_elements,
+          dreamdust_ecumenical_altar_drowned_temple, uniq_grinder
+D:4:      layout_rooms, mainiacjoe_overflow_surrounded_room
+D:5:      layout_gridville, serial_demonic, serial_demonic_c, serial_demonic_g,
+          serial_demonic_f, serial_demonic_d, minmay_misc_feat_room,
+          nrook_pool_corridor, chequers_serial_rivers_micro_d, st_stairs_10,
+          minmay_strange_pillars, uniq_prince_ribbit1
+D:6:      layout_cave_pools
+D:7:      minmay_blocky_corners, layout_loops_cross,
+          grunt_temple_overflow_champion_of_chaos,
+          nicolae_vehumet_console_conduits, minmay_temple_entry_mini_moons,
+          serial_library_hellmonk_angled_corner, dreamdust_wishing_well,
+          nicolae_elevator_lobby_asterisk, uniq_sprozz
+D:8:      gammafunk_steamed_eel, layout_gridville,
+          mainiacjoe_overflow_big_doors, due_lair_maze_entry_diamond
+D:9:      kennysheep_seaside_town, layout_rooms
+D:10:     layout_roguey, nicolae_yredelemnul_columnar_basalt
+D:11:     layout_rooms
+Temple:   hellmonk_temple_divided_pantheon
+Lair:1:   layout_layer_cave, gauntlet_entry_generic,
+          grunt_forest_small_clearings, nicolae_lair_planthole_pinch,
+          beast_lair_carwin_7, grunt_megastairs_1
+Gauntlet: gammafunk_gauntlet_shortcut [nicolae_gauntlet_arena_x,
+          gammafunk_gauntlet_arena_crates, gammafunk_gauntlet_arena_hedges,
+          nicolae_gauntlet_arena_grate_2, nicolae_gauntlet_arena_blocks,
+          gammafunk_gauntlet_arena_arrow_garden,
+          nicolae_gauntlet_exit_dead_adventurers]
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 |
+---------------+-------------------------------------+-----
+Fighting       |     1        2     3  4  5  6  7  8 |  8.1
+Conjurations   |        2     3     4  5             |  5.8
+Air Magic      |        5        6  7  8  9 10 12    | 12.4
+Spellcasting   |           3     4     5  6  7  8    |  8.8
+Long Blades    |                    3  4  6  9 10    | 10.9
+Armour         |                       1     2  3    |  3.9
+Dodging        |                          3     4  5 |  5.0
+Shields        |                                1  2 |  2.2
+Stealth        |                                     |  2.2
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 || total
+---------------------------+-------+-------+-------+-------++-------
+ Attack: Normal            |    41 |    16 |   103 |   375 ||   535
+  Melee: Short sword       |    41 |    16 |       |       ||    57
+         Kick              |    11 |     3 |    33 |   129 ||   176
+         Peck              |     5 |     5 |    20 |    78 ||   108
+         Long sword        |       |       |   103 |   375 ||   478
+   Cast: Shock             |    69 |    22 |    46 |    30 ||   167
+         Swiftness         |     1 |       |       |     1 ||     2
+         Airstrike         |       |     2 |    33 |    69 ||   104
+ Invoke: Reject Sacrifices |       |       |     1 |     1 ||     2
+  Drink: Heal wounds       |     1 |       |       |     1 ||     2
+         Curing            |       |       |       |     1 ||     1
+   Read: Identify          |     5 |       |     4 |     3 ||    12
+         Teleportation     |       |     1 |       |       ||     1
+         Revelation        |       |       |       |     1 ||     1
+   Stab: Sleeping          |     2 |     1 |     8 |     5 ||    16
+         Distracted        |       |       |     1 |       ||     1
+ Armour: Robe              |    21 |     5 |       |       ||    26
+         Leather armour    |       |     2 |    39 |   169 ||   210
+  Dodge: Dodged            |    26 |     7 |    76 |   253 ||   362
+  Block: Buckler           |       |       |       |    87 ||    87
+
+Table legend: (Time is in decaauts)
+ A = Elapsed time spent in this place.
+ B = Non-inter-level travel time spent in this place.
+ C = Inter-level travel time spent in this place.
+ D = Time resting spent in this place.
+ E = Time spent auto-exploring this place.
+ F = Levels seen in this place.
+ G = Mean time per level.
+                   A        B        C        D        E      F       G
+               +--------+--------+--------+--------+--------+-----+--------+
+         Total |   7953 |   6828 |   1125 |    101 |   2131 |  14 |  568.1 |
+       Dungeon |   7557 |   6442 |   1115 |    101 |   2131 |  11 |  687.0 |
+        Temple |     35 |     25 |     10 |      0 |      0 |   1 |   35.0 |
+          Lair |    278 |    278 |      0 |      0 |      0 |   1 |  278.0 |
+      Gauntlet |     82 |     82 |      0 |      0 |      0 |   1 |   82.0 |
+               +--------+--------+--------+--------+--------+-----+--------+
+
+Top non-repeatable levels by time:
+     D:8: 1242 daAuts
+     D:7: 883 daAuts
+     D:9: 877 daAuts
+     D:5: 766 daAuts
+     D:3: 698 daAuts
+     D:4: 675 daAuts
+     D:2: 659 daAuts
+     D:1: 572 daAuts
+    D:10: 525 daAuts
+     D:6: 476 daAuts
+  Lair:1: 278 daAuts
+    D:11: 179 daAuts
+Gauntlet: 82 daAuts
+  Temple: 35 daAuts
+
+DLua errors:
+
+Table legend:
+ A = God
+ B = Rank
+ C = Start time
+ D = Start piety
+ E = Piety gained
+ F = Piety on gifts
+ G = Piety on penance
+ H = Piety on stepdowns
+ I = Piety decays
+ J = Piety lost (inc. decay)
+         A          B      C       D     E     F     G     H     I     J   
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+ Ru               | 0 |   22305 |  10 |   0 |   0 |   0 |   0 |   0 |   0 
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+

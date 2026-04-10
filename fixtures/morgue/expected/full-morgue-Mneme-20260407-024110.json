@@ -275,7 +275,7 @@
   "ringDetails": [
     {
       "rawName": "ring of Qetetip",
-      "displayName": "randart ring",
+      "displayName": "ring of Qetetip",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -320,7 +320,7 @@
     },
     {
       "rawName": "ring of the Past",
-      "displayName": "randart ring",
+      "displayName": "ring of the Past",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

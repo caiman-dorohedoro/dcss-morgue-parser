@@ -293,7 +293,7 @@
   "ringDetails": [
     {
       "rawName": "ring of New Discoveries",
-      "displayName": "randart ring",
+      "displayName": "ring of New Discoveries",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -338,7 +338,7 @@
     },
     {
       "rawName": "ring of Suxzeiv",
-      "displayName": "randart ring",
+      "displayName": "ring of Suxzeiv",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

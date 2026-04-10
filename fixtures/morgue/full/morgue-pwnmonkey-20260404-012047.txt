@@ -1,0 +1,803 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-181-g84ebf06 (console) character file.
+
+Game seed: 12035245462358221106
+
+118485 pwnmonkey the Wrestler (level 16, -3/152 HPs)
+             Began as a Revenant Cinder Acolyte on Apr 4, 2026.
+             Was the Champion of Makhleb.
+             Constricted to death by a naga warrior (4 damage)
+             ... on level 2 of the Snake Pit.
+             The game lasted 00:57:36 (26670 turns).
+
+pwnmonkey the Wrestler (Revenant Cinder Acolyte)   Turns: 26670, Time: 00:57:37
+
+Health: -3/152     AC: 15    Str: 27    XL:     16   Next: 25%
+Magic:  15/15      EV:  2    Int: 16    God:    Makhleb [******]
+Gold:   815        SH:  7    Dex: 12    Spells: 16/17 levels left
+
+rFire   . . .  (100%)     - Claws
+rCold   + . .  (50%)    p - +1 buckler {Reflect}
+rNeg    + + +  (0%)     j - +2 chain mail {Will+}
+rPois   ∞      (0%)     (no helmet)
+rElec   .      (100%)   c - +1 cloak
+rCorr   .      (100%)   (no gloves)
+SInv    .               m - +1 pair of boots {Rampage}
+Will    ++...           h - amulet of regeneration
+Stlth                   d - +6 ring of strength
+HPRegen 1.25/turn       g - +6 ring of dexterity
+MPRegen 0.14/turn
+
+%: reflection, rampage
+@: constricted, studying Unarmed Combat
+A: claws 1, cold resistance 1, low MP 2, negative energy resistance 3, torment
+resistance 2, Dis destruction, Mark of Haemoclasm, mnemnophage, spellclaws,
+accursed
+a: Enkindle (0%), Renounce Religion (0%), Unleash Destruction (1%), Infernal
+Servant (14%)
+
+
+You were on level 2 of the Snake Pit.
+You worshipped Makhleb.
+Makhleb was exalted by your worship.
+You visited 6 branches of the dungeon, and saw 26 of its levels.
+You visited the Abyss 1 time.
+You also visited: Sewer.
+
+You collected 2026 gold pieces.
+You spent 1211 gold pieces at shops.
+
+Inventory:
+
+Armour
+ a - a +0 robe
+ c - a +1 cloak (worn)
+ e - a +2 ring mail of fire resistance
+ i - a +0 buckler
+ j - a +2 chain mail of willpower (worn)
+ m - a +1 pair of boots of rampaging (worn)
+ o - +0 fire dragon scales
+ p - a +1 buckler of reflection (worn)
+Jewellery
+ b - a ring of protection from fire
+ d - a +6 ring of strength (worn)
+ f - a ring of flight
+ g - a +6 ring of dexterity (worn)
+ h - an amulet of regeneration (worn)
+ k - a ring of protection from cold
+ l - a ring of protection from cold
+ n - a +6 ring of strength
+ q - a ring of magical power
+Wands
+ a - a wand of flame (20)
+ f - a wand of mindburst (16)
+ b - a wand of quicksilver (9)
+ c - a wand of iceblast (4)
+ e - a wand of paralysis (10)
+ p - a wand of polymorph (5)
+Scrolls
+ g - 4 scrolls of fog
+ a - 2 scrolls of enchant armour
+ N - 3 scrolls of noise
+ r - a scroll of revelation
+ I - 2 scrolls of immolation
+ p - 2 scrolls of poison
+ t - 5 scrolls of teleportation
+ V - 3 scrolls of vulnerability
+ w - 2 scrolls of enchant weapon
+ x - 4 scrolls of amnesia
+ i - 6 scrolls of identify
+ S - a scroll of silence
+Potions
+ L - 2 potions of lignification
+ A - a potion of attraction
+ e - 4 potions of enlightenment
+ c - 4 potions of curing
+ h - 2 potions of haste
+ m - a potion of might
+ a - 4 potions of ambrosia
+ p - 4 potions of moonshine
+ B - 3 potions of berserk rage
+ b - 3 potions of brilliance
+ M - 2 potions of mutation
+ i - 2 potions of invisibility
+ g - 3 potions of magic
+
+
+   Skills:
+ + Level 16.7 Fighting
+ + Level 2.8 Armour
+ + Level 13.2 Dodging
+ + Level 9.6 Shields
+ + Level 22.3 Unarmed Combat
+ - Level 1.0 Spellcasting
+ - Level 2.4 Fire Magic
+ + Level 0.1 Invocations
+
+
+You had 16 spell levels left.
+You knew the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Shock                 Conj/Air       0%         1d3       77%         1
+
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Scorch                   Fire           16%        2d5       58%         2
+ Foxfire                  Conj/Fire      16%        2x1d4     61%         1
+ Apportation              Tloc           0%         N/A       77%         1
+ Freeze                   Ice            0%         1d3       77%         1
+ Kiss of Death            Conj/Necr      0%         2d5       77%         1
+ Magic Dart               Conj           0%         1d3       77%         1
+ Sandblast                Erth           0%         2d4       77%         1
+ Soul Splinter            Necr           0%         N/A       77%         1
+ Summon Small Mammal      Summ           0%         N/A       77%         1
+ Blink                    Tloc           0%         N/A       88%         2
+ Call Imp                 Summ           0%         N/A       88%         2
+ Lesser Beckoning         Tloc           0%         N/A       88%         2
+ Inner Flame              Hex/Fire       4%         N/A       93%         3
+ Confusing Touch          Hex            0%         N/A       98%         3
+ Fugue of the Fallen      Necr           0%         N/A       98%         3
+ Hailstorm                Conj/Ice       0%         3d5       98%         3
+ Maxwell's Portable Pile  Tloc           0%         (3-9)d2   98%         3
+ Ozocubu's Armour         Ice            0%         N/A       98%         3
+ Passwall                 Erth           0%         N/A       98%         3
+ Stone Arrow              Conj/Erth      0%         3d7       98%         3
+ Tukima's Dance           Hex            0%         N/A       98%         3
+ Airstrike                Air            0%         2d(0-16)  100%        4
+ Dispel Undead            Necr           0%         3d6       100%        4
+ Eringya's Surprising Cr  Summ           0%         N/A       100%        4
+ Forge Blazeheart Golem   Fire/Frge      4%         N/A       100%        4
+ Iskenderun's Battlesphe  Conj/Frge      0%         2d7       100%        4
+ Iskenderun's Mystic Bla  Conj/Tloc      0%         2d3 (+2d1 100%        4
+ Passage of Golubria      Tloc           0%         N/A       100%        4
+ Petrify                  Alch/Erth      0%         N/A       100%        4
+ Rending Blade            Conj/Frge      0%         2d6       100%        4
+ Summon Seismosaurus Egg  Summ/Erth      0%         N/A       100%        4
+ Vhi's Electric Charge    Tloc/Air       0%         N/A       100%        4
+ Arcjolt                  Conj/Air       0%         1d10      100%        5
+ Curse of Agony           Necr           0%         N/A       100%        5
+ Hoarfrost Cannonade      Ice/Frge       0%         3d6/3d12  100%        5
+ Irradiate                Conj/Alch      0%         3d11      100%        5
+ Yara's Violent Unravell  Hex/Alch       0%         3d3       100%        5
+ Dispersal                Tloc           0%         N/A       100%        6
+ Permafrost Eruption      Ice/Erth       0%         2x4d1     100%        6
+ Disjunction              Tloc           0%         N/A       100%        8
+ Fulsome Fusillade        Conj/Alch      0%         (3-5)d5   100%        8
+ Ignition                 Fire           4%         3d4       100%        8
+ Infestation              Necr           0%         N/A       100%        8
+ Chain Lightning          Conj/Air       0%         N/A       100%        9
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (15/15)            Temple (1/1) D:6            Lair (5/5) D:8         
+  Swamp (1/4) Lair:3        Snake (2/4) Lair:3        Slime (0/5) Lair:4      
+    Orc (2/2) D:11            Elf (0/3) Orc:2        Vaults (0/5) D:14        
+ Depths (0/4) D:15          Sewer (visited)         
+
+The Realm of Zot is guarded by orbs of winter.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Fedhas
+Gozag
+Hepliaklqana
+Kikubaaqudgha
+Makhleb
+Nemelex Xobeh
+Okawaru
+Qazlal
+Ru
+Sif Muna
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Yredelemnul
+Beogh
+
+Shops:
+D:5 !([=*   D:9 *   D:13 *   D:15 =   Orc:1 :   Orc:2 *[=(
+
+Annotations:
+D:4 1 runed translucent door, Crazy Yiuf
+D:9 2 runed translucent doors
+
+
+Innate Abilities, Weirdness & Mutations
+
+You are immune to poison.
+You have sharp fingernails.
+You are cold resistant. (rC+)
+Your magical capacity is very low. (-20% MP)
+You are immune to negative energy. (rN+++)
+You are immune to unholy pain and torment.
+You draw destruction from the ruthless spite of Dis.
+You bear the Mark of Haemoclasm.
+You can enhance your damage-dealing spells by burning harvested memories.
+You perform a melee attack whenever you cast damage-dealing spells.
+You recover more slowly from Doom and Banes.
+
+Message History
+
+You kill the guardian serpent!
+Makhleb accepts your kill.
+You feel better.
+You claw the naga warrior!
+The naga warrior is heavily wounded.
+The naga warrior spits poison at you.
+The splash of poison hits you but does no damage.
+You resist. The naga warrior constricts you!
+The naga warrior blocks your attack.
+The naga warrior is heavily wounded.
+The naga warrior barely misses you.
+The naga warrior blocks your attack.
+The naga warrior is heavily wounded.
+The naga warrior hits you but does no damage.
+The naga warrior constricts you.
+The naga warrior spits poison at you.
+The splash of poison hits you but does no damage.
+You resist.
+The naga warrior blocks your attack.
+The naga warrior is heavily wounded.
+The naga warrior hits you with a +0 dire flail!!!
+The naga warrior constricts you.
+You barely miss the naga warrior.
+The naga warrior is heavily wounded.
+The naga warrior hits you with a +0 scimitar!!
+You mangle the naga warrior!!
+The naga warrior is almost dead.
+The naga warrior spits poison at you.
+The splash of poison hits you but does no damage.
+You resist. The naga warrior constricts you.
+You scratch the naga warrior but do no damage.
+The naga warrior is almost dead.
+The naga warrior hits you with a +0 scimitar!!
+* * * LOW HITPOINT WARNING * * *
+You closely miss the naga warrior.
+The naga warrior is almost dead.
+The naga warrior hits you with a +0 dire flail!!
+* * * LOW HITPOINT WARNING * * *
+The naga warrior constricts you.
+You die...
+
+ ....^..).........#
+ ....#####.......###
+ .       ##........#### #
+          ##..........#..
+           #.............
+           #.............
+  ##########.............
+###......................
+#...........NzN..####....
+#).#########.#####     ..
+#..#       ###
+#..#      ###
+#..########.##
+##...........##
+ ##....###....#
+  ###### ##..<#
+          #....#
+
+
+You could see 2 naga warriors.
+
+Vanquished Creatures
+  A nagaraja (Snake:2)
+  2 orc warlords
+  Nessos (Orc:2)
+  5 dire elephants (Lair:5)
+  2 fire dragons
+  Fannar (Lair:1)
+  A catoblepas (Lair:5)
+  8 hydras
+  3 anacondas
+  Erica (D:11)
+  8 boulder beetles
+  5 centaur warriors
+  A two-headed ogre (D:10)
+  2 merfolk aquamancers (D:15)
+  A death yak (Lair:4)
+  An occultist (D:11)
+  2 tengu warriors (D:15)
+  A thrashing horror (Abyss:1)
+  Urug (Lair:2)
+  3 naga sharpshooters (Snake:1)
+  4 orc high priests (Orc:2)
+  Sonja (Orc:2)
+  2 shock serpents
+  3 skysharks
+  A naga warrior (Snake:1)
+  2 wretched stars (Abyss:1)
+  2 mana vipers
+  2 large abominations (Abyss:1)
+  An arcanist (D:14)
+  A naga ritualist (Snake:2)
+  An obsidian statue (Lair:5)
+  A water nymph (D:15)
+  A lindwurm (Lair:2)
+  A harpy (shapeshifter) (D:14)
+  4 necromancers (Lair:5)
+  3 orc knights (Orc:2)
+  A deep elf pyromancer (D:12)
+  8 orc sorcerers
+  9 ugly things
+  7 cyclopes
+  An oklob plant (Lair:1)
+  2 salamanders (Snake:2)
+  4 manticores
+  25 elephants
+  2 kobold blastminers (Orc:2)
+  16 black mambas
+  3 guardian serpents
+  6 naga magi
+  2 gargoyles (D:12)
+  A cane toad (shapeshifter) (D:15)
+  8 cane toads
+  3 unseen horrors
+  5 rime drakes
+  6 komodo dragons
+  A yaktaur (D:15)
+  A komodo dragon (shapeshifter) (D:15)
+  An ancient zyme (Abyss:1)
+  4 trolls
+  A hellwing (Abyss:1)
+  A tyrant leech (Lair:3)
+  4 polar bears
+  3 hornets
+  9 blink frogs
+  A jumping spider (shapeshifter) (D:14)
+  16 slime creatures
+  A shadowghast (D:12)
+  A spriggan (Swamp:1)
+  A vampire (D:11)
+  3 water elementals (D:12)
+  34 yaks
+  2 ravens
+  2 wyverns
+  2 wraiths
+  A death yak simulacrum (Lair:5)
+  2 spectral death yaks (Lair:5)
+  16 fire elementals
+  5 basilisks
+  4 wargs
+  A golden eye (shapeshifter) (Abyss:1)
+  3 steam dragons
+  A neqoxec (Abyss:1)
+  6 vampire mosquitoes
+  A small abomination (Abyss:1)
+  12 nagas
+  A swamp worm (Lair:3)
+  2 acid dragons
+  13 water moccasins
+  3 kobold geomancers (D:9)
+  A sky beast (D:7)
+  3 ice beasts
+  40 orc warriors
+  6 black bears
+  6 elephant simulacra (Lair:5)
+  An elephant zombie (Lair:5)
+  10 ogres
+  27 wolves
+  10 centaurs
+  2 phantoms
+  2 cane toad simulacra (Lair:5)
+  A spectral cane toad (Lair:5)
+  2 kobold brigands
+  A brain worm (Abyss:1)
+  24 bullfrogs
+  A scorpion (D:5)
+  6 rock fish
+  3 marrowcudas
+  7 wights
+  13 killer bees
+  9 electric eels
+  5 howler monkeys
+  A bombardier beetle (D:5)
+  3 jellies
+  27 orc priests
+  2 hounds
+  2 gnoll boudas
+  13 clockroaches
+  A drude (D:8)
+  3 iguanas
+  2 sleepcaps (D:6)
+  Ijyb (D:4)
+  22 orc wizards
+  19 gnolls
+  14 adders
+  3 shadow imps
+  2 ribbon worms (D:3)
+  11 dart slugs
+  100 orcs
+  8 endoplasms
+  8 hobgoblins
+  3 jackals (D:4)
+  5 quokkas
+  23 ball pythons
+  4 bats
+  6 frilled lizards
+  14 goblins
+  22 kobolds
+  6 rats
+853 creatures vanquished.
+
+Vanquished Creatures (collateral kills)
+  A hydra (Swamp:1)
+  A spriggan (Swamp:1)
+  An orc (D:6)
+3 creatures vanquished.
+
+Grand Total: 856 creatures vanquished
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | pwnmonkey the Revenant Cinder Acolyte began the quest for
+                  | the Orb.
+     0 | D:1      | Reached XP level 1. HP: 19/19 MP: 3/3
+   197 | D:1      | Reached XP level 2. HP: 26/26 MP: 3/3
+   813 | D:2      | Reached skill level 4 in Unarmed Combat
+   987 | D:2      | Learned a level 1 spell: Shock
+   987 | D:2      | Gained mutation: You can enhance your damage-dealing spells
+                  | by burning harvested memories. [Revenant growth]
+   987 | D:2      | Reached XP level 3. HP: 33/33 MP: 4/4
+  1685 | D:2      | Reached XP level 4. HP: 30/40 MP: 5/5
+  1835 | D:2      | Reached skill level 5 in Unarmed Combat
+  2131 | D:3      | Found a broken altar of Ashenzari.
+  2166 | D:3      | Reached XP level 5. HP: 38/47 MP: 6/6
+  2196 | D:3      | Found a glowing drain.
+  2200 | Sewer    | Entered a sewer
+  2284 | Sewer    | Reached skill level 6 in Unarmed Combat
+  2311 | Sewer    | Reached skill level 5 in Fighting
+  2394 | Sewer    | Reached XP level 6. HP: 55/56 MP: 7/7
+  2599 | Sewer    | Reached skill level 7 in Unarmed Combat
+  2699 | Sewer    | Reached XP level 7. HP: 26/62 MP: 7/7
+  3164 | D:3      | Found a faded altar of an unknown god.
+  3335 | D:3      | Found an iron altar of Okawaru.
+  3361 | D:3      | Reached skill level 8 in Unarmed Combat
+  3670 | D:3      | Found a shadowy altar of Dithmenos.
+  3998 | D:4      | Encountered Ijyb
+  4024 | D:4      | Killed Ijyb
+  4336 | D:4      | Encountered Crazy Yiuf
+  4556 | D:5      | Entered Level 5 of the Dungeon
+  4603 | D:5      | Found Utuniter's Weapon Shop.
+  4604 | D:5      | Found an ornate altar of the Wu Jian Council.
+  4633 | D:5      | Reached XP level 8. HP: 70/71 MP: 8/8
+  4638 | D:5      | Reached skill level 9 in Unarmed Combat
+  4679 | D:5      | Identified the +2 robe of the Vacuum {+Inv rF+ Stlth-}
+  4836 | D:5      | Found a transporter.
+  4838 | D:5      | Found Baosohov's Distillery.
+  4873 | D:5      | Found Liskuy's Armour Shop.
+  4940 | D:5      | Found a transporter.
+  4981 | D:5      | Bought a potion of berserk rage for 65 gold pieces
+  4981 | D:5      | Bought a potion of brilliance for 52 gold pieces
+  4981 | D:5      | Bought a potion of heal wounds for 104 gold pieces
+  5017 | D:5      | Found Pow Ugoe's Assorted Antiques.
+  5045 | D:5      | Bought a scroll labelled CIANGOUKIU for 30 gold pieces
+  5110 | D:5      | Found Mofuvvent's Jewellery Emporium.
+  5132 | D:5      | Reached skill level 10 in Unarmed Combat
+  5605 | D:6      | Found a statue of an orb of winter.
+  5617 | D:6      | Found a staircase to the Ecumenical Temple.
+  5619 | D:6      | Found a statue of an orb of winter.
+  5913 | D:6      | Reached skill level 11 in Unarmed Combat
+  5913 | D:6      | Reached XP level 9. HP: 81/81 MP: 9/9
+  6005 | D:7      | Found a basalt altar of Yredelemnul.
+  6426 | D:7      | Reached skill level 12 in Unarmed Combat
+  7081 | D:8      | Reached skill level 13 in Unarmed Combat
+  7102 | D:8      | Found a staircase to the Lair.
+  7113 | D:8      | Reached XP level 10. HP: 80/93 MP: 10/10
+  7119 | D:8      | Reached skill level 10 in Fighting
+  7341 | D:8      | Reached skill level 14 in Unarmed Combat
+  7901 | D:9      | Identified the +8 dagger "Siugranto" {chaos, Dex+2}
+  7901 | D:9      | Identified the +1 robe "Xiampet" {Rampage Int+3}
+  7901 | D:9      | Encountered a brown ugly thing
+  8020 | D:9      | Found an opulent altar of Gozag.
+  8027 | D:9      | Found Gozag's Platinum Reserve.
+  8090 | D:9      | Found a shimmering altar of Xom.
+  8172 | D:9      | Reached skill level 15 in Unarmed Combat
+  8330 | D:10     | Entered Level 10 of the Dungeon
+  8355 | D:10     | Found a stormy altar of Qazlal.
+  8482 | D:10     | Reached XP level 11. HP: 65/102 MP: 11/11
+  8615 | D:10     | Identified the +0 robe "Trusted Companion" {-Tele +Inv
+                  | Regen+}
+  8653 | D:10     | Encountered a two-headed ogre
+  8672 | D:10     | Killed a two-headed ogre
+  8840 | Abyss:1  | Cast into level 1 of the Abyss (wight)
+  8857 | Abyss:1  | Found a corrupted altar of Lugonu.
+  8870 | Abyss:1  | Encountered a vampire mage
+  8879 | Abyss:1  | Encountered a jiangshi
+  8879 | Abyss:1  | Encountered a flayed ghost
+  8888 | Abyss:1  | Encountered a rakshasa
+  8938 | Abyss:1  | Encountered a thrashing horror
+  8949 | Abyss:1  | Killed a thrashing horror
+  8950 | Abyss:1  | Reached skill level 1 in Shields
+  8985 | Abyss:1  | Encountered a tentacled starspawn
+  9047 | Abyss:1  | Encountered a thrashing horror
+  9057 | Abyss:1  | Encountered a tentacled starspawn
+  9075 | Abyss:1  | Encountered a large abomination
+  9082 | Abyss:1  | Found a corrupted altar of Lugonu.
+  9163 | Abyss:1  | Encountered a large abomination
+  9169 | Abyss:1  | Killed a large abomination
+  9176 | Abyss:1  | Encountered a large abomination
+  9186 | Abyss:1  | Killed a large abomination
+  9187 | Abyss:1  | Reached skill level 16 in Unarmed Combat
+  9339 | Abyss:1  | Encountered a wretched star
+  9349 | Abyss:1  | Killed a wretched star
+  9360 | Abyss:1  | Encountered a wretched star
+  9360 | Abyss:1  | Encountered a blizzard demon
+  9364 | Abyss:1  | Identified a scroll of acquirement
+  9364 | Abyss:1  | Acquired a manual of Dodging
+  9370 | Abyss:1  | Killed a wretched star
+  9371 | Abyss:1  | Reached skill level 1 in Dodging
+  9373 | D:10     | Escaped the Abyss
+ 10103 | D:11     | Encountered a boulder beetle
+ 10126 | D:11     | Killed a boulder beetle
+ 10276 | D:11     | Found a roughly hewn altar of Beogh.
+ 10276 | D:11     | Found a staircase to the Orcish Mines.
+ 10393 | D:11     | Reached XP level 12. HP: 104/113 MP: 11/11
+ 10559 | D:11     | Encountered an occultist
+ 10671 | Lair:1   | Entered Level 1 of the Lair of Beasts
+ 10730 | Lair:1   | Reached skill level 17 in Unarmed Combat
+ 10930 | Lair:1   | Encountered Fannar
+ 11099 | Lair:1   | Reached skill level 5 in Dodging
+ 11415 | Lair:1   | Reached skill level 5 in Shields
+ 11919 | Lair:1   | Killed Fannar
+ 11920 | Lair:1   | Reached skill level 18 in Unarmed Combat
+ 12209 | Lair:2   | Encountered Urug
+ 12223 | Lair:2   | Killed Urug
+ 12297 | Lair:2   | Reached XP level 13. HP: 95/122 MP: 12/12
+ 13521 | Lair:3   | Found a staircase to the Snake Pit.
+ 13643 | Lair:3   | Found a staircase to the Swamp.
+ 14229 | Lair:4   | Found a transporter.
+ 14231 | Lair:4   | Found a transporter.
+ 14506 | Lair:4   | Reached skill level 19 in Unarmed Combat
+ 14790 | Lair:4   | Found a staircase to the Slime Pits.
+ 15484 | Temple   | Entered the Ecumenical Temple
+ 15490 | Temple   | Fell from the grace of Ignis
+ 15490 | Temple   | Became a worshipper of Makhleb the Destroyer
+ 15668 | Lair:5   | Entered Level 5 of the Lair of Beasts
+ 15682 | Lair:5   | Encountered a dire elephant
+ 15682 | Lair:5   | Encountered a dire elephant
+ 15839 | Lair:5   | Reached skill level 10 in Dodging
+ 15998 | Lair:5   | Encountered a dire elephant
+ 16013 | Lair:5   | Killed a dire elephant
+ 16014 | Lair:5   | Reached XP level 14. HP: 106/133 MP: 13/13
+ 16531 | Lair:5   | Reached * piety under Makhleb
+ 16614 | Lair:5   | Reached skill level 20 in Unarmed Combat
+ 17100 | Lair:5   | Reached skill level 15 in Fighting
+ 17166 | Lair:5   | Got Kikubaaqudgha's Book of Wicked Magic
+ 17999 | D:11     | Got Fotoph's Monograph on Burning and Damage
+ 18181 | D:11     | You fall into a shaft and drop 3 floors!
+ 18181 | D:14     | You fall into a shaft and drop 1 floor!
+ 18181 | D:15     | Entered Level 15 of the Dungeon
+ 18182 | D:15     | Found Ilast's Jewellery Emporium.
+ 18387 | D:13     | Reached ** piety under Makhleb
+ 18474 | D:13     | You fall into a shaft and drop 2 floors!
+ 19045 | D:12     | Was forgiven by Ignis
+ 19721 | D:12     | Reached *** piety under Makhleb
+ 20156 | D:13     | Reached XP level 15. HP: 119/141 MP: 14/14
+ 20172 | D:13     | Reached skill level 21 in Unarmed Combat
+ 20284 | D:13     | Found Virytij's Assorted Antiques.
+ 21249 | D:14     | Reached **** piety under Makhleb
+ 21249 | D:14     | Gained mutation: You draw destruction from the ruthless
+                  | spite of Dis. [Makhleb's blessing]
+ 21356 | D:14     | Found a roughly hewn altar of Beogh.
+ 21486 | D:14     | Found a gate to the Vaults.
+ 21702 | D:15     | Found a staircase to the Depths.
+ 22588 | Orc:1    | Entered Level 1 of the Orcish Mines
+ 22610 | Orc:1    | Encountered Erica
+ 22636 | D:11     | Killed Erica
+ 22895 | Orc:1    | Found Ywyan's Self-Improvement Boutique.
+ 23017 | Orc:2    | Entered Level 2 of the Orcish Mines
+ 23027 | Orc:2    | Found a roughly hewn altar of Beogh.
+ 23048 | Orc:2    | Encountered Sonja
+ 23061 | Orc:2    | Killed Sonja
+ 23128 | Orc:2    | Encountered Nessos
+ 23148 | Orc:2    | Killed Nessos
+ 23244 | Orc:2    | Found a staircase to the Elven Halls.
+ 23442 | Orc:2    | Reached ***** piety under Makhleb
+ 24223 | Orc:2    | Found Unniomp's General Store.
+ 24224 | Orc:2    | Found Qymimat's Jewellery Shop.
+ 24226 | Orc:2    | Found Xapseokh's Antique Armour Shop.
+ 24226 | Orc:2    | Found Viapon's Antique Weapon Boutique.
+ 24354 | Orc:1    | Bought a manual of Unarmed Combat for 960 gold pieces
+ 24427 | Orc:1    | Found a shimmering altar of Xom.
+ 24833 | Snake:1  | Entered Level 1 of the Snake Pit
+ 25017 | Snake:1  | Reached skill level 1 in Armour
+ 25070 | Snake:1  | Reached skill level 22 in Unarmed Combat
+ 25254 | Snake:1  | Reached XP level 16. HP: 104/152 MP: 15/15
+ 25325 | Snake:1  | Reached ****** piety under Makhleb
+ 25326 | Snake:1  | Gained mutation: You bear the Mark of Haemoclasm.
+                  | [inscribed by the player]
+ 25326 | Snake:1  | Branded self with the Mark of Haemoclasm
+ 25692 | Swamp:1  | Entered Level 1 of the Swamp
+ 25759 | Swamp:1  | HP: 1/152 [tyrant leech (18)]
+ 26476 | Snake:2  | HP: 5/152 [salamander/+0 vampiric spear (13)]
+ 26670 | Snake:2  | HP: 1/152 [naga warrior/+0 dire flail (27)]
+ 26670 | Snake:2  | Constricted to death by a naga warrior
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      dysonsfear_arrival_boulevard, layout_rooms, roderic_lattice_a,
+          hex_large
+D:2:      layout_basic, kennysheep_generic_room_15, minmay_tree_intersection,
+          minmay_snake_closets
+D:3:      layout_loops_ring, okawaru_ov_weapons_minmay,
+          mainiacjoe_overflow_surrounded_room,
+          mainiacjoe_overflow_concentric_impassable, gup_sewer_entry_bowl,
+          chequers_ecumenical_altar_simple_redux, grunt_decor_cap
+D:4:      kennysheep_the_goblin_king, layout_basic, nicolae_zin_silver_trinity,
+          uniq_crazy_yiuf_cottage
+D:5:      layout_rooms, nicolae_wu_jian_sharp_slivers_of_steel, serial_shops,
+          nicolae_shop_drivethru, shop, nicolae_shop_statue_plus, shop,
+          nicolae_shop_competitors_out_of_business
+D:6:      layout_rooms, minmay_temple_entry_ruins
+D:7:      layout_cave_pods, overflow_temple_1_default
+D:8:      layout_basic, due_lair_maze_entry_diamond
+D:9:      due_chaos_kobolds, layout_cave_pools, nicolae_gozag_zags_fifth_avenue,
+          darby_fish_out_of_rock
+D:10:     nicolae_moon_pools, layout_loops_corners, mainiacjoe_overflow_paths
+D:11:     cheibrodos_wizards_tower, layout_irregular_city, david_orc_5
+D:12:     layout_roguey, serial_bayou, serial_bayou_crossing,
+          serial_bayou_lagoon_b, serial_bayou_pond_d, serial_bayou_lake_a,
+          mrwooster_statue_mirror
+D:13:     layout_loops_ring, serial_shops, kennysheep_mini_moat
+D:14:     layout_cave_pools, hellmonk_vaults_attempted_burglary, special_room
+          [special_room_orc]
+D:15:     grunt_enter_depths_snipers, layout_stronghold, serial_shops, shop,
+          nicolae_splish_splash
+Temple:   eino_narrow_crystal_temple
+Lair:1:   wad_woods_structure_01, layout_regular_city, uniq_fannar
+Lair:2:   layout_cave_pods, uniq_urug
+Lair:3:   layout_regular_city, swamp_mist, nicolae_snake_entry_squirm,
+          wander_river
+Lair:4:   gammafunk_boulding_lane, layout_cellular_growth, slime_entry_1
+Lair:5:   due_jungle_book, layout_regular_city, hangedman_lair_generics_rect,
+          grunt_megastairs_1
+Swamp:1:  layout_basic_swamp, nicolae_swamp_ascending_descending,
+          infiniplex_staircase_pool
+Snake:1:  layout_rooms
+Snake:2:  layout_layer_cave
+Orc:1:    layout_diamond_mine, basic_altar, nicolae_shop_self_help, uniq_erica
+Orc:2:    st_orc_congregation, layout_caves, mines1_david, uniq_sonja,
+          uniq_nessos
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 |
+---------------+-------------------------------------------------+-----
+Unarmed Combat |     4     5  6  7  8 11 13 15 16 18 19 20 22    | 22.3
+Fighting       |        4     5     6  8  9 11 12 13 14 15 16    | 16.7
+Shields        |                                3  5  6  7  9    |  9.6
+Dodging        |                                3  7 10 12    13 | 13.2
+Armour         |                                            1  2 |  2.8
+Spellcasting   |                                                 |  1.0
+Fire Magic     |                                                 |  2.4
+Invocations    |                                                 |  0.1
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 || total
+---------------------------+-------+-------+-------+-------+-------+-------++-------
+ Attack: Normal            |   116 |   170 |   390 |   565 |  1439 |   115 ||  2795
+  Melee: Unarmed           |   116 |   170 |   390 |   565 |  1439 |   115 ||  2795
+         Punch             |     1 |     1 |    18 |    10 |       |       ||    30
+ Invoke: Fiery Armour      |       |     1 |     1 |     6 |     2 |       ||    10
+         Foxfire Swarm     |       |       |       |       |     1 |       ||     1
+         Brand Self        |       |       |       |       |       |     1 ||     1
+  Evoke: Wand of mindburst |       |       |       |     2 |     1 |       ||     3
+         Wand of quicksilv |       |       |       |     4 |     1 |       ||     5
+         Wand of iceblast  |       |       |       |     1 |     3 |     5 ||     9
+         Wand of paralysis |       |       |       |       |       |     2 ||     2
+  Drink: Heal wounds       |       |       |       |     1 |     2 |     6 ||     9
+         Haste             |       |       |       |       |     1 |       ||     1
+         Invisibility      |       |       |       |       |     1 |       ||     1
+         Might             |       |       |       |       |     1 |       ||     1
+   Read: Revelation        |     1 |     1 |       |       |     1 |       ||     3
+         Fog               |     1 |       |       |     2 |     1 |     1 ||     5
+         Identify          |       |       |     6 |     4 |     3 |       ||    13
+         Teleportation     |       |       |     1 |     3 |     4 |       ||     8
+         Fear              |       |       |     1 |       |     1 |     1 ||     3
+         Noise             |       |       |     1 |       |       |       ||     1
+         Enchant weapon    |       |       |     1 |       |       |       ||     1
+         Enchant armour    |       |       |     1 |       |       |       ||     1
+         Immolation        |       |       |     1 |       |       |       ||     1
+         Vulnerability     |       |       |     1 |       |       |       ||     1
+         Poison            |       |       |     1 |       |       |       ||     1
+         Summoning         |       |       |     1 |       |       |     1 ||     2
+         Amnesia           |       |       |     1 |       |       |       ||     1
+         Blinking          |       |       |       |     2 |     2 |       ||     4
+         Acquirement       |       |       |       |     1 |       |       ||     1
+   Stab: Sleeping          |       |     3 |     1 |       |       |       ||     4
+         Petrified         |       |       |       |       |     2 |       ||     2
+ Armour: Robe              |    75 |   145 |    68 |       |       |       ||   288
+         Ring mail         |       |       |   211 |   283 |       |       ||   494
+         Chain mail        |       |       |       |   330 |  1024 |   185 ||  1539
+  Dodge: Dodged            |    57 |    89 |   179 |   226 |   509 |    63 ||  1123
+  Block: Buckler           |       |       |       |    85 |   331 |    44 ||   460
+         Reflection        |       |       |       |       |    13 |     2 ||    15
+
+Table legend: (Time is in decaauts)
+ A = Elapsed time spent in this place.
+ B = Non-inter-level travel time spent in this place.
+ C = Inter-level travel time spent in this place.
+ D = Time resting spent in this place.
+ E = Time spent auto-exploring this place.
+ F = Levels seen in this place.
+ G = Mean time per level.
+                   A        B        C        D        E      F       G
+               +--------+--------+--------+--------+--------+-----+--------+
+         Total |  26126 |  24339 |   1787 |   1857 |  15909 |  28 |  933.1 |
+       Dungeon |  14323 |  13441 |    882 |    828 |   9437 |  15 |  954.9 |
+        Temple |     13 |      1 |     12 |      0 |      0 |   1 |   13.0 |
+          Lair |   7056 |   6486 |    570 |    432 |   4468 |   5 | 1411.2 |
+         Swamp |     15 |     14 |      1 |      0 |      0 |   1 |   15.0 |
+     Snake Pit |   1545 |   1444 |    101 |    336 |    729 |   2 |  772.5 |
+  Orcish Mines |   1769 |   1549 |    220 |     15 |    996 |   2 |  884.5 |
+         Abyss |    519 |    519 |      0 |     99 |      0 |   1 |  519.0 |
+         Sewer |    884 |    884 |      0 |    147 |    279 |   1 |  884.0 |
+               +--------+--------+--------+--------+--------+-----+--------+
+
+Top non-repeatable levels by time:
+  Lair:5: 1810 daAuts
+  Lair:1: 1572 daAuts
+  Lair:3: 1368 daAuts
+     D:2: 1330 daAuts
+   Orc:2: 1314 daAuts
+    D:12: 1288 daAuts
+    D:15: 1287 daAuts
+    D:10: 1273 daAuts
+  Lair:4: 1184 daAuts
+    D:11: 1142 daAuts
+  Lair:2: 1121 daAuts
+ Snake:1: 1094 daAuts
+     D:3: 992 daAuts
+     D:7: 941 daAuts
+    D:13: 914 daAuts
+
+DLua errors:
+
+Table legend:
+ A = God
+ B = Rank
+ C = Start time
+ D = Start piety
+ E = Piety gained
+ F = Piety on gifts
+ G = Piety on penance
+ H = Piety on stepdowns
+ I = Piety decays
+ J = Piety lost (inc. decay)
+         A          B      C       D     E     F     G     H     I     J   
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+ No God           | 0 |  153037 |   0 |   0 |   0 |   0 |   0 |   0 |   0 
+ Makhleb          | 0 |  153037 |  15 |  18 |   0 |   0 |   0 |   2 |   2 
+ Makhleb          | 1 |  163272 |  30 |  31 |   0 |   0 |   0 |  11 |  11 
+ Makhleb          | 2 |  180756 |  50 |  25 |   0 |   0 |   0 |   0 |   0 
+ Makhleb          | 3 |  194105 |  75 |  26 |   0 |   0 |   1 |   2 |   2 
+ Makhleb          | 4 |  209034 | 100 |  26 |   0 |   0 |  18 |   6 |   7 
+ Makhleb          | 5 |  230531 | 120 |  46 |   0 |   0 |  20 |   6 |   5 
+ Makhleb          | 6 |  250184 | 160 |   1 |   0 |   0 |   2 |   2 |   2 
+ Makhleb          | 5 |  251749 | 159 |   1 |   0 |   0 |   3 |   0 |   0 
+ Makhleb          | 6 |  254115 | 160 |   5 |   0 |   0 |   5 |   0 |   0 
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+
+Conducts for god: Makhleb
+Piety from conduct
+              Conduct |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 || total
+----------------------+-------+-------+-------+-------+-------+-------++-------
+         Kill Living  |     0 |     0 |     0 |     0 |   198 |    21 ||   219
+         Kill Undead  |     0 |     0 |     0 |     0 |    13 |     0 ||    13
+      Kill Nonliving  |     0 |     0 |     0 |     0 |     4 |     0 ||     4
+----------------------+-------+-------+-------+-------+-------+-------++-------
+Conduct count
+              Conduct |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 || total
+----------------------+-------+-------+-------+-------+-------+-------++-------
+         Kill Living  |     0 |     0 |     0 |     0 |   314 |    32 ||   346
+         Kill Undead  |     0 |     0 |     0 |     0 |    18 |     0 ||    18
+      Kill Nonliving  |     0 |     0 |     0 |     0 |     6 |     0 ||     6
+----------------------+-------+-------+-------+-------+-------+-------++-------
+

@@ -82,7 +82,7 @@
   "amuletDetails": [
     {
       "rawName": "amulet \"Umpul\"",
-      "displayName": "randart amulet",
+      "displayName": "amulet \"Umpul\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -345,7 +345,7 @@
     },
     {
       "rawName": "ring of Dyryepto",
-      "displayName": "randart ring",
+      "displayName": "ring of Dyryepto",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -386,7 +386,7 @@
     },
     {
       "rawName": "ring \"Ynoedy\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Ynoedy\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

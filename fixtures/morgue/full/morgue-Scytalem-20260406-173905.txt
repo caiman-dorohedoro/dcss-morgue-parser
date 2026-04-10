@@ -1,0 +1,1704 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-257-gf9e06672e4 (webtiles) character file.
+
+Game seed: 4648126631358588647
+
+1546975 Scytalem the Timeless (level 27, 255/255 HPs)
+             Began as a Naga Alchemist on Apr 6, 2026.
+             Was a High Priest of Cheibriados.
+             Escaped with the Orb
+             ... and 3 runes!
+             
+             The game lasted 07:10:27 (83124 turns).
+
+Scytalem the Timeless (Naga Alchemist)             Turns: 83124, Time: 07:10:27
+
+Health: 255/255    AC: 46    Str: 31    XL:     27
+Magic:  66/66      EV: 12    Int: 46    God:    Cheibriados [*****.]
+Gold:   4589       SH: 15    Dex: 18    Spells: 9/50 levels left
+
+rFire   + + +  (20%)    c - +9 demon blade (valour)
+rCold   + + +  (20%)    O - +2 shield of Resistance {rF++ rC++ Will++}
+rNeg    . . .  (100%)   Y - +4 shadow dragon scales of the Hot Ocelot {+Inv MP+8 Stlth+}
+rPois   +      (33%)    m - +3 hat of Pondering {Ponderous, Will+ MP+10 Int+5}
+rElec   +      (33%)    N - +2 cloak "Tewirrim" {Int+3}
+rCorr   +      (50%)    l - +2 pair of gloves "Juc Selesei" {rC+}
+SInv    +               I - +4 barding {rF+}
+Will    +++++           K - amulet "Jyimaok" {Chemistry rElec rF+ Int-3 Dex+3}
+Stlth   +++             y - ring of Paddierchi {^Contam MP+9 Str+3 Slay+2 Stlth+}
+HPRegen 0.62/turn       h - ring "Lekliroo" {rPois Will++ rCorr Dex-5}
+MPRegen 0.40/turn
+
+%: no passive effects
+@: studying 2 skills, very slow
+A: AC +9, large, see invisible, deformed body, poison resistance, spit poison 1,
+naga tail 2, clever 1, strong 1
+0: Orb of Zot
+}: 3/15 runes: decaying, silver, gossamer
+a: Spit Poison (0%), Renounce Religion (0%), Evoke Invisibility (28%), Bend Time
+(0%), Temporal Distortion (0%), Slouch (0%), Step From Time (0%)
+
+
+You escaped.
+You worshipped Cheibriados.
+Cheibriados was extremely pleased with you.
+You visited 11 branches of the dungeon, and saw 50 of its levels.
+You visited the chambers of the Necropolis 1 time.
+You also visited: Trove, Bailey, Gauntlet and Desolation.
+
+You collected 9885 gold pieces.
+You spent 5296 gold pieces at shops.
+
+Inventory:
+
+Hand Weapons
+ c - a +9 demon blade of valour (weapon)
+Missiles
+ k - 43 javelins (quivered)
+ p - 3 throwing nets
+ t - 50 boomerangs
+ v - 6 curare-tipped darts
+Armour
+ e - a +0 cloak of air
+ g - the +3 faerie dragon scales {rPois rC+++ rCorr Dex+3 Stlth- Hexes}
+   (You took it off the Enchantress on level 1 of the Depths)   
+   
+   rPois:     It protects you from poison.
+   rC+++:     It renders you almost immune to cold.
+   rCorr:     It protects you from acid and corrosion.
+   Dex+3:     It affects your dexterity (+3).
+   Stlth-:    It makes you less stealthy.
+   Hexes:     It increases the power of your Hexes spells.
+   
+   It cannot be enchanted further.
+ l - the +2 pair of gloves "Juc Selesei" (worn) {rC+}
+   (You found it in the Necropolis)   
+   
+   rC+:       It protects you from cold.
+   
+   It cannot be enchanted further.
+ m - the +3 hat of Pondering (worn) {Ponderous, Will+ MP+10 Int+5}
+   (You took it off Gastronok on level 2 of the Lair of Beasts)   
+   
+   Will+:     It increases your willpower.
+   MP+10:     It affects your magic capacity (+10).
+   Int+5:     It affects your intelligence (+5).
+   
+   It cannot be enchanted further.
+ o - +3 storm dragon scales {Bai Suzhen}
+ w - the quicksilver dragon scales of Plog {+Blink rElec Will+ MP+6 Dex-4}
+   (You took it off a deep elf high priest on level 3 of the Elven Halls)   
+   
+   +Blink:    It lets you blink.
+   rElec:     It insulates you from electricity.
+   Will+:     It increases your willpower.
+   MP+6:      It affects your magic capacity (+6).
+   Dex-4:     It affects your dexterity (-4).
+ I - a +4 barding of fire resistance (worn)
+ M - a +2 cloak of willpower
+ N - the +2 cloak "Tewirrim" (worn) {Int+3}
+   (You found it in a Gauntlet)   
+   
+   Int+3:     It affects your intelligence (+3).
+   
+   It cannot be enchanted further.
+ O - the +2 shield of Resistance (worn) {rF++ rC++ Will++}
+   (You found it in a Gauntlet)   
+   
+   rF++:      It greatly protects you from fire.
+   rC++:      It greatly protects you from cold.
+   Will++:    It greatly increases your willpower.
+   
+   It cannot be enchanted further.
+ S - the +0 fire dragon scales "Earthly Heaven" {rPois rF++ rC- rCorr Str-3 Dex+3}
+   (You found it in a treasure trove)   
+   
+   rPois:     It protects you from poison.
+   rF++:      It greatly protects you from fire.
+   rC-:       It makes you vulnerable to cold.
+   rCorr:     It protects you from acid and corrosion.
+   Str-3:     It affects your strength (-3).
+   Dex+3:     It affects your dexterity (+3).
+   
+   It cannot be enchanted further.
+ T - the +3 acid dragon scales of the Six Burning Ghosts {rCorr MP-7 Dex+5}
+   (You found it in a treasure trove)   
+   
+   rCorr:     It protects you from acid and corrosion.
+   MP-7:      It affects your magic capacity (-7).
+   Dex+5:     It affects your dexterity (+5).
+   
+   It cannot be enchanted further.
+ Y - the +4 shadow dragon scales of the Hot Ocelot (worn) {+Inv MP+8 Stlth+}
+   (You found it in a treasure trove)   
+   
+   +Inv:      It lets you turn invisible.
+   MP+8:      It affects your magic capacity (+8).
+   Stlth+:    It makes you more stealthy.
+   
+   It cannot be enchanted further.
+ Z - the quicksilver dragon scales "Qurr" {rF- rN+++ Will+++}
+   (You found it in a treasure trove)   
+   
+   rF-:       It makes you vulnerable to fire.
+   rN+++:     It renders you almost immune to negative energy.
+   Will+++:   It greatly increases your willpower.
+Jewellery
+ b - a +6 ring of strength
+ d - a +6 ring of dexterity
+ f - a ring of positive energy
+ h - the ring "Lekliroo" (worn) {rPois Will++ rCorr Dex-5}
+   (You found it on level 2 of the Lair of Beasts)   
+   
+   [ring of resist corrosion]
+   
+   rPois:     It protects you from poison.
+   Will++:    It greatly increases your willpower.
+   rCorr:     It protects you from acid and corrosion.
+   Dex-5:     It affects your dexterity (-5).
+ j - a ring of protection from fire
+ n - an amulet of dissipation
+ q - a ring of protection from cold
+ r - the amulet of Tranquility {rN+ Will+++ Clar}
+   (You found it on level 1 of the Depths)   
+   
+   [amulet of nothing]
+   
+   rN+:       It protects you from negative energy.
+   Will+++:   It greatly increases your willpower.
+   Clar:      It protects you from confusion, rage, mesmerisation and fear.
+ x - the ring of Xom's Esteem {rPois rC++ Str+2}
+   (You took it off a deep elf high priest on level 3 of the Elven Halls)   
+   
+   [ring of protection from cold]
+   
+   rPois:     It protects you from poison.
+   rC++:      It greatly protects you from cold.
+   Str+2:     It affects your strength (+2).
+ y - the ring of Paddierchi (worn) {^Contam MP+9 Str+3 Slay+2 Stlth+}
+   (You took it off a centaur warrior on level 9 of the Dungeon)   
+   
+   [ring of magical power]
+   
+   ^Contam:   It causes magical contamination when unequipped.
+   MP+9:      It affects your magic capacity (+9).
+   Str+3:     It affects your strength (+3).
+   Slay+2:    It affects your accuracy & damage with ranged weapons and melee
+   (+2).
+   Stlth+:    It makes you more stealthy.
+ z - a +4 ring of slaying
+ A - the ring "Suntomet" {Fly Dex+3}
+   (You took it off a wight on level 9 of the Dungeon)   
+   
+   [ring of flight]
+   
+   Fly:       It grants you flight.
+   Dex+3:     It affects your dexterity (+3).
+ B - the amulet of Byutt {Rampage rF+ rC+ rN+ RegenMP+}
+   (You found it in a treasure trove)   
+   
+   [amulet of magic regeneration]
+   
+   Rampage:   It causes one to take an extra step when moving towards enemies,
+              briefly stunning them if this results in an attack.
+   rF+:       It protects you from fire.
+   rC+:       It protects you from cold.
+   rN+:       It protects you from negative energy.
+   RegenMP+:  It increases your rate of magic regeneration.
+   
+   Cheibriados disapproves of the use of such an item.
+ C - a ring of resist corrosion
+ D - a ring of protection from fire
+ E - the ring "Ceteag" {Dex+6 Slay+6 SInv}
+   (You took it off a deep elf elementalist on level 3 of the Elven Halls)   
+   
+   [ring of see invisible]
+   
+   Dex+6:     It affects your dexterity (+6).
+   Slay+6:    It affects your accuracy & damage with ranged weapons and melee
+   (+6).
+   SInv:      It lets you see invisible.
+ J - the ring "Beaceroan" {^Contam Fly rPois Int+8 Dex+6}
+   (You found it on level 4 of the Lair of Beasts)   
+   
+   [ring of dexterity]
+   
+   ^Contam:   It causes magical contamination when unequipped.
+   Fly:       It grants you flight.
+   rPois:     It protects you from poison.
+   Int+8:     It affects your intelligence (+8).
+   Dex+6:     It affects your dexterity (+6).
+ K - the amulet "Jyimaok" (worn) {Chemistry rElec rF+ Int-3 Dex+3}
+   (You found it on level 5 of the Lair of Beasts)   
+   
+   [amulet of chemistry]
+   
+   Chemistry: It restores some MP whenever you drink a potion and also enhances
+              your alchemy spells.
+   rElec:     It insulates you from electricity.
+   rF+:       It protects you from fire.
+   Int-3:     It affects your intelligence (-3).
+   Dex+3:     It affects your dexterity (+3).
+ L - the ring of Past Mistakes {rN+ Will+ Str+3 Int+2}
+   (You found it in the Desolation of Salt)   
+   
+   [ring of positive energy]
+   
+   rN+:       It protects you from negative energy.
+   Will+:     It increases your willpower.
+   Str+3:     It affects your strength (+3).
+   Int+2:     It affects your intelligence (+2).
+ V - the ring "Vuew" {*Slow Int+3 Slay+4 Stlth+}
+   (You found it in a treasure trove)   
+   
+   [ring of slaying]
+   
+   *Slow:     It may slow you when you take damage.
+   Int+3:     It affects your intelligence (+3).
+   Slay+4:    It affects your accuracy & damage with ranged weapons and melee
+   (+4).
+   Stlth+:    It makes you more stealthy.
+ W - the amulet "Ofeerobir" {Chemistry rF+ Int+4}
+   (You found it in a treasure trove)   
+   
+   [amulet of chemistry]
+   
+   Chemistry: It restores some MP whenever you drink a potion and also enhances
+              your alchemy spells.
+   rF+:       It protects you from fire.
+   Int+4:     It affects your intelligence (+4).
+Talismans
+ a - the medusa talisman "Nytwytud" {rCorr MP+9}
+   (You found it on level 1 of the Lair of Beasts)   
+   
+   [medusa talisman]
+   rCorr:     It protects you from acid and corrosion.
+   MP+9:      It affects your magic capacity (+9).
+ i - a talisman of death
+ H - the blade talisman of the Transparent God {Fly Str+2 Dex+2}
+   (You found it on level 4 of the Lair of Beasts)   
+   
+   [blade talisman]
+   Fly:       It grants you flight.
+   Str+2:     It affects your strength (+2).
+   Dex+2:     It affects your dexterity (+2).
+ P - the blade talisman of Yesterday {rPois Will+++ MP+9 Dex-3}
+   (You found it in a Gauntlet)   
+   
+   [blade talisman]
+   rPois:     It protects you from poison.
+   Will+++:   It greatly increases your willpower.
+   MP+9:      It affects your magic capacity (+9).
+   Dex-3:     It affects your dexterity (-3).
+ U - the dragon-coil talisman "Telan" {rElec Dex+2 Slay-5}
+   (You found it in a treasure trove)   
+   
+   [dragon-coil talisman]
+   rElec:     It insulates you from electricity.
+   Dex+2:     It affects your dexterity (+2).
+   Slay-5:    It affects your accuracy & damage with ranged weapons and melee
+   (-5).
+Wands
+ a - a wand of flame (62)
+ e - a wand of paralysis (58)
+ p - a wand of polymorph (21)
+ d - a wand of digging (7)
+ c - a wand of iceblast (47)
+ f - a wand of mindburst (38)
+ b - a wand of quicksilver (33)
+Scrolls
+ r - 8 scrolls of revelation
+ b - 6 scrolls of blinking
+ a - 9 scrolls of enchant armour
+ s - 5 scrolls of butterflies
+ S - a scroll of silence
+ t - 12 scrolls of teleportation
+ f - 4 scrolls of fear
+ V - 11 scrolls of vulnerability
+ g - 7 scrolls of fog
+ w - 5 scrolls of enchant weapon
+ I - 9 scrolls of immolation
+ p - 8 scrolls of poison
+ N - 11 scrolls of noise
+ W - 3 scrolls of brand weapon
+ x - 6 scrolls of amnesia
+ T - 3 scrolls of torment
+ i - 25 scrolls of identify
+ A - a scroll of acquirement
+Potions
+ g - 5 potions of magic
+ c - 22 potions of curing
+ f - 15 potions of moonshine
+ B - 4 potions of berserk rage
+ m - 11 potions of might
+ i - 3 potions of invisibility
+ h - 9 potions of haste
+ w - a potion of heal wounds
+ a - 7 potions of ambrosia
+ b - 7 potions of brilliance
+ L - 5 potions of lignification
+ r - 5 potions of resistance
+ M - 5 potions of mutation
+ C - 2 potions of cancellation
+ A - 6 potions of attraction
+ e - 6 potions of enlightenment
+Miscellaneous
+ h - a +3 phial of floods
+ i - a +3 condenser vane
+ j - a +1 sack of spiders
+ k - a +0 phantom mirror
+ l - a +0 lightning rod (4/4)
+Baubles
+ g - 5 flux baubles
+
+
+   Skills:
+ + Level 16.9 Fighting
+ - Level 18.0 Long Blades
+ + Level 16.5 Armour
+ - Level 16.4 Dodging
+ - Level 14.0 Stealth
+ - Level 14.0 Shields
+ - Level 12.0 Spellcasting
+ + Level 18.3 Conjurations
+ - Level 10.4 Ice Magic
+ + Level 18.6 Air Magic
+ - Level 4.0 Earth Magic
+ - Level 19.0 Alchemy
+ - Level 20.2 Invocations
+
+
+You had 9 spell levels left.
+You knew the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Poisonous Vapours     Alch/Air       100%       1d4       0%          1
+b - Mercury Arrow         Conj/Alch      100%       2d11      0%          2
+c - Mephitic Cloud        Conj/Alch/Air  100%       N/A       0%          3
+d - Olgreb's Toxic Radia  Alch           100%       N/A       0%          4
+e - Eringya's Noxious Bo  Alch           70%        4d6       1%          6
+f - Passwall              Erth           59%        N/A       2%          3
+g - Fulminant Prism       Conj/Alch      70%        3d30      1%          4
+h - Magic Dart            Conj           100%       1d8       0%          1
+i - Alistair's Intoxicat  Alch           94%        N/A       1%          5
+j - Airstrike             Air            57%        2d(9-25)  1%          4
+k - Arcjolt               Conj/Air       57%        1d67      1%          5
+l - Ozocubu's Armour      Ice            89%        N/A       1%          3
+
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Shock                    Conj/Air       100%       1d9       0%          1
+ Searing Ray              Conj           100%       2d8       0%          2
+ Static Discharge         Conj/Air       100%       3-8/arc   0%          2
+ Foxfire                  Conj/Fire      100%       2x1d9     1%          1
+ Ensorcelled Hibernation  Hex/Ice        100%       N/A       1%          2
+ Frozen Ramparts          Ice            100%       1d16      1%          3
+ Hailstorm                Conj/Ice       100%       3d16      1%          3
+ Summon Ice Beast         Ice/Summ       66%        N/A       1%          3
+ Brom's Barrelling Bould  Conj/Erth      92%        2d13      1%          4
+ Cigotuvi's Putrefaction  Necr/Air       85%        N/A       1%          4
+ Forge Lightning Spire    Air/Frge       85%        3d11      1%          4
+ Ignite Poison            Fire/Alch      100%       N/A       1%          4
+ Iskenderun's Battlesphe  Conj/Frge      84%        2d16      1%          4
+ Iskenderun's Mystic Bla  Conj/Tloc      84%        2d17 (+2d91%          4
+ Leda's Liquefaction      Alch/Erth      58%        N/A       1%          4
+ Petrify                  Alch/Erth      58%        N/A       1%          4
+ Rending Blade            Conj/Frge      84%        2d(13+9*) 1%          4
+ Sticky Flame             Fire/Alch      100%       2d15      1%          4
+ Vhi's Electric Charge    Tloc/Air       100%       N/A       1%          4
+ Freezing Cloud           Conj/Ice/Air   53%        6-21      1%          5
+ Sculpt Simulacrum        Ice/Alch       63%        N/A       1%          6
+ Yara's Violent Unravell  Hex/Alch       53%        3d20      2%          5
+ Apportation              Tloc           54%        N/A       3%          1
+ Kinetic Grapnel          Frge           100%       1d8       3%          1
+ Slow                     Hex            100%       N/A       3%          1
+ Summon Small Mammal      Summ           100%       N/A       3%          1
+ Call Imp                 Summ           54%        N/A       6%          2
+ Jinxbite                 Hex            54%        2d3       6%          2
+ Sublimation of Blood     Necr           27%        N/A       6%          2
+ Bombard                  Conj/Erth      46%        9d8       6%          6
+ Call Canine Familiar     Summ           27%        N/A       12%         3
+ Inner Flame              Hex/Fire       27%        N/A       12%         3
+ Launch Clockwork Bee     Frge           27%        N/A       12%         3
+ Teleport Other           Tloc           27%        N/A       12%         3
+ Tukima's Dance           Hex            27%        N/A       12%         3
+ Vampiric Draining        Necr           27%        2d7       12%         3
+ Hoarfrost Cannonade      Ice/Frge       33%        3d8/3d16  13%         5
+ Metabolic Englaciation   Hex/Ice        33%        N/A       13%         5
+ Plasma Beam              Fire/Air       42%        2x1d56    13%         6
+ Awaken Armour            Erth/Frge      92%        N/A       17%         4
+ Summon Seismosaurus Egg  Summ/Erth      46%        N/A       17%         4
+ Lee's Rapid Deconstruct  Erth           29%        3d15*     21%         5
+ Permafrost Eruption      Ice/Erth       38%        2x4d8     30%         6
+ Anguish                  Hex/Necr       13%        N/A       36%         4
+ Dimensional Bullseye     Hex/Tloc       13%        N/A       36%         4
+ Dispel Undead            Necr           27%        3d13      36%         4
+ Forge Blazeheart Golem   Fire/Frge      27%        N/A       36%         4
+ Ozocubu's Refrigeration  Ice            44%        4d17      41%         7
+ Borgnjor's Vile Clutch   Necr/Erth      23%        N/A       43%         5
+ Spellspark Servitor      Conj/Frge      42%        N/A       61%         7
+ Curse of Agony           Necr           27%        N/A       71%         5
+ Nazja's Percussive Temp  Frge           13%        4d6       71%         5
+ Summon Forest            Summ/Tloc      13%        N/A       71%         5
+ Summon Mana Viper        Hex/Summ       27%        N/A       71%         5
+ Rimeblight               Ice/Necr       33%        2d7 (prima98%         7
+ Splinterfrost Shell      Ice/Frge       33%        6d12      98%         7
+ Death Channel            Necr           13%        N/A       99%         6
+ Dispersal                Tloc           13%        N/A       99%         6
+ Forge Phalanx Beetle     Frge           13%        N/A       99%         6
+ Fortress Blast           Frge           36%        6d24      99%         6
+ Summon Cactus Giant      Summ           13%        N/A       99%         6
+ Diamond Sawblades        Frge           13%        4d5       100%        7
+ Sphinx Sisters           Hex/Summ       13%        N/A       100%        7
+ Summon Hydra             Summ           13%        N/A       100%        7
+ Disjunction              Tloc           13%        N/A       100%        8
+ Ignition                 Fire           13%        3d6       100%        8
+ Summon Horrible Things   Summ           13%        N/A       100%        8
+ Platinum Paragon         Frge           13%        4d12      100%        9
+ Shatter                  Erth           29%        3d24*     100%        9
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (15/15)            Temple (1/1) D:5            Lair (5/5) D:10        
+  Swamp (4/4) Lair:3       Spider (4/4) Lair:3        Slime (0/5) Lair:4      
+    Orc (2/2) D:11            Elf (3/3) Orc:2        Vaults (5/5) D:14        
+  Crypt (2/3) Vaults:2     Depths (4/4) D:15            Zot (5/5) Depths:4    
+ Bailey (visited)         Desolation (visited)      Gauntlet (visited)        
+
+The Realm of Zot is guarded by orbs of winter.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Elyvilon
+Fedhas
+Gozag
+Hepliaklqana
+Kikubaaqudgha
+Makhleb
+Nemelex Xobeh
+Okawaru
+Qazlal
+Ru
+Sif Muna
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Yredelemnul
+Zin
+The Shining One
+Beogh
+Jiyva
+
+Shops:
+D:3 (   D:7 :   D:11 ?(   Orc:2 *(*(   Vaults:5 [*!!!??!   Depths:2 ?:
+Depths:3 :!
+
+Portals:
+Hell: Depths:1 Depths:2 Depths:3 Depths:4
+Abyss: Depths:1 Depths:3
+Pandemonium: Depths:2
+Ziggurat: Depths:2
+
+Annotations:
+D:8 exclusion: staircase
+Lair:4 1 runed translucent door
+
+
+Innate Abilities, Weirdness & Mutations
+
+Your serpentine skin is tough. (AC +9)
+You have supernaturally acute vision. (SInv)
+Armour fits poorly on your strangely shaped body.
+You are resistant to poisons. (rPois)
+You can spit poison.
+Your snake-like lower body moves slowly, but can constrict enemies.
+Your mind is acute. (Int +4, Str/Dex -1)
+You are strong. (Str +4, Int/Dex -1)
+
+Message History
+
+A rust devil is nearby!
+You block the rust devil's attack.
+The rust devil closely misses you. The rust devil hits you.
+The rust devil corrodes you!
+The rust devil attacks as it pursues you!
+The rust devil hits you. The rust devil corrodes you!
+The rust devil barely misses you. The rust devil misses you.
+The rust devil attacks as it pursues you!
+The rust devil closely misses you. You block the rust devil's attack.
+The rust devil hits you. The rust devil corrodes you!
+You block the rust devil's attack.
+There is a stone staircase leading up here.
+You hit the rust devil. The beam of energy hits the rust devil!
+The rust devil is moderately wounded.
+You grab the rust devil.
+The rust devil is moderately wounded.
+You constrict the rust devil! You block the rust devil's attack.
+You slash the rust devil!
+The beam of energy hits the rust devil!!
+You kill the rust devil!
+Cheibriados appreciates the change of pace.
+You start waiting.
+You are no longer corroded.
+You climb upwards.
+There is a stone staircase leading down here.
+What are your orders?
+ t - Shout!
+Orders for allies: a - Attack new target.
+                   r - Retreat!             s - Stop attacking.
+                   g - Guard the area.      f - Follow me.
+ Anything else - Cancel.
+Okay, then.
+You climb downwards.
+There is a stone staircase leading up here.
+Unknown command.
+There is a stone staircase leading up here.
+You climb upwards.
+There is a stone staircase leading down here.
+There is a staircase leading out of the dungeon here.
+You have escaped!
+
+      ##.#                 ######
+#######..#                 #.....
+......#.####################.#...
+#...#.#......................#...
+#...#.#.######......######...#...
+#...#.#......................#...
+......#.##..##......##..##...#.##
+#..####......................#.#
+#..#  ##########@>############.##
+...####..#   #.......#  #........
+##.......#   #.......#  #.####.##
+ #######'##  #.......#  #.#  #.#.
+     ##...## #.......#  #.# ##.#.
+    ##.....########.##  #.# #..#.
+#  ##.......##  ##..#   #.# #.##.
+####.........####...#####.###....
+...+.....÷...'...................
+
+
+There were no monsters in sight!
+
+Vanquished Creatures
+  A boundless tesseract (Zot:5)
+  Frederick (Depths:4)
+  3 ancient liches
+  A pandemonium lord (D:8)
+  5 orbs of winter
+  Mara (Elf:3)
+  Mennas (Depths:4)
+  Bai Suzhen (Spider:4)
+  5 Killer Klowns
+  Saint Roka (Elf:3)
+  Nobody (Vaults:5)
+  4 curse toes
+  A caustic shrike (Depths:2)
+  10 golden dragons
+  Nikola (Elf:1)
+  the Enchantress (Depths:1)
+  Jory (Depths:4)
+  A wyrmhole (Depths:2)
+  A Tzitzimitl (D:8)
+  5 electric golems
+  3 alderkings
+  Jorgrun (D:12)
+  Zenata (Elf:3)
+  The ghost of Konar the the Severer, an adept AtFi of Makhleb (Necropolis)
+  12 tentacled monstrosities
+  3 liches
+  8 guardian sphinxes
+  29 Orb Guardians
+  The ghost of esteth the the Brawler, an adept TrFi of Wu Jian (Necropolis)
+  The ghost of Capybarus the the Tortoise, an adept MiFi of the Shining One (Necropolis)
+  Asterion (Spider:2)
+  4 titans
+  An undying armoury (Vaults:5)
+  6 quicksilver dragons
+  3 deep elf blademasters
+  2 deep elf master archers (Elf:3)
+  3 sphinx marauders
+  The ghost of MathWanz the the Fencer, a journeyman GrFi of Okawaru (Necropolis)
+  7 death cobs
+  2 ancient champions (Crypt:1)
+  Frances (D:13)
+  Gastronok (Lair:2)
+  Agnes (D:14)
+  3 thorn hunters (Swamp:4)
+  Kirke (Swamp:1)
+  Donald (Swamp:3)
+  6 tengu reavers
+  8 shadow dragons
+  Roxanne (Elf:3)
+  22 storm dragons
+  10 fire giants
+  6 draconian knights
+  6 draconian monks
+  A protean progenitor (Zot:1)
+  4 chonchones
+  13 frost giants
+  28 vault wardens
+  2 emperor scorpions
+  9 ghost moths
+  5 draconian scorchers
+  4 iron dragons
+  3 deep elf sorcerers
+  7 draconian shifters
+  A curse skull (Crypt:1)
+  3 imperial myrmidons (Desolation)
+  A balrug (Zot:1)
+  4 deep elf elementalists (Elf:3)
+  4 ghouls
+  A reaper (Depths:2)
+  4 draconian stormcallers
+  2 orc warlords
+  22 ironbound preservers
+  9 spriggan defenders
+  7 broodmothers
+  4 very ugly things
+  14 stone giants
+  7 draconian annihilators
+  8 ironbound thunderhulks
+  3 formless jellyfish
+  2 vampire knights (Crypt:1)
+  11 green draconians
+  7 deep elf death magi
+  18 black draconians
+  13 yellow draconians
+  2 eleionomae
+  10 deep elf demonologists
+  11 white draconians
+  7 deep elf annihilators (Elf:3)
+  14 dire elephants
+  13 spark wasps
+  A juggernaut zombie (Depths:3)
+  A minotaur (Gauntlet)
+  6 war gargoyles
+  5 bunyips
+  13 purple draconians
+  8 red draconians
+  8 ironbound mechanists
+  2 halazid warlocks (Desolation)
+  3 ironbound beastmasters
+  5 eidola (Crypt:1)
+  Snorg (D:12)
+  A green death (Depths:2)
+  3 crystal guardians
+  A blizzard demon (D:7)
+  10 ettins
+  5 jiangshi
+  9 fire dragons
+  5 entropy weavers
+  15 yaktaur captains
+  8 deep elf high priests
+  7 ragged hierophants (Desolation)
+  8 rakshasas
+  A mountainshell (Lair:5)
+  23 hydras
+  4 jorogumos
+  7 peacekeepers
+  34 vault guards
+  7 great orbs of eyes
+  10 servants of whispers (Desolation)
+  2 ice dragons (Depths:4)
+  4 ghost crabs
+  18 centaur warriors
+  3 spriggan air magi
+  5 alligators
+  7 two-headed ogres
+  7 boulder beetles
+  3 radroaches
+  12 death yaks
+  6 tengu warriors
+  A death scarab (Necropolis)
+  3 hell hogs (D:7)
+  8 demonic crawlers
+  5 spriggan berserkers
+  6 ironbound frosthearts
+  A soul eater (Crypt:1)
+  4 vampire magi
+  A shock serpent (shapeshifter) (Vaults:5)
+  2 occultists
+  Sonja (Orc:1)
+  8 deep troll shamans
+  7 deep troll earth magi
+  14 hell knights
+  5 orc high priests (Orc:2)
+  Urug (D:12)
+  4 iron trolls
+  A wretched star (Gauntlet)
+  2 sun demons (Zot:1)
+  6 pharaoh ants
+  17 deep elf knights
+  A sixfirhy (Depths:2)
+  A shard shrike draugr (Crypt:2)
+  4 goliath frogs
+  An obsidian bat (Orc:2)
+  7 crawling flesh cages
+  50 deep trolls
+  15 orb spiders
+  A death drake (Swamp:2)
+  8 deep elf archers
+  6 skeletal warriors
+  7 spriggan druids
+  6 flayed ghosts
+  A large abomination (D:8)
+  24 dancing weapons
+  A mana viper (shapeshifter) (Depths:2)
+  12 swamp dragons
+  2 glowing orange brains
+  8 arcanists
+  2 sun moths
+  4 orange crystal statues (Depths:2)
+  6 bog bodies
+  A caustic shrike simulacrum (Depths:2)
+  A water nymph (shapeshifter) (Depths:2)
+  An obsidian statue (Depths:2)
+  13 lindwurms
+  25 ironbound convokers
+  6 steelbarb worms
+  9 phantasmal warriors
+  A harpy (Vaults:1)
+  A golden dragon zombie (Depths:2)
+  9 necromancers
+  25 deep elf zephyrmancers
+  12 orc knights
+  23 deep elf pyromancers
+  A wolf spider (shapeshifter) (Vaults:5)
+  2 oklob plants (Lair:1)
+  An orc sorcerer (Elf:2)
+  3 cyclopes
+  11 ugly things
+  19 wolf spiders
+  5 will-o-the-wisps
+  A salamander (Depths:2)
+  7 polterguardians
+  4 manticores
+  A moth of wrath (shapeshifter) (D:14)
+  25 moths of wrath
+  7 meliai
+  9 elephants (Lair:5)
+  5 kobold blastminers
+  3 guardian serpents (Desolation)
+  3 black mambas
+  2 rust devils
+  25 vault sentinels
+  A molten gargoyle (Desolation)
+  A guardian sphinx zombie (D:15)
+  2 smoke demons
+  6 torpor snails
+  9 cane toads
+  3 gargoyles
+  An unseen horror (D:11)
+  6 rime drakes
+  A kobold demonologist (D:10)
+  An efreet (Depths:2)
+  44 yaktaurs
+  A freezing wraith (Crypt:1)
+  5 komodo dragons
+  A shadow dragon simulacrum (Depths:3)
+  A tengu simulacrum (Depths:3)
+  A tengu zombie (Depths:3)
+  A storm dragon zombie (D:15)
+  3 tengu conjurers
+  A guardian mummy (Swamp:1)
+  A fire giant simulacrum (Depths:2)
+  A red devil (Zot:2)
+  5 trolls
+  An iron dragon simulacrum (Crypt:1)
+  A queen bee (shapeshifter) (D:14)
+  3 polar bears
+  14 hornets
+  A wind drake (shapeshifter) (Vaults:5)
+  7 tyrant leeches
+  29 tarantellas
+  2 spriggan zombies (Crypt:1)
+  A void ooze zombie (Crypt:1)
+  Grinder (D:3)
+  43 saltlings (Desolation)
+  37 jumping spiders
+  A hippogriff (shapeshifter) (Elf:2)
+  8 blink frogs
+  2 glass eyes
+  A glass eye (shapeshifter) (Vaults:3)
+  11 dream sheep
+  59 slime creatures
+  A fire dragon zombie (Crypt:1)
+  23 culicivoras
+  2 air elementals
+  3 shadowghasts
+  A hydra simulacrum (Necropolis)
+  16 spriggans
+  4 water elementals
+  4 wraiths
+  4 alligator zombies (Necropolis)
+  An anaconda draugr (Crypt:1)
+  3 anaconda zombies
+  2 centaur zombies (Crypt:1)
+  A raven (Lair:5)
+  33 yaks
+  3 wyverns
+  A human (shapeshifter) (D:9)
+  A fire elemental (Elf:1)
+  6 golden eyes (D:7)
+  7 humans
+  7 human simulacra
+  4 basilisks
+  2 hogs (Swamp:1)
+  5 wargs
+  A neqoxec (Gauntlet)
+  35 redbacks
+  17 vampire mosquitoes
+  A mana viper zombie (Crypt:1)
+  An orb spider simulacrum (Spider:3)
+  A chaos spawn (Depths:2)
+  Menkaure (D:4)
+  18 swamp worms
+  2 small abominations
+  3 acid dragons
+  2 harpy simulacra
+  17 water moccasins
+  A wolf spider simulacrum (Spider:3)
+  13 swamp drakes
+  2 kobold geomancers (D:9)
+  4 ice beasts
+  3 black bears
+  54 orc warriors
+  A sky beast (D:7)
+  29 laughing skulls
+  A black bear (shapeshifter) (Depths:4)
+  6 ogres
+  A wolf (shapeshifter) (Depths:2)
+  9 wolves
+  20 centaurs
+  A phantom (D:4)
+  A cane toad draugr (Crypt:1)
+  6 kobold brigands (D:9)
+  11 bullfrogs
+  2 gnoll sergeants
+  3 scorpions
+  A merfolk draugr (Crypt:1)
+  A polar bear zombie (Crypt:1)
+  11 wights
+  A hornet zombie (Crypt:1)
+  A hippogriff draugr (Crypt:1)
+  A dream sheep draugr (Crypt:1)
+  19 killer bees
+  3 howler monkeys
+  10 electric eels
+  5 bombardier beetles
+  8 hounds
+  2 jellies
+  25 orc priests
+  A gnoll bouda (D:5)
+  3 sleepcaps
+  7 clockroaches (D:5)
+  A drude (D:9)
+  3 iguanas
+  A water moccasin draugr (Crypt:1)
+  Ijyb (D:4)
+  Natasha (thrice) (D:3)
+  13 orc wizards
+  6 hell rats (Lair:5)
+  4 gnolls
+  10 adders
+  3 white imps
+  6 ufetubi
+  4 dart slugs
+  112 orcs
+  3 ribbon worms
+  8 endoplasms
+  6 hobgoblins
+  6 jackals
+  2 quokkas
+  11 ball pythons
+  9 bats
+  3 frilled lizards
+  10 goblins
+  14 kobolds
+  3 rats
+2344 creatures vanquished.
+
+Vanquished Creatures (others)
+  A death cob (Zot:4)
+  A deep elf pyromancer (Elf:2)
+  3 moths of wrath (Zot:4)
+  A bloated husk (Swamp:1)
+  A hornet (Swamp:2)
+  A spriggan (Swamp:2)
+8 creatures vanquished.
+
+Grand Total: 2352 creatures vanquished
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | Scytalem the Naga Alchemist began the quest for the Orb.
+     0 | D:1      | Reached XP level 1. HP: 15/15 MP: 3/3
+   162 | D:1      | Reached XP level 2. HP: 22/22 MP: 5/5
+   478 | D:1      | Learned a level 2 spell: Mercury Arrow
+   658 | D:1      | Reached XP level 3. HP: 19/28 MP: 4/6
+   663 | D:1      | Learned a level 3 spell: Mephitic Cloud
+  1431 | D:2      | You fall into a shaft and drop 1 floor!
+  1450 | D:3      | Reached XP level 4. HP: 30/36 MP: 1/8
+  1526 | D:3      | Found Woseopleu's Weapon Emporium.
+  1558 | D:3      | Found an ancient bone altar of Kikubaaqudgha.
+  1558 | D:3      | Encountered Grinder
+  1592 | D:3      | Reached skill level 1 in Air Magic
+  1615 | D:3      | Encountered Natasha
+  1624 | D:3      | Killed Natasha
+  1844 | D:3      | Reached XP level 5. HP: 42/42 MP: 6/9
+  1892 | D:3      | Learned a level 4 spell: Olgreb's Toxic Radiance
+  1928 | D:3      | Encountered Natasha
+  1931 | D:3      | Killed Natasha
+  1949 | D:3      | Encountered Natasha
+  1958 | D:3      | Killed Natasha
+  2726 | D:4      | Encountered Ijyb
+  2736 | D:4      | Killed Ijyb
+  2737 | D:4      | Reached skill level 5 in Alchemy
+  2737 | D:4      | Reached XP level 6. HP: 36/49 MP: 4/10
+  3191 | D:4      | Reached XP level 7. HP: 48/56 MP: 11/11
+  3233 | D:4      | Reached skill level 1 in Fighting
+  3428 | D:4      | Encountered Menkaure
+  3438 | D:4      | Killed Menkaure
+  3439 | D:4      | Reached skill level 5 in Stealth
+  3947 | D:5      | Entered Level 5 of the Dungeon
+  3984 | D:5      | Found a statue of an orb of winter.
+  3984 | D:5      | Found a staircase to the Ecumenical Temple.
+  3984 | D:5      | Found a statue of an orb of winter.
+  3990 | Temple   | Entered the Ecumenical Temple
+  3996 | Temple   | Became a worshipper of Cheibriados the Contemplative
+  4381 | D:5      | Reached XP level 8. HP: 63/67 MP: 8/12
+  4522 | D:5      | Reached * piety under Cheibriados
+  4822 | D:5      | Found a shimmering altar of Xom.
+  5114 | D:5      | Found a hazy altar of Hepliaklqana.
+  5508 | D:5      | Found a shadowy altar of Dithmenos.
+  5700 | D:5      | Reached ** piety under Cheibriados
+  5729 | D:5      | Reached XP level 9. HP: 54/76 MP: 3/15
+  5949 | D:5      | Reached skill level 5 in Conjurations
+  6223 | D:6      | Reached skill level 5 in Spellcasting
+  6624 | D:6      | Found a basalt altar of Yredelemnul.
+  6761 | D:6      | Found a burning altar of Makhleb.
+  6775 | D:6      | Encountered a two-headed ogre
+  7063 | D:6      | Reached *** piety under Cheibriados
+  7080 | D:6      | Found a stormy altar of Qazlal.
+  7476 | D:6      | Reached XP level 10. HP: 85/85 MP: 4/18
+  7582 | D:6      | Reached skill level 5 in Dodging
+  7941 | D:3      | Killed Grinder
+  7942 | D:3      | Reached skill level 1 in Long Blades
+  8198 | D:6      | Killed a two-headed ogre
+  8294 | D:7      | Found a shimmering blue altar of Sif Muna.
+  8922 | D:7      | Found Jun Soronunk's Book Shoppe.
+  9364 | D:7      | Identified the inkwell talisman of the Hall of Blades
+                  | {rCorr Str+2 Int+2}
+  9599 | D:7      | Found a sacrificial altar of Ru.
+  9775 | D:8      | Encountered a two-headed ogre
+  9784 | D:7      | Reached skill level 1 in Shields
+  9817 | D:8      | Reached **** piety under Cheibriados
+  9818 | D:8      | Reached skill level 10 in Alchemy
+  9825 | D:8      | Reached skill level 5 in Long Blades
+  9860 | D:8      | Found a flagged portal.
+  9876 | Bailey   | Entered a bailey
+ 10247 | Bailey   | Reached ***** piety under Cheibriados
+ 10248 | Bailey   | Reached XP level 11. HP: 92/92 MP: 12/20
+ 11077 | Bailey   | Reached skill level 5 in Shields
+ 11130 | Bailey   | Identified the blade talisman of Qazlal's Generosity {Harm
+                  | rF+}
+ 11500 | D:8      | Found a glowing silver altar of Zin.
+ 11515 | D:8      | Killed a two-headed ogre
+ 11910 | D:9      | Found an iron altar of Okawaru.
+ 12006 | D:9      | Encountered a two-headed ogre
+ 12016 | D:9      | Killed a two-headed ogre
+ 12120 | D:9      | Found an opulent altar of Gozag.
+ 12226 | D:7      | Bought a manual of Long Blades for 1120 gold pieces
+ 12414 | D:9      | Encountered a deep elf pyromancer
+ 12430 | D:9      | Killed a deep elf pyromancer
+ 12431 | D:9      | Reached skill level 5 in Air Magic
+ 12557 | D:9      | Identified the ring of Paddierchi {^Contam MP+9 Str+3
+                  | Slay+2 Stlth+}
+ 12557 | D:9      | Encountered a centaur warrior
+ 12578 | D:9      | Killed a centaur warrior
+ 12758 | D:9      | Reached XP level 12. HP: 99/99 MP: 19/21
+ 12771 | D:9      | Identified the ring "Suntomet" {Fly Dex+3}
+ 12781 | D:9      | Reached ****** piety under Cheibriados
+ 12820 | D:9      | Reached skill level 10 in Stealth
+ 13319 | D:10     | Entered Level 10 of the Dungeon
+ 13341 | D:10     | Found a staircase to the Lair.
+ 13522 | D:10     | Identified the orb "Rogileus" {Mayhem, rPois rN+ Regen+
+                  | Dex-4}
+ 14173 | D:11     | Encountered a deep troll earth mage
+ 14185 | D:11     | Killed a deep troll earth mage
+ 14186 | D:11     | Reached skill level 10 in Long Blades
+ 14186 | D:11     | Reached skill level 1 in Invocations
+ 14459 | D:11     | Found Uprollyi's Magic Scroll Shop.
+ 14501 | D:11     | Encountered a two-headed ogre
+ 14506 | D:11     | Killed a two-headed ogre
+ 14507 | D:11     | Reached skill level 2 in Invocations
+ 14572 | D:11     | Found a staircase to the Orcish Mines.
+ 14574 | D:11     | Found Basubret's Weapon Shoppe.
+ 15090 | Lair:1   | Entered Level 1 of the Lair of Beasts
+ 15164 | Lair:1   | Found a blossoming altar of Fedhas.
+ 15273 | Lair:1   | Identified the spore talisman of Igeyn {Slay+2}
+ 15286 | Lair:1   | Reached skill level 5 in Fighting
+ 15338 | Lair:1   | Reached skill level 3 in Invocations
+ 15445 | Lair:1   | Identified the medusa talisman "Nytwytud" {rCorr MP+9}
+ 15619 | Lair:2   | Gained mutation: Your snake-like lower body moves slowly,
+                  | but can constrict enemies. [Naga growth]
+ 15619 | Lair:2   | Reached XP level 13. HP: 104/109 MP: 23/23
+ 15751 | Lair:2   | Reached skill level 4 in Invocations
+ 16004 | Lair:2   | Reached skill level 1 in Armour
+ 16128 | Lair:2   | Learned a level 6 spell: Eringya's Noxious Bog
+ 16158 | Lair:2   | Identified the ring "Lekliroo" {rPois Will++ rCorr Dex-5}
+ 16237 | Lair:2   | Encountered Gastronok
+ 16251 | Lair:2   | Killed Gastronok
+ 16252 | Lair:2   | Reached skill level 5 in Invocations
+ 16254 | Lair:2   | Got the +3 hat of Pondering {Ponderous, Will+ MP+10 Int+5}
+ 17328 | Lair:3   | Encountered an eleionoma
+ 17331 | Lair:3   | Found a staircase to the Swamp.
+ 17340 | Lair:3   | Killed an eleionoma
+ 17582 | Lair:3   | Learned a level 3 spell: Passwall
+ 18230 | Lair:3   | Found a hole to the Spider Nest.
+ 18870 | Lair:4   | Identified the blade talisman of the Transparent God {Fly
+                  | Str+2 Dex+2}
+ 19031 | Lair:4   | Reached skill level 6 in Invocations
+ 19253 | Lair:4   | Found a viscous altar of Jiyva.
+ 19253 | Lair:4   | Found a staircase to the Slime Pits.
+ 19253 | Lair:4   | Encountered an acid blob
+ 19253 | Lair:4   | Encountered an acid blob
+ 19253 | Lair:4   | Encountered an acid blob
+ 19339 | Lair:4   | Identified the alchemy staff of the Moon {rElec rPois Str+4
+                  | Alch}
+ 19341 | Lair:4   | Identified the ring "Beaceroan" {^Contam Fly rPois Int+8
+                  | Dex+6}
+ 19438 | Lair:5   | Entered Level 5 of the Lair of Beasts
+ 19443 | Lair:5   | Reached XP level 14. HP: 123/123 MP: 26/26
+ 19731 | Lair:5   | Reached skill level 10 in Shields
+ 20047 | Lair:5   | Reached skill level 7 in Invocations
+ 20651 | Lair:5   | Reached skill level 5 in Armour
+ 20790 | Lair:5   | Reached skill level 8 in Invocations
+ 20862 | Lair:5   | Identified the amulet "Jyimaok" {Chemistry rElec rF+ Int-3
+                  | Dex+3}
+ 21215 | Orc:1    | Entered Level 1 of the Orcish Mines
+ 21338 | Orc:1    | Encountered Sonja
+ 21339 | Orc:1    | Killed Sonja
+ 21504 | D:7      | Bought a manual of Dodging for 1120 gold pieces
+ 21697 | Orc:1    | Found a roughly hewn altar of Beogh.
+ 21881 | Orc:2    | Entered Level 2 of the Orcish Mines
+ 22144 | Orc:2    | Encountered an orc warlord
+ 22158 | Orc:2    | Killed an orc warlord
+ 22159 | Orc:2    | Reached XP level 15. HP: 118/132 MP: 27/27
+ 22761 | Orc:2    | Reached skill level 9 in Invocations
+ 23260 | Orc:2    | Found a staircase to the Elven Halls.
+ 23389 | Orc:2    | Found Lejaixt's General Store.
+ 23392 | Orc:2    | Found Vucots's Assorted Antiques.
+ 23393 | Orc:2    | Found Ifoytann's Antique Weapon Shop.
+ 23394 | Orc:2    | Found Qetuson's Antique Weapon Shop.
+ 23401 | Orc:2    | Bought a book of Conjurations for 237 gold pieces
+ 23406 | Orc:2    | Learned a level 4 spell: Fulminant Prism
+ 23692 | D:12     | Found a gate leading to a gauntlet.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Found a transporter.
+ 23709 | Gauntlet | Entered a Gauntlet
+ 23712 | Gauntlet | Learned a level 1 spell: Magic Dart
+ 23765 | Gauntlet | Identified the +2 cloak "Tewirrim" {Int+3}
+ 23901 | Gauntlet | Found the +2 shield of Resistance {rF++ rC++ Will++}
+ 23990 | Gauntlet | Identified the blade talisman of Yesterday {rPois Will+++
+                  | MP+9 Dex-3}
+ 23992 | Gauntlet | Got the +2 shield of Resistance {rF++ rC++ Will++}
+ 24391 | D:12     | Found the +5 Force Lance {heavy, knockback}
+ 24450 | D:12     | Encountered Urug
+ 24476 | D:12     | Killed Urug
+ 24734 | D:12     | Encountered Snorg
+ 24742 | D:12     | Killed Snorg
+ 24828 | D:12     | Encountered Jorgrun
+ 24849 | D:12     | Killed Jorgrun
+ 25781 | D:13     | Encountered Frances
+ 25796 | D:13     | Killed Frances
+ 26448 | D:14     | Reached skill level 10 in Invocations
+ 26727 | D:14     | Found a gate to the Vaults.
+ 26971 | D:14     | Encountered Agnes
+ 26979 | D:14     | Killed Agnes
+ 27090 | D:15     | Entered Level 15 of the Dungeon
+ 27294 | D:15     | Reached XP level 16. HP: 130/138 MP: 24/28
+ 27400 | D:15     | Found a staircase to the Depths.
+ 28796 | Spider:1 | Entered Level 1 of the Spider Nest
+ 28874 | Spider:1 | Found a phantasmal passage.
+ 28883 | Necropol | Entered the Necropolis
+ 28931 | Necropol | Encountered Capybarus's ghost (adept MiFi)
+ 28931 | Necropol | Encountered esteth's ghost (adept TrFi)
+ 29025 | Necropol | Killed esteth's ghost
+ 29212 | Necropol | Killed Capybarus's ghost
+ 29535 | Necropol | Encountered Konar's ghost (adept AtFi)
+ 29625 | Necropol | Killed Konar's ghost
+ 29793 | Necropol | Identified the +4 lajatang of Skirmishing {protect, rF++
+                  | Str+3 Stlth+}
+ 29944 | Necropol | Encountered MathWanz's ghost (journeyman GrFi)
+ 30093 | Necropol | Killed MathWanz's ghost
+ 30321 | Necropol | Identified the +2 pair of gloves "Juc Selesei" {rC+}
+ 30340 | Necropol | Got the Lectures on the Autopsy
+ 31108 | Spider:1 | Identified the +7 short sword of the Dark Horse {venom,
+                  | *Noise Int+4 Dex+5}
+ 31298 | Spider:1 | Reached skill level 10 in Dodging
+ 31485 | Spider:1 | Reached skill level 10 in Fighting
+ 31737 | Spider:2 | Reached skill level 10 in Spellcasting
+ 31819 | Spider:2 | Encountered Asterion
+ 31832 | Spider:2 | Killed Asterion
+ 31833 | Spider:2 | Reached XP level 17. HP: 105/153 MP: 31/31
+ 33918 | Spider:3 | Gained mutation: Your magical capacity is low. (-10% MP)
+                  | [mutagenic glow]
+ 34116 | Spider:3 | Reached skill level 11 in Invocations
+ 34117 | Spider:3 | Gained mutation: You are weak. (Str -3) [mutagenic glow]
+ 35415 | Spider:4 | Entered Level 4 of the Spider Nest
+ 36116 | Spider:4 | Reached XP level 18. HP: 84/165 MP: 28/28
+ 36248 | Spider:4 | Encountered Bai Suzhen
+ 36281 | Spider:4 | Killed Bai Suzhen
+ 36282 | Spider:4 | Reached skill level 12 in Invocations
+ 36918 | Spider:4 | Got a gossamer rune of Zot
+ 37316 | Spider:4 | Lost mutation: Your magical capacity is low. (-10% MP)
+                  | [potion of mutation]
+ 37316 | Spider:4 | Lost mutation: You are weak. (Str -3) [potion of mutation]
+ 37316 | Spider:4 | Gained mutation: You are strong. (Str +4, Int/Dex -1)
+                  | [potion of mutation]
+ 37316 | Spider:4 | Gained mutation: Your mind is acute. (Int +4, Str/Dex -1)
+                  | [potion of mutation]
+ 37464 | Swamp:1  | Entered Level 1 of the Swamp
+ 37527 | Swamp:1  | Found a portal to a secret trove of treasure.
+ 37704 | Swamp:1  | Gained bane: Bane of the Dilettante [Entering a Trove]
+ 37705 | Trove    | Entered The Lost Hoard of Erebora
+ 37723 | Trove    | Identified the amulet of Byutt {Rampage rF+ rC+ rN+
+                  | RegenMP+}
+ 37729 | Trove    | Identified the +0 fire dragon scales "Earthly Heaven"
+                  | {rPois rF++ rC- rCorr Str-3 Dex+3}
+ 37736 | Trove    | Identified the +3 acid dragon scales of the Six Burning
+                  | Ghosts {rCorr MP-7 Dex+5}
+ 37742 | Trove    | Identified the dragon-coil talisman "Telan" {rElec Dex+2
+                  | Slay-5}
+ 37748 | Trove    | Identified the ring "Vuew" {*Slow Int+3 Slay+4 Stlth+}
+ 37755 | Trove    | Got the Compilation of Aeromancy and Grit
+ 37782 | Trove    | Identified the amulet "Ofeerobir" {Chemistry rF+ Int+4}
+ 37788 | Trove    | Identified the +3 hat of Least Resistance {Bane Will+
+                  | rCorr}
+ 37794 | Trove    | Identified the +4 shadow dragon scales of the Hot Ocelot
+                  | {+Inv MP+8 Stlth+}
+ 37806 | Trove    | Identified the quicksilver dragon scales "Qurr" {rF- rN+++
+                  | Will+++}
+ 38181 | Swamp:1  | Learned a level 5 spell: Alistair's Intoxication
+ 38258 | Swamp:1  | Encountered Kirke
+ 38266 | Swamp:1  | Killed Kirke
+ 39034 | Swamp:2  | Reached skill level 15 in Long Blades
+ 39859 | Swamp:3  | Encountered Donald
+ 39866 | Swamp:3  | Killed Donald
+ 40247 | Swamp:4  | Entered Level 4 of the Swamp
+ 40308 | Swamp:4  | HP: 8/168 [thorn hunter/volley of thorns (43)]
+ 41348 | Swamp:4  | Reached XP level 19. HP: 170/172 MP: 33/33
+ 41370 | Swamp:4  | Reached skill level 13 in Invocations
+ 41705 | Swamp:4  | Got a decaying rune of Zot
+ 42234 | Elf:1    | Entered Level 1 of the Elven Halls
+ 42309 | Elf:1    | Found a crumbling gateway.
+ 42331 | Desolati | Entered the Desolation of Salt
+ 42752 | Desolati | Identified the +0 ring mail of the Sun {+Inv rF++ rC-}
+ 42756 | Desolati | Identified the ring of Past Mistakes {rN+ Will+ Str+3
+                  | Int+2}
+ 42849 | Desolati | Reached skill level 15 in Dodging
+ 42861 | Desolati | Lost bane: Bane of the Dilettante
+ 42867 | Desolati | Reached skill level 15 in Alchemy
+ 42912 | Desolati | Learned a level 4 spell: Airstrike
+ 43147 | Desolati | Reached skill level 14 in Invocations
+ 43252 | Desolati | Got the crystal ball of Wucad Mu {Energy, Mindtap}
+ 43258 | Desolati | Found the +2 hat of the Bear Spirit {Spirit, Bear, *Rage
+                  | Will++}
+ 43275 | Desolati | Got the +2 hat of the Bear Spirit {Spirit, Bear, *Rage
+                  | Will++}
+ 43579 | Desolati | Identified the +3 leather armour of the Old World {rN+
+                  | Will++ Regen+ Dex+4}
+ 44410 | Elf:1    | Identified the +7 flail of the Charming Saviour {freeze,
+                  | rC+ Will+ Dex-4 SInv}
+ 44570 | Elf:1    | Encountered Nikola
+ 44585 | Elf:1    | Killed Nikola
+ 44860 | Elf:1    | Identified a scroll of acquirement
+ 45003 | Elf:2    | Reached XP level 20. HP: 187/187 MP: 35/35
+ 45278 | Elf:2    | Paralysed by an air elemental for 1.5 turns
+ 45840 | Elf:2    | Reached skill level 15 in Invocations
+ 46490 | Elf:2    | Identified the blade talisman of Makah {Str+2}
+ 46649 | Elf:3    | Entered Level 3 of the Elven Halls
+ 46661 | Elf:3    | Encountered Mara
+ 46671 | Elf:3    | Encountered Scytalem's illusion
+ 46675 | Elf:3    | Encountered Scytalem's illusion
+ 46681 | Elf:3    | Killed Mara
+ 46752 | Elf:3    | Encountered Saint Roka
+ 46761 | Elf:3    | Killed Saint Roka
+ 46982 | Elf:3    | Identified the quicksilver dragon scales of Plog {+Blink
+                  | rElec Will+ MP+6 Dex-4}
+ 47217 | Elf:3    | Encountered Roxanne
+ 47317 | Elf:3    | Identified the +7 spear "Nani" {speed, *Noise Fly rCorr
+                  | Dex+3}
+ 47317 | Elf:3    | Identified the ring of Xom's Esteem {rPois rC++ Str+2}
+ 47359 | Elf:3    | Paralysed by an air elemental for 1.5 turns
+ 47510 | Elf:3    | Identified the +10 broad axe of Izisk {flame, rPois Str-2
+                  | Int+6 SInv}
+ 47514 | Elf:3    | Identified the +1 trident of Internal Strife {heavy, rF+
+                  | SInv}
+ 47682 | Elf:3    | Identified the ring "Ceteag" {Dex+6 Slay+6 SInv}
+ 48156 | Elf:3    | Reached skill level 16 in Invocations
+ 48544 | Elf:3    | Encountered Zenata
+ 48557 | Elf:3    | Killed Zenata
+ 48844 | Elf:3    | Identified the +4 falchion of Nunyriq {valour, Int+4}
+ 48971 | Elf:3    | Identified the cold staff of Big Damage {^Fragile rC+ rN+
+                  | Int+5 Hexes Ice}
+ 49207 | Elf:3    | Killed Roxanne
+ 49423 | Vaults:1 | Entered Level 1 of the Vaults
+ 49439 | Vaults:1 | Reached XP level 21. HP: 193/198 MP: 37/37
+ 49844 | Vaults:1 | Reached skill level 17 in Invocations
+ 50625 | Vaults:1 | Reached skill level 18 in Invocations
+ 50630 | Vaults:1 | Reached skill level 10 in Air Magic
+ 51008 | Vaults:1 | Reached skill level 10 in Armour
+ 51447 | Vaults:2 | Reached skill level 19 in Invocations
+ 51591 | Vaults:2 | Found a staircase to the Crypt.
+ 51652 | Vaults:2 | Learned a level 5 spell: Arcjolt
+ 51867 | Vaults:2 | Reached skill level 1 in Earth Magic
+ 52379 | Vaults:2 | Reached XP level 22. HP: 194/206 MP: 38/38
+ 52955 | Vaults:3 | Identified the lupine talisman "Zimourch" {rPois}
+ 53517 | Vaults:3 | Reached skill level 20 in Invocations
+ 53827 | Vaults:3 | Paralysed by a formless jellyfish for 1.5 turns
+ 54895 | Vaults:4 | Reached skill level 10 in Conjurations
+ 55752 | Vaults:4 | Reached XP level 23. HP: 213/213 MP: 39/39
+ 56709 | Depths:1 | Entered Level 1 of the Depths
+ 56741 | Depths:1 | Encountered the Enchantress
+ 56746 | Depths:1 | Killed the Enchantress
+ 56977 | Depths:1 | Got the +3 faerie dragon scales {rPois rC+++ rCorr Dex+3
+                  | Stlth- Hexes}
+ 57556 | Depths:1 | Found a gateway to Hell.
+ 57602 | Depths:1 | Found a snail-covered altar of Cheibriados.
+ 57978 | Depths:1 | Found a one-way gate to the infinite horrors of the Abyss.
+ 58010 | Depths:1 | Found the amulet of Tranquility {rN+ Will+++ Clar}
+ 58390 | Depths:1 | Got the amulet of Tranquility {rN+ Will+++ Clar}
+ 58782 | Depths:2 | Found Javveg's Book Boutique.
+ 58806 | Depths:2 | Bought a manual of Long Blades for 2080 gold pieces
+ 59022 | Depths:2 | Found a one-way gate leading to the halls of Pandemonium.
+ 59167 | Depths:2 | Found a one-way gateway to a ziggurat.
+ 60181 | Depths:2 | Identified the +1 falchion of Responsibility {valour,
+                  | Str+3}
+ 60386 | Depths:2 | Found Wyus's Magic Scroll Boutique.
+ 61052 | Depths:2 | HP: 5/213 [alderking (15)]
+ 61404 | Depths:2 | Reached XP level 24. HP: 215/222 MP: 39/39
+ 62043 | Depths:3 | Found Nulair's Distillery.
+ 62763 | Depths:3 | Identified the +1 leather armour of Honour {Dex+4}
+ 63374 | Depths:3 | Found Geve's Book Emporium.
+ 63568 | Depths:4 | Entered Level 4 of the Depths
+ 63669 | Depths:4 | Encountered Jory
+ 63681 | Depths:4 | Killed Jory
+ 64812 | Depths:4 | Identified the orb of Ru's Hope {Energy, Will+ Str+6 Alch}
+ 64812 | Depths:4 | Encountered Frederick
+ 64824 | Depths:4 | Killed Frederick
+ 65170 | Depths:4 | Found a statue of an orb of winter.
+ 65170 | Depths:4 | Found a gate to the Realm of Zot.
+ 65170 | Depths:4 | Found a statue of an orb of winter.
+ 65179 | Depths:4 | Encountered Mennas
+ 65213 | Depths:4 | Killed Mennas
+ 65811 | Vaults:5 | Entered Level 5 of the Vaults
+ 65825 | Vaults:5 | Reached XP level 25. HP: 223/229 MP: 34/39
+ 65920 | Vaults:5 | Encountered Nobody
+ 66098 | Vaults:5 | Killed Nobody
+ 66411 | Vaults:5 | Reached skill level 15 in Air Magic
+ 67558 | Vaults:5 | Found Noamolide's Assorted Antiques.
+ 67578 | Vaults:5 | Reached skill level 15 in Conjurations
+ 67739 | Vaults:5 | Encountered an ancient lich
+ 67749 | Vaults:5 | Killed an ancient lich
+ 68277 | Vaults:5 | Got a silver rune of Zot
+ 68717 | Vaults:5 | Found Atazxe's Magic Scroll Shop.
+ 68717 | Vaults:5 | Found Wizxeixyra's Magic Scroll Emporium.
+ 68791 | Vaults:5 | Bought 3 scrolls of teleportation for 126 gold pieces
+ 68791 | Vaults:5 | Bought a scroll of blinking for 133 gold pieces
+ 68791 | Vaults:5 | Bought a scroll of blinking for 133 gold pieces
+ 69010 | Vaults:5 | Bought a parchment of Ozocubu's Armour for 202 gold pieces
+ 69014 | Vaults:5 | Learned a level 3 spell: Ozocubu's Armour
+ 69029 | Vaults:5 | Found Ujeub's Distillery.
+ 69099 | Vaults:5 | Reached skill level 1 in Ice Magic
+ 69217 | Vaults:5 | Found Ymif's Distillery.
+ 69217 | Vaults:5 | Found Ekke's Antique Armour Shop.
+ 69261 | Vaults:5 | Found Wewos's Distillery.
+ 69336 | Vaults:5 | Found Byukhin's Distillery.
+ 69341 | Vaults:5 | Bought a potion of heal wounds for 145 gold pieces
+ 69730 | Zot:1    | Entered Level 1 of the Realm of Zot
+ 70161 | Zot:1    | Identified the inkwell talisman of Zekk {*Slow rElec Dex+3}
+ 70174 | Zot:1    | Reached skill level 5 in Ice Magic
+ 70623 | Zot:1    | Identified the +1 rapier "Cases" {devious, rC+ Int+3
+                  | Stlth+}
+ 70889 | Zot:1    | Reached XP level 26. HP: 172/237 MP: 39/39
+ 71064 | Zot:1    | HP: 9/237 [black draconian/+0 glaive (17)]
+ 72256 | Zot:2    | Encountered an orb of winter
+ 72261 | Zot:2    | Killed an orb of winter
+ 73444 | Zot:2    | Identified the +6 lajatang "Qeofif" {flame, rCorr Str+3
+                  | Stlth+}
+ 76235 | Zot:4    | Reached skill level 15 in Fighting
+ 76561 | Zot:4    | Reached skill level 10 in Ice Magic
+ 76660 | Zot:4    | Reached skill level 15 in Armour
+ 77165 | Zot:4    | Reached XP level 27. HP: 241/242 MP: 39/39
+ 77352 | Zot:5    | Entered Level 5 of the Realm of Zot
+ 78211 | Zot:5    | Activated a boundless tesseract
+ 78374 | Zot:5    | Encountered an ancient lich
+ 78539 | Zot:5    | Encountered a boundless tesseract
+ 78549 | Zot:5    | Encountered an orb of winter
+ 78551 | Zot:5    | Killed a boundless tesseract
+ 78606 | Zot:5    | Killed an orb of winter
+ 78944 | Zot:5    | Encountered an orb of winter
+ 78963 | Zot:5    | Killed an orb of winter
+ 79043 | Zot:5    | Killed an ancient lich
+ 79210 | Zot:5    | Encountered an orb of winter
+ 79224 | Zot:5    | Killed an orb of winter
+ 79470 | Zot:5    | Encountered an orb of winter
+ 79476 | Zot:5    | Encountered an ancient lich
+ 79496 | Zot:5    | Killed an orb of winter
+ 79499 | Zot:5    | Killed an ancient lich
+ 80056 | Crypt:1  | Entered Level 1 of the Crypt
+ 82463 | Zot:5    | Got the Orb of Zot
+ 82865 | D:8      | Encountered Noeketos the pandemonium lord
+ 82869 | D:8      | Killed Noeketos the pandemonium lord
+ 83124 | D:$      | Escaped with the Orb!
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      dpeg_arrival_line_fractal, layout_loops_corners,
+          minmay_split_cup_large
+D:2:      layout_rooms, hex_intersection, minmay_fractal_squares_5
+D:3:      layout_rooms, amcnicky_altar_gilded, serial_shops, shop_statue,
+          uniq_natasha, uniq_grinder
+D:4:      layout_cave_pools, serial_column_ruins, column_ruins_open_tiny,
+          column_ruins_open_small, column_ruins_grid_1, nicolae_letterblocks
+          [nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock, nicolae_letter_subblock,
+          nicolae_letter_subblock], nicolae_kite_square_tiling_tiny, uniq_ijyb,
+          uniq_menkaure
+D:5:      minmay_polygon_palace, layout_basic, xom_teletrap_fun,
+          lemuel_doored_altar, grunt_dithmenos_smoke,
+          minmay_temple_entry_proselytizer, minmay_worlds_worst_comb
+D:6:      layout_gridville, nicolae_overflow_hidden_temple,
+          mainiacjoe_overflow_catwalk, nicolae_qazlal_console_elemental,
+          kennysheep_another_room, minmay_ruffians
+D:7:      layout_cave_pools, nicolae_ru_the_path_less_chosen,
+          mainiacjoe_overflow_concentric_impassable, serial_shops,
+          nicolae_shop_relaxation
+D:8:      layout_cave_pools, nicolae_zin_silver_trinity, enter_bailey_3,
+          serial_column_ruins, column_ruins_open_tiny,
+          column_ruins_corridor_corner, column_ruins_open_small,
+          nicolae_escalator
+D:9:      minmay_the_grid_net [minmay_the_grid_expand,
+          minmay_the_grid_small_cups, minmay_the_grid_outer_circle,
+          minmay_the_grid_tiny_cups, minmay_the_grid_spikes,
+          minmay_the_grid_prize_four_corners_diamond_b], layout_cave_pools,
+          nicolae_overflow_four_foyers_orthogonal, grunt_gozag_breadcrumbs,
+          lightli_fourway_metalbox
+D:10:     layout_rooms, hellmonk_lair_entry_icy
+D:11:     nzn_winding_woodlands_cross [nzn_winding_woodlands_5x15_split_checker,
+          nzn_winding_woodlands_5x15_default, nzn_winding_woodlands_5x15_parted,
+          nzn_winding_woodlands_5x15_lazy_stream,
+          nzn_winding_woodlands_15x15_eel_pit], layout_long_grid, orc_david_3,
+          serial_shops, shop
+D:12:     layout_grid_maze, gauntlet_entry_generic,
+          nicolae_shoulda_brought_a_snack, hangedman_decor_lopped, uniq_jorgrun,
+          uniq_snorg, uniq_urug
+D:13:     layout_loops_ring, uniq_frances
+D:14:     layout_gridville, hellmonk_vaults_order_and_chaos,
+          minmay_misc_feat_roman, uniq_agnes
+D:15:     gammafunk_depths_entry_grave, layout_stronghold, minmay_misc_feat_chi
+Temple:   eino_wide_crystal_templ
+Lair:1:   layout_hall_layers, hangedman_tree_tricks
+Lair:2:   layout_long_grid, serial_bayou_lagoon_a,
+          nicolae_lair_more_dang_stairs, grunt_megastairs_2, uniq_gastronok
+Lair:3:   layout_regular_city, alex1729_swamp_entry_worm_eleionoma,
+          spider_nest_entry_trap_web_field
+Lair:4:   layout_misc_corridors, slime_entry_2, serial_bayou_ford_a,
+          minmay_lindwurm_lava
+Lair:5:   grunt_lair_end_beastmaster, layout_misc_corridors,
+          nicolae_lair_walls_n_trees_1
+Swamp:1:  layout_basic_swamp, nicolae_trove_entry_path_of_doom,
+          nicolae_swamp_fairy_circle, swamp_pool_1_2, uniq_kirke
+Swamp:2:  layout_basic_swamp, regret_index_swamp_ruin_house_1
+Swamp:3:  layout_falls_marsh, evilmike_swamp_ruin_house_6, uniq_donald
+Swamp:4:  swamp_basic_johnstein, layout_basic_swamp
+Spider:1: cheibrodos_forgotten_conduit, index_necropolis_entry_repeat_visits,
+          nicolae_spider_bzzzt
+Spider:2: layout_chambers, uniq_wiglaf, uniq_asterion
+Spider:3: layout_chambers, hangedman_spider_tarantella_strand
+Spider:4: hellmonk_spider_rune_endless_swarm, uniq_bai_suzhen
+Orc:1:    layout_caves, basic_altar, uniq_sonja
+Orc:2:    st_orc_pillars, layout_caves, blackcustard_mines_bat_river
+Elf:1:    elf_arrival_001, layout_gridlike, portal_desolation_entry_garden,
+          hangedman_elven_crosses_minicolossus, uniq_nikola
+Elf:2:    nicolae_elf_blades_splatter_lattice [infiniplex_blade_entry_pillars],
+          layout_geoelf_octagon
+Elf:3:    minmay_elf_hall_not_hex, layout_geoelf_octagon, uniq_roxanne,
+          uniq_zenata, uniq_saint_roka, uniq_mara
+Vaults:1: regret_index_vaults_charnel_boxing, nicolae_vaults_wine_cellar,
+          v_misc_9, nicolae_vaults_layer_cake_slice,
+          nicolae_vaults_more_shelving_2, vaults_room_grunt_arrival_ludios,
+          layout_vaults_omnigrid
+Vaults:2: nicolae_vaults_trapezoid_lopsided_1, nicolae_vaults_circle_grid_a,
+          v_misc_11, minmay_crypt_entry_simple_round, v_misc_2,
+          nicolae_vaults_hexular_roomagon, nicolae_vaults_network_barrier,
+          hangedman_vaults_locks, nicolae_vaults_trapezoid_lopsided_1,
+          nicolae_vaults_network_quincunx
+          [nicolae_vaults_network_quincunx_subvault,
+          nicolae_vaults_network_quincunx_subvault,
+          nicolae_vaults_network_quincunx_subvault,
+          nicolae_vaults_network_quincunx_subvault,
+          nicolae_vaults_network_quincunx_subvault], v_misc_19,
+          nicolae_vaults_house_1, nicolae_vaults_trapezoid_2,
+          layout_vaults_omnicross
+Vaults:3: hangedman_vaults_river_flow, serial_library_hellmonk_open_square,
+          ontoclasm_vaults_loading_screen, nicolae_vaults_network_star,
+          hangedman_vaults_slither, hangedman_vaults_stream, v_misc_31,
+          hangedman_vaults_restitches, nicolae_vaults_tangram_2,
+          grunt_vaults_hallway_short, vaults_dpeg_diagonal,
+          vaults_dpeg_encased_lava, nicolae_vaults_ring_of_whatevers,
+          layout_vaults_maze_bifur
+Vaults:4: vaults_room_door_ring, nicolae_vaults_surprise_closet,
+          nicolae_vaults_big_ls, nicolae_vaults_storage_closets_1, v_rooms_3,
+          nicolae_vaults_closet_pinwheel_4, dpeg_vaults_monster_box,
+          nicolae_vaults_swerve, nicolae_vaults_antechamber_and_loot_room,
+          nicolae_vaults_rhombus_7, nicolae_vaults_little_squares_6,
+          layout_vaults_ring
+Vaults:5: uniq_nameless_revenant
+Crypt:1:  layout_basic, amcnicky_mini_corridor_feature,
+          nicolae_crypt_ex-fountain
+Crypt:2:  layout_gridlike, hellmonk_scarab_ruin, uniq_josephina, uniq_margery,
+          uniq_sojobo
+Depths:1: layout_long_grid, abyss_entry, grunt_metal_band, lemuel_old_faithful,
+          slow_altar_2, hangedman_abyss_or_decor_stagger,
+          lightli_giant_bouncers, uniq_enchantress
+Depths:2: nicolae_herringbone, layout_gridlike, tekkud_enter_ziggurat_i,
+          serial_shops, nicolae_square_shop, parchment_shop,
+          hangedman_abyss_or_decor_stabs, rand_demon_pan_entry_3, hell_entry,
+          minivault_16, minmay_staircase_windowed_small
+Depths:3: kb_forest_paths, layout_basic, minmay_misc_feat_five, hell_entry,
+          serial_shops, nicolae_shop_window_shopping, parchment_shop,
+          abyss_entry_small_statue_room, chequers_serial_rivers_micro_b,
+          infiniplex_staircase_zigzag_2
+Depths:4: evilmike_zot_entry_round, layout_long_grid, roderic_lattice_a,
+          pf_hell_entry_tar_spiral, uniq_mennas, uniq_jory, uniq_frederick
+Zot:1:    kennysheep_room_grid, layout_onion_interference,
+          regret_index_zotdec_banners
+Zot:2:    layout_basic
+Zot:3:    layout_concentric_octagons
+Zot:4:    grunt_deathspiral_small, layout_onion_interference,
+          regret_index_zotdec_carving_tricks
+Zot:5:    layout_cellular_growth, grunt_ministairs_6, st_stairs_1,
+          skrybe_zot_glass_1
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 |
+---------------+----------------------------------------------------------------------------------+-----
+Alchemy        |     4        5  6     7  8 10    11 12    13 14       15             17 19       | 19.0
+Stealth        |        4           6  7  8     9 10             13 14                            | 14.0
+Conjurations   |        2     3     4     5     6           7  8                10 12 14 15 16 18 | 18.3
+Air Magic      |           1  2  3     4        5  6                       8 10 12 13 14 16 17 18 | 18.6
+Spellcasting   |           3           4  5  6        8       10       11 12                      | 12.0
+Fighting       |                    2  3  4        5  7  8    10 11 12 13 14                15 16 | 16.9
+Dodging        |                       2  4  5              8 10 12 14 15 16                      | 16.4
+Long Blades    |                             5  8 11 12 14          16             17 18          | 18.0
+Shields        |                             3  6  8  9 11 13 14                                  | 14.0
+Invocations    |                                   3  6  8 10    11 12 14 16 19 20                | 20.2
+Armour         |                                      3  5  6              8 10 11 13 14    15 16 | 16.5
+Earth Magic    |                                                              1  4                |  4.0
+Ice Magic      |                                                                          7 10    | 10.4
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 | 19-21 | 22-24 | 25-27 || total
+---------------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------++-------
+ Attack: Normal            |     7 |     6 |   118 |   283 |   471 |   720 |   707 |   849 |  1146 ||  4307
+  Melee: Mace              |     7 |     6 |    79 |       |       |       |       |       |       ||    92
+         Dagger            |       |       |    13 |       |       |       |       |       |       ||    13
+         Flail             |       |       |    26 |       |     8 |       |       |       |       ||    34
+         Long sword        |       |       |       |   143 |       |       |       |       |       ||   143
+         Scimitar          |       |       |       |   140 |   461 |   720 |   372 |       |       ||  1693
+         Constrict         |       |       |       |       |    99 |   130 |   161 |   133 |   138 ||   661
+         Quarterstaff      |       |       |       |       |     2 |       |       |       |       ||     2
+         Demon blade       |       |       |       |       |       |       |   335 |   849 |  1146 ||  2330
+  Throw: Javelin           |     1 |     5 |     9 |    18 |    36 |    49 |    26 |     6 |     6 ||   156
+         Stone             |       |     4 |     5 |       |       |       |       |       |       ||     9
+   Cast: Poisonous Vapours |    27 |    23 |     5 |     4 |     3 |       |       |       |       ||    62
+         Mercury Arrow     |       |    26 |   112 |   204 |    95 |   109 |    33 |     5 |       ||   584
+         Mephitic Cloud    |       |       |    12 |    45 |    45 |    20 |    47 |    26 |     7 ||   202
+         Olgreb's Toxic Ra |       |       |       |    12 |   147 |   192 |   124 |   101 |    33 ||   609
+         Fulminant Prism   |       |       |       |       |     9 |    74 |    34 |    28 |    93 ||   238
+         Eringya's Noxious |       |       |       |       |       |     3 |    14 |    20 |     6 ||    43
+         Alistair's Intoxi |       |       |       |       |       |     2 |     2 |       |       ||     4
+         Airstrike         |       |       |       |       |       |       |   187 |   371 |   531 ||  1089
+         Magic Dart        |       |       |       |       |       |       |     3 |       |     3 ||     6
+         Arcjolt           |       |       |       |       |       |       |       |     3 |     8 ||    11
+         Ozocubu's Armour  |       |       |       |       |       |       |       |       |    15 ||    15
+ Invoke: Slouch            |       |       |       |       |    12 |     2 |     4 |    14 |    25 ||    57
+         Step From Time    |       |       |       |       |       |       |       |       |     1 ||     1
+Ability: Spit Poison       |    38 |    39 |    72 |   102 |    71 |    55 |    24 |     5 |     2 ||   408
+         Evoke Invisibilit |       |       |       |       |       |     1 |       |       |       ||     1
+  Evoke: Wand of flame     |       |       |    15 |     4 |    12 |       |       |       |       ||    31
+         Wand of digging   |       |       |       |       |     2 |     1 |       |       |     5 ||     8
+         Wand of iceblast  |       |       |       |       |       |       |       |     1 |       ||     1
+         Phial of floods   |       |       |       |       |       |       |       |     1 |       ||     1
+         Sack of spiders   |       |       |       |       |       |       |       |     1 |       ||     1
+         Condenser vane    |       |       |       |       |       |       |       |     1 |       ||     1
+  Drink: Curing            |       |     1 |     2 |       |       |     1 |     1 |       |       ||     5
+         Might             |       |       |     1 |       |       |     1 |       |       |       ||     2
+         Ambrosia          |       |       |       |       |       |     1 |     1 |       |     3 ||     5
+         Magic             |       |       |       |       |       |     1 |       |       |       ||     1
+         Heal wounds       |       |       |       |       |       |     1 |       |     1 |     6 ||     8
+         Mutation          |       |       |       |       |       |     1 |       |       |       ||     1
+         Berserk rage      |       |       |       |       |       |       |       |     1 |       ||     1
+         Lignification     |       |       |       |       |       |       |       |     1 |       ||     1
+         Cancellation      |       |       |       |       |       |       |       |       |     1 ||     1
+   Read: Identify          |       |     4 |     3 |     6 |     3 |     7 |       |     1 |       ||    24
+         Butterflies       |       |     1 |       |       |       |       |       |       |       ||     1
+         Teleportation     |       |       |     1 |       |       |     5 |     1 |     1 |     6 ||    14
+         Blinking          |       |       |     1 |       |       |     1 |       |       |     3 ||     5
+         Revelation        |       |       |       |     1 |     1 |     1 |     1 |       |     1 ||     5
+         Poison            |       |       |       |     1 |       |       |       |       |       ||     1
+         Immolation        |       |       |       |     1 |       |       |       |       |       ||     1
+         Enchant weapon    |       |       |       |       |       |       |     8 |       |       ||     8
+         Brand weapon      |       |       |       |       |       |       |     1 |       |       ||     1
+         Enchant armour    |       |       |       |       |       |       |     4 |       |       ||     4
+         Fog               |       |       |       |       |       |       |       |       |     1 ||     1
+   Stab: Sleeping          |       |       |     4 |    16 |    16 |    10 |    24 |    25 |     5 ||   100
+         Confused          |       |       |     5 |    36 |    20 |    12 |    23 |    12 |     1 ||   109
+         Distracted        |       |       |       |     1 |       |       |     2 |     1 |     1 ||     5
+         Invisible         |       |       |       |       |       |     2 |       |       |       ||     2
+ Armour: Robe              |    13 |    27 |   170 |   129 |       |       |       |       |       ||   339
+         Scale mail        |       |       |       |    78 |   322 |   328 |       |       |       ||   728
+         Troll leather arm |       |       |       |    17 |       |       |       |       |       ||    17
+         Shadow dragon sca |       |       |       |       |       |   273 |   476 |   531 |  1225 ||  2505
+         None              |       |       |       |       |       |       |       |    16 |       ||    16
+  Dodge: Dodged            |     5 |    16 |   123 |   151 |   142 |   392 |   285 |   259 |   455 ||  1828
+  Block: Kite shield       |       |       |       |   225 |   309 |   693 |   538 |   547 |   827 ||  3139
+
+Table legend: (Time is in decaauts)
+ A = Elapsed time spent in this place.
+ B = Non-inter-level travel time spent in this place.
+ C = Inter-level travel time spent in this place.
+ D = Time resting spent in this place.
+ E = Time spent auto-exploring this place.
+ F = Levels seen in this place.
+ G = Mean time per level.
+                   A        B        C        D        E      F       G
+               +--------+--------+--------+--------+--------+-----+--------+
+         Total | 150151 | 137181 |  12970 |  27140 |  74710 |  55 | 2730.0 |
+       Dungeon |  34689 |  30680 |   4009 |   4712 |  18466 |  15 | 2312.6 |
+        Temple |     24 |     24 |      0 |      0 |      0 |   1 |   24.0 |
+          Lair |  12660 |  10627 |   2033 |   1635 |   7029 |   5 | 2532.0 |
+         Swamp |   7858 |   7582 |    276 |   1626 |   4470 |   4 | 1964.5 |
+   Spider Nest |  13360 |  12691 |    669 |   1918 |   8774 |   4 | 3340.0 |
+  Orcish Mines |   4283 |   3960 |    323 |    668 |   2447 |   2 | 2141.5 |
+   Elven Halls |  10327 |   9852 |    475 |   1813 |   5383 |   3 | 3442.3 |
+        Vaults |  20125 |  18359 |   1766 |   3897 |  10823 |   5 | 4025.0 |
+         Crypt |   3610 |   3301 |    309 |    631 |   1834 |   2 | 1805.0 |
+        Depths |  16610 |  14885 |   1725 |   3815 |   7763 |   4 | 4152.5 |
+           Zot |  18120 |  16740 |   1380 |   4301 |   5668 |   5 | 3624.0 |
+         Trove |    328 |    328 |      0 |      0 |     52 |   1 |  328.0 |
+        Bailey |   2408 |   2408 |      0 |    635 |    579 |   1 | 2408.0 |
+    Desolation |   2422 |   2422 |      0 |    622 |    619 |   1 | 2422.0 |
+      Gauntlet |    586 |    586 |      0 |    241 |      0 |   1 |  586.0 |
+    Necropolis |   2733 |   2733 |      0 |    626 |    799 |   1 | 2733.0 |
+               +--------+--------+--------+--------+--------+-----+--------+
+
+Top non-repeatable levels by time:
+Depths:2: 5143 daAuts
+Vaults:4: 5062 daAuts
+   Zot:1: 4856 daAuts
+Vaults:5: 4580 daAuts
+   Elf:3: 4566 daAuts
+Depths:4: 4274 daAuts
+   Zot:5: 4073 daAuts
+Spider:3: 4032 daAuts
+Vaults:1: 3990 daAuts
+     D:5: 3797 daAuts
+Depths:1: 3697 daAuts
+Spider:2: 3543 daAuts
+   Zot:3: 3515 daAuts
+Depths:3: 3494 daAuts
+ Crypt:1: 3414 daAuts
+
+DLua errors:
+
+Table legend:
+ A = God
+ B = Rank
+ C = Start time
+ D = Start piety
+ E = Piety gained
+ F = Piety on gifts
+ G = Piety on penance
+ H = Piety on stepdowns
+ I = Piety decays
+ J = Piety lost (inc. decay)
+         A          B      C       D     E     F     G     H     I     J   
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+ Cheibriados      | 0 |   49839 |  15 |  18 |   0 |   0 |   0 |   2 |   2 
+ Cheibriados      | 1 |   58763 |  30 |  21 |   0 |   0 |   0 |   1 |   1 
+ Cheibriados      | 2 |   74651 |  50 |  35 |   0 |   0 |   0 |  10 |  10 
+ Cheibriados      | 3 |   97462 |  75 |  28 |   0 |   0 |   0 |   3 |   3 
+ Cheibriados      | 4 |  141055 | 100 |  21 |   0 |   0 |   9 |   1 |   1 
+ Cheibriados      | 5 |  148227 | 120 |  48 |   0 |   0 |  19 |   9 |   9 
+ Cheibriados      | 6 |  194061 | 160 |   0 |   0 |   0 |   5 |   2 |   2 
+ Cheibriados      | 5 |  195434 | 159 |   5 |   0 |   0 |   5 |   2 |   2 
+ Cheibriados      | 6 |  205736 | 160 |  55 |   0 |   0 |  68 |   9 |  62 
+ Cheibriados      | 5 |  302763 | 156 |   9 |   0 |   0 |   5 |   3 |   2 
+ Cheibriados      | 6 |  337262 | 160 |   7 |   0 |   0 |   6 |   0 |  11 
+ Cheibriados      | 5 |  343344 | 157 |  28 |   0 |   0 |  19 |   1 |  24 
+ Cheibriados      | 6 |  358775 | 160 |   1 |   0 |   0 |   0 |   0 |  12 
+ Cheibriados      | 5 |  359734 | 150 |   6 |   0 |   0 |   2 |   3 |  39 
+ Cheibriados      | 4 |  373868 | 117 |   4 |   0 |   0 |   9 |   1 |   1 
+ Cheibriados      | 5 |  387100 | 120 |  45 |   0 |   0 |  28 |   5 |   5 
+ Cheibriados      | 6 |  406827 | 160 | 306 |   0 |   0 | 1003 | 108 | 312 
+ Cheibriados      | 5 | 1203236 | 154 |  16 |   0 |   0 |   6 |   1 |  51 
+ Cheibriados      | 4 | 1210741 | 119 |  14 |   0 |   0 |   4 |   0 |  12 
+ Cheibriados      | 5 | 1217815 | 120 |  34 |   0 |   0 |  16 |   1 |  36 
+ Cheibriados      | 4 | 1243496 | 119 |   1 |   0 |   0 |   2 |   0 |   0 
+ Cheibriados      | 5 | 1243541 | 120 |   3 |   0 |   0 |   1 |   5 |   6 
+ Cheibriados      | 4 | 1261725 | 119 |   4 |   0 |   0 |   0 |   1 |   0 
+ Cheibriados      | 5 | 1263159 | 120 |  42 |   0 |   0 |  20 |   9 |  52 
+ Cheibriados      | 4 | 1302764 | 111 |  30 |   0 |   0 |  24 |  10 |  20 
+ Cheibriados      | 5 | 1366121 | 120 |  43 |   0 |   0 |  16 |   4 |   4 
+ Cheibriados      | 6 | 1401875 | 160 |   0 |   0 |   0 |   0 |   0 |  20 
+ Cheibriados      | 5 | 1401972 | 152 |  32 |   0 |   0 |  13 |   3 |  11 
+ Cheibriados      | 6 | 1423112 | 160 |  10 |   0 |   0 |  13 |   2 |  19 
+ Cheibriados      | 5 | 1445027 | 152 |   8 |   0 |   0 |   3 |   0 |   0 
+ Cheibriados      | 6 | 1449277 | 160 |  16 |   0 |   0 |  16 |   3 |  20 
+ Cheibriados      | 5 | 1472127 | 156 |   4 |   0 |   0 |   2 |   0 |   0 
+ Cheibriados      | 6 | 1472469 | 160 |   9 |   0 |   0 |  13 |   2 |  14 
+ Cheibriados      | 5 | 1496626 | 155 |   8 |   0 |   0 |   5 |   0 |  41 
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+
+Conducts for god: Cheibriados
+Piety from conduct
+              Conduct |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 | 19-21 | 22-24 | 25-27 || total
+----------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------++-------
+           Kill Fast  |     0 |     0 |    81 |   205 |   292 |   430 |   401 |   399 |   429 ||  2237
+----------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------++-------
+Conduct count
+              Conduct |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 | 19-21 | 22-24 | 25-27 || total
+----------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------++-------
+           Kill Fast  |     0 |     0 |    82 |   204 |   305 |   363 |   402 |   426 |   424 ||  2206
+----------------------+-------+-------+-------+-------+-------+-------+-------+-------+-------++-------
+

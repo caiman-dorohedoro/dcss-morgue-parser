@@ -1,0 +1,479 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-241-g5b54ce7fc3 (webtiles) character file.
+
+Game seed: 4037111954376227624
+
+5661 Gurguzundir the Mimic (level 10, -1/83 HPs)
+             Began as a Merfolk Shapeshifter on Mar 30, 2026.
+             Was a Believer of Ru.
+             Succumbed to a killer bee's poison
+             ... on level 9 of the Dungeon on Mar 31, 2026.
+             The game lasted 00:47:23 (9575 turns).
+
+Gurguzundir the Mimic (Merfolk Shapeshifter)        Turns: 9575, Time: 00:47:23
+
+Health: -1/83      AC:  5    Str: 18    XL:     10   Next: 75%
+Magic:  10/10      EV: 16    Int:  9    God:    Ru [**....]
+Gold:   573        SH:  0    Dex: 15    Spells: 9/9 levels left
+
+rFire   . . .  (100%)     - Nothing wielded
+rCold   . . .  (100%)   (offhand unavailable)
+rNeg    + . .  (50%)    t - +1 robe {rN+}
+rPois   .      (100%)   (no helmet)
+rElec   .      (100%)   v - +1 cloak
+rCorr   .      (100%)   (no gloves)
+SInv    .               (boots unavailable)
+Will    .....           h - amulet of regeneration
+Stlth   +++             r - +4 ring of slaying
+HPRegen 1.13/turn       (no ring)
+MPRegen 0.12/turn       c - spore talisman
+
+%: no passive effects
+@: lethally poisoned (-1 -> -10), spore-form, very quick
+A: weakening spores, sporulate, hated by all, no ice magic, no summoning magic,
+nimble swimmer 2, mertail, no forgecraft magic
+a: Renounce Religion (0%)
+
+
+You were on level 9 of the Dungeon.
+You worshipped Ru.
+Ru was pleased with you.
+Your arm was a mass of colorful fungus.
+
+You visited 2 branches of the dungeon, and saw 10 of its levels.
+You also visited: Ossuary.
+
+You collected 609 gold pieces.
+You spent 36 gold pieces at shops.
+
+Inventory:
+
+Hand Weapons
+ a - a +2 halberd of pain
+ b - a +0 heavy sling
+ e - a +0 dagger
+ g - a +3 spear
+ j - a +2 mace of protection
+ n - a +2 hand axe of freezing
+ p - a +1 scythe of flaming
+ q - a +0 dagger of venom
+Missiles
+ i - 4 atropa-tipped darts
+ m - 13 poisoned darts (quivered)
+ u - 6 curare-tipped darts
+Armour
+ d - a scarf of resistance
+ t - a +1 robe of positive energy (worn)
+ v - a +1 cloak (worn)
+ w - a +0 leather armour of poison resistance
+Magical Staves
+ o - a staff of air
+Jewellery
+ h - an amulet of regeneration (worn)
+ r - a +4 ring of slaying (worn)
+ s - an amulet of magic regeneration
+Talismans
+ c - a spore talisman (worn)
+ f - a maw talisman
+ k - a quill talisman
+Wands
+ c - a wand of roots (5)
+Scrolls
+ c - a scroll of enchant armour {unknown}
+ r - 5 scrolls of revelation
+ T - 3 scrolls of torment
+ j - a scroll of acquirement {unknown}
+ m - a scroll of vulnerability {unknown}
+ l - a scroll of poison {unknown}
+ t - a scroll of teleportation
+ I - a scroll of immolation
+ v - a scroll of fear {unknown}
+ y - a scroll of amnesia {unknown}
+ W - 2 scrolls of brand weapon
+ d - a scroll of enchant weapon {unknown}
+ e - a scroll of silence {unknown}
+Potions
+ L - 4 potions of lignification
+ A - 4 potions of attraction
+ i - a potion of invisibility
+ h - 2 potions of haste
+ c - 4 potions of curing
+ B - 2 potions of berserk rage
+ m - a potion of might
+ p - a potion of brilliance {unknown}
+ s - a potion of enlightenment {unknown}
+ t - 5 potions of magic {unknown}
+ x - 2 potions of heal wounds {unknown}
+Baubles
+ a - 5 flux baubles
+
+
+   Skills:
+ + Level 9.5 Fighting
+ - Level 2.0 Throwing
+ - Level 2.0 Armour
+ - Level 5.0 Dodging
+ - Level 2.0 Stealth
+ + Level 9.7(4.8) Unarmed Combat
+ + Level 11.3 Shapeshifting
+
+
+You had 9 spell levels left.
+You didn't know any spells.
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Kiss of Death            Conj/Necr      0%         2d5       38%         1
+ Magic Dart               Conj           0%         1d3       38%         1
+ Momentum Strike          Conj/Tloc      0%         3d8       52%         2
+ Static Discharge         Conj/Air       0%         3-3/arc   52%         2
+ Maxwell's Portable Pile  Tloc           0%         (3-9)d2   77%         3
+ Freeze                   Ice            Unusable   1d3       N/A         1
+ Awaken Armour            Erth/Frge      Unusable   N/A       N/A         4
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (9/15)             Temple (1/1) D:4            Lair (0/5) D:9         
+    Orc (0/2) D:9         Ossuary (visited)         
+
+The Realm of Zot is guarded by orbs of entropy.
+
+Altars:
+Ashenzari
+Cheibriados
+Elyvilon
+Gozag
+Kikubaaqudgha
+Makhleb
+Okawaru
+Qazlal
+Ru
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Zin
+The Shining One
+
+Shops:
+D:5 (!:   D:9 (
+
+
+Innate Abilities, Weirdness & Mutations
+
+Your arm is a mass of colorful fungus.
+Your melee attacks may weaken breathing enemies.
+Your melee attacks cause explosive burstshrooms to grow.
+Your offhand and boots are melded.
+You are hated by all.
+You cannot study or cast Ice magic.
+You cannot study or cast Summoning magic.
+You are very nimble when in or above water. (Stealth+, EV+, Speed+++)
+Your lower body shifts to a powerful aquatic tail in water.
+You cannot study or cast Forgecraft magic.
+
+Message History
+
+* * * LOW HITPOINT WARNING * * *
+The centaur hits you but does no damage.
+The centaur closely misses you. The killer bee closely misses you.
+As you read the scroll of teleportation, it crumbles to dust.
+You feel strangely unstable. The centaur is no longer weakened.
+The killer bee closely misses you.
+The centaur hits you but does no damage.
+The centaur kicks you but does no damage.
+Your burstshroom violently releases its spores.
+The dizzying spores engulf the centaur.
+The centaur is heavily wounded.
+The centaur is dazed by the spores. The killer bee stings you!
+* * * LOW HITPOINT WARNING * * *
+You are poisoned.
+The killer bee poisons you!
+You punch the centaur! Mushrooms sprout behind the centaur.
+You kill the centaur!
+You feel very sick.
+The killer bee closely misses you. The killer bee barely misses you.
+You miss the killer bee. You feel sick. The killer bee stings you.
+* * * LOW HITPOINT WARNING * * *
+You are lethally poisoned!
+The killer bee poisons you!
+Your burstshroom violently releases its spores.
+The dizzying spores engulf the troll.
+The troll is lightly wounded.
+The troll is dazed by the spores.
+The dizzying spores engulf the killer bee!
+The killer bee is heavily wounded.
+The killer bee is dazed by the spores.
+Your burstshroom violently releases its spores.
+You hit the killer bee. Mushrooms sprout behind the killer bee.
+The killer bee snaps out of its daze.
+The killer bee is almost dead.
+Your surroundings suddenly seem different.
+Your legs become a tail as you dive into the water.
+Floosh!
+You encounter 2 killer bees.
+You die...
+Ru respects your ultimate sacrifice.
+
+ *,,~~≈~,,,,,,,,,,,,,,,
+ #..~~≈≈........o...oo.
+ #..~~≈~...,...$.......
+ #..~~≈...#,...$...>...
+##..~~~≈..#............
+#....~~≈~...##..o...$$.
+#....≈~~~~.###....o....
+#...~≈≈~~~......#.###..
+#y.~~≈@≈≈.....#.#.#<...
+#...~~≈≈~~~...#...V..#.
+#y..~~≈≈P.~.###...o....
+###.~~≈≈≈~.........#...
+**#..~≈≈≈P~........#...
+*,..~≈≈≈≈.~~.......#...
+*...~≈≈.≈≈~........#...
+#...~~.~≈≈~........#...
+*,,,,,~,~≈~~,~,,,,****,
+
+
+You could see 2 killer bees.
+
+Vanquished Creatures
+  2 two-headed ogres (D:8)
+  An unseen horror (D:9)
+  Cassandra (D:9)
+  Sigmund (D:3)
+  A wyvern (D:7)
+  5 yaks (D:8)
+  A water moccasin (D:5)
+  A sky beast (D:8)
+  3 orc warriors
+  2 ice beasts
+  2 ogres
+  2 centaurs
+  A kobold brigand (D:6)
+  6 bullfrogs
+  A gnoll sergeant (D:8)
+  3 scorpions
+  A marrowcuda (D:7)
+  2 rock fish (D:7)
+  3 wights (D:8)
+  6 killer bees
+  A howler monkey (D:6)
+  3 hounds (D:5)
+  A jelly (D:7)
+  An orc priest (D:4)
+  A gnoll bouda (D:7)
+  A drude (D:7)
+  2 clockroaches
+  An iguana (D:7)
+  2 orc wizards
+  8 mummies (Ossuary)
+  9 gnolls
+  11 adders
+  2 white imps
+  4 dart slugs
+  2 adder zombies (D:6)
+  3 gnoll zombies (Ossuary)
+  3 ribbon worms
+  7 hobgoblins
+  4 jackals (D:2)
+  22 orcs
+  6 quokkas
+  9 ball pythons
+  6 bats
+  2 endoplasms
+  6 goblins
+  3 hobgoblin zombies (Ossuary)
+  12 kobolds
+  A kobold zombie (Ossuary)
+  An orc zombie (Ossuary)
+  4 rats
+183 creatures vanquished.
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | Gurguzundir the Merfolk Shapeshifter began the quest for
+                  | the Orb.
+     0 | D:1      | Reached XP level 1. HP: 16/16 MP: 1/1
+   265 | D:1      | Reached XP level 2. HP: 23/23 MP: 2/2
+   502 | D:1      | Reached skill level 1 in Stealth
+   694 | D:2      | Reached XP level 3. HP: 27/29 MP: 3/3
+  1097 | D:2      | Reached XP level 4. HP: 31/37 MP: 4/4
+  1549 | D:2      | Found a shimmering altar of Xom.
+  1923 | D:2      | Reached skill level 5 in Shapeshifting
+  2178 | D:3      | Found a broken altar of Ashenzari.
+  2208 | D:3      | Found a faded altar of an unknown god.
+  2241 | D:3      | Reached XP level 5. HP: 11/42 MP: 5/5
+  2473 | D:3      | Encountered Sigmund
+  2490 | D:3      | Killed Sigmund
+  2491 | D:3      | Reached skill level 1 in Armour
+  2491 | D:3      | Reached skill level 6 in Shapeshifting
+  2491 | D:3      | Reached XP level 6. HP: 23/49 MP: 6/6
+  2564 | D:3      | Found a stormy altar of Qazlal.
+  2575 | D:3      | Found a shimmering altar of Xom.
+  2580 | D:3      | Found a shimmering altar of Xom.
+  2694 | D:3      | Found a sacrificial altar of Ru.
+  3058 | D:4      | Found a basalt altar of Yredelemnul.
+  3105 | D:4      | Found a staircase to the Ecumenical Temple.
+  3106 | D:4      | Found a statue of an orb of entropy.
+  3107 | D:4      | Found a statue of an orb of entropy.
+  3126 | D:4      | Reached XP level 7. HP: 30/55 MP: 7/7
+  3131 | Temple   | Entered the Ecumenical Temple
+  3312 | D:3      | Became a worshipper of Ru the Awakened
+  3369 | D:5      | Entered Level 5 of the Dungeon
+  3369 | D:5      | Encountered a dancing +0 spear
+  3369 | D:5      | Encountered a dancing +0 dagger
+  3370 | D:5      | Encountered a dancing +0 dagger
+  3370 | D:5      | Encountered a dancing +0 falchion
+  3371 | D:5      | Encountered a dancing +0 spear
+  3371 | D:5      | Encountered a dancing +0 short sword
+  3371 | D:5      | Encountered a dancing +0 short sword
+  3376 | D:5      | Encountered a dancing +0 falchion
+  3382 | D:5      | Found a hide-covered altar of Uskayaw.
+  3459 | D:4      | Reached skill level 5 in Fighting
+  3803 | D:5      | Reached skill level 7 in Shapeshifting
+  3943 | D:5      | Found Iroux's Weapon Boutique.
+  3962 | D:5      | Reached skill level 8 in Shapeshifting
+  3964 | D:5      | Found Plog's Distillery.
+  3965 | D:5      | Found Disuis's Book Boutique.
+  3971 | D:5      | Bought a potion of curing for 36 gold pieces
+  4086 | D:5      | Reached XP level 8. HP: 50/62 MP: 8/8
+  4295 | D:6      | Found a sand-covered staircase.
+  4302 | Ossuary  | Entered an ossuary
+  4377 | Ossuary  | Gained mutation: You cannot study or cast Ice magic. [Ru
+                  | sacrifice]
+  4377 | Ossuary  | Gained mutation: You cannot study or cast Forgecraft magic.
+                  | [Ru sacrifice]
+  4377 | Ossuary  | Gained mutation: You cannot study or cast Summoning magic.
+                  | [Ru sacrifice]
+  4377 | Ossuary  | Reached * piety under Ru
+  4679 | Ossuary  | Reached skill level 1 in Throwing
+  4815 | Ossuary  | Reached skill level 5 in Unarmed Combat
+  5941 | D:6      | Found an ancient bone altar of Kikubaaqudgha.
+  6240 | D:7      | Reached XP level 9. HP: 69/69 MP: 9/9
+  6322 | D:7      | Reached skill level 9 in Shapeshifting
+  7437 | D:8      | Encountered a two-headed ogre
+  7459 | D:8      | Killed a two-headed ogre
+  7460 | D:8      | Reached skill level 5 in Dodging
+  7520 | D:8      | Reached skill level 10 in Shapeshifting
+  7759 | D:8      | Gained mutation: You are hated by all. [Ru sacrifice]
+  7759 | D:8      | Reached ** piety under Ru
+  7766 | D:8      | Reached XP level 10. HP: 44/80 MP: 10/10
+  8499 | D:9      | Encountered a two-headed ogre
+  8499 | D:9      | Found a staircase to the Orcish Mines.
+  8709 | D:9      | Found Opnuxaf's Antique Weapon Emporium.
+  9183 | D:8      | Killed a two-headed ogre
+  9184 | D:8      | Reached skill level 11 in Shapeshifting
+  9545 | D:9      | Encountered Cassandra
+  9559 | D:9      | Gained bane: Bane of the Dilettante [Doom]
+  9560 | D:9      | Killed Cassandra
+  9574 | D:9      | HP: 2/83 [killer bee[Cassandra] (6)]
+  9575 | D:9      | Succumbed to a killer bee's poison
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      saegor_arrival_under_anarchy, layout_loops_cross
+D:2:      minmay_razor_zed, layout_loops_cross, basic_altar
+D:3:      layout_basic, nicolae_ru_path_of_blood,
+          nicolae_ashenzari_temple_of_vision, xom_redecorated,
+          nicolae_qazlal_general_emergency, ebering_ecumenical_altar_webs,
+          kennysheep_pointless_box, st_stairs_8, uniq_sigmund
+D:4:      layout_gridville, nicolae_overflow_four_feature_corners,
+          minmay_temple_entry_junction
+D:5:      layout_gridville, nicolae_uskayaw_en_pointe, nicolae_wooded_promenade
+D:6:      layout_basic, nicolae_overflow_sandstone_temple, enter_ossuary_4,
+          hex_intersection
+D:7:      layout_basic
+D:8:      layout_gridville, chequers_serial_rivers_small_b
+D:9:      layout_basic, hellmonk_overflow_destroyed_library,
+          nicolae_overflow_crystal_walls, lair_entry_dummy, orc_david_3,
+          chequers_big_river, nicolae_stop_n_shop_1,
+          hangedman_abyss_or_decor_slice, uniq_cassandra
+Temple:   jpeg_temple_alley_garden
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 |
+---------------+-------------------------------+-----
+Stealth        |     1              2          |  2.0
+Fighting       |     3     4        5  6  8  9 |  9.5
+Shapeshifting  |           5  6     8    10 11 | 11.3
+Armour         |              1        2       |  2.0
+Unarmed Combat |              4        6  8  9 |  9.7
+Dodging        |                 3  4     5    |  5.0
+Throwing       |                       2       |  2.0
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 || total
+---------------------------+-------+-------+-------+-------++-------
+ Attack: Normal            |    65 |   148 |   259 |    76 ||   548
+  Melee: Unarmed           |    65 |   148 |   255 |    76 ||   544
+         Punch             |     2 |     5 |    11 |     7 ||    25
+         Dagger            |       |       |     4 |       ||     4
+   Fire: Sling             |       |       |     2 |       ||     2
+  Throw: Dart              |       |       |    21 |     9 ||    30
+ Invoke: Sacrifice Arcana  |       |       |     1 |       ||     1
+         Sacrifice Love    |       |       |     1 |       ||     1
+  Drink: Curing            |       |       |       |     1 ||     1
+   Read: Identify          |       |       |     5 |       ||     5
+         Teleportation     |       |       |     1 |     1 ||     2
+         Immolation        |       |       |     1 |       ||     1
+         Brand weapon      |       |       |     1 |       ||     1
+         Torment           |       |       |       |     1 ||     1
+         Revelation        |       |       |       |     1 ||     1
+   Stab: Sleeping          |     5 |     3 |     4 |     1 ||    13
+         Distracted        |       |       |     1 |       ||     1
+ Armour: Animal skin       |    23 |    30 |       |       ||    53
+         Leather armour    |       |    54 |    19 |       ||    73
+         Robe              |       |       |   114 |    63 ||   177
+  Dodge: Dodged            |    29 |    65 |   139 |    53 ||   286
+   Form: Default           |     1 |       |       |       ||     1
+         Quill             |     1 |       |       |       ||     1
+         Spore             |       |       |     1 |       ||     1
+
+Table legend: (Time is in decaauts)
+ A = Elapsed time spent in this place.
+ B = Non-inter-level travel time spent in this place.
+ C = Inter-level travel time spent in this place.
+ D = Time resting spent in this place.
+ E = Time spent auto-exploring this place.
+ F = Levels seen in this place.
+ G = Mean time per level.
+                   A        B        C        D        E      F       G
+               +--------+--------+--------+--------+--------+-----+--------+
+         Total |   9517 |   8805 |    712 |   2263 |   4429 |  11 |  865.2 |
+       Dungeon |   8567 |   7886 |    681 |   1691 |   4350 |   9 |  951.9 |
+        Temple |    105 |     74 |     31 |     16 |      0 |   1 |  105.0 |
+       Ossuary |    844 |    844 |      0 |    556 |     79 |   1 |  844.0 |
+               +--------+--------+--------+--------+--------+-----+--------+
+
+Top non-repeatable levels by time:
+     D:8: 1792 daAuts
+     D:2: 1420 daAuts
+     D:7: 1060 daAuts
+     D:6: 946 daAuts
+     D:3: 894 daAuts
+ Ossuary: 844 daAuts
+     D:1: 686 daAuts
+     D:9: 605 daAuts
+     D:4: 603 daAuts
+     D:5: 558 daAuts
+  Temple: 105 daAuts
+
+DLua errors:
+
+Table legend:
+ A = God
+ B = Rank
+ C = Start time
+ D = Start piety
+ E = Piety gained
+ F = Piety on gifts
+ G = Piety on penance
+ H = Piety on stepdowns
+ I = Piety decays
+ J = Piety lost (inc. decay)
+         A          B      C       D     E     F     G     H     I     J   
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+ Ru               | 0 |   32951 |  10 |   0 |   0 |   0 |   0 |   0 |   0 
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+

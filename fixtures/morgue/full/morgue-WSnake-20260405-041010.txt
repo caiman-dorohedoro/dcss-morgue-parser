@@ -1,0 +1,857 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-257-gf9e06672e4 (webtiles) character file.
+
+Game seed: 4529715064878111667
+
+105064 WSnake the Mimic (level 14, -13/110 (113) HPs)
+             Began as a White Draconian Summoner on Apr 4, 2026.
+             Was a High Priest of Ru.
+             Mangled by a death scarab (22 damage)
+             ... on level 2 of the Spider Nest on Apr 5, 2026.
+             The game lasted 02:25:59 (17852 turns).
+
+WSnake the Mimic (White Draconian Summoner)        Turns: 17852, Time: 02:26:00
+
+HP:   -13/110 (113) AC: 18    Str: 14    XL:     14   Next: 65%
+MP:   13/38         EV: 13    Int: 19    God:    Ru [*****.]
+Gold: 744           SH:  0    Dex: 13    Spells: 0/35 levels left
+
+rFire   . . .  (100%)   m - +9 staff of Olgreb {rPois∞}
+rCold   + . .  (50%)    o - orb {Glass}
+rNeg    + . .  (50%)    d - +2 hat
+rPois   ∞      (0%)     f - +2 cloak
+rElec   .      (100%)   l - +2 pair of gloves {Fire}
+rCorr   .      (100%)   b - +1 pair of boots "Cimu" {rN+ Str+3}
+SInv    +               (no amulet)
+Will    +....           c - ring of see invisible
+Stlth                   g - ring of magical power
+HPRegen 0.38/turn
+MPRegen 0.26/turn
+
+%: no passive effects
+@: exhausted, animating dead (expiring), slowed, lightly drained, very slow
+A: glacial breath, AC +8, unfitting armour, cold resistance 1, cold-blooded,
+renounce potions, renounce scrolls, no stealth, inexperienced 1, armoured tail 1
+a: Glacial Breath (1%), Renounce Religion (0%), Evoke the Staff of Olgreb (0%),
+Draw Out Power (0%), Power Leap (0%), Apocalypse (0%)
+
+
+You were on level 2 of the Spider Nest.
+You worshipped Ru.
+Ru was extremely pleased with you.
+You visited 5 branches of the dungeon, and saw 25 of its levels.
+You also visited: Sewer.
+
+You collected 1782 gold pieces.
+You spent 1038 gold pieces at shops.
+
+Inventory:
+
+Hand Weapons
+ e - a +2 quarterstaff of chaos
+ h - a +4 hand cannon of flaming
+ i - the +4 falchion of Malum Prohibitum {drain, Str-2 Int+5}
+   (You found it on level 8 of the Dungeon)   
+   
+   Str-2:     It affects your strength (-2).
+   Int+5:     It affects your intelligence (+5).
+   
+   It cannot be enchanted further.
+ m - the +9 staff of Olgreb (weapon) {rPois∞}
+   (You found it on level 12 of the Dungeon)   
+   
+   Radiate:   It can be activated via the 'a'bility menu to radiate toxic
+   energy,
+              with effectiveness depending on Evocations skill.
+   Alch:      It enhances your alchemy magic.
+   rPois∞:    It grants immunity to poison.
+   
+   It cannot be enchanted further.
+ t - the +2 falchion "Brush" {venom, *Noise rPois rCorr SInv}
+   (You found it on level 4 of the Lair of Beasts)   
+   
+   *Noise:    It may make a loud noise when swung.
+   rPois:     It protects you from poison.
+   rCorr:     It protects you from acid and corrosion.
+   SInv:      It lets you see invisible.
+   
+   It cannot be enchanted further.
+Armour
+ b - the +1 pair of boots "Cimu" (worn) {rN+ Str+3}
+   (You found it on level 5 of the Dungeon)   
+   
+   rN+:       It protects you from negative energy.
+   Str+3:     It affects your strength (+3).
+   
+   It cannot be enchanted further.
+ d - a +2 hat (worn)
+ f - a +2 cloak (worn)
+ l - a +2 pair of gloves of fire (worn)
+ o - an orb of glass (worn)
+ r - a +0 buckler
+Magical Staves
+ u - a staff of necromancy
+Jewellery
+ c - a ring of see invisible (worn)
+ g - a ring of magical power (worn)
+ j - a ring of protection from cold
+ p - a ring of resist corrosion
+ q - a +6 ring of strength
+ v - a +6 ring of dexterity
+Talismans
+ a - a quill talisman
+ k - a rimehorn talisman
+ n - a dragon-coil talisman
+ s - a lupine talisman
+Wands
+ b - a wand of quicksilver (5)
+ a - a wand of flame (28)
+ f - a wand of mindburst (27)
+ c - a wand of warping (22)
+ d - a wand of digging (7)
+ e - a wand of charming (6)
+ p - a wand of polymorph (7)
+Scrolls
+ q - 2 scrolls of noise {unknown}
+ h - a scroll of summoning {unknown}
+ w - 2 scrolls of enchant weapon
+ t - 3 scrolls of teleportation
+ r - 5 scrolls of revelation
+ d - a scroll of torment {unknown}
+ e - 2 scrolls of fear {unknown}
+ j - 4 scrolls of poison {unknown}
+ I - 7 scrolls of immolation
+ a - 2 scrolls of enchant armour
+ g - 2 scrolls of fog
+ b - a scroll of blinking
+ o - 3 scrolls of vulnerability {unknown}
+ i - 7 scrolls of identify
+Potions
+ g - 6 potions of magic
+ a - a potion of ambrosia
+ M - 3 potions of mutation
+ m - 4 potions of might
+ b - 4 potions of brilliance
+ c - 14 potions of curing
+ h - 3 potions of haste
+ f - 4 potions of resistance {unknown}
+ A - 4 potions of attraction
+ B - a potion of berserk rage
+ l - a potion of lignification {unknown}
+ w - a potion of heal wounds
+ k - a potion of enlightenment {unknown}
+ n - a potion of cancellation {unknown}
+Miscellaneous
+ g - a +0 phantom mirror
+Baubles
+ h - 3 flux baubles
+
+
+   Skills:
+ - Level 7.1 Fighting
+ - Level 5.4 Dodging
+ - Level 11.0 Spellcasting
+ - Level 3.0 Hexes
+ * Level 12.0 Summonings
+ * Level 10.3 Necromancy
+ - Level 5.0 Ice Magic
+ - Level 9.0 Earth Magic
+ - Level 5.5 Evocations
+ - Level 14.5 Shapeshifting
+
+
+You couldn't memorise any spells.
+You knew the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Summon Small Mammal   Summ           100%       N/A       1%          1
+b - Summon Ice Beast      Ice/Summ       42%        N/A       1%          3
+c - Call Canine Familiar  Summ           54%        N/A       1%          3
+d - Eringya's Surprising  Summ           54%        N/A       1%          4
+e - Summon Seismosaurus   Summ/Erth      50%        N/A       1%          4
+f - Borgnjor's Vile Clut  Necr/Erth      23%        N/A       3%          5
+g - Animate Dead          Necr           49%        N/A       1%          4
+q - Haunt                 Necr/Summ      26%        N/A       50%         7
+w - Martyr's Knell        Necr/Summ      52%        N/A       1%          4
+
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Freeze                   Ice            100%       1d10      1%          1
+ Kiss of Death            Conj/Necr      100%       2d13      1%          1
+ Slow                     Hex            84%        N/A       1%          1
+ Soul Splinter            Necr           100%       N/A       1%          1
+ Call Imp                 Summ           100%       N/A       1%          2
+ Ensorcelled Hibernation  Hex/Ice        50%        N/A       1%          2
+ Grave Claw               Necr           98%        2d14      1%          2
+ Vampiric Draining        Necr           49%        2d9       1%          3
+ Frozen Ramparts          Ice            58%        1d9       2%          3
+ Ozocubu's Armour         Ice            29%        N/A       2%          3
+ Apportation              Tloc           20%        N/A       7%          1
+ Inner Flame              Hex/Fire       24%        N/A       11%         3
+ Brom's Barrelling Bould  Conj/Erth      27%        2d6       11%         4
+ Forge Lightning Spire    Air/Frge       10%        3d4       54%         4
+ Iskenderun's Battlesphe  Conj/Frge      10%        2d8       54%         4
+ Olgreb's Toxic Radiance  Alch           15%        N/A       54%         4
+ Hoarfrost Cannonade      Ice/Frge       9%         3d6/3d12  54%         5
+ Silence                  Hex/Air        8%         N/A       69%         5
+ Nazja's Percussive Temp  Frge           5%         4d4       88%         5
+ Sculpt Simulacrum        Ice/Alch       14%        N/A       98%         6
+ Dispersal                Tloc           5%         N/A       100%        6
+ Plasma Beam              Fire/Air       7%         2x1d18    100%        6
+ Manifold Assault         Tloc           5%         N/A       100%        7
+ Disjunction              Tloc           5%         N/A       100%        8
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (15/15)            Temple (1/1) D:5            Lair (5/5) D:8         
+ Spider (2/4) Lair:3        Slime (0/5) Lair:5          Orc (2/2) D:10        
+    Elf (0/3) Orc:2        Vaults (0/5) D:14         Depths (0/4) D:15        
+  Sewer (visited)         
+ Swamp: Lair:2-3    Shoals: Lair:2-3    
+
+The Realm of Zot is guarded by orbs of entropy.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Elyvilon
+Fedhas
+Gozag
+Hepliaklqana
+Kikubaaqudgha
+Makhleb
+Nemelex Xobeh
+Okawaru
+Ru
+Sif Muna
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Zin
+The Shining One
+Jiyva
+
+Shops:
+D:5 ([?*(   D:7 [   D:10 [   Orc:1 !:   Orc:2 ([*(
+
+Annotations:
+D:12 1 runed translucent door
+Spider:2 Donald
+
+
+Innate Abilities, Weirdness & Mutations
+
+You can breathe waves of cold which freeze foes solid.
+Your icy white scales are hard. (AC +8)
+You cannot fit into any form of body armour or wear helmets.
+You are cold resistant. (rC+)
+You are cold-blooded and may be slowed by cold attacks.
+You refuse to drink potions in combat unless seriously injured.
+You refuse to read scrolls in combat unless seriously injured.
+You cannot be stealthy.
+You are somewhat inexperienced. (-1 XL)
+You have an armoured tail.
+
+Message History
+
+The entropy weaver hits the tarantella shaped block of ice but does no damage.
+x3
+The entropy weaver hits the tarantella shaped block of ice.
+Something hits the wolf spider shaped block of ice.
+Something hits your orb spider zombie! Something hits your meliai zombie!!
+Your orb spider zombie bites the wolf spider shaped block of ice.
+The meliai hits your meliai zombie with a +0 war axe!
+The meliai barely misses your meliai zombie.
+The jumping spider pounces on you but does no damage.
+The jumping spider barely misses you.
+You redirect the death scarab's attack!
+The death scarab completely misses itself.
+Your meliai zombie misses the meliai.
+Your meliai zombie hits the meliai but does no damage.
+You redirect the jumping spider's attack!
+The jumping spider barely misses the broodmother.
+The jumping spider bites the broodmother.
+The wolf spider hits the wolf spider shaped block of ice but does no damage.
+The wolf spider bites the wolf spider shaped block of ice but does no damage.
+Your orb spider zombie bites the wolf spider shaped block of ice.
+The wolf spider shaped block of ice is destroyed!
+The meliai closely misses your meliai zombie.
+The meliai stings your meliai zombie!
+The entropy weaver hits the tarantella shaped block of ice but does no damage.
+The entropy weaver hits the tarantella shaped block of ice!
+The tarantella shaped block of ice is destroyed!
+You encounter a meliai. It is wielding a +0 war axe.
+Press: ? - help, v - describe, . - travel
+Here: a broodmother (lightly wounded)
+The floor, spattered with blood.
+Casting: Martyr's Knell (mildly dangerous; 1% risk of failure)
+Confirm with . or Enter, or press ? or * to list all spells.
+Aiming: Eringya's Surprising Crocodile (mildly dangerous; 1% risk of failure)
+Press: ? - help, Dir - move target
+Aim: a broodmother (lightly wounded)
+A crocodile bursts forth beneath you and grabs the broodmother in its jaws!
+Your crocodile bites the broodmother. You dismount your crocodile.
+The death scarab is no longer moving slowly.
+The death scarab bites you!!
+You die...
+Ru respects your ultimate sacrifice.
+
+     ####       ##
+##### ..###   ##.##
+#.....#.#.#####...# #
+ #....^....##.#... ..
+ ##..#.#<#.##...##.  #.
+  # .##..#........  ..#
+     .#....#.#..# #....
+     #..#....#.@##..#  #
+     #.#^^###.slBs# # .^
+    ..##s.#..#ss#s#.#^.#
+   #..s.^#..#@#~#.......
+   ###.#...#Z.sss##.##
+     #^......Zs#s.^..# .
+     ##.#.#.##yss###....
+      ###..#.ss#s.....#.
+        #.B##B^#.##..#..
+
+
+You could see a broodmother, Donald (fast, strong, reflecting), a demonic
+crawler, 3 wolf spiders, 2 culicivoras, 3 jumping spiders, a death scarab (ally
+target), a tarantella (summoned), 3 redbacks, a meliai (ally target), a friendly
+crocodile (summoned), a friendly orb spider zombie (minion) and a friendly
+meliai zombie (minion).
+
+Vanquished Creatures
+  A ghost moth (Spider:1)
+  A fire dragon (D:15)
+  An entropy weaver (Spider:1)
+  A vault guard (D:14)
+  A hydra (D:15)
+  A boulder beetle (D:13)
+  A centaur warrior (D:15)
+  A radroach (Spider:1)
+  2 catoblepae
+  An orc high priest (Orc:2)
+  A demonic crawler (Spider:2)
+  Nergalle (Lair:3)
+  A pharaoh ant (Spider:1)
+  An obsidian statue (Lair:5)
+  4 wolf spiders
+  An orc sorcerer (Orc:2)
+  A cyclops (D:15)
+  3 ugly things
+  A meliai (Spider:2)
+  5 elephants
+  A black mamba (D:12)
+  A torpor snail (Lair:2)
+  2 gargoyles
+  4 cane toads
+  An unseen horror (D:11)
+  A komodo dragon (Lair:2)
+  A tengu conjurer (D:13)
+  A troll (D:11)
+  A hornet (D:12)
+  4 tarantellas
+  A jumping spider (Spider:2)
+  5 blink frogs
+  A hydra draugr (D:15)
+  5 yaks
+  3 basilisks
+  7 redbacks
+  2 vampire mosquitoes (D:12)
+  An acid dragon (D:13)
+  3 water moccasins
+  An orc warrior (D:11)
+  A kobold geomancer (D:10)
+  A sky beast (D:7)
+  2 ogres
+  2 centaurs
+  A bullfrog (Lair:2)
+  A wight (D:10)
+  3 marrowcudas
+  A vampire bat (D:6)
+  An electric eel (D:14)
+  A bombardier beetle (D:5)
+  3 orc priests
+  A clockroach (D:3)
+  3 orc wizards
+  2 hell rats (Lair:2)
+  A gnoll (D:4)
+  A river rat (D:3)
+  A dart slug (D:3)
+  9 orcs
+  2 endoplasms (D:4)
+  3 hobgoblins
+  2 ball pythons
+  A bat (D:3)
+  2 frilled lizards
+  A goblin (D:2)
+  2 kobolds (D:10)
+  2 rats
+126 creatures vanquished.
+
+Vanquished Creatures (collateral kills)
+  2 dire elephants (Lair:5)
+  An entropy weaver (Spider:1)
+  A fire dragon (D:15)
+  Erolcha (Orc:1)
+  2 hydras
+  A boulder beetle (D:14)
+  2 two-headed ogres
+  A centaur warrior (D:13)
+  5 death yaks
+  A demonic crawler (Spider:1)
+  2 orc high priests (Orc:2)
+  4 skeletal warriors
+  An obsidian bat (Orc:1)
+  An orb spider (Spider:2)
+  A harpy (shapeshifter) (D:15)
+  Pikel (D:6)
+  5 orc knights
+  3 necromancers (Lair:5)
+  A deep elf pyromancer (D:13)
+  Sprozz (D:8)
+  8 wolf spiders
+  3 orc sorcerers (Orc:2)
+  An ugly thing (D:15)
+  2 manticores
+  A meliai (Lair:3)
+  18 elephants
+  3 kobold blastminers (Orc:2)
+  3 black mambas
+  A gargoyle (D:13)
+  3 torpor snails
+  A cane toad (shapeshifter) (D:13)
+  9 cane toads
+  A rime drake (Lair:5)
+  An efreet (D:13)
+  3 komodo dragons
+  8 trolls
+  3 polar bears
+  8 tarantellas
+  2 hornets (D:12)
+  5 jumping spiders
+  12 blink frogs
+  3 slime creatures (D:15)
+  Blorkula the orcula (D:6)
+  3 culicivoras (Spider:1)
+  5 shadowghasts
+  A water elemental (D:12)
+  A raven (shapeshifter) (D:15)
+  4 ravens
+  3 centaur zombies (D:15)
+  A spectral anaconda (Lair:5)
+  5 wraiths
+  3 wyverns
+  2 death yak simulacra (Lair:5)
+  2 spectral death yaks (Lair:5)
+  A tengu draugr (D:15)
+  44 yaks
+  2 basilisks
+  2 steam dragons
+  2 wargs
+  24 redbacks
+  7 vampire mosquitoes
+  An acid dragon (D:8)
+  10 water moccasins
+  A wolf spider zombie (D:15)
+  A kobold geomancer (D:10)
+  2 ice beasts
+  12 orc warriors
+  A sky beast (D:7)
+  3 black bears
+  7 elephant simulacra (Lair:5)
+  2 spectral elephants (Lair:5)
+  2 ogres
+  An ogre (shapeshifter) (D:14)
+  8 wolves
+  2 centaurs (D:13)
+  A lemure (D:6)
+  5 kobold brigands
+  9 bullfrogs
+  A yaktaur draugr (D:13)
+  A gnoll sergeant (D:12)
+  A scorpion (D:3)
+  7 wights
+  2 marrowcudas (D:12)
+  A hornet zombie (D:15)
+  A vampire bat (D:6)
+  12 killer bees
+  6 electric eels
+  3 howler monkeys
+  A yak draugr (Lair:5)
+  2 redback simulacra (Spider:1)
+  A redback zombie (D:15)
+  Crazy Yiuf (D:3)
+  7 jellies
+  2 gnoll boudas
+  6 hounds (D:8)
+  14 orc priests
+  A drude (D:8)
+  A clockroach (D:3)
+  4 iguanas
+  11 hell rats
+  20 orc wizards
+  A boggart zombie (D:15)
+  14 gnolls
+  5 adders
+  2 river rats
+  A shadow imp (D:5)
+  A white imp (D:8)
+  A ribbon worm (D:5)
+  64 orcs
+  2 endoplasms
+  2 quokkas
+  3 ball pythons
+  A bat (D:1)
+  5 goblins
+  5 hobgoblins
+  11 kobolds
+  12 rats
+553 creatures vanquished.
+
+Vanquished Creatures (others)
+  A tengu warrior (D:13)
+  A centaur (D:10)
+  A bullfrog (Lair:4)
+  An orc (D:6)
+4 creatures vanquished.
+
+Grand Total: 683 creatures vanquished
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | WSnake the Draconian Summoner began the quest for the Orb.
+     0 | D:1      | Reached XP level 1. HP: 14/14 MP: 3/3
+   192 | D:2      | Reached XP level 2. HP: 20/20 MP: 1/5
+   195 | D:2      | Learned a level 2 spell: Call Imp
+   271 | D:3      | Found an iron altar of Okawaru.
+   300 | D:3      | Found a glowing drain.
+   335 | D:3      | Reached skill level 5 in Summonings
+   335 | D:3      | Reached XP level 3. HP: 13/26 MP: 3/6
+   358 | D:2      | Learned a level 3 spell: Call Canine Familiar
+   427 | D:3      | Reached XP level 4. HP: 33/33 MP: 7/7
+   429 | Sewer    | Entered a sewer
+   646 | D:2      | Reached XP level 5. HP: 38/38 MP: 2/8
+  1099 | D:3      | Encountered Crazy Yiuf
+  1133 | D:3      | Killed Crazy Yiuf
+  1272 | D:4      | Reached XP level 6. HP: 45/45 MP: 4/11
+  1279 | D:4      | Learned a level 4 spell: Eringya's Surprising Crocodile
+  1346 | D:4      | Found an ornate altar of the Wu Jian Council.
+  1510 | D:4      | Found a shimmering altar of Xom.
+  1577 | D:4      | Your scales start taking on an icy white colour.
+  1577 | D:4      | Reached XP level 7. HP: 50/50 MP: 7/14
+  1577 | D:4      | Gained mutation: You are cold resistant. (rC+) [White
+                  | Draconian growth]
+  1600 | D:4      | Found an ancient bone altar of Kikubaaqudgha.
+  1607 | D:4      | Reached skill level 5 in Spellcasting
+  1768 | D:4      | Learned a level 1 spell: Slow
+  1813 | D:5      | Entered Level 5 of the Dungeon
+  1813 | D:5      | Found Enukypra's Weapon Shop.
+  1813 | D:5      | Found Upo Wungef's Antique Armour Emporium.
+  1821 | D:5      | Found a staircase to the Ecumenical Temple.
+  1821 | D:5      | Found a statue of an orb of entropy.
+  1822 | D:5      | Found a statue of an orb of entropy.
+  1833 | Temple   | Entered the Ecumenical Temple
+  1849 | D:5      | Found Ymeub's General Store.
+  1859 | D:5      | Bought a potion of might for 52 gold pieces
+  1859 | D:5      | Bought a potion of brilliance for 52 gold pieces
+  1865 | D:5      | Found Tayrr's Antique Weapon Shop.
+  1894 | D:5      | Found Sirotuy's Magic Scroll Boutique.
+  1901 | D:5      | Bought a scroll of teleportation for 30 gold pieces
+  1907 | D:5      | Identified the +1 pair of boots "Cimu" {rN+ Str+3}
+  1935 | D:5      | Reached skill level 1 in Fighting
+  2134 | D:6      | Reached XP level 8. HP: 59/62 MP: 12/15
+  2146 | D:6      | Reached skill level 1 in Hexes
+  2272 | D:6      | Learned a level 4 spell: Summon Seismosaurus Egg
+  2311 | D:6      | Encountered Blorkula the orcula
+  2339 | D:6      | Killed Blorkula the orcula
+  2432 | D:6      | Encountered Pikel
+  2471 | D:6      | Killed Pikel
+  2472 | D:6      | Reached skill level 5 in Fighting
+  2629 | D:7      | Reached XP level 9. HP: 74/74 MP: 13/16
+  2726 | D:7      | Reached skill level 5 in Dodging
+  2769 | D:7      | Reached skill level 1 in Earth Magic
+  2844 | D:7      | Found a sacrificial altar of Ru.
+  2859 | D:7      | Became a worshipper of Ru the Awakened
+  2884 | D:7      | Found Huix Rioq's Armour Emporium.
+  3059 | D:8      | Reached skill level 5 in Earth Magic
+  3233 | D:8      | Reached skill level 1 in Evocations
+  3342 | D:8      | Identified the +4 falchion of Malum Prohibitum {drain,
+                  | Str-2 Int+5}
+  3512 | D:8      | Found a staircase to the Lair.
+  3521 | Lair:1   | Entered Level 1 of the Lair of Beasts
+  3584 | Lair:1   | Reached XP level 10. HP: 81/81 MP: 19/19
+  3899 | Lair:1   | Reached skill level 10 in Summonings
+  4169 | Lair:1   | Encountered a black mamba
+  4186 | Lair:1   | Killed a black mamba
+  4377 | Lair:1   | Learned a level 5 spell: Borgnjor's Vile Clutch
+  4432 | Lair:2   | Reached skill level 1 in Necromancy
+  4681 | Lair:2   | Reached XP level 11. HP: 36/88 MP: 20/20
+  4696 | Lair:2   | Reached skill level 5 in Necromancy
+  5742 | Lair:3   | Encountered Nergalle
+  5752 | Lair:3   | Encountered a death yak
+  5752 | Lair:3   | Encountered a death yak
+  6133 | D:8      | Encountered Sprozz
+  6144 | D:8      | Killed Sprozz
+  6145 | D:8      | Found a burning altar of Makhleb.
+  6155 | D:8      | Identified the +2 helmet "Xaapoc" {SInv Stlth+}
+  6205 | D:8      | Found a broken altar of Ashenzari.
+  6896 | D:10     | Entered Level 10 of the Dungeon
+  6911 | D:10     | Gained mutation: You refuse to read scrolls in combat
+                  | unless seriously injured. [Ru sacrifice]
+  6911 | D:10     | Reached * piety under Ru
+  6970 | D:10     | Found Texu's Antique Armour Emporium.
+  6977 | D:10     | Bought a pair of runed gloves for 240 gold pieces
+  7422 | D:10     | Found a staircase to the Orcish Mines.
+  7627 | D:10     | Reached XP level 12. HP: 94/94 MP: 22/22
+  7818 | Orc:1    | Entered Level 1 of the Orcish Mines
+  7961 | Orc:2    | Entered Level 2 of the Orcish Mines
+  7967 | Orc:2    | Learned a level 4 spell: Martyr's Knell
+  8078 | Orc:1    | Encountered Erolcha
+  8102 | Orc:1    | Killed Erolcha
+  8134 | Orc:1    | Found Utotzutre's Book Boutique.
+  8141 | Orc:1    | Upgraded the game from 0.35-a0-256-g859e8e3ba0 to
+                  | 0.35-a0-257-gf9e06672e4
+  8141 | Orc:1    | Bought a parchment of Summon Ice Beast for 140 gold pieces
+  8242 | Orc:1    | Found Gutuc's Distillery.
+  8378 | Orc:2    | Found a staircase to the Elven Halls.
+  8668 | Orc:2    | Learned a level 3 spell: Summon Ice Beast
+  8705 | Orc:2    | Encountered an orc high priest
+  8705 | Orc:2    | Encountered an orc high priest
+  8705 | Orc:2    | Encountered an orc high priest
+  8706 | Orc:2    | Paralysed by an orc sorcerer for 5.5 turns
+  8715 | Orc:2    | Killed an orc high priest
+  8748 | Orc:2    | Killed an orc high priest
+  8753 | Orc:2    | Killed an orc high priest
+  8993 | Orc:2    | Paralysed by an orc sorcerer for 4.5 turns
+  8994 | Orc:2    | Reached skill level 10 in Spellcasting
+  9364 | Orc:2    | Found Agyteggi's Antique Armour Boutique.
+  9364 | Orc:2    | Found Rocaggac's Weapon Boutique.
+  9365 | Orc:2    | Found Kegif's Weapon Shoppe.
+  9365 | Orc:2    | Found Cudoetsu's General Store.
+  9945 | D:11     | Encountered a two-headed ogre
+  9951 | D:11     | Killed a two-headed ogre
+  9952 | D:11     | Reached skill level 1 in Ice Magic
+  9952 | D:11     | Reached skill level 1 in Shapeshifting
+ 10108 | D:11     | Learned a level 4 spell: Animate Dead
+ 10241 | D:11     | Reached skill level 2 in Shapeshifting
+ 10268 | D:11     | Gained mutation: You refuse to drink potions in combat
+                  | unless seriously injured. [Ru sacrifice]
+ 10268 | D:11     | Reached ** piety under Ru
+ 10268 | D:11     | Reached *** piety under Ru
+ 10323 | D:11     | Reached XP level 13. HP: 102/102 MP: 27/27
+ 10777 | D:12     | Reached skill level 3 in Shapeshifting
+ 10804 | D:12     | Found the +9 staff of Olgreb {rPois∞}
+ 10890 | D:12     | Reached skill level 4 in Shapeshifting
+ 10932 | D:12     | Paralysed by a hornet for 1.5 turns
+ 10964 | D:12     | Got the +9 staff of Olgreb {rPois∞}
+ 11074 | D:13     | Reached skill level 5 in Shapeshifting
+ 11089 | D:13     | Reached skill level 5 in Ice Magic
+ 11111 | D:13     | Reached skill level 6 in Shapeshifting
+ 11433 | D:13     | Reached skill level 7 in Shapeshifting
+ 11804 | D:13     | Reached skill level 8 in Shapeshifting
+ 12318 | D:15     | Entered Level 15 of the Dungeon
+ 12550 | D:15     | Reached skill level 9 in Shapeshifting
+ 12590 | D:15     | Gained mutation: You cannot be stealthy. [Ru sacrifice]
+ 12666 | D:15     | Reached XP level 14. HP: 113/113 MP: 21/28
+ 12724 | D:14     | Found a gate to the Vaults.
+ 12779 | D:14     | Reached skill level 5 in Evocations
+ 13324 | D:15     | Found a staircase to the Depths.
+ 13335 | D:15     | Got a smoky gem with 6 turns to spare
+ 13485 | D:15     | Reached skill level 10 in Shapeshifting
+ 13779 | Lair:3   | Killed Nergalle
+ 14067 | Lair:3   | Reached skill level 11 in Shapeshifting
+ 14192 | Lair:3   | Found a hole to the Spider Nest.
+ 14537 | Lair:4   | Identified the +2 falchion "Brush" {venom, *Noise rPois
+                  | rCorr SInv}
+ 14973 | Lair:5   | Entered Level 5 of the Lair of Beasts
+ 14984 | Lair:5   | Reached skill level 12 in Shapeshifting
+ 15071 | Lair:5   | Found a staircase to the Slime Pits.
+ 15074 | Lair:5   | Found a viscous altar of Jiyva.
+ 15226 | Lair:5   | Reached skill level 13 in Shapeshifting
+ 15515 | Lair:5   | Gained mutation: You are somewhat inexperienced. (-1 XL)
+                  | [Ru sacrifice]
+ 15515 | Lair:5   | Reached XP level 13. HP: 105/105 MP: 36/36
+ 15515 | Lair:5   | Reached **** piety under Ru
+ 15515 | Lair:5   | Reached ***** piety under Ru
+ 15933 | Lair:5   | Reached XP level 14. HP: 113/113 MP: 8/28
+ 16213 | Lair:5   | Reached skill level 14 in Shapeshifting
+ 16549 | Spider:1 | Entered Level 1 of the Spider Nest
+ 16964 | Orc:1    | Bought a parchment of Haunt for 524 gold pieces
+ 17420 | Spider:1 | Learned a level 7 spell: Haunt
+ 17829 | Spider:2 | Reached skill level 10 in Necromancy
+ 17843 | Spider:2 | Encountered Donald
+ 17852 | Spider:2 | Mangled by a death scarab
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      evilmike_arrival_plus, layout_rooms, hangedman_decor_clover_reticule
+D:2:      layout_rooms
+D:3:      cheibrodos_pilgrimage, layout_loops_cross,
+          kennysheep_okawaru_gauntlet, portal_sewer_entry_c, nrook_campfire,
+          st_stairs_9, uniq_jessica, uniq_crazy_yiuf_cottage, uniq_grinder
+D:4:      layout_rooms, mainiacjoe_overflow_tiny_flanked,
+          nicolae_wu_jian_sharp_slivers_of_steel, lemuel_round_altar
+D:5:      cheibrodos_helix_gallery, layout_rooms,
+          lemuel_zombie_altar_yredelemnul, minmay_temple_entry_waves,
+          serial_shops, shop, nicolae_shop_relaxation, shop, shop,
+          nicolae_shop_window_shopping
+D:6:      layout_basic, nicolae_overflow_crystal_walls, item_on_display_a_b,
+          uniq_pikel, uniq_blorkula_the_orcula
+D:7:      layout_basic, nicolae_ru_balanced_heart_vs_power, serial_shops,
+          nicolae_shop_advertising_works [nicolae_subvault_shop_adworks]
+D:8:      layout_cave_pools, nicolae_ashenzari_skybound,
+          overflow_temple_1_default, erik_lair_island, uniq_sprozz
+D:9:      layout_long_grid
+D:10:     layout_long_grid, erik_orc_3, serial_shops, shop, nrook_mini_vaults
+D:11:     layout_cave_pods
+D:12:     layout_basic, minmay_guarded_unrand_staff_of_olgreb
+D:13:     layout_cave_pools, serial_park, serial_park_tiny_pond,
+          serial_park_tiny_1, serial_park_minivault_5x5_3, serial_park_gazebo
+          [serial_park_minivault_5x5_2]
+D:14:     layout_basic, david_vaults_5
+D:15:     grunt_enter_depths_hoard, layout_rooms, serial_undead,
+          serial_undead_f, serial_undead_d, serial_undead_d, nrook_uturn,
+          minmay_misc_feat_ornament, minmay_stone_trees_small
+Temple:   compressed_dpeg_triangle_lava_temple
+Lair:1:   layout_cave_pods, nicolae_lair_rhizomatic_trees
+Lair:2:   layout_long_grid, minmay_shoals_entry_hut,
+          regret_index_lairdec_budding, st_stairs_13,
+          regret_index_lairdec_lost_corridors
+Lair:3:   layout_chaotic_city, hellmonk_spider_entry_not_the_bees,
+          enter_volcano_4, minivault_11, uniq_nergalle
+Lair:4:   layout_hall_layers, grunt_megastairs_5, nicolae_lair_sylvan_descent
+Lair:5:   due_jungle_book, layout_small_grid, nicolae_slime_entry_field_trip,
+          nicolae_quartered_pool_little
+Spider:1: nicolae_spider_brood_tunnel, guppyfry_spider_mini_3
+Spider:2: layout_spider_delve, nicolae_spider_bug_shape, uniq_donald
+Orc:1:    layout_diamond_mine, serial_shops, shop, parchment_shop, uniq_erolcha
+Orc:2:    st_orc_elflike, layout_caves, nicolae_orc_quarried_blocks
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 13 14 |
+---------------+-------------------------------------------+-----
+Summonings     |     5     6     7  8     9 11          12 | 12.0
+Spellcasting   |              3  4  5     6     7 10    11 | 11.0
+Fighting       |                    2  5           6  7    |  7.1
+Dodging        |                    2  4  5                |  5.4
+Hexes          |                       3                   |  3.0
+Earth Magic    |                          5  6  8  9       |  9.0
+Evocations     |                          1  4           5 |  5.5
+Necromancy     |                             4  8  9    10 | 10.3
+Ice Magic      |                                   2  5    |  5.0
+Shapeshifting  |                                   2  9 14 | 14.5
+Stealth        |                                      0    |  0.0
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 || total
+---------------------------+-------+-------+-------+-------+-------++-------
+ Attack: Normal            |    53 |    38 |    21 |    20 |    28 ||   160
+  Melee: Unarmed           |    27 |       |       |       |       ||    27
+         Dagger            |    26 |    20 |       |       |       ||    46
+         Tailslap          |     7 |     6 |     3 |     4 |     5 ||    25
+         Quarterstaff      |       |    18 |    21 |       |       ||    39
+         Falchion          |       |       |       |    20 |     9 ||    29
+         Staff             |       |       |       |       |    19 ||    19
+   Cast: Summon Small Mamm |    12 |     3 |     4 |    42 |    28 ||    89
+         Call Imp          |     2 |    14 |    20 |    37 |    26 ||    99
+         Call Canine Famil |     1 |    19 |    27 |    67 |    73 ||   187
+         Eringya's Surpris |       |     1 |     8 |     5 |    43 ||    57
+         Slow              |       |       |    20 |    19 |     4 ||    43
+         Summon Seismosaur |       |       |     6 |    33 |    25 ||    64
+         Borgnjor's Vile C |       |       |       |    63 |    85 ||   148
+         Martyr's Knell    |       |       |       |    15 |    77 ||    92
+         Summon Ice Beast  |       |       |       |    15 |    49 ||    64
+         Animate Dead      |       |       |       |       |    17 ||    17
+ Invoke: Reject Sacrifices |       |       |       |     1 |       ||     1
+         Sacrifice Words   |       |       |       |     1 |       ||     1
+         Sacrifice Drink   |       |       |       |     1 |       ||     1
+         Draw Out Power    |       |       |       |       |    11 ||    11
+         Sacrifice Stealth |       |       |       |       |     1 ||     1
+         Sacrifice Experie |       |       |       |       |     1 ||     1
+Ability: Glacial Breath    |       |       |     4 |     8 |    10 ||    22
+         Evoke the Staff o |       |       |       |       |     1 ||     1
+  Evoke: Wand of mindburst |       |       |       |     4 |       ||     4
+         Wand of warping   |       |       |       |     1 |     3 ||     4
+         Wand of charming  |       |       |       |       |     3 ||     3
+  Drink: Curing            |     1 |       |       |     1 |       ||     2
+         Heal wounds       |       |       |     1 |     2 |       ||     3
+         Attraction        |       |       |       |     1 |       ||     1
+         Berserk rage      |       |       |       |     1 |       ||     1
+         Haste             |       |       |       |     1 |       ||     1
+         Invisibility      |       |       |       |     1 |       ||     1
+   Read: Identify          |       |     3 |       |     2 |       ||     5
+         Amnesia           |       |     1 |       |       |     2 ||     3
+         Teleportation     |       |       |       |     1 |       ||     1
+         Enchant armour    |       |       |       |     2 |       ||     2
+         Enchant weapon    |       |       |       |     1 |       ||     1
+         Immolation        |       |       |       |     1 |       ||     1
+         Fog               |       |       |       |     1 |       ||     1
+         Blinking          |       |       |       |       |     1 ||     1
+   Stab: Petrified         |       |     1 |       |       |       ||     1
+         Sleeping          |       |     1 |       |       |       ||     1
+         Blind             |       |       |     1 |       |       ||     1
+ Armour: None              |    44 |    37 |    47 |   146 |   368 ||   642
+  Dodge: Dodged            |    36 |    32 |    44 |   100 |   232 ||   444
+   Form: Quill             |     1 |       |       |       |       ||     1
+         Default           |       |     1 |       |       |       ||     1
+
+Table legend: (Time is in decaauts)
+ A = Elapsed time spent in this place.
+ B = Non-inter-level travel time spent in this place.
+ C = Inter-level travel time spent in this place.
+ D = Time resting spent in this place.
+ E = Time spent auto-exploring this place.
+ F = Levels seen in this place.
+ G = Mean time per level.
+                   A        B        C        D        E      F       G
+               +--------+--------+--------+--------+--------+-----+--------+
+         Total |  17975 |  17004 |    971 |   3261 |   2194 |  26 |  691.3 |
+       Dungeon |   9542 |   9065 |    477 |   1376 |   1147 |  15 |  636.1 |
+        Temple |      2 |      2 |      0 |      0 |      0 |   1 |    2.0 |
+          Lair |   5419 |   5078 |    341 |    813 |   1047 |   5 | 1083.8 |
+   Spider Nest |    988 |    971 |     17 |    479 |      0 |   2 |  494.0 |
+  Orcish Mines |   1883 |   1748 |    135 |    571 |      0 |   2 |  941.5 |
+         Sewer |    138 |    138 |      0 |     22 |      0 |   1 |  138.0 |
+               +--------+--------+--------+--------+--------+-----+--------+
+
+Top non-repeatable levels by time:
+  Lair:2: 1587 daAuts
+  Lair:5: 1564 daAuts
+   Orc:2: 1192 daAuts
+    D:10: 1132 daAuts
+     D:8: 1001 daAuts
+  Lair:1: 970 daAuts
+    D:14: 937 daAuts
+    D:13: 874 daAuts
+Spider:1: 849 daAuts
+    D:15: 773 daAuts
+    D:11: 773 daAuts
+   Orc:1: 690 daAuts
+  Lair:3: 672 daAuts
+     D:9: 631 daAuts
+  Lair:4: 624 daAuts
+
+DLua errors:
+
+Table legend:
+ A = God
+ B = Rank
+ C = Start time
+ D = Start piety
+ E = Piety gained
+ F = Piety on gifts
+ G = Piety on penance
+ H = Piety on stepdowns
+ I = Piety decays
+ J = Piety lost (inc. decay)
+         A          B      C       D     E     F     G     H     I     J   
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+ Ru               | 0 |   28905 |  10 |   0 |   0 |   0 |   0 |   0 |   0 
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+

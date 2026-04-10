@@ -348,7 +348,7 @@
   "amuletDetails": [
     {
       "rawName": "amulet of the Gnostic Sky",
-      "displayName": "randart amulet",
+      "displayName": "amulet of the Gnostic Sky",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": true,
@@ -393,7 +393,7 @@
   "ringDetails": [
     {
       "rawName": "ring of Ashenzari's Prison",
-      "displayName": "randart ring",
+      "displayName": "ring of Ashenzari's Prison",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": true,
@@ -434,7 +434,7 @@
     },
     {
       "rawName": "ring \"Bylouron\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Bylouron\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

@@ -1,0 +1,862 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-259-g7ca9a3eb5b (webtiles) character file.
+
+Game seed: 17492713912909772684
+
+67056 rezek the Warrior (level 15, 0/153 HPs)
+             Began as an Oni Delver on Feb 13, 2026.
+             Was an Elder of Ru.
+             Slain by a dream sheep (4 damage)
+             ... led by a torpor snail
+             ... on level 5 of the Lair of Beasts on Apr 7, 2026.
+             The game lasted 02:21:00 (20822 turns).
+
+rezek the Warrior (Oni Delver)                     Turns: 20822, Time: 02:21:01
+
+Health: 0/153      AC: 14    Str: 19    XL:     15   Next: 21%
+Magic:  22/22      EV: 15    Int: 16    God:    Ru [****..]
+Gold:   502        SH:  5    Dex: 13    Spells: 15/27 levels left
+
+rFire   + . .  (50%)    A - +3 giant spiked club (spect)
+rCold   . . .  (100%)     [offhand occupied]
+rNeg    + . .  (50%)    b - +2 robe {Will+}
+rPois   +      (33%)    C - +2 hat "Giffeots" {Bane rPois Regen+ Dex+2}
+rElec   .      (100%)   k - +2 ratskin cloak {*Rats rPois rN+ Str-1 Int-1 Dex+1}
+rCorr   .      (100%)   j - amulet of reflection
+SInv    +               c - +5 ring of evasion
+Will    ++...           r - +4 ring of protection
+Stlth   ++        
+HPRegen 1.25/turn
+MPRegen 0.18/turn
+
+%: reflection
+@: lethally poisoned (0 -> -1), extremely horrified, slowed, very slow
+A: large, unfitting armour, horns 1, frail 1, low MP 1, tough skin 1, cowardly,
+unskilled 1, double potion healing, no forms, drunken brawling, see invisible,
+fire resistance 1
+a: Renounce Religion (0%), Draw Out Power (0%), Power Leap (0%)
+
+
+You were on level 5 of the Lair of Beasts.
+You worshipped Ru.
+Ru was greatly pleased with you.
+You visited 4 branches of the dungeon, and saw 17 of its levels.
+You visited the chambers of the Necropolis 1 time.
+You also visited: Gauntlet and Volcano.
+
+You collected 1706 gold pieces.
+You spent 1204 gold pieces at shops.
+
+Inventory:
+
+Hand Weapons
+ f - a +3 whip of electrocution
+ q - the +8 war axe of Axzod {flame, Fly rF+ Str+2 Dex-5}
+   (You found it in the Necropolis)   
+   
+   Fly:       It grants you flight.
+   rF+:       It protects you from fire.
+   Str+2:     It affects your strength (+2).
+   Dex-5:     It affects your dexterity (-5).
+   
+   It cannot be enchanted further.
+ v - the +0 mace "Narramyg" {heavy, rF++}
+   (You took it off an orc warrior in the Necropolis)   
+   
+   rF++:      It greatly protects you from fire.
+   
+   It cannot be enchanted further.
+ x - a +2 devious dagger
+ z - a +5 eveningstar of freezing
+ A - a +3 spectral giant spiked club (weapon)
+ F - a +0 triple crossbow
+Missiles
+ a - 10 boomerangs (quivered)
+ d - 6 javelins
+ e - 23 poisoned darts
+ g - a throwing net
+ l - 7 atropa-tipped darts
+ m - 5 curare-tipped darts
+ w - 7 large rocks
+ y - 6 silver javelins
+Armour
+ b - a +2 robe of willpower (worn)
+ k - the +2 ratskin cloak (worn) {*Rats rPois rN+ Str-1 Int-1 Dex+1}
+   (You found it on level 6 of the Dungeon)   
+   
+   *Rats:     When the wearer is hurt, rats may emerge from it to assist them.
+   rPois:     It protects you from poison.
+   rN+:       It protects you from negative energy.
+   Str-1:     It affects your strength (-1).
+   Int-1:     It affects your intelligence (-1).
+   Dex+1:     It affects your dexterity (+1).
+   
+   It cannot be enchanted further.
+ n - a +0 cloak of air
+ p - the -1 hat of the Kettle-Drum {Dex+6}
+   (You bought it in a shop on level 9 of the Dungeon)   
+   
+   Dex+6:     It affects your dexterity (+6).
+   
+   It cannot be enchanted further.
+ t - a +0 troll leather armour
+ C - the +2 hat "Giffeots" (worn) {Bane rPois Regen+ Dex+2}
+   (You found it in a Gauntlet)   
+   
+   Bane:      It inflicts you with a random bane when you equip it.
+   rPois:     It protects you from poison.
+   Regen+:    It increases your rate of health regeneration.
+   Dex+2:     It affects your dexterity (+2).
+   
+   It cannot be enchanted further.
+ D - the +1 hat "Pack" {*Corrode rElec rF+ Ice}
+   (You found it in a Gauntlet)   
+   
+   *Corrode:  It may corrode you when you take damage.
+   rElec:     It insulates you from electricity.
+   rF+:       It protects you from fire.
+   Ice:       It increases the power of your Ice spells.
+   
+   It cannot be enchanted further.
+ H - +0 shadow dragon scales
+ I - the +1 acid dragon scales of Asuhucki {Harm rElec rC+ rCorr Str-5}
+   (You found it in a Gauntlet)   
+   
+   Harm:      It increases damage dealt and taken.
+   rElec:     It insulates you from electricity.
+   rC+:       It protects you from cold.
+   rCorr:     It protects you from acid and corrosion.
+   Str-5:     It affects your strength (-5).
+   
+   It cannot be enchanted further.
+Jewellery
+ c - a +5 ring of evasion (worn)
+ h - a +4 ring of slaying
+ i - a +5 ring of evasion
+ j - an amulet of reflection (worn)
+ o - a ring of positive energy
+ r - a +4 ring of protection (worn)
+ s - the amulet of Yneaj {Bane RegenMP+ rCorr Str+4 Int+3}
+   (You took it off Cassandra on level 1 of the Lair of Beasts)   
+   
+   [amulet of magic regeneration]
+   
+   Bane:      It inflicts you with a random bane when you equip it.
+   RegenMP+:  It increases your rate of magic regeneration.
+   rCorr:     It protects you from acid and corrosion.
+   Str+4:     It affects your strength (+4).
+   Int+3:     It affects your intelligence (+3).
+ u - a ring of wizardry
+ B - a ring of protection from fire
+ E - a +4 ring of protection
+ G - a ring of positive energy
+Wands
+ d - a wand of digging (13)
+ p - a wand of polymorph (19)
+ b - a wand of light (6)
+ a - a wand of flame (36)
+ c - a wand of iceblast (5)
+Scrolls
+ g - 4 scrolls of fog
+ f - 6 scrolls of fear
+ I - 3 scrolls of immolation
+ t - a scroll of teleportation
+ x - a scroll of amnesia
+ b - 5 scrolls of blinking
+ a - a scroll of enchant armour
+ i - a scroll of identify
+ T - a scroll of torment
+ N - a scroll of noise
+ p - a scroll of poison
+ V - a scroll of vulnerability
+Potions
+ h - 5 potions of haste
+ b - a potion of brilliance
+ c - 8 potions of curing
+ B - a potion of berserk rage
+ m - 2 potions of might
+ M - 6 potions of mutation
+ w - a potion of heal wounds
+ A - 3 potions of attraction
+ v - a potion of moonshine
+ e - a potion of enlightenment
+Miscellaneous
+ h - a +0 sack of spiders
+ g - a +0 tin of tremorstones (2/2)
+
+
+   Skills:
+ + Level 16.1 Fighting
+ - Level 9.3(11.6) Axes
+ + Level 11.0(12.4) Maces & Flails
+ + Level 8.4 Throwing
+ + Level 5.0 Dodging
+ + Level 4.0 Stealth
+ - Level 6.7 Shields
+ + Level 6.8 Spellcasting
+ - Level 3.4 Conjurations
+ + Level 4.8 Translocations
+ - Level 3.1 Fire Magic
+ - Level 5.2 Air Magic
+ - Level 3.3 Alchemy
+ + Level 2.8 Evocations
+
+
+You had 15 spell levels left.
+You knew the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Mephitic Cloud        Conj/Alch/Air  13%        N/A       8%          3
+b - Momentum Strike       Conj/Tloc      26%        3d8       3%          2
+c - Volatile Blastmotes   Fire/Tloc      26%        2d12      8%          3
+d - Vhi's Electric Charg  Tloc/Air       30%        N/A       16%         4
+
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Foxfire                  Conj/Fire      44%        2x1d6     3%          1
+ Static Discharge         Conj/Air       26%        3-5/arc   3%          2
+ Mercury Arrow            Conj/Alch      22%        2d6       4%          2
+ Scorch                   Fire           22%        2d5       5%          2
+ Maxwell's Portable Pile  Tloc           14%        (3-9)d3   5%          3
+ Passage of Golubria      Tloc           14%        N/A       17%         4
+ Sublimation of Blood     Necr           3%         N/A       19%         2
+ Iskenderun's Mystic Bla  Conj/Tloc      13%        2d5 (+2d2 24%         4
+ Fulminant Prism          Conj/Alch      5%         3d7       30%         4
+ Flame Wave               Conj/Fire      11%        2d6       32%         4
+ Ignite Poison            Fire/Alch      11%        N/A       32%         4
+ Vampiric Draining        Necr           3%         2d6       36%         3
+ Iskenderun's Battlesphe  Conj/Frge      7%         2d7       54%         4
+ Detonation Catalyst      Fire/Alch      11%        2d16      67%         5
+ Silence                  Hex/Air        4%         N/A       75%         5
+ Anguish                  Hex/Necr       1%         N/A       77%         4
+ Animate Dead             Necr           3%         N/A       77%         4
+ Awaken Armour            Erth/Frge      6%         N/A       77%         4
+ Gell's Gavotte           Tloc           7%         2d(14-21) 95%         6
+ Metabolic Englaciation   Hex/Ice        1%         N/A       98%         5
+ Nazja's Percussive Temp  Frge           1%         4d4       98%         5
+ Forge Monarch Bomb       Fire/Frge      3%         4d5       100%        6
+ Summon Cactus Giant      Summ           1%         N/A       100%        6
+ Ozocubu's Refrigeration  Ice            1%         4d7       100%        7
+ Fulsome Fusillade        Conj/Alch      5%         (3-5)d6   100%        8
+ Lehudib's Crystal Spear  Conj/Erth      3%         10d3      100%        8
+ Chain Lightning          Conj/Air       6%         3d8       100%        9
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (9/15)             Temple (1/1) D:4            Lair (5/5) D:8         
+  Swamp (0/4) Lair:2        Snake (0/4) Lair:3        Slime (0/5) Lair:5      
+    Orc (2/2) D:9             Elf (0/3) Orc:2       Volcano (visited)         
+Gauntlet (visited)        
+
+The Realm of Zot is guarded by orbs of fire.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Elyvilon
+Fedhas
+Gozag
+Hepliaklqana
+Kikubaaqudgha
+Makhleb
+Nemelex Xobeh
+Okawaru
+Qazlal
+Ru
+Sif Muna
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Yredelemnul
+Zin
+The Shining One
+Beogh
+
+Shops:
+D:7 [   D:9 (*   Orc:1 (:!   Orc:2 *:!*(*
+
+
+Innate Abilities, Weirdness & Mutations
+
+You are too large for most types of armour.
+You have a pair of small horns on your head.
+You are frail. (-10% HP)
+Your magical capacity is low. (-10% MP)
+You have tough skin. (AC +1)
+Your cowardice makes you less effective in combat with threatening foes.
+You are somewhat unskilled. (-1 Apt)
+You gain doubled healing and magic from potions.
+You cannot voluntarily change form.
+Whenever you drink a healing potion, you attack all around you.
+You have supernaturally acute vision. (SInv)
+You are heat resistant. (rF+)
+
+Message History
+
+The water moccasin completely misses you.
+The dream sheep barely misses you. The elephant tramples you!
+You hold your ground! The elephant completely misses you. x2
+You block the elephant's attack. Your hell rat bites the elephant.
+Your hell rat drains the elephant. The torpor snail bites you!
+* * * LOW HITPOINT WARNING * * *
+You focus your inner power and illuminate the torpor snail in retribution!
+The dream sheep headbutts you!
+* * * LOW HITPOINT WARNING * * *
+The water moccasin bites you.
+* * * LOW HITPOINT WARNING * * *
+The dream sheep misses you. The elephant tramples you!
+* * * LOW HITPOINT WARNING * * *
+You hold your ground! The elephant closely misses you.
+The elephant tramples you but does no damage.
+The elephant trunk-slaps you.
+* * * LOW HITPOINT WARNING * * *
+You feel very sick.
+The water moccasin misses you.
+Your hell rat bites the elephant but does no damage.
+The dream sheep misses you.
+The elephant tramples you but does no damage.
+The elephant trunk-slaps you but does no damage.
+The dream sheep closely misses you. The elephant tramples you.
+* * * LOW HITPOINT WARNING * * *
+You hold your ground! The elephant barely misses you.
+You block the torpor snail's attack. The water moccasin closely misses you.
+You feel very sick.
+The water moccasin closely misses you.
+You redirect the dream sheep's attack!
+The dream sheep headbutts the dream sheep.
+The dream sheep begins to attack, but is stunned by your conviction!
+The elephant misses you. You block the elephant's attack.
+The elephant tramples you but does no damage.
+The elephant closely misses you.
+Your hell rat bites the elephant but does no damage.
+The torpor snail misses you. The water moccasin barely misses you.
+The dream sheep headbutts you.
+You die...
+Ru respects your ultimate sacrifice.
+
+**,,,,,*,***,*  *,,,,,,,,,,
+ **..,,...****  **,,,,,****
+***...,...*      *.....*,,,
+*,,....#..####   #....♣♣.*,
+*,*....#..#.P#####.......*,
+**,....................♣**,
+*,,....#....P##*...P...♣,♣.
+**,...#..P#w..###..#..♣♣.♣.
+**,..)...Y@YY.#.#.#......♣.
+*,,......YSY...............
+**,.<.......r......!.......
+ **###...###.##P..#.##..P#.
+     ####* #####....##...#?
+              #P........#..
+              #.†..........
+              #.†#....P.###
+              #.†#.......#P
+
+
+You could see 3 elephants, a torpor snail (corona), a water moccasin, 2 dream
+sheep and a friendly hell rat (minion, slow).
+
+Vanquished Creatures
+  Jorgrun (Orc:1)
+  The ghost of xeon11 the the Blocker, a journeyman FoFi of Okawaru (Necropolis)
+  A minotaur (Gauntlet)
+  An ettin (Orc:2)
+  The ghost of OthelloStarBuck the the Fighter, a novice OnSh of Wu Jian (Necropolis)
+  A hydra (Lair:1)
+  A ghost crab (Lair:2)
+  Erica (D:8)
+  A two-headed ogre (Orc:2)
+  3 death yaks
+  An orc high priest (Orc:2)
+  Urug (Orc:2)
+  A hell knight (Volcano)
+  An obsidian bat (Orc:1)
+  3 sixfirhies (Gauntlet)
+  A salamander mystic (Volcano)
+  A skyshark (Lair:4)
+  A death drake (Gauntlet)
+  A deep elf pyromancer (Necropolis)
+  6 orc knights (Orc:2)
+  3 orc sorcerers (Orc:2)
+  A cyclops (Orc:2)
+  4 salamanders (Volcano)
+  Maurice (Orc:1)
+  A shining eye (Gauntlet)
+  2 moths of wrath
+  10 elephants
+  3 kobold blastminers (Orc:1)
+  4 black mambas
+  2 molten gargoyles (Volcano)
+  12 cane toads
+  A torpor snail (Lair:5)
+  2 rime drakes
+  Cassandra (Lair:1)
+  4 komodo dragons
+  5 trolls
+  5 saltlings (Orc:2)
+  8 blink frogs (Lair:1)
+  5 dream sheep
+  2 glass eyes (Gauntlet)
+  2 ravens
+  A ynoxinul (Gauntlet)
+  3 wyverns
+  30 yaks
+  2 fire bats (Volcano)
+  5 basilisks
+  6 wargs
+  4 redbacks (Gauntlet)
+  4 nagas (Lair:3)
+  10 water moccasins
+  2 hell hounds (Lair:1)
+  12 orc warriors
+  2 ice beasts
+  2 kobold geomancers (Necropolis)
+  3 sky beasts
+  A swamp drake (Lair:5)
+  A black bear (D:6)
+  4 ogres
+  8 wolves
+  2 centaurs
+  2 kobold brigands
+  9 bullfrogs
+  A gnoll sergeant (D:7)
+  A scorpion (D:5)
+  3 rock fish (Necropolis)
+  10 wights
+  15 killer bees (D:9)
+  A spectral slime creature (Gauntlet)
+  3 howler monkeys
+  5 spectral spriggans (Lair:2)
+  7 lava snakes (Volcano)
+  A bombardier beetle (D:3)
+  5 orc priests
+  4 hounds
+  2 iron imps (Gauntlet)
+  A gnoll bouda (D:4)
+  A drude (D:7)
+  Jessica (D:2)
+  A clockroach (D:5)
+  5 sleepcaps
+  2 iguanas
+  Natasha (thrice) (D:3 D:2)
+  7 orc wizards
+  13 hell rats
+  A boggart zombie (Gauntlet)
+  A spectral killer bee (Necropolis)
+  Robin (D:2)
+  5 adders
+  6 gnolls
+  30 river rats
+  A white imp (D:7)
+  2 dart slugs
+  3 ribbon worms
+  46 orcs
+  12 endoplasms
+  8 hobgoblins
+  6 jackals
+  10 quokkas
+  7 ball pythons
+  5 bats
+  2 frilled lizards (D:2)
+  14 goblins
+  11 kobolds
+  17 rats
+  A butterfly (Lair:1)
+501 creatures vanquished.
+
+Vanquished Creatures (collateral kills)
+  The ghost of roomforsquares the the Nimble, a journeyman GnGl of Okawaru (Necropolis)
+  A death yak (Lair:4)
+  An orc knight (Orc:2)
+  A dream sheep (Lair:4)
+  A yak (Lair:3)
+  A water moccasin (Lair:5)
+6 creatures vanquished.
+
+Vanquished Creatures (others)
+  A wolf (Lair:3)
+  An orc priest (Orc:2)
+  3 orcs
+5 creatures vanquished.
+
+Grand Total: 512 creatures vanquished
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:5      | rezek the Oni Delver began the quest for the Orb.
+     0 | D:5      | Reached XP level 1. HP: 24/24 MP: 1/1
+     1 | D:5      | Encountered a sleepcap
+     4 | D:4      | Encountered an iguana
+     6 | D:4      | Encountered a hound
+    11 | D:4      | Killed a hound
+    12 | D:4      | Reached skill level 5 in Fighting
+    12 | D:4      | Reached XP level 2. HP: 31/35 MP: 2/2
+    12 | D:4      | Reached XP level 3. HP: 37/42 MP: 3/3
+    75 | D:3      | Encountered Natasha
+    91 | D:3      | Killed Natasha
+    92 | D:3      | Reached skill level 6 in Fighting
+   172 | D:2      | Reached XP level 4. HP: 53/53 MP: 4/4
+   290 | D:1      | Found a faded altar of an unknown god.
+  1226 | D:2      | Encountered Jessica
+  1231 | D:2      | Killed Jessica
+  1232 | D:2      | Reached skill level 1 in Throwing
+  1639 | D:2      | Reached XP level 5. HP: 49/61 MP: 5/5
+  1719 | D:2      | Encountered Robin
+  1730 | D:2      | Killed Robin
+  2471 | D:3      | Encountered Natasha
+  2479 | D:2      | Killed Natasha
+  2480 | D:2      | Reached skill level 7 in Fighting
+  2508 | D:2      | Encountered Natasha
+  2522 | D:2      | Killed Natasha
+  2635 | D:3      | Reached skill level 8 in Fighting
+  2808 | D:3      | Reached XP level 6. HP: 71/72 MP: 6/6
+  3270 | D:4      | Found a hide-covered altar of Uskayaw.
+  3655 | D:4      | Found a statue of an orb of fire.
+  3660 | D:4      | Found a staircase to the Ecumenical Temple.
+  3732 | D:4      | Found a statue of an orb of fire.
+  3790 | Temple   | Found a transporter.
+  3790 | Temple   | Found a transporter.
+  3790 | Temple   | Found a transporter.
+  3790 | Temple   | Found a transporter.
+  3790 | Temple   | Entered the Ecumenical Temple
+  3863 | D:4      | Reached skill level 9 in Fighting
+  3911 | D:5      | Reached XP level 7. HP: 79/83 MP: 7/7
+  4008 | D:5      | Learned a level 3 spell: Mephitic Cloud
+  4463 | D:5      | Reached skill level 1 in Spellcasting
+  4905 | D:6      | Reached skill level 1 in Conjurations
+  4905 | D:6      | Reached skill level 1 in Air Magic
+  4905 | D:6      | Reached skill level 1 in Alchemy
+  4906 | D:6      | Upgraded the game from 0.35-a0-53-g511dc2e70d to
+                  | 0.35-a0-105-g08978299a1
+  5162 | D:6      | Reached XP level 8. HP: 59/93 MP: 9/11
+  5886 | D:6      | Reached skill level 10 in Fighting
+  5972 | D:6      | Reached skill level 5 in Maces & Flails
+  6245 | D:6      | Reached XP level 9. HP: 98/102 MP: 12/12
+  6320 | D:6      | Found a shimmering blue altar of Sif Muna.
+  6518 | D:6      | Found the +2 ratskin cloak {*Rats rPois rN+ Str-1 Int-1
+                  | Dex+1}
+  6529 | D:6      | Got the +2 ratskin cloak {*Rats rPois rN+ Str-1 Int-1
+                  | Dex+1}
+  6619 | D:6      | Reached skill level 11 in Fighting
+  6631 | D:7      | Found Rojawn's Antique Armour Emporium.
+  6710 | D:7      | Reached skill level 1 in Evocations
+  6974 | D:7      | Bought an embroidered robe for 120 gold pieces
+  7345 | D:7      | Found a sacrificial altar of Ru.
+  7353 | D:7      | Became a worshipper of Ru the Awakened
+  7380 | D:7      | Found an iron altar of Okawaru.
+  7716 | D:7      | Found a sparkling altar of Nemelex Xobeh.
+  7886 | D:8      | Reached skill level 12 in Fighting
+  7955 | D:8      | Found a staircase to the Lair.
+  8421 | D:8      | Encountered Erica
+  8434 | D:8      | Killed Erica
+  8435 | D:8      | Reached XP level 10. HP: 107/118 MP: 12/17
+  8527 | D:8      | Learned a level 2 spell: Momentum Strike
+  8530 | D:8      | Gained mutation: Your cowardice makes you less effective in
+                  | combat with threatening foes. [Ru sacrifice]
+  8530 | D:8      | Reached * piety under Ru
+  8834 | D:9      | Reached skill level 13 in Fighting
+  8834 | D:9      | Reached skill level 5 in Spellcasting
+  8853 | D:9      | Found Roosil's General Store.
+  8856 | D:9      | Found Qaeruhex's Specific Store.
+  8865 | D:9      | Bought a scroll of teleportation for 39 gold pieces
+  8865 | D:9      | Bought the -1 hat of the Kettle-Drum {Dex+6} for 241 gold
+                  | pieces
+  8869 | D:9      | Bought 3 atropa-tipped darts for 45 gold pieces
+  8900 | D:9      | Reached skill level 1 in Translocations
+  8934 | D:9      | Found a phantasmal passage.
+  8960 | D:9      | Found a staircase to the Orcish Mines.
+  8972 | Necropol | Found a bloodstained altar of Trog.
+  8972 | Necropol | Found a transporter.
+  8972 | Necropol | Found a transporter.
+  8972 | Necropol | Entered the Necropolis
+  9019 | Necropol | Encountered a moth of wrath
+  9021 | Necropol | Identified the +0 mace "Narramyg" {heavy, rF++}
+  9024 | Necropol | Encountered OthelloStarBuck's ghost (novice OnSh)
+  9059 | Necropol | Encountered a deep elf pyromancer
+  9062 | Necropol | Encountered roomforsquares's ghost (journeyman GnGl)
+  9099 | Necropol | Gained mutation: Your SH is halved, but you deal more
+                  | damage with two-handed weapons. [potion of mutation]
+  9099 | Necropol | Gained mutation: You are strong. (Str +4, Int/Dex -1)
+                  | [potion of mutation]
+  9099 | Necropol | Gained mutation: You are very strong. (Str +8, Int/Dex -2)
+                  | [potion of mutation]
+  9100 | Necropol | Reached skill level 15 in Fighting
+  9100 | Necropol | Reached XP level 11. HP: 47/132 MP: 12/18
+  9103 | Necropol | Killed a deep elf pyromancer
+  9115 | Necropol | Reached skill level 16 in Fighting
+  9120 | Necropol | Killed roomforsquares's ghost
+  9145 | Necropol | Identified the +8 war axe of Axzod {flame, Fly rF+ Str+2
+                  | Dex-5}
+  9152 | Necropol | Reached XP level 12. HP: 55/144 MP: 19/19
+  9237 | Necropol | Encountered xeon11's ghost (journeyman FoFi)
+  9646 | Necropol | Killed xeon11's ghost
+  9911 | Necropol | Reached skill level 5 in Dodging
+  9966 | Necropol | Killed OthelloStarBuck's ghost
+  9967 | Necropol | Reached skill level 17 in Fighting
+ 10342 | D:9      | Found Zuolaf's Weapon Shop.
+ 10377 | D:9      | Bought 4 curare-tipped darts for 76 gold pieces
+ 10674 | D:9      | Identified the +6 long sword "Koetynt" {flame, Dex+5}
+ 10775 | D:9      | Found a white marble altar of Elyvilon.
+ 10784 | D:9      | Found an ancient bone altar of Kikubaaqudgha.
+ 11207 | Lair:1   | Entered Level 1 of the Lair of Beasts
+ 11227 | Lair:1   | Learned a level 3 spell: Volatile Blastmotes
+ 11232 | Lair:1   | Learned a level 4 spell: Vhi's Electric Charge
+ 11232 | Lair:1   | Gained mutation: You cannot voluntarily change form. [Ru
+                  | sacrifice]
+ 11250 | Lair:1   | Reached XP level 13. HP: 156/156 MP: 21/21
+ 11310 | Lair:1   | Found a dark tunnel.
+ 11321 | Lair:1   | Lost mutation: You are very strong. (Str +8, Int/Dex -2)
+                  | [potion of mutation]
+ 11321 | Lair:1   | Lost mutation: You are strong. (Str +4, Int/Dex -1) [potion
+                  | of mutation]
+ 11321 | Lair:1   | Lost mutation: Your SH is halved, but you deal more damage
+                  | with two-handed weapons. [potion of mutation]
+ 11321 | Lair:1   | Gained mutation: You are heat resistant. (rF+) [potion of
+                  | mutation]
+ 11321 | Lair:1   | Gained mutation: You have supernaturally acute vision.
+                  | (SInv) [potion of mutation]
+ 11331 | Volcano  | Entered a volcano
+ 11412 | Volcano  | Reached skill level 1 in Shields
+ 11471 | Volcano  | Found a radiant altar of Vehumet.
+ 11784 | Volcano  | Reached skill level 5 in Shields
+ 12222 | Lair:1   | Identified the amulet of Yneaj {Bane RegenMP+ rCorr Str+4
+                  | Int+3}
+ 12222 | Lair:1   | Encountered Cassandra
+ 12230 | Lair:1   | Killed Cassandra
+ 12310 | Lair:1   | Reached skill level 1 in Fire Magic
+ 13324 | Lair:1   | Gained mutation: You are somewhat unskilled. (-1 Apt) [Ru
+                  | sacrifice]
+ 13324 | Lair:1   | Reduced skill Fighting to level 15
+ 13324 | Lair:1   | Reduced skill Shields to level 5
+ 13324 | Lair:1   | Reached ** piety under Ru
+ 14141 | Lair:2   | Found a staircase to the Swamp.
+ 14462 | Lair:2   | Identified the +5 whip "Toekorr" {freeze, ^Fragile rPois
+                  | Int+2 Stlth+}
+ 14730 | Lair:3   | Reached XP level 14. HP: 123/161 MP: 19/22
+ 14816 | Lair:3   | Found a staircase to the Snake Pit.
+ 14864 | Lair:3   | Identified the +2 hand axe "Bayrofi" {freeze, *Noise Will+
+                  | Str+3 SInv}
+ 15644 | Orc:1    | Entered Level 1 of the Orcish Mines
+ 15644 | Orc:1    | Encountered Maurice
+ 15654 | Orc:1    | Killed Maurice
+ 15874 | Orc:1    | Found Kixof's Weapon Shop.
+ 15949 | Orc:1    | Gained mutation: You are frail. (-10% HP) [Ru sacrifice]
+ 15949 | Orc:1    | Reached *** piety under Ru
+ 15949 | Orc:1    | Reached **** piety under Ru
+ 16054 | Orc:1    | Found Ydae's Book Shoppe.
+ 16103 | Orc:2    | Entered Level 2 of the Orcish Mines
+ 16103 | Orc:2    | Found Acoo's Overcharged Wands.
+ 16176 | Orc:2    | Found Fumiwn's Self-Improvement Boutique.
+ 16239 | Orc:2    | Encountered Urug
+ 16459 | Orc:2    | Killed Urug
+ 16497 | Orc:2    | Reached skill level 5 in Air Magic
+ 16602 | Orc:2    | Found a staircase to the Elven Halls.
+ 16642 | Orc:1    | Found Vyc Wyts's Distillery.
+ 16715 | Orc:1    | Bought a potion of berserk rage for 65 gold pieces
+ 16777 | Orc:1    | Encountered Jorgrun
+ 16794 | Orc:1    | Killed Jorgrun
+ 17218 | Orc:2    | Found Meziawez's Assorted Antiques.
+ 17219 | Orc:2    | Found a roughly hewn altar of Beogh.
+ 17220 | Orc:2    | Found Ymintey's Weapon Shoppe.
+ 17459 | Orc:2    | Bought a +3 giant spiked club for 333 gold pieces
+ 17463 | Orc:2    | Bought a notched gilded ring for 145 gold pieces
+ 17695 | Orc:2    | Found Utuubb's Distillery.
+ 17845 | Orc:2    | Found Arapar's Assorted Antiques.
+ 17862 | Orc:2    | Bought an onyx ring for 140 gold pieces
+ 18575 | Lair:4   | Gained mutation: Your magical capacity is low. (-10% MP)
+                  | [Ru sacrifice]
+ 19358 | Lair:4   | Reached skill level 10 in Maces & Flails
+ 19828 | Lair:5   | Entered Level 5 of the Lair of Beasts
+ 19860 | Lair:5   | HP: 2/144 [cane toad (20)]
+ 19869 | Lair:5   | Reached XP level 15. HP: 79/152 MP: 22/22
+ 19926 | Lair:5   | Found a gate leading to a gauntlet.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Found a transporter.
+ 19930 | Gauntlet | Entered a Gauntlet
+ 20530 | Gauntlet | Reached skill level 16 in Fighting
+ 20536 | Gauntlet | Identified the +2 hat "Giffeots" {Bane rPois Regen+ Dex+2}
+ 20652 | Gauntlet | Identified the +1 hat "Pack" {*Corrode rElec rF+ Ice}
+ 20666 | Gauntlet | Reached skill level 5 in Dodging
+ 20724 | Gauntlet | Identified the +1 acid dragon scales of Asuhucki {Harm
+                  | rElec rC+ rCorr Str-5}
+ 20725 | Gauntlet | Got Qeyg's Tome of Incandescent Force
+ 20766 | Gauntlet | Gained bane: Bane of Paradox [Equipping an artefact]
+ 20800 | Lair:5   | Upgraded the game from 0.35-a0-105-g08978299a1 to
+                  | 0.35-a0-259-g7ca9a3eb5b
+ 20821 | Lair:5   | HP: 5/153 [elephant (5)]
+ 20822 | Lair:5   | Slain by a dream sheep
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      dpeg_arrival_water_fire, layout_basic,
+          ebering_ecumenical_altar_petrified, chequers_serial_rivers_room_a,
+          minmay_misc_feat_tower, minmay_statues_item
+D:2:      layout_loops_cross, serial_forest, infiniplex_forest_zigzag_2,
+          infiniplex_forest_straight_4, infiniplex_forest_clump_large,
+          infiniplex_forest_straight_2, infiniplex_forest_corner_1,
+          infiniplex_forest_clump_medium, infiniplex_forest_end_2,
+          infiniplex_forest_lined_room_2, infiniplex_forest_zigzag_2,
+          darby_scavenged_remnants, uniq_robin, uniq_jessica
+D:3:      layout_basic, uniq_natasha
+D:4:      layout_loops_ring, kennysheep_little_box, temple_pool_b
+D:5:      layout_basic
+D:6:      layout_rooms, led_sif_pool, wander_guarded_unrand_ratskin
+D:7:      layout_basic, nemelex_diamond_rough_becter, jmf_multi_god_temple2,
+          serial_shops, nicolae_shop_cornered_store
+D:8:      layout_loops_corners, erik_lair_orcish_takeover, uniq_erica
+D:9:      layout_stronghold, mainiacjoe_overflow_swirl, orc_0_dummy,
+          index_necropolis_entry_life_lattice, serial_shops, shop,
+          nicolae_specific_store
+Temple:   hellmonk_temple_divided_pantheon
+Lair:1:   lemuel_ratsnest, layout_long_grid, enter_volcano_3,
+          darby_harvest_season, grunt_megastairs_3, uniq_cassandra
+Lair:2:   layout_regular_city, nicolae_swamp_entry_spooky,
+          chequers_serial_rivers_small_3, serial_bayou_shore_b
+Lair:3:   layout_hall_layers, minmay_snake_entry_guardpost_small,
+          infiniplex_staircase_pool_2
+Lair:4:   layout_loops_ring, lemuel_fruit_fields
+Lair:5:   evilmike_catoblepas_cave, layout_loops_ring, dpeg_slime_entry_corner,
+          nicolae_lair_rhizomatic_trees, gauntlet_entry_generic, pond
+Orc:1:    layout_caves, serial_shops, nicolae_diamond_shop,
+          nicolae_shop_tiny_statue_garden, parchment_shop, uniq_maurice,
+          uniq_jorgrun
+Orc:2:    hellmonk_orc_salted, layout_caves, nicolae_shop_self_help,
+          nicolae_shop_overcharged_wands, uniq_urug
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 |
+---------------+----------------------------------------------+-----
+Fighting       |  5     6     8  9    10 12 15 16 17 15    16 | 16.1
+Throwing       |           2  3           4  7           8    |  8.4
+Maces & Flails |                 3  4  5  6  8        7 10 11 | 11.0
+Spellcasting   |                    2     4  5           6    |  6.8
+Conjurations   |                    1  3                      |  3.4
+Air Magic      |                    1  3              4  5    |  5.2
+Alchemy        |                    1  3                      |  3.3
+Evocations     |                          3           2       |  2.8
+Translocations |                             1  2     3  4    |  4.8
+Dodging        |                             4     5  4     5 |  5.0
+Axes           |                                8  9  9       |  9.3
+Stealth        |                                   4  3     4 |  4.0
+Shields        |                                      6       |  6.7
+Fire Magic     |                                      2  3    |  3.1
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 || total
+---------------------------+-------+-------+-------+-------+-------++-------
+ Attack: Normal            |    22 |   335 |   296 |   145 |   655 ||  1453
+         Drunken Brawl     |       |       |       |     4 |     8 ||    12
+  Melee: Mace              |    22 |   267 |       |       |       ||   289
+         Headbutt          |       |    76 |    51 |    26 |   152 ||   305
+         Whip              |       |    68 |   296 |    64 |       ||   428
+         War axe           |       |       |       |   113 |   601 ||   714
+         Eveningstar       |       |       |       |       |    96 ||    96
+         Giant spiked club |       |       |       |       |   154 ||   154
+  Throw: Dart              |       |     2 |       |     7 |    24 ||    33
+         Javelin           |       |     1 |       |       |     8 ||     9
+         Boomerang         |       |       |    30 |    12 |    20 ||    62
+         Large rock        |       |       |       |     2 |     7 ||     9
+   Cast: Mephitic Cloud    |       |       |     7 |     7 |    21 ||    35
+         Momentum Strike   |       |       |       |     6 |     1 ||     7
+ Invoke: Sacrifice Courage |       |       |       |     1 |       ||     1
+         Sacrifice Forms   |       |       |       |     1 |       ||     1
+         Sacrifice Skill   |       |       |       |       |     1 ||     1
+         Power Leap        |       |       |       |       |     2 ||     2
+         Draw Out Power    |       |       |       |       |     1 ||     1
+         Sacrifice Essence |       |       |       |       |     1 ||     1
+         Sacrifice Health  |       |       |       |       |     1 ||     1
+  Evoke: Wand of light     |       |       |       |     2 |     7 ||     9
+         Wand of iceblast  |       |       |       |       |     2 ||     2
+  Drink: Experience        |       |       |       |     2 |       ||     2
+         Mutation          |       |       |       |     1 |     1 ||     2
+         Curing            |       |       |       |     1 |       ||     1
+         Ambrosia          |       |       |       |     1 |     1 ||     2
+         Moonshine         |       |       |       |     1 |       ||     1
+         Heal wounds       |       |       |       |       |     3 ||     3
+   Read: Revelation        |       |       |       |     2 |     1 ||     3
+         Identify          |       |       |       |       |    15 ||    15
+         Teleportation     |       |       |       |       |     4 ||     4
+         Enchant weapon    |       |       |       |       |     3 ||     3
+         Brand weapon      |       |       |       |       |     2 ||     2
+   Stab: Sleeping          |     3 |    22 |    15 |     2 |    20 ||    62
+         Confused          |       |       |     4 |     5 |    24 ||    33
+         Blind             |       |       |       |       |     2 ||     2
+         Paralysed         |       |       |       |       |     4 ||     4
+ Armour: Robe              |    22 |   124 |   138 |   112 |   461 ||   857
+  Dodge: Dodged            |     9 |   189 |   170 |   110 |   411 ||   889
+  Block: Other             |       |       |       |    11 |    44 ||    55
+         Kite shield       |       |       |       |       |   365 ||   365
+         Reflection        |       |       |       |       |     4 ||     4
+
+Table legend: (Time is in decaauts)
+ A = Elapsed time spent in this place.
+ B = Non-inter-level travel time spent in this place.
+ C = Inter-level travel time spent in this place.
+ D = Time resting spent in this place.
+ E = Time spent auto-exploring this place.
+ F = Levels seen in this place.
+ G = Mean time per level.
+                   A        B        C        D        E      F       G
+               +--------+--------+--------+--------+--------+-----+--------+
+         Total |  20980 |  19736 |   1244 |    891 |  14066 |  20 | 1049.0 |
+       Dungeon |  10233 |   9355 |    878 |    334 |   7077 |   9 | 1137.0 |
+        Temple |      2 |      2 |      0 |      0 |      0 |   1 |    2.0 |
+          Lair |   5624 |   5373 |    251 |    244 |   4010 |   5 | 1124.8 |
+  Orcish Mines |   2302 |   2188 |    114 |    134 |   1626 |   2 | 1151.0 |
+       Volcano |    802 |    802 |      0 |      0 |    598 |   1 |  802.0 |
+      Gauntlet |    842 |    842 |      0 |     40 |    488 |   1 |  842.0 |
+    Necropolis |   1173 |   1173 |      0 |    139 |    267 |   1 | 1173.0 |
+               +--------+--------+--------+--------+--------+-----+--------+
+
+Top non-repeatable levels by time:
+     D:6: 1555 daAuts
+  Lair:4: 1532 daAuts
+     D:2: 1435 daAuts
+  Lair:1: 1428 daAuts
+   Orc:2: 1321 daAuts
+  Lair:3: 1275 daAuts
+  Lair:2: 1207 daAuts
+     D:9: 1203 daAuts
+Necropolis: 1173 daAuts
+     D:8: 1173 daAuts
+     D:5: 1152 daAuts
+     D:7: 1144 daAuts
+     D:4: 991 daAuts
+     D:1: 982 daAuts
+   Orc:1: 980 daAuts
+
+DLua errors:
+
+Table legend:
+ A = God
+ B = Rank
+ C = Start time
+ D = Start piety
+ E = Piety gained
+ F = Piety on gifts
+ G = Piety on penance
+ H = Piety on stepdowns
+ I = Piety decays
+ J = Piety lost (inc. decay)
+         A          B      C       D     E     F     G     H     I     J   
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+ Ru               | 0 |   74317 |  10 |   0 |   0 |   0 |   0 |   0 |   0 
++-----------------+---+---------+-----+-----+-----+-----+-----+-----+-----+
+

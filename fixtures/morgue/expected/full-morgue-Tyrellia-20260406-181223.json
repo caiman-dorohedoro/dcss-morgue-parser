@@ -295,7 +295,7 @@
   "ringDetails": [
     {
       "rawName": "ring of Zutivi",
-      "displayName": "randart ring",
+      "displayName": "ring of Zutivi",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -340,7 +340,7 @@
     },
     {
       "rawName": "ring of Urajuxuz",
-      "displayName": "randart ring",
+      "displayName": "ring of Urajuxuz",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

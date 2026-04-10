@@ -1,0 +1,400 @@
+{
+  "playerName": "deskoch",
+  "version": "0.34.1-3-ga2c7840dd7",
+  "species": "Coglin",
+  "speciesVariant": null,
+  "background": "Hunter",
+  "god": "Ru",
+  "xl": 13,
+  "ac": 7,
+  "ev": 12,
+  "sh": 0,
+  "strength": 9,
+  "intelligence": 9,
+  "dexterity": 22,
+  "bodyArmour": "leather armour of poison resistance",
+  "shield": "none",
+  "helmets": [],
+  "gloves": [
+    "pair of gloves"
+  ],
+  "footwear": [
+    "pair of boots of stealth"
+  ],
+  "cloaks": [
+    "cloak"
+  ],
+  "orb": "none",
+  "amulets": [],
+  "rings": [],
+  "talisman": "none",
+  "form": null,
+  "bodyArmourDetails": {
+    "rawName": "leather armour of poison resistance",
+    "displayName": "leather armour of poison resistance",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "leather armour",
+    "enchant": 1,
+    "artifactKind": "normal",
+    "ego": "poison resistance",
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "booleanProps": {
+        "rPois": true
+      },
+      "opaqueTokens": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "booleanProps": {
+        "rPois": true
+      },
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    }
+  },
+  "glovesDetails": [
+    {
+      "rawName": "pair of gloves",
+      "displayName": "pair of gloves",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "gloves",
+      "enchant": 0,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "footwearDetails": [
+    {
+      "rawName": "pair of boots of stealth",
+      "displayName": "pair of boots of stealth",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "boots",
+      "enchant": 0,
+      "artifactKind": "normal",
+      "ego": "stealth",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Stlth": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {
+          "Stlth": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "cloakDetails": [
+    {
+      "rawName": "cloak",
+      "displayName": "cloak",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "cloak",
+      "enchant": 0,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "skills": {
+    "fighting": 15.8,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 19.1,
+    "armour": 0,
+    "dodging": 3,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "effectiveSkills": {
+    "fighting": 15.8,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 0,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 19.1,
+    "armour": 0,
+    "dodging": 3,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 0
+  },
+  "spells": [
+    {
+      "name": "Blink",
+      "failurePercent": 65,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Magic Dart",
+      "failurePercent": 50,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Poisonous Vapours",
+      "failurePercent": 50,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Call Imp",
+      "failurePercent": 65,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Searing Ray",
+      "failurePercent": 65,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Sublimation of Blood",
+      "failurePercent": 65,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Hailstorm",
+      "failurePercent": 86,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Launch Clockwork Bee",
+      "failurePercent": 86,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Mephitic Cloud",
+      "failurePercent": 86,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Ozocubu's Armour",
+      "failurePercent": 86,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Swiftness",
+      "failurePercent": 86,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Tukima's Dance",
+      "failurePercent": 86,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Animate Dead",
+      "failurePercent": 99,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Awaken Armour",
+      "failurePercent": 99,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Flame Wave",
+      "failurePercent": 99,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Sticky Flame",
+      "failurePercent": 99,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Summon Seismosaurus Egg",
+      "failurePercent": 99,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Freezing Cloud",
+      "failurePercent": 100,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Haunt",
+      "failurePercent": 100,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Infestation",
+      "failurePercent": 100,
+      "castable": true,
+      "memorized": false
+    }
+  ],
+  "mutations": [
+    {
+      "name": "weak",
+      "level": 1
+    },
+    {
+      "name": "no stealth",
+      "level": null
+    },
+    {
+      "name": "inability to use devices",
+      "level": null
+    },
+    {
+      "name": "no forms",
+      "level": null
+    },
+    {
+      "name": "off-hand wielding",
+      "level": null
+    },
+    {
+      "name": "slow wielding",
+      "level": null
+    },
+    {
+      "name": "warmup strikes",
+      "level": null
+    },
+    {
+      "name": "no jewellery",
+      "level": null
+    }
+  ]
+}

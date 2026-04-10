@@ -321,7 +321,7 @@
   "amuletDetails": [
     {
       "rawName": "amulet of the Ruined Ether",
-      "displayName": "randart amulet",
+      "displayName": "amulet of the Ruined Ether",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": true,
@@ -364,7 +364,7 @@
   "ringDetails": [
     {
       "rawName": "ring \"Anxiety of Ashenzari\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Anxiety of Ashenzari\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": true,
@@ -405,7 +405,7 @@
     },
     {
       "rawName": "ring \"Voungiwe\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Voungiwe\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

@@ -1,0 +1,377 @@
+{
+  "playerName": "PieDemon",
+  "version": "0.35-a0-236-gf12886d13b",
+  "species": "Coglin",
+  "speciesVariant": null,
+  "background": "Berserker",
+  "god": "Trog",
+  "xl": 25,
+  "ac": 41,
+  "ev": 9,
+  "sh": 0,
+  "strength": 27,
+  "intelligence": 13,
+  "dexterity": 15,
+  "bodyArmour": "crystal plate armour",
+  "shield": "none",
+  "helmets": [
+    "hat of Lies"
+  ],
+  "gloves": [
+    "pair of gloves of dexterity"
+  ],
+  "footwear": [
+    "pair of mountain boots"
+  ],
+  "cloaks": [
+    "scarf of resistance"
+  ],
+  "orb": "none",
+  "amulets": [],
+  "rings": [],
+  "talisman": "none",
+  "form": null,
+  "bodyArmourDetails": {
+    "rawName": "crystal plate armour",
+    "displayName": "crystal plate armour",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "crystal plate armour",
+    "enchant": 6,
+    "artifactKind": "normal",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    }
+  },
+  "helmetDetails": [
+    {
+      "rawName": "hat of Lies",
+      "displayName": "hat of Lies",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "hat",
+      "enchant": 0,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Slay+6",
+      "properties": {
+        "numeric": {
+          "Slay": 6
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Slay": 6
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "glovesDetails": [
+    {
+      "rawName": "pair of gloves of dexterity",
+      "displayName": "pair of gloves of dexterity",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "gloves",
+      "enchant": 2,
+      "artifactKind": "normal",
+      "ego": "dexterity",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Dex": 3
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {
+          "Dex": 3
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "footwearDetails": [
+    {
+      "rawName": "pair of mountain boots",
+      "displayName": "mountain boots",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "boots",
+      "enchant": 3,
+      "artifactKind": "unrand",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "steadfast, rC+",
+      "properties": {
+        "numeric": {
+          "rC": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": [
+          "steadfast"
+        ]
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "rC": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": [
+          "steadfast"
+        ]
+      }
+    }
+  ],
+  "cloakDetails": [
+    {
+      "rawName": "scarf of resistance",
+      "displayName": "scarf of resistance",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "scarf",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": "resistance",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "rF": 1,
+          "rC": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {
+          "rF": 1,
+          "rC": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "gizmo": "coronal throttle",
+  "gizmoDetails": {
+    "rawName": "coronal throttle",
+    "displayName": "coronal throttle",
+    "objectClass": "gizmo",
+    "equipState": "installed",
+    "isCursed": false,
+    "baseType": "gizmo",
+    "enchant": null,
+    "artifactKind": "randart",
+    "ego": null,
+    "subtypeEffect": null,
+    "gizmoEffects": [
+      "Gadgeteer"
+    ],
+    "propertiesText": "Gadgeteer, rPois rC+ rCorr",
+    "properties": {
+      "numeric": {
+        "rC": 1
+      },
+      "booleanProps": {
+        "rPois": true,
+        "rCorr": true
+      },
+      "opaqueTokens": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {
+        "rC": 1
+      },
+      "booleanProps": {
+        "rPois": true,
+        "rCorr": true
+      },
+      "opaqueTokens": []
+    }
+  },
+  "skills": {
+    "fighting": 23.8,
+    "macesFlails": 0,
+    "axes": 13,
+    "polearms": 18.7,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 10.6,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 20,
+    "dodging": 8,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 26.3,
+    "shapeshifting": 0
+  },
+  "effectiveSkills": {
+    "fighting": 23.8,
+    "macesFlails": 0,
+    "axes": 18.1,
+    "polearms": 20,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 10.6,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 20,
+    "dodging": 8,
+    "shields": 0,
+    "stealth": 0,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 26.3,
+    "shapeshifting": 0
+  },
+  "spells": [],
+  "mutations": [
+    {
+      "name": "off-hand wielding",
+      "level": null
+    },
+    {
+      "name": "slow wielding",
+      "level": null
+    },
+    {
+      "name": "warmup strikes",
+      "level": null
+    },
+    {
+      "name": "no jewellery",
+      "level": null
+    },
+    {
+      "name": "beak",
+      "level": null
+    },
+    {
+      "name": "clever",
+      "level": 1
+    },
+    {
+      "name": "poor constitution",
+      "level": 1
+    },
+    {
+      "name": "strong-willed",
+      "level": 1
+    }
+  ]
+}

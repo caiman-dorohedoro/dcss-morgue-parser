@@ -339,7 +339,7 @@
   "ringDetails": [
     {
       "rawName": "ring \"Sehodam\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Sehodam\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -376,7 +376,7 @@
     },
     {
       "rawName": "ring \"Wozxet\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Wozxet\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

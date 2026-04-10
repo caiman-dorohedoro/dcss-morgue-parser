@@ -321,7 +321,7 @@
   "amuletDetails": [
     {
       "rawName": "amulet of the Cockroach",
-      "displayName": "randart amulet",
+      "displayName": "amulet of the Cockroach",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -364,7 +364,7 @@
   "ringDetails": [
     {
       "rawName": "ring \"Lecas\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Lecas\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -403,7 +403,7 @@
     },
     {
       "rawName": "ring \"Biffeacs\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Biffeacs\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

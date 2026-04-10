@@ -279,7 +279,7 @@
   "amuletDetails": [
     {
       "rawName": "amulet of Rogere",
-      "displayName": "randart amulet",
+      "displayName": "amulet of Rogere",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,
@@ -363,7 +363,7 @@
     },
     {
       "rawName": "ring \"Tith\"",
-      "displayName": "randart ring",
+      "displayName": "ring \"Tith\"",
       "objectClass": "jewellery",
       "equipState": "worn",
       "isCursed": false,

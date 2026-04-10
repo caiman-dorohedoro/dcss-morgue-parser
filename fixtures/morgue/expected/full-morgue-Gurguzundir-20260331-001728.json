@@ -1,0 +1,359 @@
+{
+  "playerName": "Gurguzundir",
+  "version": "0.35-a0-241-g5b54ce7fc3",
+  "species": "Merfolk",
+  "speciesVariant": null,
+  "background": "Shapeshifter",
+  "god": "Ru",
+  "xl": 10,
+  "ac": 5,
+  "ev": 16,
+  "sh": 0,
+  "strength": 18,
+  "intelligence": 9,
+  "dexterity": 15,
+  "bodyArmour": "robe of positive energy",
+  "shield": "none",
+  "helmets": [],
+  "gloves": [],
+  "footwear": [],
+  "cloaks": [
+    "cloak"
+  ],
+  "orb": "none",
+  "amulets": [
+    "amulet of regeneration"
+  ],
+  "rings": [
+    "ring of slaying"
+  ],
+  "talisman": "spore talisman",
+  "form": "spore-form",
+  "bodyArmourDetails": {
+    "rawName": "robe of positive energy",
+    "displayName": "robe of positive energy",
+    "objectClass": "armour",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "robe",
+    "enchant": 1,
+    "artifactKind": "normal",
+    "ego": "positive energy",
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {
+        "rN": 1
+      },
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {
+        "rN": 1
+      },
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    }
+  },
+  "cloakDetails": [
+    {
+      "rawName": "cloak",
+      "displayName": "cloak",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "cloak",
+      "enchant": 1,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "amuletDetails": [
+    {
+      "rawName": "amulet of regeneration",
+      "displayName": "amulet of regeneration",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "regeneration",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "ringDetails": [
+    {
+      "rawName": "ring of slaying",
+      "displayName": "ring of slaying",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": 4,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "slaying",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "Slay": 4
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {
+          "Slay": 4
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "talismanDetails": {
+    "rawName": "spore talisman",
+    "displayName": "spore talisman",
+    "objectClass": "talisman",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "spore talisman",
+    "enchant": null,
+    "artifactKind": "normal",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    }
+  },
+  "skills": {
+    "fighting": 9.5,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 9.7,
+    "throwing": 2,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 2,
+    "dodging": 5,
+    "shields": 0,
+    "stealth": 2,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 11.3
+  },
+  "effectiveSkills": {
+    "fighting": 9.5,
+    "macesFlails": 0,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 4.8,
+    "throwing": 2,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 2,
+    "dodging": 5,
+    "shields": 0,
+    "stealth": 2,
+    "spellcasting": 0,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 0,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 0,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 0,
+    "evocations": 0,
+    "shapeshifting": 11.3
+  },
+  "spells": [
+    {
+      "name": "Kiss of Death",
+      "failurePercent": 38,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Magic Dart",
+      "failurePercent": 38,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Momentum Strike",
+      "failurePercent": 52,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Static Discharge",
+      "failurePercent": 52,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Maxwell's Portable Piledriver",
+      "failurePercent": 77,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Freeze",
+      "failurePercent": null,
+      "castable": false,
+      "memorized": false
+    },
+    {
+      "name": "Awaken Armour",
+      "failurePercent": null,
+      "castable": false,
+      "memorized": false
+    }
+  ],
+  "mutations": [
+    {
+      "name": "weakening spores",
+      "level": null
+    },
+    {
+      "name": "sporulate",
+      "level": null
+    },
+    {
+      "name": "hated by all",
+      "level": null
+    },
+    {
+      "name": "no ice magic",
+      "level": null
+    },
+    {
+      "name": "no summoning magic",
+      "level": null
+    },
+    {
+      "name": "nimble swimmer",
+      "level": 2
+    },
+    {
+      "name": "mertail",
+      "level": null
+    },
+    {
+      "name": "no forgecraft magic",
+      "level": null
+    }
+  ]
+}

@@ -1,0 +1,844 @@
+ Dungeon Crawl Stone Soup version 0.34.0 (webtiles) character file.
+
+Game seed: 13076827633268330794
+
+134596 joeboomin the Metamorph (level 16, -3/313 HPs)
+             Began as a Troll Shapeshifter on Apr 3, 2026.
+             Was a High Priest of Jiyva.
+             Slain by an orc warrior
+             ... wielding a +0 glaive
+             ... led by Saint Roka
+              (23 damage)
+             ... on level 4 of the Snake Pit on Apr 4, 2026.
+             The game lasted 01:29:16 (23247 turns).
+
+joeboomin the Metamorph (Troll Shapeshifter)       Turns: 23247, Time: 01:29:16
+
+Health: -3/313     AC: 34    Str: 54    XL:     16   Next: 62%
+Magic:  15/15      EV:  1    Int:  2    God:    Jiyva [*****.]
+Gold:   211        SH:  0    Dex: 18    Spells: 15/15 levels left
+
+rFire   + + .  (33%)      - Stone claws
+rCold   + . .  (50%)    (no offhand)
+rNeg    + + .  (20%)    m - melded +9 scales of the Dragon King {Command, rPois rF+ rC+}
+rPois   ∞      (0%)     (no helmet)
+rElec   +      (33%)    (no cloak)
+rCorr   +      (50%)    t - amulet of the Unicorn {Regen+ Str+3 SInv}
+SInv    +               k - +4 ring of protection
+Will    +....           v - ring of Sicalumu {rF+ rN+ Str+6 Dex+3 Slay+2}
+Stlth                   s - granite talisman
+HPRegen 3.76/turn
+MPRegen 0.86/turn
+
+%: no passive effects
+@: mighty, berserking, statue-form, resistant, weakened, untranslocatable,
+hasted, constricted, studying 2 skills, quick
+A: powerful, torment resistance 1, boosted hp, slow, reduced EV, large,
+unfitting armour, claws 3, regeneration 1, shaggy fur 1, (tough skin 1),
+(camouflage 1), see invisible, agile 2, mutation resistance 1, strong 2,
+eyeballs 3
+a: Renounce Religion (0%), Oozemancy (1%), Slimify (5%)
+
+
+You were on level 4 of the Snake Pit.
+You worshipped Jiyva.
+Jiyva was extremely pleased with you.
+You were a living statue of rough stone.
+
+You visited 6 branches of the dungeon, and saw 32 of its levels.
+You also visited: Trove and Ice Cave.
+
+You collected 1865 gold pieces.
+You spent 1654 gold pieces at shops.
+
+Inventory:
+
+Hand Weapons
+ q - the +9 scimitar of Lutigui {freeze, rC+ rCorr Dex+4}
+   (You found it in an ice cave)   
+   
+   rC+:       It protects you from cold.
+   rCorr:     It protects you from acid and corrosion.
+   Dex+4:     It affects your dexterity (+4).
+   
+   It cannot be enchanted further.
+ A - the +1 morningstar "Nocyla" {antimagic, rF+ rN+ Str+2 Dex+6}
+   (You found it on level 2 of the Snake Pit)   
+   
+   rF+:       It protects you from fire.
+   rN+:       It protects you from negative energy.
+   Str+2:     It affects your strength (+2).
+   Dex+6:     It affects your dexterity (+6).
+   
+   It cannot be enchanted further.
+ B - a +0 demon blade of electrocution
+ C - a +7 demon whip of draining
+ E - a +1 spectral demon blade
+Missiles
+ g - a throwing net (quivered)
+Armour
+ a - a +0 animal skin
+ j - a +0 pair of boots
+ m - the +9 scales of the Dragon King (melded) {Command, rPois rF+ rC+}
+   (You acquired it on level 8 of the Dungeon)   
+   
+   rPois:     It protects you from poison.
+   rF+:       It protects you from fire.
+   rC+:       It protects you from cold.
+   
+   It cannot be enchanted further.
+ p - +1 ice dragon scales
+ w - the +0 kite shield of the Snake Pit {rF+ rN+ Int-4 SInv}
+   (You found it in a treasure trove)   
+   
+   rF+:       It protects you from fire.
+   rN+:       It protects you from negative energy.
+   Int-4:     It affects your intelligence (-4).
+   SInv:      It lets you see invisible.
+   
+   It cannot be enchanted further.
+ x - the +5 kite shield "Wegegruw" {rN+ rCorr}
+   (You found it in a treasure trove)   
+   
+   rN+:       It protects you from negative energy.
+   rCorr:     It protects you from acid and corrosion.
+   
+   It cannot be enchanted further.
+Jewellery
+ d - a ring of poison resistance
+ e - an amulet of guardian spirit
+ f - an amulet of regeneration
+ h - an amulet of the acrobat
+ i - an amulet of chemistry
+ k - a +4 ring of protection (worn)
+ l - a +6 ring of intelligence
+ n - a +6 ring of dexterity
+ t - the amulet of the Unicorn (worn) {Regen+ Str+3 SInv}
+   (You found it in a treasure trove)   
+   
+   [amulet of regeneration]
+   
+   Regen+:    It increases your rate of health regeneration.
+   Str+3:     It affects your strength (+3).
+   SInv:      It lets you see invisible.
+ u - the amulet "Ruulix" {rN+ Regen+ Dex-2 Stlth+}
+   (You found it in a treasure trove)   
+   
+   [amulet of regeneration]
+   
+   rN+:       It protects you from negative energy.
+   Regen+:    It increases your rate of health regeneration.
+   Dex-2:     It affects your dexterity (-2).
+   Stlth+:    It makes you more stealthy.
+ v - the ring of Sicalumu (worn) {rF+ rN+ Str+6 Dex+3 Slay+2}
+   (You found it in a treasure trove)   
+   
+   [ring of strength]
+   
+   rF+:       It protects you from fire.
+   rN+:       It protects you from negative energy.
+   Str+6:     It affects your strength (+6).
+   Dex+3:     It affects your dexterity (+3).
+   Slay+2:    It affects your accuracy & damage with ranged weapons and melee
+   (+2).
+ z - a +4 ring of protection
+Talismans
+ b - a quill talisman
+ c - a rimehorn talisman
+ o - an eel talisman
+ r - a dragon-coil talisman
+ s - a granite talisman (worn)
+ y - a granite talisman
+ D - the serpent talisman "Erot" {Fly}
+   (You took it off Aizul on level 3 of the Snake Pit)   
+   
+   [serpent talisman]
+   Fly:       It grants you flight.
+Wands
+ e - a wand of paralysis (24)
+ b - a wand of quicksilver (14)
+ c - a wand of warping (11)
+ g - a wand of flame (10)
+ p - a wand of polymorph (21)
+ d - a wand of digging (3)
+Scrolls
+ t - 9 scrolls of teleportation
+ g - 6 scrolls of fog
+ b - 2 scrolls of blinking
+ p - a scroll of poison
+ V - 6 scrolls of vulnerability
+ r - 2 scrolls of revelation
+ x - 4 scrolls of amnesia
+ N - 6 scrolls of noise
+ w - a scroll of enchant weapon
+ I - a scroll of immolation
+ i - 2 scrolls of identify
+ S - a scroll of silence
+Potions
+ L - 4 potions of lignification
+ m - 2 potions of might
+ c - 9 potions of curing
+ n - 4 potions of moonshine
+ M - 6 potions of mutation
+ A - 3 potions of attraction
+ i - 3 potions of invisibility
+ e - 7 potions of enlightenment
+ B - 2 potions of berserk rage
+ b - 2 potions of brilliance
+Miscellaneous
+ h - a +0 phial of floods
+Baubles
+ a - 6 flux baubles
+
+
+   Skills:
+ + Level 10.8 Fighting
+ + Level 9.7 Armour
+ - Level 8.5 Dodging
+ + Level 14.8 Unarmed Combat
+ * Level 18.7 Shapeshifting
+
+
+You had 15 spell levels left.
+You didn't know any spells.
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Kinetic Grapnel          Frge           0%         1d4       54%         1
+ Magic Dart               Conj           0%         1d3       54%         1
+ Shock                    Conj/Air       0%         1d3       54%         1
+ Summon Small Mammal      Summ           0%         N/A       54%         1
+ Call Imp                 Summ           0%         N/A       69%         2
+ Construct Spike Launche  Frge           0%         2d3       69%         2
+ Ensorcelled Hibernation  Hex/Ice        0%         N/A       69%         2
+ Jinxbite                 Hex            0%         2d2       69%         2
+ Momentum Strike          Conj/Tloc      0%         3d8       69%         2
+ Static Discharge         Conj/Air       0%         3-3/arc   69%         2
+ Sublimation of Blood     Necr           0%         N/A       69%         2
+ Confusing Touch          Hex            0%         N/A       89%         3
+ Frozen Ramparts          Ice            0%         1d1       89%         3
+ Hailstorm                Conj/Ice       0%         3d5       89%         3
+ Launch Clockwork Bee     Frge           0%         N/A       89%         3
+ Ozocubu's Armour         Ice            0%         N/A       89%         3
+ Passwall                 Erth           0%         N/A       89%         3
+ Summon Ice Beast         Ice/Summ       0%         N/A       89%         3
+ Vampiric Draining        Necr           0%         2d6       89%         3
+ Volatile Blastmotes      Fire/Tloc      0%         2d10      89%         3
+ Anguish                  Hex/Necr       0%         N/A       100%        4
+ Cigotuvi's Putrefaction  Necr/Air       0%         N/A       100%        4
+ Iskenderun's Mystic Bla  Conj/Tloc      0%         2d3 (+2d1 100%        4
+ Leda's Liquefaction      Alch/Erth      0%         N/A       100%        4
+ Olgreb's Toxic Radiance  Alch           0%         N/A       100%        4
+ Petrify                  Alch/Erth      0%         N/A       100%        4
+ Sticky Flame             Fire/Alch      0%         2d4       100%        4
+ Metabolic Englaciation   Hex/Ice        0%         N/A       100%        5
+ Nazja's Percussive Temp  Frge           0%         4d4       100%        5
+ Silence                  Hex/Air        0%         N/A       100%        5
+ Death Channel            Necr           0%         N/A       100%        6
+ Forge Phalanx Beetle     Frge           0%         N/A       100%        6
+ Permafrost Eruption      Ice/Erth       0%         2x4d1     100%        6
+ Sculpt Simulacrum        Ice/Alch       0%         N/A       100%        6
+ Rimeblight               Ice/Necr       0%         2d4 (prima100%        7
+
+
+Dungeon Overview and Level Annotations
+
+Branches:
+Dungeon (15/15)            Temple (1/1) D:6            Lair (5/5) D:11        
+ Shoals (0/4) Lair:2        Snake (4/4) Lair:2        Slime (5/5) Lair:4      
+    Orc (2/2) D:11            Elf (0/3) Orc:2        Vaults (0/5) D:14        
+ Depths (0/4) D:15          IceCv (visited)         
+
+The Realm of Zot is guarded by orbs of entropy.
+
+Altars:
+Ashenzari
+Cheibriados
+Dithmenos
+Elyvilon
+Fedhas
+Gozag
+Hepliaklqana
+Kikubaaqudgha
+Makhleb
+Nemelex Xobeh
+Okawaru
+Qazlal
+Ru
+Sif Muna
+Trog
+Uskayaw
+Vehumet
+Wu Jian
+Xom
+Yredelemnul
+Zin
+The Shining One
+Beogh
+Jiyva
+
+Shops:
+D:1 *   D:6 *   D:8 ?   D:10 :(!   Orc:2 :!(!   Snake:2 !?!(*
+
+Annotations:
+Slime:5 Royal Jelly
+
+
+Innate Abilities, Weirdness & Mutations
+
+You are a living statue of rough stone.
+Your melee attacks are powerful.
+You are resistant to unholy torment.
+Your maximum health is greatly increased.
+All of your actions are slow.
+Your evasion is reduced.
+Your body armour is melded.
+You are too large for most types of armour.
+You have claws for hands.
+Your natural rate of healing is unusually fast.
+You are covered in fur. (AC +1)
+(You have tough skin. (AC +1))
+(Your skin changes colour to match your surroundings (Stealth+).)
+You have supernaturally acute vision. (SInv)
+You are very agile. (Dex +8, Str/Int -2)
+You are somewhat resistant to further mutation.
+You are very strong. (Str +8, Int/Dex -2)
+Your body is covered in eyes which may confuse attackers. (Acc +7, SInv)
+
+Message History
+
+The naga mage is severely wounded.
+The nagaraja spits poison at you.
+The splash of poison misses you.
+The splash of poison hits the naga warrior!
+The naga mage spits poison at you.
+The splash of poison misses you. The guardian serpent barely misses you.
+The salamander tyrant hits you but does no damage.
+The naga warrior hits you with a +0 battleaxe!
+* * * LOW HITPOINT WARNING * * *
+The naga warrior grabs you. The naga warrior constricts you.
+You claw the naga mage!
+You kill the naga mage!
+You encounter a naga. It is wielding a +1 halberd of protection.
+The orc warrior hits you but does no damage.
+The nagaraja points at you and mumbles some strange words.
+The bolt of poison hits you but does no damage.
+You resist.
+The bolt of poison hits the naga warrior!
+The guardian serpent gestures with its tail at you.
+The naga blinks! The naga sharpshooter blinks! The naga mage blinks!
+The guardian serpent blinks!
+Okay, then.
+Saving game... please wait.
+Welcome back, joeboomin the Troll Shapeshifter.
+Slime for the Slime God!
+Press ? for a list of commands and other information.
+Okay, then.
+A red film seems to cover your vision as you go berserk!
+You feel yourself moving faster! You feel mighty!
+The guardian serpent hits you.
+* * * LOW HITPOINT WARNING * * *
+The salamander tyrant hits you but does no damage.
+The naga warrior spits poison at you.
+The splash of poison hits you but does no damage.
+You resist. The naga warrior constricts you. The guardian serpent hits you.
+* * * LOW HITPOINT WARNING * * *
+The naga mage hits you but does no damage.
+The orc warrior hits you with a +0 glaive!!
+You die...
+Jiyva sends a jelly to digest your equipment.
+
+...........hß##
+.....#.........
+ .[............
+  #........§.NN
+   #N.......ß#
+ ####...§)[.##
+ #....SNN....##
+    #.NIN.!....
+    #.oSN$..##.
+    #$.....§#
+    #.......§..
+    #.#...###..
+    ......#   #
+   .#####..
+  .#     #..
+
+
+You could see a nagaraja (strong, curare), 2 naga warriors, a naga sharpshooter
+(strong), a salamander tyrant (strong), 2 guardian serpents, a naga mage (fast,
+strong), a warg (wandering), an orc warrior (strong) and 2 nagas.
+
+Vanquished Creatures
+  Mara (Snake:3)
+  Vashnia (Snake:3)
+  Saint Roka (Snake:4)
+  Rupert (Orc:2)
+  Asterion (Snake:3)
+  Aizul (Snake:3)
+  Roxanne (D:15)
+  A frost giant (IceCv)
+  Louise (D:15)
+  2 orc warlords (Orc:1)
+  A very ugly thing (D:15)
+  Snorg (D:13)
+  2 mountainshells
+  A catoblepas (Lair:3)
+  A salamander tyrant (Snake:1)
+  A vault guard (D:14)
+  3 hydras
+  13 anacondas
+  4 centaur warriors
+  2 boulder beetles
+  8 ogre magi
+  5 death yaks (IceCv)
+  15 two-headed ogres
+  13 naga sharpshooters
+  2 tengu warriors
+  2 shock serpents
+  An orc high priest (Orc:2)
+  A skyshark (Lair:4)
+  Amaemon (D:11)
+  A dancing weapon (D:14)
+  A fire crab (D:11)
+  An obsidian bat (Orc:2)
+  Sonja (D:12)
+  A salamander mystic (Snake:2)
+  2 skeletal warriors (D:11)
+  6 mana vipers
+  5 naga ritualists
+  6 orc knights (Orc:2)
+  A harpy (shapeshifter) (D:14)
+  A deep elf pyromancer (D:12)
+  2 orc sorcerers (Orc:1)
+  12 cyclopes
+  12 ugly things
+  3 manticores
+  9 salamanders
+  A guardian serpent (Snake:1)
+  26 black mambas
+  An ice statue (IceCv)
+  7 naga magi
+  3 gargoyles (D:12)
+  An orange demon (D:11)
+  9 cane toads
+  5 unseen horrors
+  3 rime drakes
+  4 fire giants (D:15)
+  4 yaktaurs (D:15)
+  10 komodo dragons
+  An efreet (D:13)
+  A tengu conjurer (D:14)
+  A queen bee (shapeshifter) (D:15)
+  5 trolls
+  A queen bee (Lair:1)
+  11 polar bears
+  Grinder (D:5)
+  7 blink frogs
+  Sigmund (D:3)
+  18 naga warriors
+  Blorkula the orcula (D:8)
+  A raven (Lair:4)
+  3 wraiths
+  11 wyverns
+  35 yaks
+  3 basilisks
+  16 wargs
+  11 vampire mosquitoes
+  24 nagas
+  7 water moccasins
+  2 acid dragons
+  A kobold geomancer (D:9)
+  23 orc warriors
+  A sky beast (D:8)
+  2 black bears
+  8 laughing skulls
+  12 ogres
+  16 wolves (IceCv)
+  21 centaurs
+  2 phantoms (D:6)
+  2 kobold brigands (D:9)
+  13 bullfrogs
+  A gnoll sergeant (D:8)
+  5 scorpions
+  A troll draugr (D:11)
+  3 wights (D:8)
+  5 vampire bats (D:8)
+  22 killer bees
+  4 howler monkeys
+  A bombardier beetle (D:4)
+  3 hounds
+  12 orc priests
+  A sleepcap (D:7)
+  A clockroach (D:4)
+  2 drudes
+  6 iguanas
+  Natasha (twice) (D:3)
+  14 orc wizards
+  6 adders
+  4 gnolls (D:8)
+  6 lava snakes (Snake:1)
+  A shadow imp (D:7)
+  4 ufetubi
+  A ribbon worm (D:2)
+  5 dart slugs
+  100 orcs
+  7 endoplasms
+  6 hobgoblins
+  4 jackals (D:4)
+  4 quokkas
+  7 ball pythons
+  7 bats
+  4 frilled lizards
+  7 goblins
+  11 kobolds
+  7 rats
+762 creatures vanquished.
+
+Vanquished Creatures (others)
+  A polar bear (IceCv)
+  A dream sheep (Lair:5)
+  A naga (Snake:4)
+  An ogre (Orc:1)
+  5 centaurs
+  45 jellies
+  An orc priest (Snake:4)
+  6 orcs
+61 creatures vanquished.
+
+Grand Total: 823 creatures vanquished
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | joeboomin the Troll Shapeshifter began the quest for the
+                  | Orb.
+     0 | D:1      | Reached XP level 1. HP: 19/19 MP: 0/0
+   234 | D:1      | Reached XP level 2. HP: 27/27 MP: 1/1
+   625 | D:1      | Found Husoy's Assorted Antiques.
+  1250 | D:2      | Reached XP level 3. HP: 32/32 MP: 2/2
+  1719 | D:2      | Found a faded altar of an unknown god.
+  1723 | D:2      | Got Plato's Directory of Reification
+  1866 | D:3      | Encountered Sigmund
+  1873 | D:3      | Killed Sigmund
+  1874 | D:3      | Reached skill level 5 in Shapeshifting
+  1874 | D:3      | Reached XP level 4. HP: 36/41 MP: 3/3
+  1874 | D:3      | Reached XP level 5. HP: 42/48 MP: 4/4
+  2037 | D:3      | Encountered Natasha
+  2048 | D:3      | Killed Natasha
+  2179 | D:3      | Encountered Natasha
+  2189 | D:3      | Killed Natasha
+  2249 | D:3      | Reached XP level 6. HP: 55/55 MP: 5/5
+  2459 | D:3      | Identified a scroll of acquirement
+  2465 | D:3      | Acquired a manual of Dodging
+  2893 | D:4      | Reached skill level 5 in Unarmed Combat
+  2910 | D:4      | Reached skill level 6 in Shapeshifting
+  3135 | D:4      | You fall into a shaft and drop 3 floors!
+  3194 | D:5      | Entered Level 5 of the Dungeon
+  3222 | D:5      | Reached XP level 7. HP: 50/62 MP: 6/6
+  3446 | D:5      | Encountered Grinder
+  3455 | D:5      | Paralysed by Grinder for 3.5 turns
+  3459 | D:5      | Killed Grinder
+  3460 | D:5      | Reached skill level 7 in Shapeshifting
+  3732 | D:5      | Found an iron altar of Okawaru.
+  3736 | D:5      | Found a stormy altar of Qazlal.
+  3745 | D:5      | Found a glowing golden altar of the Shining One.
+  3757 | D:5      | Became a worshipper of the Shining One
+  4122 | D:6      | Reached XP level 8. HP: 70/70 MP: 7/7
+  4335 | D:6      | Reached skill level 8 in Shapeshifting
+  4339 | D:6      | Found a staircase to the Ecumenical Temple.
+  4341 | D:6      | Found a statue of an orb of entropy.
+  4343 | D:6      | Found a statue of an orb of entropy.
+  4370 | Temple   | Entered the Ecumenical Temple
+  4516 | D:6      | Found a glowing silver altar of Zin.
+  4537 | D:6      | Found Gotuemuf's Goods Gallery.
+  4992 | D:7      | Identified the +1 hand axe "Loch" {holy, ^Contam rC++
+                  | Dex+5}
+  5529 | D:8      | Reached * piety under the Shining One
+  5534 | D:8      | Reached skill level 9 in Shapeshifting
+  5587 | D:8      | Acquired the +9 scales of the Dragon King {Command, rPois
+                  | rF+ rC+}
+  5594 | D:8      | Found Ocvukamyn's Magic Scroll Boutique.
+  5810 | D:8      | Encountered a cyclops
+  5819 | D:8      | Killed a cyclops
+  5820 | D:8      | Reached XP level 9. HP: 80/80 MP: 8/8
+  6138 | D:8      | Encountered Blorkula the orcula
+  6159 | D:8      | Killed Blorkula the orcula
+  6487 | D:8      | Encountered a komodo dragon
+  6491 | D:8      | Killed a komodo dragon
+  6492 | D:8      | Reached skill level 5 in Dodging
+  6492 | D:8      | Reached skill level 10 in Shapeshifting
+  6739 | D:9      | Encountered a two-headed ogre
+  6745 | D:9      | Killed a two-headed ogre
+  6746 | D:9      | Reached XP level 10. HP: 92/92 MP: 9/9
+  6748 | D:9      | Encountered a manticore
+  6762 | D:9      | Killed a manticore
+  6766 | D:9      | Reached ** piety under the Shining One
+  7308 | D:10     | Entered Level 10 of the Dungeon
+  7510 | D:10     | Found Ofem's Distillery.
+  7516 | D:10     | Found Raicsas's Weapon Emporium.
+  7519 | D:10     | Found Luingoim's Book Emporium.
+  7767 | D:11     | Encountered Amaemon
+  7783 | D:11     | Killed Amaemon
+  7784 | D:11     | Reached skill level 11 in Shapeshifting
+  7794 | D:11     | Encountered a cyclops
+  7803 | D:11     | Killed a cyclops
+  7804 | D:11     | Reached XP level 11. HP: 61/101 MP: 10/10
+  7899 | D:11     | Found a staircase to the Orcish Mines.
+  7909 | D:11     | Encountered a skeletal warrior
+  7928 | D:11     | Killed a skeletal warrior
+  7975 | D:11     | Encountered a skeletal warrior
+  7998 | D:11     | Killed a skeletal warrior
+  7999 | D:11     | Reached skill level 12 in Shapeshifting
+  8048 | D:11     | Found a staircase to the Lair.
+  8049 | D:11     | Encountered a fire crab
+  8308 | D:1      | Bought an eel talisman for 420 gold pieces
+  8580 | D:11     | Killed a fire crab
+  8668 | D:11     | Reached *** piety under the Shining One
+  8895 | D:11     | Reached skill level 10 in Unarmed Combat
+  8898 | D:11     | Reached skill level 1 in Armour
+  8963 | D:12     | Reached skill level 5 in Fighting
+  9055 | D:12     | Encountered Sonja
+  9067 | D:12     | Killed Sonja
+  9132 | D:12     | Reached skill level 13 in Shapeshifting
+  9161 | D:12     | Reached XP level 12. HP: 103/111 MP: 11/11
+  9293 | D:12     | Found a frozen archway.
+  9334 | IceCv    | Entered an ice cave
+  9388 | IceCv    | Reached **** piety under the Shining One
+  9418 | IceCv    | Encountered a death yak
+  9430 | IceCv    | Killed a death yak
+  9628 | IceCv    | Encountered a death yak
+  9640 | IceCv    | Killed a death yak
+  9703 | IceCv    | Encountered a death yak
+  9703 | IceCv    | Encountered a death yak
+  9706 | IceCv    | Encountered a death yak
+  9712 | IceCv    | Killed a death yak
+  9713 | IceCv    | Reached skill level 14 in Shapeshifting
+  9716 | IceCv    | Killed a death yak
+  9717 | IceCv    | Killed a death yak
+  9721 | IceCv    | Got the +9 scimitar of Lutigui {freeze, rC+ rCorr Dex+4}
+  9747 | IceCv    | Encountered a frost giant
+  9759 | IceCv    | Killed a frost giant
+  9794 | IceCv    | Identified the +3 quarterstaff "Jydus" {holy, rN++ Dex+4}
+ 10640 | Lair:1   | Entered Level 1 of the Lair of Beasts
+ 10711 | Lair:1   | Reached XP level 13. HP: 123/123 MP: 12/12
+ 11495 | Lair:2   | Identified the quill talisman of the Old and Reckless
+                  | {rElec Str+2}
+ 11513 | Lair:2   | Reached skill level 5 in Armour
+ 11849 | Lair:2   | Found a staircase to the Snake Pit.
+ 12104 | Lair:2   | Found a staircase to the Shoals.
+ 12502 | Lair:3   | Reached skill level 15 in Shapeshifting
+ 13241 | Lair:4   | Reached ***** piety under the Shining One
+ 13412 | Lair:4   | Found a staircase to the Slime Pits.
+ 13423 | Lair:4   | Found a viscous altar of Jiyva.
+ 13432 | Lair:4   | Fell from the grace of the Shining One
+ 13432 | Lair:4   | Became a worshipper of Jiyva Jewitris the Shapeless
+ 13912 | Lair:5   | Entered Level 5 of the Lair of Beasts
+ 14131 | Lair:5   | Reached * piety under Jiyva
+ 14577 | Orc:1    | Entered Level 1 of the Orcish Mines
+ 14738 | Orc:2    | Entered Level 2 of the Orcish Mines
+ 14746 | Orc:2    | Encountered an orc warlord
+ 14799 | Orc:1    | Killed an orc warlord
+ 14800 | Orc:1    | Reached XP level 14. HP: 99/136 MP: 13/13
+ 14875 | Orc:2    | Found Deophit's Book Boutique.
+ 14988 | Orc:2    | Reached skill level 16 in Shapeshifting
+ 15046 | Orc:2    | Found Buri's Distillery.
+ 15164 | Orc:2    | Paralysed by something for 5.5 turns
+ 15200 | Orc:2    | Encountered Rupert
+ 15203 | Orc:2    | Found a staircase to the Elven Halls.
+ 15221 | Orc:2    | Killed Rupert
+ 15335 | Orc:2    | Found a roughly hewn altar of Beogh.
+ 15454 | Orc:2    | Found Igotz's Distillery.
+ 15457 | Orc:2    | Found Lirae's Weapon Boutique.
+ 15502 | Orc:2    | Reached ** piety under Jiyva
+ 15637 | Orc:2    | Bought a potion of invisibility for 88 gold pieces
+ 15637 | Orc:2    | Bought a potion of enlightenment for 55 gold pieces
+ 15679 | Orc:2    | Bought a potion of berserk rage for 107 gold pieces
+ 15681 | Orc:2    | Gained mutation: You have supernaturally acute vision.
+                  | (SInv) [potion of mutation]
+ 15681 | Orc:2    | Gained mutation: You are somewhat resistant to further
+                  | mutation. [potion of mutation]
+ 15875 | Orc:1    | Encountered an orc warlord
+ 15884 | Orc:1    | Killed an orc warlord
+ 16142 | D:6      | Bought a granite talisman for 480 gold pieces
+ 16446 | D:13     | Encountered Snorg
+ 16463 | D:13     | Killed Snorg
+ 16551 | D:13     | Found a broken altar of Ashenzari.
+ 16920 | D:14     | Reached XP level 15. HP: 146/146 MP: 14/14
+ 16988 | D:14     | Found a gate to the Vaults.
+ 17018 | D:14     | Reached *** piety under Jiyva
+ 17274 | D:14     | Found a portal to a secret trove of treasure.
+ 17403 | D:14     | Gained bane: Bane of Multiplicity [Entering a Trove]
+ 17404 | Trove    | Entered The First Justicar's Armoury
+ 17418 | Trove    | Identified the amulet of the Unicorn {Regen+ Str+3 SInv}
+ 17420 | Trove    | Identified the amulet "Ruulix" {rN+ Regen+ Dex-2 Stlth+}
+ 17444 | Trove    | Identified the ring of Sicalumu {rF+ rN+ Str+6 Dex+3
+                  | Slay+2}
+ 17458 | Trove    | Identified the +0 kite shield of the Snake Pit {rF+ rN+
+                  | Int-4 SInv}
+ 17459 | Trove    | Identified the +5 kite shield "Wegegruw" {rN+ rCorr}
+ 17774 | D:15     | Entered Level 15 of the Dungeon
+ 17775 | D:15     | Found a staircase to the Depths.
+ 17775 | D:15     | Encountered a fire giant
+ 17780 | D:15     | Reached skill level 17 in Shapeshifting
+ 17851 | D:15     | Gained mutation: You are agile. (Dex +4, Str/Int -1)
+                  | [Jiyva's grace]
+ 17851 | D:15     | Gained mutation: You are very agile. (Dex +8, Str/Int -2)
+                  | [Jiyva's grace]
+ 17851 | D:15     | Gained mutation: You are strong. (Str +4, Int/Dex -1)
+                  | [Jiyva's grace]
+ 17851 | D:15     | Gained mutation: You are very strong. (Str +8, Int/Dex -2)
+                  | [Jiyva's grace]
+ 17915 | D:15     | Encountered Roxanne
+ 17928 | D:15     | Reached **** piety under Jiyva
+ 17950 | D:15     | Killed Roxanne
+ 18133 | D:15     | Encountered Louise
+ 18157 | D:15     | Killed Louise
+ 18238 | D:15     | Killed a fire giant
+ 18677 | Slime:1  | Entered Level 1 of the Pits of Slime
+ 18677 | Slime:1  | Encountered a colossal amoeba
+ 18789 | Slime:1  | Found a viscous altar of Jiyva.
+ 19215 | Slime:2  | Found a viscous altar of Jiyva.
+ 19534 | Slime:4  | Encountered an azure jelly
+ 19534 | Slime:4  | Found a viscous altar of Jiyva.
+ 19748 | Slime:5  | Entered Level 5 of the Pits of Slime
+ 19748 | Slime:5  | Encountered a rockslime
+ 19872 | Slime:5  | Found a viscous altar of Jiyva.
+ 20281 | Slime:5  | Found the sphere of Battle
+ 20716 | Snake:1  | Entered Level 1 of the Snake Pit
+ 21128 | Snake:1  | Gained mutation: Your body has grown eyes which may confuse
+                  | attackers. (Acc +3) [Jiyva's grace]
+ 21128 | Snake:1  | Gained mutation: Your body has grown many eyes which may
+                  | confuse attackers. (Acc +5) [Jiyva's grace]
+ 21128 | Snake:1  | Gained mutation: Your body is covered in eyes which may
+                  | confuse attackers. (Acc +7, SInv) [Jiyva's grace]
+ 21128 | Snake:1  | Gained mutation: Your skin changes colour to match your
+                  | surroundings (Stealth+). [Jiyva's grace]
+ 21162 | Snake:1  | Reached skill level 10 in Fighting
+ 21352 | Snake:2  | Found Maehud's Distillery.
+ 21385 | Snake:2  | Found Fudiffem's Antique Armour Shoppe.
+ 21385 | Snake:2  | Found Afuborgh's Distillery.
+ 21390 | Snake:2  | Found Berghauku's Magic Scroll Emporium.
+ 21408 | Snake:2  | Bought a potion of haste for 271 gold pieces
+ 21411 | Snake:2  | Bought 2 potions of berserk rage for 233 gold pieces
+ 21457 | Snake:2  | Identified the +1 morningstar "Nocyla" {antimagic, rF+ rN+
+                  | Str+2 Dex+6}
+ 21505 | Snake:2  | Found Veocka Awkus's Weapon Emporium.
+ 21583 | Snake:2  | Found Xodd's Assorted Antiques.
+ 21639 | Snake:2  | Reached XP level 16. HP: 158/158 MP: 9/15
+ 21648 | Snake:2  | Reached skill level 18 in Shapeshifting
+ 22069 | Snake:3  | Reached ***** piety under Jiyva
+ 22069 | Snake:3  | Encountered Mara
+ 22073 | Snake:3  | Killed Mara
+ 22518 | Snake:3  | Encountered Vashnia
+ 22538 | Snake:3  | Killed Vashnia
+ 22543 | Snake:3  | Lost bane: Bane of Multiplicity
+ 22624 | Snake:3  | Identified the serpent talisman "Erot" {Fly}
+ 22624 | Snake:3  | Encountered Aizul
+ 22643 | Snake:3  | Killed Aizul
+ 23069 | Snake:3  | Encountered Asterion
+ 23077 | Snake:3  | Killed Asterion
+ 23220 | Snake:4  | Entered Level 4 of the Snake Pit
+ 23228 | Snake:4  | Encountered Saint Roka
+ 23238 | Snake:4  | Killed Saint Roka
+ 23247 | Snake:4  | Slain by an orc warrior
+
+Illustrated notes
+
+Levels and vault maps discovered:
+D:1:      psy_arrival_whirlpool, layout_basic, serial_shops,
+          nicolae_shop_behind_doors, minmay_misc_feat_rugged,
+          grunt_decor_clamped, minmay_octomino_e4
+D:2:      layout_basic, shapermc_ecumenical_altar_rom_forum
+D:3:      layout_loops_cross, grunt_decor_junction, minivault_14,
+          chequers_serial_rivers_room_b, uniq_sigmund, uniq_natasha
+D:4:      layout_cave_pods, nicolae_kite_square_tiling_tiny,
+          hangedman_decor_peaks_small
+D:5:      layout_loops_cross, minmay_overflow_temple_star_quad, uniq_grinder
+D:6:      layout_loops_ring, nicolae_overflow_four_foyers_orthogonal,
+          minmay_temple_entry_antechambers, nicolae_alphabet_shops,
+          nicolae_eternal_life
+D:7:      layout_rooms, minivault_10
+D:8:      wad_cavern_with_rooms, layout_layer_cave, serial_shops, shop,
+          serial_park_square3 [serial_park_minivault_5x5_1],
+          uniq_blorkula_the_orcula
+D:9:      layout_loops_ring
+D:10:     layout_roguey, nicolae_shop_distant_corner_stores
+D:11:     layout_rooms, minmay_lair_entry_lava, david_orc_3, grunt_ministairs_9,
+          uniq_amaemon
+D:12:     layout_loops_ring, portal_ice_cave_entry_pillars_1, uniq_sonja
+D:13:     layout_gridville, nicolae_ashenzari_church_of_fetters, uniq_snorg
+D:14:     layout_roguey, erik_vaults_1, minmay_misc_feat_diagonals,
+          nicolae_trove_entry_columns, hex_tiny
+D:15:     grunt_enter_depths_giant_problem, layout_irregular_city,
+          grunt_decor_one_mirror, uniq_louise, uniq_roxanne
+Temple:   dpeg_five_rooms_temple
+Lair:1:   wad_woods_minihive, layout_regular_city, infiniplex_staircase_pool
+Lair:2:   layout_cave_pods, mainiacjoe_shoals_entry_four_pools,
+          alex1729_snake_entry_snake, beast_lair_carwin_11
+Lair:3:   layout_loops_ring, grunt_megastairs_5
+Lair:4:   layout_gridlike, slime_entry_1, beast_lair_carwin_9
+Lair:5:   cheibrodos_lair_end_hotspot, layout_cave_pods,
+          nicolae_lair_fungal_den, serial_bayou_shore_b
+Snake:1:  layout_misc_corridors, nicolae_snake_shapes
+Snake:2:  kennysheep_six_static_rooms, layout_misc_corridors, serial_shops,
+          nicolae_stop_n_shop_2, drop_trap, nicolae_stop_n_shop_1,
+          minmay_shoptagon
+Snake:3:  layout_onion_interference, serial_bayou_shore_b, uniq_asterion,
+          uniq_aizul, uniq_vashnia, uniq_mara
+Snake:4:  hellmonk_snake_rune_quicksilver_temple, layout_rooms, uniq_saint_roka
+Slime:1:  layout_caves, cheibrodos_slime_lost_civilization_9
+Slime:2:  layout_caves
+Slime:3:  nicolae_slime_spelunking
+Slime:4:  layout_caves
+Slime:5:  slime_pit_nicolae_block_by_block
+Orc:1:    layout_caves
+Orc:2:    st_orc_town, layout_caves, uniq_rupert
+
+Skill      XL: |  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 |
+---------------+-------------------------------------------------+-----
+Unarmed Combat |        4        5  6  7  8  9 10 11 12 13 14    | 14.8
+Shapeshifting  |        5        6  7  9 10 11 13 14 15 16 17 18 | 18.7
+Dodging        |                       3  5  7  8                |  8.5
+Fighting       |                       2  4     5  6  8  9 10    | 10.8
+Armour         |                                2  4  6  7  8  9 |  9.7
+
+Action                     |  1- 3 |  4- 6 |  7- 9 | 10-12 | 13-15 | 16-18 || total
+---------------------------+-------+-------+-------+-------+-------+-------++-------
+ Attack: Normal            |    76 |    78 |   191 |   350 |   799 |   154 ||  1648
+  Melee: Unarmed           |    76 |    78 |   191 |   350 |   799 |   154 ||  1648
+         Punch             |     2 |     1 |       |    23 |    66 |    10 ||   102
+ Invoke: Divine Shield     |       |       |       |     1 |       |       ||     1
+         Oozemancy         |       |       |       |       |     1 |       ||     1
+  Evoke: Wand of digging   |       |       |       |       |     2 |       ||     2
+  Drink: Curing            |       |       |       |     1 |     6 |       ||     7
+         Haste             |       |       |       |     1 |     4 |     1 ||     6
+         Might             |       |       |       |     1 |     3 |     1 ||     5
+         Heal wounds       |       |       |       |       |     3 |     1 ||     4
+         Brilliance        |       |       |       |       |     1 |       ||     1
+         Cancellation      |       |       |       |       |     1 |       ||     1
+         Mutation          |       |       |       |       |     1 |       ||     1
+         Berserk rage      |       |       |       |       |     1 |     1 ||     2
+         Resistance        |       |       |       |       |       |     1 ||     1
+   Read: Identify          |       |     9 |     1 |     6 |     1 |     1 ||    18
+         Acquirement       |       |     1 |     1 |       |       |       ||     2
+         Revelation        |       |       |       |     1 |       |       ||     1
+         Blinking          |       |       |       |       |     2 |       ||     2
+         Poison            |       |       |       |       |     1 |       ||     1
+         Fear              |       |       |       |       |     2 |     1 ||     3
+         Enchant weapon    |       |       |       |       |     1 |       ||     1
+         Enchant armour    |       |       |       |       |     1 |       ||     1
+         Brand weapon      |       |       |       |       |     1 |       ||     1
+   Stab: Sleeping          |       |     2 |     1 |       |     4 |       ||     7
+         Confused          |       |       |       |       |     5 |     6 ||    11
+ Armour: Animal skin       |    35 |    59 |       |       |       |       ||    94
+         None              |       |     2 |   158 |   113 |   548 |   476 ||  1297
+         Golden dragon sca |       |       |       |   409 |   738 |       ||  1147
+  Dodge: Dodged            |    34 |    33 |   113 |   107 |   349 |   130 ||   766
+  Block: Other             |       |       |       |     3 |       |       ||     3
+   Form: Yak               |       |     1 |     1 |       |       |       ||     2
+         Default           |       |       |     1 |       |       |       ||     1
+         Eel               |       |       |       |     1 |       |       ||     1
+         Statue            |       |       |       |       |     2 |       ||     2
+         Dragon            |       |       |       |       |     2 |       ||     2
+
