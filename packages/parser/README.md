@@ -36,6 +36,10 @@ if (result.ok) {
 }
 ```
 
+If you are wiring this package into an agent, code generator, or other tool
+that benefits from an exact calling contract, start with
+[Parser Usage Contract](./docs/parser_usage.md).
+
 The parser ships with a built-in canonical spell vocabulary. Callers can also supplement it:
 
 ```ts
@@ -68,6 +72,7 @@ Examples:
 
 More detail:
 
+- [Parser Usage Contract](./docs/parser_usage.md)
 - [Repository Documentation Catalog](../../docs/meta--catalog.md)
 - [Parser Model](./docs/parser_model.md)
 - [Parser Design Changelog](./docs/parser_changelog.md)

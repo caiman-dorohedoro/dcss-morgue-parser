@@ -14,6 +14,7 @@ Last updated: 2026-04-10
 - Root documents:
   - `README.md`: repository overview and workspace usage
   - `AGENTS.md`: working instructions
+  - `llms.txt`: curated LLM-facing index into the parser and project docs
 - Project-level documents under `docs/`:
   - use lowercase ASCII file names only
   - put the document kind first, not last
@@ -37,6 +38,7 @@ Last updated: 2026-04-10
 | --- | --- | --- |
 | `README.md` | Monorepo overview, workspace layout, and common commands | `/` |
 | `AGENTS.md` | Working instructions and documentation entry point | `/` |
+| `llms.txt` | Curated LLM-facing doc index for parser usage and repo context | `/` |
 | `meta--catalog.md` | Canonical document catalog and reading order | `/docs` |
 | `origin--pipeline.md` | Pipeline design background, including discovery/parsing separation, strict failure, and sampling rationale | `/docs` |
 | `origin--raw-morgue-collection.md` | Provenance for collecting raw morgues from public Crawl servers for QA and schema iteration | `/docs` |
@@ -45,24 +47,28 @@ Last updated: 2026-04-10
 | `strategy--fixture.md` | Test and fixture maintenance strategy across focused regressions and full golden morgues | `/docs` |
 | `notes--implementation.md` | Engineering notes distilled from the earlier implementation plan | `/docs` |
 | `parser_model.md` | Current parser schema and Crawl-aligned model explanation | `/packages/parser/docs` |
+| `parser_usage.md` | Practical parser calling contract, field invariants, and edge-case guide | `/packages/parser/docs` |
 | `parser_changelog.md` | Schema and contract history for the parser package | `/packages/parser/docs` |
 
 ## Recommended Reading Order
 
 1. `README.md`
-2. `packages/parser/README.md`
-3. `packages/parser/docs/parser_model.md`
-4. `packages/parser/docs/parser_changelog.md`
-5. `docs/origin--pipeline.md`
-6. `docs/origin--raw-morgue-collection.md`
-7. `docs/workflow--qa.md`
-8. `docs/workflow--parser-debugging.md`
-9. `docs/strategy--fixture.md`
-10. `docs/notes--implementation.md`
+2. `llms.txt`
+3. `packages/parser/README.md`
+4. `packages/parser/docs/parser_usage.md`
+5. `packages/parser/docs/parser_model.md`
+6. `packages/parser/docs/parser_changelog.md`
+7. `docs/origin--pipeline.md`
+8. `docs/origin--raw-morgue-collection.md`
+9. `docs/workflow--qa.md`
+10. `docs/workflow--parser-debugging.md`
+11. `docs/strategy--fixture.md`
+12. `docs/notes--implementation.md`
 
 ## Status Notes
 
-- `packages/parser/docs/parser_model.md` and `packages/parser/docs/parser_changelog.md` are the canonical parser contract documents.
+- `packages/parser/docs/parser_usage.md`, `packages/parser/docs/parser_model.md`, and `packages/parser/docs/parser_changelog.md` are the parser package contract documents at different depths.
+- `llms.txt` is the shortest repo-level entrypoint for LLMs that need to find the parser contract quickly.
 - `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
 - `docs/workflow--parser-debugging.md` is the practical inspection loop to use after a sample has already been collected.
 - `docs/notes--implementation.md` is not a raw historical dump of the original plan; it is an edited note that keeps only the engineering judgment that still matters.
@@ -73,3 +79,4 @@ Last updated: 2026-04-10
 - 2026-04-08: Added `workflow--parser-debugging.md` as the dedicated manual inspection and parser debugging note.
 - 2026-04-10: Updated implementation and parser changelog notes to cover shared skill metadata and stricter pipeline morgue validation.
 - 2026-04-10: Expanded implementation notes with guidance on shared helper boundaries for pipeline, web viewer, and parser refactors.
+- 2026-04-10: Added `packages/parser/docs/parser_usage.md` and root `llms.txt` as the shortest LLM-facing parser contract entrypoints.

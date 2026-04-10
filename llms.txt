@@ -1,0 +1,29 @@
+# dcss-morgue-parser
+
+> Browser-safe DCSS morgue parser monorepo. For library use, start with the parser package README and the parser usage contract, then consult the full parser model only when you need deeper schema semantics.
+
+Important notes:
+
+- The normal entrypoint is `parseMorgueText(text, options?)`.
+- Always branch on `result.ok` before reading `result.record`.
+- The shortest high-signal contract document is `packages/parser/docs/parser_usage.md`.
+- The parser only parses morgue text. Fetching, sampling, QA workflows, and pipeline state live elsewhere in the repo.
+
+## Start Here
+
+- [Parser package README](./packages/parser/README.md): install, first usage example, package scope, and links to deeper docs.
+- [Parser usage contract](./packages/parser/docs/parser_usage.md): exact success and failure contract, field invariants, sentinel values, normalization rules, and common edge cases.
+- [Parser model](./packages/parser/docs/parser_model.md): full schema and Crawl-aligned semantic model.
+
+## Repo Context
+
+- [Repository README](./README.md): monorepo overview, workspace layout, and common commands.
+- [Documentation catalog](./docs/meta--catalog.md): canonical reading order and document inventory.
+- [QA workflow](./docs/workflow--qa.md): how real morgue samples and fixture review validate parser behavior.
+- [Parser debugging workflow](./docs/workflow--parser-debugging.md): manual inspection loop for raw versus parsed output.
+
+## Optional
+
+- [Parser design changelog](./packages/parser/docs/parser_changelog.md): why the contract changed over time.
+- [Fixture strategy](./docs/strategy--fixture.md): how focused and full fixtures are maintained.
+- [Implementation notes](./docs/notes--implementation.md): current engineering judgment that still matters.
