@@ -11,7 +11,7 @@ import {
   formatReviewPairComparison,
 } from './compareReviewPair'
 import { collectTestReferencedFixtures } from './buildFixtureMetadata'
-import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/types'
+import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/index'
 
 export type FixtureReviewCase = {
   fixtureName: string
@@ -41,6 +41,11 @@ export type FixtureReviewExportResult = {
 type ExportFixtureReviewOptions = {
   workspaceDir?: string
   outputDir: string
+}
+
+function toDisplayText(value: string | null | undefined, fallback: string): string {
+  const trimmed = value?.trim()
+  return trimmed && trimmed.length > 0 ? trimmed : fallback
 }
 
 function buildChecklistText(): string {
@@ -197,10 +202,10 @@ export function exportFullFixtureReview(
     return {
       fixtureName: ref.name,
       expectedName,
-      playerName: parsed.playerName,
+      playerName: toDisplayText(parsed.playerName, 'unknown'),
       version: parsed.version,
       species: parsed.species,
-      background: parsed.background,
+      background: toDisplayText(parsed.background, 'unknown'),
       god: parsed.god ?? 'none',
       sourceFixturePath,
       sourceExpectedPath,

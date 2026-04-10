@@ -160,6 +160,13 @@ describe('runBootstrap', () => {
     expect(summary.selectedCandidates).toBe(8)
     expect(summary.parsedSuccesses + summary.parsedFailures).toBe(8)
     expect(parseResultRepo.listAll(db)).toHaveLength(8)
+    expect(
+      candidateRepo
+        .listAll(db)
+        .filter((candidate) => candidate.sampledBootstrapAt !== null)
+        .map((candidate) => candidate.candidateId)
+        .sort(),
+    ).toEqual(['cao34-a', 'caogit-a', 'cbrg34-a', 'cbrggit-a'])
 
     const auditPath = await writeAuditBundle(
       {
@@ -172,6 +179,38 @@ describe('runBootstrap', () => {
     )
 
     expect(path.basename(auditPath)).toMatch(/^audit-.*\.json$/)
+  })
+
+  it('leaves bootstrap failures eligible for retry instead of marking them as sampled', async () => {
+    const db = createInMemoryDb()
+    migrate(db)
+    candidateRepo.insertMany(db, [seedCandidate('cao34-a', 'CAO', '0.34')])
+
+    const summary = await runBootstrap({
+      db,
+      options: { perBucket: 1 },
+      now: () => '2026-04-05T08:00:00.000Z',
+      discoverCandidates: async () => undefined,
+      fetchMorgue: async (_db, input): Promise<MorgueFetchRow> => ({
+        candidateId: input.candidate.candidateId,
+        morgueUrl: `https://example.test/${input.candidate.candidateId}.txt`,
+        fetchStatus: 'error',
+        httpStatus: 500,
+        localPath: null,
+        lastError: 'synthetic fetch failure',
+        fetchedAt: '2026-04-05T08:00:00.000Z',
+      }),
+    })
+
+    expect(summary).toEqual({
+      selectedCandidates: 1,
+      parsedSuccesses: 0,
+      parsedFailures: 1,
+    })
+    expect(candidateRepo.listBootstrapEligible(db).map((candidate) => candidate.candidateId)).toEqual([
+      'cao34-a',
+    ])
+    expect(candidateRepo.get(db, 'cao34-a')?.sampledBootstrapAt).toBeNull()
   })
 
   it('processes different hosts in parallel while keeping host-local sequencing', async () => {

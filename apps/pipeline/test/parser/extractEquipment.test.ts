@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { extractEquipment } from '../../src/parser/extractEquipment'
+import { extractEquipment } from '../../../../packages/parser/src/index'
 import type { EquipmentPropertyBag } from '../../src/types'
 
 function loadFixture(directory: 'focused' | 'full', name: string) {

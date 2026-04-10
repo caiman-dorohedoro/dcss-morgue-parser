@@ -65,3 +65,29 @@ The parser got noticeably better only after repeated loops of:
 4. turn bugs into fixtures and tests
 
 That workflow is now part of the documentation because it directly influenced the current schema and extractor behavior.
+
+## Keep Sampling Separate From Success
+
+The pipeline should not treat "selected for this run" and "successfully fetched and parsed" as the same state.
+
+If sampled markers are written before fetch and parse complete, a transient network failure or a temporarily missing morgue can become a silent long-term omission.
+
+The safer rule is:
+
+- select candidates first
+- fetch and parse them
+- mark them sampled only after successful processing
+
+This keeps retry behavior straightforward and avoids forcing recovery through manual cache resets.
+
+## Keep One Parser Boundary
+
+The monorepo works better when `packages/parser` is the only parser boundary that other apps depend on.
+
+That means:
+
+- export parser-facing types and helpers from one public entry point
+- avoid duplicating parser types inside pipeline code
+- avoid thin re-export wrappers that only mirror parser internals
+
+This keeps parser refactors local and makes it easier to change internals without touching pipeline and web imports everywhere.

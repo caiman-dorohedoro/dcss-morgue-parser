@@ -1,14 +1,11 @@
-import type { ParseFailureRecord, ParsedMorgueRecord, ServerId } from '../types'
+import type {
+  ParseFailureRecord,
+  ParsedMorgueRecord,
+  ParseMorgueMetadata,
+} from '../types'
 import { parseMorgueText } from '../../../../packages/parser/src/index'
 
-export type ParseMorgueMeta = {
-  candidateId: string
-  serverId: ServerId
-  playerName: string
-  sourceVersionLabel: string
-  endedAt: string
-  morgueUrl: string
-}
+export type ParseMorgueMeta = ParseMorgueMetadata
 
 export type ParseMorgueResult =
   | {
@@ -31,12 +28,13 @@ export function parseMorgue(text: string, meta: ParseMorgueMeta): ParseMorgueRes
   }
 
   const { playerName: _parsedPlayerName, ...record } = parsed.record
+  const mergedRecord: ParsedMorgueRecord = {
+    ...record,
+    ...meta,
+  }
 
   return {
     ok: true,
-    record: {
-      ...record,
-      ...meta,
-    } as ParsedMorgueRecord,
+    record: mergedRecord,
   }
 }

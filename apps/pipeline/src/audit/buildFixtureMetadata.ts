@@ -15,7 +15,7 @@ import type {
   MutationEntrySnapshot,
   SkillLevelsSnapshot,
   SpellSnapshot,
-} from '../../../../packages/parser/src/types'
+} from '../../../../packages/parser/src/index'
 
 export type FixtureDirectory = 'focused' | 'full'
 

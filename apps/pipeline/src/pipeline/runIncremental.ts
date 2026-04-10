@@ -2,7 +2,7 @@ import { randomUUID } from 'node:crypto'
 import { candidateRepo, migrate } from '../db/repos'
 import { selectIncrementalCandidates } from '../sampling/selectIncrementalCandidates'
 import {
-  executeSelectedCandidates,
+  executeSelectedCandidatesDetailed,
   filterCandidatesByServerIds,
   getCandidateFilters,
   runDiscoveryPhase,
@@ -41,16 +41,22 @@ export async function runIncremental(ctx: PipelineContext): Promise<PipelineSumm
     }
   }
 
-  const sampledAt = ctx.now?.() ?? new Date().toISOString()
-
-  candidateRepo.markIncrementalSampled(
-    ctx.db,
-    selected.map((candidate) => candidate.candidateId),
-    sampledAt,
-  )
-
-  return executeSelectedCandidates(
+  const execution = await executeSelectedCandidatesDetailed(
     ctx,
     selected.map((candidate) => candidate.candidateId),
   )
+
+  if (execution.successfulCandidateIds.length > 0) {
+    candidateRepo.markIncrementalSampled(
+      ctx.db,
+      execution.successfulCandidateIds,
+      ctx.now?.() ?? new Date().toISOString(),
+    )
+  }
+
+  return {
+    selectedCandidates: execution.selectedCandidates,
+    parsedSuccesses: execution.parsedSuccesses,
+    parsedFailures: execution.parsedFailures,
+  }
 }

@@ -224,4 +224,44 @@ describe('runIncremental', () => {
     expect(summary.selectedCandidates).toBe(1)
     expect(parseResultRepo.listAll(db).map((row) => row.candidateId)).toEqual(['new-opsh'])
   })
+
+  it('leaves incremental failures eligible for retry instead of marking them as sampled', async () => {
+    const db = createInMemoryDb()
+    migrate(db)
+
+    candidateRepo.insertMany(db, [
+      seedCandidate('new-cao', 'CAO', '0.34', '2026-04-05T06:30:00.000Z'),
+    ])
+
+    const summary = await runIncremental({
+      db,
+      options: {
+        perBucket: 1,
+        since: '2026-04-05T06:00:00.000Z',
+      },
+      now: () => '2026-04-05T08:00:00.000Z',
+      discoverCandidates: async () => undefined,
+      fetchMorgue: async (_db, input): Promise<MorgueFetchRow> => ({
+        candidateId: input.candidate.candidateId,
+        morgueUrl: `https://example.test/${input.candidate.candidateId}.txt`,
+        fetchStatus: 'error',
+        httpStatus: 500,
+        localPath: null,
+        lastError: 'synthetic fetch failure',
+        fetchedAt: '2026-04-05T08:00:00.000Z',
+      }),
+    })
+
+    expect(summary).toEqual({
+      selectedCandidates: 1,
+      parsedSuccesses: 0,
+      parsedFailures: 1,
+    })
+    expect(
+      candidateRepo
+        .listIncrementalEligible(db, '2026-04-05T06:00:00.000Z')
+        .map((candidate) => candidate.candidateId),
+    ).toEqual(['new-cao'])
+    expect(candidateRepo.get(db, 'new-cao')?.sampledIncrementalAt).toBeNull()
+  })
 })

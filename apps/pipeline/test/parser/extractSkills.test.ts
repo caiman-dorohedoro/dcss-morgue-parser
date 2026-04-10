@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { extractSkills } from '../../src/parser/extractSkills'
+import { extractSkills } from '../../../../packages/parser/src/index'
 
 function loadFixture(name: string) {
   return readFileSync(

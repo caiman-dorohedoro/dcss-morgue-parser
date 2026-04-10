@@ -1,5 +1,7 @@
-import { splitSections } from '../../../../packages/parser/src/splitSections'
-import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/types'
+import {
+  splitSections,
+  type ParsedMorgueTextRecord,
+} from '../../../../packages/parser/src/index'
 
 const EQUIPPED_STATE_PATTERN = /\((worn|melded|haunted|installed)\)/
 const ROLE_LINE_PATTERN = /^[^\n]*\(([^()]+)\)\s+Turns:/m

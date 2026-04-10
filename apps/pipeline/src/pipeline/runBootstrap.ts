@@ -28,6 +28,11 @@ export type PipelineSummary = {
   parsedFailures: number
 }
 
+type ExecuteSelectedCandidatesDetailedResult = PipelineSummary & {
+  successfulCandidateIds: string[]
+  failedCandidateIds: string[]
+}
+
 export type PipelineOptions = {
   perBucket: number
   since?: string
@@ -231,6 +236,16 @@ export async function executeSelectedCandidates(
   ctx: PipelineContext,
   selectedCandidateIds: string[],
 ): Promise<PipelineSummary> {
+  const { successfulCandidateIds: _successfulCandidateIds, failedCandidateIds: _failedCandidateIds, ...summary } =
+    await executeSelectedCandidatesDetailed(ctx, selectedCandidateIds)
+
+  return summary
+}
+
+export async function executeSelectedCandidatesDetailed(
+  ctx: PipelineContext,
+  selectedCandidateIds: string[],
+): Promise<ExecuteSelectedCandidatesDetailedResult> {
   const fetchMorgue = ctx.fetchMorgue ?? defaultFetchMorgue
   const parseMorgue = ctx.parseMorgue ?? defaultParseMorgue
   const readMorgueText =
@@ -258,7 +273,7 @@ export async function executeSelectedCandidates(
   async function processCandidate(
     candidate: CandidateGame,
     index: number,
-  ): Promise<{ success: boolean }> {
+  ): Promise<{ candidateId: string; success: boolean }> {
     ctx.log?.(
       `[candidate ${index + 1}/${orderedCandidates.length}] ${candidate.serverId}/${candidate.version} ${candidate.playerName} ended ${candidate.endedAt}`,
     )
@@ -278,7 +293,10 @@ export async function executeSelectedCandidates(
         failureDetail: fetchRow.lastError ?? fetchRow.fetchStatus,
         parsedAt: getNow(ctx),
       })
-      return { success: false }
+      return {
+        candidateId: candidate.candidateId,
+        success: false,
+      }
     }
 
     ctx.log?.(`[fetch] success ${candidate.playerName}: ${fetchRow.morgueUrl}`)
@@ -302,7 +320,10 @@ export async function executeSelectedCandidates(
         parsedJson: result.record,
         parsedAt: getNow(ctx),
       })
-      return { success: true }
+      return {
+        candidateId: candidate.candidateId,
+        success: true,
+      }
     }
 
     ctx.log?.(
@@ -314,19 +335,24 @@ export async function executeSelectedCandidates(
       failureDetail: result.failure.detail,
       parsedAt: getNow(ctx),
     })
-    return { success: false }
+    return {
+      candidateId: candidate.candidateId,
+      success: false,
+    }
   }
 
   const workerResults = await Promise.all(
     [...candidatesByHost.values()].map(async (hostCandidates) => {
       let successes = 0
       let failures = 0
+      const processed: Array<{ candidateId: string; success: boolean }> = []
 
       for (const candidate of hostCandidates) {
         const result = await processCandidate(
           candidate,
           candidateIndex.get(candidate.candidateId) ?? 0,
         )
+        processed.push(result)
         if (result.success) {
           successes += 1
         } else {
@@ -334,17 +360,25 @@ export async function executeSelectedCandidates(
         }
       }
 
-      return { successes, failures }
+      return { successes, failures, processed }
     }),
   )
 
   const parsedSuccesses = workerResults.reduce((sum, result) => sum + result.successes, 0)
   const parsedFailures = workerResults.reduce((sum, result) => sum + result.failures, 0)
+  const successfulCandidateIds = workerResults.flatMap((result) =>
+    result.processed.filter((processed) => processed.success).map((processed) => processed.candidateId),
+  )
+  const failedCandidateIds = workerResults.flatMap((result) =>
+    result.processed.filter((processed) => !processed.success).map((processed) => processed.candidateId),
+  )
 
   return {
     selectedCandidates: orderedCandidates.length,
     parsedSuccesses,
     parsedFailures,
+    successfulCandidateIds,
+    failedCandidateIds,
   }
 }
 
@@ -393,16 +427,22 @@ export async function runBootstrap(ctx: PipelineContext): Promise<PipelineSummar
     }
   }
 
-  const sampledAt = getNow(ctx)
-
-  candidateRepo.markBootstrapSampled(
-    ctx.db,
-    selected.map((candidate) => candidate.candidateId),
-    sampledAt,
-  )
-
-  return executeSelectedCandidates(
+  const execution = await executeSelectedCandidatesDetailed(
     ctx,
     selected.map((candidate) => candidate.candidateId),
   )
+
+  if (execution.successfulCandidateIds.length > 0) {
+    candidateRepo.markBootstrapSampled(
+      ctx.db,
+      execution.successfulCandidateIds,
+      getNow(ctx),
+    )
+  }
+
+  return {
+    selectedCandidates: execution.selectedCandidates,
+    parsedSuccesses: execution.parsedSuccesses,
+    parsedFailures: execution.parsedFailures,
+  }
 }

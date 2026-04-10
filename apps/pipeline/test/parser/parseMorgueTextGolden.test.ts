@@ -1,8 +1,10 @@
 import { readFileSync, readdirSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { parseMorgueText } from '../../../../packages/parser/src/index'
-import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/types'
+import {
+  parseMorgueText,
+  type ParsedMorgueTextRecord,
+} from '../../../../packages/parser/src/index'
 
 function loadMorgueFixture(directory: 'focused' | 'full', name: string) {
   return readFileSync(

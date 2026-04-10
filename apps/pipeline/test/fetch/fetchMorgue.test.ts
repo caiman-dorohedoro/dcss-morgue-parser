@@ -29,7 +29,7 @@ function seedCandidate(candidateId: string): CandidateGame {
 }
 
 describe('fetchMorgue', () => {
-  it('stores 404s once and returns cached misses', async () => {
+  it('retries 404 responses on later attempts instead of treating them as terminal cache hits', async () => {
     const db = createInMemoryDb()
     migrate(db)
     const rootDir = await mkdtemp(path.join(os.tmpdir(), 'dcss-morgue-'))
@@ -59,7 +59,7 @@ describe('fetchMorgue', () => {
 
     expect(first.fetchStatus).toBe('not_found')
     expect(second.fetchStatus).toBe('not_found')
-    expect(callCount).toBe(1)
+    expect(callCount).toBe(2)
   })
 
   it('writes successful morgues to disk', async () => {

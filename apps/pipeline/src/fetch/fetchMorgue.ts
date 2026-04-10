@@ -33,7 +33,7 @@ export async function fetchMorgue(
 ): Promise<MorgueFetchRow> {
   const cached = morgueFetchRepo.get(db, input.candidate.candidateId)
 
-  if (cached && (cached.fetchStatus === 'success' || cached.fetchStatus === 'not_found')) {
+  if (cached && cached.fetchStatus === 'success') {
     return cached
   }
 
@@ -43,9 +43,7 @@ export async function fetchMorgue(
   const fetchImpl = input.fetchImpl ?? fetch
 
   try {
-    const response = await fetchImpl(morgueUrl, {
-      signal: AbortSignal.timeout(5000),
-    })
+    const response = await fetchImpl(morgueUrl)
 
     if (response.status === 404) {
       const row: MorgueFetchRow = {

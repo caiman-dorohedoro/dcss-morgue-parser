@@ -1,7 +1,10 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { canonicalizeSpellNames, extractSpells } from '../../src/parser/extractSpells'
+import {
+  canonicalizeSpellNames,
+  extractSpells,
+} from '../../../../packages/parser/src/index'
 
 function loadFixture(name: string) {
   return readFileSync(

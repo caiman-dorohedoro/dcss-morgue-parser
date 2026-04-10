@@ -12,8 +12,13 @@ export { ParseFailure, validateStrict } from './validateStrict'
 export type {
   ArtifactKind,
   BaseStatsSnapshot,
+  EquipmentAshenzariCurse,
+  EquipmentBooleanPropertyKey,
   EquipmentEquipState,
+  EquipmentGizmoEffect,
   EquipmentItemSnapshot,
+  EquipmentNamedEffect,
+  EquipmentNumericPropertyKey,
   EquipmentObjectClass,
   EquipmentPropertyBag,
   EquipmentSnapshot,
@@ -29,3 +34,4 @@ export type {
   SkillsSnapshot,
   SpellSnapshot,
 } from './types'
+export type { SectionMap } from './splitSections'
