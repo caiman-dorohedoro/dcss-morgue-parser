@@ -7,6 +7,7 @@ export { extractMutations } from './extractMutations'
 export { canonicalizeSpellNames, extractSpells } from './extractSpells'
 export { extractSkills } from './extractSkills'
 export { parseMorgueText } from './parseMorgueText'
+export { parseOrderedSkillKeys, SKILL_DISPLAY_LABELS } from './skillMetadata'
 export { splitSections } from './splitSections'
 export { ParseFailure, validateStrict } from './validateStrict'
 export type {

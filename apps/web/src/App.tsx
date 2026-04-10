@@ -10,6 +10,8 @@ import {
 import { ArrowDown, ArrowUp, Check, ChevronRight, Copy } from 'lucide-react'
 import {
   parseMorgueText,
+  parseOrderedSkillKeys,
+  SKILL_DISPLAY_LABELS,
   type EquipmentItemSnapshot,
   type MutationEntrySnapshot,
   type ParsedMorgueTextRecord,
@@ -25,74 +27,6 @@ type EquipmentGroup = {
 
 const MORGUE_INPUT_STORAGE_KEY = 'dcss-morgue-viewer.raw-morgue'
 const MORGUE_PERSISTENCE_STORAGE_KEY = 'dcss-morgue-viewer.persist-raw-morgue'
-
-const SKILL_LABELS: Record<keyof SkillLevelsSnapshot, string> = {
-  fighting: 'Fighting',
-  macesFlails: 'Maces & Flails',
-  axes: 'Axes',
-  polearms: 'Polearms',
-  staves: 'Staves',
-  unarmedCombat: 'Unarmed',
-  throwing: 'Throwing',
-  shortBlades: 'Short Blades',
-  longBlades: 'Long Blades',
-  rangedWeapons: 'Ranged',
-  armour: 'Armour',
-  dodging: 'Dodging',
-  shields: 'Shields',
-  stealth: 'Stealth',
-  spellcasting: 'Spellcasting',
-  conjurations: 'Conjurations',
-  hexes: 'Hexes',
-  summonings: 'Summonings',
-  necromancy: 'Necromancy',
-  forgecraft: 'Forgecraft',
-  translocations: 'Translocations',
-  transmutations: 'Transmutations',
-  alchemy: 'Alchemy',
-  fireMagic: 'Fire',
-  iceMagic: 'Ice',
-  airMagic: 'Air',
-  earthMagic: 'Earth',
-  poisonMagic: 'Poison',
-  invocations: 'Invocations',
-  evocations: 'Evocations',
-  shapeshifting: 'Shapeshifting',
-}
-
-const SKILL_NAME_LOOKUP = {
-  fighting: 'fighting',
-  'maces & flails': 'macesFlails',
-  axes: 'axes',
-  polearms: 'polearms',
-  staves: 'staves',
-  'unarmed combat': 'unarmedCombat',
-  throwing: 'throwing',
-  'short blades': 'shortBlades',
-  'long blades': 'longBlades',
-  'ranged weapons': 'rangedWeapons',
-  armour: 'armour',
-  dodging: 'dodging',
-  shields: 'shields',
-  stealth: 'stealth',
-  spellcasting: 'spellcasting',
-  conjurations: 'conjurations',
-  hexes: 'hexes',
-  summonings: 'summonings',
-  necromancy: 'necromancy',
-  forgecraft: 'forgecraft',
-  translocations: 'translocations',
-  transmutations: 'transmutations',
-  alchemy: 'alchemy',
-  'fire magic': 'fireMagic',
-  'ice magic': 'iceMagic',
-  'air magic': 'airMagic',
-  'earth magic': 'earthMagic',
-  'poison magic': 'poisonMagic',
-  invocations: 'invocations',
-  evocations: 'evocations',
-  shapeshifting: 'shapeshifting',
-} as const satisfies Record<string, keyof SkillLevelsSnapshot>
 
 function formatNullable(value: string | null | undefined) {
   if (!value || value === 'none') {
@@ -174,55 +108,20 @@ function buildEquipmentGroups(record: ParsedMorgueTextRecord): EquipmentGroup[] 
   ]
 }
 
-function getParsedSkillOrder(text: string): (keyof SkillLevelsSnapshot)[] {
-  const lines = text.split(/\r?\n/)
-  const startIndex = lines.findIndex((line) => line.trim() === 'Skills:')
-
-  if (startIndex === -1) {
-    return []
-  }
-
-  const ordered: (keyof SkillLevelsSnapshot)[] = []
-
-  for (let index = startIndex + 1; index < lines.length; index += 1) {
-    const trimmed = lines[index].trim()
-
-    if (!trimmed) {
-      break
-    }
-
-    const match = trimmed.match(
-      /^(?:[O+*-]\s+)?Level\s+[0-9]+(?:\.[0-9])?(?:\([0-9]+(?:\.[0-9])?\))?\s+(.+?)$/,
-    )
-
-    if (!match) {
-      break
-    }
-
-    const normalized = SKILL_NAME_LOOKUP[match[1].trim().toLowerCase() as keyof typeof SKILL_NAME_LOOKUP]
-
-    if (normalized && !ordered.includes(normalized)) {
-      ordered.push(normalized)
-    }
-  }
-
-  return ordered
-}
-
 function getTopSkills(
   skills: SkillLevelsSnapshot,
   effectiveSkills: SkillLevelsSnapshot,
   sourceText: string,
 ) {
-  const parsedOrder = getParsedSkillOrder(sourceText)
-  const fallbackOrder = (Object.keys(SKILL_LABELS) as (keyof SkillLevelsSnapshot)[]).filter(
+  const parsedOrder = parseOrderedSkillKeys(sourceText)
+  const fallbackOrder = (Object.keys(SKILL_DISPLAY_LABELS) as (keyof SkillLevelsSnapshot)[]).filter(
     (key) => !parsedOrder.includes(key),
   )
 
   return [...parsedOrder, ...fallbackOrder]
     .map((key) => ({
       key,
-      label: SKILL_LABELS[key],
+      label: SKILL_DISPLAY_LABELS[key],
       base: skills[key],
       effective: effectiveSkills[key],
     }))

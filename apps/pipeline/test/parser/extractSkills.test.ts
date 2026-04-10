@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { extractSkills } from 'dcss-morgue-parser'
+import { extractSkills, parseOrderedSkillKeys } from 'dcss-morgue-parser'
 
 function loadFixture(name: string) {
   return readFileSync(
@@ -104,5 +104,17 @@ describe('extractSkills', () => {
     expect(parsed.effectiveSkills.spellcasting).toBe(14.7)
     expect(parsed.skills.iceMagic).toBe(2)
     expect(parsed.effectiveSkills.iceMagic).toBe(2)
+  })
+
+  it('parses skill keys in morgue display order for UI consumers', () => {
+    expect(parseOrderedSkillKeys(loadFixture('reordered-sections.txt'))).toEqual([
+      'armour',
+      'dodging',
+      'shields',
+      'spellcasting',
+      'conjurations',
+      'fireMagic',
+      'hexes',
+    ])
   })
 })
