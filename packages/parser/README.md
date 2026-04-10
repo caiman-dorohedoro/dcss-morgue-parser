@@ -25,17 +25,6 @@ if (result.ok) {
 }
 ```
 
-The parser ships with a built-in canonical spell vocabulary. Callers can also supplement it:
-
-```ts
-parseMorgueText(morgueText, {
-  canonicalSpellNames: [
-    "Iskenderun's Mystic Blast",
-    'Construct Spike Launcher',
-  ],
-})
-```
-
 ## Output
 
 - `version`, `playerName`, `species`, `speciesVariant`, `background`, `god`
