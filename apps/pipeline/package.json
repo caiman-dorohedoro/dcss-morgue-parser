@@ -10,6 +10,7 @@
     "fixtures:meta": "tsx scripts/generateFixtureMetadata.ts",
     "backfill:parsed": "tsx scripts/backfillParsedData.ts",
     "review:compare": "tsx scripts/compareReviewPair.ts",
+    "review:fixtures": "tsx scripts/exportFixtureReview.ts",
     "bootstrap": "tsx src/cli.ts bootstrap",
     "incremental": "tsx src/cli.ts incremental",
     "audit": "tsx src/cli.ts audit"

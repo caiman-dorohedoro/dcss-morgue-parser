@@ -22,6 +22,7 @@ function normalizeInventoryEquippedName(segment: string): string {
     .replace(/^[A-Za-z]+:\s*/, '')
     .replace(/^[A-Za-z0-9]+ -\s*/, '')
     .replace(/^(?:a|an|the)\s+/i, '')
+    .replace(/^(?:cursed|uncursed)\s+/i, '')
     .replace(/^[+-]\d+\s+/, '')
     .replace(/\s+\{[^}]*\}\s*$/, '')
     .trim()

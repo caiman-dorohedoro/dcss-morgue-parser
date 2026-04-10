@@ -54,6 +54,31 @@ apps/pipeline/data/<run-name>/review/<SERVER>/<BUCKET>/<ENDED_AT>__<PLAYER>/
 
 The goal is simple: raw morgue and parsed JSON must be visible side by side.
 
+When the thing you want to review is the committed full-fixture contract rather
+than a fresh pipeline run, export the current full fixtures into the same kind
+of review bundle:
+
+```bash
+npm run review:fixtures -w apps/pipeline -- data/review-fixtures-current
+```
+
+That export intentionally copies:
+
+- `fixtures/morgue/full/*.txt`
+- `fixtures/morgue/expected/full-*.json`
+
+It does **not** regenerate `parsed.json` from the current parser during export.
+
+The bundle also includes:
+
+- `CHECKLIST.txt`
+- `index.tsv`
+- `auto-mismatches.txt`
+- `comparison-report.md`
+
+That gives you one place to manually compare raw morgues against the currently
+committed JSON contract before deciding whether a fixture is complete enough.
+
 ## 3. Read The Files Directly
 
 When trying to decide whether parsing is correct, prefer direct reading over an

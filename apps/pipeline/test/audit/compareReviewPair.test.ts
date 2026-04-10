@@ -159,6 +159,38 @@ J - a granite talisman: K - the serpent talisman of the Land of Plenty (worn) {r
     ])
   })
 
+  it('normalizes cursed Ashenzari equipment names before comparison', () => {
+    const rawText = `jkt the Maledictor (Poltergeist Enchanter)         Turns: 79786, Time: 05:59:18
+
+Inventory:
+
+Armour
+ B - the cursed +4 pair of gloves of Ashenzari's Affliction (worn) {Str+3 Dex+5 SInv, Cun, Self}
+ M - the cursed +1 kite shield of the Wild Blue Yonder (worn) {Reflect, rPois Dex+2 Slay-2 SInv, Fort, Melee}
+Jewellery
+ d - the cursed ring of Ashenzari's Prison (worn) {rC+, Cun, Comp}
+`
+
+    expect(extractInventoryEquippedNames(rawText)).toEqual([
+      'pair of gloves of Ashenzari\'s Affliction',
+      'kite shield of the Wild Blue Yonder',
+      'ring of Ashenzari\'s Prison',
+    ])
+
+    const result = compareReviewPair(
+      rawText,
+      buildRecord({
+        species: 'Poltergeist',
+        background: 'Enchanter',
+        shield: 'kite shield of the Wild Blue Yonder',
+        gloves: ['pair of gloves of Ashenzari\'s Affliction'],
+        rings: ['ring of Ashenzari\'s Prison'],
+      }),
+    )
+
+    expect(result.mismatches).toEqual([])
+  })
+
   it('treats installed gizmos as equipped inventory items during review', () => {
     const rawText = `nono3 the Warrior (Coglin Fighter)     Turns: 24147, Time: 00:57:59
 
