@@ -1,8 +1,8 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { candidateRepo, parseResultRepo } from '../db/repos'
+import type { PipelineContext } from '../pipeline/shared'
 import type { ParseResultRow } from '../types'
-import type { PipelineContext } from '../pipeline/runBootstrap'
 
 function selectAuditRows(results: ParseResultRow[], sampleSize: number): ParseResultRow[] {
   const successes = results.filter((result) => result.parseStatus === 'success')

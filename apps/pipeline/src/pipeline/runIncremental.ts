@@ -1,17 +1,18 @@
 import { randomUUID } from 'node:crypto'
-import { candidateRepo, migrate } from '../db/repos'
+import { candidateRepo } from '../db/repos'
 import { selectIncrementalCandidates } from '../sampling/selectIncrementalCandidates'
 import {
   executeSelectedCandidatesDetailed,
   filterCandidatesByServerIds,
   getCandidateFilters,
+  preparePipelineRun,
   runDiscoveryPhase,
   type PipelineContext,
   type PipelineSummary,
-} from './runBootstrap'
+} from './shared'
 
 export async function runIncremental(ctx: PipelineContext): Promise<PipelineSummary> {
-  migrate(ctx.db)
+  preparePipelineRun(ctx)
   await runDiscoveryPhase(ctx)
 
   const since = ctx.options.since ?? new Date(0).toISOString()

@@ -6,8 +6,9 @@ import {
 } from '../discovery/readHttpLogfileSlice'
 import { fetchMorgue as defaultFetchMorgue } from '../fetch/fetchMorgue'
 import { createPoliteFetch } from '../net/politeFetch'
-import { runBootstrap, type PipelineOptions, type PipelineSummary } from '../pipeline/runBootstrap'
+import { runBootstrap } from '../pipeline/runBootstrap'
 import { runIncremental } from '../pipeline/runIncremental'
+import type { PipelineOptions, PipelineSummary } from '../pipeline/shared'
 import type { ServerId } from '../types'
 import { ensureRuntimePaths, resetRuntimeDataDir, resolveRuntimePaths } from './paths'
 
@@ -80,7 +81,6 @@ async function withRuntime<T>(
   const db = openDb(paths.dbPath)
 
   try {
-    migrate(db)
     return await run({ paths, politeFetch, db, log })
   } finally {
     db.close()
@@ -167,8 +167,10 @@ export async function runIncrementalCommand(
 }
 
 export async function runAuditCommand(options: AuditCommandOptions): Promise<string> {
-  return withRuntime(options, async ({ db, paths }) =>
-    writeAuditBundle(
+  return withRuntime(options, async ({ db, paths }) => {
+    migrate(db)
+
+    return writeAuditBundle(
       {
         db,
         options: {
@@ -178,6 +180,6 @@ export async function runAuditCommand(options: AuditCommandOptions): Promise<str
         paths,
       },
       { sampleSize: options.sampleSize },
-    ),
-  )
+    )
+  })
 }

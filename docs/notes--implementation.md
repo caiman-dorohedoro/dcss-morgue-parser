@@ -105,3 +105,17 @@ That means the pipeline should:
 
 Those checks keep cache drift and bad URL resolution from silently turning into
 "successful" parsed rows.
+
+## Prefer Shared Helpers Over Reach-Through Imports
+
+As the project grew, a recurring maintenance problem was one module importing
+another module's private helpers just because they happened to live there first.
+
+The safer pattern is:
+
+- move cross-cutting pipeline helpers into a small shared module with an explicit surface
+- keep UI containers focused on state and layout by extracting view-only helpers and subcomponents
+- split parser data tables and property-bag helpers out of the main extractor before the file becomes the only safe place to edit
+
+This keeps ownership boundaries clearer and reduces the chance that a future
+change in one area accidentally drags unrelated behavior along with it.
