@@ -1,4 +1,4 @@
-import { mkdtemp, readFile } from 'node:fs/promises'
+import { mkdtemp, readFile, rm } from 'node:fs/promises'
 import os from 'node:os'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
@@ -80,5 +80,41 @@ describe('fetchMorgue', () => {
     expect(row.fetchStatus).toBe('success')
     expect(row.localPath).toBeTruthy()
     expect(await readFile(row.localPath!, 'utf8')).toBe('MORGUE DATA')
+  })
+
+  it('refetches when a cached success row points at a missing local file', async () => {
+    const db = createInMemoryDb()
+    migrate(db)
+    const rootDir = await mkdtemp(path.join(os.tmpdir(), 'dcss-morgue-'))
+    const candidate = seedCandidate('candidate-stale-success')
+    let callCount = 0
+
+    candidateRepo.insertMany(db, [candidate])
+
+    const first = await fetchMorgue(db, {
+      candidate,
+      rootDir,
+      fetchImpl: async () => {
+        callCount += 1
+        return new Response('FIRST', { status: 200 })
+      },
+      now: () => '2026-04-05T03:00:00.000Z',
+    })
+
+    await rm(first.localPath!, { force: true })
+
+    const second = await fetchMorgue(db, {
+      candidate,
+      rootDir,
+      fetchImpl: async () => {
+        callCount += 1
+        return new Response('SECOND', { status: 200 })
+      },
+      now: () => '2026-04-05T04:00:00.000Z',
+    })
+
+    expect(callCount).toBe(2)
+    expect(second.fetchStatus).toBe('success')
+    expect(await readFile(second.localPath!, 'utf8')).toBe('SECOND')
   })
 })

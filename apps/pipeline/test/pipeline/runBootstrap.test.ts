@@ -213,6 +213,46 @@ describe('runBootstrap', () => {
     expect(candidateRepo.get(db, 'cao34-a')?.sampledBootstrapAt).toBeNull()
   })
 
+  it('records morgue read failures without aborting the bootstrap run', async () => {
+    const db = createInMemoryDb()
+    migrate(db)
+    candidateRepo.insertMany(db, [seedCandidate('cao34-a', 'CAO', '0.34')])
+
+    const summary = await runBootstrap({
+      db,
+      options: { perBucket: 1 },
+      now: () => '2026-04-05T08:00:00.000Z',
+      discoverCandidates: async () => undefined,
+      fetchMorgue: async (_db, input): Promise<MorgueFetchRow> => ({
+        candidateId: input.candidate.candidateId,
+        morgueUrl: `https://example.test/${input.candidate.candidateId}.txt`,
+        fetchStatus: 'success',
+        httpStatus: 200,
+        localPath: '/virtual/missing-morgue.txt',
+        lastError: null,
+        fetchedAt: '2026-04-05T08:00:00.000Z',
+      }),
+      readMorgueText: async () => {
+        throw new Error('synthetic read failure')
+      },
+    })
+
+    expect(summary).toEqual({
+      selectedCandidates: 1,
+      parsedSuccesses: 0,
+      parsedFailures: 1,
+    })
+    expect(parseResultRepo.get(db, 'cao34-a')).toEqual({
+      candidateId: 'cao34-a',
+      parseStatus: 'failure',
+      parsedJson: null,
+      failureCode: 'morgue_read_failed',
+      failureDetail: 'synthetic read failure',
+      parsedAt: '2026-04-05T08:00:00.000Z',
+    })
+    expect(candidateRepo.get(db, 'cao34-a')?.sampledBootstrapAt).toBeNull()
+  })
+
   it('processes different hosts in parallel while keeping host-local sequencing', async () => {
     const db = createInMemoryDb()
     migrate(db)

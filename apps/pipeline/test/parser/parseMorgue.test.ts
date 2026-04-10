@@ -10,14 +10,14 @@ function loadFixture(directory: 'focused', name: string) {
   )
 }
 
-function fixtureMeta(): ParseMorgueMeta {
+function fixtureMeta(playerName = 'EnsignRicky'): ParseMorgueMeta {
   return {
     candidateId: 'candidate-1',
     serverId: 'CAO',
-    playerName: 'alice',
+    playerName,
     sourceVersionLabel: '0.34',
     endedAt: '2026-04-05T01:02:03.000Z',
-    morgueUrl: 'http://crawl.akrasiac.org/rawdata/alice/morgue-alice-20260405-010203.txt',
+    morgueUrl: `http://crawl.akrasiac.org/rawdata/${playerName}/morgue-${playerName}-20260405-010203.txt`,
   }
 }
 
@@ -52,7 +52,7 @@ describe('parseMorgue', () => {
 
   it('parses a trunk webtiles death morgue', () => {
     const result = parseMorgue(loadFixture('focused', 'cao-trunk-webtiles-death.txt'), {
-      ...fixtureMeta(),
+      ...fixtureMeta('dolemite99'),
       sourceVersionLabel: '0.35-a0',
     })
 
@@ -79,7 +79,10 @@ describe('parseMorgue', () => {
   })
 
   it('parses the modern spell library table and keeps school skills', () => {
-    const result = parseMorgue(loadFixture('focused', 'spell-library-table-full.txt'), fixtureMeta())
+    const result = parseMorgue(
+      loadFixture('focused', 'spell-library-table-full.txt'),
+      fixtureMeta('Sorcerer'),
+    )
 
     expect(result.ok).toBe(true)
     if (result.ok) {
@@ -116,7 +119,7 @@ describe('parseMorgue', () => {
 
   it('parses colored draconians as canonical Draconian', () => {
     const result = parseMorgue(loadFixture('focused', 'colored-draconian.txt'), {
-      ...fixtureMeta(),
+      ...fixtureMeta('WSnake'),
       sourceVersionLabel: '0.35-a0',
     })
 
@@ -131,5 +134,20 @@ describe('parseMorgue', () => {
       expect(result.record.sh).toBe(0)
       expect(result.record.spells).toEqual([])
     }
+  })
+
+  it('fails when the parsed morgue player name disagrees with candidate metadata', () => {
+    const result = parseMorgue(
+      loadFixture('focused', 'cao-0.34-webtiles-quit.txt'),
+      fixtureMeta('alice'),
+    )
+
+    expect(result).toEqual({
+      ok: false,
+      failure: {
+        reason: 'morgue_player_name_mismatch',
+        detail: 'parsed=EnsignRicky, candidate=alice',
+      },
+    })
   })
 })

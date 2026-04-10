@@ -17,6 +17,10 @@ export type ParseMorgueResult =
       failure: ParseFailureRecord
     }
 
+function normalizePlayerName(value: string): string {
+  return value.trim().toLowerCase()
+}
+
 export function parseMorgue(text: string, meta: ParseMorgueMeta): ParseMorgueResult {
   const parsed = parseMorgueText(text)
 
@@ -24,6 +28,19 @@ export function parseMorgue(text: string, meta: ParseMorgueMeta): ParseMorgueRes
     return {
       ok: false,
       failure: parsed.failure,
+    }
+  }
+
+  if (
+    parsed.record.playerName
+    && normalizePlayerName(parsed.record.playerName) !== normalizePlayerName(meta.playerName)
+  ) {
+    return {
+      ok: false,
+      failure: {
+        reason: 'morgue_player_name_mismatch',
+        detail: `parsed=${parsed.record.playerName}, candidate=${meta.playerName}`,
+      },
     }
   }
 

@@ -68,6 +68,10 @@ function getNow(ctx: PipelineContext): string {
   return ctx.now?.() ?? new Date().toISOString()
 }
 
+function formatUnexpectedError(error: unknown): string {
+  return error instanceof Error ? error.message : String(error)
+}
+
 export function filterCandidatesByServerIds(
   candidates: CandidateGame[],
   serverIds: readonly ServerId[] | undefined,
@@ -301,7 +305,25 @@ export async function executeSelectedCandidatesDetailed(
 
     ctx.log?.(`[fetch] success ${candidate.playerName}: ${fetchRow.morgueUrl}`)
 
-    const text = await readMorgueText(fetchRow.localPath)
+    let text: string
+
+    try {
+      text = await readMorgueText(fetchRow.localPath)
+    } catch (error) {
+      const detail = formatUnexpectedError(error)
+      ctx.log?.(`[read] failed ${candidate.playerName}: ${detail} (${fetchRow.localPath})`)
+      parseResultRepo.upsertFailure(ctx.db, {
+        candidateId: candidate.candidateId,
+        failureCode: 'morgue_read_failed',
+        failureDetail: detail,
+        parsedAt: getNow(ctx),
+      })
+      return {
+        candidateId: candidate.candidateId,
+        success: false,
+      }
+    }
+
     const result = parseMorgue(text, {
       candidateId: candidate.candidateId,
       serverId: candidate.serverId,

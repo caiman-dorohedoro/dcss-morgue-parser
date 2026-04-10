@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { access, mkdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { getServerManifest } from '../config/manifest'
 import { morgueFetchRepo } from '../db/repos'
@@ -33,8 +33,13 @@ export async function fetchMorgue(
 ): Promise<MorgueFetchRow> {
   const cached = morgueFetchRepo.get(db, input.candidate.candidateId)
 
-  if (cached && cached.fetchStatus === 'success') {
-    return cached
+  if (cached && cached.fetchStatus === 'success' && cached.localPath) {
+    try {
+      await access(cached.localPath)
+      return cached
+    } catch {
+      // Fall through and refetch when the success cache points at a missing file.
+    }
   }
 
   const manifest = getServerManifest(input.candidate.serverId)
