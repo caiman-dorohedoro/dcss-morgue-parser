@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { EquipmentItemSnapshot } from 'dcss-morgue-parser'
-import { summarizePropertyBag } from './viewerHelpers'
+import { summarizePropertyBag } from '../src/viewerHelpers'
 
 describe('summarizePropertyBag', () => {
   it('includes gizmo effect tags alongside ordinary properties', () => {
