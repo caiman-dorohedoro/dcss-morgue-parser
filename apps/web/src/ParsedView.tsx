@@ -46,7 +46,6 @@ export function ParsedView(props: { record: ParsedMorgueTextRecord; sourceText: 
 
       <section className="section-card">
         <div className="section-heading section-heading-stats">
-          <h3>Core stats</h3>
           <div className="stats-layout">
             <div className="stat-group">
               <Metric label="XL" value={record.xl} />
@@ -82,16 +81,9 @@ export function ParsedView(props: { record: ParsedMorgueTextRecord; sourceText: 
                     <div className="equipment-item" key={`${group.label}:${item.rawName}:${item.equipState}`}>
                       <div className="equipment-main">
                         <div className="equipment-title-row">
-                          <span
-                            aria-hidden={item.enchant === null}
-                            className={
-                              item.enchant === null
-                                ? 'equipment-prefix equipment-prefix-empty'
-                                : 'equipment-prefix'
-                            }
-                          >
-                            {item.enchant === null ? '+' : formatEnchantValue(item.enchant)}
-                          </span>
+                          {item.enchant !== null ? (
+                            <span className="equipment-prefix">{formatEnchantValue(item.enchant)}</span>
+                          ) : null}
                           <strong>{item.displayName}</strong>
                         </div>
                         <span className="equipment-meta">

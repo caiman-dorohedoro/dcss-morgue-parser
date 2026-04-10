@@ -52,6 +52,14 @@ export function summarizePropertyBag(item: EquipmentItemSnapshot) {
     segments.push(...flags)
   }
 
+  if (item.gizmoEffects && item.gizmoEffects.length > 0) {
+    segments.push(...item.gizmoEffects)
+  }
+
+  if (item.namedEffects && item.namedEffects.length > 0) {
+    segments.push(...item.namedEffects)
+  }
+
   if (item.properties.opaqueTokens.length > 0) {
     segments.push(...item.properties.opaqueTokens)
   }

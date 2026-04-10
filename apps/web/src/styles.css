@@ -410,10 +410,6 @@ button {
   overflow-y: hidden;
 }
 
-.section-heading-stats h3 {
-  flex: 0 0 auto;
-}
-
 .section-heading p,
 .muted-copy,
 .empty-state p,
@@ -534,10 +530,9 @@ button {
 }
 
 .equipment-title-row {
-  display: grid;
-  grid-template-columns: 3.5ch minmax(0, 1fr);
+  display: flex;
   align-items: baseline;
-  column-gap: 8px;
+  gap: 8px;
   min-width: 0;
 }
 
@@ -567,6 +562,7 @@ button {
 }
 
 .equipment-prefix {
+  flex: 0 0 auto;
   color: var(--accent-deep);
   font-family: "SFMono-Regular", "JetBrains Mono", "Consolas", monospace;
   font-size: 0.82rem;
@@ -575,10 +571,6 @@ button {
   line-height: 1.3;
   text-align: right;
   white-space: pre;
-}
-
-.equipment-prefix-empty {
-  visibility: hidden;
 }
 
 .tag-row {
