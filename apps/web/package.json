@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "parser:build": "npm run build -w dcss-morgue-parser",
+    "parser:build": "node ./scripts/build-local-parser-if-available.mjs",
     "predev": "npm run parser:build",
     "dev": "vite",
     "pretypecheck": "npm run parser:build",
