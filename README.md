@@ -1,60 +1,129 @@
 # dcss-morgue-parser
 
-Parses DCSS morgue text into structured JSON. Works in Node.js and browsers.
+Monorepo for a Dungeon Crawl Stone Soup morgue parser and the collection pipeline used to validate it against real public-server samples.
 
-## Usage
+This repository is organized so that:
 
-```bash
-npm install dcss-morgue-parser
+- `packages/parser` can become the publishable npm package
+- `apps/pipeline` can keep collecting, sampling, and reviewing real morgues
+- `apps/web` can provide a lightweight local viewer for pasted morgues
+- `fixtures/` can stay shared between parser development and pipeline QA
+
+## Repository Layout
+
+```text
+dcss-morgue-parser/
+  README.md
+  AGENTS.md
+  docs/
+  crawl/
+
+  packages/
+    parser/
+
+  apps/
+    pipeline/
+    web/
+
+  fixtures/
+    morgue/
+    xlog/
 ```
 
-```ts
-import { parseMorgueText } from 'dcss-morgue-parser'
+## What Lives Where
 
-const result = parseMorgueText(morgueText)
+- [`packages/parser`](./packages/parser/README.md)
+  - browser-safe parser library
+  - structured JSON output
+  - parser model and schema history
+- [`apps/pipeline`](./apps/pipeline/)
+  - xlog/logfile discovery
+  - raw morgue fetching
+  - stratified sampling and QA workflows
+- [`apps/web`](./apps/web/)
+  - local split-view parser UI
+  - pasted/uploaded morgue input on the left
+  - compact structured output on the right
+- [`fixtures/morgue`](./fixtures/morgue/)
+  - focused parser regressions
+  - full morgue goldens
+  - expected JSON snapshots prefixed with `focused-` or `full-`
+- [`docs`](./docs/meta--catalog.md)
+  - project-level provenance, QA workflow, and maintenance strategy docs
+- `crawl/`
+  - optional git submodule pointing at the upstream Crawl source tree
+  - useful when parser debugging needs confirmation from the game source
+  - not required for normal parser builds, tests, or pipeline runs
 
-if (result.ok) {
-  console.log(result.record) // species, background, god, skills, equipment, spells, mutations, etc.
-} else {
-  console.error(result.failure.reason)
-}
-```
+## Quick Start
 
-See [packages/parser README](./packages/parser/README.md) for full API details.
-
-## Structure
-
-| Path | Description |
-|------|-------------|
-| [`packages/parser`](./packages/parser/README.md) | Publishable parser library |
-| [`apps/pipeline`](./apps/pipeline/) | QA pipeline: collects and samples morgues from public servers |
-| [`apps/web`](./apps/web/) | Local viewer: paste a morgue, see parsed output |
-| [`fixtures/`](./fixtures/) | Test fixtures |
-| [`docs/`](./docs/meta--catalog.md) | Project docs |
-| `crawl/` | Upstream Crawl source submodule (optional) |
-
-## Development
+Install workspace dependencies:
 
 ```bash
 npm install
-npm test          # tests
-npm run build     # build parser
-npm run typecheck # typecheck
-npm run web:dev   # local viewer
 ```
 
-### QA sample collection
-
-Collect and parse morgues from public DCSS servers:
+If you want the local Crawl source available for source-level parser debugging,
+initialize the optional submodule:
 
 ```bash
-npm run bootstrap -- --server CBRG,CDI,CXC,CAO,CBR2,CNC,CPO \
-  --per-bucket 10 --min-xl 10 --data-dir ./data/sample --fresh --verbose
+git submodule update --init crawl
 ```
 
-The pipeline enforces a minimum 2-second delay between requests per host to avoid putting load on public servers. See [QA Workflow](./docs/workflow--qa.md) for all sampling options.
+This is only needed when you want to inspect upstream Crawl behavior directly.
 
-## Docs
+Typecheck everything:
 
-- [Documentation Catalog](./docs/meta--catalog.md) — index of all project documents
-- [Parser Model](./packages/parser/docs/parser_model.md) — what the parser outputs and why
+```bash
+npm run typecheck
+```
+
+Run parser/pipeline tests:
+
+```bash
+npm test
+```
+
+Build the publishable parser package:
+
+```bash
+npm run build
+```
+
+Run the local morgue viewer:
+
+```bash
+npm run web:dev
+```
+
+The workspace apps import `dcss-morgue-parser` through the package entrypoint
+rather than reaching into `packages/parser/src` directly. The app-level `dev`,
+`build`, `typecheck`, `test`, and pipeline command scripts build the parser
+package first so local runs stay aligned with the published package boundary.
+
+Collect and parse a QA sample:
+
+```bash
+npm run bootstrap -- --server CBRG,CDI,CXC,CAO,CBR2,CNC,CPO --per-bucket 10 --min-xl 10 --data-dir ./data/bootstrap-stratified-xl10 --fresh --verbose --timeout-ms 30000
+```
+
+This workspace command runs inside `apps/pipeline`, so `--data-dir ./data/bootstrap-stratified-xl10` resolves to `apps/pipeline/data/bootstrap-stratified-xl10` from the repository root. The current active server ids are `CBRG`, `CNC`, `CDI`, `CXC`, `CBR2`, `CAO`, `LLD`, and `CPO`. This example uses a broader practical subset of `CBRG`, `CDI`, `CXC`, `CAO`, `CBR2`, `CNC`, and `CPO`, while intentionally skipping `LLD`; `CUE` is not part of the current active manifest. `--timeout-ms 30000` is an operational cushion for this geographically broader run, not a claim that `CXC` is intrinsically slower everywhere.
+
+For the full QA sampling flag set, see [docs/workflow--qa.md](./docs/workflow--qa.md). That document now covers deterministic vs random sampling, `--seed`, `--skip-first`, and xlog metadata filters such as `--species`, `--background`, and `--god`, including the `--god none` case for games that ended without a god.
+
+## Key Documents
+
+- [Documentation Catalog](./docs/meta--catalog.md)
+- [Parser Model](./packages/parser/docs/parser_model.md)
+- [Parser Design Changelog](./packages/parser/docs/parser_changelog.md)
+- [Pipeline Origin](./docs/origin--pipeline.md)
+- [Raw Morgue Collection](./docs/origin--raw-morgue-collection.md)
+- [QA Workflow](./docs/workflow--qa.md)
+- [Fixture Strategy](./docs/strategy--fixture.md)
+- [Implementation Notes](./docs/notes--implementation.md)
+
+## Notes worth preserving
+
+- most development was done in VS Code with the ChatGPT Codex extension. ChatGPT 5.4 with extra high thinking was the primary model used
+- the raw morgue acquisition and public-server sampling workflow was informed by the `dcss-stats` repository
+- public-server fetches used per-host politeness defaults: host concurrency `1`, queue interval cap `1`, and a minimum delay of `2000 ms` between requests; logfile discovery and morgue fetches shared the same host-level limit
