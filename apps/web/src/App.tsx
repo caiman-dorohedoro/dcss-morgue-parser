@@ -15,7 +15,7 @@ import {
   type ParsedMorgueTextRecord,
   type SkillLevelsSnapshot,
   type SpellSnapshot,
-} from '../../../packages/parser/src/index'
+} from 'dcss-morgue-parser'
 
 type EquipmentGroup = {
   label: string

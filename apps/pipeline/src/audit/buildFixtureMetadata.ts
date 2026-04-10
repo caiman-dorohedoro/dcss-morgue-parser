@@ -8,14 +8,14 @@ import {
   extractSkills,
   extractSpells,
   parseMorgueText,
-} from '../../../../packages/parser/src/index'
+} from 'dcss-morgue-parser'
 import type {
   EquipmentItemSnapshot,
   EquipmentSnapshot,
   MutationEntrySnapshot,
   SkillLevelsSnapshot,
   SpellSnapshot,
-} from '../../../../packages/parser/src/index'
+} from 'dcss-morgue-parser'
 
 export type FixtureDirectory = 'focused' | 'full'
 

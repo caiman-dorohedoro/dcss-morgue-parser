@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { extractEquipment } from '../../../../packages/parser/src/index'
+import { extractEquipment } from 'dcss-morgue-parser'
 import type { EquipmentPropertyBag } from '../../src/types'
 
 function loadFixture(directory: 'focused' | 'full', name: string) {

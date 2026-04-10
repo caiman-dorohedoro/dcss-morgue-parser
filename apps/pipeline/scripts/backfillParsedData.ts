@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import process from 'node:process'
-import { parseMorgueText } from '../../../packages/parser/src/index'
+import { parseMorgueText } from 'dcss-morgue-parser'
 import { migrate, openDb, parseResultRepo } from '../src/db/repos'
 import { parseMorgue } from '../src/parser/parseMorgue'
 import type { ServerId } from '../src/types'

@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import {
   parseMorgueText,
   type ParsedMorgueTextRecord,
-} from '../../../../packages/parser/src/index'
+} from 'dcss-morgue-parser'
 
 function loadMorgueFixture(directory: 'focused' | 'full', name: string) {
   return readFileSync(

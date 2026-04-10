@@ -5,7 +5,7 @@ import {
   compareReviewPair,
   formatReviewPairComparison,
 } from '../src/audit/compareReviewPair'
-import type { ParsedMorgueTextRecord } from '../../../packages/parser/src/types'
+import type { ParsedMorgueTextRecord } from 'dcss-morgue-parser'
 
 function resolveCaseDir(inputPath: string): string {
   const directPath = path.resolve(inputPath)

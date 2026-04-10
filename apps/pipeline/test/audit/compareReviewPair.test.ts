@@ -3,7 +3,7 @@ import {
   compareReviewPair,
   extractInventoryEquippedNames,
 } from '../../src/audit/compareReviewPair'
-import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/index'
+import type { ParsedMorgueTextRecord } from 'dcss-morgue-parser'
 
 function buildRecord(
   input: Partial<

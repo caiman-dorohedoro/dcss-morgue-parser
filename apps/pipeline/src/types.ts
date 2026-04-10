@@ -20,7 +20,7 @@ import type {
   SkillLevelsSnapshot,
   SkillsSnapshot,
   SpellSnapshot,
-} from '../../../packages/parser/src/index'
+} from 'dcss-morgue-parser'
 
 export type TargetVersion = '0.34' | 'trunk'
 

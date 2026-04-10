@@ -1,7 +1,7 @@
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { describe, expect, it } from 'vitest'
-import { extractBaseStats } from '../../../../packages/parser/src/index'
+import { extractBaseStats } from 'dcss-morgue-parser'
 
 function loadFixture(name: string) {
   return readFileSync(

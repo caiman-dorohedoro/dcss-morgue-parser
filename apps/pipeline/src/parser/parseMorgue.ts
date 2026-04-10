@@ -3,7 +3,7 @@ import type {
   ParsedMorgueRecord,
   ParseMorgueMetadata,
 } from '../types'
-import { parseMorgueText } from '../../../../packages/parser/src/index'
+import { parseMorgueText } from 'dcss-morgue-parser'
 
 export type ParseMorgueMeta = ParseMorgueMetadata
 

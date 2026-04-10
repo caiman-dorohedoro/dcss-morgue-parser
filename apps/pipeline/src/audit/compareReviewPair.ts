@@ -1,7 +1,7 @@
 import {
   splitSections,
   type ParsedMorgueTextRecord,
-} from '../../../../packages/parser/src/index'
+} from 'dcss-morgue-parser'
 
 const EQUIPPED_STATE_PATTERN = /\((worn|melded|haunted|installed)\)/
 const ROLE_LINE_PATTERN = /^[^\n]*\(([^()]+)\)\s+Turns:/m

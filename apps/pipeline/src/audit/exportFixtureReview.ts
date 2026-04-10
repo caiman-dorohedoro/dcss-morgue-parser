@@ -11,7 +11,7 @@ import {
   formatReviewPairComparison,
 } from './compareReviewPair'
 import { collectTestReferencedFixtures } from './buildFixtureMetadata'
-import type { ParsedMorgueTextRecord } from '../../../../packages/parser/src/index'
+import type { ParsedMorgueTextRecord } from 'dcss-morgue-parser'
 
 export type FixtureReviewCase = {
   fixtureName: string

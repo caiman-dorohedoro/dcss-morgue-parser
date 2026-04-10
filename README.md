@@ -96,6 +96,11 @@ Run the local morgue viewer:
 npm run web:dev
 ```
 
+The workspace apps import `dcss-morgue-parser` through the package entrypoint
+rather than reaching into `packages/parser/src` directly. The app-level `dev`,
+`build`, `typecheck`, `test`, and pipeline command scripts build the parser
+package first so local runs stay aligned with the published package boundary.
+
 Collect and parse a QA sample:
 
 ```bash

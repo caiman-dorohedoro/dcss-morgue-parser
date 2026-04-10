@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import {
   canonicalizeSpellNames,
   extractSpells,
-} from '../../../../packages/parser/src/index'
+} from 'dcss-morgue-parser'
 
 function loadFixture(name: string) {
   return readFileSync(
