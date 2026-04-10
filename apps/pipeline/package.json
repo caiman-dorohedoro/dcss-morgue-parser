@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "better-sqlite3": "^12.4.1",
-    "dcss-morgue-parser": "0.1.0",
+    "dcss-morgue-parser": "0.5.0",
     "p-queue": "^8.1.1"
   },
   "devDependencies": {
