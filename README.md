@@ -97,9 +97,11 @@ npm run web:dev
 ```
 
 The workspace apps import `dcss-morgue-parser` through the package entrypoint
-rather than reaching into `packages/parser/src` directly. The app-level `dev`,
-`build`, `typecheck`, `test`, and pipeline command scripts build the parser
-package first so local runs stay aligned with the published package boundary.
+rather than reaching into `packages/parser/src` directly. The root workspace
+viewer commands such as `npm run web:dev` and `npm run web:build` build the
+local parser package first so local runs stay aligned with the published
+package boundary, while `apps/web` itself stays runnable as a standalone app
+that consumes the published parser package.
 
 Collect and parse a QA sample:
 

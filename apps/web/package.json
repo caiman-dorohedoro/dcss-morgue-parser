@@ -3,12 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "parser:build": "node ./scripts/build-local-parser-if-available.mjs",
-    "predev": "npm run parser:build",
     "dev": "vite",
-    "pretypecheck": "npm run parser:build",
     "typecheck": "tsc --noEmit",
-    "prebuild": "npm run parser:build",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
   },
