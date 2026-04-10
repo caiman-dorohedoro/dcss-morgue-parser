@@ -91,3 +91,17 @@ That means:
 - avoid thin re-export wrappers that only mirror parser internals
 
 This keeps parser refactors local and makes it easier to change internals without touching pipeline and web imports everywhere.
+
+## Validate Discovery Metadata Against Morgues
+
+Xlog metadata is useful for finding candidate games, but the morgue itself is
+the authoritative final snapshot.
+
+That means the pipeline should:
+
+- reject parsed morgues whose player name disagrees with the candidate metadata
+- treat a cached fetch success as reusable only while its local file still exists
+- record read failures as candidate-level parse failures instead of aborting the whole run
+
+Those checks keep cache drift and bad URL resolution from silently turning into
+"successful" parsed rows.

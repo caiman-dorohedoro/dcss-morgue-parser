@@ -238,6 +238,23 @@ Recognized functional inscription tokens are excluded from `properties.opaqueTok
 
 ### Why
 
+## 14. Shared Skill Table Metadata
+
+### What changed
+
+The parser package now also exports shared skill-table helpers:
+
+- `parseOrderedSkillKeys(text)`
+- `SKILL_DISPLAY_LABELS`
+
+These helpers reuse the same skill-name mapping as `extractSkills()`.
+
+### Why
+
+The local web viewer previously kept its own skill label map and `Skills:`
+section parsing logic. That duplication made it too easy for the viewer to
+drift from the parser whenever Crawl added or renamed a skill row.
+
 The same `{...}` syntax in morgues can contain both item properties and player-added inscription commands such as `!w`, `=f`, and `@r3`. Those command tokens are not equipment properties and should not be mixed into downstream property bags.
 
 Free-form custom note text is still not fully separated from unknown property tokens, so `opaqueTokens` may continue to include strings that are really player notes.

@@ -1,7 +1,7 @@
 # Documentation Catalog
 
 Created: 2026-04-07  
-Last updated: 2026-04-08
+Last updated: 2026-04-10
 
 ## Purpose
 
@@ -71,3 +71,4 @@ Last updated: 2026-04-08
 
 - 2026-04-07: Converted the catalog to English, adopted prefix-first document naming for `docs/`, and aligned project-level file names to category-first topics.
 - 2026-04-08: Added `workflow--parser-debugging.md` as the dedicated manual inspection and parser debugging note.
+- 2026-04-10: Updated implementation and parser changelog notes to cover shared skill metadata and stricter pipeline morgue validation.
