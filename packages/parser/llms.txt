@@ -1,0 +1,20 @@
+# dcss-morgue-parser
+
+> Browser-safe DCSS morgue parser package. Start with the README for installation, then read the usage contract for the parse contract and field invariants.
+
+Important notes:
+
+- The normal entrypoint is `parseMorgueText(text, options?)`.
+- Always branch on `result.ok` before reading `result.record`.
+- `form` is a current-state snapshot resolved from `@:` first, then the equipped talisman, then overview prose.
+- Summary equipment slots such as `bodyArmour`, `shield`, `orb`, and `talisman` use `"none"` instead of `null`.
+
+## Start Here
+
+- [README](./README.md): installation, first usage example, package scope, and links to deeper docs.
+- [Parser usage contract](./docs/parser_usage.md): exact success and failure contract, field invariants, `form` resolution order, and common edge cases.
+- [Parser model](./docs/parser_model.md): full schema and Crawl-aligned explanation of how the parser turns morgue text into semantic fields.
+
+## Optional
+
+- [Parser changelog](./docs/parser_changelog.md): why the parser contract changed over time.

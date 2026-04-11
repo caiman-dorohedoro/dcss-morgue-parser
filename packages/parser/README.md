@@ -41,5 +41,6 @@ This package only parses morgue text. It does not fetch morgues, manage caches, 
 
 ## Docs
 
+- [LLM Index](./llms.txt) — shortest package-local index for LLM and agent consumers
 - [Parser Model](./docs/parser_model.md) — output schema reference
 - [Parser Usage Contract](./docs/parser_usage.md) — exact calling contract for agents and tooling

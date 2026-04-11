@@ -46,6 +46,7 @@ Last updated: 2026-04-10
 | `workflow--parser-debugging.md` | Manual debugging loop for reviewing exported raw/parsed pairs and classifying real parser issues | `/docs` |
 | `strategy--fixture.md` | Test and fixture maintenance strategy across focused regressions and full golden morgues | `/docs` |
 | `notes--implementation.md` | Engineering notes distilled from the earlier implementation plan | `/docs` |
+| `llms.txt` | Package-local LLM-facing index shipped with the parser npm tarball | `/packages/parser` |
 | `parser_model.md` | Current parser schema and Crawl-aligned model explanation | `/packages/parser/docs` |
 | `parser_usage.md` | Practical parser calling contract, field invariants, and edge-case guide | `/packages/parser/docs` |
 | `parser_changelog.md` | Schema and contract history for the parser package | `/packages/parser/docs` |
@@ -55,19 +56,21 @@ Last updated: 2026-04-10
 1. `README.md`
 2. `llms.txt`
 3. `packages/parser/README.md`
-4. `packages/parser/docs/parser_usage.md`
-5. `packages/parser/docs/parser_model.md`
-6. `packages/parser/docs/parser_changelog.md`
-7. `docs/origin--pipeline.md`
-8. `docs/origin--raw-morgue-collection.md`
-9. `docs/workflow--qa.md`
-10. `docs/workflow--parser-debugging.md`
-11. `docs/strategy--fixture.md`
-12. `docs/notes--implementation.md`
+4. `packages/parser/llms.txt`
+5. `packages/parser/docs/parser_usage.md`
+6. `packages/parser/docs/parser_model.md`
+7. `packages/parser/docs/parser_changelog.md`
+8. `docs/origin--pipeline.md`
+9. `docs/origin--raw-morgue-collection.md`
+10. `docs/workflow--qa.md`
+11. `docs/workflow--parser-debugging.md`
+12. `docs/strategy--fixture.md`
+13. `docs/notes--implementation.md`
 
 ## Status Notes
 
 - `packages/parser/docs/parser_usage.md`, `packages/parser/docs/parser_model.md`, and `packages/parser/docs/parser_changelog.md` are the parser package contract documents at different depths.
+- `packages/parser/llms.txt` is the package-local LLM entrypoint that ships inside the published parser tarball.
 - `llms.txt` is the shortest repo-level entrypoint for LLMs that need to find the parser contract quickly.
 - `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
 - `docs/workflow--parser-debugging.md` is the practical inspection loop to use after a sample has already been collected.
@@ -80,3 +83,4 @@ Last updated: 2026-04-10
 - 2026-04-10: Updated implementation and parser changelog notes to cover shared skill metadata and stricter pipeline morgue validation.
 - 2026-04-10: Expanded implementation notes with guidance on shared helper boundaries for pipeline, web viewer, and parser refactors.
 - 2026-04-10: Added `packages/parser/docs/parser_usage.md` and root `llms.txt` as the shortest LLM-facing parser contract entrypoints.
+- 2026-04-11: Added `packages/parser/llms.txt` to the canonical reading order and package inventory so the parser npm tarball carries its own LLM-facing index.

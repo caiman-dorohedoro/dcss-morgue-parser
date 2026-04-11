@@ -126,6 +126,43 @@ Code:
 
 - `src/extractBaseStats.ts`
 
+## Current Form
+
+`form` is the parser's best snapshot of the character's current end-of-game
+shape. It is not a full shapeshifting history and it is not restricted to the
+exact wording of one printed line.
+
+The parser resolves `form` in this order:
+
+1. current `@:` status text
+2. equipped talisman base type
+3. overview prose fallback
+
+This ordering matches Crawl semantics more closely than prose-only parsing.
+
+- `@:` is usually the most stable source because Crawl fills it from the active
+  form's long name
+- equipped talismans help recover canonical forms such as `dragon-form`,
+  `sphinx-form`, and `vampire-form` when the explicit status token is absent
+- overview prose is still useful, but it is less canonical and sometimes more
+  dynamic
+
+Examples of normalized outputs:
+
+- `dragon-form`
+- `sphinx-form`
+- `vampire-form`
+- `statue-form`
+- `eel hands`
+
+Non-`-form` labels are still valid when Crawl itself uses that wording for the
+active form. `eel hands` is the main example in current morgues.
+
+The talisman fallback is based on Crawl's item and form concepts, not only on
+free-form English prose. `protean talisman` is intentionally excluded from a
+direct fixed mapping because it is a transforming intermediary rather than a
+stable final form signal.
+
 ## Skills
 
 Skills live under two parallel objects:

@@ -151,6 +151,27 @@ Examples:
 - `spells` is always an array on success
 - `mutations` is always an array on success
 
+### Current form
+
+`form` is a nullable current-state snapshot, not a full shapeshifting history.
+
+When present, the parser resolves it in this order:
+
+- current `@:` status text
+- equipped talisman base type
+- overview prose fallback
+
+Examples of returned values include:
+
+- `dragon-form`
+- `sphinx-form`
+- `vampire-form`
+- `statue-form`
+- `eel hands`
+
+Treat this field as normalized parser output rather than a literal copy of one
+specific morgue line.
+
 ## Normalization Rules
 
 ### Species and background
@@ -298,6 +319,23 @@ Example:
   "displayName": "scarf of resistance"
 }
 ```
+
+### `form` may be inferred even when overview prose is absent
+
+Modern morgues often expose current form most clearly on the `@:` line, but
+some samples are more useful after a talisman-based fallback.
+
+For example, the parser may emit:
+
+```json
+{
+  "talisman": "dragon-coil talisman",
+  "form": "dragon-form"
+}
+```
+
+This is intentional. `form` is the parser's best current-form snapshot, while
+`talisman` is the equipped item summary.
 
 ## Lower-Level Exports
 
