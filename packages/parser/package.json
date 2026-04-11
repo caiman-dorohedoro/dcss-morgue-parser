@@ -1,6 +1,6 @@
 {
   "name": "dcss-morgue-parser",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Browser-safe Dungeon Crawl Stone Soup morgue parser that turns morgue text into structured JSON.",
   "type": "module",
   "main": "./dist/index.js",
