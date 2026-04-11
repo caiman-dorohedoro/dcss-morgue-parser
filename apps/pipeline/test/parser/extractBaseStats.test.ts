@@ -105,4 +105,23 @@ describe('extractBaseStats', () => {
       dexterity: 19,
     })
   })
+
+  it('prefers the title descriptor over current-form prose when the form line is not species data', () => {
+    const parsed = extractBaseStats(loadFixture('title-descriptor-overrides-form-line.txt'))
+
+    expect(parsed).toMatchObject({
+      version: '0.35-a0-264-ge5931b7edd',
+      species: 'Oni',
+      speciesVariant: null,
+      background: 'Monk',
+      god: 'Cheibriados',
+      xl: 25,
+      ac: 41,
+      ev: 14,
+      sh: 0,
+      strength: 52,
+      intelligence: 26,
+      dexterity: 26,
+    })
+  })
 })

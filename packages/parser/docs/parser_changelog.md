@@ -369,3 +369,39 @@ For randart rings and amulets:
 The generic placeholders hid the actual item identity in downstream UI consumers even though the parser had already preserved the true morgue name in `rawName`.
 
 Keeping `displayName` aligned with the real jewellery name makes randart accessories behave like other named randart items and removes the need for UI-specific workarounds.
+
+## 13.11. Species Descriptor Fallback Ignores Current-Form Prose
+
+### What changed
+
+`extractBaseStats` now tries character descriptors in this order:
+
+- `Began as ...`
+- title-line descriptor such as `(Oni Monk)`
+- current overview prose such as `You are a living statue of rough stone.`
+
+and returns the first descriptor that can be parsed as a real species/background pair.
+
+### Why
+
+Modern shapeshifting morgues can include overview prose that looks grammatically like a species line but is actually current-form text. The parser previously treated lines such as `You are a living statue of rough stone.` as the character descriptor and failed before it ever considered the title line.
+
+Trying all available descriptors in a stable order preserves real species/background data while still keeping the overview prose available for form parsing.
+
+## 13.12. Form Extraction Now Prefers `@:` and Equipped Talismans
+
+### What changed
+
+`extractForm` now resolves current form in this order:
+
+- current `@:` status text
+- equipped talisman base type
+- overview prose fallback
+
+It also recognizes non-`-form` status labels such as `eel hands`.
+
+### Why
+
+The most stable current-form signal in a morgue is usually the `@:` status line because Crawl populates it from `Form::get_long_name()`. Overview prose is still useful, but it is less canonical and in some cases more dynamic.
+
+Using the equipped talisman as a second-tier fallback lets the parser recover forms such as `dragon-form`, `sphinx-form`, and `vampire-form` even when the overview prose is absent or too loose to trust as the primary signal.

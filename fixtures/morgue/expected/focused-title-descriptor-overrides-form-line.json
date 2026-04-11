@@ -1,0 +1,515 @@
+{
+  "playerName": "caiman",
+  "version": "0.35-a0-264-ge5931b7edd",
+  "species": "Oni",
+  "speciesVariant": null,
+  "background": "Monk",
+  "god": "Cheibriados",
+  "xl": 25,
+  "ac": 41,
+  "ev": 14,
+  "sh": 0,
+  "strength": 52,
+  "intelligence": 26,
+  "dexterity": 26,
+  "bodyArmour": "swamp dragon scales",
+  "shield": "none",
+  "helmets": [
+    "hat of see invisible"
+  ],
+  "gloves": [],
+  "footwear": [],
+  "cloaks": [
+    "cloak of corrosion resistance"
+  ],
+  "orb": "none",
+  "amulets": [
+    "amulet of Vuxkeo"
+  ],
+  "rings": [
+    "ring of protection from fire",
+    "ring \"Cojotzyts\""
+  ],
+  "talisman": "granite talisman",
+  "form": "statue-form",
+  "bodyArmourDetails": {
+    "rawName": "swamp dragon scales",
+    "displayName": "swamp dragon scales",
+    "objectClass": "armour",
+    "equipState": "melded",
+    "isCursed": false,
+    "baseType": "swamp dragon scales",
+    "enchant": 0,
+    "artifactKind": "normal",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "booleanProps": {
+        "rPois": true
+      },
+      "opaqueTokens": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {
+        "rPois": true
+      },
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    }
+  },
+  "helmetDetails": [
+    {
+      "rawName": "hat of see invisible",
+      "displayName": "hat of see invisible",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "hat",
+      "enchant": 2,
+      "artifactKind": "normal",
+      "ego": "see invisible",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "booleanProps": {
+          "SInv": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {
+          "SInv": true
+        },
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "cloakDetails": [
+    {
+      "rawName": "cloak of corrosion resistance",
+      "displayName": "cloak of corrosion resistance",
+      "objectClass": "armour",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "cloak",
+      "enchant": 0,
+      "artifactKind": "normal",
+      "ego": "corrosion resistance",
+      "subtypeEffect": null,
+      "propertiesText": null,
+      "properties": {
+        "numeric": {},
+        "booleanProps": {
+          "rCorr": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {
+          "rCorr": true
+        },
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "amuletDetails": [
+    {
+      "rawName": "amulet of Vuxkeo",
+      "displayName": "amulet of Vuxkeo",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "amulet",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "Wildshape Regen+",
+      "properties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "Wildshape": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "Regen": 1
+        },
+        "booleanProps": {
+          "Wildshape": true
+        },
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "ringDetails": [
+    {
+      "rawName": "ring of protection from fire",
+      "displayName": "ring of protection from fire",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "normal",
+      "ego": null,
+      "subtypeEffect": "protection from fire",
+      "propertiesText": null,
+      "properties": {
+        "numeric": {
+          "rF": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {
+          "rF": 1
+        },
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      }
+    },
+    {
+      "rawName": "ring \"Cojotzyts\"",
+      "displayName": "ring \"Cojotzyts\"",
+      "objectClass": "jewellery",
+      "equipState": "worn",
+      "isCursed": false,
+      "baseType": "ring",
+      "enchant": null,
+      "artifactKind": "randart",
+      "ego": null,
+      "subtypeEffect": null,
+      "propertiesText": "rPois rC+ Will+",
+      "properties": {
+        "numeric": {
+          "rC": 1,
+          "Will": 1
+        },
+        "booleanProps": {
+          "rPois": true
+        },
+        "opaqueTokens": []
+      },
+      "intrinsicProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "egoProperties": {
+        "numeric": {},
+        "booleanProps": {},
+        "opaqueTokens": []
+      },
+      "artifactProperties": {
+        "numeric": {
+          "rC": 1,
+          "Will": 1
+        },
+        "booleanProps": {
+          "rPois": true
+        },
+        "opaqueTokens": []
+      }
+    }
+  ],
+  "talismanDetails": {
+    "rawName": "granite talisman",
+    "displayName": "granite talisman",
+    "objectClass": "talisman",
+    "equipState": "worn",
+    "isCursed": false,
+    "baseType": "granite talisman",
+    "enchant": null,
+    "artifactKind": "normal",
+    "ego": null,
+    "subtypeEffect": null,
+    "propertiesText": null,
+    "properties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "intrinsicProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "egoProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    },
+    "artifactProperties": {
+      "numeric": {},
+      "booleanProps": {},
+      "opaqueTokens": []
+    }
+  },
+  "skills": {
+    "fighting": 21,
+    "macesFlails": 21.8,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 5,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 0,
+    "dodging": 10,
+    "shields": 5.9,
+    "stealth": 2,
+    "spellcasting": 17.9,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 19.1,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 3,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 12,
+    "evocations": 0,
+    "shapeshifting": 20
+  },
+  "effectiveSkills": {
+    "fighting": 21,
+    "macesFlails": 21.8,
+    "axes": 0,
+    "polearms": 0,
+    "staves": 0,
+    "unarmedCombat": 0,
+    "throwing": 5,
+    "shortBlades": 0,
+    "longBlades": 0,
+    "rangedWeapons": 0,
+    "armour": 0,
+    "dodging": 10,
+    "shields": 5.9,
+    "stealth": 2,
+    "spellcasting": 17.9,
+    "conjurations": 0,
+    "hexes": 0,
+    "summonings": 0,
+    "necromancy": 0,
+    "forgecraft": 0,
+    "translocations": 19.1,
+    "transmutations": 0,
+    "alchemy": 0,
+    "fireMagic": 0,
+    "iceMagic": 0,
+    "airMagic": 3,
+    "earthMagic": 0,
+    "poisonMagic": 0,
+    "invocations": 12,
+    "evocations": 0,
+    "shapeshifting": 25
+  },
+  "spells": [
+    {
+      "name": "Apportation",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Lesser Beckoning",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Manifold Assault",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Vhi's Electric Charge",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Blink",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Passwall",
+      "failurePercent": 6,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Yara's Violent Unravelling",
+      "failurePercent": 50,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Gell's Gavotte",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": true
+    },
+    {
+      "name": "Teleport Other",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Passage of Golubria",
+      "failurePercent": 0,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Iskenderun's Mystic Blast",
+      "failurePercent": 1,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Maxwell's Capacitive Coupling",
+      "failurePercent": 100,
+      "castable": true,
+      "memorized": false
+    },
+    {
+      "name": "Shatter",
+      "failurePercent": 100,
+      "castable": true,
+      "memorized": false
+    }
+  ],
+  "mutations": [
+    {
+      "name": "powerful",
+      "level": null
+    },
+    {
+      "name": "torment resistance",
+      "level": 1
+    },
+    {
+      "name": "boosted hp",
+      "level": null
+    },
+    {
+      "name": "slow",
+      "level": null
+    },
+    {
+      "name": "reduced EV",
+      "level": null
+    },
+    {
+      "name": "large",
+      "level": null
+    },
+    {
+      "name": "unfitting armour",
+      "level": null
+    },
+    {
+      "name": "horns",
+      "level": 1
+    },
+    {
+      "name": "tough skin",
+      "level": 1,
+      "suppressed": true
+    },
+    {
+      "name": "double potion healing",
+      "level": null
+    },
+    {
+      "name": "drunken brawling",
+      "level": null
+    },
+    {
+      "name": "cold resistance",
+      "level": 1,
+      "suppressed": true
+    },
+    {
+      "name": "fire resistance",
+      "level": 1,
+      "suppressed": true
+    },
+    {
+      "name": "ephemeral shield",
+      "level": null
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+ Dungeon Crawl Stone Soup version 0.35-a0-264-ge5931b7edd (webtiles) character file.
+
+Game seed: 10463812052869719848
+
+62167 Rock077 the Brawler (level 14, -6/136 (137) HPs)
+             Began as a Troll Shapeshifter on Apr 10, 2026.
+             Was a High Priest of Beogh (penitent).
+             Mangled by a spriggan rider
+             ... wielding the +6 trident "Turchot" {heavy, rElec rN+}
+              (35 damage)
+             ... in the Necropolis.
+             The game lasted 00:44:46 (16159 turns).
+
+Rock077 the Brawler (Troll Shapeshifter)           Turns: 16159, Time: 00:44:46
+
+HP:   -6/136 (137)  AC:  6    Str: 35    XL:     14   Next: 63%
+MP:   0/13          EV: 11    Int:  6    God:    Beogh [*****.]
+Gold: 1867          SH:  0    Dex:  9    Spells: 13/13 levels left
+
+rFire   . . .  (100%)     - Eel hands
+rCold   + . .  (50%)    (offhand unavailable)
+rNeg    . . .  (100%)   a - +1 animal skin
+rPois   .      (100%)   x - +1 hat {SInv}
+rElec   +      (33%)    (no cloak)
+rCorr   .      (100%)   u - amulet of guardian spirit
+SInv    +               e - ring of protection from cold
+Will    +....           f - +6 ring of strength
+Stlth   +               q - eel talisman
+HPRegen 1.22/turn
+MPRegen 0.13/turn
+
+%: guardian spirit
+@: mighty, eel hands, on eeljolt cooldown, lightly drained
+A: eel punch, eeljolt, large, unfitting armour, (claws 3), regeneration 1,
+shaggy fur 1, tough skin 1
+a: Renounce Religion (0%)
+
+
+You were in the Necropolis.
+You worshipped Beogh.
+Beogh was demanding penance.
+You had electric eels for hands.
+
+Inventory:
+
+Hand Weapons
+ z - a -2 demon whip of venom
+Missiles
+ h - 25 poisoned darts (quivered)
+Armour
+ a - a +1 animal skin (worn)
+ x - a +1 hat of see invisible (worn)
+Jewellery
+ e - a ring of protection from cold (worn)
+ f - a +6 ring of strength (worn)
+ u - an amulet of guardian spirit (worn)
+Talismans
+ b - a quill talisman
+ q - an eel talisman (worn)
+
+
+   Skills:
+ * Level 8.9 Fighting
+ - Level 8.3 Dodging
+ + Level 19.7 Unarmed Combat
+ * Level 12.8 Shapeshifting
+
+
+You had 13 spell levels left.
+You didn't know any spells.
+Your spell library contained the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Kiss of Death            Conj/Necr      0%         2d5       45%         1
+ Shock                    Conj/Air       0%         1d3       45%         1
+ Maxwell's Capacitive Co  Air            0%         ∞         100%        8

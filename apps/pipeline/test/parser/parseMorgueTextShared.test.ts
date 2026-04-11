@@ -155,6 +155,23 @@ describe('parseMorgueText shared parser', () => {
     }
   })
 
+  it('extracts non-suffixed active talisman form labels from the status line', () => {
+    const result = parseMorgueText(loadFixture('eel-hands-current-form.txt'))
+
+    expect(result.ok).toBe(true)
+    if (result.ok) {
+      expect(result.record.species).toBe('Troll')
+      expect(result.record.background).toBe('Shapeshifter')
+      expect(result.record.form).toBe('eel hands')
+      expect(result.record.talisman).toBe('eel talisman')
+      expect(result.record.talismanDetails).toMatchObject({
+        objectClass: 'talisman',
+        baseType: 'eel talisman',
+        equipState: 'worn',
+      })
+    }
+  })
+
   it('preserves installed Coglin gizmos only when the morgue actually has one', () => {
     const gizmoResult = parseMorgueText(loadFixture('coglin-gizmo-installed-jingleheimer.txt'))
     const noGizmoResult = parseMorgueText(loadFixture('coglin-no-gizmo-disgorge.txt'))

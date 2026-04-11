@@ -1,0 +1,105 @@
+Dungeon Crawl Stone Soup version 0.35-a0-264-ge5931b7edd (webtiles) character file.
+
+caiman the Shatterer (Oni Monk)                    Turns: 50178, Time: 02:59:02
+
+Health: 361/361    AC: 41    Str: 52    XL:     25   Next: 39%
+Magic:  43/44      EV: 14    Int: 26    God:    Cheibriados [******]
+Gold:   2771       SH:  0    Dex: 26    Spells: 29/59 levels left
+
+rFire   + . .  (50%)    r - +8 giant spiked club (freeze)
+rCold   + . .  (50%)      [offhand occupied]
+rNeg    + . .  (50%)    X - melded +0 swamp dragon scales
+rPois   ∞      (0%)     A - +2 hat {SInv}
+rElec   +      (33%)    L - +0 cloak {rCorr}
+rCorr   +      (50%)    P - amulet of Vuxkeo {Wildshape Regen+}
+SInv    +               c - ring of protection from fire
+Will    +++..           t - ring "Cojotzyts" {rPois rC+ Will+}
+Stlth   +++             G - granite talisman
+HPRegen 1.60/turn
+MPRegen 0.29/turn
+
+%: no passive effects
+@: statue-form, studying 4 skills, very slow
+A: powerful, torment resistance 1, boosted hp, slow, reduced EV, large,
+unfitting armour, horns 1, (tough skin 1), double potion healing, drunken
+brawling, (cold resistance 1), (fire resistance 1), ephemeral shield
+}: 2/15 runes: decaying, gossamer
+a: Renounce Religion (0%), Bend Time (0%), Temporal Distortion (0%), Slouch
+(1%), Step From Time (7%)
+
+You are on level 2 of the Swamp.
+You worship Cheibriados.
+Cheibriados is exalted by your worship.
+You are a living statue of rough stone.
+
+Inventory:
+
+Hand Weapons
+ r - a +8 giant spiked club of freezing (weapon)
+Armour
+ A - a +2 hat of see invisible (worn)
+ L - a +0 cloak of corrosion resistance (worn)
+ O - a +2 kite shield of positive energy
+ Q - the +8 tower shield "Loimp" {Reflect, rN+ Will++}
+   (You bought it in a shop on level 3 of the Crypt)
+
+   rN+:       It protects you from negative energy.
+   Will++:    It greatly increases your willpower.
+
+   It cannot be enchanted further.
+ X - +0 swamp dragon scales (melded)
+Jewellery
+ c - a ring of protection from fire (worn)
+ t - the ring "Cojotzyts" (worn) {rPois rC+ Will+}
+   (You acquired it on level 1 of the Elven Halls)
+
+   [ring of protection from cold]
+
+   rPois:     It protects you from poison.
+   rC+:       It protects you from cold.
+   Will+:     It increases your willpower.
+ P - the amulet of Vuxkeo (worn) {Wildshape Regen+}
+   (You bought it in a shop on level 3 of the Crypt)
+
+   [amulet of wildshape]
+
+   Wildshape: It improves your skill with shapeshifting (+5).
+   Regen+:    It increases your rate of health regeneration.
+Talismans
+ k - a talisman of death
+ G - a granite talisman (worn)
+
+Skills:
+ Level 21.0 Fighting
+ Level 21.8 Maces & Flails
+ Level 5.0 Throwing
+ Level 10.0 Dodging
+ Level 2.0 Stealth
+ Level 5.9 Shields
+ Level 17.9 Spellcasting
+ Level 19.1 Translocations
+ Level 3.0 Air Magic
+ Level 12.0 Invocations
+ Level 20.0(25.0) Shapeshifting
+
+You have 29 spell levels left.
+You know the following spells:
+
+ Your Spells              Type           Power      Damage    Failure   Level
+a - Apportation           Tloc           100%       N/A       0%          1
+b - Lesser Beckoning      Tloc           100%       N/A       0%          2
+c - Manifold Assault      Tloc           44%        N/A       1%          7
+d - Vhi's Electric Charg  Tloc/Air       100%       N/A       1%          4
+e - Blink                 Tloc           100%       N/A       0%          2
+f - Passwall              Erth           23%        N/A       6%          3
+g - Yara's Violent Unrav  Hex/Alch       11%        3d6       50%         5
+h - Gell's Gavotte        Tloc           44%        2d(31-46) 1%          6
+
+Your spell library contains the following spells:
+
+ Spells                   Type           Power      Damage    Failure   Level
+ Teleport Other           Tloc           89%        N/A       0%          3
+ Passage of Golubria      Tloc           89%        N/A       0%          4
+ Iskenderun's Mystic Bla  Conj/Tloc      64%        2d13 (+2d71%          4
+ Maxwell's Capacitive Co  Air            19%        ∞         100%        8
+ Shatter                  Erth           11%        3d12*     100%        9

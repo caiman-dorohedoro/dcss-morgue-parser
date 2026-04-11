@@ -75,38 +75,62 @@ function parseDescriptor(descriptor: string, speciesNames: readonly string[]): {
   }
 }
 
-function getCharacterDescriptor(text: string): string {
-  const beganAsDescriptor = text.match(/^\s*Began as an? (.+?) on [A-Z][a-z]{2} \d{1,2}, \d{4}\.$/m)?.[1]
+function getCharacterDescriptors(text: string): string[] {
+  const descriptors = [
+    text.match(/^\s*Began as an? (.+?) on [A-Z][a-z]{2} \d{1,2}, \d{4}\.$/m)?.[1],
+    text.match(/^[^\n]*\(([^)]+)\)\s+Turns:/m)?.[1],
+    text.match(/You are an? (.+?)\./)?.[1],
+  ]
 
-  if (beganAsDescriptor) {
-    return beganAsDescriptor
+  return [
+    ...new Set(
+      descriptors
+        .map((descriptor) => descriptor?.trim())
+        .filter((descriptor): descriptor is string => Boolean(descriptor)),
+    ),
+  ]
+}
+
+function getParsedDescriptor(
+  text: string,
+  speciesNames: readonly string[],
+): {
+  species: string
+  speciesVariant: string | null
+  background: string | null
+} {
+  let lastError: Error | null = null
+
+  for (const descriptor of getCharacterDescriptors(text)) {
+    try {
+      return parseDescriptor(descriptor, speciesNames)
+    } catch (error) {
+      if (error instanceof Error) {
+        lastError = error
+        continue
+      }
+
+      throw error
+    }
   }
 
-  const directDescriptor = text.match(/You are an? (.+?)\./)?.[1]
-
-  if (directDescriptor) {
-    return directDescriptor
-  }
-
-  const titleDescriptor = text.match(/^[^\n]*\(([^)]+)\)\s+Turns:/m)?.[1]
-
-  if (titleDescriptor) {
-    return titleDescriptor
+  if (lastError) {
+    throw lastError
   }
 
   throw new Error('Could not find species line')
 }
 
 function parseSpecies(text: string, speciesNames: readonly string[]): string {
-  return parseDescriptor(getCharacterDescriptor(text), speciesNames).species
+  return getParsedDescriptor(text, speciesNames).species
 }
 
 function parseSpeciesVariant(text: string, speciesNames: readonly string[]): string | null {
-  return parseDescriptor(getCharacterDescriptor(text), speciesNames).speciesVariant
+  return getParsedDescriptor(text, speciesNames).speciesVariant
 }
 
 function parseBackground(text: string, speciesNames: readonly string[]): string | null {
-  return parseDescriptor(getCharacterDescriptor(text), speciesNames).background
+  return getParsedDescriptor(text, speciesNames).background
 }
 
 function parseGod(text: string): string | null {

@@ -9,10 +9,13 @@ import { ParseFailure, validateStrict } from './validateStrict'
 
 export function parseMorgueText(text: string, options: ParseMorgueTextOptions = {}): ParseMorgueTextResult {
   try {
+    const equipment = extractEquipment(text)
     const record = validateStrict({
       ...extractBaseStats(text, { speciesNames: options.speciesNames }),
-      ...extractEquipment(text),
-      ...extractForm(text),
+      ...equipment,
+      ...extractForm(text, {
+        equippedTalismanBaseType: equipment.talismanDetails?.baseType ?? null,
+      }),
       ...extractSkills(text),
       ...extractMutations(text),
       spells: extractSpells(text, {

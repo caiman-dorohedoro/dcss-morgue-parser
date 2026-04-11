@@ -65,6 +65,11 @@ const GOLDEN_CASES = [
     directory: 'focused',
     morgue: 'regalia-two-amulets.txt',
   },
+  {
+    name: 'title-descriptor-overrides-form-line',
+    directory: 'focused',
+    morgue: 'title-descriptor-overrides-form-line.txt',
+  },
 ] as const
 
 const FULL_GOLDEN_CASES = readdirSync(path.resolve(process.cwd(), '../../fixtures/morgue/full'))
