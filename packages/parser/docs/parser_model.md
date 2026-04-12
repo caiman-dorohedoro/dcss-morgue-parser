@@ -27,13 +27,15 @@ Because of that, the model prefers:
 
 ## Parse Pipeline
 
-`parseMorgueText()` builds a record from five extractors:
+`parseMorgueText()` builds a record from seven extractors:
 
 1. `extractBaseStats()`
 2. `extractEquipment()`
-3. `extractSkills()`
-4. `extractMutations()`
-5. `extractSpells()`
+3. `extractForm()`
+4. `extractSkills()`
+5. `extractMutations()`
+6. `extractSpells()`
+7. `extractGodHistory()`
 
 The combined row is then validated by `validateStrict()`.
 
@@ -107,6 +109,11 @@ Base stats are intentionally simple:
 - `speciesVariant`
 - `background`
 - `god`
+- `godPietyDisplay`
+- `godPietyRank`
+- `godOstracismPips`
+- `godStatus`
+- `godUnderPenance`
 - `xl`
 - `ac`
 - `ev`
@@ -121,10 +128,70 @@ Notes:
 - `species` is normalized to canonical species names
 - `speciesVariant` preserves extra descriptor detail such as `White Draconian`
 - `god` comes from the morgue header `God:` field and is `null` when the header is blank
+- `godPietyDisplay` preserves the raw header bracket token such as `****..`
+- `godPietyRank` counts `*` pips from the header when that display really means piety
+- `godOstracismPips` counts `X` pips from the same header display
+- `godStatus` preserves the current religion prose line such as `Vehumet was exalted by your worship.`
+- `godUnderPenance` is a convenience boolean derived from penance prose or penitent title text
+
+Important Crawl-aligned caveats:
+
+- Gozag does not use the normal header pip display, so `godPietyDisplay` and `godPietyRank` may both be `null` even when `god` is not
+- Xom's header pips are not ordinary piety rank, so the parser leaves `godPietyRank = null` there instead of pretending the stars are comparable
+- the star display is a piety bucket, not exact piety
+
+Relevant Crawl references:
+
+- `crawl/crawl-ref/source/output.cc`
+- `crawl/crawl-ref/source/religion.cc`
+- `crawl/crawl-ref/source/chardump.cc`
+- `crawl/crawl-ref/source/god-prayer.cc`
 
 Code:
 
 - `src/extractBaseStats.ts`
+
+## Religion Notes
+
+`godHistory` is a filtered structured view over religion-related entries in the
+`Notes` section. It is intentionally narrower than a full generic note parser.
+
+Each event stores:
+
+- `type`
+- `turn`
+- `place`
+- `god`
+- optional `pietyRank`
+
+Current event types:
+
+- `join`
+- `abandon`
+- `penance`
+- `forgiven`
+- `gift`
+- `piety_rank`
+
+Examples:
+
+- `Became a worshipper of Trog the Wrathful` -> `type: "join", god: "Trog"`
+- `Fell from the grace of Ignis` -> `type: "abandon", god: "Ignis"`
+- `Reached *** piety under Vehumet` -> `type: "piety_rank", god: "Vehumet", pietyRank: 3`
+- `Received a gift from Okawaru` -> `type: "gift", god: "Okawaru"`
+
+This is the parser layer that lets downstream tools detect conversions,
+abandonment, forgiveness, and milestone timing without re-parsing free-form
+note strings.
+
+Relevant Crawl references:
+
+- `crawl/crawl-ref/source/notes.cc`
+- `crawl/crawl-ref/source/notes.h`
+
+Code:
+
+- `src/extractGodHistory.ts`
 
 ## Current Form
 

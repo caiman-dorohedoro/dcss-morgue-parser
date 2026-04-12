@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Berserker",
   "god": "Trog",
+  "godPietyDisplay": "*****.",
+  "godPietyRank": 5,
+  "godOstracismPips": 0,
+  "godStatus": "Trog was extremely pleased with you.",
+  "godUnderPenance": false,
   "xl": 25,
   "ac": 41,
   "ev": 9,
@@ -213,8 +218,8 @@
       },
       "egoProperties": {
         "numeric": {
-          "rF": 1,
-          "rC": 1
+          "rC": 1,
+          "rF": 1
         },
         "booleanProps": {},
         "opaqueTokens": []
@@ -372,6 +377,169 @@
     {
       "name": "strong-willed",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "piety_rank",
+      "turn": 2342,
+      "place": "D:3",
+      "god": "Trog",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3832,
+      "place": "D:5",
+      "god": "Trog",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5575,
+      "place": "D:7",
+      "god": "Trog",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7641,
+      "place": "D:9",
+      "god": "Trog",
+      "pietyRank": 5
+    },
+    {
+      "type": "gift",
+      "turn": 15055,
+      "place": "Orc:1",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 15798,
+      "place": "Orc:2",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 17098,
+      "place": "Lair:5",
+      "god": "Trog"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 18604,
+      "place": "D:13",
+      "god": "Trog",
+      "pietyRank": 6
+    },
+    {
+      "type": "gift",
+      "turn": 20530,
+      "place": "D:14",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 23149,
+      "place": "Snake:2",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 24623,
+      "place": "Snake:4",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 25202,
+      "place": "Snake:4",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 26794,
+      "place": "Swamp:1",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 28290,
+      "place": "Swamp:4",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 30305,
+      "place": "Vaults:1",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 31692,
+      "place": "Vaults:2",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 33234,
+      "place": "Vaults:3",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 34583,
+      "place": "Vaults:4",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 36629,
+      "place": "Depths:1",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 38938,
+      "place": "Depths:3",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 42632,
+      "place": "Elf:1",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 44032,
+      "place": "Elf:2",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 45381,
+      "place": "Abyss:4",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 46475,
+      "place": "Elf:3",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 47187,
+      "place": "Elf:3",
+      "god": "Trog"
+    },
+    {
+      "type": "gift",
+      "turn": 48366,
+      "place": "Abyss:4",
+      "god": "Trog"
     }
   ]
 }

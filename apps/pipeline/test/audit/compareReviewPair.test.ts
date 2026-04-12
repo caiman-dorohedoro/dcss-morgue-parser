@@ -33,6 +33,11 @@ function buildRecord(
     speciesVariant: input.speciesVariant ?? null,
     background: input.background ?? 'Fighter',
     god: null,
+    godPietyDisplay: null,
+    godPietyRank: null,
+    godOstracismPips: 0,
+    godStatus: null,
+    godUnderPenance: false,
     xl: 1,
     ac: 0,
     ev: 0,
@@ -120,6 +125,7 @@ function buildRecord(
     },
     spells: [],
     mutations: [],
+    godHistory: [],
   }
 }
 

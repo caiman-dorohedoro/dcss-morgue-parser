@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Cinder Acolyte",
   "god": "Makhleb",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Makhleb was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 16,
   "ac": 15,
   "ev": 2,
@@ -673,6 +678,68 @@
     {
       "name": "accursed",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "abandon",
+      "turn": 15490,
+      "place": "Temple",
+      "god": "Ignis"
+    },
+    {
+      "type": "join",
+      "turn": 15490,
+      "place": "Temple",
+      "god": "Makhleb"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 16531,
+      "place": "Lair:5",
+      "god": "Makhleb",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 18387,
+      "place": "D:13",
+      "god": "Makhleb",
+      "pietyRank": 2
+    },
+    {
+      "type": "forgiven",
+      "turn": 19045,
+      "place": "D:12",
+      "god": "Ignis"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 19721,
+      "place": "D:12",
+      "god": "Makhleb",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 21249,
+      "place": "D:14",
+      "god": "Makhleb",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 23442,
+      "place": "Orc:2",
+      "god": "Makhleb",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 25325,
+      "place": "Snake:1",
+      "god": "Makhleb",
+      "pietyRank": 6
     }
   ]
 }

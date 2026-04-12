@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Hunter",
   "god": null,
+  "godPietyDisplay": null,
+  "godPietyRank": null,
+  "godOstracismPips": 0,
+  "godStatus": null,
+  "godUnderPenance": false,
   "xl": 1,
   "ac": 3,
   "ev": 11,
@@ -136,5 +141,6 @@
       "name": "+LOS",
       "level": null
     }
-  ]
+  ],
+  "godHistory": []
 }

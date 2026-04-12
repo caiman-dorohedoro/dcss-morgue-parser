@@ -1,4 +1,5 @@
 import { DEFAULT_SPECIES_NAMES } from './canonicalSpecies'
+import { canonicalizeGodName } from './canonicalGodNames'
 import type { BaseStatsSnapshot } from './types'
 
 const SORTED_SPECIES_NAMES = [...DEFAULT_SPECIES_NAMES].sort((left, right) => right.length - left.length)
@@ -144,7 +145,49 @@ function parseGod(text: string): string | null {
     .replace(/\s+\[[^\]]*\]\s*$/, '')
     .trim()
 
-  return god || null
+  return god ? canonicalizeGodName(god) : null
+}
+
+function parseGodPietyDisplay(text: string): string | null {
+  return text.match(/^.*\bGod:[ \t]*.*\[(.*?)\]\s*$/m)?.[1] ?? null
+}
+
+function parseGodPietyRank(text: string): number | null {
+  const god = parseGod(text)
+  const display = parseGodPietyDisplay(text)
+
+  if (!god || !display || god === 'Xom') {
+    return null
+  }
+
+  return (display.match(/\*/g) ?? []).length
+}
+
+function parseGodOstracismPips(text: string): number {
+  const display = parseGodPietyDisplay(text)
+
+  if (!display) {
+    return 0
+  }
+
+  return (display.match(/X/g) ?? []).length
+}
+
+function parseGodStatus(text: string): string | null {
+  const worshipLineStatus = text.match(/^You worshipped [^\n]+\.\n([^\n]+)$/m)?.[1]?.trim()
+
+  if (worshipLineStatus) {
+    return worshipLineStatus
+  }
+
+  return null
+}
+
+function parseGodUnderPenance(text: string): boolean {
+  const godStatus = parseGodStatus(text)
+
+  return (godStatus?.includes('demanding penance') ?? false)
+    || /\(penitent\)\.$/m.test(text)
 }
 
 function parsePrimaryStats(text: string) {
@@ -203,6 +246,11 @@ export function extractBaseStats(text: string, options?: ExtractBaseStatsOptions
     speciesVariant: parseSpeciesVariant(text, speciesNames),
     background: parseBackground(text, speciesNames),
     god: parseGod(text),
+    godPietyDisplay: parseGodPietyDisplay(text),
+    godPietyRank: parseGodPietyRank(text),
+    godOstracismPips: parseGodOstracismPips(text),
+    godStatus: parseGodStatus(text),
+    godUnderPenance: parseGodUnderPenance(text),
     ...parseDefensiveStats(text),
     ...parsePrimaryStats(text),
   }

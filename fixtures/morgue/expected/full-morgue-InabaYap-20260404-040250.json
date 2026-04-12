@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Berserker",
   "god": "Trog",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Trog was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 15,
   "ev": 87,
@@ -330,6 +335,43 @@
     {
       "name": "lucky",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "piety_rank",
+      "turn": 726,
+      "place": "D:2",
+      "god": "Trog",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 1384,
+      "place": "D:3",
+      "god": "Trog",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 4259,
+      "place": "D:6",
+      "god": "Trog",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6392,
+      "place": "D:7",
+      "god": "Trog",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 13474,
+      "place": "Lair:3",
+      "god": "Trog",
+      "pietyRank": 6
     }
   ]
 }

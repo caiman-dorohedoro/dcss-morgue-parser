@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Fighter",
   "god": "Jiyva",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Jiyva was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 17,
   "ac": 10,
   "ev": 12,
@@ -550,6 +555,56 @@
     {
       "name": "feed off suffering",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 177,
+      "place": "D:1",
+      "god": "Jiyva"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 177,
+      "place": "D:1",
+      "god": "Jiyva",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 965,
+      "place": "D:2",
+      "god": "Jiyva",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 2149,
+      "place": "D:4",
+      "god": "Jiyva",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 2647,
+      "place": "D:5",
+      "god": "Jiyva",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3289,
+      "place": "D:6",
+      "god": "Jiyva",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5180,
+      "place": "D:8",
+      "god": "Jiyva",
+      "pietyRank": 6
     }
   ]
 }

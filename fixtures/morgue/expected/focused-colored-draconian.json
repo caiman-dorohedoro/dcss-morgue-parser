@@ -5,6 +5,11 @@
   "speciesVariant": "White Draconian",
   "background": "Summoner",
   "god": "Ru",
+  "godPietyDisplay": "**....",
+  "godPietyRank": 2,
+  "godOstracismPips": 0,
+  "godStatus": null,
+  "godUnderPenance": false,
   "xl": 12,
   "ac": 11,
   "ev": 11,
@@ -368,5 +373,6 @@
       "name": "armoured tail",
       "level": 1
     }
-  ]
+  ],
+  "godHistory": []
 }

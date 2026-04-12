@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Berserker",
   "god": "Trog",
+  "godPietyDisplay": "****..",
+  "godPietyRank": 4,
+  "godOstracismPips": 0,
+  "godStatus": "Trog was greatly pleased with you.",
+  "godUnderPenance": false,
   "xl": 9,
   "ac": 14,
   "ev": 6,
@@ -285,5 +290,6 @@
       "name": "retaliatory headbutt",
       "level": null
     }
-  ]
+  ],
+  "godHistory": []
 }

@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Hexslinger",
   "god": "Fedhas",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Fedhas was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 23,
   "ac": 36,
   "ev": 31,
@@ -900,6 +905,56 @@
     {
       "name": "accursed",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 6103,
+      "place": "Temple",
+      "god": "Fedhas"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7636,
+      "place": "D:8",
+      "god": "Fedhas",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8853,
+      "place": "D:9",
+      "god": "Fedhas",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 9296,
+      "place": "D:9",
+      "god": "Fedhas",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10958,
+      "place": "Lair:1",
+      "god": "Fedhas",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 13892,
+      "place": "Lair:4",
+      "god": "Fedhas",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15447,
+      "place": "Lair:5",
+      "god": "Fedhas",
+      "pietyRank": 6
     }
   ]
 }

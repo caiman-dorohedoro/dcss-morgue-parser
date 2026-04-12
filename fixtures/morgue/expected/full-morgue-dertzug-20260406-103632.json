@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Hexslinger",
   "god": "Cheibriados",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Cheibriados was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 17,
   "ev": 69,
@@ -49,8 +54,8 @@
     "propertiesText": "Spirit, Regen++ MP+5",
     "properties": {
       "numeric": {
-        "MP": 5,
-        "Regen": 2
+        "Regen": 2,
+        "MP": 5
       },
       "booleanProps": {
         "Spirit": true
@@ -258,8 +263,8 @@
       },
       "egoProperties": {
         "numeric": {
-          "rF": 1,
-          "rC": 1
+          "rC": 1,
+          "rF": 1
         },
         "booleanProps": {},
         "opaqueTokens": []
@@ -1032,6 +1037,56 @@
     {
       "name": "wild magic",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 4950,
+      "place": "Temple",
+      "god": "Cheibriados"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5912,
+      "place": "D:6",
+      "god": "Cheibriados",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6420,
+      "place": "D:7",
+      "god": "Cheibriados",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7005,
+      "place": "D:8",
+      "god": "Cheibriados",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7276,
+      "place": "D:8",
+      "god": "Cheibriados",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8262,
+      "place": "D:9",
+      "god": "Cheibriados",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10365,
+      "place": "D:12",
+      "god": "Cheibriados",
+      "pietyRank": 6
     }
   ]
 }

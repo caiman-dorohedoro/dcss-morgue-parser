@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Monk",
   "god": "Cheibriados",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": null,
+  "godUnderPenance": false,
   "xl": 25,
   "ac": 41,
   "ev": 14,
@@ -511,5 +516,6 @@
       "name": "ephemeral shield",
       "level": null
     }
-  ]
+  ],
+  "godHistory": []
 }

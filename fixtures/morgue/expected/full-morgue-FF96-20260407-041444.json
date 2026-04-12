@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Fighter",
   "god": "Okawaru",
+  "godPietyDisplay": "*****.",
+  "godPietyRank": 5,
+  "godOstracismPips": 0,
+  "godStatus": "Okawaru was extremely pleased with you.",
+  "godUnderPenance": false,
   "xl": 24,
   "ac": 37,
   "ev": 21,
@@ -768,6 +773,242 @@
     {
       "name": "inhibited regeneration",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 5783,
+      "place": "D:7",
+      "god": "Okawaru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5924,
+      "place": "D:7",
+      "god": "Okawaru",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6594,
+      "place": "D:8",
+      "god": "Okawaru",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6630,
+      "place": "D:8",
+      "god": "Okawaru",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7410,
+      "place": "D:9",
+      "god": "Okawaru",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8272,
+      "place": "D:10",
+      "god": "Okawaru",
+      "pietyRank": 5
+    },
+    {
+      "type": "gift",
+      "turn": 9459,
+      "place": "D:11",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 11526,
+      "place": "D:12",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 12527,
+      "place": "Lair:1",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 13881,
+      "place": "Lair:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 14982,
+      "place": "Lair:4",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 16160,
+      "place": "Lair:5",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 16572,
+      "place": "Lair:5",
+      "god": "Okawaru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 16602,
+      "place": "Lair:5",
+      "god": "Okawaru",
+      "pietyRank": 6
+    },
+    {
+      "type": "gift",
+      "turn": 16700,
+      "place": "Lair:5",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 16707,
+      "place": "Lair:5",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 18235,
+      "place": "Orc:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 19681,
+      "place": "D:15",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 20694,
+      "place": "Snake:1",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 22001,
+      "place": "Snake:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 22534,
+      "place": "Snake:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 24775,
+      "place": "Snake:4",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 25904,
+      "place": "Snake:4",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 28405,
+      "place": "Swamp:4",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 28830,
+      "place": "Swamp:4",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 29797,
+      "place": "Elf:1",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 30487,
+      "place": "Elf:1",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 31592,
+      "place": "Elf:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 32093,
+      "place": "Elf:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 32765,
+      "place": "Elf:3",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 33847,
+      "place": "Vaults:1",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 34328,
+      "place": "Vaults:1",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 34902,
+      "place": "Vaults:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 35370,
+      "place": "Vaults:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 36003,
+      "place": "Vaults:2",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 36604,
+      "place": "Vaults:3",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 37652,
+      "place": "Vaults:4",
+      "god": "Okawaru"
+    },
+    {
+      "type": "gift",
+      "turn": 38367,
+      "place": "Vaults:4",
+      "god": "Okawaru"
     }
   ]
 }

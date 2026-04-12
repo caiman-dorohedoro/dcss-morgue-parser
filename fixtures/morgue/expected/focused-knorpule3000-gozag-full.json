@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Enchanter",
   "god": "Gozag",
+  "godPietyDisplay": null,
+  "godPietyRank": null,
+  "godOstracismPips": 0,
+  "godStatus": "Gozag was greatly pleased with you.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 37,
   "ev": 15,
@@ -959,6 +964,14 @@
     {
       "name": "devolution",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 6429,
+      "place": "D:5",
+      "god": "Gozag"
     }
   ]
 }

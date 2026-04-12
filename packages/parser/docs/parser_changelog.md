@@ -405,3 +405,30 @@ It also recognizes non-`-form` status labels such as `eel hands`.
 The most stable current-form signal in a morgue is usually the `@:` status line because Crawl populates it from `Form::get_long_name()`. Overview prose is still useful, but it is less canonical and in some cases more dynamic.
 
 Using the equipped talisman as a second-tier fallback lets the parser recover forms such as `dragon-form`, `sphinx-form`, and `vampire-form` even when the overview prose is absent or too loose to trust as the primary signal.
+
+## 13.13. Current God State and Religion Note History
+
+### What changed
+
+The parser now stores:
+
+- current god-state fields:
+  - `godPietyDisplay`
+  - `godPietyRank`
+  - `godOstracismPips`
+  - `godStatus`
+  - `godUnderPenance`
+- structured religion-note history in `godHistory`
+
+### Why
+
+Downstream Crawl analysis often needs more than the final `god` name:
+
+- current star bucket is enough to reason about many god passives
+- penance and Ostracism are visible current-state signals that should not stay trapped in prose
+- conversions, abandonment, forgiveness, and god gifts matter for run history and cannot be recovered from the final header alone
+
+The model intentionally stops short of pretending morgues always reveal exact
+piety. Header stars remain a bucketed approximation, while `godHistory`
+captures the exact religion events that Crawl already prints in the `Notes`
+section.

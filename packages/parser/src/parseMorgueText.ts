@@ -2,6 +2,7 @@ import type { ParseMorgueTextOptions, ParseMorgueTextResult } from './types'
 import { extractBaseStats } from './extractBaseStats'
 import { extractEquipment } from './extractEquipment'
 import { extractForm } from './extractForm'
+import { extractGodHistory } from './extractGodHistory'
 import { extractMutations } from './extractMutations'
 import { extractSkills } from './extractSkills'
 import { extractSpells } from './extractSpells'
@@ -21,6 +22,7 @@ export function parseMorgueText(text: string, options: ParseMorgueTextOptions = 
       spells: extractSpells(text, {
         canonicalSpellNames: options.canonicalSpellNames,
       }),
+      godHistory: extractGodHistory(text),
     })
 
     const orderedRecord = {
@@ -30,6 +32,11 @@ export function parseMorgueText(text: string, options: ParseMorgueTextOptions = 
       speciesVariant: record.speciesVariant,
       background: record.background,
       god: record.god,
+      godPietyDisplay: record.godPietyDisplay,
+      godPietyRank: record.godPietyRank,
+      godOstracismPips: record.godOstracismPips,
+      godStatus: record.godStatus,
+      godUnderPenance: record.godUnderPenance,
       xl: record.xl,
       ac: record.ac,
       ev: record.ev,
@@ -64,6 +71,7 @@ export function parseMorgueText(text: string, options: ParseMorgueTextOptions = 
       effectiveSkills: record.effectiveSkills,
       spells: record.spells,
       mutations: record.mutations,
+      godHistory: record.godHistory,
     }
 
     return {

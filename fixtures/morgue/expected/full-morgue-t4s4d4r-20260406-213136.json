@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Earth Elementalist",
   "god": "Ashenzari",
+  "godPietyDisplay": "*****.",
+  "godPietyRank": 5,
+  "godOstracismPips": 0,
+  "godStatus": "Ashenzari was extremely pleased with you.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 27,
   "ev": 15,
@@ -1077,6 +1082,49 @@
     {
       "name": "distributed training",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 4030,
+      "place": "Temple",
+      "god": "Ashenzari"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7913,
+      "place": "D:7",
+      "god": "Ashenzari",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 9400,
+      "place": "D:8",
+      "god": "Ashenzari",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 11108,
+      "place": "D:9",
+      "god": "Ashenzari",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 11747,
+      "place": "D:9",
+      "god": "Ashenzari",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 19094,
+      "place": "Lair:2",
+      "god": "Ashenzari",
+      "pietyRank": 5
     }
   ]
 }

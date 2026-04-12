@@ -96,6 +96,9 @@ These fields may be `null` on success:
 - `speciesVariant`
 - `background`
 - `god`
+- `godPietyDisplay`
+- `godPietyRank`
+- `godStatus`
 - `form`
 
 ### Summary equipment fields
@@ -150,6 +153,55 @@ Examples:
 - `skills` and `effectiveSkills` are full fixed-key maps, not sparse objects
 - `spells` is always an array on success
 - `mutations` is always an array on success
+- `godHistory` is always an array on success
+
+### God state
+
+These fields are always present on success:
+
+- `godOstracismPips`
+- `godUnderPenance`
+
+These fields are nullable because Crawl does not always expose them in the same
+way:
+
+- `godPietyDisplay`
+- `godPietyRank`
+- `godStatus`
+
+Important interpretation rules:
+
+- `godPietyDisplay` is the raw header pip token, for example `***...` or `****XX`
+- `godPietyRank` is a star-count bucket, not exact piety
+- `godOstracismPips` counts `X` pips from Ostracism-style god standing loss
+- Gozag usually has no normal pip display
+- Xom pips do not mean normal piety rank, so `godPietyRank` is left `null`
+- `godStatus` is the religion prose line such as `Ru was exalted by your worship.`
+- `godUnderPenance` is a convenience boolean derived from current prose or penitent title text
+
+### God history
+
+`godHistory` is a structured subset of the morgue `Notes` section.
+
+It currently includes:
+
+- `join`
+- `abandon`
+- `penance`
+- `forgiven`
+- `gift`
+- `piety_rank`
+
+Example:
+
+```json
+{
+  "type": "abandon",
+  "turn": 15490,
+  "place": "Temple",
+  "god": "Ignis"
+}
+```
 
 ### Current form
 

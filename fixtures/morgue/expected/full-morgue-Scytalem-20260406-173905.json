@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Alchemist",
   "god": "Cheibriados",
+  "godPietyDisplay": "*****.",
+  "godPietyRank": 5,
+  "godOstracismPips": 0,
+  "godStatus": "Cheibriados was extremely pleased with you.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 46,
   "ev": 12,
@@ -50,8 +55,8 @@
     "propertiesText": "+Inv MP+8 Stlth+",
     "properties": {
       "numeric": {
-        "MP": 8,
-        "Stlth": 1
+        "Stlth": 1,
+        "MP": 8
       },
       "booleanProps": {
         "Inv": true
@@ -1018,6 +1023,56 @@
     {
       "name": "strong",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 3996,
+      "place": "Temple",
+      "god": "Cheibriados"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 4522,
+      "place": "D:5",
+      "god": "Cheibriados",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5700,
+      "place": "D:5",
+      "god": "Cheibriados",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7063,
+      "place": "D:6",
+      "god": "Cheibriados",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 9817,
+      "place": "D:8",
+      "god": "Cheibriados",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10247,
+      "place": "Bailey",
+      "god": "Cheibriados",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 12781,
+      "place": "D:9",
+      "god": "Cheibriados",
+      "pietyRank": 6
     }
   ]
 }

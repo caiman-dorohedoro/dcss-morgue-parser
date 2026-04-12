@@ -5,6 +5,11 @@
   "speciesVariant": "White Draconian",
   "background": "Summoner",
   "god": "Ru",
+  "godPietyDisplay": "*****.",
+  "godPietyRank": 5,
+  "godOstracismPips": 0,
+  "godStatus": "Ru was extremely pleased with you.",
+  "godUnderPenance": false,
   "xl": 14,
   "ac": 18,
   "ev": 13,
@@ -603,6 +608,49 @@
     {
       "name": "armoured tail",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 2859,
+      "place": "D:7",
+      "god": "Ru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6911,
+      "place": "D:10",
+      "god": "Ru",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10268,
+      "place": "D:11",
+      "god": "Ru",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10268,
+      "place": "D:11",
+      "god": "Ru",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15515,
+      "place": "Lair:5",
+      "god": "Ru",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15515,
+      "place": "Lair:5",
+      "god": "Ru",
+      "pietyRank": 5
     }
   ]
 }

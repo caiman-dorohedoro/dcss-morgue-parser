@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Brigand",
   "god": "Dithmenos",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Dithmenos was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 21,
   "ac": 3,
   "ev": 34,
@@ -803,6 +808,56 @@
     {
       "name": "tentacles",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 861,
+      "place": "D:2",
+      "god": "Dithmenos"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 2569,
+      "place": "D:3",
+      "god": "Dithmenos",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3525,
+      "place": "D:4",
+      "god": "Dithmenos",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5549,
+      "place": "D:7",
+      "god": "Dithmenos",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6363,
+      "place": "D:9",
+      "god": "Dithmenos",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8878,
+      "place": "D:11",
+      "god": "Dithmenos",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 25587,
+      "place": "Orc:2",
+      "god": "Dithmenos",
+      "pietyRank": 6
     }
   ]
 }

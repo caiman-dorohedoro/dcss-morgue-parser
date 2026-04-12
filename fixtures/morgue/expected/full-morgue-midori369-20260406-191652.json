@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Forgewright",
   "god": "Sif Muna",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Sif Muna was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 37,
   "ev": 9,
@@ -1290,6 +1295,230 @@
     {
       "name": "lucky",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 2845,
+      "place": "D:4",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5160,
+      "place": "D:6",
+      "god": "Sif Muna",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7186,
+      "place": "D:7",
+      "god": "Sif Muna",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 9955,
+      "place": "D:9",
+      "god": "Sif Muna",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 12880,
+      "place": "D:11",
+      "god": "Sif Muna",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 17002,
+      "place": "Volcano",
+      "god": "Sif Muna",
+      "pietyRank": 5
+    },
+    {
+      "type": "gift",
+      "turn": 17565,
+      "place": "Lair:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 22796,
+      "place": "Lair:4",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 26680,
+      "place": "Orc:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 28464,
+      "place": "D:12",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 31589,
+      "place": "D:15",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 32811,
+      "place": "Spider:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 32873,
+      "place": "Spider:1",
+      "god": "Sif Muna",
+      "pietyRank": 6
+    },
+    {
+      "type": "gift",
+      "turn": 34449,
+      "place": "Spider:2",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 36433,
+      "place": "Spider:4",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 38657,
+      "place": "Shoals:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 41400,
+      "place": "Shoals:4",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 44192,
+      "place": "Elf:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 46314,
+      "place": "Vaults:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 48101,
+      "place": "Vaults:2",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 50149,
+      "place": "Vaults:3",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 50495,
+      "place": "Vaults:3",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 52381,
+      "place": "Elf:2",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 54568,
+      "place": "Elf:3",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 56173,
+      "place": "Depths:2",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 58137,
+      "place": "Depths:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 60329,
+      "place": "Depths:3",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 62942,
+      "place": "Crypt:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 65317,
+      "place": "Crypt:3",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 66147,
+      "place": "Crypt:3",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 68875,
+      "place": "Vaults:5",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 69635,
+      "place": "Vaults:5",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 73706,
+      "place": "Slime:2",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 79085,
+      "place": "Zot:1",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 81275,
+      "place": "Zot:2",
+      "god": "Sif Muna"
+    },
+    {
+      "type": "gift",
+      "turn": 82929,
+      "place": "Zot:3",
+      "god": "Sif Muna"
     }
   ]
 }

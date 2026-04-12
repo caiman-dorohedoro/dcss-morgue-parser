@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Air Elementalist",
   "god": "Ru",
+  "godPietyDisplay": "......",
+  "godPietyRank": 0,
+  "godOstracismPips": 0,
+  "godStatus": "Ru was noncommittal.",
+  "godUnderPenance": false,
   "xl": 12,
   "ac": 10,
   "ev": 17,
@@ -512,6 +517,14 @@
     {
       "name": "acrobatic",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 2218,
+      "place": "D:4",
+      "god": "Ru"
     }
   ]
 }

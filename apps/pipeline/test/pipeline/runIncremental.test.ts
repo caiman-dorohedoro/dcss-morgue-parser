@@ -39,6 +39,59 @@ function mockSkills() {
   }
 }
 
+type MockParseMeta = {
+  candidateId: string
+  serverId: CandidateGame['serverId']
+  playerName: string
+  sourceVersionLabel: string
+  endedAt: string
+  morgueUrl: string
+}
+
+function mockParsedRecord(meta: MockParseMeta) {
+  return {
+    candidateId: meta.candidateId,
+    serverId: meta.serverId,
+    playerName: meta.playerName,
+    sourceVersionLabel: meta.sourceVersionLabel,
+    endedAt: meta.endedAt,
+    morgueUrl: meta.morgueUrl,
+    version: '0.34' as const,
+    species: 'Djinni',
+    speciesVariant: null,
+    background: null,
+    god: null,
+    godPietyDisplay: null,
+    godPietyRank: null,
+    godOstracismPips: 0,
+    godStatus: null,
+    godUnderPenance: false,
+    xl: 7,
+    ac: 4,
+    ev: 11,
+    sh: 0,
+    strength: 8,
+    intelligence: 19,
+    dexterity: 14,
+    bodyArmour: 'robe',
+    shield: 'none',
+    helmets: [],
+    gloves: [],
+    footwear: [],
+    cloaks: [],
+    orb: 'none',
+    amulets: [],
+    rings: [],
+    talisman: 'none',
+    form: null,
+    skills: mockSkills(),
+    effectiveSkills: mockSkills(),
+    spells: [],
+    mutations: [],
+    godHistory: [],
+  }
+}
+
 function seedCandidate(
   candidateId: string,
   serverId: CandidateGame['serverId'],
@@ -97,41 +150,7 @@ describe('runIncremental', () => {
       readMorgueText: async () => 'fixture',
       parseMorgue: (_text, meta) => ({
         ok: true as const,
-        record: {
-          candidateId: meta.candidateId,
-          serverId: meta.serverId,
-          playerName: meta.playerName,
-          sourceVersionLabel: meta.sourceVersionLabel,
-          endedAt: meta.endedAt,
-          morgueUrl: meta.morgueUrl,
-          version: '0.34' as const,
-          species: 'Djinni',
-          speciesVariant: null,
-          background: null,
-          god: null,
-          xl: 7,
-          ac: 4,
-          ev: 11,
-          sh: 0,
-          strength: 8,
-          intelligence: 19,
-          dexterity: 14,
-          bodyArmour: 'robe',
-          shield: 'none',
-          helmets: [],
-          gloves: [],
-          footwear: [],
-          cloaks: [],
-          orb: 'none',
-          amulets: [],
-          rings: [],
-          talisman: 'none',
-          form: null,
-          skills: mockSkills(),
-          effectiveSkills: mockSkills(),
-          spells: [],
-          mutations: [],
-        },
+        record: mockParsedRecord(meta),
       }),
     })
 
@@ -183,41 +202,7 @@ describe('runIncremental', () => {
       readMorgueText: async () => 'fixture',
       parseMorgue: (_text, meta) => ({
         ok: true as const,
-        record: {
-          candidateId: meta.candidateId,
-          serverId: meta.serverId,
-          playerName: meta.playerName,
-          sourceVersionLabel: meta.sourceVersionLabel,
-          endedAt: meta.endedAt,
-          morgueUrl: meta.morgueUrl,
-          version: '0.34' as const,
-          species: 'Djinni',
-          speciesVariant: null,
-          background: null,
-          god: null,
-          xl: 7,
-          ac: 4,
-          ev: 11,
-          sh: 0,
-          strength: 8,
-          intelligence: 19,
-          dexterity: 14,
-          bodyArmour: 'robe',
-          shield: 'none',
-          helmets: [],
-          gloves: [],
-          footwear: [],
-          cloaks: [],
-          orb: 'none',
-          amulets: [],
-          rings: [],
-          talisman: 'none',
-          form: null,
-          skills: mockSkills(),
-          effectiveSkills: mockSkills(),
-          spells: [],
-          mutations: [],
-        },
+        record: mockParsedRecord(meta),
       }),
     })
 

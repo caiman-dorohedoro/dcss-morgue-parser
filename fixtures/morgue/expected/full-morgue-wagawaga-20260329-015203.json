@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Brigand",
   "god": "Uskayaw",
+  "godPietyDisplay": "**....",
+  "godPietyRank": 2,
+  "godOstracismPips": 0,
+  "godStatus": "Uskayaw was pleased with you.",
+  "godUnderPenance": false,
   "xl": 17,
   "ac": 12,
   "ev": 42,
@@ -665,6 +670,56 @@
     {
       "name": "weak",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 5026,
+      "place": "Temple",
+      "god": "Uskayaw"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5095,
+      "place": "D:6",
+      "god": "Uskayaw",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5270,
+      "place": "D:6",
+      "god": "Uskayaw",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5430,
+      "place": "D:6",
+      "god": "Uskayaw",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6971,
+      "place": "Bailey",
+      "god": "Uskayaw",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 12767,
+      "place": "Lair:1",
+      "god": "Uskayaw",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 26911,
+      "place": "Orc:2",
+      "god": "Uskayaw",
+      "pietyRank": 6
     }
   ]
 }

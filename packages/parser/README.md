@@ -28,10 +28,11 @@ if (result.ok) {
 ## Output
 
 - `version`, `playerName`, `species`, `speciesVariant`, `background`, `god`
+- `godPietyDisplay`, `godPietyRank`, `godOstracismPips`, `godStatus`, `godUnderPenance`
 - `xl`, `ac`, `ev`, `sh`, `strength`, `intelligence`, `dexterity`
 - `skills` and `effectiveSkills`
 - Equipment slot summaries plus `...Details` with property bags
-- `spells`, `mutations`, `form`
+- `spells`, `mutations`, `form`, `godHistory`
 
 See [Parser Model](./docs/parser_model.md) for the full schema.
 

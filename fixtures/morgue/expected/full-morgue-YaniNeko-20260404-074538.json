@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Conjurer",
   "god": "Vehumet",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Vehumet was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 21,
   "ac": 15,
   "ev": 24,
@@ -825,6 +830,56 @@
     {
       "name": "magic regeneration",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 3758,
+      "place": "Temple",
+      "god": "Vehumet"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5379,
+      "place": "D:6",
+      "god": "Vehumet",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7101,
+      "place": "D:8",
+      "god": "Vehumet",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 9211,
+      "place": "D:10",
+      "god": "Vehumet",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10650,
+      "place": "D:11",
+      "god": "Vehumet",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 12313,
+      "place": "IceCv",
+      "god": "Vehumet",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 19133,
+      "place": "Lair:5",
+      "god": "Vehumet",
+      "pietyRank": 6
     }
   ]
 }

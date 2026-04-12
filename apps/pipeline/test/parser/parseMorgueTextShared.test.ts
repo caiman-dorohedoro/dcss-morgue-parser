@@ -217,4 +217,75 @@ describe('parseMorgueText shared parser', () => {
       ])
     }
   })
+
+  it('extracts current god state and religion-note history from morgues', () => {
+    const currentStateResult = parseMorgueText(loadFixture('eel-hands-current-form.txt'))
+    const conversionResult = parseMorgueText(loadFullFixture('morgue-pwnmonkey-20260404-012047.txt'))
+    const giftResult = parseMorgueText(loadFixture('coglin-gizmo-installed-jingleheimer.txt'))
+
+    expect(currentStateResult.ok).toBe(true)
+    if (currentStateResult.ok) {
+      expect(currentStateResult.record.god).toBe('Beogh')
+      expect(currentStateResult.record.godPietyDisplay).toBe('*****.')
+      expect(currentStateResult.record.godPietyRank).toBe(5)
+      expect(currentStateResult.record.godOstracismPips).toBe(0)
+      expect(currentStateResult.record.godStatus).toBe('Beogh was demanding penance.')
+      expect(currentStateResult.record.godUnderPenance).toBe(true)
+      expect(currentStateResult.record.godHistory).toEqual([])
+    }
+
+    expect(conversionResult.ok).toBe(true)
+    if (conversionResult.ok) {
+      expect(conversionResult.record.god).toBe('Makhleb')
+      expect(conversionResult.record.godHistory).toContainEqual({
+        type: 'abandon',
+        turn: 15490,
+        place: 'Temple',
+        god: 'Ignis',
+      })
+      expect(conversionResult.record.godHistory).toContainEqual({
+        type: 'join',
+        turn: 15490,
+        place: 'Temple',
+        god: 'Makhleb',
+      })
+      expect(conversionResult.record.godHistory).toContainEqual({
+        type: 'forgiven',
+        turn: 19045,
+        place: 'D:12',
+        god: 'Ignis',
+      })
+      expect(conversionResult.record.godHistory).toContainEqual({
+        type: 'piety_rank',
+        turn: 19721,
+        place: 'D:12',
+        god: 'Makhleb',
+        pietyRank: 3,
+      })
+    }
+
+    expect(giftResult.ok).toBe(true)
+    if (giftResult.ok) {
+      expect(giftResult.record.god).toBe('Okawaru')
+      expect(giftResult.record.godHistory).toContainEqual({
+        type: 'join',
+        turn: 5355,
+        place: 'D:7',
+        god: 'Okawaru',
+      })
+      expect(giftResult.record.godHistory).toContainEqual({
+        type: 'piety_rank',
+        turn: 6395,
+        place: 'D:9',
+        god: 'Okawaru',
+        pietyRank: 3,
+      })
+      expect(giftResult.record.godHistory).toContainEqual({
+        type: 'gift',
+        turn: 8387,
+        place: 'Lair:4',
+        god: 'Okawaru',
+      })
+    }
+  })
 })

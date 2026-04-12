@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Ice Elementalist",
   "god": "Gozag",
+  "godPietyDisplay": null,
+  "godPietyRank": null,
+  "godOstracismPips": 0,
+  "godStatus": "Gozag was greatly pleased with you.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 35,
   "ev": 14,
@@ -1260,6 +1265,14 @@
     {
       "name": "strong",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 5503,
+      "place": "Temple",
+      "god": "Gozag"
     }
   ]
 }

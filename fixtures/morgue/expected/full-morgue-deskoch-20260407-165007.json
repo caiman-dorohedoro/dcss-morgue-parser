@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Hunter",
   "god": "Ru",
+  "godPietyDisplay": "***...",
+  "godPietyRank": 3,
+  "godOstracismPips": 0,
+  "godStatus": "Ru was most pleased with you.",
+  "godUnderPenance": false,
   "xl": 13,
   "ac": 7,
   "ev": 12,
@@ -395,6 +400,35 @@
     {
       "name": "no jewellery",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 1977,
+      "place": "Temple",
+      "god": "Ru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3086,
+      "place": "D:5",
+      "god": "Ru",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3086,
+      "place": "D:5",
+      "god": "Ru",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7134,
+      "place": "D:8",
+      "god": "Ru",
+      "pietyRank": 3
     }
   ]
 }

@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Enchanter",
   "god": "Uskayaw",
+  "godPietyDisplay": "**....",
+  "godPietyRank": 2,
+  "godOstracismPips": 0,
+  "godStatus": "Uskayaw was aware of your devotion.",
+  "godUnderPenance": false,
   "xl": 22,
   "ac": 10,
   "ev": 2,
@@ -1007,6 +1012,56 @@
     {
       "name": "accursed",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 3616,
+      "place": "Temple",
+      "god": "Uskayaw"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3641,
+      "place": "D:6",
+      "god": "Uskayaw",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3651,
+      "place": "D:6",
+      "god": "Uskayaw",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3653,
+      "place": "D:6",
+      "god": "Uskayaw",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3659,
+      "place": "D:6",
+      "god": "Uskayaw",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6638,
+      "place": "D:8",
+      "god": "Uskayaw",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 11593,
+      "place": "IceCv",
+      "god": "Uskayaw",
+      "pietyRank": 6
     }
   ]
 }

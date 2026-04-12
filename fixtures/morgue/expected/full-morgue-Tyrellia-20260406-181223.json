@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Monk",
   "god": "Makhleb",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Makhleb was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 24,
   "ac": 46,
   "ev": 7,
@@ -954,6 +959,56 @@
     {
       "name": "Mark of Atrocity",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "piety_rank",
+      "turn": 572,
+      "place": "D:1",
+      "god": "Makhleb",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 572,
+      "place": "D:1",
+      "god": "Makhleb",
+      "pietyRank": 2
+    },
+    {
+      "type": "join",
+      "turn": 572,
+      "place": "D:1",
+      "god": "Makhleb"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 1309,
+      "place": "D:2",
+      "god": "Makhleb",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 4177,
+      "place": "D:5",
+      "god": "Makhleb",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7355,
+      "place": "D:10",
+      "god": "Makhleb",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 20139,
+      "place": "Lair:2",
+      "god": "Makhleb",
+      "pietyRank": 6
     }
   ]
 }

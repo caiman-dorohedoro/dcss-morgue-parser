@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Hunter",
   "god": "Gozag",
+  "godPietyDisplay": null,
+  "godPietyRank": null,
+  "godOstracismPips": 0,
+  "godStatus": "Gozag was extremely pleased with you.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 14,
   "ev": 27,
@@ -48,8 +53,8 @@
     "propertiesText": "Spirit, Regen++ MP+5",
     "properties": {
       "numeric": {
-        "MP": 5,
-        "Regen": 2
+        "Regen": 2,
+        "MP": 5
       },
       "booleanProps": {
         "Spirit": true
@@ -1120,6 +1125,14 @@
     {
       "name": "ephemeral shield",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 9256,
+      "place": "D:9",
+      "god": "Gozag"
     }
   ]
 }

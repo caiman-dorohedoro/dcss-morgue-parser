@@ -5,6 +5,11 @@
   "speciesVariant": "Red Draconian",
   "background": "Shapeshifter",
   "god": "Ru",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Ru was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 24,
   "ac": 23,
   "ev": 6,
@@ -903,6 +908,56 @@
     {
       "name": "robust",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 1009,
+      "place": "D:2",
+      "god": "Ru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 1016,
+      "place": "D:2",
+      "god": "Ru",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 1016,
+      "place": "D:2",
+      "god": "Ru",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3369,
+      "place": "D:5",
+      "god": "Ru",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7445,
+      "place": "D:7",
+      "god": "Ru",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7445,
+      "place": "D:7",
+      "god": "Ru",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15849,
+      "place": "Lair:2",
+      "god": "Ru",
+      "pietyRank": 6
     }
   ]
 }

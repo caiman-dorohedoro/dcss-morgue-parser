@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Delver",
   "god": "Ru",
+  "godPietyDisplay": "****..",
+  "godPietyRank": 4,
+  "godOstracismPips": 0,
+  "godStatus": "Ru was greatly pleased with you.",
+  "godUnderPenance": false,
   "xl": 15,
   "ac": 14,
   "ev": 15,
@@ -590,6 +595,42 @@
     {
       "name": "fire resistance",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 7353,
+      "place": "D:7",
+      "god": "Ru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8530,
+      "place": "D:8",
+      "god": "Ru",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 13324,
+      "place": "Lair:1",
+      "god": "Ru",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15949,
+      "place": "Orc:1",
+      "god": "Ru",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15949,
+      "place": "Orc:1",
+      "god": "Ru",
+      "pietyRank": 4
     }
   ]
 }

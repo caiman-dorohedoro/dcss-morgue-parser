@@ -3,6 +3,7 @@ export { DEFAULT_CANONICAL_SPELL_NAMES } from './canonicalSpellNames'
 export { extractBaseStats } from './extractBaseStats'
 export { extractEquipment } from './extractEquipment'
 export { extractForm } from './extractForm'
+export { extractGodHistory } from './extractGodHistory'
 export { extractMutations } from './extractMutations'
 export { canonicalizeSpellNames, extractSpells } from './extractSpells'
 export { extractSkills } from './extractSkills'
@@ -24,6 +25,7 @@ export type {
   EquipmentPropertyBag,
   EquipmentSnapshot,
   FormSnapshot,
+  GodHistoryEvent,
   MorgueVersion,
   MutationEntrySnapshot,
   MutationSnapshot,

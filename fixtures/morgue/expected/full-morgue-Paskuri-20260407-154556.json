@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Earth Elementalist",
   "god": "Vehumet",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Vehumet was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 22,
   "ac": 30,
   "ev": 11,
@@ -884,6 +889,56 @@
     {
       "name": "initially attractive",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 6474,
+      "place": "Temple",
+      "god": "Vehumet"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8890,
+      "place": "D:9",
+      "god": "Vehumet",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10188,
+      "place": "D:10",
+      "god": "Vehumet",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 12166,
+      "place": "D:11",
+      "god": "Vehumet",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 14677,
+      "place": "Orc:1",
+      "god": "Vehumet",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 16690,
+      "place": "Orc:2",
+      "god": "Vehumet",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 22426,
+      "place": "Necropol",
+      "god": "Vehumet",
+      "pietyRank": 6
     }
   ]
 }

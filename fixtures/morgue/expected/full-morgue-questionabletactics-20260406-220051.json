@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Reaver",
   "god": "Cheibriados",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Cheibriados was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 39,
   "ev": 33,
@@ -935,6 +940,56 @@
     {
       "name": "subdued magic",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 7036,
+      "place": "D:3",
+      "god": "Cheibriados"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10272,
+      "place": "D:9",
+      "god": "Cheibriados",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 11658,
+      "place": "D:10",
+      "god": "Cheibriados",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 13663,
+      "place": "Gauntlet",
+      "god": "Cheibriados",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 14906,
+      "place": "Lair:1",
+      "god": "Cheibriados",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 16376,
+      "place": "Lair:2",
+      "god": "Cheibriados",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 22466,
+      "place": "Lair:5",
+      "god": "Cheibriados",
+      "pietyRank": 6
     }
   ]
 }

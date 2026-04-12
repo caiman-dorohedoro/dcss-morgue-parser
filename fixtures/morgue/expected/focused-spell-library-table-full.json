@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Fire Elementalist",
   "god": null,
+  "godPietyDisplay": null,
+  "godPietyRank": null,
+  "godOstracismPips": 0,
+  "godStatus": null,
+  "godUnderPenance": false,
   "xl": 7,
   "ac": 4,
   "ev": 11,
@@ -179,5 +184,6 @@
       "memorized": false
     }
   ],
-  "mutations": []
+  "mutations": [],
+  "godHistory": []
 }

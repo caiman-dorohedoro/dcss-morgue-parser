@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Fighter",
   "god": "Wu Jian",
+  "godPietyDisplay": "****..",
+  "godPietyRank": 4,
+  "godOstracismPips": 0,
+  "godStatus": "Wu Jian was greatly pleased with you.",
+  "godUnderPenance": false,
   "xl": 18,
   "ac": 8,
   "ev": 6,
@@ -173,8 +178,8 @@
       },
       "egoProperties": {
         "numeric": {
-          "rF": 1,
-          "rC": 1
+          "rC": 1,
+          "rF": 1
         },
         "booleanProps": {},
         "opaqueTokens": []
@@ -665,6 +670,56 @@
     {
       "name": "tough skin",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 1517,
+      "place": "D:3",
+      "god": "Wu Jian"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 2409,
+      "place": "D:4",
+      "god": "Wu Jian",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 3166,
+      "place": "D:5",
+      "god": "Wu Jian",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 4355,
+      "place": "Sewer",
+      "god": "Wu Jian",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6057,
+      "place": "D:7",
+      "god": "Wu Jian",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7227,
+      "place": "D:9",
+      "god": "Wu Jian",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 11620,
+      "place": "D:14",
+      "god": "Wu Jian",
+      "pietyRank": 6
     }
   ]
 }

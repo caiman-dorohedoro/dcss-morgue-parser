@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Shapeshifter",
   "god": "Jiyva",
+  "godPietyDisplay": "*****.",
+  "godPietyRank": 5,
+  "godOstracismPips": 0,
+  "godStatus": "Jiyva was extremely pleased with you.",
+  "godUnderPenance": false,
   "xl": 16,
   "ac": 34,
   "ev": 1,
@@ -583,6 +588,96 @@
     {
       "name": "eyeballs",
       "level": 3
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 3757,
+      "place": "D:5",
+      "god": "the Shining One"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 5529,
+      "place": "D:8",
+      "god": "the Shining One",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6766,
+      "place": "D:9",
+      "god": "the Shining One",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8668,
+      "place": "D:11",
+      "god": "the Shining One",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 9388,
+      "place": "IceCv",
+      "god": "the Shining One",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 13241,
+      "place": "Lair:4",
+      "god": "the Shining One",
+      "pietyRank": 5
+    },
+    {
+      "type": "abandon",
+      "turn": 13432,
+      "place": "Lair:4",
+      "god": "the Shining One"
+    },
+    {
+      "type": "join",
+      "turn": 13432,
+      "place": "Lair:4",
+      "god": "Jiyva"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 14131,
+      "place": "Lair:5",
+      "god": "Jiyva",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15502,
+      "place": "Orc:2",
+      "god": "Jiyva",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 17018,
+      "place": "D:14",
+      "god": "Jiyva",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 17928,
+      "place": "D:15",
+      "god": "Jiyva",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 22069,
+      "place": "Snake:3",
+      "god": "Jiyva",
+      "pietyRank": 5
     }
   ]
 }

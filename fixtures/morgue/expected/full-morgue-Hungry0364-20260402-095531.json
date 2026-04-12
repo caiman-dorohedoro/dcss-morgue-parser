@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Fighter",
   "god": "Ru",
+  "godPietyDisplay": "******",
+  "godPietyRank": 6,
+  "godOstracismPips": 0,
+  "godStatus": "Ru was exalted by your worship.",
+  "godUnderPenance": false,
   "xl": 27,
   "ac": 44,
   "ev": 14,
@@ -744,6 +749,56 @@
     {
       "name": "lucky",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 2868,
+      "place": "D:4",
+      "god": "Ru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6128,
+      "place": "D:8",
+      "god": "Ru",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 6128,
+      "place": "D:8",
+      "god": "Ru",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7658,
+      "place": "Bailey",
+      "god": "Ru",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10471,
+      "place": "D:12",
+      "god": "Ru",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 10471,
+      "place": "D:12",
+      "god": "Ru",
+      "pietyRank": 5
+    },
+    {
+      "type": "piety_rank",
+      "turn": 15916,
+      "place": "Lair:4",
+      "god": "Ru",
+      "pietyRank": 6
     }
   ]
 }

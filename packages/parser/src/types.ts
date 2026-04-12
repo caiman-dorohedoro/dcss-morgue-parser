@@ -7,6 +7,11 @@ export type BaseStatsSnapshot = {
   speciesVariant: string | null
   background: string | null
   god: string | null
+  godPietyDisplay: string | null
+  godPietyRank: number | null
+  godOstracismPips: number
+  godStatus: string | null
+  godUnderPenance: boolean
   xl: number
   ac: number
   ev: number
@@ -14,6 +19,14 @@ export type BaseStatsSnapshot = {
   strength: number
   intelligence: number
   dexterity: number
+}
+
+export type GodHistoryEvent = {
+  type: 'join' | 'abandon' | 'penance' | 'forgiven' | 'gift' | 'piety_rank'
+  turn: number
+  place: string
+  god: string
+  pietyRank?: number
 }
 
 export type ArtifactKind = 'normal' | 'randart' | 'unrand'
@@ -249,6 +262,7 @@ export type ParsedMorgueTextRecord = BaseStatsSnapshot & {
   effectiveSkills: SkillLevelsSnapshot
   spells: SpellSnapshot[]
   mutations: MutationEntrySnapshot[]
+  godHistory: GodHistoryEvent[]
 }
 
 export type ParseFailureRecord = {

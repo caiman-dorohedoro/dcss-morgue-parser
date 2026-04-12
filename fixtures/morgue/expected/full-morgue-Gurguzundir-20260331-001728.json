@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Shapeshifter",
   "god": "Ru",
+  "godPietyDisplay": "**....",
+  "godPietyRank": 2,
+  "godOstracismPips": 0,
+  "godStatus": "Ru was pleased with you.",
+  "godUnderPenance": false,
   "xl": 10,
   "ac": 5,
   "ev": 16,
@@ -354,6 +359,28 @@
     {
       "name": "no forgecraft magic",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 3312,
+      "place": "D:3",
+      "god": "Ru"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 4377,
+      "place": "Ossuary",
+      "god": "Ru",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 7759,
+      "place": "D:8",
+      "god": "Ru",
+      "pietyRank": 2
     }
   ]
 }

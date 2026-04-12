@@ -58,6 +58,11 @@ describe('extractBaseStats', () => {
       speciesVariant: null,
       background: 'Berserker',
       god: 'Trog',
+      godPietyDisplay: '****..',
+      godPietyRank: 4,
+      godOstracismPips: 0,
+      godStatus: 'Trog was greatly pleased with you.',
+      godUnderPenance: false,
       xl: 9,
       ac: 14,
       ev: 6,
@@ -122,6 +127,29 @@ describe('extractBaseStats', () => {
       strength: 52,
       intelligence: 26,
       dexterity: 26,
+    })
+  })
+
+  it('extracts current god status details from header stars, Gozag prose, and penance prose', () => {
+    const beogh = extractBaseStats(loadFixture('eel-hands-current-form.txt'))
+    const gozag = extractBaseStats(loadFixture('knorpule3000-gozag-full.txt'))
+
+    expect(beogh).toMatchObject({
+      god: 'Beogh',
+      godPietyDisplay: '*****.',
+      godPietyRank: 5,
+      godOstracismPips: 0,
+      godStatus: 'Beogh was demanding penance.',
+      godUnderPenance: true,
+    })
+
+    expect(gozag).toMatchObject({
+      god: 'Gozag',
+      godPietyDisplay: null,
+      godPietyRank: null,
+      godOstracismPips: 0,
+      godStatus: 'Gozag was greatly pleased with you.',
+      godUnderPenance: false,
     })
   })
 })

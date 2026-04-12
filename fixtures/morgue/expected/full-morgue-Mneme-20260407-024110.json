@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Fire Elementalist",
   "god": "Gozag",
+  "godPietyDisplay": null,
+  "godPietyRank": null,
+  "godOstracismPips": 0,
+  "godStatus": "Gozag was most pleased with you.",
+  "godUnderPenance": false,
   "xl": 24,
   "ac": 8,
   "ev": 29,
@@ -183,8 +188,8 @@
       },
       "egoProperties": {
         "numeric": {
-          "rF": 1,
-          "rC": 1
+          "rC": 1,
+          "rF": 1
         },
         "booleanProps": {},
         "opaqueTokens": []
@@ -564,6 +569,14 @@
     {
       "name": "evolution",
       "level": 1
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 7982,
+      "place": "Temple",
+      "god": "Gozag"
     }
   ]
 }

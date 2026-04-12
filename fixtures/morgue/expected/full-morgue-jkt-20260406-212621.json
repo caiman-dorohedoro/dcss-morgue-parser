@@ -5,6 +5,11 @@
   "speciesVariant": null,
   "background": "Enchanter",
   "god": "Ashenzari",
+  "godPietyDisplay": "****..",
+  "godPietyRank": 4,
+  "godOstracismPips": 0,
+  "godStatus": "Ashenzari was greatly pleased with you.",
+  "godUnderPenance": false,
   "xl": 23,
   "ac": 16,
   "ev": 23,
@@ -1063,6 +1068,49 @@
     {
       "name": "accursed",
       "level": null
+    }
+  ],
+  "godHistory": [
+    {
+      "type": "join",
+      "turn": 6803,
+      "place": "Temple",
+      "god": "Ashenzari"
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8034,
+      "place": "D:8",
+      "god": "Ashenzari",
+      "pietyRank": 1
+    },
+    {
+      "type": "piety_rank",
+      "turn": 8997,
+      "place": "D:9",
+      "god": "Ashenzari",
+      "pietyRank": 2
+    },
+    {
+      "type": "piety_rank",
+      "turn": 9570,
+      "place": "IceCv",
+      "god": "Ashenzari",
+      "pietyRank": 3
+    },
+    {
+      "type": "piety_rank",
+      "turn": 11897,
+      "place": "D:11",
+      "god": "Ashenzari",
+      "pietyRank": 4
+    },
+    {
+      "type": "piety_rank",
+      "turn": 12503,
+      "place": "D:10",
+      "god": "Ashenzari",
+      "pietyRank": 5
     }
   ]
 }
