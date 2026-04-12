@@ -1,6 +1,7 @@
 import { Check, ChevronRight, Copy } from 'lucide-react'
 import { useState } from 'react'
 import type {
+  GodHistoryEvent,
   MutationEntrySnapshot,
   ParsedMorgueTextRecord,
   SpellSnapshot,
@@ -8,6 +9,9 @@ import type {
 import {
   buildEquipmentGroups,
   formatEnchantValue,
+  formatGodHistoryType,
+  formatGodPietyDisplay,
+  formatGodPietyRank,
   formatNullable,
   formatSkillValue,
   getTopSkills,
@@ -178,6 +182,56 @@ export function ParsedView(props: { record: ParsedMorgueTextRecord; sourceText: 
         </article>
       </section>
 
+      <section className="two-up">
+        <article className="section-card">
+          <div className="section-heading">
+            <h3>God state</h3>
+            <p>Current morgue snapshot.</p>
+          </div>
+          <div className="detail-list">
+            <div className="detail-row">
+              <span>Pips</span>
+              <strong>{formatGodPietyDisplay(record.godPietyDisplay)}</strong>
+            </div>
+            <div className="detail-row">
+              <span>Rank</span>
+              <strong>{formatGodPietyRank(record.godPietyRank)}</strong>
+            </div>
+            <div className="detail-row">
+              <span>Ostracism</span>
+              <strong>{record.godOstracismPips}</strong>
+            </div>
+            <div className="detail-row">
+              <span>Penance</span>
+              <strong>{record.godUnderPenance ? 'Yes' : 'No'}</strong>
+            </div>
+            <div className="detail-row detail-row-stack">
+              <span>Status</span>
+              <strong>{record.godStatus ?? 'No religion prose'}</strong>
+            </div>
+          </div>
+        </article>
+
+        <article className="section-card">
+          <div className="section-heading">
+            <h3>Religion history</h3>
+            <p>{record.godHistory.length} parsed</p>
+          </div>
+          {record.godHistory.length > 0 ? (
+            <div className="history-list">
+              {record.godHistory.map((event) => (
+                <ReligionHistoryRow
+                  event={event}
+                  key={`${event.turn}:${event.place}:${event.type}:${event.god}:${event.pietyRank ?? 'none'}`}
+                />
+              ))}
+            </div>
+          ) : (
+            <p className="muted-copy">No religion notes parsed.</p>
+          )}
+        </article>
+      </section>
+
       <details className="json-drawer">
         <summary>
           <span className="summary-label">
@@ -264,6 +318,25 @@ function SpellList(props: { spells: SpellSnapshot[] }) {
           </div>
         </div>
       ))}
+    </div>
+  )
+}
+
+function ReligionHistoryRow(props: { event: GodHistoryEvent }) {
+  const { event } = props
+
+  return (
+    <div className="history-row">
+      <div className="history-main">
+        <strong>{event.god}</strong>
+        <span className="history-meta">
+          {event.place} · turn {event.turn.toLocaleString()}
+        </span>
+      </div>
+      <div className="tag-row">
+        <span className="tag">{formatGodHistoryType(event.type)}</span>
+        {event.pietyRank !== undefined ? <span className="tag">rank {event.pietyRank}</span> : null}
+      </div>
     </div>
   )
 }

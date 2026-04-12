@@ -510,7 +510,9 @@ button {
 .equipment-list,
 .skill-list,
 .mutation-list,
-.spell-list {
+.spell-list,
+.detail-list,
+.history-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -519,7 +521,9 @@ button {
 .equipment-item,
 .skill-row,
 .mutation-row,
-.spell-row {
+.spell-row,
+.detail-row,
+.history-row {
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -531,7 +535,9 @@ button {
 .equipment-item:first-child,
 .skill-row:first-child,
 .mutation-row:first-child,
-.spell-row:first-child {
+.spell-row:first-child,
+.detail-row:first-child,
+.history-row:first-child {
   border-top: 0;
   padding-top: 0;
 }
@@ -553,9 +559,54 @@ button {
 .equipment-main strong,
 .skill-row > span,
 .mutation-row > span,
-.spell-row > span {
+.spell-row > span,
+.detail-row > strong,
+.history-main > strong {
   min-width: 0;
   overflow-wrap: anywhere;
+}
+
+.detail-row {
+  align-items: baseline;
+}
+
+.detail-row span {
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.detail-row strong {
+  font-size: 0.94rem;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.detail-row-stack {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.detail-row-stack strong {
+  text-align: left;
+}
+
+.history-main {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.history-main strong {
+  font-size: 0.93rem;
+  line-height: 1.3;
+}
+
+.history-meta {
+  color: var(--ink-soft);
+  font-size: 0.82rem;
 }
 
 .equipment-main strong {

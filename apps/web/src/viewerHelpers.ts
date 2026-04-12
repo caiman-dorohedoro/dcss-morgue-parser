@@ -2,6 +2,7 @@ import {
   parseOrderedSkillKeys,
   SKILL_DISPLAY_LABELS,
   type EquipmentItemSnapshot,
+  type GodHistoryEvent,
   type ParsedMorgueTextRecord,
   type SkillLevelsSnapshot,
   type SpellSnapshot,
@@ -30,6 +31,33 @@ export function formatSkillValue(value: number) {
 
 export function formatEnchantValue(value: number) {
   return value >= 0 ? `+${value}` : String(value)
+}
+
+export function formatGodPietyDisplay(display: string | null) {
+  return display ? `[${display}]` : 'No pip display'
+}
+
+export function formatGodPietyRank(rank: number | null) {
+  return rank === null ? 'Unknown' : String(rank)
+}
+
+export function formatGodHistoryType(type: GodHistoryEvent['type']) {
+  switch (type) {
+    case 'join':
+      return 'Joined'
+    case 'abandon':
+      return 'Abandoned'
+    case 'penance':
+      return 'Penance'
+    case 'forgiven':
+      return 'Forgiven'
+    case 'gift':
+      return 'Gift'
+    case 'piety_rank':
+      return 'Piety'
+    default:
+      return type
+  }
 }
 
 export function summarizePropertyBag(item: EquipmentItemSnapshot) {
