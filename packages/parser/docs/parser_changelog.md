@@ -417,7 +417,7 @@ Several Crawl armour unrands do not expose their slot or base item in the visibl
 
 Filling those mappings keeps named armour consistent with Crawl source data, improves downstream display quality, and lets property splitting move intrinsic armour resistances out of the artefact-only bucket when the base item is known.
 
-## 13.12. Form Extraction Now Prefers `@:` and Equipped Talismans
+## 13.13. Form Extraction Now Prefers `@:` and Equipped Talismans
 
 ### What changed
 
