@@ -679,7 +679,7 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     ...exactNamePatterns(UNRAND_HEAD_ITEMS),
   ]
   const glovesPatterns = [/\bgloves\b/i, /\bgauntlets\b/i, ...exactNamePatterns(UNRAND_GLOVE_ITEMS)]
-  const bootsPatterns = [/\bboots\b/i, /\bbarding\b/i]
+  const bootsPatterns = [/\bboots\b/i, /\bbarding\b/i, ...exactNamePatterns(KNOWN_UNRAND_BY_SLOT.footwear)]
   const cloakPatterns = [/\bcloak\b/i, /\bscarf\b/i, ...exactNamePatterns(UNRAND_CLOAK_ITEMS)]
   const shieldPatterns = [
     ...SHIELD_LABELS.map((label) => new RegExp(`\\b${label}\\b`, 'i')),

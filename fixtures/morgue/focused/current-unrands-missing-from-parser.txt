@@ -1,0 +1,13 @@
+Dungeon Crawl Stone Soup version 0.35-a0
+You are a Human Fighter.
+You have 12 Strength, 10 Intelligence and 8 Dexterity.
+
+Equipment:
+a - +5 robe of Misfortune (worn)
+b - +18 shield of the Gong (worn)
+c - +3 crown of vainglory (worn)
+d - +3 fungal fisticloak (worn)
+e - +6 lightning scales (worn)
+
+Skills:
++ Level 1.0 Armour

@@ -388,6 +388,35 @@ Modern shapeshifting morgues can include overview prose that looks grammatically
 
 Trying all available descriptors in a stable order preserves real species/background data while still keeping the overview prose available for form parsing.
 
+## 13.12. Broader Equipment Unrand Coverage And Base Types
+
+### What changed
+
+The equipment parser now recognizes more non-weapon unrands directly from Crawl names and fills in more hidden `baseType` values for named armour.
+
+This update covers current Crawl items such as:
+
+- `robe of Misfortune`
+- `fungal fisticloak`
+- `crown of vainglory`
+
+and also backfills missing `baseType` values for known named equipment such as:
+
+- `justicar's regalia` -> `scale mail`
+- `Maxwell's patent armour` -> `plate armour`
+- `scales of the Dragon King` -> `golden dragon scales`
+- `shield of the Gong` -> `kite shield`
+- `warlock's mirror` -> `buckler`
+- `lightning scales` -> `barding`
+
+Legacy aliases such as `tower shield "Bullseye"` are now recognized as shield unrands as well.
+
+### Why
+
+Several Crawl armour unrands do not expose their slot or base item in the visible morgue name. Without an explicit unrand table entry, the parser either left `baseType` empty or treated the item as a generic randart.
+
+Filling those mappings keeps named armour consistent with Crawl source data, improves downstream display quality, and lets property splitting move intrinsic armour resistances out of the artefact-only bucket when the base item is known.
+
 ## 13.12. Form Extraction Now Prefers `@:` and Equipped Talismans
 
 ### What changed

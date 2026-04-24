@@ -145,12 +145,53 @@ describe('extractEquipment', () => {
     const parsed = extractEquipment(loadFixture('focused', 'regalia-two-amulets.txt'))
 
     expect(parsed.bodyArmour).toBe("justicar's regalia")
+    expect(parsed.bodyArmourDetails?.baseType).toBe('scale mail')
+    expect(parsed.bodyArmourDetails?.artifactKind).toBe('unrand')
     expect(parsed.amulets).toEqual(['amulet of regeneration', 'amulet of dissipation'])
     expect(parsed.amuletDetails?.map((item) => item.rawName)).toEqual([
       'amulet of regeneration',
       'amulet of dissipation',
     ])
     expect(parsed.rings).toEqual(['ring "Sehodam"', 'ring "Wozxet"'])
+  })
+
+  it('recognizes current Crawl armour unrands whose names no longer expose their slot', () => {
+    const parsed = extractEquipment(loadFixture('focused', 'current-unrands-missing-from-parser.txt'))
+
+    expect(parsed.bodyArmour).toBe('robe of Misfortune')
+    expect(parsed.bodyArmourDetails).toMatchObject({
+      rawName: 'robe of Misfortune',
+      baseType: 'robe',
+      artifactKind: 'unrand',
+    })
+
+    expect(parsed.shield).toBe('shield of the Gong')
+    expect(parsed.shieldDetails).toMatchObject({
+      rawName: 'shield of the Gong',
+      baseType: 'kite shield',
+      artifactKind: 'unrand',
+    })
+
+    expect(parsed.helmets).toEqual(['crown of vainglory'])
+    expect(parsed.helmetDetails?.[0]).toMatchObject({
+      rawName: 'crown of vainglory',
+      baseType: 'hat',
+      artifactKind: 'unrand',
+    })
+
+    expect(parsed.cloaks).toEqual(['fungal fisticloak'])
+    expect(parsed.cloakDetails?.[0]).toMatchObject({
+      rawName: 'fungal fisticloak',
+      baseType: 'cloak',
+      artifactKind: 'unrand',
+    })
+
+    expect(parsed.footwear).toEqual(['lightning scales'])
+    expect(parsed.footwearDetails?.[0]).toMatchObject({
+      rawName: 'lightning scales',
+      baseType: 'barding',
+      artifactKind: 'unrand',
+    })
   })
 
   it('keeps known unrand gloves by name while storing structured properties', () => {
@@ -174,6 +215,24 @@ describe('extractEquipment', () => {
         booleanProps: { '-Cast': true },
         opaqueTokens: ['Infuse+∞', 'VampMP'],
       }),
+    })
+  })
+
+  it('fills base types for equipped unrands whose names hide the underlying armour class', () => {
+    const patent = extractEquipment(loadFixture('full', 'morgue-Hungry0364-20260402-095531.txt'))
+    const dragonKing = extractEquipment(loadFixture('full', 'morgue-joeboomin-20260404-223512.txt'))
+
+    expect(patent.bodyArmourDetails).toMatchObject({
+      rawName: "Maxwell's patent armour",
+      baseType: 'plate armour',
+      artifactKind: 'unrand',
+    })
+
+    expect(dragonKing.bodyArmourDetails).toMatchObject({
+      rawName: 'scales of the Dragon King',
+      baseType: 'golden dragon scales',
+      artifactKind: 'unrand',
+      equipState: 'melded',
     })
   })
 

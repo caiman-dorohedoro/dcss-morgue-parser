@@ -53,37 +53,39 @@ export type KnownUnrand = {
 const UNRAND_BODY_ARMOUR_ITEMS = [
   { name: 'faerie dragon scales', baseType: 'faerie dragon scales' },
   { name: 'robe of Augmentation', baseType: 'robe' },
-  { name: "Lear's hauberk" },
+  { name: "Lear's hauberk", baseType: 'chain mail' },
   { name: 'skin of Zhor', baseType: 'animal skin' },
   { name: 'salamander hide armour', baseType: 'salamander hide armour' },
+  { name: 'robe of Misfortune', baseType: 'robe' },
   { name: 'robe of Folly', baseType: 'robe' },
-  { name: "Maxwell's patent armour" },
+  { name: "Maxwell's patent armour", baseType: 'plate armour' },
   { name: 'robe of Night', baseType: 'robe' },
-  { name: 'scales of the Dragon King' },
+  { name: 'scales of the Dragon King', baseType: 'golden dragon scales' },
   { name: 'robe of Clouds', baseType: 'robe' },
   { name: 'moon troll leather armour', baseType: 'troll leather armour' },
   { name: 'orange crystal plate armour', baseType: 'crystal plate armour' },
   { name: 'robe of Vines', baseType: 'robe' },
-  { name: "Kryia's mail coat" },
-  { name: 'armour of Talos' },
-  { name: "Cigotuvi's embrace" },
+  { name: "Kryia's mail coat", baseType: 'scale mail' },
+  { name: 'armour of Talos', baseType: 'plate armour' },
+  { name: "Cigotuvi's embrace", baseType: 'leather armour' },
   { name: 'toga "Victory"', baseType: 'robe' },
   { name: "swamp witch's dragon scales", baseType: 'swamp dragon scales' },
-  { name: "justicar's regalia" },
+  { name: "justicar's regalia", baseType: 'scale mail' },
 ] as const satisfies readonly KnownUnrand[]
 
 export const UNRAND_SHIELD_ITEMS = [
   { name: 'tower shield of Ignorance', baseType: 'tower shield' },
-  { name: 'shield "Bullseye"' },
+  { name: 'shield "Bullseye"', baseType: 'tower shield' },
+  { name: 'tower shield "Bullseye"', baseType: 'tower shield' },
   { name: 'shield of Resistance', baseType: 'kite shield' },
-  { name: 'shield of the Gong' },
-  { name: "Storm Queen's Shield" },
-  { name: "warlock's mirror" },
+  { name: 'shield of the Gong', baseType: 'kite shield' },
+  { name: "Storm Queen's Shield", baseType: 'kite shield' },
+  { name: "warlock's mirror", baseType: 'buckler' },
 ] as const satisfies readonly KnownUnrand[]
 
 const UNRAND_FOOTWEAR_ITEMS = [
   { name: "Black Knight's barding", baseType: 'barding' },
-  { name: 'lightning scales' },
+  { name: 'lightning scales', baseType: 'barding' },
   { name: 'boots of the spider', baseType: 'boots' },
   { name: 'seven-league boots', baseType: 'boots' },
   { name: 'mountain boots', baseType: 'boots' },
@@ -98,9 +100,12 @@ export const UNRAND_HEAD_ITEMS = [
   { name: 'crown of Dyrovepreva', baseType: 'crown' },
   { name: 'hood of the Assassin', baseType: 'hood' },
   { name: 'helm of the ram' },
+  { name: "Maxwell's etheric cage", baseType: 'helmet' },
+  { name: 'crown of Eternal Torment', baseType: 'hat' },
   { name: 'Mask of the Dragon', baseType: 'mask' },
   { name: 'Mask of the Thief', baseType: 'mask' },
   { name: 'shining eye crown', baseType: 'crown' },
+  { name: 'crown of vainglory', baseType: 'hat' },
 ] as const satisfies readonly KnownUnrand[]
 
 export const UNRAND_GLOVE_ITEMS = [
@@ -117,6 +122,7 @@ export const UNRAND_CLOAK_ITEMS = [
   { name: 'cloak of the Thief', baseType: 'cloak' },
   { name: 'dragonskin cloak', baseType: 'cloak' },
   { name: 'ratskin cloak', baseType: 'cloak' },
+  { name: 'fungal fisticloak', baseType: 'cloak' },
   { name: 'scarf of invisibility', baseType: 'scarf' },
 ] as const satisfies readonly KnownUnrand[]
 

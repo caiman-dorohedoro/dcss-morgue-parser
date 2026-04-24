@@ -48,7 +48,7 @@
     "objectClass": "armour",
     "equipState": "worn",
     "isCursed": false,
-    "baseType": null,
+    "baseType": "scale mail",
     "enchant": 5,
     "artifactKind": "unrand",
     "ego": null,

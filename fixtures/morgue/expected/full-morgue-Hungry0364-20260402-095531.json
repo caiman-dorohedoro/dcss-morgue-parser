@@ -45,7 +45,7 @@
     "objectClass": "armour",
     "equipState": "worn",
     "isCursed": false,
-    "baseType": null,
+    "baseType": "plate armour",
     "enchant": 15,
     "artifactKind": "unrand",
     "ego": null,

@@ -39,7 +39,7 @@
     "objectClass": "armour",
     "equipState": "melded",
     "isCursed": false,
-    "baseType": null,
+    "baseType": "golden dragon scales",
     "enchant": 9,
     "artifactKind": "unrand",
     "ego": null,
@@ -57,8 +57,13 @@
       "opaqueTokens": []
     },
     "intrinsicProperties": {
-      "numeric": {},
-      "booleanProps": {},
+      "numeric": {
+        "rF": 1,
+        "rC": 1
+      },
+      "booleanProps": {
+        "rPois": true
+      },
       "opaqueTokens": []
     },
     "egoProperties": {
@@ -67,12 +72,8 @@
       "opaqueTokens": []
     },
     "artifactProperties": {
-      "numeric": {
-        "rF": 1,
-        "rC": 1
-      },
+      "numeric": {},
       "booleanProps": {
-        "rPois": true,
         "Command": true
       },
       "opaqueTokens": []
