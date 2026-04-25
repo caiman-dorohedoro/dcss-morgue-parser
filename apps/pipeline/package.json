@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit",
     "prefixtures:meta": "npm run parser:build",
     "fixtures:meta": "tsx scripts/generateFixtureMetadata.ts",
+    "crawl:equipment-catalog": "tsx scripts/generateCrawlEquipmentCatalog.ts",
     "prebackfill:parsed": "npm run parser:build",
     "backfill:parsed": "tsx scripts/backfillParsedData.ts",
     "prereview:compare": "npm run parser:build",

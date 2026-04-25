@@ -8,6 +8,7 @@ Important notes:
 - Always branch on `result.ok` before reading `result.record`.
 - The shortest high-signal contract document is `packages/parser/docs/parser_usage.md`.
 - The parser only parses morgue text. Fetching, sampling, QA workflows, and pipeline state live elsewhere in the repo.
+- For Crawl source equipment semantics, use `npm run --silent crawl:equipment-catalog -- --stdout`; it emits armour egos, weapon brands, missile brands, jewellery effects, and unrandom artefacts from the local `crawl/` submodule.
 
 ## Start Here
 
@@ -20,7 +21,7 @@ Important notes:
 - [Repository README](./README.md): monorepo overview, workspace layout, and common commands.
 - [Documentation catalog](./docs/meta--catalog.md): canonical reading order and document inventory.
 - [QA workflow](./docs/workflow--qa.md): how real morgue samples and fixture review validate parser behavior.
-- [Parser debugging workflow](./docs/workflow--parser-debugging.md): manual inspection loop for raw versus parsed output.
+- [Parser debugging workflow](./docs/workflow--parser-debugging.md): manual inspection loop for raw versus parsed output, including the local Crawl equipment catalog generator.
 
 ## Optional
 

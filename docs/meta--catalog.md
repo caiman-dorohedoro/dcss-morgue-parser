@@ -1,7 +1,7 @@
 # Documentation Catalog
 
 Created: 2026-04-07  
-Last updated: 2026-04-10
+Last updated: 2026-04-25
 
 ## Purpose
 
@@ -73,7 +73,7 @@ Last updated: 2026-04-10
 - `packages/parser/llms.txt` is the package-local LLM entrypoint that ships inside the published parser tarball.
 - `llms.txt` is the shortest repo-level entrypoint for LLMs that need to find the parser contract quickly.
 - `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
-- `docs/workflow--parser-debugging.md` is the practical inspection loop to use after a sample has already been collected.
+- `docs/workflow--parser-debugging.md` is the practical inspection loop to use after a sample has already been collected; it also documents the local Crawl equipment catalog generator.
 - `docs/notes--implementation.md` is not a raw historical dump of the original plan; it is an edited note that keeps only the engineering judgment that still matters.
 
 ## Change Log
@@ -84,3 +84,4 @@ Last updated: 2026-04-10
 - 2026-04-10: Expanded implementation notes with guidance on shared helper boundaries for pipeline, web viewer, and parser refactors.
 - 2026-04-10: Added `packages/parser/docs/parser_usage.md` and root `llms.txt` as the shortest LLM-facing parser contract entrypoints.
 - 2026-04-11: Added `packages/parser/llms.txt` to the canonical reading order and package inventory so the parser npm tarball carries its own LLM-facing index.
+- 2026-04-25: Documented the local Crawl equipment catalog generator in the parser debugging workflow, root README, and root LLM-facing index.

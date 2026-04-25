@@ -12,6 +12,7 @@
     "web:dev": "npm run build -w packages/parser && npm run dev -w apps/web",
     "web:build": "npm run build -w packages/parser && npm run build -w apps/web",
     "fixtures:meta": "npm run fixtures:meta -w apps/pipeline",
+    "crawl:equipment-catalog": "npm run crawl:equipment-catalog -w apps/pipeline --",
     "bootstrap": "npm run bootstrap -w apps/pipeline --",
     "incremental": "npm run incremental -w apps/pipeline --",
     "audit": "npm run audit -w apps/pipeline --",

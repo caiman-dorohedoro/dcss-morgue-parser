@@ -122,6 +122,16 @@ The most useful source areas during parser debugging have been:
 - `crawl/crawl-ref/source/dat/forms/`
 - `crawl/crawl-ref/source/mutation-data.h`
 
+For equipment semantics, generate a local Crawl catalog from the submodule:
+
+```bash
+npm run --silent crawl:equipment-catalog -- --stdout
+```
+
+The generated catalog separates armour egos, weapon brands, missile brands,
+jewellery effects, and unrandom artefacts. Without `--stdout`, the command
+writes `apps/pipeline/data/audit/crawl-equipment-catalog.json`.
+
 Use that lookup sparingly and only to answer semantics questions such as:
 
 - whether a parenthesized `A:` entry means a suppressed trait

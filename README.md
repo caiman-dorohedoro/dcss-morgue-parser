@@ -73,6 +73,15 @@ git submodule update --init crawl
 
 This is only needed when you want to inspect upstream Crawl behavior directly.
 
+Generate the local Crawl equipment semantics catalog:
+
+```bash
+npm run --silent crawl:equipment-catalog -- --stdout
+```
+
+Without `--stdout`, the catalog is written to
+`apps/pipeline/data/audit/crawl-equipment-catalog.json`.
+
 Typecheck everything:
 
 ```bash
