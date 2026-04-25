@@ -76,9 +76,44 @@ function parseDescriptor(descriptor: string, speciesNames: readonly string[]): {
   }
 }
 
+function normalizeDescriptor(descriptor: string): string {
+  return descriptor.replace(/\s+/g, ' ').trim()
+}
+
+function parseNotesDescriptor(text: string): string | null {
+  const lines = text.split('\n')
+  const noteStartIndex = lines.findIndex((line) => /^\s*0\s+\|\s+\S+\s+\|/.test(line))
+
+  if (noteStartIndex === -1) {
+    return null
+  }
+
+  const noteParts = [lines[noteStartIndex].replace(/^\s*0\s+\|\s+\S+\s+\|\s+/, '')]
+
+  for (let index = noteStartIndex + 1; index < lines.length; index += 1) {
+    const continuation = lines[index].match(/^\s+\|\s+(.*)$/)?.[1]
+
+    if (!continuation) {
+      break
+    }
+
+    noteParts.push(continuation)
+  }
+
+  const firstNote = normalizeDescriptor(noteParts.join(' '))
+  const notesMatch = firstNote.match(/^\S+\s+the\s+(.+?) began the quest(?: for the Orb)?\.$/)?.[1]
+
+  if (!notesMatch) {
+    return null
+  }
+
+  return normalizeDescriptor(notesMatch)
+}
+
 function getCharacterDescriptors(text: string): string[] {
   const descriptors = [
     text.match(/^\s*Began as an? (.+?) on [A-Z][a-z]{2} \d{1,2}, \d{4}\.$/m)?.[1],
+    parseNotesDescriptor(text),
     text.match(/^[^\n]*\(([^)]+)\)\s+Turns:/m)?.[1],
     text.match(/You are an? (.+?)\./)?.[1],
   ]
@@ -86,7 +121,7 @@ function getCharacterDescriptors(text: string): string[] {
   return [
     ...new Set(
       descriptors
-        .map((descriptor) => descriptor?.trim())
+        .map((descriptor) => descriptor && normalizeDescriptor(descriptor))
         .filter((descriptor): descriptor is string => Boolean(descriptor)),
     ),
   ]

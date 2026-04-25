@@ -461,3 +461,19 @@ The model intentionally stops short of pretending morgues always reveal exact
 piety. Header stars remain a bucketed approximation, while `godHistory`
 captures the exact religion events that Crawl already prints in the `Notes`
 section.
+
+## 13.14. Notes-Based Base Stats Fallback for Live Dumps
+
+### What changed
+
+`extractBaseStats` now uses the first `Notes` entry as a fallback descriptor
+source when a live `#` character dump only shows an abbreviated title line such
+as `(GCAE)` and does not include a top-level `Began as ...` line.
+
+### Why
+
+Current Crawl live dumps can abbreviate the title descriptor based on line
+width, while final morgues still include a verbose hiscore section with
+`Began as ...`. Using the start note as a secondary fallback keeps the parser
+compatible with in-progress dumps without changing the primary descriptor
+precedence for regular morgues.

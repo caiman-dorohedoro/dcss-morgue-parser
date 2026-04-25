@@ -1,0 +1,21 @@
+Dungeon Crawl Stone Soup version 0.35-a0-295-g2878072334 (webtiles) character file.
+
+caiman the Devastator (GCAE)                       Turns: 45680, Time: 01:44:49
+
+Health: 160/160    AC: 12    Str: 14    XL:     19   Next: 69%
+Magic:  50/50      EV: 10    Int: 25    God:    Vehumet [******]
+Gold:   2860       SH:  0    Dex: 14    Spells: 2/54 levels left
+
+rFire   . . .  (100%)   a - staff of conjuration
+rCold   + . .  (50%)    r - orb {Glass}
+
+You are on level 1 of the Vaults.
+You worship Vehumet.
+Vehumet is exalted by your worship.
+
+Notes
+Turn   | Place    | Note
+-------+----------+-------------------------------------------
+     0 | D:1      | caiman the Gale Centaur Air Elementalist began the quest
+                  | for the Orb.
+     0 | D:1      | Reached XP level 1. HP: 14/14 MP: 3/3

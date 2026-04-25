@@ -92,6 +92,30 @@ describe('extractBaseStats', () => {
     })
   })
 
+  it('falls back to the notes began-the-quest descriptor when only the title abbreviation is present', () => {
+    const parsed = extractBaseStats(loadFixture('notes-began-descriptor-title-abbrev.txt'))
+
+    expect(parsed).toMatchObject({
+      version: '0.35-a0-295-g2878072334',
+      species: 'Gale Centaur',
+      speciesVariant: null,
+      background: 'Air Elementalist',
+      god: 'Vehumet',
+      godPietyDisplay: '******',
+      godPietyRank: 6,
+      godOstracismPips: 0,
+      godStatus: null,
+      godUnderPenance: false,
+      xl: 19,
+      ac: 12,
+      ev: 10,
+      sh: 0,
+      strength: 14,
+      intelligence: 25,
+      dexterity: 14,
+    })
+  })
+
   it('normalizes colored draconian descriptors while preserving the variant', () => {
     const parsed = extractBaseStats(loadFixture('colored-draconian.txt'))
 
