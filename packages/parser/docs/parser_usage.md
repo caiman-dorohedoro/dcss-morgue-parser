@@ -148,11 +148,11 @@ Examples:
 - use `bodyArmour` when you just want the morgue-facing item name
 - use `bodyArmourDetails` when you need `artifactKind`, `ego`, `properties`, or `equipState`
 
-### Skills, spells, and mutations
+### Skills, spells, and displayed traits
 
 - `skills` and `effectiveSkills` are full fixed-key maps, not sparse objects
 - `spells` is always an array on success
-- `mutations` is always an array on success
+- `mutations` is always an array on success, but it stores the Crawl `A:` line's displayed traits
 - `godHistory` is always an array on success
 
 ### God state
@@ -248,17 +248,27 @@ Example:
 
 When a skill line has no parenthesized value, both objects hold the same number.
 
-### Mutations are broader than mutation-causing effects
+### `mutations` mirrors the Crawl `A:` trait line
 
-`mutations` comes from the morgue `A:` line.
-It can include:
+Despite the field name, `mutations` is not a whitelist-validated list of Crawl
+`mutation_type` values. It is a structured snapshot of the terse trait list that
+Crawl prints after `A:` in the morgue header.
 
-- innate species traits
+Crawl builds that line from both actual mutations and "fakemuts", so entries can
+include:
+
+- innate species traits that are not implemented as real mutations
 - form-derived traits
 - god-related traits shown there
 - actual mutations
+- derived body traits such as ring capacity or amphibiousness
 - suppressed entries from parentheses
 - transient entries from brackets
+
+The parser preserves the displayed label instead of resolving it back to a Crawl
+enum. For example, `MP-powered wands` is the displayed mutation short description,
+while `almost no armour` and `8 rings` are displayed traits rather than real
+mutation catalog entries.
 
 Examples:
 

@@ -81,11 +81,12 @@ becomes:
 
 The parenthesized number is often what the player actually saw after Ashenzari, Heroism, or other modifiers. Keeping both values avoids re-parsing skill table text downstream.
 
-## 4. Structured Mutations
+## 4. Structured `A:` Traits
 
 ### What changed
 
-`mutations` changed from a flat string list to:
+`mutations` changed from a flat string list to structured entries copied from
+the Crawl `A:` line:
 
 ```ts
 type MutationEntrySnapshot = {
@@ -98,7 +99,13 @@ type MutationEntrySnapshot = {
 
 ### Why
 
-Mutation level matters for analysis, and the `A:` line is the most stable summary of the terse special-trait state Crawl shows at game end.
+Mutation level matters for analysis, and the `A:` line is the most stable
+summary of the terse special-trait state Crawl shows at game end.
+
+The field name is historical. It should be read as "displayed `A:` traits",
+not as "only real Crawl mutation catalog entries"; Crawl includes actual
+mutations plus fakemuts such as species, form, god/passive, and derived body
+traits.
 
 Parenthesized entries remain `suppressed: true`, while bracketed entries are now preserved as `transient: true` to match Crawl's own mutation UI semantics.
 

@@ -7,6 +7,7 @@ Important notes:
 - The normal entrypoint is `parseMorgueText(text, options?)`.
 - Always branch on `result.ok` before reading `result.record`.
 - `form` is a current-state snapshot resolved from `@:` first, then the equipped talisman, then overview prose.
+- `mutations` is a structured snapshot of Crawl's displayed `A:` traits, not only real mutation catalog entries.
 - Summary equipment slots such as `bodyArmour`, `shield`, `orb`, and `talisman` use `"none"` instead of `null`.
 
 ## Start Here

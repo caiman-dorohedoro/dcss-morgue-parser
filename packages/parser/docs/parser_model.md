@@ -23,7 +23,7 @@ Because of that, the model prefers:
   - "is this a normal hat of intelligence or a randart hat?"
   - "does this armour grant `rF++` intrinsically, or via artefact properties?"
   - "what exact skills and effective skills did this character have?"
-  - "what mutations or innate traits were active at game end?"
+  - "what traits did Crawl display on the `A:` line at game end?"
 
 ## Parse Pipeline
 
@@ -259,23 +259,30 @@ Code:
 
 - `src/extractSkills.ts`
 
-## Mutations and Innate Traits
+## Displayed Traits From `A:`
 
 `mutations` comes from the `A:` line in the morgue header.
 
 Important detail:
 
-- this is not only "mutation-causing effects"
+- this is not the same as Crawl's real `mutation_type` catalog
 - it is the terse trait list shown by Crawl on the `A:` line in that morgue
+- Crawl builds that line from actual mutations plus "fakemuts" such as species,
+  form, god/passive, and derived body traits
 - parenthesized entries are preserved as `suppressed: true`
 - bracketed entries are preserved as `transient: true`
 
 So `mutations` may include:
 
-- species innate traits
+- species innate traits that are not real mutations
 - form- or god-derived traits shown on the `A:` line
 - actual mutations such as `devolution 1`
+- derived body traits such as `8 rings`, `amphibious`, or `almost no armour`
 - suppressed traits that Crawl shows in parentheses
+
+The parser intentionally preserves the displayed label instead of resolving it
+back to a Crawl enum. Actual mutations use `mutation-data.h` short descriptions,
+not enum names, and some `A:` entries have no mutation enum at all.
 
 Each entry is stored as:
 
@@ -293,6 +300,7 @@ Examples:
 - `horns 3` -> `{ name: "horns", level: 3 }`
 - `devolution 1` -> `{ name: "devolution", level: 1 }`
 - `big wings` -> `{ name: "big wings", level: null }`
+- `8 rings` -> `{ name: "8 rings", level: null }`
 - `(nimble swimmer 1)` -> `{ name: "nimble swimmer", level: 1, suppressed: true }`
 - `[poor constitution 2]` -> `{ name: "poor constitution", level: 2, transient: true }`
 
