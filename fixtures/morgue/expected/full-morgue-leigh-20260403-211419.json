@@ -45,7 +45,7 @@
   "statuses": [
     {
       "display": "protected from physical damage",
-      "id": null
+      "id": "protected_from_physical_damage"
     },
     {
       "display": "studying 2 skills",

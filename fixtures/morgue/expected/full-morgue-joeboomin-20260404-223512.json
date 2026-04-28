@@ -586,7 +586,7 @@
     {
       "name": "reduced EV",
       "level": null,
-      "traitId": null
+      "traitId": "reduced_ev"
     },
     {
       "name": "large",
@@ -611,12 +611,12 @@
     {
       "name": "shaggy fur",
       "level": 1,
-      "traitId": null
+      "traitId": "shaggy_fur"
     },
     {
       "name": "tough skin",
       "level": 1,
-      "traitId": null,
+      "traitId": "tough_skin",
       "suppressed": true
     },
     {

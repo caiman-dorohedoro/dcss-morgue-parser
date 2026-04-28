@@ -1,11 +1,23 @@
-import type { StatusEntrySnapshot, StatusSnapshot } from './types'
+import type { StatusEntrySnapshot, StatusEntryValues, StatusSnapshot } from './types'
 import { KNOWN_STATUS_IDS, type KnownStatusId } from './statusIds'
 
 const STATUS_ID_BY_DISPLAY: Readonly<Record<string, KnownStatusId>> = {
+  acrobat: KNOWN_STATUS_IDS.acrobatic,
+  acrobatic: KNOWN_STATUS_IDS.acrobatic,
+  corroded: KNOWN_STATUS_IDS.corrosion,
+  corrosion: KNOWN_STATUS_IDS.corrosion,
   'ephemerally shielded': KNOWN_STATUS_IDS.ephemeralShield,
+  'fiery armour': KNOWN_STATUS_IDS.fieryArmour,
+  'fiery-armoured': KNOWN_STATUS_IDS.fieryArmour,
   'ice-armoured': KNOWN_STATUS_IDS.icyArmour,
   'icy armour': KNOWN_STATUS_IDS.icyArmour,
   'icemail depleted': KNOWN_STATUS_IDS.icemailDepleted,
+  parry: KNOWN_STATUS_IDS.parrying,
+  parrying: KNOWN_STATUS_IDS.parrying,
+  'protected from physical damage': KNOWN_STATUS_IDS.protectedFromPhysicalDamage,
+  'sanguine armour': KNOWN_STATUS_IDS.sanguineArmoured,
+  'sanguine armoured': KNOWN_STATUS_IDS.sanguineArmoured,
+  trickster: KNOWN_STATUS_IDS.trickster,
   vertiginous: KNOWN_STATUS_IDS.vertigo,
   vertigo: KNOWN_STATUS_IDS.vertigo,
 }
@@ -81,10 +93,27 @@ function stripStatusDetails(display: string): string {
   }
 }
 
+function parseStatusValues(display: string): StatusEntryValues | undefined {
+  const tricksterMatch = display.match(/^trickster\s+\(\+(\d+)\s+AC\)$/iu)
+  if (tricksterMatch) {
+    return { ac: Number.parseInt(tricksterMatch[1], 10) }
+  }
+
+  const corrosionMatch = display.match(/^corroded\s+\((-?\d+)\)$/iu)
+  if (corrosionMatch) {
+    return { corrosion: Number.parseInt(corrosionMatch[1], 10) }
+  }
+
+  return undefined
+}
+
 function parseStatusEntry(display: string): StatusEntrySnapshot {
+  const values = parseStatusValues(display)
+
   return {
     display,
     id: STATUS_ID_BY_DISPLAY[stripStatusDetails(display)] ?? null,
+    ...(values ? { values } : {}),
   }
 }
 

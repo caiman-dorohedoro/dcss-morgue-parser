@@ -59,7 +59,10 @@
     },
     {
       "display": "trickster (+6 AC)",
-      "id": null
+      "id": "trickster",
+      "values": {
+        "ac": 6
+      }
     },
     {
       "display": "slow",
@@ -803,7 +806,7 @@
     {
       "name": "trickster",
       "level": null,
-      "traitId": null
+      "traitId": "trickster"
     },
     {
       "name": "accursed",

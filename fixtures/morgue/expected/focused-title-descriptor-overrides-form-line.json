@@ -495,7 +495,7 @@
     {
       "name": "reduced EV",
       "level": null,
-      "traitId": null
+      "traitId": "reduced_ev"
     },
     {
       "name": "large",
@@ -515,7 +515,7 @@
     {
       "name": "tough skin",
       "level": 1,
-      "traitId": null,
+      "traitId": "tough_skin",
       "suppressed": true
     },
     {

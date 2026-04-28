@@ -59,7 +59,10 @@
     },
     {
       "display": "trickster (+1 AC)",
-      "id": null
+      "id": "trickster",
+      "values": {
+        "ac": 1
+      }
     }
   ],
   "shieldDetails": {
@@ -1104,7 +1107,7 @@
     {
       "name": "trickster",
       "level": null,
-      "traitId": null
+      "traitId": "trickster"
     },
     {
       "name": "accursed",

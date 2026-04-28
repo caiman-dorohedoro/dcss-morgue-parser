@@ -242,10 +242,13 @@ and bracket details stay attached to the entry:
 ```json
 { "display": "fragile (+50% incoming damage)", "id": null }
 { "display": "ephemerally shielded", "id": "ephemeral_shield" }
+{ "display": "trickster (+14 AC)", "id": "trickster", "values": { "ac": 14 } }
+{ "display": "corroded (-4)", "id": "corrosion", "values": { "corrosion": -4 } }
 ```
 
 Only a small set of calculator-relevant statuses currently receives normalized
-IDs. Unknown or version-specific entries keep `id: null`. When Crawl prints
+IDs. Some statuses with displayed numeric details also receive a `values`
+object. Unknown or version-specific entries keep `id: null`. When Crawl prints
 `@: no status effects`, `statusText` is `"no status effects"` and `statuses` is
 empty.
 
@@ -311,8 +314,11 @@ Examples:
 
 `traitId` is a small canonical helper for displayed `A:` traits that downstream
 calculators need to recognize across Crawl display-name changes. It is not a
-Crawl `mutation_type` enum. Unknown or unmapped displayed traits keep
-`traitId: null`.
+Crawl `mutation_type` enum. The vocabulary includes selected AC, EV, and SH
+contributors such as `sanguine_armour`, `reduced_ac`, `reduced_ev`,
+`gelatinous_body`, `tough_skin`, `shaggy_fur`, `stone_body`,
+`large_bone_plates`, `sturdy_frame`, `trickster`, `acrobatic`, and scale
+traits. Unknown or unmapped displayed traits keep `traitId: null`.
 
 The current vocabulary is exported as `KNOWN_MUTATION_TRAIT_IDS`, with the
 corresponding `KnownMutationTraitId` type.

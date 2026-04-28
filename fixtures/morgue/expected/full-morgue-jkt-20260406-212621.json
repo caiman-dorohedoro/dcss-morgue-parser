@@ -54,7 +54,10 @@
     },
     {
       "display": "trickster (+3 AC)",
-      "id": null
+      "id": "trickster",
+      "values": {
+        "ac": 3
+      }
     }
   ],
   "helmetDetails": [
@@ -1085,7 +1088,7 @@
     {
       "name": "trickster",
       "level": null,
-      "traitId": null
+      "traitId": "trickster"
     },
     {
       "name": "accursed",

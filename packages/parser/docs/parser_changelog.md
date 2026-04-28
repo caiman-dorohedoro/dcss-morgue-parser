@@ -577,3 +577,45 @@ Downstream code should not need to compare parser-owned display strings such as
 Keeping the calculation effects downstream while exposing canonical parser IDs
 preserves the parser boundary: the parser identifies what Crawl displayed; apps
 decide what those identifiers do to AC, SH, spell failure, or other calculators.
+
+## 13.18. Expanded Stat-Relevant Trait and Status Semantics
+
+### What changed
+
+The parser expanded the canonical trait vocabulary for displayed `A:` entries
+that downstream AC, EV, or SH calculators need to identify without raw string
+matching. New IDs include sanguine armour, reduced AC, reduced EV, protean
+grace, gelatinous body, tough skin, shaggy fur, stone body, large bone plates,
+sturdy frame, trickster, acrobatic, and AC-bearing scale traits.
+
+The current status vocabulary now also identifies active calculator-relevant
+statuses such as sanguine armoured, acrobatic, fiery armour, Qazlal physical
+protection, parrying, corrosion, and trickster.
+
+`StatusEntrySnapshot` now has an optional `values` object for numeric details
+that Crawl prints inside the status display:
+
+```ts
+type StatusEntrySnapshot = {
+  display: string
+  id: KnownStatusId | null
+  values?: StatusEntryValues
+}
+
+type StatusEntryValues = {
+  ac?: number
+  corrosion?: number
+}
+```
+
+For example, `trickster (+14 AC)` now parses as
+`{ display: "trickster (+14 AC)", id: "trickster", values: { ac: 14 } }`,
+and `corroded (-4)` now parses as
+`{ display: "corroded (-4)", id: "corrosion", values: { corrosion: -4 } }`.
+
+### Why
+
+Raw morgue strings are still preserved, but downstream apps should not have to
+rediscover Crawl semantics by matching display text. The parser now exposes the
+semantic identifiers and displayed numeric values needed to build AC, EV, and
+SH calculators while still leaving the actual stat formulas outside the parser.

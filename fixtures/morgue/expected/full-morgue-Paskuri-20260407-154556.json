@@ -893,7 +893,7 @@
     {
       "name": "stone body",
       "level": null,
-      "traitId": null
+      "traitId": "stone_body"
     },
     {
       "name": "wild magic",

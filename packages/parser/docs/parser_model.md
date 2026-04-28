@@ -252,6 +252,12 @@ Each entry is stored as:
 type StatusEntrySnapshot = {
   display: string
   id: KnownStatusId | null
+  values?: StatusEntryValues
+}
+
+type StatusEntryValues = {
+  ac?: number
+  corrosion?: number
 }
 ```
 
@@ -263,10 +269,16 @@ calculator parity, such as:
 - `icemail depleted` -> `icemail_depleted`
 - `vertiginous` -> `vertigo`
 - `ice-armoured` -> `icy_armour`
+- `trickster (+14 AC)` -> `trickster`
+- `protected from physical damage` -> `protected_from_physical_damage`
+- `corroded (-4)` -> `corrosion`
 
-Unknown or version-specific status text keeps `id: null`. When Crawl prints
-`@: no status effects`, `statusText` is `"no status effects"` and `statuses` is
-an empty array.
+`values` is present only when Crawl displays a parseable numeric value inside
+the status text. For example, `trickster (+14 AC)` returns
+`values: { ac: 14 }`, and `corroded (-4)` returns
+`values: { corrosion: -4 }`. Unknown or version-specific status text keeps
+`id: null`. When Crawl prints `@: no status effects`, `statusText` is
+`"no status effects"` and `statuses` is an empty array.
 
 The normalized vocabulary is exported as `KNOWN_STATUS_IDS`, with the
 corresponding `KnownStatusId` type, so downstream calculators can share the
@@ -352,13 +364,19 @@ Examples:
 - `big wings` -> `{ name: "big wings", level: null, traitId: null }`
 - `deformed body` -> `{ name: "deformed body", level: null, traitId: "deformed_body" }`
 - `pseudopods` -> `{ name: "pseudopods", level: null, traitId: "deformed_body" }`
+- `sanguine armour 3` -> `{ name: "sanguine armour", level: 3, traitId: "sanguine_armour" }`
+- `reduced AC 2` -> `{ name: "reduced AC", level: 2, traitId: "reduced_ac" }`
+- `reduced EV 3` -> `{ name: "reduced EV", level: 3, traitId: "reduced_ev" }`
 - `8 rings` -> `{ name: "8 rings", level: null, traitId: null }`
 - `(nimble swimmer 1)` -> `{ name: "nimble swimmer", level: 1, traitId: null, suppressed: true }`
 - `[poor constitution 2]` -> `{ name: "poor constitution", level: 2, traitId: null, transient: true }`
 
 `traitId` is a small canonical helper for selected displayed traits that
 downstream calculators already need to identify across Crawl display-name
-changes. It is not a Crawl enum. Unknown or unmapped displayed traits keep
+changes. It includes selected AC, EV, and SH contributors such as sanguine
+armour, reduced AC/EV, gelatinous body, tough skin, shaggy fur, stone body,
+large bone plates, sturdy frame, trickster, acrobatic, and the AC-bearing scale
+traits. It is not a Crawl enum. Unknown or unmapped displayed traits keep
 `traitId: null`.
 
 The current vocabulary is exported as `KNOWN_MUTATION_TRAIT_IDS`, with the

@@ -697,12 +697,12 @@
     {
       "name": "shaggy fur",
       "level": 1,
-      "traitId": null
+      "traitId": "shaggy_fur"
     },
     {
       "name": "tough skin",
       "level": 1,
-      "traitId": null
+      "traitId": "tough_skin"
     }
   ],
   "godHistory": [

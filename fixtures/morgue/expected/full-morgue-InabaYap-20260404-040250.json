@@ -328,7 +328,7 @@
     {
       "name": "shaggy fur",
       "level": 3,
-      "traitId": null,
+      "traitId": "shaggy_fur",
       "suppressed": true
     },
     {

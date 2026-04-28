@@ -40,6 +40,7 @@ export type {
   SkillsSnapshot,
   SpellSnapshot,
   StatusEntrySnapshot,
+  StatusEntryValues,
   StatusSnapshot,
 } from './types'
 export type { KnownMutationTraitId } from './mutationTraitIds'

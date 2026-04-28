@@ -1033,7 +1033,7 @@
     {
       "name": "trickster",
       "level": null,
-      "traitId": null
+      "traitId": "trickster"
     },
     {
       "name": "accursed",

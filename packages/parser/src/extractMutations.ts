@@ -5,6 +5,7 @@ import { splitSections } from './splitSections'
 const STOP_LINE_PATTERNS = [/^}:/, /^[a-z]:/i, /^\d+:/, /^You /, /^[A-Z][^,]*:$/]
 
 const TRAIT_ID_BY_NAME: Readonly<Record<string, KnownMutationTraitId>> = {
+  acrobatic: KNOWN_MUTATION_TRAIT_IDS.acrobatic,
   'anti-wizardry': KNOWN_MUTATION_TRAIT_IDS.disruptedMagic,
   'condensation shield': KNOWN_MUTATION_TRAIT_IDS.condensationShield,
   'deformed body': KNOWN_MUTATION_TRAIT_IDS.deformedBody,
@@ -12,11 +13,31 @@ const TRAIT_ID_BY_NAME: Readonly<Record<string, KnownMutationTraitId>> = {
   'distortion field': KNOWN_MUTATION_TRAIT_IDS.repulsionField,
   'ephemeral shield': KNOWN_MUTATION_TRAIT_IDS.ephemeralShield,
   'evasive flight': KNOWN_MUTATION_TRAIT_IDS.evasiveFlight,
+  'gelatinous body': KNOWN_MUTATION_TRAIT_IDS.gelatinousBody,
   icemail: KNOWN_MUTATION_TRAIT_IDS.icemail,
+  'icy blue scales': KNOWN_MUTATION_TRAIT_IDS.icyBlueScales,
+  'iridescent scales': KNOWN_MUTATION_TRAIT_IDS.iridescentScales,
+  'iron-fused scales': KNOWN_MUTATION_TRAIT_IDS.ironFusedScales,
+  'large bone plates': KNOWN_MUTATION_TRAIT_IDS.largeBonePlates,
+  'molten scales': KNOWN_MUTATION_TRAIT_IDS.moltenScales,
+  'protean grace': KNOWN_MUTATION_TRAIT_IDS.proteanGrace,
   pseudopods: KNOWN_MUTATION_TRAIT_IDS.deformedBody,
   reckless: KNOWN_MUTATION_TRAIT_IDS.reckless,
+  'reduced ac': KNOWN_MUTATION_TRAIT_IDS.reducedAc,
+  'reduced ev': KNOWN_MUTATION_TRAIT_IDS.reducedEv,
   'repulsion field': KNOWN_MUTATION_TRAIT_IDS.repulsionField,
+  'rugged brown scales': KNOWN_MUTATION_TRAIT_IDS.ruggedBrownScales,
+  'sanguine armour': KNOWN_MUTATION_TRAIT_IDS.sanguineArmour,
+  'shaggy fur': KNOWN_MUTATION_TRAIT_IDS.shaggyFur,
+  'sharp scales': KNOWN_MUTATION_TRAIT_IDS.sharpScales,
+  'slimy green scales': KNOWN_MUTATION_TRAIT_IDS.slimyGreenScales,
+  'stone body': KNOWN_MUTATION_TRAIT_IDS.stoneBody,
+  'sturdy frame': KNOWN_MUTATION_TRAIT_IDS.sturdyFrame,
   'tengu flight': KNOWN_MUTATION_TRAIT_IDS.evasiveFlight,
+  'thin metallic scales': KNOWN_MUTATION_TRAIT_IDS.thinMetallicScales,
+  'tough skin': KNOWN_MUTATION_TRAIT_IDS.toughSkin,
+  trickster: KNOWN_MUTATION_TRAIT_IDS.trickster,
+  'yellow scales': KNOWN_MUTATION_TRAIT_IDS.yellowScales,
 }
 
 function collectAbilityLine(header: string): string {

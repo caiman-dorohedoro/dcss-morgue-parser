@@ -1133,7 +1133,7 @@
     {
       "name": "sanguine armour",
       "level": 3,
-      "traitId": null,
+      "traitId": "sanguine_armour",
       "suppressed": true
     },
     {

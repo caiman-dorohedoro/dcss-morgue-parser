@@ -1035,7 +1035,7 @@
     {
       "name": "iridescent scales",
       "level": 2,
-      "traitId": null
+      "traitId": "iridescent_scales"
     },
     {
       "name": "wild magic",

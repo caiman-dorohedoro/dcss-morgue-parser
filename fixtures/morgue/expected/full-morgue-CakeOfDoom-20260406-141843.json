@@ -527,7 +527,7 @@
     {
       "name": "acrobatic",
       "level": null,
-      "traitId": null
+      "traitId": "acrobatic"
     }
   ],
   "godHistory": [

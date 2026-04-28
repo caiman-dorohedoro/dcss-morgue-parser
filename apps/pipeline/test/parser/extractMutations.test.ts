@@ -41,6 +41,45 @@ describe('extractMutations', () => {
     })
   })
 
+  it('normalizes stat-affecting displayed A: traits to canonical trait ids', () => {
+    expect(
+      extractMutations(
+        [
+          'A: sanguine armour 3, reduced AC 2, reduced EV 3, protean grace,',
+          'gelatinous body 1, tough skin 1, shaggy fur 3, stone body,',
+          'large bone plates 2, sturdy frame 1, trickster, acrobatic,',
+          'icy blue scales 3, iridescent scales 2, molten scales 1,',
+          'rugged brown scales 1, slimy green scales 2, thin metallic scales 3,',
+          'yellow scales 1, sharp scales 3, iron-fused scales',
+        ].join('\n'),
+      ),
+    ).toEqual({
+      mutations: [
+        { name: 'sanguine armour', level: 3, traitId: KNOWN_MUTATION_TRAIT_IDS.sanguineArmour },
+        { name: 'reduced AC', level: 2, traitId: KNOWN_MUTATION_TRAIT_IDS.reducedAc },
+        { name: 'reduced EV', level: 3, traitId: KNOWN_MUTATION_TRAIT_IDS.reducedEv },
+        { name: 'protean grace', level: null, traitId: KNOWN_MUTATION_TRAIT_IDS.proteanGrace },
+        { name: 'gelatinous body', level: 1, traitId: KNOWN_MUTATION_TRAIT_IDS.gelatinousBody },
+        { name: 'tough skin', level: 1, traitId: KNOWN_MUTATION_TRAIT_IDS.toughSkin },
+        { name: 'shaggy fur', level: 3, traitId: KNOWN_MUTATION_TRAIT_IDS.shaggyFur },
+        { name: 'stone body', level: null, traitId: KNOWN_MUTATION_TRAIT_IDS.stoneBody },
+        { name: 'large bone plates', level: 2, traitId: KNOWN_MUTATION_TRAIT_IDS.largeBonePlates },
+        { name: 'sturdy frame', level: 1, traitId: KNOWN_MUTATION_TRAIT_IDS.sturdyFrame },
+        { name: 'trickster', level: null, traitId: KNOWN_MUTATION_TRAIT_IDS.trickster },
+        { name: 'acrobatic', level: null, traitId: KNOWN_MUTATION_TRAIT_IDS.acrobatic },
+        { name: 'icy blue scales', level: 3, traitId: KNOWN_MUTATION_TRAIT_IDS.icyBlueScales },
+        { name: 'iridescent scales', level: 2, traitId: KNOWN_MUTATION_TRAIT_IDS.iridescentScales },
+        { name: 'molten scales', level: 1, traitId: KNOWN_MUTATION_TRAIT_IDS.moltenScales },
+        { name: 'rugged brown scales', level: 1, traitId: KNOWN_MUTATION_TRAIT_IDS.ruggedBrownScales },
+        { name: 'slimy green scales', level: 2, traitId: KNOWN_MUTATION_TRAIT_IDS.slimyGreenScales },
+        { name: 'thin metallic scales', level: 3, traitId: KNOWN_MUTATION_TRAIT_IDS.thinMetallicScales },
+        { name: 'yellow scales', level: 1, traitId: KNOWN_MUTATION_TRAIT_IDS.yellowScales },
+        { name: 'sharp scales', level: 3, traitId: KNOWN_MUTATION_TRAIT_IDS.sharpScales },
+        { name: 'iron-fused scales', level: null, traitId: KNOWN_MUTATION_TRAIT_IDS.ironFusedScales },
+      ],
+    })
+  })
+
   it('extracts terse innate traits from the wrapped A: line', () => {
     expect(extractMutations(loadFixture('mutations-wrapped-a-line.txt'))).toEqual({
       mutations: [
@@ -68,7 +107,7 @@ describe('extractMutations', () => {
         { name: 'negative energy resistance', level: 1, traitId: null },
         { name: 'electricity resistance', level: null, traitId: null },
         { name: 'torment resistance', level: 1, traitId: null },
-        { name: 'stone body', level: null, traitId: null },
+        { name: 'stone body', level: null, traitId: KNOWN_MUTATION_TRAIT_IDS.stoneBody },
         { name: 'devolution', level: 1, traitId: null },
       ],
     })
@@ -81,7 +120,7 @@ describe('extractMutations', () => {
         { name: 'amphibious', level: null, traitId: null },
         { name: '8 rings', level: null, traitId: null },
         { name: 'camouflage', level: 1, traitId: null },
-        { name: 'gelatinous body', level: 1, traitId: null },
+        { name: 'gelatinous body', level: 1, traitId: KNOWN_MUTATION_TRAIT_IDS.gelatinousBody },
         { name: 'nimble swimmer', level: 1, traitId: null, suppressed: true },
         { name: 'tentacles', level: null, traitId: null },
       ],

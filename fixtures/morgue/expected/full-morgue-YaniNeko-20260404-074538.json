@@ -49,7 +49,10 @@
     },
     {
       "display": "corroded (-4)",
-      "id": null
+      "id": "corrosion",
+      "values": {
+        "corrosion": -4
+      }
     },
     {
       "display": "on stardust cooldown",

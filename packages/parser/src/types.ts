@@ -237,6 +237,12 @@ export type MutationSnapshot = {
 export type StatusEntrySnapshot = {
   display: string
   id: KnownStatusId | null
+  values?: StatusEntryValues
+}
+
+export type StatusEntryValues = {
+  ac?: number
+  corrosion?: number
 }
 
 export type StatusSnapshot = {

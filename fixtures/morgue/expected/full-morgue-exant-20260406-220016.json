@@ -47,7 +47,10 @@
     },
     {
       "display": "corroded (-2)",
-      "id": null
+      "id": "corrosion",
+      "values": {
+        "corrosion": -2
+      }
     },
     {
       "display": "hasted (expiring)",
@@ -830,7 +833,7 @@
     {
       "name": "gelatinous body",
       "level": 1,
-      "traitId": null
+      "traitId": "gelatinous_body"
     },
     {
       "name": "nimble swimmer",

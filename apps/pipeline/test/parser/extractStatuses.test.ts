@@ -31,11 +31,46 @@ describe('extractStatuses', () => {
     })
   })
 
+  it('normalizes stat-affecting statuses and parses displayed status values', () => {
+    expect(
+      extractStatuses(
+        [
+          '@: sanguine armoured, acrobatic, fiery-armoured, protected from physical damage,',
+          'parry, corroded (-4), trickster (+12 AC), vertigo',
+          'A: sanguine armour 3, trickster',
+        ].join('\n'),
+      ),
+    ).toEqual({
+      statusText:
+        'sanguine armoured, acrobatic, fiery-armoured, protected from physical damage, parry, corroded (-4), trickster (+12 AC), vertigo',
+      statuses: [
+        { display: 'sanguine armoured', id: KNOWN_STATUS_IDS.sanguineArmoured },
+        { display: 'acrobatic', id: KNOWN_STATUS_IDS.acrobatic },
+        { display: 'fiery-armoured', id: KNOWN_STATUS_IDS.fieryArmour },
+        {
+          display: 'protected from physical damage',
+          id: KNOWN_STATUS_IDS.protectedFromPhysicalDamage,
+        },
+        { display: 'parry', id: KNOWN_STATUS_IDS.parrying },
+        { display: 'corroded (-4)', id: KNOWN_STATUS_IDS.corrosion, values: { corrosion: -4 } },
+        { display: 'trickster (+12 AC)', id: KNOWN_STATUS_IDS.trickster, values: { ac: 12 } },
+        { display: 'vertigo', id: KNOWN_STATUS_IDS.vertigo },
+      ],
+    })
+  })
+
   it('exports the status id vocabulary used by parsed status entries', () => {
     expect(KNOWN_STATUS_IDS).toEqual({
+      acrobatic: 'acrobatic',
+      corrosion: 'corrosion',
       ephemeralShield: 'ephemeral_shield',
+      fieryArmour: 'fiery_armour',
       icyArmour: 'icy_armour',
       icemailDepleted: 'icemail_depleted',
+      parrying: 'parrying',
+      protectedFromPhysicalDamage: 'protected_from_physical_damage',
+      sanguineArmoured: 'sanguine_armoured',
+      trickster: 'trickster',
       vertigo: 'vertigo',
     })
   })

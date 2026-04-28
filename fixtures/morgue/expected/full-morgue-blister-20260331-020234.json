@@ -1257,7 +1257,7 @@
     {
       "name": "reduced EV",
       "level": null,
-      "traitId": null
+      "traitId": "reduced_ev"
     },
     {
       "name": "almost no armour",
@@ -1283,7 +1283,7 @@
     {
       "name": "gelatinous body",
       "level": 1,
-      "traitId": null,
+      "traitId": "gelatinous_body",
       "suppressed": true
     },
     {
