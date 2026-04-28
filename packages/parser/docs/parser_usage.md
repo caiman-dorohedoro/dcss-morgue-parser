@@ -146,7 +146,12 @@ When you need semantics, prefer the detail object over the summary string.
 Examples:
 
 - use `bodyArmour` when you just want the morgue-facing item name
-- use `bodyArmourDetails` when you need `artifactKind`, `ego`, `properties`, or `equipState`
+- use `bodyArmourDetails` when you need `artifactKind`, `baseType`, `ego`, `properties`, or `equipState`
+
+`baseType` follows Crawl's item subtype, not only the visible artefact name. For
+example, `faerie dragon scales` is preserved as the raw/display name, while its
+`baseType` is `acid dragon scales` because Crawl defines the unrand as
+`OBJ_ARMOUR/ARM_ACID_DRAGON_ARMOUR`.
 
 ### Skills, spells, and displayed traits
 

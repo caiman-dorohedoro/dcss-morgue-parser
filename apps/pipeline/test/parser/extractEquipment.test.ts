@@ -236,6 +236,113 @@ describe('extractEquipment', () => {
     })
   })
 
+  it('uses Crawl source subtype as the base type for faerie dragon scales', () => {
+    const parsed = extractEquipment([
+      'Dungeon Crawl Stone Soup version 0.34.1-3-ga2c7840dd7 (webtiles) character file.',
+      '',
+      'Health: 249/249    AC: 30    Str: 15    XL:     27',
+      'rFire   + . .  (50%)    Q - +7 faerie dragon scales {rElec rF+ rCorr Str+2 Stlth- Hexes}',
+      '',
+      'Inventory:',
+      '',
+      'Armour',
+      ' Q - the +7 faerie dragon scales (worn) {rElec rF+ rCorr Str+2 Stlth- Hexes}',
+      '',
+      'Skills:',
+    ].join('\n'))
+
+    expect(parsed.bodyArmour).toBe('faerie dragon scales')
+    expect(parsed.bodyArmourDetails).toMatchObject({
+      rawName: 'faerie dragon scales',
+      displayName: 'faerie dragon scales',
+      baseType: 'acid dragon scales',
+      artifactKind: 'unrand',
+      enchant: 7,
+      intrinsicProperties: bag({ booleanProps: { rCorr: true } }),
+      artifactProperties: bag({
+        numeric: { rF: 1, Str: 2, Stlth: -1 },
+        booleanProps: { rElec: true },
+        opaqueTokens: ['Hexes'],
+      }),
+    })
+  })
+
+  it('uses Crawl source subtypes for unrand armour whose visible names look like base types', () => {
+    const parsed = extractEquipment([
+      'Dungeon Crawl Stone Soup version 0.34.1-3-ga2c7840dd7 (webtiles) character file.',
+      '',
+      'Health: 100/100    AC: 30    Str: 15    XL:     10',
+      'rFire   + + .  (33%)    A - +3 salamander hide armour {Flames, rFlCloud rF++ rC--}',
+      'SInv    +               M - +2 mask of the Dragon {Dragonpray SInv}',
+      '',
+      'Inventory:',
+      '',
+      'Armour',
+      ' A - the +3 salamander hide armour (worn) {Flames, rFlCloud rF++ rC--}',
+      ' C - the +3 crown of Dyrovepreva {rElec Int+2 SInv}',
+      ' H - the +2 hood of the Assassin {Detect Stab+ Stlth++}',
+      ' M - the +2 mask of the Dragon (worn) {Dragonpray SInv}',
+      '',
+      'Skills:',
+    ].join('\n'))
+
+    expect(parsed.bodyArmourDetails).toMatchObject({
+      rawName: 'salamander hide armour',
+      displayName: 'salamander hide armour',
+      baseType: 'leather armour',
+      artifactKind: 'unrand',
+    })
+    expect(parsed.helmetDetails?.[0]).toMatchObject({
+      rawName: 'mask of the Dragon',
+      displayName: 'Mask of the Dragon',
+      baseType: 'hat',
+      artifactKind: 'unrand',
+    })
+
+    const unequippedUnrands = extractEquipment([
+      'Dungeon Crawl Stone Soup version 0.34.1-3-ga2c7840dd7 (webtiles) character file.',
+      '',
+      'Health: 100/100    AC: 30    Str: 15    XL:     10',
+      'SInv    +               C - +3 crown of Dyrovepreva {rElec Int+2 SInv}',
+      '',
+      'Inventory:',
+      '',
+      'Armour',
+      ' C - the +3 crown of Dyrovepreva (worn) {rElec Int+2 SInv}',
+      ' H - the +2 hood of the Assassin {Detect Stab+ Stlth++}',
+      '',
+      'Skills:',
+    ].join('\n'))
+
+    expect(unequippedUnrands.helmetDetails?.[0]).toMatchObject({
+      rawName: 'crown of Dyrovepreva',
+      displayName: 'crown of Dyrovepreva',
+      baseType: 'hat',
+      artifactKind: 'unrand',
+    })
+
+    const hood = extractEquipment([
+      'Dungeon Crawl Stone Soup version 0.34.1-3-ga2c7840dd7 (webtiles) character file.',
+      '',
+      'Health: 100/100    AC: 30    Str: 15    XL:     10',
+      'Stlth   ++++           H - +2 hood of the Assassin {Detect Stab+ Stlth++}',
+      '',
+      'Inventory:',
+      '',
+      'Armour',
+      ' H - the +2 hood of the Assassin (worn) {Detect Stab+ Stlth++}',
+      '',
+      'Skills:',
+    ].join('\n'))
+
+    expect(hood.helmetDetails?.[0]).toMatchObject({
+      rawName: 'hood of the Assassin',
+      displayName: 'hood of the Assassin',
+      baseType: 'hat',
+      artifactKind: 'unrand',
+    })
+  })
+
   it('continues parsing equipped items when descriptions are interleaved in inventory', () => {
     const parsed = extractEquipment(loadFixture('focused', 'equipped-accessories-with-descriptions.txt'))
 
@@ -528,6 +635,7 @@ Jewellery
       rawName: 'mask of the Dragon',
       objectClass: 'armour',
       equipState: 'worn',
+      baseType: 'hat',
       namedEffects: ['Dragonpray'],
       properties: bag({ booleanProps: { SInv: true } }),
       artifactProperties: bag({ booleanProps: { SInv: true } }),

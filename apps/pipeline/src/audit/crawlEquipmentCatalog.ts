@@ -44,8 +44,10 @@ export type CrawlUnrandartCatalogEntry = {
   name: string
   objectClass: string
   subtype: string
+  baseType: string | null
   displayType: string | null
   flags: string[]
+  propertyGeneration: 'fixed' | 'randomized'
   isDeleted: boolean
   isNoGen: boolean
 }
@@ -63,6 +65,7 @@ export type CrawlEquipmentCatalog = {
 export type CrawlEquipmentSourceFiles = {
   tagMajorVersion: number
   itemPropEnum: string
+  itemProp: string
   itemName: string
   mapdef: string
   artData: string
@@ -476,7 +479,40 @@ function splitArtDataBlocks(raw: string): string[][] {
   return blocks
 }
 
-function parseArtDataBlock(lines: string[]): CrawlUnrandartCatalogEntry | null {
+function buildArmourBaseTypes(itemProp: string): Map<string, string> {
+  const baseTypes = new Map<string, string>()
+
+  for (const match of itemProp.matchAll(/\{\s*(ARM_[A-Z0-9_]+)\s*,\s*"([^"]+)"/g)) {
+    baseTypes.set(match[1], match[2])
+  }
+
+  for (const match of itemProp.matchAll(/DRAGON_ARMOUR\(\s*([A-Z0-9_]+)\s*,\s*"([^"]+)"/g)) {
+    baseTypes.set(`ARM_${match[1]}_DRAGON_ARMOUR`, `${match[2]} dragon scales`)
+  }
+
+  return baseTypes
+}
+
+function deriveBaseType(
+  objectClass: string,
+  subtype: string,
+  armourBaseTypes: ReadonlyMap<string, string>,
+): string | null {
+  if (objectClass === 'OBJ_ARMOUR') {
+    return armourBaseTypes.get(subtype) ?? null
+  }
+
+  return null
+}
+
+function derivePropertyGeneration(enumName: string): CrawlUnrandartCatalogEntry['propertyGeneration'] {
+  return enumName === 'UNRAND_FAERIE' ? 'randomized' : 'fixed'
+}
+
+function parseArtDataBlock(
+  lines: string[],
+  armourBaseTypes: ReadonlyMap<string, string>,
+): CrawlUnrandartCatalogEntry | null {
   const fields = new Map<string, string>()
 
   for (const line of lines) {
@@ -503,21 +539,28 @@ function parseArtDataBlock(lines: string[]): CrawlUnrandartCatalogEntry | null {
     .map((flag) => flag.trim())
     .filter(Boolean)
 
+  const enumName = deriveUnrandEnumName(name, fields.get('ENUM'))
+
   return {
-    enumName: deriveUnrandEnumName(name, fields.get('ENUM')),
+    enumName,
     name,
     objectClass,
     subtype,
+    baseType: deriveBaseType(objectClass, subtype, armourBaseTypes),
     displayType: fields.get('TYPE') ?? null,
     flags,
+    propertyGeneration: derivePropertyGeneration(enumName),
     isDeleted: flags.includes('deleted'),
     isNoGen: flags.includes('nogen'),
   }
 }
 
-function buildUnrandarts(artData: string): CrawlUnrandartCatalogEntry[] {
+function buildUnrandarts(
+  artData: string,
+  armourBaseTypes: ReadonlyMap<string, string>,
+): CrawlUnrandartCatalogEntry[] {
   return splitArtDataBlocks(artData)
-    .map(parseArtDataBlock)
+    .map((lines) => parseArtDataBlock(lines, armourBaseTypes))
     .filter((entry): entry is CrawlUnrandartCatalogEntry => entry !== null)
 }
 
@@ -528,9 +571,11 @@ export function buildCrawlEquipmentCatalogFromSource(
     sourceFiles.itemPropEnum,
     sourceFiles.tagMajorVersion,
   )
+  const itemProp = preprocessCrawlEquipmentSource(sourceFiles.itemProp, sourceFiles.tagMajorVersion)
   const itemName = preprocessCrawlEquipmentSource(sourceFiles.itemName, sourceFiles.tagMajorVersion)
   const mapdef = preprocessCrawlEquipmentSource(sourceFiles.mapdef, sourceFiles.tagMajorVersion)
   const artData = preprocessCrawlEquipmentSource(sourceFiles.artData, sourceFiles.tagMajorVersion)
+  const armourBaseTypes = buildArmourBaseTypes(itemProp)
 
   return {
     source: null,
@@ -539,7 +584,7 @@ export function buildCrawlEquipmentCatalogFromSource(
     weaponBrands: buildWeaponBrands(itemPropEnum, itemName, mapdef),
     missileBrands: buildMissileBrands(itemPropEnum, itemName, mapdef),
     jewelleryEffects: buildJewelleryEffects(itemPropEnum, itemName),
-    unrandarts: buildUnrandarts(artData),
+    unrandarts: buildUnrandarts(artData, armourBaseTypes),
   }
 }
 
@@ -549,9 +594,10 @@ export async function buildCrawlEquipmentCatalog(options?: {
 }): Promise<CrawlEquipmentCatalog> {
   const crawlRoot = path.resolve(options?.crawlRoot ?? path.resolve(process.cwd(), 'crawl'))
   const sourceDir = path.resolve(crawlRoot, 'crawl-ref/source')
-  const [tagVersionRaw, itemPropEnum, itemName, mapdef, artData] = await Promise.all([
+  const [tagVersionRaw, itemPropEnum, itemProp, itemName, mapdef, artData] = await Promise.all([
     readFile(path.resolve(sourceDir, 'tag-version.h'), 'utf8'),
     readFile(path.resolve(sourceDir, 'item-prop-enum.h'), 'utf8'),
+    readFile(path.resolve(sourceDir, 'item-prop.cc'), 'utf8'),
     readFile(path.resolve(sourceDir, 'item-name.cc'), 'utf8'),
     readFile(path.resolve(sourceDir, 'mapdef.cc'), 'utf8'),
     readFile(path.resolve(sourceDir, 'art-data.txt'), 'utf8'),
@@ -562,6 +608,7 @@ export async function buildCrawlEquipmentCatalog(options?: {
     ...buildCrawlEquipmentCatalogFromSource({
       tagMajorVersion,
       itemPropEnum,
+      itemProp,
       itemName,
       mapdef,
       artData,

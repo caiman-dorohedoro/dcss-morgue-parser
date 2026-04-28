@@ -386,6 +386,12 @@ Each detail contains fields such as:
 - `egoProperties`
 - `artifactProperties`
 
+`baseType` is the Crawl item subtype's display name, not necessarily the same
+as the morgue-facing artefact name. For example, the Enchantress's `faerie
+dragon scales` keep that value in `rawName` and `displayName`, while
+`baseType` resolves from Crawl's `OBJ_ARMOUR/ARM_ACID_DRAGON_ARMOUR` source
+definition to `acid dragon scales`.
+
 ### Property Bags
 
 Equipment properties use a structured bag:

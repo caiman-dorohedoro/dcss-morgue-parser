@@ -484,3 +484,27 @@ width, while final morgues still include a verbose hiscore section with
 `Began as ...`. Using the start note as a secondary fallback keeps the parser
 compatible with in-progress dumps without changing the primary descriptor
 precedence for regular morgues.
+
+## 13.15. Unrand Base Types Follow Crawl `OBJ` Subtypes
+
+### What changed
+
+The Crawl equipment catalog now derives unrand `baseType` values from
+`art-data.txt` `OBJ` subtype data and `item-prop.cc` armour names. It also keeps
+internal catalog metadata for randomized unrand property generation without
+adding that field to parser output.
+
+The parser now treats `faerie dragon scales` as a morgue-facing unrand name
+whose `baseType` is `acid dragon scales`, matching Crawl's
+`OBJ_ARMOUR/ARM_ACID_DRAGON_ARMOUR` definition.
+
+The same source-aligned rule also corrects visible-name traps such as
+`salamander hide armour` -> `leather armour`, `crown of Dyrovepreva` -> `hat`,
+`hood of the Assassin` -> `hat`, and `Mask of the Dragon` -> `hat`.
+
+### Why
+
+Some unrand names look like base armour names but are really fixed appearances
+over an underlying Crawl subtype. Keeping `baseType` tied to the subtype lets
+intrinsic armour properties, such as acid dragon scales' `rCorr`, be separated
+from generated artefact properties correctly.
