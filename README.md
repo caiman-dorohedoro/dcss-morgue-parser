@@ -127,7 +127,6 @@ For the full QA sampling flag set, see [docs/workflow--qa.md](./docs/workflow--q
 
 - [Documentation Catalog](./docs/meta--catalog.md)
 - [npm Publishing Workflow](./docs/workflow--npm-publishing.md)
-- [App Parser ID Migration Notes](./docs/notes--app--parser-id-migration.md)
 - [Parser Model](./packages/parser/docs/parser_model.md)
 - [Parser Design Changelog](./packages/parser/docs/parser_changelog.md)
 - [Pipeline Origin](./docs/origin--pipeline.md)

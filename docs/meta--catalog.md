@@ -46,7 +46,6 @@ Last updated: 2026-04-28
 | `workflow--qa.md` | Repeatable parser QA workflow built around stratified sampling and raw/parsed review pairs | `/docs` |
 | `workflow--parser-debugging.md` | Manual debugging loop for reviewing exported raw/parsed pairs and classifying real parser issues | `/docs` |
 | `strategy--fixture.md` | Test and fixture maintenance strategy across focused regressions and full golden morgues | `/docs` |
-| `notes--app--parser-id-migration.md` | App migration guide for parser-owned status IDs and displayed trait IDs | `/docs` |
 | `notes--implementation.md` | Engineering notes distilled from the earlier implementation plan | `/docs` |
 | `llms.txt` | Package-local LLM-facing index shipped with the parser npm tarball | `/packages/parser` |
 | `parser_model.md` | Current parser schema and Crawl-aligned model explanation | `/packages/parser/docs` |
@@ -68,8 +67,7 @@ Last updated: 2026-04-28
 11. `docs/workflow--qa.md`
 12. `docs/workflow--parser-debugging.md`
 13. `docs/strategy--fixture.md`
-14. `docs/notes--app--parser-id-migration.md`
-15. `docs/notes--implementation.md`
+14. `docs/notes--implementation.md`
 
 ## Status Notes
 
@@ -79,7 +77,6 @@ Last updated: 2026-04-28
 - `docs/workflow--npm-publishing.md` is the operational reference for releasing the parser package through npm Trusted Publishing.
 - `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
 - `docs/workflow--parser-debugging.md` is the practical inspection loop to use after a sample has already been collected; it also documents the local Crawl equipment catalog generator.
-- `docs/notes--app--parser-id-migration.md` is the app-facing migration guide for replacing parser display-string comparisons with canonical parser IDs.
 - `docs/notes--implementation.md` is not a raw historical dump of the original plan; it is an edited note that keeps only the engineering judgment that still matters.
 
 ## Change Log
@@ -92,4 +89,3 @@ Last updated: 2026-04-28
 - 2026-04-11: Added `packages/parser/llms.txt` to the canonical reading order and package inventory so the parser npm tarball carries its own LLM-facing index.
 - 2026-04-25: Documented the local Crawl equipment catalog generator in the parser debugging workflow, root README, and root LLM-facing index.
 - 2026-04-28: Added `workflow--npm-publishing.md` to document npm Trusted Publishing setup, release commands, and the explicit tag push requirement.
-- 2026-04-28: Added `notes--app--parser-id-migration.md` for app developers adopting parser-owned status IDs and displayed trait IDs.
