@@ -1,7 +1,7 @@
 # Documentation Catalog
 
 Created: 2026-04-07  
-Last updated: 2026-04-25
+Last updated: 2026-04-28
 
 ## Purpose
 
@@ -42,6 +42,7 @@ Last updated: 2026-04-25
 | `meta--catalog.md` | Canonical document catalog and reading order | `/docs` |
 | `origin--pipeline.md` | Pipeline design background, including discovery/parsing separation, strict failure, and sampling rationale | `/docs` |
 | `origin--raw-morgue-collection.md` | Provenance for collecting raw morgues from public Crawl servers for QA and schema iteration | `/docs` |
+| `workflow--npm-publishing.md` | npm Trusted Publishing setup and tag-based release commands for the parser package | `/docs` |
 | `workflow--qa.md` | Repeatable parser QA workflow built around stratified sampling and raw/parsed review pairs | `/docs` |
 | `workflow--parser-debugging.md` | Manual debugging loop for reviewing exported raw/parsed pairs and classifying real parser issues | `/docs` |
 | `strategy--fixture.md` | Test and fixture maintenance strategy across focused regressions and full golden morgues | `/docs` |
@@ -62,16 +63,18 @@ Last updated: 2026-04-25
 7. `packages/parser/docs/parser_changelog.md`
 8. `docs/origin--pipeline.md`
 9. `docs/origin--raw-morgue-collection.md`
-10. `docs/workflow--qa.md`
-11. `docs/workflow--parser-debugging.md`
-12. `docs/strategy--fixture.md`
-13. `docs/notes--implementation.md`
+10. `docs/workflow--npm-publishing.md`
+11. `docs/workflow--qa.md`
+12. `docs/workflow--parser-debugging.md`
+13. `docs/strategy--fixture.md`
+14. `docs/notes--implementation.md`
 
 ## Status Notes
 
 - `packages/parser/docs/parser_usage.md`, `packages/parser/docs/parser_model.md`, and `packages/parser/docs/parser_changelog.md` are the parser package contract documents at different depths.
 - `packages/parser/llms.txt` is the package-local LLM entrypoint that ships inside the published parser tarball.
 - `llms.txt` is the shortest repo-level entrypoint for LLMs that need to find the parser contract quickly.
+- `docs/workflow--npm-publishing.md` is the operational reference for releasing the parser package through npm Trusted Publishing.
 - `docs/origin--pipeline.md` and `docs/origin--raw-morgue-collection.md` describe provenance outside the parser package itself.
 - `docs/workflow--parser-debugging.md` is the practical inspection loop to use after a sample has already been collected; it also documents the local Crawl equipment catalog generator.
 - `docs/notes--implementation.md` is not a raw historical dump of the original plan; it is an edited note that keeps only the engineering judgment that still matters.
@@ -85,3 +88,4 @@ Last updated: 2026-04-25
 - 2026-04-10: Added `packages/parser/docs/parser_usage.md` and root `llms.txt` as the shortest LLM-facing parser contract entrypoints.
 - 2026-04-11: Added `packages/parser/llms.txt` to the canonical reading order and package inventory so the parser npm tarball carries its own LLM-facing index.
 - 2026-04-25: Documented the local Crawl equipment catalog generator in the parser debugging workflow, root README, and root LLM-facing index.
+- 2026-04-28: Added `workflow--npm-publishing.md` to document npm Trusted Publishing setup, release commands, and the explicit tag push requirement.
