@@ -41,6 +41,25 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "about to teleport, corroded (-4), on stardust cooldown, studying 3 skills",
+  "statuses": [
+    {
+      "display": "about to teleport",
+      "id": null
+    },
+    {
+      "display": "corroded (-4)",
+      "id": null
+    },
+    {
+      "display": "on stardust cooldown",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "swamp dragon scales",
     "displayName": "swamp dragon scales",

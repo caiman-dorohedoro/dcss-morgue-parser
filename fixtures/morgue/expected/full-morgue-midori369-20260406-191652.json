@@ -41,6 +41,17 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "flying, studying 3 skills",
+  "statuses": [
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "fire dragon scales of Undesirable Species",
     "displayName": "fire dragon scales",

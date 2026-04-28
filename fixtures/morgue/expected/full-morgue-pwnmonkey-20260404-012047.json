@@ -37,6 +37,17 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "constricted, studying Unarmed Combat",
+  "statuses": [
+    {
+      "display": "constricted",
+      "id": null
+    },
+    {
+      "display": "studying Unarmed Combat",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "chain mail of willpower",
     "displayName": "chain mail of willpower",

@@ -37,6 +37,33 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "confused, berserking, held, studying Summonings, drained, very quick",
+  "statuses": [
+    {
+      "display": "confused",
+      "id": null
+    },
+    {
+      "display": "berserking",
+      "id": null
+    },
+    {
+      "display": "held",
+      "id": null
+    },
+    {
+      "display": "studying Summonings",
+      "id": null
+    },
+    {
+      "display": "drained",
+      "id": null
+    },
+    {
+      "display": "very quick",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "troll leather armour",
     "displayName": "troll leather armour",

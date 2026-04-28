@@ -100,6 +100,7 @@ These fields may be `null` on success:
 - `godPietyRank`
 - `godStatus`
 - `form`
+- `statusText`
 
 ### Summary equipment fields
 
@@ -157,6 +158,7 @@ example, `faerie dragon scales` is preserved as the raw/display name, while its
 
 - `skills` and `effectiveSkills` are full fixed-key maps, not sparse objects
 - `spells` is always an array on success
+- `statuses` is always an array on success
 - `mutations` is always an array on success, but it stores the Crawl `A:` line's displayed traits
 - `godHistory` is always an array on success
 
@@ -228,6 +230,24 @@ Examples of returned values include:
 
 Treat this field as normalized parser output rather than a literal copy of one
 specific morgue line.
+
+### Current statuses
+
+`statusText` preserves the current `@:` line after wrapped continuation lines
+are joined. It is `null` only when no `@:` line exists in the input.
+
+`statuses` is the comma-split current status list in display order. Parentheses
+and bracket details stay attached to the entry:
+
+```json
+{ "display": "fragile (+50% incoming damage)", "id": null }
+{ "display": "ephemerally shielded", "id": "ephemeral_shield" }
+```
+
+Only a small set of calculator-relevant statuses currently receives normalized
+IDs. Unknown or version-specific entries keep `id: null`. When Crawl prints
+`@: no status effects`, `statusText` is `"no status effects"` and `statuses` is
+empty.
 
 ## Normalization Rules
 

@@ -39,6 +39,33 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "about to teleport, corroded (-2), hasted (expiring), studying Dodging, lightly drained, very quick",
+  "statuses": [
+    {
+      "display": "about to teleport",
+      "id": null
+    },
+    {
+      "display": "corroded (-2)",
+      "id": null
+    },
+    {
+      "display": "hasted (expiring)",
+      "id": null
+    },
+    {
+      "display": "studying Dodging",
+      "id": null
+    },
+    {
+      "display": "lightly drained",
+      "id": null
+    },
+    {
+      "display": "very quick",
+      "id": null
+    }
+  ],
   "shieldDetails": {
     "rawName": "kite shield of Evenfall",
     "displayName": "kite shield",

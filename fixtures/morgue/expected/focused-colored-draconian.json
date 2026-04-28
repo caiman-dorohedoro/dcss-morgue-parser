@@ -39,6 +39,17 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "studying Long Blades, inugami summoned",
+  "statuses": [
+    {
+      "display": "studying Long Blades",
+      "id": null
+    },
+    {
+      "display": "inugami summoned",
+      "id": null
+    }
+  ],
   "glovesDetails": [
     {
       "rawName": "pair of gloves of dexterity",

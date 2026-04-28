@@ -41,6 +41,21 @@
   ],
   "talisman": "dragon-coil talisman",
   "form": "dragon-form",
+  "statusText": "dragon-form, flying, studying Ice Magic",
+  "statuses": [
+    {
+      "display": "dragon-form",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying Ice Magic",
+      "id": null
+    }
+  ],
   "shieldDetails": {
     "rawName": "kite shield of cold resistance",
     "displayName": "kite shield of cold resistance",

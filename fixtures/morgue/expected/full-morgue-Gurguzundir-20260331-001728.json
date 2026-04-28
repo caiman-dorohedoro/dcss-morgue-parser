@@ -34,6 +34,21 @@
   ],
   "talisman": "spore talisman",
   "form": "spore-form",
+  "statusText": "lethally poisoned (-1 -> -10), spore-form, very quick",
+  "statuses": [
+    {
+      "display": "lethally poisoned (-1 -> -10)",
+      "id": null
+    },
+    {
+      "display": "spore-form",
+      "id": null
+    },
+    {
+      "display": "very quick",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "robe of positive energy",
     "displayName": "robe of positive energy",

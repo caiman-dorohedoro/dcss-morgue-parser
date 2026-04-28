@@ -42,6 +42,13 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "studying Axes",
+  "statuses": [
+    {
+      "display": "studying Axes",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "justicar's regalia",
     "displayName": "justicar's regalia",

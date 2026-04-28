@@ -39,6 +39,45 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "resistant, marked, enlightened, flying, hasted, studying 2 skills, invisible, bribing [the Vaults], very quick",
+  "statuses": [
+    {
+      "display": "resistant",
+      "id": null
+    },
+    {
+      "display": "marked",
+      "id": null
+    },
+    {
+      "display": "enlightened",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "hasted",
+      "id": null
+    },
+    {
+      "display": "studying 2 skills",
+      "id": null
+    },
+    {
+      "display": "invisible",
+      "id": null
+    },
+    {
+      "display": "bribing [the Vaults]",
+      "id": null
+    },
+    {
+      "display": "very quick",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "robe of cold resistance",
     "displayName": "robe of cold resistance",

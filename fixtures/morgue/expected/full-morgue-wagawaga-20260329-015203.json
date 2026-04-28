@@ -37,6 +37,21 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "on blink cooldown, studying Long Blades, slow",
+  "statuses": [
+    {
+      "display": "on blink cooldown",
+      "id": null
+    },
+    {
+      "display": "studying Long Blades",
+      "id": null
+    },
+    {
+      "display": "slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "animal skin of the Peculiar Lies",
     "displayName": "animal skin",

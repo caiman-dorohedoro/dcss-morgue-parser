@@ -37,6 +37,25 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "lethally poisoned (0 -> -1), extremely horrified, slowed, very slow",
+  "statuses": [
+    {
+      "display": "lethally poisoned (0 -> -1)",
+      "id": null
+    },
+    {
+      "display": "extremely horrified",
+      "id": null
+    },
+    {
+      "display": "slowed",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "robe of willpower",
     "displayName": "robe of willpower",

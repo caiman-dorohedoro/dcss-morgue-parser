@@ -41,6 +41,17 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "studying 2 skills, very slow",
+  "statuses": [
+    {
+      "display": "studying 2 skills",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "shadow dragon scales of the Hot Ocelot",
     "displayName": "shadow dragon scales",

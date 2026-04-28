@@ -32,7 +32,7 @@ if (result.ok) {
 - `xl`, `ac`, `ev`, `sh`, `strength`, `intelligence`, `dexterity`
 - `skills` and `effectiveSkills`
 - Equipment slot summaries plus `...Details` with property bags
-- `spells`, `mutations`, `form`, `godHistory`
+- `spells`, `mutations`, `form`, `statusText`, `statuses`, `godHistory`
 
 See [Parser Model](./docs/parser_model.md) for the full schema.
 

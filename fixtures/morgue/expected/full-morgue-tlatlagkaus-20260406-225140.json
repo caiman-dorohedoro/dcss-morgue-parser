@@ -40,6 +40,13 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "studying 2 skills",
+  "statuses": [
+    {
+      "display": "studying 2 skills",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "crystal plate armour of cold resistance",
     "displayName": "crystal plate armour of cold resistance",

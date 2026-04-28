@@ -6,6 +6,7 @@ import { extractGodHistory } from './extractGodHistory'
 import { extractMutations } from './extractMutations'
 import { extractSkills } from './extractSkills'
 import { extractSpells } from './extractSpells'
+import { extractStatuses } from './extractStatuses'
 import { ParseFailure, validateStrict } from './validateStrict'
 
 export function parseMorgueText(text: string, options: ParseMorgueTextOptions = {}): ParseMorgueTextResult {
@@ -17,6 +18,7 @@ export function parseMorgueText(text: string, options: ParseMorgueTextOptions = 
       ...extractForm(text, {
         equippedTalismanBaseType: equipment.talismanDetails?.baseType ?? null,
       }),
+      ...extractStatuses(text),
       ...extractSkills(text),
       ...extractMutations(text),
       spells: extractSpells(text, {
@@ -55,6 +57,8 @@ export function parseMorgueText(text: string, options: ParseMorgueTextOptions = 
       rings: record.rings,
       talisman: record.talisman,
       form: record.form,
+      statusText: record.statusText,
+      statuses: record.statuses,
       ...(record.bodyArmourDetails ? { bodyArmourDetails: record.bodyArmourDetails } : {}),
       ...(record.shieldDetails ? { shieldDetails: record.shieldDetails } : {}),
       ...(record.helmetDetails ? { helmetDetails: record.helmetDetails } : {}),

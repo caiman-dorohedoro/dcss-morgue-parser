@@ -84,6 +84,8 @@ function mockParsedRecord(meta: MockParseMeta) {
     rings: [],
     talisman: 'none',
     form: null,
+    statusText: null,
+    statuses: [],
     skills: mockSkills(),
     effectiveSkills: mockSkills(),
     spells: [],

@@ -230,6 +230,16 @@ export type MutationSnapshot = {
   mutations: MutationEntrySnapshot[]
 }
 
+export type StatusEntrySnapshot = {
+  display: string
+  id: string | null
+}
+
+export type StatusSnapshot = {
+  statusText: string | null
+  statuses: StatusEntrySnapshot[]
+}
+
 export type FormSnapshot = {
   form: string | null
 }
@@ -247,6 +257,8 @@ export type ParsedMorgueTextRecord = BaseStatsSnapshot & {
   gizmo?: string
   talisman: string
   form: string | null
+  statusText: string | null
+  statuses: StatusEntrySnapshot[]
   bodyArmourDetails?: EquipmentItemSnapshot
   shieldDetails?: EquipmentItemSnapshot
   helmetDetails?: EquipmentItemSnapshot[]

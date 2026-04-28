@@ -33,6 +33,49 @@
   ],
   "talisman": "granite talisman",
   "form": "statue-form",
+  "statusText": "mighty, berserking, statue-form, resistant, weakened, untranslocatable, hasted, constricted, studying 2 skills, quick",
+  "statuses": [
+    {
+      "display": "mighty",
+      "id": null
+    },
+    {
+      "display": "berserking",
+      "id": null
+    },
+    {
+      "display": "statue-form",
+      "id": null
+    },
+    {
+      "display": "resistant",
+      "id": null
+    },
+    {
+      "display": "weakened",
+      "id": null
+    },
+    {
+      "display": "untranslocatable",
+      "id": null
+    },
+    {
+      "display": "hasted",
+      "id": null
+    },
+    {
+      "display": "constricted",
+      "id": null
+    },
+    {
+      "display": "studying 2 skills",
+      "id": null
+    },
+    {
+      "display": "quick",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "scales of the Dragon King",
     "displayName": "scales of the Dragon King",

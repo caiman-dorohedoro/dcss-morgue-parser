@@ -41,6 +41,33 @@
   ],
   "talisman": "granite talisman \"Iffich\"",
   "form": "statue-form",
+  "statusText": "statue-form, in a vortex, gold aura, flying (expiring), studying 3 skills, very slow",
+  "statuses": [
+    {
+      "display": "statue-form",
+      "id": null
+    },
+    {
+      "display": "in a vortex",
+      "id": null
+    },
+    {
+      "display": "gold aura",
+      "id": null
+    },
+    {
+      "display": "flying (expiring)",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "shieldDetails": {
     "rawName": "tower shield of positive energy",
     "displayName": "tower shield of positive energy",

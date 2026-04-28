@@ -43,6 +43,25 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "about to teleport, flying, studying 3 skills, trickster (+1 AC)",
+  "statuses": [
+    {
+      "display": "about to teleport",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    },
+    {
+      "display": "trickster (+1 AC)",
+      "id": null
+    }
+  ],
   "shieldDetails": {
     "rawName": "kite shield of the Wild Blue Yonder",
     "displayName": "kite shield",

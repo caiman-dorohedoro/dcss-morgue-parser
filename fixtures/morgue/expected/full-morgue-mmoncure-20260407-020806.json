@@ -42,6 +42,33 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "weak-willed, weakened, jinxed, flying, studying 3 skills, trickster (+14 AC)",
+  "statuses": [
+    {
+      "display": "weak-willed",
+      "id": null
+    },
+    {
+      "display": "weakened",
+      "id": null
+    },
+    {
+      "display": "jinxed",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    },
+    {
+      "display": "trickster (+14 AC)",
+      "id": null
+    }
+  ],
   "helmetDetails": [
     {
       "rawName": "helmet of sniping",

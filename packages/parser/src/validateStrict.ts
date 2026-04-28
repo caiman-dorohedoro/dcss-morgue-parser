@@ -62,5 +62,9 @@ export function validateStrict(row: Partial<ParsedMorgueTextRecord>): ParsedMorg
     throw new ParseFailure('mutation_parse_failed')
   }
 
+  if ((row.statusText !== null && typeof row.statusText !== 'string') || !Array.isArray(row.statuses)) {
+    throw new ParseFailure('status_parse_failed')
+  }
+
   return row as ParsedMorgueTextRecord
 }

@@ -35,6 +35,13 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "flying",
+  "statuses": [
+    {
+      "display": "flying",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "leather armour of Pleasant Breezes",
     "displayName": "leather armour",

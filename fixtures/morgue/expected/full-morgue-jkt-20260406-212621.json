@@ -42,6 +42,21 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "flying, studying 2 skills, trickster (+3 AC)",
+  "statuses": [
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying 2 skills",
+      "id": null
+    },
+    {
+      "display": "trickster (+3 AC)",
+      "id": null
+    }
+  ],
   "helmetDetails": [
     {
       "rawName": "hat of the Chained Sun",

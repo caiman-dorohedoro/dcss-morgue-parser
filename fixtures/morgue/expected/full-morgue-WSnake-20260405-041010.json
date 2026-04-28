@@ -39,6 +39,29 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "exhausted, animating dead (expiring), slowed, lightly drained, very slow",
+  "statuses": [
+    {
+      "display": "exhausted",
+      "id": null
+    },
+    {
+      "display": "animating dead (expiring)",
+      "id": null
+    },
+    {
+      "display": "slowed",
+      "id": null
+    },
+    {
+      "display": "lightly drained",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "helmetDetails": [
     {
       "rawName": "hat",

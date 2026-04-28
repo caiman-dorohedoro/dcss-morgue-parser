@@ -39,6 +39,29 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "exhausted, constricted, studying 3 skills, lightly drained, very slow",
+  "statuses": [
+    {
+      "display": "exhausted",
+      "id": null
+    },
+    {
+      "display": "constricted",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    },
+    {
+      "display": "lightly drained",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "Maxwell's patent armour",
     "displayName": "Maxwell's patent armour",

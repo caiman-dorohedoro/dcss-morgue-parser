@@ -41,6 +41,13 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "flying",
+  "statuses": [
+    {
+      "display": "flying",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "troll leather armour",
     "displayName": "troll leather armour",

@@ -23,19 +23,21 @@ Because of that, the model prefers:
   - "is this a normal hat of intelligence or a randart hat?"
   - "does this armour grant `rF++` intrinsically, or via artefact properties?"
   - "what exact skills and effective skills did this character have?"
+  - "what current statuses did Crawl display on the `@:` line at game end?"
   - "what traits did Crawl display on the `A:` line at game end?"
 
 ## Parse Pipeline
 
-`parseMorgueText()` builds a record from seven extractors:
+`parseMorgueText()` builds a record from eight extractors:
 
 1. `extractBaseStats()`
 2. `extractEquipment()`
 3. `extractForm()`
-4. `extractSkills()`
-5. `extractMutations()`
-6. `extractSpells()`
-7. `extractGodHistory()`
+4. `extractStatuses()`
+5. `extractSkills()`
+6. `extractMutations()`
+7. `extractSpells()`
+8. `extractGodHistory()`
 
 The combined row is then validated by `validateStrict()`.
 
@@ -229,6 +231,49 @@ The talisman fallback is based on Crawl's item and form concepts, not only on
 free-form English prose. `protean talisman` is intentionally excluded from a
 direct fixed mapping because it is a transforming intermediary rather than a
 stable final form signal.
+
+## Current Statuses
+
+`statusText` and `statuses` expose the current `@:` line from the morgue
+header. This is a current-state snapshot, not a duration history.
+
+The parser preserves wrapped `@:` lines by joining continuation lines before
+splitting entries. It also preserves detail text inside parentheses or brackets.
+
+Examples:
+
+- `fragile (+50% incoming damage)`
+- `studying 3 skills`
+- `ephemerally shielded`
+
+Each entry is stored as:
+
+```ts
+type StatusEntrySnapshot = {
+  display: string
+  id: string | null
+}
+```
+
+`display` is the exact status entry text after wrapping is resolved. `id` is a
+small normalized helper for status tokens that are already needed by downstream
+calculator parity, such as:
+
+- `ephemerally shielded` -> `ephemeral_shield`
+- `icemail depleted` -> `icemail_depleted`
+- `vertiginous` -> `vertigo`
+- `ice-armoured` -> `icy_armour`
+
+Unknown or version-specific status text keeps `id: null`. When Crawl prints
+`@: no status effects`, `statusText` is `"no status effects"` and `statuses` is
+an empty array.
+
+Crawl source references:
+
+- `crawl/crawl-ref/source/output.cc`
+- `crawl/crawl-ref/source/status.h`
+- `crawl/crawl-ref/source/status.cc`
+- `crawl/crawl-ref/source/duration-data.h`
 
 ## Skills
 

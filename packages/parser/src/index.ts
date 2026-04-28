@@ -10,6 +10,7 @@ export { extractSkills } from './extractSkills'
 export { parseMorgueText } from './parseMorgueText'
 export { parseOrderedSkillKeys, SKILL_DISPLAY_LABELS } from './skillMetadata'
 export { splitSections } from './splitSections'
+export { collectStatusText, extractStatuses } from './extractStatuses'
 export { ParseFailure, validateStrict } from './validateStrict'
 export type {
   ArtifactKind,
@@ -36,5 +37,7 @@ export type {
   SkillLevelsSnapshot,
   SkillsSnapshot,
   SpellSnapshot,
+  StatusEntrySnapshot,
+  StatusSnapshot,
 } from './types'
 export type { SectionMap } from './splitSections'

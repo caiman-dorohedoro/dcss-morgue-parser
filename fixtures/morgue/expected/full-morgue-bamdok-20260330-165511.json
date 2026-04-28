@@ -39,6 +39,21 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "marked, studying Ice Magic, invisible",
+  "statuses": [
+    {
+      "display": "marked",
+      "id": null
+    },
+    {
+      "display": "studying Ice Magic",
+      "id": null
+    },
+    {
+      "display": "invisible",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "steam dragon scales of Ashenzari's Gnosis",
     "displayName": "steam dragon scales",

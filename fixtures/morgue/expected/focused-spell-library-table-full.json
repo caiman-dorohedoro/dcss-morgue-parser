@@ -28,6 +28,8 @@
   "rings": [],
   "talisman": "none",
   "form": null,
+  "statusText": null,
+  "statuses": [],
   "bodyArmourDetails": {
     "rawName": "robe of Willpower",
     "displayName": "robe of willpower",

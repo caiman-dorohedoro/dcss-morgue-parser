@@ -41,6 +41,25 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "flying, studying 3 skills, lightly drained, very slow",
+  "statuses": [
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    },
+    {
+      "display": "lightly drained",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "golden dragon scales",
     "displayName": "golden dragon scales",

@@ -33,6 +33,17 @@
   ],
   "talisman": "storm talisman of the Lost Path",
   "form": "storm-form",
+  "statusText": "storm-form, flying",
+  "statuses": [
+    {
+      "display": "storm-form",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    }
+  ],
   "amuletDetails": [
     {
       "rawName": "amulet \"Defiokar\"",

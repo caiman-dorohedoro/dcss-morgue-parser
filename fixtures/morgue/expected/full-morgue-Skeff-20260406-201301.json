@@ -43,6 +43,29 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "about to teleport, flying, studying Maces & Flails, trickster (+6 AC), slow",
+  "statuses": [
+    {
+      "display": "about to teleport",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying Maces & Flails",
+      "id": null
+    },
+    {
+      "display": "trickster (+6 AC)",
+      "id": null
+    },
+    {
+      "display": "slow",
+      "id": null
+    }
+  ],
   "helmetDetails": [
     {
       "rawName": "hat of Pondering",

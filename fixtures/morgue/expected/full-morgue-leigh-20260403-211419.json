@@ -41,6 +41,17 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "protected from physical damage, studying 2 skills",
+  "statuses": [
+    {
+      "display": "protected from physical damage",
+      "id": null
+    },
+    {
+      "display": "studying 2 skills",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "plate armour \"Toshraila\"",
     "displayName": "plate armour",

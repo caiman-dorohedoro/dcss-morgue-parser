@@ -36,6 +36,29 @@
   "rings": [],
   "talisman": "none",
   "form": null,
+  "statusText": "weakened, on berserk cooldown, slowed, revving, very slow",
+  "statuses": [
+    {
+      "display": "weakened",
+      "id": null
+    },
+    {
+      "display": "on berserk cooldown",
+      "id": null
+    },
+    {
+      "display": "slowed",
+      "id": null
+    },
+    {
+      "display": "revving",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "crystal plate armour",
     "displayName": "crystal plate armour",

@@ -40,6 +40,33 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "heroic, finesse-ful, weakened, flying, inhibited regen, studying 2 skills",
+  "statuses": [
+    {
+      "display": "heroic",
+      "id": null
+    },
+    {
+      "display": "finesse-ful",
+      "id": null
+    },
+    {
+      "display": "weakened",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "inhibited regen",
+      "id": null
+    },
+    {
+      "display": "studying 2 skills",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "pearl dragon scales of Benevolence",
     "displayName": "pearl dragon scales",

@@ -35,6 +35,25 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "flying, mesmerised, studying Translocations, slimy shroud",
+  "statuses": [
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "mesmerised",
+      "id": null
+    },
+    {
+      "display": "studying Translocations",
+      "id": null
+    },
+    {
+      "display": "slimy shroud",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "troll leather armour",
     "displayName": "troll leather armour",

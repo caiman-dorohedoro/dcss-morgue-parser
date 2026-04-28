@@ -508,3 +508,30 @@ Some unrand names look like base armour names but are really fixed appearances
 over an underlying Crawl subtype. Keeping `baseType` tied to the subtype lets
 intrinsic armour properties, such as acid dragon scales' `rCorr`, be separated
 from generated artefact properties correctly.
+
+## 13.16. Current `@:` Status Snapshot
+
+### What changed
+
+The parser now stores the morgue header's current `@:` line as:
+
+- `statusText`
+- `statuses`
+
+`statusText` preserves the wrapped status line as normalized single-line text.
+`statuses` preserves display order and keeps parenthesized or bracketed detail
+with each entry. A small set of calculator-relevant status entries receives a
+normalized `id`, including `ephemeral_shield`, `icemail_depleted`, `vertigo`,
+and `icy_armour`; unmapped entries keep `id: null`.
+
+### Why
+
+Some displayed defensive and spell-failure values depend on active durations,
+not only on traits printed on the `A:` line. For example, ephemeral shield only
+adds shield value while `ephemerally shielded` is active, icemail and
+condensation shield are suppressed while `icemail depleted` is active, and
+vertigo adds to spell failure.
+
+Keeping the current `@:` snapshot in the parse record lets downstream
+calculators distinguish owned traits from currently active statuses without
+re-parsing the morgue header.

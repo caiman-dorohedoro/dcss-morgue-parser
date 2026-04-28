@@ -35,6 +35,25 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "berserking, flying, drained, very quick",
+  "statuses": [
+    {
+      "display": "berserking",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "drained",
+      "id": null
+    },
+    {
+      "display": "very quick",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "plate armour",
     "displayName": "plate armour",

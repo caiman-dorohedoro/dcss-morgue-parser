@@ -39,6 +39,33 @@
   ],
   "talisman": "death talisman of Lan Byow",
   "form": "death-form",
+  "statusText": "death-form, on mesmerism cooldown, slowed, studying 8 skills, lightly drained, very slow",
+  "statuses": [
+    {
+      "display": "death-form",
+      "id": null
+    },
+    {
+      "display": "on mesmerism cooldown",
+      "id": null
+    },
+    {
+      "display": "slowed",
+      "id": null
+    },
+    {
+      "display": "studying 8 skills",
+      "id": null
+    },
+    {
+      "display": "lightly drained",
+      "id": null
+    },
+    {
+      "display": "very slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "moon troll leather armour",
     "displayName": "moon troll leather armour",

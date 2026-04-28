@@ -57,6 +57,8 @@ function buildRecord(
     ...(input.gizmo ? { gizmo: input.gizmo } : {}),
     talisman: input.talisman ?? 'none',
     form: null,
+    statusText: null,
+    statuses: [],
     skills: {
       fighting: 0,
       macesFlails: 0,

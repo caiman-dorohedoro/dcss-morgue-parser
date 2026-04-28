@@ -42,6 +42,25 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "paralysed, weak-willed, flying, studying 3 skills",
+  "statuses": [
+    {
+      "display": "paralysed",
+      "id": null
+    },
+    {
+      "display": "weak-willed",
+      "id": null
+    },
+    {
+      "display": "flying",
+      "id": null
+    },
+    {
+      "display": "studying 3 skills",
+      "id": null
+    }
+  ],
   "glovesDetails": [
     {
       "rawName": "pair of gloves of the Hills",

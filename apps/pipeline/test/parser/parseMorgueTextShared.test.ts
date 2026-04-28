@@ -155,6 +155,26 @@ describe('parseMorgueText shared parser', () => {
     }
   })
 
+  it('exposes the current wrapped status line on the final record', () => {
+    const result = parseMorgueText(loadFixture('coglin-gizmo-revguard-nono3.txt'))
+
+    expect(result.ok).toBe(true)
+    if (result.ok) {
+      expect(result.record.statusText).toBe(
+        'berserking (expiring), strong-willed, regenerating, glowing, studying Unarmed Combat, revving, slow',
+      )
+      expect(result.record.statuses).toEqual([
+        { display: 'berserking (expiring)', id: null },
+        { display: 'strong-willed', id: null },
+        { display: 'regenerating', id: null },
+        { display: 'glowing', id: null },
+        { display: 'studying Unarmed Combat', id: null },
+        { display: 'revving', id: null },
+        { display: 'slow', id: null },
+      ])
+    }
+  })
+
   it('extracts non-suffixed active talisman form labels from the status line', () => {
     const result = parseMorgueText(loadFixture('eel-hands-current-form.txt'))
 

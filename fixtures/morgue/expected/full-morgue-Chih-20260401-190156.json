@@ -41,6 +41,21 @@
   ],
   "talisman": "none",
   "form": null,
+  "statusText": "glowing, studying 2 skills, slow",
+  "statuses": [
+    {
+      "display": "glowing",
+      "id": null
+    },
+    {
+      "display": "studying 2 skills",
+      "id": null
+    },
+    {
+      "display": "slow",
+      "id": null
+    }
+  ],
   "bodyArmourDetails": {
     "rawName": "pearl dragon scales of the Distant Future",
     "displayName": "pearl dragon scales",
