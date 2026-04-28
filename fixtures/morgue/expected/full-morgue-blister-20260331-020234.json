@@ -1236,62 +1236,76 @@
   "mutations": [
     {
       "name": "powerful",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "torment resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "boosted hp",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "slow",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "reduced EV",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "almost no armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "amphibious",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "8 rings",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "camouflage",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "gelatinous body",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "nimble swimmer",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "tentacles",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "clever",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "strong",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

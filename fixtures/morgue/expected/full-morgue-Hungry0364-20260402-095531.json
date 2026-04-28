@@ -723,55 +723,68 @@
   "mutations": [
     {
       "name": "horns",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "low MP",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "no stealth",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "inability to use devices",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "hated by all",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no conjurations magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no earth magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "retaliatory headbutt",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no forms",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no forgecraft magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "deformed body",
-      "level": null
+      "level": null,
+      "traitId": "deformed_body"
     },
     {
       "name": "efficient metabolism",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "lucky",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

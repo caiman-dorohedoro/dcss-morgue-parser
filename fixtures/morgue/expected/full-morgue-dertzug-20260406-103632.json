@@ -1023,31 +1023,38 @@
   "mutations": [
     {
       "name": "permanent stasis",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "dig shafts and tunnels",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "antennae",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "four strong arms",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "clarity",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "poison resistance",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "wild magic",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

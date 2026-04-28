@@ -249,6 +249,10 @@ IDs. Unknown or version-specific entries keep `id: null`. When Crawl prints
 `@: no status effects`, `statusText` is `"no status effects"` and `statuses` is
 empty.
 
+The normalized status vocabulary is exported as `KNOWN_STATUS_IDS`, with the
+corresponding `KnownStatusId` type, so consumers do not need to redefine parser
+status strings locally.
+
 ## Normalization Rules
 
 ### Species and background
@@ -298,10 +302,20 @@ mutation catalog entries.
 Examples:
 
 ```json
-{ "name": "horns", "level": 3 }
-{ "name": "nimble swimmer", "level": 2, "suppressed": true }
-{ "name": "subdued magic", "level": 2, "transient": true }
+{ "name": "horns", "level": 3, "traitId": null }
+{ "name": "deformed body", "level": null, "traitId": "deformed_body" }
+{ "name": "pseudopods", "level": null, "traitId": "deformed_body" }
+{ "name": "nimble swimmer", "level": 2, "traitId": null, "suppressed": true }
+{ "name": "subdued magic", "level": 2, "traitId": null, "transient": true }
 ```
+
+`traitId` is a small canonical helper for displayed `A:` traits that downstream
+calculators need to recognize across Crawl display-name changes. It is not a
+Crawl `mutation_type` enum. Unknown or unmapped displayed traits keep
+`traitId: null`.
+
+The current vocabulary is exported as `KNOWN_MUTATION_TRAIT_IDS`, with the
+corresponding `KnownMutationTraitId` type.
 
 ### Spells use an explicit unusable state
 

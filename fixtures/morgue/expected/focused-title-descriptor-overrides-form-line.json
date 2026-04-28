@@ -474,62 +474,76 @@
   "mutations": [
     {
       "name": "powerful",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "torment resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "boosted hp",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "slow",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "reduced EV",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "large",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unfitting armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "horns",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "tough skin",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "double potion healing",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "drunken brawling",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "cold resistance",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "fire resistance",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "ephemeral shield",
-      "level": null
+      "level": null,
+      "traitId": "ephemeral_shield"
     }
   ],
   "godHistory": []

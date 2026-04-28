@@ -371,35 +371,43 @@
   "mutations": [
     {
       "name": "off-hand wielding",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "slow wielding",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "warmup strikes",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no jewellery",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "beak",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "clever",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "poor constitution",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "strong-willed",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

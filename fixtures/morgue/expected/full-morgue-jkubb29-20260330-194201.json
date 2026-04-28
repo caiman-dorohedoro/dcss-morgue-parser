@@ -676,27 +676,33 @@
   "mutations": [
     {
       "name": "large",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unfitting armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "claws",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "regeneration",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "shaggy fur",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "tough skin",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

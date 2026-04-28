@@ -594,43 +594,53 @@
   "mutations": [
     {
       "name": "glacial breath",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "AC +8",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unfitting armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "cold resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "cold-blooded",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "renounce potions",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "renounce scrolls",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no stealth",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "inexperienced",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "armoured tail",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

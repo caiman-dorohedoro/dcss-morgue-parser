@@ -1100,15 +1100,18 @@
   "mutations": [
     {
       "name": "fangs",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "treasure sense",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "distributed training",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

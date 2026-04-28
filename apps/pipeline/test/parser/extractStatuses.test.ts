@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { extractStatuses } from 'dcss-morgue-parser'
+import { KNOWN_STATUS_IDS, extractStatuses } from 'dcss-morgue-parser'
 
 describe('extractStatuses', () => {
   it('extracts wrapped status lines and preserves detail text', () => {
@@ -17,7 +17,7 @@ describe('extractStatuses', () => {
         { display: 'sick', id: null },
         { display: 'fragile (+50% incoming damage)', id: null },
         { display: 'enshackling', id: null },
-        { display: 'ephemerally shielded', id: 'ephemeral_shield' },
+        { display: 'ephemerally shielded', id: KNOWN_STATUS_IDS.ephemeralShield },
         { display: 'wreathed by umbra', id: null },
         { display: 'studying 3 skills', id: null },
       ],
@@ -28,6 +28,15 @@ describe('extractStatuses', () => {
     expect(extractStatuses('@: no status effects\nA: no striking features')).toEqual({
       statusText: 'no status effects',
       statuses: [],
+    })
+  })
+
+  it('exports the status id vocabulary used by parsed status entries', () => {
+    expect(KNOWN_STATUS_IDS).toEqual({
+      ephemeralShield: 'ephemeral_shield',
+      icyArmour: 'icy_armour',
+      icemailDepleted: 'icemail_depleted',
+      vertigo: 'vertigo',
     })
   })
 })

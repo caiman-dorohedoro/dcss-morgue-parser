@@ -809,32 +809,39 @@
   "mutations": [
     {
       "name": "almost no armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "amphibious",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "8 rings",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "camouflage",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "gelatinous body",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "nimble swimmer",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "tentacles",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

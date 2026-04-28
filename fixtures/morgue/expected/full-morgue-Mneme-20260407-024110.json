@@ -575,39 +575,48 @@
   "mutations": [
     {
       "name": "sickness immunity",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "fire resistance",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "cold vulnerability",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "float",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "innate caster",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "HP casting",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "extra vitality",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "see invisible",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "evolution",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

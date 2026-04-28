@@ -1102,56 +1102,69 @@
   "mutations": [
     {
       "name": "vile attack",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "siphon essence",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "torment immunity",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no potions",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "accursed",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "ignite blood",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "sanguine armour",
       "level": 3,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "demonic magic",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "corrupting presence",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "word of chaos",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "demonic touch",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "agile",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "ephemeral shield",
-      "level": null
+      "level": null,
+      "traitId": "ephemeral_shield"
     }
   ],
   "godHistory": [

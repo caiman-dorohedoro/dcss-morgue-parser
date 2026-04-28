@@ -1073,35 +1073,43 @@
   "mutations": [
     {
       "name": "insubstantial",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "cold resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "negative energy resistance",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "torment resistance",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "float",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "formless",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "trickster",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "accursed",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

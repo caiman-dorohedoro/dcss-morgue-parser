@@ -1,12 +1,13 @@
 import type { StatusEntrySnapshot, StatusSnapshot } from './types'
+import { KNOWN_STATUS_IDS, type KnownStatusId } from './statusIds'
 
-const STATUS_ID_BY_DISPLAY: Readonly<Record<string, string>> = {
-  'ephemerally shielded': 'ephemeral_shield',
-  'ice-armoured': 'icy_armour',
-  'icy armour': 'icy_armour',
-  'icemail depleted': 'icemail_depleted',
-  vertiginous: 'vertigo',
-  vertigo: 'vertigo',
+const STATUS_ID_BY_DISPLAY: Readonly<Record<string, KnownStatusId>> = {
+  'ephemerally shielded': KNOWN_STATUS_IDS.ephemeralShield,
+  'ice-armoured': KNOWN_STATUS_IDS.icyArmour,
+  'icy armour': KNOWN_STATUS_IDS.icyArmour,
+  'icemail depleted': KNOWN_STATUS_IDS.icemailDepleted,
+  vertiginous: KNOWN_STATUS_IDS.vertigo,
+  vertigo: KNOWN_STATUS_IDS.vertigo,
 }
 
 function isStatusContinuation(line: string): boolean {

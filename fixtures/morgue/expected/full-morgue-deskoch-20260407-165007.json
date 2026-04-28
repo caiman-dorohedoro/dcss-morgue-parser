@@ -378,35 +378,43 @@
   "mutations": [
     {
       "name": "weak",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "no stealth",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "inability to use devices",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no forms",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "off-hand wielding",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "slow wielding",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "warmup strikes",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no jewellery",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

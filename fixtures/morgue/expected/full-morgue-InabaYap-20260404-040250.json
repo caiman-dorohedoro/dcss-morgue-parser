@@ -280,72 +280,88 @@
   "mutations": [
     {
       "name": "electrical cleaving",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "evasive",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "blinkbolt",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "insubstantial",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "flying",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "very small",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "claws",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "fangs",
       "level": 3,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "see invisible",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "shaggy fur",
       "level": 3,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "stealthy paws",
       "level": null,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "no weapons or thrown items",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "multi-lived",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "heat vulnerability",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "lucky",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

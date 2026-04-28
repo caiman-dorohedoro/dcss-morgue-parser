@@ -867,35 +867,43 @@
   "mutations": [
     {
       "name": "sickness immunity",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "big wings",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "negative energy resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "electricity resistance",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "torment resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "stone body",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "wild magic",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "initially attractive",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

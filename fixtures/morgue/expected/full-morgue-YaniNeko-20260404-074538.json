@@ -848,7 +848,8 @@
   "mutations": [
     {
       "name": "magic regeneration",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

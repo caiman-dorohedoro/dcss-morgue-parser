@@ -251,7 +251,7 @@ Each entry is stored as:
 ```ts
 type StatusEntrySnapshot = {
   display: string
-  id: string | null
+  id: KnownStatusId | null
 }
 ```
 
@@ -267,6 +267,10 @@ calculator parity, such as:
 Unknown or version-specific status text keeps `id: null`. When Crawl prints
 `@: no status effects`, `statusText` is `"no status effects"` and `statuses` is
 an empty array.
+
+The normalized vocabulary is exported as `KNOWN_STATUS_IDS`, with the
+corresponding `KnownStatusId` type, so downstream calculators can share the
+parser's canonical status strings instead of redefining them.
 
 Crawl source references:
 
@@ -335,6 +339,7 @@ Each entry is stored as:
 type MutationEntrySnapshot = {
   name: string
   level: number | null
+  traitId: KnownMutationTraitId | null
   suppressed?: true
   transient?: true
 }
@@ -342,12 +347,22 @@ type MutationEntrySnapshot = {
 
 Examples:
 
-- `horns 3` -> `{ name: "horns", level: 3 }`
-- `devolution 1` -> `{ name: "devolution", level: 1 }`
-- `big wings` -> `{ name: "big wings", level: null }`
-- `8 rings` -> `{ name: "8 rings", level: null }`
-- `(nimble swimmer 1)` -> `{ name: "nimble swimmer", level: 1, suppressed: true }`
-- `[poor constitution 2]` -> `{ name: "poor constitution", level: 2, transient: true }`
+- `horns 3` -> `{ name: "horns", level: 3, traitId: null }`
+- `devolution 1` -> `{ name: "devolution", level: 1, traitId: null }`
+- `big wings` -> `{ name: "big wings", level: null, traitId: null }`
+- `deformed body` -> `{ name: "deformed body", level: null, traitId: "deformed_body" }`
+- `pseudopods` -> `{ name: "pseudopods", level: null, traitId: "deformed_body" }`
+- `8 rings` -> `{ name: "8 rings", level: null, traitId: null }`
+- `(nimble swimmer 1)` -> `{ name: "nimble swimmer", level: 1, traitId: null, suppressed: true }`
+- `[poor constitution 2]` -> `{ name: "poor constitution", level: 2, traitId: null, transient: true }`
+
+`traitId` is a small canonical helper for selected displayed traits that
+downstream calculators already need to identify across Crawl display-name
+changes. It is not a Crawl enum. Unknown or unmapped displayed traits keep
+`traitId: null`.
+
+The current vocabulary is exported as `KNOWN_MUTATION_TRAIT_IDS`, with the
+corresponding `KnownMutationTraitId` type.
 
 Code:
 

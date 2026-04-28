@@ -1001,39 +1001,48 @@
   "mutations": [
     {
       "name": "AC +9",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "large",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "see invisible",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "deformed body",
-      "level": null
+      "level": null,
+      "traitId": "deformed_body"
     },
     {
       "name": "poison resistance",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "spit poison",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "naga tail",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "clever",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "strong",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

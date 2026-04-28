@@ -535,3 +535,45 @@ vertigo adds to spell failure.
 Keeping the current `@:` snapshot in the parse record lets downstream
 calculators distinguish owned traits from currently active statuses without
 re-parsing the morgue header.
+
+## 13.17. Public Status IDs and Canonical Displayed Trait IDs
+
+### What changed
+
+The parser now exports:
+
+- `KNOWN_STATUS_IDS`
+- `KnownStatusId`
+- `KNOWN_MUTATION_TRAIT_IDS`
+- `KnownMutationTraitId`
+
+`StatusEntrySnapshot.id` now uses `KnownStatusId | null` instead of a generic
+string type.
+
+Each `MutationEntrySnapshot` now includes:
+
+```ts
+traitId: KnownMutationTraitId | null
+```
+
+The first `traitId` vocabulary covers calculator-relevant displayed `A:`
+traits and known display-name aliases:
+
+- `ephemeral shield`
+- `icemail`
+- `condensation shield`
+- `reckless`
+- `anti-wizardry` / `disrupted magic`
+- `distortion field` / `repulsion field`
+- `tengu flight` / `evasive flight`
+- `deformed body` / `pseudopods`
+
+### Why
+
+Downstream code should not need to compare parser-owned display strings such as
+`mutation.name === "pseudopods"` or redefine status strings such as
+`"icemail_depleted"` locally.
+
+Keeping the calculation effects downstream while exposing canonical parser IDs
+preserves the parser boundary: the parser identifies what Crawl displayed; apps
+decide what those identifiers do to AC, SH, spell failure, or other calculators.

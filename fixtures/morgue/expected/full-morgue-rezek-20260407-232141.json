@@ -565,55 +565,68 @@
   "mutations": [
     {
       "name": "large",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unfitting armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "horns",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "frail",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "low MP",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "tough skin",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "cowardly",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unskilled",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "double potion healing",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no forms",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "drunken brawling",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "see invisible",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "fire resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

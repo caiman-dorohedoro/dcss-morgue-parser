@@ -1289,23 +1289,28 @@
   "mutations": [
     {
       "name": "runic magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "artefact enchanting",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "poison resistance",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "robust",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "lucky",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

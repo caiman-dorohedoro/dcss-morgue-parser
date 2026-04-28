@@ -779,27 +779,33 @@
   "mutations": [
     {
       "name": "permanent stasis",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "dig shafts and tunnels",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "antennae",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "four strong arms",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "poor constitution",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "inhibited regeneration",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

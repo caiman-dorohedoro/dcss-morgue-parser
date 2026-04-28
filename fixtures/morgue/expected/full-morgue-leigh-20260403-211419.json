@@ -863,15 +863,18 @@
   "mutations": [
     {
       "name": "runic magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "artefact enchanting",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "low MP",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

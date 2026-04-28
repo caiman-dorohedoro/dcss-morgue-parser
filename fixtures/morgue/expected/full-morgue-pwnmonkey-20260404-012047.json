@@ -652,43 +652,53 @@
   "mutations": [
     {
       "name": "claws",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "cold resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "low MP",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "negative energy resistance",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "torment resistance",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "Dis destruction",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "Mark of Haemoclasm",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "mnemnophage",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "spellclaws",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "accursed",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

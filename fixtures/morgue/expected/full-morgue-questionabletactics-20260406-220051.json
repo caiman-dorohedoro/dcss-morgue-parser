@@ -938,27 +938,33 @@
   "mutations": [
     {
       "name": "fangs",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "treasure sense",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "distributed training",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "clever",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "cold resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "subdued magic",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

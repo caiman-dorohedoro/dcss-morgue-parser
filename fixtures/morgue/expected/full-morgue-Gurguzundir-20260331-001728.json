@@ -345,35 +345,43 @@
   "mutations": [
     {
       "name": "weakening spores",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "sporulate",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "hated by all",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no ice magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no summoning magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "nimble swimmer",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "mertail",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no forgecraft magic",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

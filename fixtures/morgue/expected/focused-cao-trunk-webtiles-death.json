@@ -303,11 +303,13 @@
   "mutations": [
     {
       "name": "horns",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "retaliatory headbutt",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": []

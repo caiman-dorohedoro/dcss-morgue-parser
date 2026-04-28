@@ -836,93 +836,115 @@
   "mutations": [
     {
       "name": "dragon claw",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "dragon scales",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "flying",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "boosted hp",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "combustion breath",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "AC +12",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "giant",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unfitting armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "fire resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "low MP",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "cold-blooded",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "inability to train dodging",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no air magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no conjurations magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no hexes magic",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unskilled",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "inexperienced",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "armoured tail",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "big wings",
       "level": null,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "horns",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "poor constitution",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "robust",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

@@ -565,73 +565,90 @@
   "mutations": [
     {
       "name": "powerful",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "torment resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "boosted hp",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "slow",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "reduced EV",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "large",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unfitting armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "claws",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "regeneration",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "shaggy fur",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "tough skin",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "camouflage",
       "level": 1,
+      "traitId": null,
       "suppressed": true
     },
     {
       "name": "see invisible",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "agile",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "mutation resistance",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "strong",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "eyeballs",
-      "level": 3
+      "level": 3,
+      "traitId": null
     }
   ],
   "godHistory": [

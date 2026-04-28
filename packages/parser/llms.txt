@@ -9,6 +9,7 @@ Important notes:
 - `form` is a current-state snapshot resolved from `@:` first, then the equipped talisman, then overview prose.
 - `statusText` and `statuses` expose the current `@:` line as display-preserving current status entries.
 - `mutations` is a structured snapshot of Crawl's displayed `A:` traits, not only real mutation catalog entries.
+- `KNOWN_STATUS_IDS` and `KNOWN_MUTATION_TRAIT_IDS` export the parser-owned canonical ids used by selected statuses and displayed traits.
 - Summary equipment slots such as `bodyArmour`, `shield`, `orb`, and `talisman` use `"none"` instead of `null`.
 
 ## Start Here

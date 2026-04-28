@@ -40,9 +40,9 @@ describe('parseMorgue', () => {
       expect(result.record.footwear).toEqual([])
       expect(result.record.cloaks).toEqual([])
       expect(result.record.mutations).toEqual([
-        { name: 'amphibious', level: null },
-        { name: 'frog-like legs', level: 1 },
-        { name: '+LOS', level: null },
+        { name: 'amphibious', level: null, traitId: null },
+        { name: 'frog-like legs', level: 1, traitId: null },
+        { name: '+LOS', level: null, traitId: null },
       ])
       expect(result.record.skills.dodging).toBe(2.1)
       expect(result.record.effectiveSkills.dodging).toBe(2.1)
@@ -69,8 +69,8 @@ describe('parseMorgue', () => {
       expect(result.record.footwear).toEqual(['pair of boots'])
       expect(result.record.cloaks).toEqual(['cloak'])
       expect(result.record.mutations).toEqual([
-        { name: 'horns', level: 2 },
-        { name: 'retaliatory headbutt', level: null },
+        { name: 'horns', level: 2, traitId: null },
+        { name: 'retaliatory headbutt', level: null, traitId: null },
       ])
       expect(result.record.skills.armour).toBe(2.4)
       expect(result.record.effectiveSkills.armour).toBe(2.4)

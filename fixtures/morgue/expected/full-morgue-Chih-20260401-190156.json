@@ -1019,31 +1019,38 @@
   "mutations": [
     {
       "name": "amphibious",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "frog-like legs",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "+LOS",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "iridescent scales",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "wild magic",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "lucky",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "meek",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

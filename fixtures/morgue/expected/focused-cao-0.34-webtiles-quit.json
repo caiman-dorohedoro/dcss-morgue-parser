@@ -138,15 +138,18 @@
   "mutations": [
     {
       "name": "amphibious",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "frog-like legs",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "+LOS",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": []

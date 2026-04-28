@@ -660,31 +660,38 @@
   "mutations": [
     {
       "name": "very small",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no large weapons",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "unfitting armour",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "see invisible",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "speed",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "agile",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "weak",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

@@ -496,7 +496,8 @@
   "mutations": [
     {
       "name": "no striking features",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": []

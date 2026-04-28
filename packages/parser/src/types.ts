@@ -1,3 +1,6 @@
+import type { KnownMutationTraitId } from './mutationTraitIds'
+import type { KnownStatusId } from './statusIds'
+
 export type MorgueVersion = string
 
 export type BaseStatsSnapshot = {
@@ -222,6 +225,7 @@ export type SpellSnapshot = {
 export type MutationEntrySnapshot = {
   name: string
   level: number | null
+  traitId: KnownMutationTraitId | null
   suppressed?: true
   transient?: true
 }
@@ -232,7 +236,7 @@ export type MutationSnapshot = {
 
 export type StatusEntrySnapshot = {
   display: string
-  id: string | null
+  id: KnownStatusId | null
 }
 
 export type StatusSnapshot = {

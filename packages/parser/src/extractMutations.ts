@@ -1,7 +1,23 @@
 import type { MutationEntrySnapshot, MutationSnapshot } from './types'
+import { KNOWN_MUTATION_TRAIT_IDS, type KnownMutationTraitId } from './mutationTraitIds'
 import { splitSections } from './splitSections'
 
 const STOP_LINE_PATTERNS = [/^}:/, /^[a-z]:/i, /^\d+:/, /^You /, /^[A-Z][^,]*:$/]
+
+const TRAIT_ID_BY_NAME: Readonly<Record<string, KnownMutationTraitId>> = {
+  'anti-wizardry': KNOWN_MUTATION_TRAIT_IDS.disruptedMagic,
+  'condensation shield': KNOWN_MUTATION_TRAIT_IDS.condensationShield,
+  'deformed body': KNOWN_MUTATION_TRAIT_IDS.deformedBody,
+  'disrupted magic': KNOWN_MUTATION_TRAIT_IDS.disruptedMagic,
+  'distortion field': KNOWN_MUTATION_TRAIT_IDS.repulsionField,
+  'ephemeral shield': KNOWN_MUTATION_TRAIT_IDS.ephemeralShield,
+  'evasive flight': KNOWN_MUTATION_TRAIT_IDS.evasiveFlight,
+  icemail: KNOWN_MUTATION_TRAIT_IDS.icemail,
+  pseudopods: KNOWN_MUTATION_TRAIT_IDS.deformedBody,
+  reckless: KNOWN_MUTATION_TRAIT_IDS.reckless,
+  'repulsion field': KNOWN_MUTATION_TRAIT_IDS.repulsionField,
+  'tengu flight': KNOWN_MUTATION_TRAIT_IDS.evasiveFlight,
+}
 
 function collectAbilityLine(header: string): string {
   const lines = header.split('\n')
@@ -54,9 +70,12 @@ function parseMutationEntry(entry: string): MutationEntrySnapshot {
   const leveledMatch = normalizedEntry.match(/^(.*\S)\s+(\d+)$/)
 
   if (leveledMatch) {
+    const name = leveledMatch[1].trim()
+
     return {
-      name: leveledMatch[1].trim(),
+      name,
       level: Number.parseInt(leveledMatch[2], 10),
+      traitId: TRAIT_ID_BY_NAME[name.toLowerCase()] ?? null,
       ...(suppressed ? { suppressed: true as const } : {}),
       ...(transient ? { transient: true as const } : {}),
     }
@@ -65,6 +84,7 @@ function parseMutationEntry(entry: string): MutationEntrySnapshot {
   return {
     name: normalizedEntry,
     level: null,
+    traitId: TRAIT_ID_BY_NAME[normalizedEntry.toLowerCase()] ?? null,
     ...(suppressed ? { suppressed: true as const } : {}),
     ...(transient ? { transient: true as const } : {}),
   }

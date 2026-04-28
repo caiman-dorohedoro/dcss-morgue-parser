@@ -712,15 +712,18 @@
   "mutations": [
     {
       "name": "small",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "no large weapons",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "nightstalker",
-      "level": 3
+      "level": 3,
+      "traitId": null
     }
   ],
   "godHistory": [

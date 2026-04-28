@@ -945,35 +945,43 @@
   "mutations": [
     {
       "name": "thin skeletal structure",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "demonic guardian",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "icemail",
-      "level": 1
+      "level": 1,
+      "traitId": "icemail"
     },
     {
       "name": "robust",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "condensation shield",
-      "level": null
+      "level": null,
+      "traitId": "condensation_shield"
     },
     {
       "name": "weakness stinger",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "Dis destruction",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "Mark of Atrocity",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [

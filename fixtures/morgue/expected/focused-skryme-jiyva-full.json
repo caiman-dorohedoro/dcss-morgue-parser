@@ -529,51 +529,63 @@
   "mutations": [
     {
       "name": "horns",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "retaliatory headbutt",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "claws",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "talons",
-      "level": 2
+      "level": 2,
+      "traitId": null
     },
     {
       "name": "clever",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "regeneration",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "eyeballs",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "jelly sensing items",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "MP-powered wands",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "efficient magic",
-      "level": 1
+      "level": 1,
+      "traitId": null
     },
     {
       "name": "slime shroud",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "feed off suffering",
-      "level": 1
+      "level": 1,
+      "traitId": null
     }
   ],
   "godHistory": [

@@ -511,19 +511,23 @@
   "mutations": [
     {
       "name": "beak",
-      "level": null
+      "level": null,
+      "traitId": null
     },
     {
       "name": "talons",
-      "level": 3
+      "level": 3,
+      "traitId": null
     },
     {
       "name": "evasive flight",
-      "level": null
+      "level": null,
+      "traitId": "evasive_flight"
     },
     {
       "name": "acrobatic",
-      "level": null
+      "level": null,
+      "traitId": null
     }
   ],
   "godHistory": [
