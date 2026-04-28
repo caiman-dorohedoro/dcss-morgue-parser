@@ -76,9 +76,15 @@ After the workflow succeeds, confirm npm shows the released version:
 npm view dcss-morgue-parser version
 ```
 
-## Local App Dependency Pins
+## Local App Dependencies
 
-The private workspace apps may pin `dcss-morgue-parser` as an exact dependency.
-That is separate from publishing `packages/parser` itself. Update those pins only
-when the apps should consume the newly published package version outside the
-workspace symlink.
+The private workspace apps should depend on the local parser package with:
+
+```json
+"dcss-morgue-parser": "file:../../packages/parser"
+```
+
+Do not pin those app dependencies to the release version being published. During
+a tag-triggered publish, the new package version is not available on npm yet.
+If an app asks for that exact unpublished version, `npm ci` can try the npm
+registry instead of the local workspace package and fail before publish runs.
