@@ -90,8 +90,12 @@ function hasAny(line: string, patterns: RegExp[]): boolean {
   return patterns.some((pattern) => pattern.test(line))
 }
 
+function getSlotMatchName(line: string): string {
+  return normalizeSpacing(cleanItemName(line).replace(/"[^"]*"/g, ''))
+}
+
 function itemNameHasAny(line: string, patterns: RegExp[]): boolean {
-  return hasAny(cleanItemName(line), patterns)
+  return hasAny(getSlotMatchName(line), patterns)
 }
 
 function escapeRegex(value: string): string {

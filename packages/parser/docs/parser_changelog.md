@@ -635,3 +635,20 @@ Slot membership comes from the item name and Crawl base type, not from artefact
 property text. Keeping property tokens out of slot matching preserves valid
 unrand/orb parsing while still allowing a separate worn hat to be parsed as
 headgear.
+
+## 13.20. Slot Matching Ignores Randart Nicknames
+
+### What changed
+
+Equipment slot classification now strips quoted randart nicknames before
+matching slot patterns. For example, `fire dragon scales "Hat"` remains body
+armour instead of being treated as headgear because of the nickname.
+
+The legacy `helm of the ram` unrand entry also now records its hidden
+`baseType` as `helmet`.
+
+### Why
+
+Randart nicknames are player-visible names, not Crawl base item types. Ignoring
+them in slot matching keeps slot detection aligned with the parsed item base
+name and prevents nickname text from creating false auxiliary armour matches.

@@ -547,6 +547,52 @@ Armour
     expect(parsed.helmetDetails).toHaveLength(1)
   })
 
+  it('ignores randart nicknames when classifying armour slots', () => {
+    const parsed = extractEquipment(`
+Health: 197/238    AC: 17    Str:  8    XL:     27
+Magic:  39/63      EV: 15    Int: 38    God:    Vehumet [******]
+Gold:   5060       SH:  0    Dex:  9    Spells: 30/79 levels left
+
+rFire   + + +  (20%)    A - fire dragon scales "Hat" {rF++ rC- Int+3}
+rCold   + + +  (20%)    C - +2 hat {SInv}
+
+Inventory:
+
+Armour
+ A - the +8 fire dragon scales "Hat" (worn) {rF++ rC- Int+3}
+ C - a +2 hat of see invisible (worn)
+`)
+
+    expect(parsed.bodyArmour).toBe('fire dragon scales "Hat"')
+    expect(parsed.bodyArmourDetails).toMatchObject({
+      rawName: 'fire dragon scales "Hat"',
+      baseType: 'fire dragon scales',
+      artifactKind: 'randart',
+    })
+    expect(parsed.helmets).toEqual(['hat of see invisible'])
+  })
+
+  it('fills the base type for the legacy helm of the ram unrand', () => {
+    const parsed = extractEquipment(`
+Health: 197/238    AC: 17    Str:  8    XL:     27
+Magic:  39/63      EV: 15    Int: 38    God:    Vehumet [******]
+Gold:   5060       SH:  0    Dex:  9    Spells: 30/79 levels left
+
+rFire   + + +  (20%)    C - helm of the ram {rF+}
+
+Inventory:
+
+Armour
+ C - the helm of the ram (worn) {rF+}
+`)
+
+    expect(parsed.helmetDetails?.[0]).toMatchObject({
+      rawName: 'helm of the ram',
+      artifactKind: 'unrand',
+      baseType: 'helmet',
+    })
+  })
+
   it('preserves melded equipment and the equipped talisman slot', () => {
     const parsed = extractEquipment(loadFixture('focused', 'melded-equipment-and-talisman.txt'))
 

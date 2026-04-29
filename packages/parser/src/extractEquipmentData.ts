@@ -99,7 +99,7 @@ export const UNRAND_HEAD_ITEMS = [
   { name: 'hat of the High Council', baseType: 'hat' },
   { name: 'crown of Dyrovepreva', baseType: 'hat' },
   { name: 'hood of the Assassin', baseType: 'hat' },
-  { name: 'helm of the ram' },
+  { name: 'helm of the ram', baseType: 'helmet' },
   { name: "Maxwell's etheric cage", baseType: 'helmet' },
   { name: 'crown of Eternal Torment', baseType: 'hat' },
   { name: 'Mask of the Dragon', baseType: 'hat' },
