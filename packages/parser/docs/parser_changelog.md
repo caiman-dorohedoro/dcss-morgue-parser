@@ -619,3 +619,19 @@ Raw morgue strings are still preserved, but downstream apps should not have to
 rediscover Crawl semantics by matching display text. The parser now exposes the
 semantic identifiers and displayed numeric values needed to build AC, EV, and
 SH calculators while still leaving the actual stat formulas outside the parser.
+
+## 13.19. Slot Matching Uses Clean Item Names
+
+### What changed
+
+Equipment slot classification now matches slot patterns against the cleaned item
+name instead of the full inventory line. This prevents property tokens such as
+`Hat+` on `skull of Zonguldrok {Reaping Hat+ rN+ Int+4}` from making the same
+item appear both as an orb and as headgear.
+
+### Why
+
+Slot membership comes from the item name and Crawl base type, not from artefact
+property text. Keeping property tokens out of slot matching preserves valid
+unrand/orb parsing while still allowing a separate worn hat to be parsed as
+headgear.

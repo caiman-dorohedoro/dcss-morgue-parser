@@ -519,6 +519,34 @@ Jewellery
     })
   })
 
+  it('does not treat Hat+ on the skull of Zonguldrok as a helmet item', () => {
+    const parsed = extractEquipment(`
+Health: 197/238    AC: 17    Str:  8    XL:     27
+Magic:  39/63      EV: 15    Int: 38    God:    Vehumet [******]
+Gold:   5060       SH:  0    Dex:  9    Spells: 30/79 levels left
+
+rFire   + + +  (20%)    d - skull of Zonguldrok {Reaping Hat+ rN+ Int+4}
+rCold   + + +  (20%)    C - +2 hat {SInv}
+
+Inventory:
+
+Armour
+ d - the skull of Zonguldrok (worn) {Reaping Hat+ rN+ Int+4}
+ C - a +2 hat of see invisible (worn)
+`)
+
+    expect(parsed.orb).toBe('skull of Zonguldrok')
+    expect(parsed.orbDetails).toMatchObject({
+      rawName: 'skull of Zonguldrok',
+      displayName: 'skull of Zonguldrok',
+      objectClass: 'armour',
+      artifactKind: 'unrand',
+      baseType: 'orb',
+    })
+    expect(parsed.helmets).toEqual(['hat of see invisible'])
+    expect(parsed.helmetDetails).toHaveLength(1)
+  })
+
   it('preserves melded equipment and the equipped talisman slot', () => {
     const parsed = extractEquipment(loadFixture('focused', 'melded-equipment-and-talisman.txt'))
 

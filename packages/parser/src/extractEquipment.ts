@@ -90,6 +90,10 @@ function hasAny(line: string, patterns: RegExp[]): boolean {
   return patterns.some((pattern) => pattern.test(line))
 }
 
+function itemNameHasAny(line: string, patterns: RegExp[]): boolean {
+  return hasAny(cleanItemName(line), patterns)
+}
+
 function escapeRegex(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 }
@@ -697,15 +701,15 @@ export function extractEquipment(text: string): EquipmentSnapshot {
     ...orbPatterns,
   ]
 
-  const shieldLine = armourLines.find((line) => hasAny(line, shieldPatterns))
-  const footwearLines = armourLines.filter((line) => hasAny(line, bootsPatterns))
-  const helmetLines = armourLines.filter((line) => hasAny(line, headPatterns))
-  const glovesLines = armourLines.filter((line) => hasAny(line, glovesPatterns))
-  const cloakLines = armourLines.filter((line) => hasAny(line, cloakPatterns))
-  const orbLine = armourLines.find((line) => hasAny(line, orbPatterns))
-  const bodyArmourLine = armourLines.find((line) => !hasAny(line, nonBodyPatterns))
-  const amuletLines = jewelleryLines.filter((line) => hasAny(line, amuletPatterns))
-  const ringLines = jewelleryLines.filter((line) => hasAny(line, ringPatterns))
+  const shieldLine = armourLines.find((line) => itemNameHasAny(line, shieldPatterns))
+  const footwearLines = armourLines.filter((line) => itemNameHasAny(line, bootsPatterns))
+  const helmetLines = armourLines.filter((line) => itemNameHasAny(line, headPatterns))
+  const glovesLines = armourLines.filter((line) => itemNameHasAny(line, glovesPatterns))
+  const cloakLines = armourLines.filter((line) => itemNameHasAny(line, cloakPatterns))
+  const orbLine = armourLines.find((line) => itemNameHasAny(line, orbPatterns))
+  const bodyArmourLine = armourLines.find((line) => !itemNameHasAny(line, nonBodyPatterns))
+  const amuletLines = jewelleryLines.filter((line) => itemNameHasAny(line, amuletPatterns))
+  const ringLines = jewelleryLines.filter((line) => itemNameHasAny(line, ringPatterns))
   const gizmoLine = gizmoLines[0]
   const talismanLine = talismanLines[0]
 
